@@ -1,0 +1,157 @@
+.word-list-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f8f9fa;
+}
+
+.word-list-table-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.word-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.word-list-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.word-list-table th {
+  padding: 15px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+
+.word-list-table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.word-list-table tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.word-list-table tbody tr:hover {
+  background: #f8f9fa;
+  transform: translateX(2px);
+}
+
+.word-list-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.word-list-table td {
+  padding: 15px 12px;
+  vertical-align: middle;
+}
+
+.col-word {
+  width: 25%;
+  font-weight: 600;
+  color: #333;
+}
+
+.word-list-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.col-pos {
+  width: 20%;
+  color: #667eea;
+  font-size: 13px;
+}
+
+.col-meaning {
+  width: 55%;
+  color: #666;
+  line-height: 1.6;
+}
+
+.pos-text {
+  font-size: 13px;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.meaning-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.word-list-footer {
+  text-align: center;
+  padding: 15px;
+  color: #999;
+  font-size: 14px;
+}
+
+.word-count {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 60px 20px;
+  font-size: 16px;
+}
+
+/* 移动端响应式 */
+@media (max-width: 480px) {
+  .word-list-content {
+    padding: 15px;
+  }
+
+  .word-list-table {
+    font-size: 12px;
+  }
+
+  .word-list-table th,
+  .word-list-table td {
+    padding: 12px 8px;
+  }
+
+  .col-word {
+    width: 30%;
+  }
+
+  /* .word-list-text {
+    font-size: 14px;
+  } */
+
+  .col-pos {
+    width: 25%;
+    font-size: 11px;
+  }
+
+  .col-meaning {
+    width: 45%;
+    font-size: 12px;
+  }
+
+  .pos-text {
+    font-size: 11px;
+  }
+
+  .meaning-text {
+    font-size: 12px;
+  }
+}
