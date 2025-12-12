@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { wordData } from '../data';
 import Header from '../components/Header';
-import { getCategoryName, speakWord } from '../utils/app';
+import { getCategoryName } from '../utils/app';
+import { useGlobalSpeech } from '../utils/speechContext';
 import {
   startStudy,
   saveWordStatus,
@@ -21,6 +22,7 @@ function WordStudyPage() {
   const [studyGroup, setStudyGroup] = useState([]); // 当前学习组的单词列表
   const [currentWord, setCurrentWord] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const { speak } = useGlobalSpeech();
 
   // 初始化学习组
   useEffect(() => {
@@ -248,7 +250,7 @@ function WordStudyPage() {
 
   const playPronunciation = () => {
     if (currentWord) {
-      speakWord(currentWord.word);
+      speak(currentWord.word);
     }
   };
 

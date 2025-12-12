@@ -27,50 +27,34 @@ export function getCategoryName(category) {
   return names[category] || '背单词';
 }
 
-// 发音功能
+// 发音功能 - 已迁移到 react-text-to-speech
+// 注意：speakWord 函数已废弃，请在组件中使用 useGlobalSpeech hook
+// 此函数保留仅为向后兼容，提供一个基本的后备方案
 export function speakWord(word) {
-  useYoudaoPronunciation(word);
-}
-
-// 使用有道TTS发音服务
-function useYoudaoPronunciation(word) {
-  const audioUrl = `https://dict.youdao.com/dictvoice?type=0&audio=${encodeURIComponent(word)}`;
-  const audio = new Audio(audioUrl);
-
-  audio.addEventListener('error', function (e) {
-    console.error('有道发音加载失败:', e);
-    fallbackToWebSpeech(word);
-  });
-
-  audio.play().catch((err) => {
-    console.error('有道发音播放失败:', err);
-    fallbackToWebSpeech(word);
-  });
-}
-
-// 备用发音方案（使用Web Speech API）
-function fallbackToWebSpeech(word) {
+  if (!word) return;
+  
+  // 使用 Web Speech API 作为后备方案
   if ('speechSynthesis' in window) {
     window.speechSynthesis.cancel();
-
     const utterance = new SpeechSynthesisUtterance(word);
     utterance.lang = 'en-US';
     utterance.rate = 0.9;
     utterance.pitch = 1.0;
-
+    
+    // 尝试选择美式英语语音
     const voices = window.speechSynthesis.getVoices();
     const usVoice = voices.find(
       (voice) =>
         voice.lang.includes('en-US') &&
         (voice.name.includes('American') || voice.name.includes('US'))
     );
-
+    
     if (usVoice) {
       utterance.voice = usVoice;
     }
-
+    
     window.speechSynthesis.speak(utterance);
   } else {
-    alert('抱歉，发音功能暂时不可用。请检查网络连接。');
+    console.warn('抱歉，发音功能暂时不可用。');
   }
 }

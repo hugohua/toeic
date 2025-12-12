@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { wordData } from '../data';
 import Header from '../components/Header';
-import { getCategoryName, speakWord } from '../utils/app';
+import { getCategoryName } from '../utils/app';
+import { useGlobalSpeech } from '../utils/speechContext';
 
 function WordBrowsePage() {
   const { category } = useParams();
@@ -14,6 +15,7 @@ function WordBrowsePage() {
   const touchStartX = useRef(0);
   const touchStartY = useRef(0);
   const minSwipeDistance = 50;
+  const { speak } = useGlobalSpeech();
 
   useEffect(() => {
     const categoryWords = wordData[category] || [];
@@ -61,7 +63,7 @@ function WordBrowsePage() {
 
   const playDetailPronunciation = () => {
     if (currentWord) {
-      speakWord(currentWord.word);
+      speak(currentWord.word);
     }
   };
 

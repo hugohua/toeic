@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { wordData } from '../data';
 import Header from '../components/Header';
-import { getCategoryName, speakWord } from '../utils/app';
+import { getCategoryName } from '../utils/app';
+import { useGlobalSpeech } from '../utils/speechContext';
 import * as storage from '../utils/storage';
 
 function WordDetailPage() {
@@ -13,6 +14,7 @@ function WordDetailPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [words, setWords] = useState([]);
   const fromStudy = searchParams.get('from') === 'study'; // 检测是否从学习页面跳转
+  const { speak } = useGlobalSpeech();
 
   useEffect(() => {
     const categoryWords = wordData[category] || [];
@@ -76,7 +78,7 @@ function WordDetailPage() {
 
   const playDetailPronunciation = () => {
     if (word) {
-      speakWord(word.word);
+      speak(word.word);
     }
   };
 
