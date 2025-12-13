@@ -28,6 +28,46 @@ function ConfusingWordCell({ wordText }) {
   );
 }
 
+// 例句组件，支持提取英文部分并发音
+function ExampleSentence({ sentence }) {
+  // 提取英文句子（括号前的部分）
+  const extractEnglishText = (text) => {
+    if (!text) return { english: '', remaining: '' };
+    // 查找第一个中文括号（或英文括号）之前的所有内容作为英文部分
+    const match = text.match(/^([^(（]+)([（(].*)?$/);
+    if (match) {
+      return {
+        english: match[1].trim(),
+        remaining: match[2] || ''
+      };
+    }
+    return { english: text, remaining: '' };
+  };
+
+  const { english: englishText, remaining: remainingText } = extractEnglishText(sentence);
+  const { start } = useSpeech({
+    text: englishText || '',
+    pitch: 1,
+    rate: 1,
+    volume: 1
+  });
+
+  return (
+    <span>
+      <span
+        onClick={() => {
+          start();
+        }}
+        style={{ cursor: 'pointer' }}
+        title="点击播放发音"
+      >
+        {englishText}
+      </span>
+      {remainingText}
+    </span>
+  );
+}
+
 function WordDetailPage() {
   const { category, index } = useParams();
   const navigate = useNavigate();
@@ -115,19 +155,26 @@ function WordDetailPage() {
     keyCollocationsHtml = '暂无';
   }
 
-  let exampleSentencesHtml = '';
-  if (
-    word.toeicExampleSentences &&
-    Array.isArray(word.toeicExampleSentences) &&
-    word.toeicExampleSentences.length > 0
-  ) {
-    exampleSentencesHtml =
-      '<ol>' +
-      word.toeicExampleSentences.map((sent) => `<li>${sent}</li>`).join('') +
-      '</ol>';
-  } else {
-    exampleSentencesHtml = '<p style="color: #999;">暂无例句</p>';
-  }
+  // 渲染TOEIC例句组件
+  const renderExampleSentences = () => {
+    if (
+      word.toeicExampleSentences &&
+      Array.isArray(word.toeicExampleSentences) &&
+      word.toeicExampleSentences.length > 0
+    ) {
+      return (
+        <ol>
+          {word.toeicExampleSentences.map((sent, index) => (
+            <li key={index}>
+              <ExampleSentence sentence={sent} />
+            </li>
+          ))}
+        </ol>
+      );
+    } else {
+      return <p style={{ color: '#999' }}>暂无例句</p>;
+    }
+  };
 
   // 渲染易混淆词区分组件
   const renderConfusingWords = () => {
@@ -224,10 +271,9 @@ function WordDetailPage() {
 
           <div className="detail-section">
             <h3 className="section-title">TOEIC例句</h3>
-            <div
-              className="section-content"
-              dangerouslySetInnerHTML={{ __html: exampleSentencesHtml }}
-            />
+            <div className="section-content">
+              {renderExampleSentences()}
+            </div>
           </div>
 
           <div className="detail-section">
