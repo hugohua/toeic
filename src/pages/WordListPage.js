@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { useSpeech } from 'react-text-to-speech';
 import { wordData } from '../data';
 import Header from '../components/Header';
 import { getCategoryName } from '../utils/app';
@@ -10,6 +11,27 @@ function WordListPage() {
   const { category } = useParams();
   const navigate = useNavigate();
   const [words, setWords] = useState([]);
+  const [speakingWord, setSpeakingWord] = useState('');
+  
+  // 使用 useSpeech，传入要播放的单词作为 text
+  const { start } = useSpeech({ 
+    text: speakingWord,
+    pitch: 1,
+    rate: 1,
+    volume: 1
+  });
+  
+  // 当 speakingWord 变化时，自动开始播放
+  useEffect(() => {
+    if (speakingWord) {
+      // 使用 setTimeout 确保 text 更新后再调用 start
+      const timer = setTimeout(() => {
+        start();
+      }, 10);
+      return () => clearTimeout(timer);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [speakingWord]);
 
   useEffect(() => {
     const categoryWords = wordData[category] || [];
@@ -18,6 +40,11 @@ function WordListPage() {
 
   const handleRowClick = (index) => {
     navigate(`/detail/${category}/${index}`);
+  };
+
+  const handleWordClick = (e, word) => {
+    e.stopPropagation(); // 阻止事件冒泡，避免触发行点击
+    setSpeakingWord(word); // 设置要播放的单词，useEffect 会自动调用 start
   };
 
   const handleStartStudy = () => {
@@ -94,7 +121,14 @@ function WordListPage() {
                   onClick={() => handleRowClick(index)}
                 >
                   <td className="col-word">
-                    <span className="word-list-text">{word.word}</span>
+                    <span 
+                      className="word-list-text"
+                      onClick={(e) => handleWordClick(e, word.word)}
+                      style={{ cursor: 'pointer' }}
+                      title="点击播放发音"
+                    >
+                      {word.word}
+                    </span>
                   </td>
                   <td className="col-pos">
                     <span className="pos-text">{getPartOfSpeech(word)}</span>

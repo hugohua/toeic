@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
+import { useSpeech } from 'react-text-to-speech';
 import { wordData } from '../data';
 import Header from '../components/Header';
 import { getCategoryName } from '../utils/app';
-import { useGlobalSpeech } from '../utils/speechContext';
 import * as storage from '../utils/storage';
 
 function WordDetailPage() {
@@ -14,7 +14,14 @@ function WordDetailPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [words, setWords] = useState([]);
   const fromStudy = searchParams.get('from') === 'study'; // 检测是否从学习页面跳转
-  const { speak } = useGlobalSpeech();
+  
+  // 使用 useSpeech，传入当前单词作为 text
+  const { start } = useSpeech({ 
+    text: word?.word || '',
+    pitch: 1,
+    rate: 1,
+    volume: 1
+  });
 
   useEffect(() => {
     const categoryWords = wordData[category] || [];
@@ -38,18 +45,9 @@ function WordDetailPage() {
       // 否则在详情页之间切换
       if (nextIndex < words.length) {
         navigate(`/detail/${category}/${nextIndex}`);
-        // 用户点击按钮，立即播放新单词
-        const nextWordObj = words[nextIndex];
-        if (nextWordObj && nextWordObj.word) {
-          speak(nextWordObj.word);
-        }
       } else {
         if (window.confirm('已经是最后一个单词了，是否从头开始？')) {
           navigate(`/detail/${category}/0`);
-          const firstWordObj = words[0];
-          if (firstWordObj && firstWordObj.word) {
-            speak(firstWordObj.word);
-          }
         }
       }
     }
@@ -65,27 +63,12 @@ function WordDetailPage() {
       // 否则在详情页之间切换
       if (prevIndex >= 0) {
         navigate(`/detail/${category}/${prevIndex}`);
-        // 用户点击按钮，立即播放新单词
-        const prevWordObj = words[prevIndex];
-        if (prevWordObj && prevWordObj.word) {
-          speak(prevWordObj.word);
-        }
       } else {
         if (window.confirm('已经是第一个单词了，是否跳转到最后一个？')) {
           const lastIndex = words.length - 1;
           navigate(`/detail/${category}/${lastIndex}`);
-          const lastWordObj = words[lastIndex];
-          if (lastWordObj && lastWordObj.word) {
-            speak(lastWordObj.word);
-          }
         }
       }
-    }
-  };
-
-  const playDetailPronunciation = () => {
-    if (word) {
-      speak(word.word);
     }
   };
 
@@ -153,10 +136,17 @@ function WordDetailPage() {
       <main className="detail-content">
         <div className="detail-card">
           <div className="detail-header">
-            <div className="word-title" onClick={playDetailPronunciation}>
+            <div 
+              className="word-title"
+              onClick={() => {
+                start();
+              }}
+              style={{ cursor: 'pointer' }}
+              title="点击播放发音"
+            >
               {word.word}
             </div>
-            <div className="phonetic" onClick={playDetailPronunciation}>
+            <div className="phonetic">
               {word.phonetic || '/ˈwɜːrd/'}
             </div>
             <div className="word-progress">

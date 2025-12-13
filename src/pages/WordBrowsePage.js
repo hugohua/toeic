@@ -1,21 +1,24 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { useSpeech } from 'react-text-to-speech';
 import { wordData } from '../data';
 import Header from '../components/Header';
 import { getCategoryName } from '../utils/app';
-import { useGlobalSpeech } from '../utils/speechContext';
 
 function WordBrowsePage() {
   const { category } = useParams();
-  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [words, setWords] = useState([]);
   const [currentWord, setCurrentWord] = useState(null);
   const browseContentRef = useRef(null);
-  const touchStartX = useRef(0);
-  const touchStartY = useRef(0);
-  const minSwipeDistance = 50;
-  const { speak } = useGlobalSpeech();
+  
+  // 使用 useSpeech，传入当前单词作为 text
+  const { start } = useSpeech({ 
+    text: currentWord?.word || '',
+    pitch: 1,
+    rate: 1,
+    volume: 1
+  });
 
   useEffect(() => {
     const categoryWords = wordData[category] || [];
@@ -46,22 +49,10 @@ function WordBrowsePage() {
       const nextIndex = currentIndex + 1;
       setCurrentIndex(nextIndex);
       window.scrollTo(0, 0);
-      
-      // 用户点击按钮，立即播放新单词
-      const nextWordObj = words[nextIndex];
-      if (nextWordObj && nextWordObj.word) {
-        speak(nextWordObj.word);
-      }
     } else {
       if (window.confirm('已经是最后一个单词了，是否从头开始？')) {
         setCurrentIndex(0);
         window.scrollTo(0, 0);
-        
-        // 用户点击确认，立即播放第一个单词
-        const firstWordObj = words[0];
-        if (firstWordObj && firstWordObj.word) {
-          speak(firstWordObj.word);
-        }
       }
     }
   };
@@ -71,30 +62,12 @@ function WordBrowsePage() {
       const prevIndex = currentIndex - 1;
       setCurrentIndex(prevIndex);
       window.scrollTo(0, 0);
-      
-      // 用户点击按钮，立即播放新单词
-      const prevWordObj = words[prevIndex];
-      if (prevWordObj && prevWordObj.word) {
-        speak(prevWordObj.word);
-      }
     } else {
       if (window.confirm('已经是第一个单词了，是否跳转到最后一个？')) {
         const lastIndex = words.length - 1;
         setCurrentIndex(lastIndex);
         window.scrollTo(0, 0);
-        
-        // 用户点击确认，立即播放最后一个单词
-        const lastWordObj = words[lastIndex];
-        if (lastWordObj && lastWordObj.word) {
-          speak(lastWordObj.word);
-        }
       }
-    }
-  };
-
-  const playDetailPronunciation = () => {
-    if (currentWord) {
-      speak(currentWord.word);
     }
   };
 
@@ -170,10 +143,17 @@ function WordBrowsePage() {
       <main className="detail-content" ref={browseContentRef}>
         <div className="detail-card">
           <div className="detail-header">
-            <div className="word-title" onClick={playDetailPronunciation}>
+            <div 
+              className="word-title"
+              onClick={() => {
+                start();
+              }}
+              style={{ cursor: 'pointer' }}
+              title="点击播放发音"
+            >
               {currentWord.word}
             </div>
-            <div className="phonetic" onClick={playDetailPronunciation}>
+            <div className="phonetic">
               {currentWord.phonetic || '/ˈwɜːrd/'}
             </div>
           </div>

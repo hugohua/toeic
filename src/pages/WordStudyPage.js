@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
+import { useSpeech } from "react-text-to-speech";
 import { wordData } from '../data';
 import Header from '../components/Header';
 import { getCategoryName } from '../utils/app';
-import { useGlobalSpeech } from '../utils/speechContext';
 import {
   startStudy,
   saveWordStatus,
@@ -18,7 +18,14 @@ function WordStudyPage() {
   const [words, setWords] = useState([]);
   const [currentWord, setCurrentWord] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const { speak } = useGlobalSpeech();
+  
+  // 使用 useSpeech，传入当前单词作为 text
+  const { start } = useSpeech({ 
+    text: currentWord?.word || '',
+    pitch: 1,
+    rate: 1,
+    volume: 1
+  });
 
   // 初始化学习
   useEffect(() => {
@@ -90,7 +97,6 @@ function WordStudyPage() {
               setCurrentIndex(nextIndex);
               setCurrentWord(words[nextIndex]);
               saveProgress(nextIndex);
-              lastPlayedWordRef.current = null; // 重置播放记录
             } else {
               // 已经是最后一个单词
               alert('恭喜！该分类的所有单词都已学习完成！');
@@ -202,12 +208,6 @@ function WordStudyPage() {
     navigate(`/detail/${category}/${currentIndex}?from=study`);
   };
 
-  const playPronunciation = () => {
-    if (currentWord) {
-      speak(currentWord.word);
-    }
-  };
-
   if (isLoading) {
     return <div>加载中...</div>;
   }
@@ -235,13 +235,19 @@ function WordStudyPage() {
       <main className="study-content">
         <div className="word-display">
           <div className="word-card">
-            <div className="word-text" onClick={playPronunciation}>
+            <div 
+              className="word-text"
+              onClick={() => {
+                start();
+              }}
+              style={{ cursor: 'pointer' }}
+              title="点击播放发音"
+            >
               {currentWord.word}
             </div>
-            <div className="phonetic" onClick={playPronunciation}>
+            <div className="phonetic">
               {currentWord.phonetic || '/ˈwɜːrd/'}
             </div>
-            <div className="play-hint">点击单词或音标播放发音</div>
             <button
               className="btn-view-detail"
               onClick={viewWordDetail}
