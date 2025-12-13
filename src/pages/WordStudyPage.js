@@ -19,7 +19,6 @@ function WordStudyPage() {
   const [currentWord, setCurrentWord] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const { speak } = useGlobalSpeech();
-  const lastPlayedWordRef = useRef(null); // 跟踪上一次播放的单词
 
   // 初始化学习
   useEffect(() => {
@@ -65,18 +64,6 @@ function WordStudyPage() {
   useEffect(() => {
     startStudy();
   }, []);
-
-  // 自动播放单词发音（只在单词变化时播放一次）
-  useEffect(() => {
-    if (currentWord && currentWord.word && !isLoading && currentWord.word !== lastPlayedWordRef.current) {
-      lastPlayedWordRef.current = currentWord.word; // 记录当前单词
-      // 延迟一点播放，确保页面已经渲染
-      const timer = setTimeout(() => {
-        speak(currentWord.word);
-      }, 100);
-      return () => clearTimeout(timer);
-    }
-  }, [currentWord, isLoading, speak]);
 
   // 保存当前进度
   const saveProgress = (index) => {
@@ -131,7 +118,6 @@ function WordStudyPage() {
             setCurrentIndex(nextIndex);
             setCurrentWord(words[nextIndex]);
             saveProgress(nextIndex);
-            lastPlayedWordRef.current = null; // 重置播放记录
           } else {
             // 已经是最后一个单词
             alert('恭喜！该分类的所有单词都已学习完成！');
@@ -175,7 +161,6 @@ function WordStudyPage() {
       if (targetIndex >= 0 && targetIndex < words.length) {
         setCurrentIndex(targetIndex);
         setCurrentWord(words[targetIndex]);
-        lastPlayedWordRef.current = null; // 重置播放记录，确保新单词能播放
         saveProgress(targetIndex);
       }
     }
@@ -195,7 +180,6 @@ function WordStudyPage() {
             // 还有下一个单词
             setCurrentIndex(nextIndex);
             setCurrentWord(words[nextIndex]);
-            lastPlayedWordRef.current = null; // 重置播放记录
             saveProgress(nextIndex);
           } else {
             // 已经是最后一个单词

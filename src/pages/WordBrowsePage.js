@@ -16,7 +16,6 @@ function WordBrowsePage() {
   const touchStartY = useRef(0);
   const minSwipeDistance = 50;
   const { speak } = useGlobalSpeech();
-  const lastPlayedWordRef = useRef(null); // 跟踪上一次播放的单词
 
   useEffect(() => {
     const categoryWords = wordData[category] || [];
@@ -28,8 +27,6 @@ function WordBrowsePage() {
 
     if (categoryWords.length > 0) {
       setCurrentWord(categoryWords[initialIndex]);
-      // 重置播放记录，确保进入新分类时能播放
-      lastPlayedWordRef.current = null;
     }
   }, [category]);
 
@@ -39,29 +36,10 @@ function WordBrowsePage() {
       // 检查单词是否真的变化了（比较单词文本）
       if (!currentWord || currentWord.word !== newWord.word) {
         setCurrentWord(newWord);
-        // 重置播放记录，确保新单词能播放
-        lastPlayedWordRef.current = null;
       }
       sessionStorage.setItem(`browseIndex_${category}`, currentIndex);
     }
   }, [currentIndex, words, category]);
-
-  // 自动播放单词发音（只在单词变化时播放一次）
-  // 注意：只有在首次进入页面或单词变化时自动播放，按钮点击时的播放已在按钮处理函数中
-  useEffect(() => {
-    if (currentWord && currentWord.word) {
-      // 检查是否是新的单词
-      if (currentWord.word !== lastPlayedWordRef.current) {
-        lastPlayedWordRef.current = currentWord.word; // 记录当前单词
-        // 延迟播放，确保页面已经渲染和语音系统就绪
-        const timer = setTimeout(() => {
-          console.log('自动播放:', currentWord.word);
-          speak(currentWord.word);
-        }, 100);
-        return () => clearTimeout(timer);
-      }
-    }
-  }, [currentWord, speak]);
 
   const nextWord = () => {
     if (currentIndex < words.length - 1) {
@@ -69,13 +47,10 @@ function WordBrowsePage() {
       setCurrentIndex(nextIndex);
       window.scrollTo(0, 0);
       
-      // 用户点击按钮，这是用户交互，立即播放新单词
-      // 传入 true 表示这是用户交互触发的播放，确保语音系统激活
+      // 用户点击按钮，立即播放新单词
       const nextWordObj = words[nextIndex];
       if (nextWordObj && nextWordObj.word) {
-        lastPlayedWordRef.current = nextWordObj.word;
-        // 立即播放，因为这是用户交互
-        speak(nextWordObj.word, true);
+        speak(nextWordObj.word);
       }
     } else {
       if (window.confirm('已经是最后一个单词了，是否从头开始？')) {
@@ -85,8 +60,7 @@ function WordBrowsePage() {
         // 用户点击确认，立即播放第一个单词
         const firstWordObj = words[0];
         if (firstWordObj && firstWordObj.word) {
-          lastPlayedWordRef.current = firstWordObj.word;
-          speak(firstWordObj.word, true);
+          speak(firstWordObj.word);
         }
       }
     }
@@ -98,11 +72,10 @@ function WordBrowsePage() {
       setCurrentIndex(prevIndex);
       window.scrollTo(0, 0);
       
-      // 用户点击按钮，这是用户交互，立即播放新单词
+      // 用户点击按钮，立即播放新单词
       const prevWordObj = words[prevIndex];
       if (prevWordObj && prevWordObj.word) {
-        lastPlayedWordRef.current = prevWordObj.word;
-        speak(prevWordObj.word, true);
+        speak(prevWordObj.word);
       }
     } else {
       if (window.confirm('已经是第一个单词了，是否跳转到最后一个？')) {
@@ -113,8 +86,7 @@ function WordBrowsePage() {
         // 用户点击确认，立即播放最后一个单词
         const lastWordObj = words[lastIndex];
         if (lastWordObj && lastWordObj.word) {
-          lastPlayedWordRef.current = lastWordObj.word;
-          speak(lastWordObj.word, true);
+          speak(lastWordObj.word);
         }
       }
     }
@@ -122,8 +94,7 @@ function WordBrowsePage() {
 
   const playDetailPronunciation = () => {
     if (currentWord) {
-      // 用户点击单词，这是用户交互，传入 true 确保语音系统激活
-      speak(currentWord.word, true);
+      speak(currentWord.word);
     }
   };
 
