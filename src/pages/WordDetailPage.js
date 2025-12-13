@@ -6,6 +6,28 @@ import Header from '../components/Header';
 import { getCategoryName } from '../utils/app';
 import * as storage from '../utils/storage';
 
+// 易混淆单词单元格组件，支持发音功能
+function ConfusingWordCell({ wordText }) {
+  const { start } = useSpeech({
+    text: wordText || '',
+    pitch: 1,
+    rate: 1,
+    volume: 1
+  });
+
+  return (
+    <strong
+      onClick={() => {
+        start();
+      }}
+      style={{ cursor: 'pointer' }}
+      title="点击播放发音"
+    >
+      {wordText}
+    </strong>
+  );
+}
+
 function WordDetailPage() {
   const { category, index } = useParams();
   const navigate = useNavigate();
@@ -107,22 +129,44 @@ function WordDetailPage() {
     exampleSentencesHtml = '<p style="color: #999;">暂无例句</p>';
   }
 
-  let confusingWordsHtml = '';
-  if (
-    word.confusingWordsComparison &&
-    Array.isArray(word.confusingWordsComparison)
-  ) {
-    confusingWordsHtml =
-      '<table class="confusing-words-table"><thead><tr><th>单词</th><th>核心区别</th><th>TOEIC场景重点</th></tr></thead><tbody>';
-    word.confusingWordsComparison.forEach((item) => {
-      confusingWordsHtml += `<tr><td><strong>${item.word}</strong></td><td>${item.coreDifference}</td><td>${item.toeicSceneFocus}</td></tr>`;
-    });
-    confusingWordsHtml += '</tbody></table>';
-  } else if (word.confusionDistinction) {
-    confusingWordsHtml = word.confusionDistinction;
-  } else {
-    confusingWordsHtml = '暂无';
-  }
+  // 渲染易混淆词区分组件
+  const renderConfusingWords = () => {
+    if (
+      word.confusingWordsComparison &&
+      Array.isArray(word.confusingWordsComparison) &&
+      word.confusingWordsComparison.length > 0
+    ) {
+      return (
+        <table className="confusing-words-table">
+          <thead>
+            <tr>
+              <th>单词</th>
+              <th>核心区别</th>
+              <th>TOEIC场景重点</th>
+            </tr>
+          </thead>
+          <tbody>
+            {word.confusingWordsComparison.map((item, index) => (
+              <tr key={index}>
+                <td>
+                  <ConfusingWordCell wordText={item.word} />
+                </td>
+                <td>{item.coreDifference}</td>
+                <td>{item.toeicSceneFocus}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      );
+    } else if (word.confusionDistinction) {
+      // 如果存在 confusionDistinction 字符串，使用 dangerouslySetInnerHTML 作为后备
+      return (
+        <div dangerouslySetInnerHTML={{ __html: word.confusionDistinction }} />
+      );
+    } else {
+      return <div>暂无</div>;
+    }
+  };
 
   return (
     <div className="container">
@@ -198,10 +242,9 @@ function WordDetailPage() {
 
           <div className="detail-section">
             <h3 className="section-title">易混淆词区分</h3>
-            <div
-              className="section-content"
-              dangerouslySetInnerHTML={{ __html: confusingWordsHtml }}
-            />
+            <div className="section-content">
+              {renderConfusingWords()}
+            </div>
           </div>
         </div>
       </main>
