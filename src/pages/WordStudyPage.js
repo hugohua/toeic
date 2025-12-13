@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { wordData } from '../data';
 import Header from '../components/Header';
@@ -7,10 +7,6 @@ import { useGlobalSpeech } from '../utils/speechContext';
 import {
   startStudy,
   saveWordStatus,
-  getStudyGroupProgress,
-  saveStudyGroupProgress,
-  clearStudyGroupProgress,
-  getNextStudyGroup,
 } from '../utils/storage';
 import { scheduleReview } from '../utils/ebbinghaus';
 
@@ -18,13 +14,14 @@ function WordStudyPage() {
   const { category } = useParams();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
-  const [currentGroupIndex, setCurrentGroupIndex] = useState(0); // 当前组内的索引
-  const [studyGroup, setStudyGroup] = useState([]); // 当前学习组的单词列表
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [words, setWords] = useState([]);
   const [currentWord, setCurrentWord] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const { speak } = useGlobalSpeech();
+  const lastPlayedWordRef = useRef(null); // 跟踪上一次播放的单词
 
-  // 初始化学习组
+  // 初始化学习
   useEffect(() => {
     const categoryWords = wordData[category] || [];
     if (categoryWords.length === 0) {
@@ -32,110 +29,63 @@ function WordStudyPage() {
       return;
     }
 
-    // 检查是否有未完成的学习组
-    const savedProgress = getStudyGroupProgress(category);
+    setWords(categoryWords);
 
-    if (
-      savedProgress &&
-      savedProgress.groupWords &&
-      savedProgress.groupWords.length > 0
-    ) {
-      // 恢复未完成的学习组
-      setStudyGroup(savedProgress.groupWords);
-      const indexParam = searchParams.get('index');
-      if (indexParam !== null) {
-        const targetIndex = parseInt(indexParam);
-        if (targetIndex >= 0 && targetIndex < savedProgress.groupWords.length) {
-          setCurrentGroupIndex(targetIndex);
-          setCurrentWord(savedProgress.groupWords[targetIndex].word);
-          setIsLoading(false);
-          return;
-        }
+    // 恢复保存的进度
+    const savedIndex = localStorage.getItem(`studyIndex_${category}`);
+    const indexParam = searchParams.get('index');
+    
+    let initialIndex = 0;
+    if (indexParam !== null) {
+      initialIndex = parseInt(indexParam);
+      if (initialIndex >= 0 && initialIndex < categoryWords.length) {
+        setCurrentIndex(initialIndex);
+        setCurrentWord(categoryWords[initialIndex]);
+      } else {
+        setCurrentIndex(0);
+        setCurrentWord(categoryWords[0]);
       }
-      // 使用保存的进度
-      const savedIndex = savedProgress.currentIndex || 0;
-      setCurrentGroupIndex(savedIndex);
-      setCurrentWord(savedProgress.groupWords[savedIndex].word);
+    } else if (savedIndex !== null) {
+      initialIndex = parseInt(savedIndex);
+      if (initialIndex >= 0 && initialIndex < categoryWords.length) {
+        setCurrentIndex(initialIndex);
+        setCurrentWord(categoryWords[initialIndex]);
+      } else {
+        setCurrentIndex(0);
+        setCurrentWord(categoryWords[0]);
+      }
     } else {
-      // 创建新的学习组
-      const completedWordKeys = new Set();
-      // 获取所有已完成的单词（通过检查localStorage中的单词状态）
-      categoryWords.forEach((word) => {
-        const wordKey = `${category}-${word.word}`;
-        const statusData = localStorage.getItem(`word_${wordKey}`);
-        if (statusData) {
-          completedWordKeys.add(wordKey);
-        }
-      });
-
-      const newGroup = getNextStudyGroup(
-        category,
-        categoryWords,
-        completedWordKeys
-      );
-
-      if (!newGroup || newGroup.length === 0) {
-        // 所有单词都已完成
-        alert('恭喜！该分类的所有单词都已学习完成！');
-        navigate(`/list/${category}`);
-        setIsLoading(false);
-        return;
-      }
-
-      setStudyGroup(newGroup);
-      setCurrentGroupIndex(0);
-      setCurrentWord(newGroup[0].word);
-
-      // 保存新的学习组进度
-      saveStudyGroupProgress(category, {
-        groupWords: newGroup,
-        currentIndex: 0,
-        createdAt: Date.now(),
-      });
+      setCurrentIndex(0);
+      setCurrentWord(categoryWords[0]);
     }
 
     setIsLoading(false);
-  }, [category, searchParams, navigate]);
+  }, [category, searchParams]);
 
   useEffect(() => {
     startStudy();
   }, []);
 
+  // 自动播放单词发音（只在单词变化时播放一次）
+  useEffect(() => {
+    if (currentWord && currentWord.word && !isLoading && currentWord.word !== lastPlayedWordRef.current) {
+      lastPlayedWordRef.current = currentWord.word; // 记录当前单词
+      // 延迟一点播放，确保页面已经渲染
+      const timer = setTimeout(() => {
+        speak(currentWord.word);
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [currentWord, isLoading, speak]);
+
   // 保存当前进度
   const saveProgress = (index) => {
-    if (studyGroup.length > 0) {
-      saveStudyGroupProgress(category, {
-        groupWords: studyGroup,
-        currentIndex: index,
-        createdAt: Date.now(),
-      });
-    }
-  };
-
-  // 检查是否完成当前组
-  const checkGroupCompletion = () => {
-    // 检查当前组的所有单词是否都已学习
-    const allCompleted = studyGroup.every((item) => {
-      const wordKey = `${category}-${item.word.word}`;
-      const statusData = localStorage.getItem(`word_${wordKey}`);
-      return statusData !== null;
-    });
-
-    if (allCompleted) {
-      // 清除当前组进度
-      clearStudyGroupProgress(category);
-      // 提示完成
-      alert('恭喜！本组20个单词已全部学习完成！');
-      // 返回列表页
-      navigate(`/list/${category}`);
-      return true;
-    }
-    return false;
+    localStorage.setItem(`studyIndex_${category}`, index.toString());
   };
 
   // 监听页面可见性变化，当从详情页返回时自动继续下一个单词
   useEffect(() => {
-    if (studyGroup.length === 0 || !currentWord) return;
+    if (words.length === 0 || !currentWord) return;
 
     const handleVisibilityChange = () => {
       if (document.visibilityState === 'visible') {
@@ -146,18 +96,19 @@ function WordStudyPage() {
 
           if (statusData) {
             // 当前单词已学习，继续下一个
-            setCurrentGroupIndex((prevIndex) => {
-              const nextIndex = prevIndex + 1;
-              if (nextIndex < studyGroup.length) {
-                setCurrentWord(studyGroup[nextIndex].word);
-                saveProgress(nextIndex);
-                return nextIndex;
-              } else {
-                // 已到组内最后一个单词，检查是否完成
-                checkGroupCompletion();
-                return prevIndex;
-              }
-            });
+            const nextIndex = currentIndex + 1;
+            
+            if (nextIndex < words.length) {
+              // 还有下一个单词
+              setCurrentIndex(nextIndex);
+              setCurrentWord(words[nextIndex]);
+              saveProgress(nextIndex);
+              lastPlayedWordRef.current = null; // 重置播放记录
+            } else {
+              // 已经是最后一个单词
+              alert('恭喜！该分类的所有单词都已学习完成！');
+              navigate(`/list/${category}`);
+            }
           }
         }, 300);
       }
@@ -173,18 +124,19 @@ function WordStudyPage() {
 
         if (statusData) {
           // 当前单词已学习，继续下一个
-          setCurrentGroupIndex((prevIndex) => {
-            const nextIndex = prevIndex + 1;
-            if (nextIndex < studyGroup.length) {
-              setCurrentWord(studyGroup[nextIndex].word);
-              saveProgress(nextIndex);
-              return nextIndex;
-            } else {
-              // 已到组内最后一个单词，检查是否完成
-              checkGroupCompletion();
-              return prevIndex;
-            }
-          });
+          const nextIndex = currentIndex + 1;
+          
+          if (nextIndex < words.length) {
+            // 还有下一个单词
+            setCurrentIndex(nextIndex);
+            setCurrentWord(words[nextIndex]);
+            saveProgress(nextIndex);
+            lastPlayedWordRef.current = null; // 重置播放记录
+          } else {
+            // 已经是最后一个单词
+            alert('恭喜！该分类的所有单词都已学习完成！');
+            navigate(`/list/${category}`);
+          }
         }
       }, 300);
     };
@@ -195,7 +147,7 @@ function WordStudyPage() {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
       window.removeEventListener('focus', handleFocus);
     };
-  }, [studyGroup, currentWord, category]);
+  }, [words, currentWord, category, navigate, currentIndex]);
 
   const showWordDetail = (status) => {
     if (!currentWord) return;
@@ -207,45 +159,63 @@ function WordStudyPage() {
     saveWordStatus(wordKey, status, now);
     scheduleReview(wordKey, status, now);
 
-    // 获取当前单词在原数组中的索引
-    const currentItem = studyGroup[currentGroupIndex];
-    const originalIndex = currentItem ? currentItem.originalIndex : 0;
-
     // 跳转到单词详情页，添加from=study参数标识从学习页面跳转
-    navigate(`/detail/${category}/${originalIndex}?from=study`);
+    navigate(`/detail/${category}/${currentIndex}?from=study`);
   };
 
   // 从详情页返回后，继续下一个单词
   useEffect(() => {
-    const indexParam = searchParams.get('index');
-    if (indexParam !== null && studyGroup.length > 0) {
-      const targetOriginalIndex = parseInt(indexParam);
-      // 在当前组中查找对应的单词
-      const groupItemIndex = studyGroup.findIndex(
-        (item) => item.originalIndex === targetOriginalIndex
-      );
-      if (groupItemIndex >= 0) {
-        setCurrentGroupIndex(groupItemIndex);
-        setCurrentWord(studyGroup[groupItemIndex].word);
-        saveProgress(groupItemIndex);
+    if (words.length === 0 || !currentWord || isLoading) return;
 
-        // 检查是否完成
-        setTimeout(() => {
-          checkGroupCompletion();
-        }, 100);
+    const indexParam = searchParams.get('index');
+    
+    // 如果有 index 参数，根据参数定位单词
+    if (indexParam !== null) {
+      const targetIndex = parseInt(indexParam);
+      if (targetIndex >= 0 && targetIndex < words.length) {
+        setCurrentIndex(targetIndex);
+        setCurrentWord(words[targetIndex]);
+        lastPlayedWordRef.current = null; // 重置播放记录，确保新单词能播放
+        saveProgress(targetIndex);
       }
     }
-  }, [searchParams, studyGroup, category, navigate]);
+
+    // 如果没有 index 参数，检查当前单词是否已学习，如果是则前进到下一个
+    const checkAndContinueTimer = setTimeout(() => {
+      if (indexParam === null) {
+        // 没有 index 参数，说明是从详情页直接返回的
+        const wordKey = `${category}-${currentWord.word}`;
+        const statusData = localStorage.getItem(`word_${wordKey}`);
+
+        if (statusData) {
+          // 当前单词已学习，继续下一个
+          const nextIndex = currentIndex + 1;
+          
+          if (nextIndex < words.length) {
+            // 还有下一个单词
+            setCurrentIndex(nextIndex);
+            setCurrentWord(words[nextIndex]);
+            lastPlayedWordRef.current = null; // 重置播放记录
+            saveProgress(nextIndex);
+          } else {
+            // 已经是最后一个单词
+            alert('恭喜！该分类的所有单词都已学习完成！');
+            navigate(`/list/${category}`);
+          }
+        }
+      }
+    }, 200); // 延迟200ms确保页面已完全加载
+
+    return () => {
+      clearTimeout(checkAndContinueTimer);
+    };
+  }, [searchParams, words, category, navigate, isLoading, currentWord, currentIndex]);
 
   const viewWordDetail = () => {
     if (!currentWord) return;
 
-    // 获取当前单词在原数组中的索引
-    const currentItem = studyGroup[currentGroupIndex];
-    const originalIndex = currentItem ? currentItem.originalIndex : 0;
-
     // 查看当前单词详情，添加from=study参数标识从学习页面跳转
-    navigate(`/detail/${category}/${originalIndex}?from=study`);
+    navigate(`/detail/${category}/${currentIndex}?from=study`);
   };
 
   const playPronunciation = () => {
@@ -258,7 +228,7 @@ function WordStudyPage() {
     return <div>加载中...</div>;
   }
 
-  if (!currentWord || studyGroup.length === 0) {
+  if (!currentWord || words.length === 0) {
     return (
       <div className="container">
         <Header title={getCategoryName(category)} showBack />
@@ -275,8 +245,8 @@ function WordStudyPage() {
         title={getCategoryName(category)}
         showBack
         showProgress
-        currentIndex={currentGroupIndex + 1}
-        totalWords={studyGroup.length}
+        currentIndex={currentIndex + 1}
+        totalWords={words.length}
       />
       <main className="study-content">
         <div className="word-display">

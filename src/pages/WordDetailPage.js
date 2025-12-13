@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { wordData } from '../data';
 import Header from '../components/Header';
@@ -15,12 +15,15 @@ function WordDetailPage() {
   const [words, setWords] = useState([]);
   const fromStudy = searchParams.get('from') === 'study'; // 检测是否从学习页面跳转
   const { speak } = useGlobalSpeech();
+  const lastPlayedWordRef = useRef(null); // 跟踪上一次播放的单词
 
   useEffect(() => {
     const categoryWords = wordData[category] || [];
     setWords(categoryWords);
     const wordIndex = parseInt(index);
     setCurrentIndex(wordIndex);
+    // 重置 lastPlayedWordRef，确保切换单词时能播放
+    lastPlayedWordRef.current = null;
     if (categoryWords[wordIndex]) {
       setWord(categoryWords[wordIndex]);
       // 滚动到顶部
@@ -28,25 +31,43 @@ function WordDetailPage() {
     }
   }, [category, index]);
 
+  // 自动播放单词发音（只在单词变化时播放一次）
+  useEffect(() => {
+    if (word && word.word && word.word !== lastPlayedWordRef.current) {
+      lastPlayedWordRef.current = word.word; // 记录当前单词
+      // 延迟一点播放，确保页面已经渲染
+      const timer = setTimeout(() => {
+        speak(word.word);
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [word]);
+
   const goToNextWord = () => {
     const nextIndex = currentIndex + 1;
     if (fromStudy) {
-      // 如果是从学习页面跳转来的，返回到学习页面显示下一个单词
-      if (nextIndex < words.length) {
-        navigate(`/study/${category}?index=${nextIndex}`);
-      } else {
-        // 已经是最后一个，可以选择循环或提示
-        if (window.confirm('已经是最后一个单词了，是否从头开始？')) {
-          navigate(`/study/${category}?index=0`);
-        }
-      }
+      // 如果是从学习页面跳转来的，返回到学习页面
+      // 让学习页面自己处理下一个单词的逻辑（它会自动检查是否完成并生成新组）
+      navigate(`/study/${category}`);
     } else {
       // 否则在详情页之间切换
       if (nextIndex < words.length) {
         navigate(`/detail/${category}/${nextIndex}`);
+        // 注意：导航后会触发 useEffect，自动播放会在那里处理
+        // 但为了确保用户交互，也在这里播放
+        const nextWordObj = words[nextIndex];
+        if (nextWordObj && nextWordObj.word) {
+          lastPlayedWordRef.current = nextWordObj.word;
+          speak(nextWordObj.word, true);
+        }
       } else {
         if (window.confirm('已经是最后一个单词了，是否从头开始？')) {
           navigate(`/detail/${category}/0`);
+          const firstWordObj = words[0];
+          if (firstWordObj && firstWordObj.word) {
+            lastPlayedWordRef.current = firstWordObj.word;
+            speak(firstWordObj.word, true);
+          }
         }
       }
     }
@@ -55,22 +76,28 @@ function WordDetailPage() {
   const goToPrevWord = () => {
     const prevIndex = currentIndex - 1;
     if (fromStudy) {
-      // 如果是从学习页面跳转来的，返回到学习页面显示上一个单词
-      if (prevIndex >= 0) {
-        navigate(`/study/${category}?index=${prevIndex}`);
-      } else {
-        // 已经是第一个，可以选择循环或提示
-        if (window.confirm('已经是第一个单词了，是否跳转到最后一个？')) {
-          navigate(`/study/${category}?index=${words.length - 1}`);
-        }
-      }
+      // 如果是从学习页面跳转来的，返回到学习页面
+      // 让学习页面自己处理上一个单词的逻辑
+      navigate(`/study/${category}`);
     } else {
       // 否则在详情页之间切换
       if (prevIndex >= 0) {
         navigate(`/detail/${category}/${prevIndex}`);
+        // 用户点击按钮，这是用户交互，立即播放新单词
+        const prevWordObj = words[prevIndex];
+        if (prevWordObj && prevWordObj.word) {
+          lastPlayedWordRef.current = prevWordObj.word;
+          speak(prevWordObj.word, true);
+        }
       } else {
         if (window.confirm('已经是第一个单词了，是否跳转到最后一个？')) {
-          navigate(`/detail/${category}/${words.length - 1}`);
+          const lastIndex = words.length - 1;
+          navigate(`/detail/${category}/${lastIndex}`);
+          const lastWordObj = words[lastIndex];
+          if (lastWordObj && lastWordObj.word) {
+            lastPlayedWordRef.current = lastWordObj.word;
+            speak(lastWordObj.word, true);
+          }
         }
       }
     }
@@ -78,7 +105,8 @@ function WordDetailPage() {
 
   const playDetailPronunciation = () => {
     if (word) {
-      speak(word.word);
+      // 用户点击单词，这是用户交互，传入 true 确保语音系统激活
+      speak(word.word, true);
     }
   };
 
