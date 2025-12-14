@@ -12,15 +12,15 @@ function WordListPage() {
   const navigate = useNavigate();
   const [words, setWords] = useState([]);
   const [speakingWord, setSpeakingWord] = useState('');
-  
+
   // 使用 useSpeech，传入要播放的单词作为 text
-  const { start } = useSpeech({ 
+  const { start } = useSpeech({
     text: speakingWord,
     pitch: 1,
     rate: 1,
-    volume: 1
+    volume: 1,
   });
-  
+
   // 当 speakingWord 变化时，自动开始播放
   useEffect(() => {
     if (speakingWord) {
@@ -121,7 +121,7 @@ function WordListPage() {
                   onClick={() => handleRowClick(index)}
                 >
                   <td className="col-word">
-                    <span 
+                    <span
                       className="word-list-text"
                       onClick={(e) => handleWordClick(e, word.word)}
                       style={{ cursor: 'pointer' }}

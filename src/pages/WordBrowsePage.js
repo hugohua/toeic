@@ -11,13 +11,13 @@ function WordBrowsePage() {
   const [words, setWords] = useState([]);
   const [currentWord, setCurrentWord] = useState(null);
   const browseContentRef = useRef(null);
-  
+
   // 使用 useSpeech，传入当前单词作为 text
-  const { start } = useSpeech({ 
+  const { start } = useSpeech({
     text: currentWord?.word || '',
     pitch: 1,
     rate: 1,
-    volume: 1
+    volume: 1,
   });
 
   useEffect(() => {
@@ -143,7 +143,7 @@ function WordBrowsePage() {
       <main className="detail-content" ref={browseContentRef}>
         <div className="detail-card">
           <div className="detail-header">
-            <div 
+            <div
               className="word-title"
               onClick={() => {
                 start();
@@ -153,9 +153,7 @@ function WordBrowsePage() {
             >
               {currentWord.word}
             </div>
-            <div className="phonetic">
-              {currentWord.phonetic || '/ˈwɜːrd/'}
-            </div>
+            <div className="phonetic">{currentWord.phonetic || '/ˈwɜːrd/'}</div>
           </div>
 
           <div className="detail-section">

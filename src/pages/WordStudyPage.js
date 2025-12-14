@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
-import { useSpeech } from "react-text-to-speech";
+import { useSpeech } from 'react-text-to-speech';
 import { wordData } from '../data';
 import Header from '../components/Header';
 import { getCategoryName } from '../utils/app';
-import {
-  startStudy,
-  saveWordStatus,
-} from '../utils/storage';
+import { startStudy, saveWordStatus } from '../utils/storage';
 import { scheduleReview } from '../utils/ebbinghaus';
 
 function WordStudyPage() {
@@ -18,13 +15,13 @@ function WordStudyPage() {
   const [words, setWords] = useState([]);
   const [currentWord, setCurrentWord] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  
+
   // 使用 useSpeech，传入当前单词作为 text
-  const { start } = useSpeech({ 
+  const { start } = useSpeech({
     text: currentWord?.word || '',
     pitch: 1,
     rate: 1,
-    volume: 1
+    volume: 1,
   });
 
   // 初始化学习
@@ -40,7 +37,7 @@ function WordStudyPage() {
     // 恢复保存的进度
     const savedIndex = localStorage.getItem(`studyIndex_${category}`);
     const indexParam = searchParams.get('index');
-    
+
     let initialIndex = 0;
     if (indexParam !== null) {
       initialIndex = parseInt(indexParam);
@@ -91,7 +88,7 @@ function WordStudyPage() {
           if (statusData) {
             // 当前单词已学习，继续下一个
             const nextIndex = currentIndex + 1;
-            
+
             if (nextIndex < words.length) {
               // 还有下一个单词
               setCurrentIndex(nextIndex);
@@ -118,7 +115,7 @@ function WordStudyPage() {
         if (statusData) {
           // 当前单词已学习，继续下一个
           const nextIndex = currentIndex + 1;
-          
+
           if (nextIndex < words.length) {
             // 还有下一个单词
             setCurrentIndex(nextIndex);
@@ -160,7 +157,7 @@ function WordStudyPage() {
     if (words.length === 0 || !currentWord || isLoading) return;
 
     const indexParam = searchParams.get('index');
-    
+
     // 如果有 index 参数，根据参数定位单词
     if (indexParam !== null) {
       const targetIndex = parseInt(indexParam);
@@ -181,7 +178,7 @@ function WordStudyPage() {
         if (statusData) {
           // 当前单词已学习，继续下一个
           const nextIndex = currentIndex + 1;
-          
+
           if (nextIndex < words.length) {
             // 还有下一个单词
             setCurrentIndex(nextIndex);
@@ -199,7 +196,15 @@ function WordStudyPage() {
     return () => {
       clearTimeout(checkAndContinueTimer);
     };
-  }, [searchParams, words, category, navigate, isLoading, currentWord, currentIndex]);
+  }, [
+    searchParams,
+    words,
+    category,
+    navigate,
+    isLoading,
+    currentWord,
+    currentIndex,
+  ]);
 
   const viewWordDetail = () => {
     if (!currentWord) return;
@@ -235,7 +240,7 @@ function WordStudyPage() {
       <main className="study-content">
         <div className="word-display">
           <div className="word-card">
-            <div 
+            <div
               className="word-text"
               onClick={() => {
                 start();
@@ -245,9 +250,7 @@ function WordStudyPage() {
             >
               {currentWord.word}
             </div>
-            <div className="phonetic">
-              {currentWord.phonetic || '/ˈwɜːrd/'}
-            </div>
+            <div className="phonetic">{currentWord.phonetic || '/ˈwɜːrd/'}</div>
             <button
               className="btn-view-detail"
               onClick={viewWordDetail}

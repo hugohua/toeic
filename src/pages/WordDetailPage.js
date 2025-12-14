@@ -12,7 +12,7 @@ function ConfusingWordCell({ wordText }) {
     text: wordText || '',
     pitch: 1,
     rate: 1,
-    volume: 1
+    volume: 1,
   });
 
   return (
@@ -38,18 +38,19 @@ function ExampleSentence({ sentence }) {
     if (match) {
       return {
         english: match[1].trim(),
-        remaining: match[2] || ''
+        remaining: match[2] || '',
       };
     }
     return { english: text, remaining: '' };
   };
 
-  const { english: englishText, remaining: remainingText } = extractEnglishText(sentence);
+  const { english: englishText, remaining: remainingText } =
+    extractEnglishText(sentence);
   const { start } = useSpeech({
     text: englishText || '',
     pitch: 1,
     rate: 1,
-    volume: 1
+    volume: 1,
   });
 
   return (
@@ -76,13 +77,13 @@ function WordDetailPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [words, setWords] = useState([]);
   const fromStudy = searchParams.get('from') === 'study'; // 检测是否从学习页面跳转
-  
+
   // 使用 useSpeech，传入当前单词作为 text
-  const { start } = useSpeech({ 
+  const { start } = useSpeech({
     text: word?.word || '',
     pitch: 1,
     rate: 1,
-    volume: 1
+    volume: 1,
   });
 
   useEffect(() => {
@@ -227,7 +228,7 @@ function WordDetailPage() {
       <main className="detail-content">
         <div className="detail-card">
           <div className="detail-header">
-            <div 
+            <div
               className="word-title"
               onClick={() => {
                 start();
@@ -237,9 +238,7 @@ function WordDetailPage() {
             >
               {word.word}
             </div>
-            <div className="phonetic">
-              {word.phonetic || '/ˈwɜːrd/'}
-            </div>
+            <div className="phonetic">{word.phonetic || '/ˈwɜːrd/'}</div>
             <div className="word-progress">
               {currentIndex + 1} / {words.length}
             </div>
@@ -271,9 +270,7 @@ function WordDetailPage() {
 
           <div className="detail-section">
             <h3 className="section-title">TOEIC例句</h3>
-            <div className="section-content">
-              {renderExampleSentences()}
-            </div>
+            <div className="section-content">{renderExampleSentences()}</div>
           </div>
 
           <div className="detail-section">
@@ -288,9 +285,7 @@ function WordDetailPage() {
 
           <div className="detail-section">
             <h3 className="section-title">易混淆词区分</h3>
-            <div className="section-content">
-              {renderConfusingWords()}
-            </div>
+            <div className="section-content">{renderConfusingWords()}</div>
           </div>
         </div>
       </main>
