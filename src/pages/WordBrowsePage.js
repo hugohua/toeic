@@ -4,12 +4,14 @@ import { useSpeech } from 'react-text-to-speech';
 import { wordData } from '../data';
 import Header from '../components/Header';
 import { getCategoryName } from '../utils/app';
+import * as storage from '../utils/storage';
 
 function WordBrowsePage() {
   const { category } = useParams();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [words, setWords] = useState([]);
   const [currentWord, setCurrentWord] = useState(null);
+  const [isFavorite, setIsFavorite] = useState(false);
   const browseContentRef = useRef(null);
 
   // 使用 useSpeech，传入当前单词作为 text
@@ -43,6 +45,22 @@ function WordBrowsePage() {
       sessionStorage.setItem(`browseIndex_${category}`, currentIndex);
     }
   }, [currentIndex, words, category]);
+
+  // 根据当前单词更新收藏状态
+  useEffect(() => {
+    if (currentWord && category) {
+      const favorite = storage.isFavoriteWord(currentWord.word, category);
+      setIsFavorite(favorite);
+    } else {
+      setIsFavorite(false);
+    }
+  }, [currentWord, category]);
+
+  const handleToggleFavorite = () => {
+    if (!currentWord || !category) return;
+    const favorite = storage.toggleFavoriteWord(currentWord.word, category);
+    setIsFavorite(favorite);
+  };
 
   const nextWord = () => {
     if (currentIndex < words.length - 1) {
@@ -143,15 +161,29 @@ function WordBrowsePage() {
       <main className="detail-content" ref={browseContentRef}>
         <div className="detail-card">
           <div className="detail-header">
-            <div
-              className="word-title"
-              onClick={() => {
-                start();
-              }}
-              style={{ cursor: 'pointer' }}
-              title="点击播放发音"
-            >
-              {currentWord.word}
+            <div className="detail-header-main">
+              <div
+                className="word-title"
+                onClick={() => {
+                  start();
+                }}
+                style={{ cursor: 'pointer' }}
+                title="点击播放发音"
+              >
+                {currentWord.word}
+              </div>
+              <button
+                type="button"
+                className={`favorite-btn ${
+                  isFavorite ? 'favorite-btn-active' : ''
+                }`}
+                onClick={handleToggleFavorite}
+                title={isFavorite ? '取消收藏该单词' : '收藏该单词'}
+              >
+                <span className="favorite-icon">
+                  {isFavorite ? '★' : '☆'}
+                </span>
+              </button>
             </div>
             <div className="phonetic">{currentWord.phonetic || '/ˈwɜːrd/'}</div>
           </div>

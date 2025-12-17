@@ -7,6 +7,7 @@ import WordBrowsePage from './pages/WordBrowsePage';
 import WordListPage from './pages/WordListPage';
 import ProfilePage from './pages/ProfilePage';
 import TestSpeechPage from './pages/TestSpeechPage';
+import FavoriteWordListPage from './pages/FavoriteWordListPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/list/:category" element={<WordListPage />} />
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="/test-speech" element={<TestSpeechPage />} />
+      <Route path="/favorites" element={<FavoriteWordListPage />} />
     </Routes>
   );
 }

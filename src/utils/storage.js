@@ -160,6 +160,63 @@ export function saveWordStatus(wordKey, status, timestamp) {
   localStorage.setItem(`word_${wordKey}`, JSON.stringify(statusData));
 }
 
+// ================= 收藏单词相关 =================
+
+const FAVORITE_WORDS_KEY = 'favoriteWords';
+
+// 获取所有收藏的单词（数组：{ word, category }）
+export function getFavoriteWords() {
+  try {
+    const dataStr = localStorage.getItem(FAVORITE_WORDS_KEY);
+    if (!dataStr) return [];
+    const list = JSON.parse(dataStr);
+    if (!Array.isArray(list)) return [];
+    return list.filter(
+      (item) => item && typeof item.word === 'string' && item.category
+    );
+  } catch (e) {
+    console.error('读取收藏单词失败', e);
+    return [];
+  }
+}
+
+// 判断某个单词是否已被收藏
+export function isFavoriteWord(word, category) {
+  const list = getFavoriteWords();
+  return list.some(
+    (item) => item.word === word && item.category === category
+  );
+}
+
+// 切换收藏状态，返回最新是否已收藏
+export function toggleFavoriteWord(word, category) {
+  if (!word || !category) return false;
+  const list = getFavoriteWords();
+  const index = list.findIndex(
+    (item) => item.word === word && item.category === category
+  );
+
+  if (index !== -1) {
+    // 取消收藏
+    list.splice(index, 1);
+  } else {
+    // 新增收藏，放到最前面
+    list.unshift({
+      word,
+      category,
+      createdAt: new Date().toISOString(),
+    });
+  }
+
+  try {
+    localStorage.setItem(FAVORITE_WORDS_KEY, JSON.stringify(list));
+  } catch (e) {
+    console.error('保存收藏单词失败', e);
+  }
+
+  return index === -1;
+}
+
 // 获取当前学习组进度
 export function getStudyGroupProgress(category) {
   const key = `studyGroup_${category}`;

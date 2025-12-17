@@ -583,6 +583,13 @@ body {
   margin-bottom: 25px;
 }
 
+.detail-header-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 .word-title {
   font-size: 42px;
   font-weight: 700;
@@ -590,6 +597,39 @@ body {
   margin-bottom: 10px;
   cursor: pointer;
   user-select: none;
+}
+
+.favorite-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  right: 9%;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.favorite-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+.favorite-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.favorite-btn .favorite-icon {
+  font-size: 18px;
+  color: #d0d0d0;
+}
+
+.favorite-btn.favorite-btn-active .favorite-icon {
+  color: #ffb400;
 }
 
 .memory-info {
@@ -750,6 +790,7 @@ body {
 
 .detail-content {
   padding-bottom: 100px; /* 为底部按钮留出空间 */
+  position: relative;
 }
 
 /* 可拖动的浮标按钮 */
@@ -1004,6 +1045,25 @@ body {
   gap: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.favorite-entry {
+  margin-top: 20px;
+}
+
+.btn-favorite-entry {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(102, 126, 234, 0.35);
+}
+
+.favorite-entry-icon {
+  font-size: 18px;
 }
 
 .btn-secondary {

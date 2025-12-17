@@ -1,54 +1,96 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSpeech } from 'react-text-to-speech';
 import { wordData } from '../data';
 import Header from '../components/Header';
 import { getCategoryName } from '../utils/app';
+import * as storage from '../utils/storage';
 import '../index.css';
 import './WordListPage.css';
 
-function WordListPage() {
-  const { category } = useParams();
-  const navigate = useNavigate();
-  const [words, setWords] = useState([]);
-  const [speakingWord, setSpeakingWord] = useState('');
-
-  // 使用 useSpeech，传入要播放的单词作为 text
+// 行内单词发音组件，避免全局 state 导致的“上一词”问题
+function WordSpeaker({ wordText, isFavorite }) {
   const { start } = useSpeech({
-    text: speakingWord,
+    text: wordText || '',
     pitch: 1,
     rate: 1,
     volume: 1,
   });
 
-  // 当 speakingWord 变化时，自动开始播放
-  useEffect(() => {
-    if (speakingWord) {
-      // 使用 setTimeout 确保 text 更新后再调用 start
-      const timer = setTimeout(() => {
+  return (
+    <span
+      className={`word-list-text ${isFavorite ? 'word-favorite' : ''}`}
+      onClick={(e) => {
+        e.stopPropagation(); // 阻止触发行点击
         start();
-      }, 10);
-      return () => clearTimeout(timer);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [speakingWord]);
+      }}
+      style={{ cursor: 'pointer' }}
+      title="点击播放发音"
+    >
+      {wordText}
+    </span>
+  );
+}
+
+function WordListPage() {
+  const { category } = useParams();
+  const navigate = useNavigate();
+  const [words, setWords] = useState([]);
+  const [showAllMeanings, setShowAllMeanings] = useState(true);
+  const [meaningVisibility, setMeaningVisibility] = useState({});
+
+  const favoriteKeySet = useMemo(() => {
+    const list = storage.getFavoriteWords();
+    const set = new Set();
+    list.forEach((item) => {
+      if (item && item.word && item.category) {
+        set.add(`${item.category}-${item.word}`);
+      }
+    });
+    return set;
+  }, []);
 
   useEffect(() => {
     const categoryWords = wordData[category] || [];
     setWords(categoryWords);
+    // 切换分类或单词列表变化时，重置释义显示状态
+    setShowAllMeanings(true);
+    setMeaningVisibility({});
   }, [category]);
 
   const handleRowClick = (index) => {
     navigate(`/detail/${category}/${index}`);
   };
 
-  const handleWordClick = (e, word) => {
-    e.stopPropagation(); // 阻止事件冒泡，避免触发行点击
-    setSpeakingWord(word); // 设置要播放的单词，useEffect 会自动调用 start
-  };
-
   const handleStartStudy = () => {
     navigate(`/study/${category}`);
+  };
+
+  // 判断某一行释义是否可见（支持全局开关 + 单行手动开关）
+  const isMeaningVisible = (index) => {
+    if (Object.prototype.hasOwnProperty.call(meaningVisibility, index)) {
+      return meaningVisibility[index];
+    }
+    return showAllMeanings;
+  };
+
+  // 列头「眼睛」图标：切换全部释义显示/隐藏
+  const handleToggleAllMeanings = (e) => {
+    e.stopPropagation();
+    setShowAllMeanings((prev) => !prev);
+    // 重置单行手动开关，让全局开关统一生效
+    setMeaningVisibility({});
+  };
+
+  // 单词释义单元格点击：只切换当前行
+  const handleMeaningCellClick = (e, index) => {
+    // 阻止触发行的跳转
+    e.stopPropagation();
+    const current = isMeaningVisible(index);
+    setMeaningVisibility((prev) => ({
+      ...prev,
+      [index]: !current,
+    }));
   };
 
   const getPartOfSpeech = (word) => {
@@ -110,7 +152,25 @@ function WordListPage() {
               <tr>
                 <th className="col-word">单词</th>
                 <th className="col-pos">词性</th>
-                <th className="col-meaning">解释</th>
+                <th className="col-meaning">
+                  <span className="meaning-header">
+                    <span>解释</span>
+                    <button
+                      type="button"
+                      className={`meaning-toggle-btn ${
+                        showAllMeanings ? 'active' : ''
+                      }`}
+                      onClick={handleToggleAllMeanings}
+                      title={
+                        showAllMeanings
+                          ? '隐藏所有单词解释'
+                          : '显示所有单词解释'
+                      }
+                    >
+                      👁
+                    </button>
+                  </span>
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -121,21 +181,25 @@ function WordListPage() {
                   onClick={() => handleRowClick(index)}
                 >
                   <td className="col-word">
-                    <span
-                      className="word-list-text"
-                      onClick={(e) => handleWordClick(e, word.word)}
-                      style={{ cursor: 'pointer' }}
-                      title="点击播放发音"
-                    >
-                      {word.word}
-                    </span>
+                    <WordSpeaker
+                      wordText={word.word}
+                      isFavorite={
+                        favoriteKeySet.has(`${category}-${word.word}`)
+                      }
+                    />
                   </td>
                   <td className="col-pos">
                     <span className="pos-text">{getPartOfSpeech(word)}</span>
                   </td>
-                  <td className="col-meaning">
+                  <td
+                    className="col-meaning"
+                    onClick={(e) => handleMeaningCellClick(e, index)}
+                    style={{ cursor: 'pointer' }}
+                  >
                     <span className="meaning-text">
-                      {getShortMeaning(word)}
+                      {isMeaningVisible(index)
+                        ? getShortMeaning(word)
+                        : '点击显示释义'}
                     </span>
                   </td>
                 </tr>

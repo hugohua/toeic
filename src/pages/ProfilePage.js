@@ -179,6 +179,16 @@ function ProfilePage() {
           </div>
         )}
 
+        <div className="favorite-entry">
+          <button
+            className="btn-primary btn-favorite-entry"
+            onClick={() => navigate('/favorites')}
+          >
+            <span className="favorite-entry-icon">★</span>
+            <span>查看收藏单词</span>
+          </button>
+        </div>
+
         <div className="action-buttons">
           <button className="btn-secondary" onClick={handleClearToday}>
             清除今天数据
