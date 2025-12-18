@@ -36,10 +36,24 @@ function WordListPage() {
   const { category } = useParams();
   const navigate = useNavigate();
   const [words, setWords] = useState([]);
-  const [showAllMeanings, setShowAllMeanings] = useState(false);
-  const [meaningVisibility, setMeaningVisibility] = useState({});
+  
+  // 从 sessionStorage 恢复状态
+  const getStorageKey = (key) => `wordList_${category}_${key}`;
+  
+  const [showAllMeanings, setShowAllMeanings] = useState(() => {
+    const saved = sessionStorage.getItem(getStorageKey('showAllMeanings'));
+    return saved ? JSON.parse(saved) : false;
+  });
+  
+  const [meaningVisibility, setMeaningVisibility] = useState(() => {
+    const saved = sessionStorage.getItem(getStorageKey('meaningVisibility'));
+    return saved ? JSON.parse(saved) : {};
+  });
+  
+  const [favoriteWords, setFavoriteWords] = useState(new Set());
 
-  const favoriteKeySet = useMemo(() => {
+  // 初始化收藏状态
+  useEffect(() => {
     const list = storage.getFavoriteWords();
     const set = new Set();
     list.forEach((item) => {
@@ -47,18 +61,64 @@ function WordListPage() {
         set.add(`${item.category}-${item.word}`);
       }
     });
-    return set;
+    setFavoriteWords(set);
   }, []);
 
+  const favoriteKeySet = useMemo(() => {
+    return favoriteWords;
+  }, [favoriteWords]);
+
+  // 加载单词列表
   useEffect(() => {
     const categoryWords = wordData[category] || [];
     setWords(categoryWords);
-    // 切换分类或单词列表变化时，重置释义显示状态
-    setShowAllMeanings(false);
-    setMeaningVisibility({});
+  }, [category]);
+
+  // 保存释义显示状态到 sessionStorage
+  useEffect(() => {
+    sessionStorage.setItem(
+      getStorageKey('showAllMeanings'),
+      JSON.stringify(showAllMeanings)
+    );
+  }, [showAllMeanings, category]);
+
+  useEffect(() => {
+    sessionStorage.setItem(
+      getStorageKey('meaningVisibility'),
+      JSON.stringify(meaningVisibility)
+    );
+  }, [meaningVisibility, category]);
+
+  // 恢复滚动位置
+  useEffect(() => {
+    const savedScrollPos = sessionStorage.getItem(getStorageKey('scrollPos'));
+    if (savedScrollPos) {
+      // 使用 setTimeout 确保 DOM 已渲染
+      setTimeout(() => {
+        window.scrollTo(0, parseInt(savedScrollPos));
+      }, 0);
+    }
+  }, [category]);
+
+  // 保存滚动位置
+  useEffect(() => {
+    const handleScroll = () => {
+      sessionStorage.setItem(
+        getStorageKey('scrollPos'),
+        window.scrollY.toString()
+      );
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [category]);
 
   const handleRowClick = (index) => {
+    // 跳转前保存当前滚动位置
+    sessionStorage.setItem(
+      getStorageKey('scrollPos'),
+      window.scrollY.toString()
+    );
     navigate(`/detail/${category}/${index}`);
   };
 
@@ -91,6 +151,24 @@ function WordListPage() {
       ...prev,
       [index]: !current,
     }));
+  };
+
+  // 切换单词收藏状态
+  const handleToggleFavorite = (e, word) => {
+    e.stopPropagation(); // 阻止触发行点击
+    storage.toggleFavoriteWord(word, category);
+    
+    // 更新本地状态以实时反映UI变化
+    const key = `${category}-${word}`;
+    setFavoriteWords((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(key)) {
+        newSet.delete(key);
+      } else {
+        newSet.add(key);
+      }
+      return newSet;
+    });
   };
 
   const getPartOfSpeech = (word) => {
@@ -170,36 +248,52 @@ function WordListPage() {
                     </button>
                   </span>
                 </th>
+                <th className="col-favorite">收藏</th>
               </tr>
             </thead>
             <tbody>
-              {words.map((word, index) => (
-                <tr
-                  key={`${word.word}-${index}`}
-                  className="word-list-row"
-                  onClick={() => handleRowClick(index)}
-                >
-                  <td className="col-word">
-                    <WordSpeaker
-                      wordText={word.word}
-                      isFavorite={
-                        favoriteKeySet.has(`${category}-${word.word}`)
-                      }
-                    />
-                  </td>
-                  <td
-                    className="col-meaning"
-                    onClick={(e) => handleMeaningCellClick(e, index)}
-                    style={{ cursor: 'pointer' }}
+              {words.map((word, index) => {
+                const isFavorited = favoriteKeySet.has(`${category}-${word.word}`);
+                return (
+                  <tr
+                    key={`${word.word}-${index}`}
+                    className="word-list-row"
+                    onClick={() => handleRowClick(index)}
                   >
-                    <span className="meaning-text">
-                      {isMeaningVisible(index)
-                        ? getShortMeaning(word)
-                        : '点击显示释义'}
-                    </span>
-                  </td>
-                </tr>
-              ))}
+                    <td className="col-word">
+                      <WordSpeaker
+                        wordText={word.word}
+                        isFavorite={isFavorited}
+                      />
+                    </td>
+                    <td
+                      className="col-meaning"
+                      onClick={(e) => handleMeaningCellClick(e, index)}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      <span className="meaning-text">
+                        {isMeaningVisible(index)
+                          ? getShortMeaning(word)
+                          : '点击显示释义'}
+                      </span>
+                    </td>
+                    <td className="col-favorite">
+                      <button
+                        type="button"
+                        className={`list-favorite-btn ${
+                          isFavorited ? 'favorited' : ''
+                        }`}
+                        onClick={(e) => handleToggleFavorite(e, word.word)}
+                        title={isFavorited ? '取消收藏' : '收藏单词'}
+                      >
+                        <span className="favorite-icon">
+                          {isFavorited ? '★' : '☆'}
+                        </span>
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
