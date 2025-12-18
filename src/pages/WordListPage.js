@@ -36,7 +36,7 @@ function WordListPage() {
   const { category } = useParams();
   const navigate = useNavigate();
   const [words, setWords] = useState([]);
-  const [showAllMeanings, setShowAllMeanings] = useState(true);
+  const [showAllMeanings, setShowAllMeanings] = useState(false);
   const [meaningVisibility, setMeaningVisibility] = useState({});
 
   const favoriteKeySet = useMemo(() => {
@@ -54,7 +54,7 @@ function WordListPage() {
     const categoryWords = wordData[category] || [];
     setWords(categoryWords);
     // 切换分类或单词列表变化时，重置释义显示状态
-    setShowAllMeanings(true);
+    setShowAllMeanings(false);
     setMeaningVisibility({});
   }, [category]);
 
@@ -109,24 +109,24 @@ function WordListPage() {
     let meaning = word.coreMeaning || '';
 
     // 如果有partOfSpeech，从coreMeaning中移除词性部分
-    if (word.partOfSpeech) {
-      // 移除词性前缀（如 "n. 名词" 或类似格式）
-      meaning = meaning.replace(/^[nvadjadv]\.?\s*[^；，。]+[；，。]?\s*/, '');
-    }
+    // if (word.partOfSpeech) {
+    //   // 移除词性前缀（如 "n. 名词" 或类似格式）
+    //   meaning = meaning.replace(/^[nvadjadv]\.?\s*[^；，。]+[；，。]?\s*/, '');
+    // }
 
-    // 如果还有分号或逗号，取第一部分
-    if (meaning.includes('；') || meaning.includes('，')) {
-      meaning = meaning.split(/[；，]/)[0];
-    }
+    // // 如果还有分号或逗号，取第一部分
+    // if (meaning.includes('；') || meaning.includes('，')) {
+    //   meaning = meaning.split(/[；，]/)[0];
+    // }
 
-    // 移除括号中的详细说明（保留核心意思）
-    meaning = meaning.replace(/（[^）]*）/g, '');
-    meaning = meaning.replace(/\([^)]*\)/g, '');
+    // // 移除括号中的详细说明（保留核心意思）
+    // meaning = meaning.replace(/（[^）]*）/g, '');
+    // meaning = meaning.replace(/\([^)]*\)/g, '');
 
-    // 限制长度
-    if (meaning.length > 60) {
-      meaning = meaning.substring(0, 60) + '...';
-    }
+    // // 限制长度
+    // if (meaning.length > 60) {
+    //   meaning = meaning.substring(0, 60) + '...';
+    // }
 
     return meaning.trim() || '-';
   };
@@ -151,7 +151,6 @@ function WordListPage() {
             <thead>
               <tr>
                 <th className="col-word">单词</th>
-                <th className="col-pos">词性</th>
                 <th className="col-meaning">
                   <span className="meaning-header">
                     <span>解释</span>
@@ -187,9 +186,6 @@ function WordListPage() {
                         favoriteKeySet.has(`${category}-${word.word}`)
                       }
                     />
-                  </td>
-                  <td className="col-pos">
-                    <span className="pos-text">{getPartOfSpeech(word)}</span>
                   </td>
                   <td
                     className="col-meaning"
