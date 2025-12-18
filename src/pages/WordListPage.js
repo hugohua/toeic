@@ -8,27 +8,70 @@ import * as storage from '../utils/storage';
 import '../index.css';
 import './WordListPage.css';
 
-// 行内单词发音组件，避免全局 state 导致的“上一词”问题
-function WordSpeaker({ wordText, isFavorite }) {
+// 单词行组件，包含发音、释义和收藏功能
+function WordRow({
+  word,
+  index,
+  category,
+  isFavorite,
+  isMeaningVisible,
+  onRowClick,
+  onMeaningToggle,
+  onToggleFavorite,
+  getShortMeaning,
+}) {
   const { start } = useSpeech({
-    text: wordText || '',
+    text: word.word || '',
     pitch: 1,
     rate: 1,
     volume: 1,
   });
 
+  const handleWordClick = (e) => {
+    e.stopPropagation();
+    start();
+  };
+
+  const handleMeaningCellClick = (e) => {
+    e.stopPropagation();
+    // 点击释义时播放单词声音
+    start();
+    // 切换释义显示状态
+    onMeaningToggle(index);
+  };
+
   return (
-    <span
-      className={`word-list-text ${isFavorite ? 'word-favorite' : ''}`}
-      onClick={(e) => {
-        e.stopPropagation(); // 阻止触发行点击
-        start();
-      }}
-      style={{ cursor: 'pointer' }}
-      title="点击播放发音"
-    >
-      {wordText}
-    </span>
+    <tr className="word-list-row" onClick={() => onRowClick(index)}>
+      <td className="col-word">
+        <span
+          className={`word-list-text ${isFavorite ? 'word-favorite' : ''}`}
+          onClick={handleWordClick}
+          style={{ cursor: 'pointer' }}
+          title="点击播放发音"
+        >
+          {word.word}
+        </span>
+      </td>
+      <td
+        className="col-meaning"
+        onClick={handleMeaningCellClick}
+        style={{ cursor: 'pointer' }}
+      >
+        <span className="meaning-text">
+          {isMeaningVisible ? getShortMeaning(word) : '点击显示释义'}
+        </span>
+      </td>
+      <td className="col-favorite">
+        <button
+          type="button"
+          className={`list-favorite-btn ${isFavorite ? 'favorited' : ''}`}
+          onClick={(e) => onToggleFavorite(e, word.word)}
+          title={isFavorite ? '取消收藏' : '收藏单词'}
+        >
+          <span className="favorite-icon">{isFavorite ? '★' : '☆'}</span>
+        </button>
+      </td>
+    </tr>
   );
 }
 
@@ -143,9 +186,7 @@ function WordListPage() {
   };
 
   // 单词释义单元格点击：只切换当前行
-  const handleMeaningCellClick = (e, index) => {
-    // 阻止触发行的跳转
-    e.stopPropagation();
+  const handleMeaningToggle = (index) => {
     const current = isMeaningVisible(index);
     setMeaningVisibility((prev) => ({
       ...prev,
@@ -255,43 +296,18 @@ function WordListPage() {
               {words.map((word, index) => {
                 const isFavorited = favoriteKeySet.has(`${category}-${word.word}`);
                 return (
-                  <tr
+                  <WordRow
                     key={`${word.word}-${index}`}
-                    className="word-list-row"
-                    onClick={() => handleRowClick(index)}
-                  >
-                    <td className="col-word">
-                      <WordSpeaker
-                        wordText={word.word}
-                        isFavorite={isFavorited}
-                      />
-                    </td>
-                    <td
-                      className="col-meaning"
-                      onClick={(e) => handleMeaningCellClick(e, index)}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      <span className="meaning-text">
-                        {isMeaningVisible(index)
-                          ? getShortMeaning(word)
-                          : '点击显示释义'}
-                      </span>
-                    </td>
-                    <td className="col-favorite">
-                      <button
-                        type="button"
-                        className={`list-favorite-btn ${
-                          isFavorited ? 'favorited' : ''
-                        }`}
-                        onClick={(e) => handleToggleFavorite(e, word.word)}
-                        title={isFavorited ? '取消收藏' : '收藏单词'}
-                      >
-                        <span className="favorite-icon">
-                          {isFavorited ? '★' : '☆'}
-                        </span>
-                      </button>
-                    </td>
-                  </tr>
+                    word={word}
+                    index={index}
+                    category={category}
+                    isFavorite={isFavorited}
+                    isMeaningVisible={isMeaningVisible(index)}
+                    onRowClick={handleRowClick}
+                    onMeaningToggle={handleMeaningToggle}
+                    onToggleFavorite={handleToggleFavorite}
+                    getShortMeaning={getShortMeaning}
+                  />
                 );
               })}
             </tbody>

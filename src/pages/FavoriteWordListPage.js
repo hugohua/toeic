@@ -1,5 +1,6 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSpeech } from 'react-text-to-speech';
 import Header from '../components/Header';
 import { getFavoriteWords } from '../utils/storage';
 import { wordData } from '../data';
@@ -30,8 +31,83 @@ const categoryIconMap = {
   time: '📅',
 };
 
+// 收藏单词行组件，包含发音、释义显示功能
+function FavoriteWordRow({
+  item,
+  index,
+  isMeaningVisible,
+  onRowClick,
+  onMeaningToggle,
+  getShortMeaning,
+}) {
+  const { start } = useSpeech({
+    text: item.word || '',
+    pitch: 1,
+    rate: 1,
+    volume: 1,
+  });
+
+  const handleWordClick = (e) => {
+    e.stopPropagation();
+    start();
+  };
+
+  const handleMeaningCellClick = (e) => {
+    e.stopPropagation();
+    // 点击释义时播放单词声音
+    start();
+    // 切换释义显示状态
+    onMeaningToggle(index);
+  };
+
+  return (
+    <tr className="word-list-row" onClick={() => onRowClick(index)}>
+      <td className="col-word">
+        <span
+          className="word-list-text word-favorite"
+          onClick={handleWordClick}
+          style={{ cursor: 'pointer' }}
+          title="点击播放发音"
+        >
+          {item.word}
+        </span>
+      </td>
+      <td
+        className="col-meaning"
+        onClick={handleMeaningCellClick}
+        style={{ cursor: 'pointer' }}
+      >
+        <span className="meaning-text">
+          {isMeaningVisible ? getShortMeaning(item.data || {}) : '点击显示释义'}
+        </span>
+      </td>
+      <td className="col-pos">
+        <span
+          className="favorite-category-icon"
+          title={getCategoryName(item.category)}
+        >
+          {categoryIconMap[item.category] || '📘'}
+        </span>
+      </td>
+    </tr>
+  );
+}
+
 function FavoriteWordListPage() {
   const navigate = useNavigate();
+  
+  // 从 sessionStorage 恢复状态
+  const getStorageKey = (key) => `favoritesPage_${key}`;
+  
+  const [showAllMeanings, setShowAllMeanings] = useState(() => {
+    const saved = sessionStorage.getItem(getStorageKey('showAllMeanings'));
+    return saved ? JSON.parse(saved) : false;
+  });
+  
+  const [meaningVisibility, setMeaningVisibility] = useState(() => {
+    const saved = sessionStorage.getItem(getStorageKey('meaningVisibility'));
+    return saved ? JSON.parse(saved) : {};
+  });
 
   const favoriteWords = useMemo(() => {
     const list = getFavoriteWords();
@@ -52,8 +128,53 @@ function FavoriteWordListPage() {
       .filter(Boolean);
   }, []);
 
+  // 保存释义显示状态到 sessionStorage
+  useEffect(() => {
+    sessionStorage.setItem(
+      getStorageKey('showAllMeanings'),
+      JSON.stringify(showAllMeanings)
+    );
+  }, [showAllMeanings]);
+
+  useEffect(() => {
+    sessionStorage.setItem(
+      getStorageKey('meaningVisibility'),
+      JSON.stringify(meaningVisibility)
+    );
+  }, [meaningVisibility]);
+
+  // 恢复滚动位置
+  useEffect(() => {
+    const savedScrollPos = sessionStorage.getItem(getStorageKey('scrollPos'));
+    if (savedScrollPos) {
+      // 使用 setTimeout 确保 DOM 已渲染
+      setTimeout(() => {
+        window.scrollTo(0, parseInt(savedScrollPos));
+      }, 0);
+    }
+  }, []);
+
+  // 保存滚动位置
+  useEffect(() => {
+    const handleScroll = () => {
+      sessionStorage.setItem(
+        getStorageKey('scrollPos'),
+        window.scrollY.toString()
+      );
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const handleRowClick = (clickedIndex) => {
     if (!favoriteWords || favoriteWords.length === 0) return;
+
+    // 跳转前保存当前滚动位置
+    sessionStorage.setItem(
+      getStorageKey('scrollPos'),
+      window.scrollY.toString()
+    );
 
     const favoriteListState = favoriteWords.map((item) => ({
       word: item.word,
@@ -71,34 +192,33 @@ function FavoriteWordListPage() {
     });
   };
 
-  const getPartOfSpeech = (word) => {
-    if (word.partOfSpeech) {
-      const match = word.partOfSpeech.match(/^([nvadjadv]\.?)/i);
-      return match ? match[1] : word.partOfSpeech.split(' ')[0];
+  // 判断某一行释义是否可见
+  const isMeaningVisible = (index) => {
+    if (Object.prototype.hasOwnProperty.call(meaningVisibility, index)) {
+      return meaningVisibility[index];
     }
-    const meaning = word.coreMeaning || '';
-    const match = meaning.match(/^([nvadjadv]\.?\s*[^；，。]+)/);
-    return match ? match[1].trim() : '-';
+    return showAllMeanings;
+  };
+
+  // 列头「眼睛」图标：切换全部释义显示/隐藏
+  const handleToggleAllMeanings = (e) => {
+    e.stopPropagation();
+    setShowAllMeanings((prev) => !prev);
+    // 重置单行手动开关，让全局开关统一生效
+    setMeaningVisibility({});
+  };
+
+  // 单词释义单元格点击：只切换当前行
+  const handleMeaningToggle = (index) => {
+    const current = isMeaningVisible(index);
+    setMeaningVisibility((prev) => ({
+      ...prev,
+      [index]: !current,
+    }));
   };
 
   const getShortMeaning = (word) => {
     let meaning = word.coreMeaning || '';
-
-    if (word.partOfSpeech) {
-      meaning = meaning.replace(/^[nvadjadv]\.?\s*[^；，。]+[；，。]?\s*/, '');
-    }
-
-    if (meaning.includes('；') || meaning.includes('，')) {
-      meaning = meaning.split(/[；，]/)[0];
-    }
-
-    meaning = meaning.replace(/（[^）]*）/g, '');
-    meaning = meaning.replace(/\([^)]*\)/g, '');
-
-    if (meaning.length > 60) {
-      meaning = meaning.substring(0, 60) + '...';
-    }
-
     return meaning.trim() || '-';
   };
 
@@ -122,40 +242,39 @@ function FavoriteWordListPage() {
             <thead>
               <tr>
                 <th className="col-word">单词</th>
-                <th className="col-pos">词性</th>
-                <th className="col-meaning">解释</th>
+                <th className="col-meaning">
+                  <span className="meaning-header">
+                    <span>解释</span>
+                    <button
+                      type="button"
+                      className={`meaning-toggle-btn ${
+                        showAllMeanings ? 'active' : ''
+                      }`}
+                      onClick={handleToggleAllMeanings}
+                      title={
+                        showAllMeanings
+                          ? '隐藏所有单词解释'
+                          : '显示所有单词解释'
+                      }
+                    >
+                      👁
+                    </button>
+                  </span>
+                </th>
                 <th className="col-pos">场景</th>
               </tr>
             </thead>
             <tbody>
               {favoriteWords.map((item, index) => (
-                <tr
+                <FavoriteWordRow
                   key={`${item.category}-${item.word}-${index}`}
-                  className="word-list-row"
-                  onClick={() => handleRowClick(index)}
-                >
-                  <td className="col-word">
-                    <span className="word-list-text">{item.word}</span>
-                  </td>
-                  <td className="col-pos">
-                    <span className="pos-text">
-                      {getPartOfSpeech(item.data || {})}
-                    </span>
-                  </td>
-                  <td className="col-meaning">
-                    <span className="meaning-text">
-                      {getShortMeaning(item.data || {})}
-                    </span>
-                  </td>
-                  <td className="col-pos">
-                    <span
-                      className="favorite-category-icon"
-                      title={getCategoryName(item.category)}
-                    >
-                      {categoryIconMap[item.category] || '📘'}
-                    </span>
-                  </td>
-                </tr>
+                  item={item}
+                  index={index}
+                  isMeaningVisible={isMeaningVisible(index)}
+                  onRowClick={handleRowClick}
+                  onMeaningToggle={handleMeaningToggle}
+                  getShortMeaning={getShortMeaning}
+                />
               ))}
             </tbody>
           </table>
@@ -169,4 +288,3 @@ function FavoriteWordListPage() {
 }
 
 export default FavoriteWordListPage;
-
