@@ -1,5 +1,3632 @@
 // 单词数据
 export const wordData = {
+  mixiaole: [
+    {
+      word: 'beverage',
+      phonetic: '/ˈbevərɪdʒ/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '饮料（指除水以外的任何饮品，如咖啡、茶、果汁等）',
+      toeicSceneFocus:
+        '多出现于餐饮服务、酒店管理、商务会议等语境，是描述饮品的正式用词，托业阅读（餐厅菜单、会议安排）和听力（客户点单）中常见',
+      keyCollocations: [
+        'hot beverage（热饮）',
+        'alcoholic beverage（酒精饮料）',
+        'beverage selection（饮料选择）',
+      ],
+      toeicExampleSentences: [
+        'The hotel offers a complimentary beverage to guests upon arrival.（酒店为客人提供免费饮料。）',
+        'Please specify your preferred beverage when making a reservation.（预订时请说明您喜欢的饮料。）',
+      ],
+      sceneAssociation:
+        '可以联想‘会议桌上摆放着各种饮料（beverage）’的画面，或‘服务员为顾客提供饮料（beverage）菜单’，结合餐饮服务中‘饮品’的核心记忆',
+      confusingWordsComparison: [
+        {
+          word: 'drink',
+          coreDifference: 'drink更通用；beverage更正式',
+          toeicSceneFocus: '餐饮、服务场景',
+        },
+        {
+          word: 'refreshment',
+          coreDifference: 'refreshment指点心；beverage专指饮品',
+          toeicSceneFocus: '会议茶歇、小吃场景',
+        },
+        {
+          word: 'liquid',
+          coreDifference: 'liquid是液体；beverage是可饮用液体',
+          toeicSceneFocus: '产品描述、科学场景',
+        },
+        {
+          word: 'alcohol',
+          coreDifference: 'alcohol是酒精饮料；beverage包括非酒精',
+          toeicSceneFocus: '酒吧、餐饮场景',
+        },
+      ],
+    },
+    {
+      word: 'bid',
+      phonetic: '/bɪd/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '投标，出价（指为获得合同或物品而提出的报价）',
+      toeicSceneFocus:
+        '多出现于商业招标、拍卖、项目竞标等语境，是描述正式报价的常用词，托业阅读（招标公告）和听力（商业谈判）中频繁考查',
+      keyCollocations: [
+        'submit a bid（提交投标）',
+        'bid price（投标价格）',
+        'win a bid（中标）',
+      ],
+      toeicExampleSentences: [
+        'The company submitted a competitive bid for the construction project.（公司为建设项目提交了有竞争力的投标。）',
+        'The lowest bid will be accepted.（最低报价将被接受。）',
+      ],
+      sceneAssociation:
+        '可以联想‘会议室里讨论投标（bid）策略’的画面，或‘拍卖会上出价（bid）竞争’，结合商务中‘正式报价’的核心概念记忆',
+      confusingWordsComparison: [
+        {
+          word: 'offer',
+          coreDifference: 'offer是主动提供；bid是竞标出价',
+          toeicSceneFocus: '商业报价、谈判场景',
+        },
+        {
+          word: 'tender',
+          coreDifference: 'tender是招标；bid是投标行为',
+          toeicSceneFocus: '政府采购、招标流程',
+        },
+        {
+          word: 'proposal',
+          coreDifference: 'proposal是提案；bid是具体报价',
+          toeicSceneFocus: '项目提案、商业计划',
+        },
+        {
+          word: 'quote',
+          coreDifference: 'quote是报价；bid是竞标价',
+          toeicSceneFocus: '价格咨询、竞标场景',
+        },
+      ],
+    },
+    {
+      word: 'billion',
+      phonetic: '/ˈbɪljən/',
+      partOfSpeech: 'n. 数词',
+      coreMeaning: '十亿（数字单位，等于1,000,000,000）',
+      toeicSceneFocus:
+        '多出现于财务报告、经济数据、市场分析等语境，是描述大额数字的常用词，托业阅读（财经新闻）和听力（数据讨论）中常见',
+      keyCollocations: [
+        'billion dollars（十亿美元）',
+        'billions of（数十亿的）',
+        'reach a billion（达到十亿）',
+      ],
+      toeicExampleSentences: [
+        "The tech company's revenue exceeded 10 billion dollars last year.（这家科技公司去年收入超过100亿美元。）",
+        'Billions of people use this social media platform worldwide.（全球有数十亿人使用这个社交媒体平台。）',
+      ],
+      sceneAssociation:
+        '可以联想‘财务报表上显示的十亿（billion）数字’的画面，或‘新闻中报道万亿市场价值’，结合商务中‘大额数值’的记忆',
+      confusingWordsComparison: [
+        {
+          word: 'million',
+          coreDifference: 'million是百万；billion是十亿',
+          toeicSceneFocus: '财务数据、金额场景',
+        },
+        {
+          word: 'trillion',
+          coreDifference: 'trillion是万亿；billion是十亿',
+          toeicSceneFocus: '宏观经济、国债场景',
+        },
+        {
+          word: 'figure',
+          coreDifference: 'figure是数字；billion是具体数值单位',
+          toeicSceneFocus: '数据分析、报表场景',
+        },
+        {
+          word: 'amount',
+          coreDifference: 'amount是金额；billion是数量级',
+          toeicSceneFocus: '财务总结、统计场景',
+        },
+      ],
+    },
+    {
+      word: 'biography',
+      phonetic: '/baɪˈɒɡrəfi/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '传记（指个人生平的书面记录）',
+      toeicSceneFocus:
+        '多出现于出版、教育、文化等语境，是描述人物生平的常用词，托业阅读（书评、出版物）和听力（文化讨论）中偶尔出现',
+      keyCollocations: [
+        'write a biography（写传记）',
+        'authorized biography（授权传记）',
+        'biography of（……的传记）',
+      ],
+      toeicExampleSentences: [
+        'She published a biography of the famous entrepreneur.（她出版了一本著名企业家的传记。）',
+        'The library has a wide collection of biographies.（图书馆有大量传记藏书。）',
+      ],
+      sceneAssociation:
+        '可以联想‘书店里摆放的名人传记（biography）’的画面，或‘作者在撰写传记（biography）’，结合出版业中‘人物生平记录’的记忆',
+      confusingWordsComparison: [
+        {
+          word: 'autobiography',
+          coreDifference: 'autobiography是自传；biography是他人撰写的传记',
+          toeicSceneFocus: '出版、文学场景',
+        },
+        {
+          word: 'memoir',
+          coreDifference: 'memoir是回忆录；biography是完整传记',
+          toeicSceneFocus: '个人写作、出版场景',
+        },
+        {
+          word: 'history',
+          coreDifference: 'history是历史；biography是个人生平',
+          toeicSceneFocus: '教育、学术场景',
+        },
+        {
+          word: 'profile',
+          coreDifference: 'profile是简介；biography是详细传记',
+          toeicSceneFocus: '媒体、人物介绍场景',
+        },
+      ],
+    },
+    {
+      word: 'bistro',
+      phonetic: '/ˈbiːstrəʊ/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '小餐馆，小酒馆（指提供简单餐食和饮料的小型餐厅）',
+      toeicSceneFocus:
+        '多出现于餐饮、旅游、城市生活等语境，是描述小型餐厅的常用词，托业阅读（旅游指南）和听力（餐厅预订）中常见',
+      keyCollocations: [
+        'local bistro（本地小餐馆）',
+        'French bistro（法式小酒馆）',
+        'bistro table（小餐馆餐桌）',
+      ],
+      toeicExampleSentences: [
+        'We had lunch at a charming bistro downtown.（我们在市中心一家迷人的小餐馆吃了午餐。）',
+        'The hotel concierge recommends a nearby bistro for dinner.（酒店前台推荐附近的一家小餐馆吃晚餐。）',
+      ],
+      sceneAssociation:
+        '可以联想‘巴黎街头的小餐馆（bistro）’的画面，或‘朋友聚会在小酒馆（bistro）’，结合餐饮场景中‘小型餐厅’的记忆',
+      confusingWordsComparison: [
+        {
+          word: 'restaurant',
+          coreDifference: 'restaurant是通用餐厅；bistro是小型休闲餐厅',
+          toeicSceneFocus: '餐饮、旅游场景',
+        },
+        {
+          word: 'cafe',
+          coreDifference: 'cafe是咖啡馆；bistro提供正餐',
+          toeicSceneFocus: '休闲、餐饮场景',
+        },
+        {
+          word: 'diner',
+          coreDifference: 'diner是路边小餐馆；bistro更具欧洲风情',
+          toeicSceneFocus: '美式餐饮、快餐场景',
+        },
+        {
+          word: 'pub',
+          coreDifference: 'pub是酒吧；bistro是餐厅',
+          toeicSceneFocus: '酒吧、社交场景',
+        },
+      ],
+    },
+    {
+      word: 'booking',
+      phonetic: '/ˈbʊkɪŋ/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '预订，预约（指提前安排座位、房间等）',
+      toeicSceneFocus:
+        '多出现于旅游、酒店、餐饮等服务行业，是描述预约的常用词，托业阅读（预订确认）和听力（服务对话）中频繁考查',
+      keyCollocations: [
+        'hotel booking（酒店预订）',
+        'make a booking（进行预订）',
+        'booking confirmation（预订确认）',
+      ],
+      toeicExampleSentences: [
+        'Please make your booking at least 24 hours in advance.（请至少提前24小时预订。）',
+        'The booking for the conference room is confirmed.（会议室预订已确认。）',
+      ],
+      sceneAssociation:
+        '可以联想‘前台人员在电脑上处理预订（booking）’的画面，或‘客户通过电话预订（booking）酒店房间’，结合服务行业中‘预约安排’的核心记忆',
+      confusingWordsComparison: [
+        {
+          word: 'reservation',
+          coreDifference: 'reservation更正式；booking更通用',
+          toeicSceneFocus: '酒店、餐厅场景',
+        },
+        {
+          word: 'appointment',
+          coreDifference: 'appointment指约会；booking指位置预订',
+          toeicSceneFocus: '商务约会、医疗预约场景',
+        },
+        {
+          word: 'order',
+          coreDifference: 'order是点单；booking是位置预留',
+          toeicSceneFocus: '购物、餐饮场景',
+        },
+        {
+          word: 'schedule',
+          coreDifference: 'schedule是时间表；booking是具体预订',
+          toeicSceneFocus: '日程安排、时间管理场景',
+        },
+      ],
+    },
+    {
+      word: 'booth',
+      phonetic: '/buːθ/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '摊位，隔间（指展览会、市场中的小隔间或电话亭）',
+      toeicSceneFocus:
+        '多出现于展会、市场、办公环境等语境，是描述小空间的常用词，托业阅读（展会指南）和听力（场地描述）中常见',
+      keyCollocations: [
+        'exhibition booth（展位）',
+        'phone booth（电话亭）',
+        'ticket booth（售票亭）',
+      ],
+      toeicExampleSentences: [
+        'Our company will have a booth at the trade show next week.（我们公司下周将在贸易展上设有展位。）',
+        'Please wait for your turn at the information booth.（请在信息亭等候。）',
+      ],
+      sceneAssociation:
+        '可以联想‘展会上各个公司的展位（booth）’的画面，或‘机场里的电话亭（booth）’，结合展会和公共设施中‘小隔间’的记忆',
+      confusingWordsComparison: [
+        {
+          word: 'stand',
+          coreDifference: 'stand是展台；booth是封闭式摊位',
+          toeicSceneFocus: '展会、展览场景',
+        },
+        {
+          word: 'kiosk',
+          coreDifference: 'kiosk是信息亭；booth是服务摊位',
+          toeicSceneFocus: '自助服务、零售场景',
+        },
+        {
+          word: 'cubicle',
+          coreDifference: 'cubicle是办公隔间；booth是公共小隔间',
+          toeicSceneFocus: '办公室环境、工作场所',
+        },
+        {
+          word: 'counter',
+          coreDifference: 'counter是柜台；booth是独立小间',
+          toeicSceneFocus: '服务台、零售场景',
+        },
+      ],
+    },
+    {
+      word: 'boulevard',
+      phonetic: '/ˈbuːlvɑːr/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '林荫大道，大街（指城市中宽阔的主干道）',
+      toeicSceneFocus:
+        '多出现于城市规划、交通、地址描述等语境，是描述城市道路的常用词，托业阅读（城市指南）和听力（方向指引）中常见',
+      keyCollocations: [
+        'main boulevard（主干道）',
+        'tree-lined boulevard（林荫大道）',
+        'boulevard traffic（大道交通）',
+      ],
+      toeicExampleSentences: [
+        'The hotel is located on the main boulevard downtown.（酒店位于市中心的主干道上。）',
+        'We walked along the beautiful tree-lined boulevard.（我们沿着美丽的林荫大道散步。）',
+      ],
+      sceneAssociation:
+        '可以联想‘巴黎香榭丽舍大街（boulevard）’的画面，或‘城市地图上的主干道（boulevard）’，结合城市交通和地址描述的记忆',
+      confusingWordsComparison: [
+        {
+          word: 'avenue',
+          coreDifference: 'avenue是大道；boulevard常指林荫大道',
+          toeicSceneFocus: '地址、城市规划场景',
+        },
+        {
+          word: 'street',
+          coreDifference: 'street是通用街道；boulevard是宽阔大道',
+          toeicSceneFocus: '日常地址、交通场景',
+        },
+        {
+          word: 'road',
+          coreDifference: 'road是道路；boulevard是城市主干道',
+          toeicSceneFocus: '交通、导航场景',
+        },
+        {
+          word: 'highway',
+          coreDifference: 'highway是高速公路；boulevard是城市道路',
+          toeicSceneFocus: '长途旅行、交通场景',
+        },
+      ],
+    },
+    {
+      word: 'branch',
+      phonetic: '/brɑːntʃ/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '分部，分公司（指机构的分支或树枝）',
+      toeicSceneFocus:
+        '多出现于企业管理、银行、组织结构等语境，是描述分支机构的常用词，托业阅读（公司结构）和听力（业务讨论）中频繁考查',
+      keyCollocations: [
+        'branch office（分公司）',
+        'bank branch（银行分行）',
+        'local branch（本地分部）',
+      ],
+      toeicExampleSentences: [
+        'The company has branches in several major cities.（公司在几个主要城市设有分公司。）',
+        'Please visit your local bank branch to open an account.（请访问本地银行分行开户。）',
+      ],
+      sceneAssociation:
+        '可以联想‘银行分行（branch）标识’的画面，或‘公司组织结构图中的分部（branch）’，结合企业管理中‘分支机构’的核心概念记忆',
+      confusingWordsComparison: [
+        {
+          word: 'office',
+          coreDifference: 'office是办公室；branch是分支机构',
+          toeicSceneFocus: '办公场所、公司结构场景',
+        },
+        {
+          word: 'division',
+          coreDifference: 'division是部门；branch是分部',
+          toeicSceneFocus: '企业组织、部门划分场景',
+        },
+        {
+          word: 'subsidiary',
+          coreDifference: 'subsidiary是子公司；branch是分公司',
+          toeicSceneFocus: '公司结构、投资场景',
+        },
+        {
+          word: 'outlet',
+          coreDifference: 'outlet是零售店；branch是服务分支',
+          toeicSceneFocus: '零售、连锁场景',
+        },
+      ],
+    },
+    {
+      word: 'brick',
+      phonetic: '/brɪk/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '砖，砖块（指建筑材料）',
+      toeicSceneFocus:
+        '多出现于建筑、房地产、材料描述等语境，是描述建筑材料的常用词，托业阅读（建筑报告）和听力（装修讨论）中偶尔出现',
+      keyCollocations: [
+        'brick wall（砖墙）',
+        'red brick（红砖）',
+        'brick and mortar（实体店）',
+      ],
+      toeicExampleSentences: [
+        'The building is constructed with red brick.（这座建筑是用红砖建造的。）',
+        'The company has both online and brick-and-mortar stores.（公司既有在线商店也有实体店。）',
+      ],
+      sceneAssociation:
+        '可以联想‘建筑工地上的砖块（brick）’的画面，或‘实体店（brick-and-mortar）与在线商店对比’，结合建筑和商业中‘实体结构’的记忆',
+      confusingWordsComparison: [
+        {
+          word: 'stone',
+          coreDifference: 'stone是石头；brick是砖块',
+          toeicSceneFocus: '建筑材料、装修场景',
+        },
+        {
+          word: 'block',
+          coreDifference: 'block是块；brick是特定砖型',
+          toeicSceneFocus: '建筑、玩具场景',
+        },
+        {
+          word: 'concrete',
+          coreDifference: 'concrete是混凝土；brick是砖',
+          toeicSceneFocus: '建筑工程、材料场景',
+        },
+        {
+          word: 'mortar',
+          coreDifference: 'mortar是灰浆；brick是砖块',
+          toeicSceneFocus: '建筑施工、装修场景',
+        },
+      ],
+    },
+    {
+      word: 'access',
+      phonetic: '/ˈækses/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '访问，使用权（指进入某地或使用某物的权利）',
+      toeicSceneFocus:
+        '多出现于IT、办公管理、安全等语境，是描述权限的常用词，托业阅读（系统说明）和听力（网络讨论）中频繁考查',
+      keyCollocations: [
+        'access to（访问权限）',
+        'Internet access（互联网接入）',
+        'gain access（获得访问权）',
+      ],
+      toeicExampleSentences: [
+        'Employees need access to the database for their work.（员工需要访问数据库来完成工作。）',
+        'Please provide your password to access the system.（请输入密码以访问系统。）',
+      ],
+      sceneAssociation:
+        '可以联想‘用户输入密码访问系统（access）’的画面，或‘保安检查进入权限（access）’，结合IT和办公中‘使用权限’的核心概念记忆',
+      confusingWordsComparison: [
+        {
+          word: 'entry',
+          coreDifference: 'entry是进入；access是访问权',
+          toeicSceneFocus: '入口、进入场景',
+        },
+        {
+          word: 'permission',
+          coreDifference: 'permission是许可；access是具体访问权',
+          toeicSceneFocus: '授权、审批场景',
+        },
+        {
+          word: 'connection',
+          coreDifference: 'connection是连接；access是访问',
+          toeicSceneFocus: '网络、通信场景',
+        },
+        {
+          word: 'admission',
+          coreDifference: 'admission是入场许可；access是使用权',
+          toeicSceneFocus: '场所进入、入学场景',
+        },
+      ],
+    },
+    {
+      word: 'accommodate',
+      phonetic: '/əˈkɒmədeɪt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '提供住宿；容纳（指提供住宿或适应需求）',
+      toeicSceneFocus:
+        '多出现于酒店、会议、商务安排等语境，是描述提供住宿或适应的动词，托业阅读（预订确认）和听力（服务对话）中常见',
+      keyCollocations: [
+        'accommodate guests（接待客人）',
+        'accommodate needs（适应需求）',
+        'well-accommodated（住宿良好的）',
+      ],
+      toeicExampleSentences: [
+        'The hotel can accommodate up to 200 guests.（酒店最多可容纳200位客人。）',
+        'We will try to accommodate your schedule.（我们将尽量适应您的时间安排。）',
+      ],
+      sceneAssociation:
+        '可以联想‘酒店前台为客人安排住宿（accommodate）’的画面，或‘会议室适应参会人数（accommodate）’，结合服务行业中‘提供住宿或适应需求’的记忆',
+      confusingWordsComparison: [
+        {
+          word: 'house',
+          coreDifference: 'house是提供住所；accommodate是临时接待',
+          toeicSceneFocus: '住宿、接待场景',
+        },
+        {
+          word: 'adapt',
+          coreDifference: 'adapt是适应；accommodate是提供住宿',
+          toeicSceneFocus: '调整、适应场景',
+        },
+        {
+          word: 'contain',
+          coreDifference: 'contain是容纳；accommodate是提供住宿',
+          toeicSceneFocus: '容量、空间场景',
+        },
+        {
+          word: 'provide',
+          coreDifference: 'provide是提供；accommodate特指住宿',
+          toeicSceneFocus: '服务提供、供应场景',
+        },
+      ],
+    },
+    {
+      word: 'accompany',
+      phonetic: '/əˈkʌmpəni/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '陪同，伴随（指与某人同行或伴随某事）',
+      toeicSceneFocus:
+        '多出现于商务出行、会议、客户服务等语境，是描述陪伴的常用动词，托业阅读（邀请函）和听力（行程安排）中常见',
+      keyCollocations: [
+        'accompany someone（陪同某人）',
+        'accompanied by（由……陪同）',
+        'accompanying document（随附文件）',
+      ],
+      toeicExampleSentences: [
+        'The manager will accompany the client to the meeting.（经理将陪同客户参加会议。）',
+        'Please find the invoice accompanying this letter.（请查收随信附上的发票。）',
+      ],
+      sceneAssociation:
+        '可以联想‘商务人士陪同客户（accompany）参观’的画面，或‘文件随附（accompany）在信件中’，结合商务中‘陪同或伴随’的核心概念记忆',
+      confusingWordsComparison: [
+        {
+          word: 'escort',
+          coreDifference: 'escort是护送；accompany是陪同',
+          toeicSceneFocus: '护送、引导场景',
+        },
+        {
+          word: 'join',
+          coreDifference: 'join是加入；accompany是陪伴同行',
+          toeicSceneFocus: '团队活动、加入场景',
+        },
+        {
+          word: 'attend',
+          coreDifference: 'attend是出席；accompany是陪同出席',
+          toeicSceneFocus: '会议、活动场景',
+        },
+        {
+          word: 'follow',
+          coreDifference: 'follow是跟随；accompany是并行陪同',
+          toeicSceneFocus: '导航、行程场景',
+        },
+      ],
+    },
+    {
+      word: 'acknowledge',
+      phonetic: '/əkˈnɒlɪdʒ/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '确认收到，承认（指确认收到信息或承认事实）',
+      toeicSceneFocus:
+        '多出现于商务沟通、邮件回复、正式确认等语境，是描述确认的正式动词，托业阅读（邮件模板）和听力（商务对话）中频繁考查',
+      keyCollocations: [
+        'acknowledge receipt（确认收到）',
+        'acknowledge the fact（承认事实）',
+        'acknowledge email（回复邮件）',
+      ],
+      toeicExampleSentences: [
+        'Please acknowledge receipt of this email.（请确认收到此邮件。）',
+        "The company acknowledges the customer's complaint.（公司承认客户的投诉。）",
+      ],
+      sceneAssociation:
+        '可以联想‘客户收到邮件后回复确认（acknowledge）’的画面，或‘会议上承认（acknowledge）某个事实’，结合商务沟通中‘确认或承认’的核心概念记忆',
+      confusingWordsComparison: [
+        {
+          word: 'confirm',
+          coreDifference: 'confirm是确认；acknowledge是确认收到',
+          toeicSceneFocus: '确认、核实场景',
+        },
+        {
+          word: 'admit',
+          coreDifference: 'admit是承认错误；acknowledge是确认事实',
+          toeicSceneFocus: '承认、坦白场景',
+        },
+        {
+          word: 'recognize',
+          coreDifference: 'recognize是识别；acknowledge是确认',
+          toeicSceneFocus: '识别、认可场景',
+        },
+        {
+          word: 'receive',
+          coreDifference: 'receive是收到；acknowledge是确认收到',
+          toeicSceneFocus: '接收、回复场景',
+        },
+      ],
+    },
+    {
+      word: 'acquire',
+      phonetic: '/əˈkwaɪər/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '获得，收购（指通过努力或购买获得某物）',
+      toeicSceneFocus:
+        '多出现于商业并购、技能获取、资源获取等语境，是描述获得的正式动词，托业阅读（商业新闻）和听力（商务讨论）中常见',
+      keyCollocations: [
+        'acquire a company（收购公司）',
+        'acquire skills（获得技能）',
+        'acquire knowledge（获取知识）',
+      ],
+      toeicExampleSentences: [
+        'The company plans to acquire a smaller competitor.（公司计划收购一家较小的竞争对手。）',
+        'She acquired valuable experience during her internship.（她在实习期间获得了宝贵的经验。）',
+      ],
+      sceneAssociation:
+        '可以联想‘企业高管讨论收购（acquire）计划’的画面，或‘员工通过培训获得（acquire）新技能’，结合商务中‘获得或收购’的核心概念记忆',
+      confusingWordsComparison: [
+        {
+          word: 'obtain',
+          coreDifference: 'obtain是获取；acquire是正式获得',
+          toeicSceneFocus: '获取、取得场景',
+        },
+        {
+          word: 'purchase',
+          coreDifference: 'purchase是购买；acquire包括收购',
+          toeicSceneFocus: '商业交易、购物场景',
+        },
+        {
+          word: 'gain',
+          coreDifference: 'gain是赢得；acquire是通过努力获得',
+          toeicSceneFocus: '收益、增加场景',
+        },
+        {
+          word: 'develop',
+          coreDifference: 'develop是开发；acquire是获得现成的',
+          toeicSceneFocus: '技能发展、产品开发场景',
+        },
+      ],
+    },
+    {
+      word: 'act',
+      phonetic: '/ækt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '行动，扮演（指采取行动或充当某角色）',
+      toeicSceneFocus:
+        '多出现于商务行为、角色描述、决策等语境，是描述行动的动词，托业阅读（行为指南）和听力（角色讨论）中常见',
+      keyCollocations: [
+        'act as（充当）',
+        'act immediately（立即行动）',
+        'act on（根据……行动）',
+      ],
+      toeicExampleSentences: [
+        "She acts as the team leader in her manager's absence.（她在经理缺席时充当团队领导。）",
+        'We need to act quickly to resolve the issue.（我们需要迅速行动解决问题。）',
+      ],
+      sceneAssociation:
+        '可以联想‘团队成员在项目中扮演（act）特定角色’的画面，或‘公司根据市场变化立即行动（act）’，结合商务中‘行动或扮演角色’的记忆',
+      confusingWordsComparison: [
+        {
+          word: 'do',
+          coreDifference: 'do是通用做；act是行动',
+          toeicSceneFocus: '日常行为、任务场景',
+        },
+        {
+          word: 'perform',
+          coreDifference: 'perform是执行；act是行动',
+          toeicSceneFocus: '表演、执行任务场景',
+        },
+        {
+          word: 'serve',
+          coreDifference: 'serve是服务；act是充当',
+          toeicSceneFocus: '服务、角色场景',
+        },
+        {
+          word: 'behave',
+          coreDifference: 'behave是表现；act是行动',
+          toeicSceneFocus: '行为、礼仪场景',
+        },
+      ],
+    },
+    {
+      word: 'affect',
+      phonetic: '/əˈfekt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '影响（指对某事产生作用或改变）',
+      toeicSceneFocus:
+        '多出现于商业影响、市场变化、因果关系等语境，是描述影响的常用动词，托业阅读（分析报告）和听力（影响讨论）中频繁考查',
+      keyCollocations: [
+        'affect performance（影响表现）',
+        'negatively affect（负面影响）',
+        'affect the outcome（影响结果）',
+      ],
+      toeicExampleSentences: [
+        'The new policy will affect all employees.（新政策将影响所有员工。）',
+        'Economic downturn affects consumer spending.（经济衰退影响消费者支出。）',
+      ],
+      sceneAssociation:
+        '可以联想‘市场变化影响（affect）公司业绩’的画面，或‘政策调整影响（affect）员工福利’，结合商务中‘产生影响’的核心概念记忆',
+      confusingWordsComparison: [
+        {
+          word: 'influence',
+          coreDifference: 'influence是影响；affect是直接作用',
+          toeicSceneFocus: '影响、说服场景',
+        },
+        {
+          word: 'impact',
+          coreDifference: 'impact是冲击；affect是作用',
+          toeicSceneFocus: '重大影响、冲击场景',
+        },
+        {
+          word: 'change',
+          coreDifference: 'change是改变；affect是影响改变',
+          toeicSceneFocus: '变化、调整场景',
+        },
+        {
+          word: 'alter',
+          coreDifference: 'alter是改变；affect是影响',
+          toeicSceneFocus: '修改、调整场景',
+        },
+      ],
+    },
+    {
+      word: 'afford',
+      phonetic: '/əˈfɔːrd/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '负担得起（指有足够的钱或时间做某事）',
+      toeicSceneFocus:
+        '多出现于预算、财务、个人财务等语境，是描述财务能力的动词，托业阅读（财务建议）和听力（预算讨论）中常见',
+      keyCollocations: [
+        'afford to do（负担得起做）',
+        'cannot afford（负担不起）',
+        'afford the cost（支付费用）',
+      ],
+      toeicExampleSentences: [
+        'We can afford to buy a new car this year.（我们今年买得起新车。）',
+        'The company cannot afford to lose more clients.（公司承受不起失去更多客户。）',
+      ],
+      sceneAssociation:
+        '可以联想‘家庭讨论是否负担得起（afford）新房子’的画面，或‘公司评估是否负担得起（afford）新设备’，结合财务中‘支付能力’的核心概念记忆',
+      confusingWordsComparison: [
+        {
+          word: 'pay',
+          coreDifference: 'pay是支付；afford是负担能力',
+          toeicSceneFocus: '付款、财务场景',
+        },
+        {
+          word: 'manage',
+          coreDifference: 'manage是管理；afford是能够负担',
+          toeicSceneFocus: '管理、控制场景',
+        },
+        {
+          word: 'bear',
+          coreDifference: 'bear是承受；afford是财务负担',
+          toeicSceneFocus: '承受、忍受场景',
+        },
+        {
+          word: 'fund',
+          coreDifference: 'fund是资助；afford是自付能力',
+          toeicSceneFocus: '融资、资助场景',
+        },
+      ],
+    },
+
+    {
+      word: 'acceptance',
+      phonetic: '/əkˈseptəns/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '接受；接纳；认可；承兑',
+      toeicSceneFocus:
+        '商务合同、订单确认、文化融合及金融领域核心词。在托业中常出现在签署协议（sign an acceptance）、接收货物（take acceptance of goods）、获得团队认可（gain acceptance）以及票据‘承兑’等语境。',
+      keyCollocations: [
+        'letter of acceptance (录取通知书；接受函)',
+        'acceptance test (验收测试)',
+        'gain/general acceptance (获得/被广泛接受)',
+        'acceptance criteria (验收标准)',
+        'take delivery and acceptance (提货并验收)',
+      ],
+      toeicExampleSentences: [
+        'The client’s formal acceptance of the proposal was confirmed via email yesterday. (客户对该提案的正式接受已于昨日通过邮件确认。)',
+        'Public acceptance of the new policy will be crucial for its successful implementation. (新政策的公众认可对其成功实施至关重要。)',
+        'The bank’s acceptance of the draft guarantees payment at the maturity date. (银行对该汇票的承兑保证了到期付款。)',
+        'Please review the acceptance criteria before the final product inspection. (请在最终产品检验前审阅验收标准。)',
+      ],
+      sceneAssociation:
+        '想象一份待签署的合同末尾的“Sign here for acceptance”（在此签字表示接受），或团队会议上新想法“gaining acceptance”（获得认可）的过程。',
+      confusingWordsComparison: [
+        {
+          word: 'acceptance',
+          coreDifference: '指“接受、认可”这一行为或状态，强调同意接收或采纳。',
+          toeicSceneFocus: '同意接收（合同、货物、想法）。',
+        },
+        {
+          word: 'approval',
+          coreDifference: '“批准、赞成”，侧重官方或权威的正式同意。',
+          toeicSceneFocus: '上级或权威机构的正式批准。',
+        },
+        {
+          word: 'receipt',
+          coreDifference:
+            '“收到”，仅指物理上的收到动作或收到凭证，不包含“同意”之意。',
+          toeicSceneFocus: '收到物品的事实或收据。',
+        },
+      ],
+    },
+    {
+      word: 'accessory',
+      phonetic: '/əkˈsesəri/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '附件；配件；配饰；从犯',
+      toeicSceneFocus:
+        '主要在零售、IT设备及汽车行业场景中出现。指为主要产品增添功能、便利性或美观的附属品，如手机配件、电脑外围设备、汽车配件或服装配饰。',
+      keyCollocations: [
+        'computer accessory (电脑配件)',
+        'car accessory (汽车配件)',
+        'fashion accessory (时尚配饰)',
+        'optional accessory (可选配件)',
+        'accessory kit (配件套件)',
+      ],
+      toeicExampleSentences: [
+        'The electronics store sells a wide range of phone accessories, including cases and chargers. (这家电子产品商店出售各种手机配件，包括手机壳和充电器。)',
+        'This printer comes with several useful accessories, such as a paper tray and USB cable. (这款打印机附带一些有用的配件，如纸盘和USB线。)',
+        'The car model offers many optional accessories, like a roof rack and upgraded stereo system. (该车型提供许多可选配件，如车顶行李架和升级的音响系统。)',
+      ],
+      sceneAssociation:
+        '联想电子产品网店的产品分类栏“Phones & Accessories”（手机及配件），或汽车销售介绍“It comes with these premium accessories.”（它随附这些高级配件。）。',
+      confusingWordsComparison: [
+        {
+          word: 'accessory',
+          coreDifference:
+            '“附件、配件”，指与主产品配套使用以增强功能或美观的物品。',
+          toeicSceneFocus: '主产品的附属配套品。',
+        },
+        {
+          word: 'component',
+          coreDifference: '“组件、部件”，指构成一个系统或设备的必要组成部分。',
+          toeicSceneFocus: '机器或系统的组成部分。',
+        },
+        {
+          word: 'attachment',
+          coreDifference:
+            '“附件”，常指可连接到某物上的额外工具或文件（如邮件附件）。',
+          toeicSceneFocus: '可连接的工具；电子邮件附件。',
+        },
+      ],
+    },
+    {
+      word: 'accomplishment',
+      phonetic: '/əˈkɑːmplɪʃmənt/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '成就；完成；才艺',
+      toeicSceneFocus:
+        '用于职场绩效评估、简历、公司报告及个人发展讨论中。指通过努力和技能成功完成的有价值的事情，强调过程的结果。比“achievement”更侧重具体的完成事件或掌握的技能。',
+      keyCollocations: [
+        'great/major accomplishment (重大成就)',
+        'list of accomplishments (成就列表)',
+        'sense of accomplishment (成就感)',
+        'professional accomplishment (职业成就)',
+        'a notable accomplishment (一项显著成就)',
+      ],
+      toeicExampleSentences: [
+        'Leading the project to its successful launch was her greatest professional accomplishment this year. (领导项目成功上线是她今年最大的职业成就。)',
+        'The annual report highlights the company’s key accomplishments in research and development. (年度报告强调了公司在研发方面的主要成就。)',
+        'Fluent communication in three languages is one of his personal accomplishments. (能流利地用三种语言交流是他的个人才艺之一。)',
+      ],
+      sceneAssociation:
+        '想象简历中“Key Accomplishments”（主要成就）一栏下列出的 bullet points，或绩效面谈时讨论“What do you consider your biggest accomplishment this quarter?”（你认为本季度最大的成就是什么？）。',
+      confusingWordsComparison: [
+        {
+          word: 'accomplishment',
+          coreDifference:
+            '“成就”，指成功完成的某件具体事情或掌握的技能，可数。',
+          toeicSceneFocus: '具体的完成事项或技能成就。',
+        },
+        {
+          word: 'achievement',
+          coreDifference:
+            '“成就、达到”，与 accomplishment 常互换，但可能更强调达到重要目标或里程碑。',
+          toeicSceneFocus: '达成目标、里程碑式的成就。',
+        },
+        {
+          word: 'success',
+          coreDifference:
+            '“成功”，泛指良好的结果或状态，为不可数名词或抽象概念。',
+          toeicSceneFocus: '成功的结果或状态。',
+        },
+      ],
+    },
+    {
+      word: 'account',
+      phonetic: '/əˈkaʊnt/',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning: 'n. 账户；账目；客户；描述；理由 v. 解释；占据（比例）',
+      toeicSceneFocus:
+        '托业超高频多义词。名词涉及金融（bank account）、客户关系（key account）、财务记录（financial accounts）及解释（give an account）。动词短语“account for”意为“解释；占…比例”，是数据分析和报告中的核心表达。',
+      keyCollocations: [
+        'bank account (银行账户)',
+        'account for (解释；占...比例)',
+        'take into account (考虑到)',
+        'on account of (由于)',
+        'key account (关键客户)',
+        'account manager (客户经理)',
+      ],
+      toeicExampleSentences: [
+        'Please transfer the funds to the company’s designated bank account. (请将资金转入公司指定的银行账户。)',
+        'The sales director will give an account of last quarter’s performance at the meeting. (销售总监将在会议上说明上一季度的业绩情况。)',
+        'Online sales now account for over 60% of our total revenue. (线上销售目前占总收入的60%以上。)',
+        'We need to take market fluctuations into account when planning the budget. (规划预算时，我们需要考虑到市场波动。)',
+      ],
+      sceneAssociation:
+        '名词：登录电脑或网站时输入的“username and account”（用户名和账户）。动词：看饼图时说“This segment accounts for the largest share.”（这部分占比最大。）。',
+      confusingWordsComparison: [
+        {
+          word: 'account (n.)',
+          coreDifference: '含义广泛，可指金融账户、客户账目、描述解释等。',
+          toeicSceneFocus: '金融账户、客户、描述、理由。',
+        },
+        {
+          word: 'explanation',
+          coreDifference: '“解释”，仅指对原因或含义的说明，没有“账户”等含义。',
+          toeicSceneFocus: '对原因的说明。',
+        },
+        {
+          word: 'client/customer',
+          coreDifference:
+            '“客户”，account 作“客户”解时，尤指有持续业务关系、有独立账目的客户。',
+          toeicSceneFocus: '通用术语，指购买商品或服务的个人/组织。',
+        },
+      ],
+    },
+    {
+      word: 'achievement',
+      phonetic: '/əˈtʃiːvmənt/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '成就；成绩；达到',
+      toeicSceneFocus:
+        '职场和绩效评估中的核心词汇。指通过努力和技能达成的重要目标、里程碑或获得的成功。常用于年度评估、公司新闻稿、个人简历及激励性演讲中。',
+      keyCollocations: [
+        'great achievement (伟大成就)',
+        'sense of achievement (成就感)',
+        'academic achievement (学术成就)',
+        'achievement award (成就奖)',
+        'list of achievements (成就列表)',
+      ],
+      toeicExampleSentences: [
+        'The successful merger is regarded as a major achievement for the new CEO. (成功的合并被视为新首席执行官的一项重大成就。)',
+        'Employees are recognized for their outstanding achievements at the annual awards ceremony. (员工在年度颁奖典礼上会因其杰出成就而获得表彰。)',
+        'Completing the project under budget and ahead of schedule was a remarkable team achievement. (在预算内并提前完成项目是团队的一项卓越成就。)',
+        'The company’s environmental goals are aligned with key sustainable development achievements. (公司的环境目标与关键的可持续发展成就保持一致。)',
+      ],
+      sceneAssociation:
+        '联想公司大厅的“Employee Achievement Wall”（员工成就墙），或简历开头“Summary of Achievements”（成就概要）部分。',
+      confusingWordsComparison: [
+        {
+          word: 'achievement',
+          coreDifference: '“成就”，强调通过努力和技巧达成重要目标或获得成功。',
+          toeicSceneFocus: '达成重要目标或里程碑。',
+        },
+        {
+          word: 'accomplishment',
+          coreDifference:
+            '“成就”，常指具体完成的事情或掌握的技能，与 achievement 非常接近，常互换。',
+          toeicSceneFocus: '具体完成的事项或技能。',
+        },
+        {
+          word: 'attainment',
+          coreDifference:
+            '“达到、获得”，较正式，强调达到某个水平、标准或获得某物（如学位）。',
+          toeicSceneFocus: '达到某种水平或获得某种资格（正式）。',
+        },
+      ],
+    },
+    {
+      word: 'acquisition',
+      phonetic: '/ˌækwɪˈzɪʃ(ə)n/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '收购；获得；购置',
+      toeicSceneFocus:
+        '商业和金融领域高频词。主要指一家公司收购另一家公司（merger and acquisition）。也指获得资产、技能或知识。常出现在财经新闻、公司战略报告和商务谈判场景中。',
+      keyCollocations: [
+        'merger and acquisition (M&A) (并购)',
+        'company acquisition (公司收购)',
+        'acquisition of skills (技能获取)',
+        'asset acquisition (资产购置)',
+        'latest acquisition (最新收购/购置物)',
+      ],
+      toeicExampleSentences: [
+        'The tech giant announced its acquisition of a leading AI startup for $2 billion. (这家科技巨头宣布以20亿美元收购一家人工智能领军初创公司。)',
+        'The acquisition of new language skills is highly encouraged for employees working in global teams. (公司高度鼓励在全球团队工作的员工获得新的语言技能。)',
+        'The board approved the acquisition of new office space in the downtown area. (董事会批准在市中心购置新的办公场地。)',
+        'The merger and acquisition deal is expected to be finalized by the end of the fiscal year. (这笔并购交易预计将在本财年末完成。)',
+      ],
+      sceneAssociation:
+        '联想财经新闻头条“Company A completes acquisition of Company B”（A公司完成对B公司的收购），或员工培训主题“Acquisition of Digital Marketing Skills”（数字营销技能获取）。',
+      confusingWordsComparison: [
+        {
+          word: 'acquisition',
+          coreDifference:
+            '“收购、获得”，强调通过购买、努力或学习而得到某物（尤指公司、资产、技能）的行为或结果。',
+          toeicSceneFocus: '公司并购；资产、技能的获得。',
+        },
+        {
+          word: 'purchase (n.)',
+          coreDifference: '“购买”，泛指买的行为或买到的东西，不特指公司收购。',
+          toeicSceneFocus: '一般的购买行为或物品。',
+        },
+        {
+          word: 'merger',
+          coreDifference: '“合并”，指两家公司合为一家，而非一方收购另一方。',
+          toeicSceneFocus: '两家公司平等合并。',
+        },
+      ],
+    },
+    {
+      word: 'admission',
+      phonetic: '/ədˈmɪʃ(ə)n/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '进入（许可）；入场费；承认；录用',
+      coreMeaning: '进入（许可）；入场费；承认；录用',
+      toeicSceneFocus:
+        '含义多样。1) 指进入某场所的许可或费用（如会议、博物馆）。2) 指被机构（如学校、俱乐部）录取。3) 指承认事实（尤指错误或不利事实）。托业听力对话（如购票）和阅读（如活动通知、邮件）中常见。',
+      keyCollocations: [
+        'admission fee (入场费)',
+        'free admission (免费入场)',
+        'admission ticket (入场券)',
+        'gain admission to (获准进入；被…录取)',
+        'admission of guilt (认罪)',
+      ],
+      toeicExampleSentences: [
+        'Admission to the trade fair is free for all registered participants. (贸易展览会对所有注册参与者免费开放。)',
+        'Her admission to the prestigious business school was a significant career milestone. (她被这所著名的商学院录取是职业生涯的一个重要里程碑。)',
+        'The manager’s admission that there was a mistake in the report helped resolve the issue quickly. (经理承认报告中存在错误，这有助于快速解决问题。)',
+        'Please present your admission ticket at the entrance. (请在入口处出示您的入场券。)',
+      ],
+      sceneAssociation:
+        '想象博物馆门口的牌子写着“Admission: $15”（门票：15美元），或一封大学来信“Congratulations on your admission to...”（恭喜你被…录取）。',
+      confusingWordsComparison: [
+        {
+          word: 'admission',
+          coreDifference:
+            '“进入许可；承认”，指被允许进入的权利或行为，或承认某事（常为负面）。',
+          toeicSceneFocus: '入场（许可/费）；被录取；承认事实。',
+        },
+        {
+          word: 'admittance',
+          coreDifference:
+            '“进入（权）”，更正式，仅指物理上的进入许可，尤指非公共区域。',
+          toeicSceneFocus: '正式进入某地的权利（较少用）。',
+        },
+        {
+          word: 'confession',
+          coreDifference:
+            '“供认、坦白”，特指承认错误、罪行或秘密，语气比 admission 强。',
+          toeicSceneFocus: '坦白罪行或错误。',
+        },
+      ],
+    },
+    {
+      word: 'advertisement',
+      phonetic: '/ˌædvərˈtaɪzmənt/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '广告',
+      toeicSceneFocus:
+        '营销和媒体领域的核心词汇。缩写为“ad”。指通过付费形式在媒体（电视、网络、印刷品）上推广产品或服务的信息。托业阅读中常见于招聘广告、产品宣传；听力中可能涉及广告投放策略讨论。',
+      keyCollocations: [
+        'TV advertisement (电视广告)',
+        'online advertisement (网络广告)',
+        'classified advertisement (分类广告)',
+        'place/put an advertisement (刊登广告)',
+        'advertisement campaign (广告活动)',
+      ],
+      toeicExampleSentences: [
+        'We plan to launch a new advertisement campaign across social media platforms next month. (我们计划下个月在社交媒体平台发起一轮新的广告活动。)',
+        'The job opening was posted in the classified advertisements section of the newspaper. (该职位空缺被刊登在报纸的分类广告版块。)',
+        'The effectiveness of the online advertisement was measured by the click-through rate. (该网络广告的效果通过点击率来衡量。)',
+        'Responding to an advertisement is a common way to apply for a position. (回应招聘广告是申请职位的常见方式。)',
+      ],
+      sceneAssociation:
+        '想象网页弹出的横幅“Online Advertisement”（网络广告），或报纸上的“Help Wanted”栏目，那就是“classified advertisements”（分类广告）。',
+      confusingWordsComparison: [
+        {
+          word: 'advertisement (ad)',
+          coreDifference: '“广告”，指具体的广告内容或单个广告实例。',
+          toeicSceneFocus: '具体的广告内容（可数）。',
+        },
+        {
+          word: 'advertising',
+          coreDifference:
+            '“广告业；广告活动”，指行业或广告行为的总称，为不可数名词。',
+          toeicSceneFocus: '广告行业或泛指广告行为。',
+        },
+        {
+          word: 'commercial',
+          coreDifference: '“商业广告”，特指电视或广播中的广告。',
+          toeicSceneFocus: '电视/广播广告。',
+        },
+      ],
+    },
+    {
+      word: 'advisor',
+      phonetic: '/ədˈvaɪzər/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '顾问；指导者',
+      toeicSceneFocus:
+        '商业、金融和教育领域的常见角色。指提供专业建议、咨询或指导的人。在公司中可能是财务顾问、法律顾问；在大学里是学术导师。强调其提供建议的职能。',
+      keyCollocations: [
+        'financial advisor (财务顾问)',
+        'academic advisor (学术导师)',
+        'legal advisor (法律顾问)',
+        'investment advisor (投资顾问)',
+        'senior advisor (高级顾问)',
+      ],
+      toeicExampleSentences: [
+        'Before making major investments, it’s wise to consult a certified financial advisor. (在进行重大投资前，咨询一名持证财务顾问是明智之举。)',
+        'Each student is assigned an academic advisor to help plan their course schedule. (每名学生都分配有一名学术导师，帮助规划课程安排。)',
+        'The company hired an external legal advisor to handle the international contract. (公司聘请了一名外部法律顾问来处理这份国际合同。)',
+        'She works as a senior business advisor for a multinational consulting firm. (她在一家跨国咨询公司担任高级商业顾问。)',
+      ],
+      sceneAssociation:
+        '想象名片上的头衔“Senior Financial Advisor”（高级财务顾问），或新生指导会上“Meet with your academic advisor.”（与你的学术导师见面。）。',
+      confusingWordsComparison: [
+        {
+          word: 'advisor/ adviser',
+          coreDifference:
+            '“顾问”，两者拼写皆可，advisor 更常见。提供专业建议的人。',
+          toeicSceneFocus: '提供专业建议的人。',
+        },
+        {
+          word: 'consultant',
+          coreDifference:
+            '“咨询师、顾问”，通常指外部专家，受雇提供特定领域的专业建议。',
+          toeicSceneFocus: '受雇提供建议的外部专家。',
+        },
+        {
+          word: 'counselor',
+          coreDifference:
+            '“顾问、辅导员”，常指提供个人、职业或心理指导的人（如职业顾问、心理咨询师）。',
+          toeicSceneFocus: '提供个人、职业或心理指导的顾问。',
+        },
+      ],
+    },
+    {
+      word: 'aerobics',
+      phonetic: '/eˈroʊbɪks/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '有氧运动；健美操',
+      toeicSceneFocus:
+        '属于健康和休闲活动词汇。可能出现在公司福利（如健身房课程）、酒店设施介绍或关于工作生活平衡的对话中。托业听力Part 1图片描述可能涉及人们在健身房做有氧运动。',
+      keyCollocations: [
+        'aerobics class (有氧运动课)',
+        'do aerobics (做有氧运动)',
+        'water aerobics (水中有氧运动)',
+        'aerobics instructor (有氧运动教练)',
+      ],
+      toeicExampleSentences: [
+        'The company-sponsored wellness program includes free aerobics classes twice a week. (公司赞助的健康计划包括每周两次的免费有氧运动课。)',
+        'The hotel fitness center offers a variety of activities, including yoga and aerobics. (酒店健身中心提供各种活动，包括瑜伽和有氧运动。)',
+        'Many employees find that attending an aerobics session after work helps reduce stress. (许多员工发现下班后参加一节有氧运动课有助于减轻压力。)',
+      ],
+      sceneAssociation:
+        '联想公司内部公告板上的海报“Join the Lunchtime Aerobics Class!”（加入午间有氧运动课！），或酒店手册上的“Facilities: Gym with daily aerobics”（设施：带每日有氧课的健身房）。',
+      confusingWordsComparison: [
+        {
+          word: 'aerobics',
+          coreDifference:
+            '“有氧运动”，特指以提高心肺功能为目的的节奏性运动，如健美操。',
+          toeicSceneFocus: '特定类型的心肺锻炼课程。',
+        },
+        {
+          word: 'exercise',
+          coreDifference: '“锻炼、运动”，泛指所有形式的体育活动。',
+          toeicSceneFocus: '广义的体育运动。',
+        },
+        {
+          word: 'gymnastics',
+          coreDifference:
+            '“体操”，指需要力量、柔韧性和协调性的特定运动，通常与器械或垫上运动相关。',
+          toeicSceneFocus: '体操运动。',
+        },
+      ],
+    },
+    {
+      word: 'agenda',
+      phonetic: '/əˈdʒendə/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '议程；议事日程',
+      coreMeaning: '议程；议事日程',
+      toeicSceneFocus:
+        '商务会议核心词汇。指会议中将要讨论的事项列表。短语“hidden agenda”指隐秘议程。发送、确认和遵循议程是职场专业沟通的重要部分，频繁出现在会议安排邮件和对话中。',
+      keyCollocations: [
+        'meeting agenda (会议议程)',
+        'set the agenda (设定议程)',
+        'on the agenda (在议程上)',
+        'agenda item (议程项目)',
+        'hidden agenda (隐秘议程)',
+      ],
+      toeicExampleSentences: [
+        'The meeting agenda has been circulated via email; please review it beforehand. (会议议程已通过电子邮件传阅，请事先查阅。)',
+        'The first item on today’s agenda is the budget review for Q3. (今天议程的第一项是第三季度的预算审查。)',
+        'Let’s set the agenda for our weekly team call by tomorrow afternoon. (我们明天下午之前确定好每周团队电话会议的议程吧。)',
+        'If there are no other matters, we can move to the next agenda item. (如果没有其他事项，我们可以进行下一个议程项目了。)',
+      ],
+      sceneAssociation:
+        '想象会议邀请邮件附件名为“Project Kick-off Meeting Agenda.docx”（项目启动会议程.docx），或开会时投影仪上的第一页PPT就是议程。',
+      confusingWordsComparison: [
+        {
+          word: 'agenda',
+          coreDifference: '“议程”，指会议或活动中待讨论事项的正式列表。',
+          toeicSceneFocus: '会议讨论事项列表。',
+        },
+        {
+          word: 'schedule',
+          coreDifference:
+            '“日程表、时间表”，指事件安排的时间计划，范围比 agenda 更广。',
+          toeicSceneFocus: '活动、任务的时间安排计划。',
+        },
+        {
+          word: 'timetable',
+          coreDifference:
+            '“时刻表”，尤指交通工具（如火车、公交）或课程的固定时间安排。',
+          toeicSceneFocus: '交通、课程的固定时间表。',
+        },
+      ],
+    },
+    {
+      word: 'agreement',
+      phonetic: '/əˈɡriːmənt/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '协议；同意；一致',
+      toeicSceneFocus:
+        '商务和法律核心词汇。指双方或多方之间达成的正式或非正式契约、合同。也指意见一致的状态。高频出现在合同谈判、合作讨论、共识确认等场景。',
+      keyCollocations: [
+        'reach an agreement (达成协议)',
+        'written agreement (书面协议)',
+        'license agreement (许可协议)',
+        'in agreement with (与…一致)',
+        'terms of the agreement (协议条款)',
+      ],
+      toeicExampleSentences: [
+        'After weeks of negotiation, the two companies finally reached a licensing agreement. (经过数周谈判，两家公司最终达成了一项许可协议。)',
+        'Please sign this confidentiality agreement before we proceed with the discussion. (在我们继续讨论之前，请签署这份保密协议。)',
+        'All parties were in agreement about the need to postpone the product launch. (各方都同意需要推迟产品发布。)',
+        'The terms of the sales agreement are clearly outlined in Section 3. (销售协议的条款在第3节中有明确概述。)',
+      ],
+      sceneAssociation:
+        '想象双方握手并交换签署文件的场景，文件标题是“Service Level Agreement (SLA)”（服务级别协议）。',
+      confusingWordsComparison: [
+        {
+          word: 'agreement',
+          coreDifference:
+            '“协议、同意”，泛指任何形式的协议或一致意见，可以是口头的或书面的。',
+          toeicSceneFocus: '广义的协议或一致状态。',
+        },
+        {
+          word: 'contract',
+          coreDifference:
+            '“合同”，指具有法律约束力的正式书面协议，条款更详细具体。',
+          toeicSceneFocus: '具有法律效力的正式书面合同。',
+        },
+        {
+          word: 'consensus',
+          coreDifference:
+            '“共识”，指一个群体达成的一般性一致意见，不一定是正式协议。',
+          toeicSceneFocus: '群体达成的一致意见。',
+        },
+      ],
+    },
+    {
+      word: 'agriculture',
+      phonetic: '/ˈæɡrɪkʌltʃər/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '农业',
+      toeicSceneFocus:
+        '属于行业和全球经济词汇。可能出现在关于国际贸易、经济报告、可持续发展或公司业务范围（如农产品公司）的阅读和听力材料中。',
+      keyCollocations: [
+        'sustainable agriculture (可持续农业)',
+        'agriculture industry (农业)',
+        'minister of agriculture (农业部长)',
+        'agriculture products (农产品)',
+        'technology in agriculture (农业科技)',
+      ],
+      toeicExampleSentences: [
+        'The country’s economy is heavily dependent on agriculture and tourism. (该国的经济严重依赖农业和旅游业。)',
+        'Advances in technology are transforming traditional agriculture practices. (技术进步正在改变传统的农业实践。)',
+        'The company sources its raw materials directly from local agriculture cooperatives. (该公司直接从当地农业合作社采购原材料。)',
+        'A conference on sustainable agriculture will be held next month. (一场关于可持续农业的会议将于下个月举行。)',
+      ],
+      sceneAssociation:
+        '联想一篇关于全球贸易的新闻报道，提到“exports of agriculture products”（农产品出口），或一家公司的介绍“We are a leader in smart agriculture solutions.”（我们是智慧农业解决方案的领导者。）。',
+      confusingWordsComparison: [
+        {
+          word: 'agriculture',
+          coreDifference:
+            '“农业”，指耕作土地、养殖牲畜的产业和科学，范围最广。',
+          toeicSceneFocus: '耕作和养殖的广义产业。',
+        },
+        {
+          word: 'farming',
+          coreDifference: '“农耕、养殖”，指具体的农业实践活动，更口语化。',
+          toeicSceneFocus: '具体的农事活动。',
+        },
+        {
+          word: 'agribusiness',
+          coreDifference:
+            '“农业综合企业”，指从生产到销售全链条的农业相关商业活动。',
+          toeicSceneFocus: '农业商业、农业综合企业。',
+        },
+      ],
+    },
+    {
+      word: 'aircraft',
+      phonetic: '/ˈerkræft/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '飞机；航空器',
+      toeicSceneFocus:
+        '航空、物流和旅行相关词汇。单复数同形。泛指所有飞行器，包括飞机、直升机等。出现在旅行安排、货运物流、制造业（如 aircraft manufacturer）及新闻中。',
+      keyCollocations: [
+        'commercial aircraft (商用飞机)',
+        'aircraft manufacturer (飞机制造商)',
+        'aircraft engine (飞机引擎)',
+        'military aircraft (军用飞机)',
+        'board the aircraft (登机)',
+      ],
+      toeicExampleSentences: [
+        'All passengers are requested to board the aircraft 30 minutes before departure. (要求所有乘客在起飞前30分钟登机。)',
+        'The company specializes in the maintenance of commercial aircraft. (该公司专营商用飞机的维护。)',
+        'Due to a technical issue with the aircraft, flight 302 has been delayed. (由于飞机技术问题，302航班已延误。)',
+        'The new regulations affect all aircraft operating in this airspace. (新规定影响所有在此空域运行的航空器。)',
+      ],
+      sceneAssociation:
+        '想象机场广播“Flight XYZ is now boarding at gate A5. Please proceed to your aircraft.”（XYZ航班现在在A5登机口登机。请前往您的飞机。），或新闻标题“Aircraft Manufacturer Signs Major Deal”（飞机制造商签署重大协议）。',
+      confusingWordsComparison: [
+        {
+          word: 'aircraft',
+          coreDifference: '“航空器”，泛指所有飞行器的总称，单复数同形。',
+          toeicSceneFocus: '飞行器的总称（飞机、直升机等）。',
+        },
+        {
+          word: 'airplane/ aeroplane',
+          coreDifference:
+            '“飞机”，特指有固定机翼的航空器，是 aircraft 的一种。',
+          toeicSceneFocus: '特指固定翼飞机。',
+        },
+        {
+          word: 'flight',
+          coreDifference: '“航班；飞行”，指飞机的一次航行或航程。',
+          toeicSceneFocus: '具体的航班班次或飞行行为。',
+        },
+      ],
+    },
+    {
+      word: 'airline',
+      phonetic: '/ˈerlaɪn/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '航空公司',
+      coreMeaning: '航空公司',
+      toeicSceneFocus:
+        '旅行、商务出差和运输业核心词汇。指提供定期航空运输服务的公司。涉及订票、客户服务、航班状态、常旅客计划等场景。是托业听力（旅行安排）和阅读（广告、通知）的常见词。',
+      keyCollocations: [
+        'international airline (国际航空公司)',
+        'airline ticket (机票)',
+        'airline industry (航空业)',
+        'airline pilot (航空公司飞行员)',
+        'budget airline (廉价航空公司)',
+      ],
+      toeicExampleSentences: [
+        'Which airline are you flying with for your business trip to Singapore? (你去新加坡出差乘哪家航空公司的飞机？)',
+        'The airline offers a generous frequent flyer program for regular passengers. (该航空公司为常旅客提供丰厚的常旅客计划。)',
+        'Due to strikes, several airlines have canceled flights to and from the capital. (由于罢工，多家航空公司取消了往返首都的航班。)',
+        'You can check in online on the airline’s website up to 24 hours before your flight. (您可以在航班起飞前24小时在航空公司网站上办理在线值机。)',
+      ],
+      sceneAssociation:
+        '想象在比价网站上搜索“Compare airline prices”（比较航空公司价格），或登机牌上印着的航空公司 logo 和名称。',
+      confusingWordsComparison: [
+        {
+          word: 'airline',
+          coreDifference: '“航空公司”，指提供航空运输服务的商业公司。',
+          toeicSceneFocus: '提供航班服务的公司。',
+        },
+        {
+          word: 'airport',
+          coreDifference: '“机场”，指飞机起飞、降落和停靠的场所。',
+          toeicSceneFocus: '飞机起降和停靠的场地。',
+        },
+        {
+          word: 'aviation',
+          coreDifference:
+            '“航空；航空业”，指涉及飞行器设计、制造和运营的整个行业或领域。',
+          toeicSceneFocus: '航空领域或行业的总称。',
+        },
+      ],
+    },
+    {
+      word: 'amenity',
+      phonetic: '/əˈmenəti/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '便利设施；生活福利设施',
+      toeicSceneFocus:
+        '常出现在房地产、酒店、办公室租赁或社区介绍的场景中。指使生活、工作或居住更舒适、便利的设施或服务，如健身房、游泳池、高速网络等。',
+      keyCollocations: [
+        'hotel amenities (酒店设施)',
+        'amenities included (包含的设施)',
+        'modern amenities (现代化设施)',
+        'community amenities (社区设施)',
+        'lack of amenities (缺乏便利设施)',
+      ],
+      toeicExampleSentences: [
+        'The new apartment complex offers a range of amenities, including a swimming pool and a fitness center. (新公寓楼提供一系列便利设施，包括游泳池和健身中心。)',
+        'The conference package includes access to all business center amenities. (会议套餐包含使用所有商务中心设施的权限。)',
+        'One drawback of the location is the lack of basic amenities like supermarkets and banks nearby. (该地点的一个缺点是附近缺乏超市和银行等基本生活设施。)',
+        'The rental agreement lists which utilities and amenities are covered by the monthly fee. (租赁协议列出了月费包含哪些公用事业费和设施。)',
+        'The hotel is highly rated for its excellent amenities and customer service. (这家酒店因其优良的设施和客户服务而获得高评分。)',
+      ],
+      sceneAssociation:
+        '浏览酒店预订网站时，查看“Amenities”列表，里面会有“Free WiFi, Pool, Spa”（免费WiFi，游泳池，水疗中心）。或房产广告写着“Office space with premium amenities”（带高级设施的办公空间）。',
+      confusingWordsComparison: [
+        {
+          word: 'amenity',
+          coreDifference:
+            '“便利设施”，指提升舒适度、便利性的设施或服务，通常是附加的、非必需的福利。',
+          toeicSceneFocus: '提升舒适便利的附加设施（如健身房、泳池）。',
+        },
+        {
+          word: 'facility',
+          coreDifference:
+            '“设施、设备”，泛指为某种目的而建的建筑、房间或设备，范围更广，可能是核心功能所需。',
+          toeicSceneFocus: '为特定目的提供的建筑、场所或设备。',
+        },
+        {
+          word: 'utility',
+          coreDifference: '“公用事业”，指水、电、燃气等基本公共服务。',
+          toeicSceneFocus: '水电燃气等基本公共服务。',
+        },
+      ],
+    },
+    {
+      word: 'analysis',
+      phonetic: '/əˈnæləsɪs/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '分析',
+      toeicSceneFocus:
+        '商业决策、市场研究、财务和项目管理的核心词汇。指对复杂事物进行详细检查以理解其本质或做出决定的过程。其复数形式为“analyses”。动词“analyze”更常见于口语。',
+      keyCollocations: [
+        'data analysis (数据分析)',
+        'market analysis (市场分析)',
+        'financial analysis (财务分析)',
+        'in-depth analysis (深入分析)',
+        'conduct an analysis (进行分析)',
+      ],
+      toeicExampleSentences: [
+        'A thorough market analysis is required before launching a new product. (推出新产品前需要进行彻底的市场分析。)',
+        'Based on our financial analysis, we recommend investing in the emerging market. (根据我们的财务分析，我们建议投资新兴市场。)',
+        'The report provides a detailed analysis of the causes behind the sales decline. (该报告对销售额下降背后的原因提供了详细分析。)',
+        'We need to conduct a cost-benefit analysis before proceeding with the expansion. (在进行扩张之前，我们需要进行成本效益分析。)',
+      ],
+      sceneAssociation:
+        '想象一份商业计划书中的一个章节标题“SWOT Analysis”（SWOT分析），或会议上说“Let’s look at the data analysis.”（我们来看看数据分析。）。',
+      confusingWordsComparison: [
+        {
+          word: 'analysis',
+          coreDifference:
+            '“分析”，指对事物进行详细研究以理解其组成部分或本质的过程或结果。',
+          toeicSceneFocus: '分析的过程或结果报告。',
+        },
+        {
+          word: 'report',
+          coreDifference:
+            '“报告”，指提供信息的正式文件，可能包含分析，但不限于分析。',
+          toeicSceneFocus: '陈述信息的文件。',
+        },
+        {
+          word: 'evaluation',
+          coreDifference:
+            '“评估”，指判断价值、重要性或质量的过程，常基于分析。',
+          toeicSceneFocus: '评定价值或效果。',
+        },
+      ],
+    },
+    {
+      word: 'apparel',
+      phonetic: '/əˈpærəl/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '服装；衣物（正式用语，尤指特定类型的服装）',
+      toeicSceneFocus:
+        '零售、制造业和贸易领域的正式用语，相当于“clothing”。常用于行业报告、公司介绍（如 apparel manufacturer）、商店分类或商务洽谈中，指成衣产品。比“clothes”更正式和商业。',
+      keyCollocations: [
+        'sports apparel (运动服装)',
+        'apparel industry (服装业)',
+        'apparel store (服装店)',
+        'casual apparel (休闲服装)',
+        'apparel designer (服装设计师)',
+      ],
+      toeicExampleSentences: [
+        'The company is a leading manufacturer of outdoor and sports apparel. (该公司是户外和运动服装的领先制造商。)',
+        'Sales in the women’s apparel department increased by 15% this quarter. (本季度女装部门的销售额增长了15%。)',
+        'The trade fair will feature the latest trends in children’s apparel. (贸易博览会将展示童装的最新趋势。)',
+        'Many apparel brands are now focusing on sustainable materials and production methods. (许多服装品牌现在都专注于可持续材料和生产方法。)',
+      ],
+      sceneAssociation:
+        '想象商场楼层指示牌上的“Men’s Apparel”（男装）和“Women’s Apparel”（女装），或一份财经新闻标题“Apparel Retailer Reports Strong Earnings”（服装零售商报告强劲收益）。',
+      confusingWordsComparison: [
+        {
+          word: 'apparel',
+          coreDifference:
+            '“服装”，正式或商业用语，尤指特定类型或作为商品的服装。',
+          toeicSceneFocus: '正式的、行业的服装统称。',
+        },
+        {
+          word: 'clothing',
+          coreDifference:
+            '“衣服”，通用词，涵盖所有穿戴物品，比“apparel”更常用。',
+          toeicSceneFocus: '服装的通用词。',
+        },
+        {
+          word: 'garment',
+          coreDifference: '“（一件）衣服”，指单件服装，常用于制造业。',
+          toeicSceneFocus: '单件服装（尤制造、贸易中）。',
+        },
+      ],
+    },
+    {
+      word: 'appliance',
+      phonetic: '/əˈplaɪəns/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '器具；电器（尤指家用电器）',
+      toeicSceneFocus:
+        '主要指家用电器，如冰箱、洗衣机、烤箱等。出现在零售、客户服务（维修、保修）、产品说明和家庭生活场景中。有时也指用于特定目的的器械（如 office appliance 办公设备，但较少见）。',
+      keyCollocations: [
+        'household appliance (家用电器)',
+        'electrical appliance (电器)',
+        'kitchen appliance (厨房电器)',
+        'appliance store (电器商店)',
+        'energy-efficient appliance (节能电器)',
+      ],
+      toeicExampleSentences: [
+        'The new model of this kitchen appliance features improved energy efficiency. (这款厨房电器的新型号具有更高的能效。)',
+        'Most major appliances come with a one-year manufacturer’s warranty. (大多数主要家电都附带一年的制造商保修。)',
+        'Please ensure all electrical appliances are turned off before leaving the office. (离开办公室前，请确保所有电器都已关闭。)',
+        'The department store is having a sale on home appliances this weekend. (本周末百货公司的家用电器正在促销。)',
+      ],
+      sceneAssociation:
+        '联想家电卖场的区域标识“Home Appliances”（家用电器），或产品说明书上的“Safety Instructions for This Appliance”（本电器安全说明）。',
+      confusingWordsComparison: [
+        {
+          word: 'appliance',
+          coreDifference: '“电器、器具”，特指家用或特定用途的电气或机械设备。',
+          toeicSceneFocus: '家用电器。',
+        },
+        {
+          word: 'device',
+          coreDifference:
+            '“装置、设备”，泛指为特定用途设计的小型工具或仪器，范围更广（如电子设备、医疗设备）。',
+          toeicSceneFocus: '小型工具、仪器、电子设备。',
+        },
+        {
+          word: 'equipment',
+          coreDifference:
+            '“设备、装备”，不可数名词，指完成某项工作所需的一套工具或机器。',
+          toeicSceneFocus: '完成工作所需的成套工具或机器（总称）。',
+        },
+      ],
+    },
+    {
+      word: 'architect',
+      phonetic: '/ˈɑːrkɪtekt/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '建筑师；设计师；缔造者',
+      coreMeaning: '建筑师；设计师；缔造者',
+      toeicSceneFocus:
+        '本义指设计建筑的专业人士。在商业语境中，常引申为“设计者、缔造者”，如“system architect”（系统架构师）、“the architect of the plan”（计划的设计师）。出现在房地产、建筑、IT及描述项目或战略创建者的场景中。',
+      keyCollocations: [
+        'chief architect (总建筑师；首席设计师)',
+        'landscape architect (景观设计师)',
+        'system architect (系统架构师)',
+        'naval architect (船舶设计师)',
+        'architect of the reform (改革的缔造者)',
+      ],
+      toeicExampleSentences: [
+        'We have hired a renowned architect to design our new corporate headquarters. (我们聘请了一位著名建筑师来设计我们的新公司总部。)',
+        'As the system architect, she is responsible for the overall design of the software platform. (作为系统架构师，她负责软件平台的总体设计。)',
+        'He is widely regarded as the chief architect of the company’s successful turnaround strategy. (他被广泛认为是公司成功扭亏为盈战略的总设计师。)',
+        'The project requires close collaboration between the architect and the construction team. (该项目需要建筑师和施工团队之间的密切合作。)',
+      ],
+      sceneAssociation:
+        '想象建筑工地前的牌子“Project Architect: Jane Doe”（项目建筑师：Jane Doe），或在IT会议上介绍“This is our lead software architect.”（这是我们的首席软件架构师。）。',
+      confusingWordsComparison: [
+        {
+          word: 'architect',
+          coreDifference:
+            '“建筑师”，本义指设计建筑物的人；引申为任何复杂体系或计划的设计者。',
+          toeicSceneFocus: '建筑设计师；广义的体系/计划设计者。',
+        },
+        {
+          word: 'designer',
+          coreDifference:
+            '“设计师”，范围更广，可指服装、图形、产品等各类设计者。',
+          toeicSceneFocus: '各类物品的设计者。',
+        },
+        {
+          word: 'engineer',
+          coreDifference:
+            '“工程师”，负责将设计付诸实施，解决技术问题，专注于建造和功能。',
+          toeicSceneFocus: '负责技术实施和建造的专业人员。',
+        },
+      ],
+    },
+
+    {
+      word: 'array',
+      phonetic: '/əˈreɪ/（英）；/əˈreɪ/（美）',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        '1. 名词：一系列；大量；数组；陈列  2. 动词：排列；部署；陈列',
+      toeicSceneFocus:
+        '多出现于产品陈列、数据处理、商务描述等语境，是托业阅读（产品目录、技术文档）中的常考词，侧重“**有序的排列或大量的集合**”',
+      keyCollocations: [
+        'an array of products（一系列产品）',
+        'data array（数据数组）',
+        'array the goods（陈列商品）',
+      ],
+      toeicExampleSentences: [
+        'The store displayed an array of electronic products at the entrance.（这家商店在入口处陈列了一系列电子产品。）',
+        'The IT engineer arrayed the data in a logical order for analysis.（IT工程师将数据按逻辑顺序排列以便分析。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'array',
+          coreDifference:
+            '强调“有序的排列或大量同类事物的集合”，书面语色彩较强',
+          sceneFocus: '产品陈列、数据处理、正式描述场景',
+        },
+        {
+          word: 'series',
+          coreDifference: '侧重“按顺序排列的一系列事物”，可用于事件、作品等',
+          sceneFocus: '事件发展、影视书籍系列场景',
+        },
+      ],
+    },
+    {
+      word: 'arrival',
+      phonetic: '/əˈraɪvl/（英）；/əˈraɪvl/（美）',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '到达；抵达；到达者；到货',
+      toeicSceneFocus:
+        '多出现于交通出行、商务接待、物流通知等语境，是托业听力（机场广播、商务对话）和阅读（物流单据、接待通知）中的高频词，侧重“**人或物的抵达状态**”',
+      keyCollocations: [
+        'arrival time（到达时间）',
+        'on arrival（一到达）',
+        'arrival of goods（货物到货）',
+      ],
+      toeicExampleSentences: [
+        'Please inform us of your arrival time so that we can arrange a pick-up service.（请告知你的到达时间，以便我们安排接送服务。）',
+        'The arrival of the new raw materials will speed up the production process.（新原材料的到货将加快生产进度。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'arrival',
+          coreDifference: '名词，强调“抵达的动作或结果”，可指人、物',
+          sceneFocus: '交通、物流、接待场景',
+        },
+        {
+          word: 'arrive',
+          coreDifference: '动词，侧重“抵达的动作本身”',
+          sceneFocus: '日常表达到达动作的场景',
+        },
+      ],
+    },
+    {
+      word: 'artwork',
+      phonetic: '/ˈɑːtwɜːk/（英）；/ˈɑːrtwɜːrk/（美）',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '1. 艺术品；美术作品  2. （书籍、广告的）插图；设计图',
+      toeicSceneFocus:
+        '多出现于文化活动、广告设计、出版印刷等语境，是托业阅读（活动海报、商务合同）中的常考词，侧重“**艺术创作或商业设计相关的作品**”',
+      keyCollocations: [
+        'exhibition of artwork（艺术品展览）',
+        'advertising artwork（广告设计图）',
+        'original artwork（原创艺术品）',
+      ],
+      toeicExampleSentences: [
+        'The company’s new brochure includes beautiful artwork designed by a famous artist.（该公司的新宣传册包含了由知名设计师创作的精美插图。）',
+        'This gallery showcases artwork created by local young painters.（这家画廊展出了当地青年画家创作的艺术品。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'artwork',
+          coreDifference: '泛指所有艺术相关作品，包括纯艺术和商业设计图',
+          sceneFocus: '艺术展览、广告出版场景',
+        },
+        {
+          word: 'painting',
+          coreDifference: '特指“绘画作品”，属于artwork的一种',
+          sceneFocus: '绘画展览、艺术收藏场景',
+        },
+      ],
+    },
+    {
+      word: 'aspect',
+      phonetic: '/ˈæspekt/（英）；/ˈæspekt/（美）',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '方面；层面；外观；样子；（语法）体',
+      toeicSceneFocus:
+        '通用高频词，适用于商务分析、问题讨论、事物描述等所有语境，是托业阅读（报告、方案）和听力（会议讨论）中的核心词，侧重“**事物的某个具体方面或层面**”',
+      keyCollocations: [
+        'key aspect（关键方面）',
+        'different aspects（不同层面）',
+        'practical aspect（实际层面）',
+      ],
+      toeicExampleSentences: [
+        'We need to consider every aspect of the project before making a decision.（在做决定前，我们需要考虑项目的各个方面。）',
+        'The financial aspect of the plan requires further discussion with the accounting department.（该计划的财务层面需要与财务部门进一步讨论。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'aspect',
+          coreDifference: '强调“事物的某个具体方面、层面”，范围较窄',
+          sceneFocus: '问题分析、项目规划场景',
+        },
+        {
+          word: 'element',
+          coreDifference: '侧重“构成事物的基本元素、要素”',
+          sceneFocus: '成分构成、系统要素场景',
+        },
+      ],
+    },
+    {
+      word: 'assignment',
+      phonetic: '/əˈsaɪnmənt/（英）；/əˈsaɪnmənt/（美）',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '任务；作业；分配；委派',
+      toeicSceneFocus:
+        '多出现于职场工作、教育培训等语境，是托业阅读（工作邮件、任务通知）和听力（职场对话）中的高频词，侧重“**被分配的工作任务或学习作业**”',
+      keyCollocations: [
+        'work assignment（工作任务）',
+        'complete an assignment（完成任务/作业）',
+        'assignment of responsibility（责任分配）',
+      ],
+      toeicExampleSentences: [
+        'The manager gave me a new assignment related to market research.（经理给了我一项与市场调研相关的新任务。）',
+        'All employees are required to submit their assignment reports by the end of this week.（所有员工需在本周末前提交任务报告。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'assignment',
+          coreDifference: '强调“被上级或老师分配的具体任务、作业”，具有指定性',
+          sceneFocus: '职场任务、学校作业场景',
+        },
+        {
+          word: 'task',
+          coreDifference: '泛指“需要完成的任务”，范围更广，可自愿或被分配',
+          sceneFocus: '各类需要完成的工作事项场景',
+        },
+      ],
+    },
+    {
+      word: 'assistant',
+      phonetic: '/əˈsɪstənt/（英）；/əˈsɪstənt/（美）',
+      partOfSpeech: 'n. 名词；adj. 形容词',
+      coreMeaning: '1. 名词：助理；助手；助教  2. 形容词：辅助的；助理的',
+      toeicSceneFocus:
+        '职场高频词，多出现于招聘信息、职场称呼、工作描述等语境，是托业阅读（招聘广告、职场手册）和听力（职场对话）中的核心词，侧重“**协助他人工作的人或辅助性质的**”',
+      keyCollocations: [
+        'personal assistant（私人助理）',
+        'assistant manager（副经理）',
+        'assistant role（辅助角色）',
+      ],
+      toeicExampleSentences: [
+        'The marketing director is looking for an experienced assistant to handle daily affairs.（营销总监正在寻找一名经验丰富的助理处理日常事务。）',
+        'She works as an assistant teacher in a language training center.（她在一家语言培训中心担任助教。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'assistant',
+          coreDifference: '侧重“协助上级或他人完成工作的人”，职位明确',
+          sceneFocus: '职场招聘、工作分工场景',
+        },
+        {
+          word: 'helper',
+          coreDifference: '泛指“帮忙的人”，非正式用语，无职位属性',
+          sceneFocus: '日常帮忙、临时协助场景',
+        },
+      ],
+    },
+    {
+      word: 'associate',
+      phonetic:
+        '/əˈsəʊsieɪt/（v.）；/əˈsəʊsiət/（n./adj.）（英）；/əˈsoʊsieɪt/（v.）；/əˈsoʊsiət/（n./adj.）（美）',
+      partOfSpeech: 'v. 动词；n. 名词；adj. 形容词',
+      coreMeaning:
+        '1. 动词：联系；联想；交往  2. 名词：同事；伙伴；准会员  3. 形容词：副的；联合的；关联的',
+      toeicSceneFocus:
+        '商务高频词，多出现于职场关系、商务合作、会员体系等语境，是托业阅读（合作协议、会员规则）和听力（商务谈判）中的常考词，侧重“**关联、合作或副职身份**”',
+      keyCollocations: [
+        'associate...with...（把……与……联系起来）',
+        'associate professor（副教授）',
+        'business associate（商业伙伴）',
+      ],
+      toeicExampleSentences: [
+        'People often associate the brand with high quality and reliability.（人们常把这个品牌与高品质和可靠性联系在一起。）',
+        'He was promoted from an ordinary employee to an associate manager last year.（他去年从普通员工晋升为副经理。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'associate',
+          coreDifference:
+            '动词表“联系、交往”，名词表“同事、伙伴”，形容词表“副职、联合的”，用法多样',
+          sceneFocus: '商务合作、职场职位、事物关联场景',
+        },
+        {
+          word: 'colleague',
+          coreDifference: '仅作名词，特指“同一家公司的同事”，语义单一',
+          sceneFocus: '职场同事称呼场景',
+        },
+      ],
+    },
+    {
+      word: 'atmosphere',
+      phonetic: '/ˈætməsfɪə/（英）；/ˈætməsfɪr/（美）',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '1. 大气；大气层  2. 气氛；氛围；环境',
+      toeicSceneFocus:
+        '多出现于商务环境描述、活动场景、科学报告等语境，是托业阅读（活动策划、公司介绍）和听力（会议评价）中的高频词，侧重“**场所的氛围或大气环境**”',
+      keyCollocations: [
+        'work atmosphere（工作氛围）',
+        'friendly atmosphere（友好的氛围）',
+        'earth’s atmosphere（地球大气层）',
+      ],
+      toeicExampleSentences: [
+        'The company has created a relaxed and collaborative atmosphere for its employees.（该公司为员工营造了轻松协作的工作氛围。）',
+        'The conference was held in a warm atmosphere with active discussions.（这场会议在热烈的氛围中进行，讨论十分积极。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'atmosphere',
+          coreDifference:
+            '可指自然的“大气”，也可指抽象的“氛围、环境”，适用范围广',
+          sceneFocus: '环境描述、活动氛围场景',
+        },
+        {
+          word: 'ambience',
+          coreDifference: '特指“场所的格调、氛围”，更偏向感官体验，书面语',
+          sceneFocus: '餐厅、酒店、咖啡馆等场所的格调描述场景',
+        },
+      ],
+    },
+    {
+      word: 'auction',
+      phonetic: '/ˈɔːkʃn/（英）；/ˈɔːkʃn/（美）',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning: '1. 名词：拍卖；拍卖会  2. 动词：拍卖；竞卖',
+      toeicSceneFocus:
+        '多出现于商业交易、艺术品买卖、资产处置等语境，是托业阅读（拍卖公告、商务新闻）中的常考词，侧重“**通过竞价方式进行的交易活动**”',
+      keyCollocations: [
+        'art auction（艺术品拍卖会）',
+        'auction house（拍卖行）',
+        'auction off（拍卖掉）',
+      ],
+      toeicExampleSentences: [
+        'A rare painting by Picasso will be sold at an auction next month.（一幅毕加索的稀有画作将于下月在拍卖会上出售。）',
+        'The company decided to auction off some of its unused equipment to reduce costs.（该公司决定拍卖部分闲置设备以降低成本。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'auction',
+          coreDifference: '强调“通过公开竞价的方式售卖物品”，有明确的交易规则',
+          sceneFocus: '艺术品、资产的交易场景',
+        },
+        {
+          word: 'sale',
+          coreDifference: '泛指“销售、售卖”，方式多样，无竞价要求',
+          sceneFocus: '日常商品销售场景',
+        },
+      ],
+    },
+    {
+      word: 'auditorium',
+      phonetic: '/ˌɔːdɪˈtɔːriəm/（英）；/ˌɔːdɪˈtɔːriəm/（美）',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '礼堂；会堂；观众席',
+      toeicSceneFocus:
+        '多出现于活动场地安排、会议通知、校园/企业设施描述等语境，是托业阅读（活动通知、场地指南）和听力（会议安排对话）中的常考词，侧重“**用于举办会议、演出的大型室内场所**”',
+      keyCollocations: [
+        'school auditorium（学校礼堂）',
+        'in the auditorium（在礼堂里）',
+        'auditorium seating（礼堂座位）',
+      ],
+      toeicExampleSentences: [
+        'The annual company meeting will be held in the main auditorium this Friday.（年度公司大会将于本周五在主礼堂举行。）',
+        'The auditorium can accommodate up to 500 people at a time.（这个礼堂一次可容纳500人。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'auditorium',
+          coreDifference: '特指“大型的礼堂、会堂”，可举办会议、演出等集体活动',
+          sceneFocus: '大型活动场地场景',
+        },
+        {
+          word: 'meeting room',
+          coreDifference: '指“会议室”，规模较小，用于小型会议、洽谈',
+          sceneFocus: '小型商务会议场景',
+        },
+      ],
+    },
+    {
+      word: 'author',
+      phonetic: '/ˈɔːθə/（英）；/ˈɔːθər/（美）',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning: '1. 名词：作者；作家；创始人  2. 动词：创作；编写',
+      toeicSceneFocus:
+        '多出现于出版行业、版权协议、学术文档等语境，是托业阅读（书籍介绍、版权合同）中的常考词，侧重“**书籍、文章的创作者或事物的创始人**”',
+      keyCollocations: [
+        'best-selling author（畅销书作者）',
+        'author of the book（这本书的作者）',
+        'author a report（撰写报告）',
+      ],
+      toeicExampleSentences: [
+        'The author of this business book is a well-known management consultant.（这本商业书籍的作者是一位知名管理顾问。）',
+        'She was invited to author an article on international trade for a famous magazine.（她受邀为一本知名杂志撰写一篇关于国际贸易的文章。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'author',
+          coreDifference:
+            '泛指“作品的创作者”，可指书、文章、报告等的作者，也可指创始人',
+          sceneFocus: '出版、学术、创作场景',
+        },
+        {
+          word: 'writer',
+          coreDifference: '特指“以写作为职业的人”，更强调职业属性',
+          sceneFocus: '文学创作、职业写作场景',
+        },
+      ],
+    },
+    {
+      word: 'automobile',
+      phonetic: '/ˈɔːtəməbiːl/（英）；/ˈɔːtəməbiːl/（美）',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '汽车；机动车（正式用语）',
+      toeicSceneFocus:
+        '多出现于汽车行业报告、交通法规、商务合同等正式语境，是托业阅读（行业分析、交通通知）中的常考词，侧重“**正式场合对汽车的称呼**”',
+      keyCollocations: [
+        'automobile industry（汽车行业）',
+        'automobile manufacturing（汽车制造）',
+        'automobile insurance（汽车保险）',
+      ],
+      toeicExampleSentences: [
+        'The automobile industry is facing a transition towards electric vehicles.（汽车行业正面临向电动汽车转型的趋势。）',
+        'This company specializes in the production of automobile parts.（这家公司专门生产汽车零部件。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'automobile',
+          coreDifference: '正式用语，多用于书面、行业报告、法规等场景',
+          sceneFocus: '正式文书、行业分析场景',
+        },
+        {
+          word: 'car',
+          coreDifference: '口语化通用词，日常交流中最常用',
+          sceneFocus: '日常对话、非正式场景',
+        },
+      ],
+    },
+    {
+      word: 'avenue',
+      phonetic: '/ˈævənjuː/（英）；/ˈævənuː/（美）',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '1. 大道；林荫道（常用于道路名称）  2. 途径；手段',
+      toeicSceneFocus:
+        '多出现于地址描述、商务策略、城市规划等语境，是托业阅读（地址信息、商务方案）中的常考词，侧重“**城市主干道或解决问题的途径**”',
+      keyCollocations: [
+        'Fifth Avenue（第五大道）',
+        'avenue of communication（沟通途径）',
+        'explore new avenues（探索新途径）',
+      ],
+      toeicExampleSentences: [
+        'The company’s headquarters is located on Park Avenue in New York City.（该公司总部位于纽约市的公园大道。）',
+        'We need to explore new avenues to expand our overseas market.（我们需要探索新的途径来拓展海外市场。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'avenue',
+          coreDifference: '可指“城市大道”，也可指抽象的“途径、手段”',
+          sceneFocus: '地址描述、策略规划场景',
+        },
+        {
+          word: 'street',
+          coreDifference: '泛指“城市街道”，规模比avenue小，更常用',
+          sceneFocus: '日常地址描述场景',
+        },
+      ],
+    },
+    {
+      word: 'backpack',
+      phonetic: '/ˈbækpæk/（英）；/ˈbækpæk/（美）',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning: '1. 名词：背包；双肩包  2. 动词：背包旅行',
+      toeicSceneFocus:
+        '多出现于旅行用品、职场通勤、校园场景等语境，是托业听力（日常对话）和阅读（产品广告）中的常考词，侧重“**双肩背负的包袋或背包旅行的行为**”',
+      keyCollocations: [
+        'hiking backpack（登山背包）',
+        'laptop backpack（电脑背包）',
+        'backpack across Europe（背包环游欧洲）',
+      ],
+      toeicExampleSentences: [
+        'This waterproof backpack is suitable for both daily commuting and outdoor activities.（这款防水背包适合日常通勤和户外活动。）',
+        'After graduation, he decided to backpack through Asia for a year.（毕业后，他决定背包环游亚洲一年。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'backpack',
+          coreDifference:
+            '特指“双肩背包”，可用于日常、旅行等场景，也可作动词表背包旅行',
+          sceneFocus: '通勤、旅行、校园场景',
+        },
+        {
+          word: 'bag',
+          coreDifference: '泛指“包”，包括手提包、书包等各类包袋',
+          sceneFocus: '日常包袋描述场景',
+        },
+      ],
+    },
+    {
+      word: 'badge',
+      phonetic: '/bædʒ/（英）；/bædʒ/（美）',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        '1. 名词：徽章；证章；标识；象征  2. 动词：授予……徽章（或称号）',
+      toeicSceneFocus:
+        '多出现于职场身份识别、活动标识、荣誉授予等语境，是托业阅读（公司规章、活动通知）和听力（职场对话）中的常考词，侧重“**身份或荣誉的标识物**”',
+      keyCollocations: [
+        'employee badge（员工徽章）',
+        'security badge（安检证）',
+        'badge of honor（荣誉的象征）',
+      ],
+      toeicExampleSentences: [
+        'All visitors must wear a visitor badge when entering the factory.（所有访客进入工厂时必须佩戴访客徽章。）',
+        'Winning this award is a badge of recognition for her hard work in the industry.（获得这个奖项是对她在该行业辛勤付出的认可象征。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'badge',
+          coreDifference: '特指“徽章、证章”，用于身份识别或荣誉象征',
+          sceneFocus: '职场、活动、荣誉场景',
+        },
+        {
+          word: 'symbol',
+          coreDifference: '泛指“象征、标志”，抽象或具象均可',
+          sceneFocus: '文化、品牌、抽象概念象征场景',
+        },
+      ],
+    },
+    {
+      word: 'baggage',
+      phonetic: '/ˈbæɡɪdʒ/（英）；/ˈbæɡɪdʒ/（美）',
+      partOfSpeech: 'n. 名词（不可数）',
+      coreMeaning: '行李（英式、美式通用正式用语，不可数）',
+      toeicSceneFocus:
+        '多出现于交通出行、机场广播、酒店服务等语境，是托业听力（机场、酒店对话）和阅读（交通通知）中的高频词，侧重“**正式场合对行李的称呼**”',
+      keyCollocations: [
+        'hand baggage（手提行李）',
+        'checked baggage（托运行李）',
+        'baggage claim（行李提取处）',
+      ],
+      toeicExampleSentences: [
+        'Passengers are allowed to carry one piece of hand baggage onto the plane.（乘客可携带一件手提行李登机。）',
+        'Please check your baggage at the counter before boarding.（请在登机前到柜台办理行李托运。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'baggage',
+          coreDifference: '不可数名词，正式用语，多用于航空、铁路等交通场景',
+          sceneFocus: '正式出行、交通服务场景',
+        },
+        {
+          word: 'luggage',
+          coreDifference: '不可数名词，英式英语中更常用，与baggage语义基本一致',
+          sceneFocus: '英式日常出行场景',
+        },
+        {
+          word: 'baggage',
+          coreDifference: '无复数形式，不能直接加s',
+          sceneFocus: '正式交通场景',
+        },
+        {
+          word: 'bags',
+          coreDifference: '可数名词，口语中泛指行李、包裹',
+          sceneFocus: '日常口语场景',
+        },
+      ],
+    },
+    {
+      word: 'ballroom',
+      phonetic: '/ˈbɔːlruːm/（英）；/ˈbɔːlruːm/（美）',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '舞厅；宴会厅',
+      toeicSceneFocus:
+        '多出现于酒店服务、活动策划、社交场合等语境，是托业阅读（活动邀请函、酒店设施介绍）中的常考词，侧重“**用于举办舞会、宴会的大型房间**”',
+      keyCollocations: [
+        'ballroom dancing（交谊舞）',
+        'hotel ballroom（酒店宴会厅）',
+        'in the ballroom（在舞厅里）',
+      ],
+      toeicExampleSentences: [
+        'The wedding reception will be held in the grand ballroom of this five-star hotel.（婚礼晚宴将在这家五星级酒店的豪华宴会厅举行。）',
+        'She takes ballroom dancing classes every weekend to improve her social skills.（她每周上交谊舞课，以提升社交能力。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'ballroom',
+          coreDifference: '特指“舞厅、宴会厅”，用于舞会、宴会等社交活动',
+          sceneFocus: '社交活动、宴会举办场景',
+        },
+        {
+          word: 'banquet hall',
+          coreDifference: '特指“宴会厅”，更侧重用餐和宴会功能',
+          sceneFocus: '宴会、聚餐场景',
+        },
+      ],
+    },
+    {
+      word: 'banquet',
+      phonetic: '/ˈbæŋkwɪt/（英）；/ˈbæŋkwɪt/（美）',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning: '1. 名词：宴会；盛宴；宴请  2. 动词：宴请；设宴招待',
+      toeicSceneFocus:
+        '多出现于商务宴请、活动庆典、酒店服务等语境，是托业阅读（宴会邀请函、商务活动通知）中的常考词，侧重“**正式的、大型的宴请活动**”',
+      keyCollocations: [
+        'business banquet（商务宴会）',
+        'banquet dinner（晚宴）',
+        'host a banquet（举办宴会）',
+      ],
+      toeicExampleSentences: [
+        'The company will host a banquet to celebrate its 20th anniversary next month.（该公司将于下月举办宴会庆祝成立20周年。）',
+        'All participants of the conference are invited to the welcome banquet tonight.（所有参会者受邀参加今晚的欢迎晚宴。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'banquet',
+          coreDifference: '强调“正式的、大型的宴会”，通常有特定主题或目的',
+          sceneFocus: '商务庆典、正式宴请场景',
+        },
+        {
+          word: 'dinner',
+          coreDifference: '泛指“晚餐”，可指家庭晚餐或普通聚餐，非正式',
+          sceneFocus: '日常用餐、普通聚餐场景',
+        },
+      ],
+    },
+    {
+      word: 'basis',
+      phonetic: '/ˈbeɪsɪs/（英）；/ˈbeɪsɪs/（美）',
+      partOfSpeech: 'n. 名词（复数形式：bases）',
+      coreMeaning: '基础；根据；基准；方式',
+      toeicSceneFocus:
+        '商务高频核心词，多出现于合同协议、商务报告、工作计划等语境，是托业阅读（合同条款、分析报告）和听力（商务谈判）中的必考点，侧重“**事物的基础、依据或做事的方式**”',
+      keyCollocations: [
+        'on a regular basis（定期地）',
+        'on the basis of（基于；根据）',
+        'basis for decision（决策依据）',
+      ],
+      toeicExampleSentences: [
+        'We conduct performance evaluations on our employees on a quarterly basis.（我们每季度对员工进行一次绩效评估。）',
+        'The salary increase will be given on the basis of individual performance.（加薪将根据个人表现来决定。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'basis',
+          coreDifference:
+            '名词，侧重“抽象的基础、依据、方式”，常用搭配on the basis of',
+          sceneFocus: '商务决策、计划制定场景',
+        },
+        {
+          word: 'base',
+          coreDifference:
+            '可作名词、动词、形容词，名词可指“具体的基地、底部”或抽象的“基础”',
+          sceneFocus: '具体场所、事物底部、抽象基础场景',
+        },
+      ],
+    },
+    {
+      word: 'belonging',
+      phonetic: '/bɪˈlɒŋɪŋ/（英）；/bɪˈlɔːŋɪŋ/（美）',
+      partOfSpeech: 'n. 名词（常用复数形式belongings）',
+      coreMeaning: '1. （复数）所有物；财物；行李  2. （单数）归属感；附属关系',
+      toeicSceneFocus:
+        '多出现于职场规章、旅行场景、心理描述等语境，是托业阅读（公司制度、旅行指南）和听力（日常对话）中的常考词，侧重“**个人财物或抽象的归属感**”',
+      keyCollocations: [
+        'personal belongings（个人财物）',
+        'sense of belonging（归属感）',
+        'leave one’s belongings（遗留个人物品）',
+      ],
+      toeicExampleSentences: [
+        'Please keep your personal belongings with you at all times in the office.（在办公室请随时保管好个人财物。）',
+        'The company culture helps employees develop a strong sense of belonging.（公司文化帮助员工培养强烈的归属感。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'belongings',
+          coreDifference: '复数形式，特指“个人所有的财物、行李”，范围较窄',
+          sceneFocus: '日常保管、旅行场景',
+        },
+        {
+          word: 'possessions',
+          coreDifference:
+            '泛指“个人拥有的所有物品”，包括财物、房产等，范围更广',
+          sceneFocus: '财产描述、法律文书场景',
+        },
+      ],
+    },
+
+    {
+      word: 'alert',
+      phonetic: '/əˈlɜːrt/',
+      partOfSpeech: 'adj. 形容词；n. 名词；v. 动词',
+      coreMeaning: 'adj. 警觉的；机敏的 n. 警报；警戒状态 v. 向…报警；使警觉',
+      toeicSceneFocus:
+        '高频商务与安全词汇。形容词描述人的机敏状态；名词指警报信息（如系统警报、天气警报）；动词指发出警告或通知。常见于安全规程、系统通知、风险管理及提醒同事注意要事的邮件或对话中。',
+      keyCollocations: [
+        'security alert (安全警报)',
+        'be on alert (保持警惕)',
+        'alert someone to (提醒某人注意…)',
+        'emergency alert (紧急警报)',
+        'alert message (警报信息)',
+      ],
+      toeicExampleSentences: [
+        'All employees must remain alert to any suspicious activity in the building. (所有员工必须对大楼内的任何可疑活动保持警惕。)',
+        'The IT department sent out a company-wide alert about a potential phishing email campaign. (IT部门就一次潜在的钓鱼邮件攻击向全公司发出了警报。)',
+        'Please alert the manager immediately if the inventory levels fall below the safety threshold. (如果库存水平低于安全阈值，请立即通知经理。)',
+        'We received a weather alert advising us to postpone the outdoor team-building event. (我们收到天气警报，建议我们推迟户外团队建设活动。)',
+      ],
+      sceneAssociation:
+        '想象电脑屏幕上弹出一个红色的“Security Alert”（安全警报）窗口，或手机突然响起“Emergency Alert”（紧急警报）的声音。',
+      confusingWordsComparison: [
+        {
+          word: 'alert (adj./n./v.)',
+          coreDifference:
+            '强调“警觉、警惕”的状态或“发出警报”的行为，用于提醒潜在危险或重要信息。',
+          toeicSceneFocus: '警报、警惕状态、提醒注意。',
+        },
+        {
+          word: 'warning',
+          coreDifference:
+            '“警告”，指关于危险、问题或不良后果的事先告知，通常比alert更正式、严重。',
+          toeicSceneFocus: '正式的警告（如警告信、警告标志）。',
+        },
+        {
+          word: 'notice (n.)',
+          coreDifference: '“通知”，通常指一般的、非紧急的信息通告。',
+          toeicSceneFocus: '一般的通知、公告。',
+        },
+      ],
+    },
+    {
+      word: 'amaze',
+      phonetic: '/əˈmeɪz/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '使惊奇；使惊羡',
+      toeicSceneFocus:
+        '用于表达强烈的积极惊喜，常见于客户反馈、产品评价、业绩总结或描述非凡成就时。其形容词“amazing”和名词“amazement”更常用。在托业听力（如客户称赞）和阅读（如产品评测）中可能出现。',
+      keyCollocations: [
+        'be amazed at/by (对…感到惊奇)',
+        'amazing results (惊人的结果)',
+        'never cease to amaze (总是令人惊叹)',
+        'to one’s amazement (令某人惊讶的是)',
+      ],
+      toeicExampleSentences: [
+        'We were amazed by the overwhelmingly positive response to our new product launch. (我们对新产品发布获得的 overwhelmingly 积极反响感到惊讶。)',
+        'The team’s efficiency never ceases to amaze me. (团队的效率总是让我惊叹不已。)',
+        'The new software’s processing speed is truly amazing. (新软件的处理速度真是令人惊叹。)',
+        'To everyone’s amazement, the rookie salesperson topped the charts in her first month. (令所有人惊讶的是，那个销售新手在第一个月就登上了排行榜榜首。)',
+      ],
+      sceneAssociation:
+        '想象一位客户在 testimonial 中说“I was absolutely amazed by the quality and speed of service.”（我对服务的质量和速度感到非常惊讶。），或在业绩会议上展示一张“Amazing Growth!”（惊人增长！）的图表。',
+      confusingWordsComparison: [
+        {
+          word: 'amaze',
+          coreDifference:
+            '“使大为惊奇”，语气强烈，通常指因非凡、出色或意外的事物而感到惊喜和钦佩。',
+          toeicSceneFocus: '因出色或非凡事物而感到强烈惊喜（多褒义）。',
+        },
+        {
+          word: 'surprise',
+          coreDifference:
+            '“使惊讶”，通用词，指因未预料到的事而感到意外，可好可坏。',
+          toeicSceneFocus: '因意外之事而感到惊讶（中性）。',
+        },
+        {
+          word: 'astonish',
+          coreDifference:
+            '“使震惊”，语气比amaze更强，指因极度令人吃惊或难以置信的事而感到震撼。',
+          toeicSceneFocus: '因极端意外或难以置信之事而感到震惊。',
+        },
+      ],
+    },
+    {
+      word: 'announce',
+      phonetic: '/əˈnaʊns/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '宣布；通告；预告',
+      toeicSceneFocus:
+        '商务沟通核心动词。指正式或公开地宣布消息、决定、活动、产品等。涉及公司通告、新闻发布会、内部邮件、产品发布、人事变动等几乎所有正式信息发布场景。',
+      keyCollocations: [
+        'announce a decision (宣布决定)',
+        'announce the launch of (宣布…的推出)',
+        'announce a merger (宣布合并)',
+        'announce a winner (宣布获胜者)',
+        'formally announce (正式宣布)',
+      ],
+      toeicExampleSentences: [
+        'The CEO will announce the company’s quarterly financial results in a press conference tomorrow. (首席执行官将在明天的新闻发布会上公布公司季度财务业绩。)',
+        'We are pleased to announce the promotion of Sarah Chen to Director of Marketing. (我们很高兴地宣布 Sarah Chen 晋升为市场总监。)',
+        'The new policy was announced via an all-staff email this morning. (新政策已于今天早上通过全员邮件宣布。)',
+        'The trade fair organizers will announce the ‘Best Booth’ award at the closing ceremony. (贸易博览会组织方将在闭幕式上宣布“最佳展位”奖。)',
+      ],
+      sceneAssociation:
+        '想象公司内部网站的头条新闻“Company Announces Strategic Partnership with Tech Giant”（公司宣布与科技巨头达成战略合作），或收件箱里一封主题为“Announcing the 2025 Annual Conference”的邮件。',
+      confusingWordsComparison: [
+        {
+          word: 'announce',
+          coreDifference: '“宣布”，指向公众或特定群体正式公布消息，使其知晓。',
+          toeicSceneFocus: '正式公布消息、决定。',
+        },
+        {
+          word: 'declare',
+          coreDifference:
+            '“声明、宣告”，更正式、庄重，常指官方或权威性的宣布（如宣布独立、申报税务）。',
+          toeicSceneFocus: '官方、权威性的宣告。',
+        },
+        {
+          word: 'inform',
+          coreDifference:
+            '“通知、告知”，指将信息传达给某人，不一定是公开宣布。',
+          toeicSceneFocus: '告知某人信息（一对一或小范围）。',
+        },
+      ],
+    },
+    {
+      word: 'anticipate',
+      phonetic: '/ænˈtɪsɪpeɪt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '预料；预期；期盼',
+      coreMeaning: '预料；预期；期盼',
+      toeicSceneFocus:
+        '商务策划、风险管理和客户服务中的高级词汇。指基于现有信息或趋势，对未来事件、需求或问题进行预测并提前做好准备。比“expect”更正式，且包含“提前行动”的意味。',
+      keyCollocations: [
+        'anticipate problems (预料问题)',
+        'anticipate demand (预测需求)',
+        'highly anticipated (备受期待的)',
+        'anticipate changes (预见变化)',
+        'it is anticipated that (预计…)',
+      ],
+      toeicExampleSentences: [
+        'We anticipate a surge in customer inquiries following the product launch and have staffed accordingly. (我们预计产品发布后客户问询量会激增，并已相应安排了人员。)',
+        'The highly anticipated software update will be released next month. (备受期待的软件更新将于下个月发布。)',
+        'Good project managers can anticipate potential risks and develop contingency plans. (优秀的项目经理能够预见潜在风险并制定应急计划。)',
+        'Sales are anticipated to grow by 10% in the next fiscal year. (预计下一财年销售额将增长10%。)',
+      ],
+      sceneAssociation:
+        '想象项目计划中的“Risk Assessment”（风险评估）部分，其中一条是“Anticipated Delays due to Supply Chain Issues”（因供应链问题预计的延误），或市场报告标题“Anticipating Market Trends for 2025”（预测2025年市场趋势）。',
+      confusingWordsComparison: [
+        {
+          word: 'anticipate',
+          coreDifference:
+            '“预料、预期”，不仅指认为某事会发生，还常隐含为此提前准备或期盼。正式用语。',
+          toeicSceneFocus: '预测并提前准备；正式期盼。',
+        },
+        {
+          word: 'expect',
+          coreDifference: '“期待、预计”，通用词，指认为某事很可能发生或到来。',
+          toeicSceneFocus: '认为很可能发生（通用）。',
+        },
+        {
+          word: 'predict',
+          coreDifference: '“预测”，强调基于知识或分析对将来事件做出陈述。',
+          toeicSceneFocus: '基于分析做出预报。',
+        },
+      ],
+    },
+    {
+      word: 'apologize',
+      phonetic: '/əˈpɑːlədʒaɪz/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '道歉；致歉',
+      toeicSceneFocus:
+        '客户服务、商务沟通和职场礼仪关键动词。用于因错误、延误或不便向客户、同事或合作伙伴表示歉意。其名词“apology”和形容词“apologetic”也常见。是处理投诉、维护关系的重要环节。',
+      keyCollocations: [
+        'apologize for (为…道歉)',
+        'apologize profusely (郑重道歉)',
+        'apologize for the inconvenience (为不便道歉)',
+        'apologize on behalf of (代表…道歉)',
+        'I must apologize (我必须道歉)',
+      ],
+      toeicExampleSentences: [
+        'We sincerely apologize for the delay in shipping your order. (我们为延误发货向您致以诚挚的歉意。)',
+        'I must apologize for the mistake in the report; a corrected version is attached. (我必须为报告中的错误道歉；修正版已附上。)',
+        'The manager apologized on behalf of the team for the oversight. (经理代表团队为这一疏忽道了歉。)',
+        'Please accept our apologies for any inconvenience this may have caused. (对于此事可能造成的任何不便，我们深表歉意。)',
+      ],
+      sceneAssociation:
+        '想象一封来自客服的邮件开头“Dear Customer, We apologize for...”（尊敬的客户，我们为……致歉），或会议上有人说“I apologize for being late.”（我为迟到道歉。）。',
+      confusingWordsComparison: [
+        {
+          word: 'apologize',
+          coreDifference: '“道歉”，动词，指向某人承认错误或失礼并表示歉意。',
+          toeicSceneFocus: '表示道歉的动作。',
+        },
+        {
+          word: 'sorry (adj.)',
+          coreDifference:
+            '“抱歉的、难过的”，形容词，表达歉意或遗憾的感受，更口语化。',
+          toeicSceneFocus: '感到抱歉的状态（更口语）。',
+        },
+        {
+          word: 'regret (v./n.)',
+          coreDifference:
+            '“遗憾、后悔”，语气更正式、庄重，常用于对已发生的不幸事件表示遗憾，不一定承认己方错误。',
+          toeicSceneFocus: '对某事表示遗憾（正式）。',
+        },
+      ],
+    },
+    {
+      word: 'appeal',
+      phonetic: '/əˈpiːl/',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning: 'v. 吸引；呼吁；上诉 n. 吸引力；呼吁；上诉',
+      toeicSceneFocus:
+        '多义词。动词义“吸引”是营销和产品描述核心词（appeal to customers）。“呼吁”义用于请求支持或行动。“上诉”是法律术语。名词指“吸引力”或“请求”。托业中“吸引”和“呼吁”两义最常见。',
+      keyCollocations: [
+        'appeal to (吸引；向…呼吁)',
+        'wide appeal (广泛的吸引力)',
+        'make an appeal (提出呼吁)',
+        'court of appeal (上诉法院)',
+        'lose its appeal (失去吸引力)',
+      ],
+      toeicExampleSentences: [
+        'The new design is intended to appeal to a younger demographic. (新设计旨在吸引更年轻的消费群体。)',
+        'The charity made a public appeal for donations to support the relief effort. (该慈善机构公开呼吁捐款以支持救援工作。)',
+        'The product’s main appeal lies in its simplicity and ease of use. (该产品的主要吸引力在于其简洁和易用性。)',
+        'The defendant has the right to appeal the court’s decision. (被告有权对法院的判决提出上诉。)',
+      ],
+      sceneAssociation:
+        '动词（吸引）：营销团队讨论“How can we make the product appeal to professionals?”（我们如何让产品吸引专业人士？）。名词（呼吁）：公司邮件“An appeal for volunteers for the community event.”（为社区活动招募志愿者的呼吁。）。',
+      confusingWordsComparison: [
+        {
+          word: 'appeal (v.)',
+          coreDifference:
+            '“吸引”，指引起兴趣、喜爱或赞赏；“呼吁”指恳请支持或行动。',
+          toeicSceneFocus: '吸引（某人）；呼吁（支持）。',
+        },
+        {
+          word: 'attract',
+          coreDifference:
+            '“吸引”，与“appeal to”同义，但“attract”是及物动词，直接接宾语。',
+          toeicSceneFocus: '吸引（注意力、人）。',
+        },
+        {
+          word: 'plead',
+          coreDifference:
+            '“恳求、辩护”，指急切、情感强烈地请求，或法律上答辩。',
+          toeicSceneFocus: '急切恳求；法律答辩。',
+        },
+      ],
+    },
+    {
+      word: 'apply',
+      phonetic: '/əˈplaɪ/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '应用；运用；申请；涂敷',
+      toeicSceneFocus:
+        '托业超高频多义动词。1) “应用”知识、规则、技术。2) “申请”职位、许可、会员等。3) “涂敷”物品（如涂料）。前两义在职场技能描述和求职场景中至关重要。短语“apply for”和“apply to”需区分。',
+      keyCollocations: [
+        'apply for (申请…)',
+        'apply to (适用于；向…申请)',
+        'apply pressure (施加压力)',
+        'apply a rule (应用规则)',
+        'apply oneself (努力，专心致志)',
+      ],
+      toeicExampleSentences: [
+        'Interested candidates can apply for the position through our online career portal. (感兴趣的候选人可通过我们的在线招聘门户申请该职位。)',
+        'The new safety regulations apply to all employees and visitors on site. (新的安全规程适用于现场所有员工和访客。)',
+        'She applied her extensive marketing experience to the new product launch campaign. (她将自己丰富的市场经验应用到了新产品发布活动中。)',
+        'Please apply the software update to all company computers by Friday. (请于周五前将软件更新应用到所有公司电脑上。)',
+      ],
+      sceneAssociation:
+        '想象求职网站上的按钮“Apply Now”（立即申请），或培训师说“Now, let’s apply this theory to a real case.”（现在，让我们把这个理论应用到一个实际案例中。）。',
+      confusingWordsComparison: [
+        {
+          word: 'apply (for)',
+          coreDifference:
+            '“申请”，指向某个机构提出请求以获得某物（工作、许可等）。',
+          toeicSceneFocus: '提出正式请求以获取机会或资格。',
+        },
+        {
+          word: 'applicant',
+          coreDifference: '“申请者”，名词，指提出申请的人。',
+          toeicSceneFocus: '求职或申请某事物的人。',
+        },
+        {
+          word: 'implement',
+          coreDifference:
+            '“实施、执行”，指将计划、系统等付诸实践，更侧重于执行行动。',
+          toeicSceneFocus: '执行计划、政策。',
+        },
+      ],
+    },
+    {
+      word: 'appoint',
+      phonetic: '/əˈpɔɪnt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '任命；委派；约定（时间）',
+      coreMeaning: '任命；委派；约定（时间）',
+      toeicSceneFocus:
+        '人力资源和组织管理的核心动词。1) 正式任命某人担任某职位。2) 委派任务。3) 约定时间（尤指正式会面）。名词“appointment”指“约会；任命”更常用。',
+      keyCollocations: [
+        'appoint someone as (任命某人为…)',
+        'appoint a committee (任命一个委员会)',
+        'appoint a time/date (约定时间/日期)',
+        'newly appointed (新任命的)',
+      ],
+      toeicExampleSentences: [
+        'The board of directors has decided to appoint Ms. Lee as the new Chief Financial Officer. (董事会已决定任命李女士为新任首席财务官。)',
+        'We need to appoint a project manager to oversee the implementation phase. (我们需要委派一名项目经理来监督实施阶段。)',
+        'Let’s appoint a time next week to discuss the proposal in detail. (我们定一下下周的时间详细讨论这个提案吧。)',
+        'The newly appointed director will start her role on the first of next month. (新任命的总监将于下月一号开始履职。)',
+      ],
+      sceneAssociation:
+        '想象公司公告邮件“We are pleased to announce the appointment of John Smith as Head of Sales.”（我们很高兴地宣布任命 John Smith 为销售主管。），或秘书说“I’d like to appoint a meeting with you.”（我想和您约个时间见面。）。',
+      confusingWordsComparison: [
+        {
+          word: 'appoint',
+          coreDifference:
+            '“任命、委派”，指正式赋予某人职位或责任；“约定”时间地点。',
+          toeicSceneFocus: '正式任命职位；约定时间。',
+        },
+        {
+          word: 'assign',
+          coreDifference:
+            '“分配、指派”，指分配任务、工作或资源给某人，不一定涉及正式职位。',
+          toeicSceneFocus: '分配具体任务或工作。',
+        },
+        {
+          word: 'schedule (v.)',
+          coreDifference:
+            '“安排、排定”，指将事件列入日程表，与“appoint a time”近义，但更通用。',
+          toeicSceneFocus: '安排时间、计划。',
+        },
+      ],
+    },
+    {
+      word: 'appreciate',
+      phonetic: '/əˈpriːʃieɪt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '欣赏；感谢；理解；增值',
+      toeicSceneFocus:
+        '商务沟通中的礼貌和情商高频词。1) 表达感谢（比“thank you”更正式）。2) 表示理解或体谅（如 appreciate your situation）。3) 指资产“增值”。前两义在邮件、会议和客户互动中至关重要。',
+      keyCollocations: [
+        'I appreciate your help. (感谢您的帮助。)',
+        'highly appreciate (高度赞赏)',
+        'appreciate your understanding (感谢您的理解)',
+        'appreciate in value (升值)',
+      ],
+      toeicExampleSentences: [
+        'We greatly appreciate your prompt response to our inquiry. (我们非常感谢您对我们问询的及时回复。)',
+        'I would appreciate it if you could send me the report by tomorrow. (如果您能在明天之前把报告发给我，我将不胜感激。)',
+        'We fully appreciate the challenges you are facing with the tight deadline. (我们完全理解你们在紧迫的截止日期下所面临的挑战。)',
+        'Real estate in this area has appreciated significantly over the past five years. (该地区的房地产在过去五年里大幅升值。)',
+      ],
+      sceneAssociation:
+        '想象商务邮件结尾“Thank you for your cooperation. We appreciate your business.”（感谢您的合作。我们珍视与您的业务。），或在谈判中说“We appreciate your position, but...”（我们理解您的立场，但是……）。',
+      confusingWordsComparison: [
+        {
+          word: 'appreciate',
+          coreDifference:
+            '“欣赏、感谢”，强调认识到价值并心存感激；也指“理解”困难；经济上指“增值”。',
+          toeicSceneFocus: '表达感谢；表示理解；资产增值。',
+        },
+        {
+          word: 'thank',
+          coreDifference:
+            '“感谢”，通用词，直接表达谢意，但不如“appreciate”正式和深入。',
+          toeicSceneFocus: '直接道谢（通用）。',
+        },
+        {
+          word: 'understand',
+          coreDifference: '“理解、明白”，仅指认知上明白，不包含“感激”之意。',
+          toeicSceneFocus: '认知上的理解。',
+        },
+      ],
+    },
+    {
+      word: 'approve',
+      phonetic: '/əˈpruːv/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '批准；同意；赞成',
+      toeicSceneFocus:
+        '工作流程、决策和权限管理核心动词。指正式或官方地同意、认可某事，如批准预算、计划、请假、报销等。其名词“approval”和反义词“disapprove/reject”同样高频。',
+      keyCollocations: [
+        'approve a request (批准请求)',
+        'approve a budget (批准预算)',
+        'approve of (赞成，认可)',
+        'gain approval (获得批准)',
+        'approved by (经…批准)',
+      ],
+      toeicExampleSentences: [
+        'All expense reports must be approved by your department head before submission to finance. (所有费用报告在提交给财务部门之前，必须由您的部门主管批准。)',
+        'The board unanimously approved the proposed merger. (董事会一致批准了拟议的合并案。)',
+        'My manager doesn’t approve of working from home more than twice a week. (我的经理不赞成每周居家办公超过两次。)',
+        'We are waiting for final approval from the legal team before proceeding. (我们在等待法律团队的最终批准，然后才能继续。)',
+      ],
+      sceneAssociation:
+        '想象一个工作流系统里，一个任务的状态从“Pending Approval”（待批准）变成了“Approved”（已批准），或需要填写表格“To be approved by: ____________”（批准人：____________）。',
+      confusingWordsComparison: [
+        {
+          word: 'approve',
+          coreDifference: '“批准、同意”，指官方或有权力者正式同意、认可。',
+          toeicSceneFocus: '正式批准、同意。',
+        },
+        {
+          word: 'agree',
+          coreDifference: '“同意”，指个人意见一致，不一定是正式批准。',
+          toeicSceneFocus: '意见一致（非正式）。',
+        },
+        {
+          word: 'authorize',
+          coreDifference: '“授权、批准”，强调授予进行某事的合法权力或许可。',
+          toeicSceneFocus: '授予进行某事的权力或正式许可。',
+        },
+      ],
+    },
+    {
+      word: 'arrange',
+      phonetic: '/əˈreɪndʒ/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '安排；整理；筹备',
+      toeicSceneFocus:
+        '行政、后勤和项目管理核心动词。涉及组织会议、活动、旅行、日程、物品等。强调使事物有序或做好事先准备。名词“arrangement”也极常用。',
+      keyCollocations: [
+        'arrange a meeting (安排会议)',
+        'arrange for (为…安排)',
+        'arrange in order (按顺序排列)',
+        'make arrangements (做安排)',
+        'flower arrangement (插花)',
+      ],
+      toeicExampleSentences: [
+        'Could you arrange a conference call with the team in London for tomorrow afternoon? (你能安排明天下午与伦敦团队的电话会议吗？)',
+        'I’ve already arranged for a car to pick you up from the airport. (我已经安排好一辆车去机场接您。)',
+        'Please arrange the documents in chronological order before filing them. (请在归档前按时间顺序整理好文件。)',
+        'All travel arrangements have been made according to your itinerary. (所有的旅行安排都已根据您的行程安排妥当。)',
+      ],
+      sceneAssociation:
+        '想象对行政助理说“Can you arrange the catering for the board meeting?”（你能为董事会会议安排一下餐饮吗？），或整理文件时“I need to arrange these invoices by date.”（我需要按日期整理这些发票。）。',
+      confusingWordsComparison: [
+        {
+          word: 'arrange',
+          coreDifference:
+            '“安排、整理”，指组织或使事物有秩序，或为事件做计划和准备。',
+          toeicSceneFocus: '组织、计划、整理。',
+        },
+        {
+          word: 'organize',
+          coreDifference:
+            '“组织”，与arrange近义，但更强调系统性地 structuring 或 coordinating。',
+          toeicSceneFocus: '系统性地组织、协调。',
+        },
+        {
+          word: 'schedule (v.)',
+          coreDifference: '“排定日程”，特指将事件安排在具体时间。',
+          toeicSceneFocus: '安排时间、制定日程。',
+        },
+      ],
+    },
+    {
+      word: 'assemble',
+      phonetic: '/əˈsembl/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '组装；集合；聚集',
+      toeicSceneFocus:
+        '1) 制造与生产场景：将零件组装成产品。2) 人员聚集场景：召集人员开会或集合。是工厂、项目管理、团队协作的常见动词。名词“assembly”指“组装；集会”。',
+      keyCollocations: [
+        'assemble a team (组建团队)',
+        'assemble parts/components (组装零件/部件)',
+        'assemble data (收集数据)',
+        'assembly line (装配线)',
+        'assemble for a meeting (集合开会)',
+      ],
+      toeicExampleSentences: [
+        'The workers on the assembly line assemble over 300 units per day. (装配线上的工人每天组装300多个单元。)',
+        'We need to assemble a task force to address this urgent issue. (我们需要组建一个特别工作组来处理这个紧急问题。)',
+        'Please assemble all the necessary documents before submitting your application. (请在提交申请前收集好所有必要的文件。)',
+        'All staff are required to assemble in the main conference room at 9 a.m. tomorrow. (要求全体员工明早9点在大会议室集合。)',
+      ],
+      sceneAssociation:
+        '想象宜家说明书标题“How to Assemble Your New Bookshelf”（如何组装您的新书架），或项目经理说“Let’s assemble the key stakeholders for a quick briefing.”（让我们召集关键利益相关者开个简会。）。',
+      confusingWordsComparison: [
+        {
+          word: 'assemble',
+          coreDifference:
+            '“组装”，指将部件组合成一个整体；“集合”指使人或物聚集在一起。',
+          toeicSceneFocus: '组装产品；召集人员。',
+        },
+        {
+          word: 'gather',
+          coreDifference:
+            '“收集、聚集”，通用词，指将分散的人或物集合起来，不一定为了组装。',
+          toeicSceneFocus: '收集信息；人员聚集（通用）。',
+        },
+        {
+          word: 'collect',
+          coreDifference: '“收集”，指有选择性地或系统地汇集物品或信息。',
+          toeicSceneFocus: '系统性地收集物品或数据。',
+        },
+      ],
+    },
+    {
+      word: 'assure',
+      phonetic: '/əˈʃʊr/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '向…保证；使确信；确保',
+      toeicSceneFocus:
+        '客户服务、质量承诺和建立信任的关键动词。用于向客户、同事或上级做出肯定承诺，消除其疑虑。语气比“ensure”更强，侧重于通过口头或行动让人放心。名词“assurance”也常用。',
+      keyCollocations: [
+        'assure someone that (向某人保证…)',
+        'rest assured (请放心)',
+        'assure quality (保证质量)',
+        'give assurance (做出保证)',
+      ],
+      toeicExampleSentences: [
+        'I can assure you that the delivery will arrive by tomorrow noon at the latest. (我可以向您保证，货物最迟明天中午前送达。)',
+        'The company assured its customers that their data is secure and protected. (该公司向客户保证其数据是安全且受保护的。)',
+        'Please rest assured that we are doing everything possible to resolve the issue. (请放心，我们正在尽一切努力解决这个问题。)',
+        'We need firm assurances from the supplier regarding on-time delivery. (我们需要供应商就准时交货做出坚定保证。)',
+      ],
+      sceneAssociation:
+        '想象客户对延误表示担忧，客服代表回复“Let me assure you, we’re prioritizing your order.”（请允许我向您保证，我们正在优先处理您的订单。），或产品包装上印着“Quality Assured”（质量保证）。',
+      confusingWordsComparison: [
+        {
+          word: 'assure',
+          coreDifference:
+            '“向…保证”，宾语是人，指通过言语或行动使人消除疑虑，感到放心。',
+          toeicSceneFocus: '使人确信、放心（接人作宾语）。',
+        },
+        {
+          word: 'ensure',
+          coreDifference:
+            '“确保、保证”，宾语是事物或事件，指采取措施确保某事发生或某结果出现。',
+          toeicSceneFocus: '确保某事发生（接事物作宾语）。',
+        },
+        {
+          word: 'insure',
+          coreDifference: '“给…保险”，特指购买保险以防损失。',
+          toeicSceneFocus: '为…投保。',
+        },
+      ],
+    },
+    {
+      word: 'attach',
+      phonetic: '/əˈtætʃ/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '附上；贴上；使依附；使附属',
+      coreMeaning: '附上；贴上；使依附；使附属',
+      toeicSceneFocus:
+        '办公和数字沟通超高频动词。1) 邮件中“附加”文件。2) 物理上“贴上”标签、文件。3) 抽象上“使附属、关联”。名词“attachment”指“附件；附属物”。是托业听力（如文件处理）和阅读（如邮件指令）必考词。',
+      keyCollocations: [
+        'attach a file (附加文件)',
+        'attach importance to (重视)',
+        'attached please find (随信附上…请查收) [邮件套语]',
+        'attach a label (贴上标签)',
+        'be attached to (附属于；喜爱)',
+      ],
+      toeicExampleSentences: [
+        'Please find the report attached to this email. (报告附在本邮件中，请查收。)',
+        'Remember to attach the shipping label to the outside of the package. (记得把货运标签贴在包裹外面。)',
+        'Our company attaches great importance to employee training and development. (我们公司非常重视员工的培训和发展。)',
+        'I am attaching the signed contract for your records. (随信附上已签署的合同供您存档。)',
+      ],
+      sceneAssociation:
+        '写邮件时，点击“Attach File”（附加文件）按钮，或听到指令“Make sure you attach the receipt to your expense report.”（确保你把收据附在费用报告上。）。',
+      confusingWordsComparison: [
+        {
+          word: 'attach',
+          coreDifference: '“附上、贴上”，指将一物与另一物物理连接或数字关联。',
+          toeicSceneFocus: '附加文件；贴上物品；使关联。',
+        },
+        {
+          word: 'enclose',
+          coreDifference:
+            '“随信附上”，特指将某物放入信封或包裹中一同寄出，或在邮件中提及附件。较正式。',
+          toeicSceneFocus: '随信附寄（正式）。',
+        },
+        {
+          word: 'include',
+          coreDifference:
+            '“包括”，指作为整体的一部分包含在内，不一定是物理附着。',
+          toeicSceneFocus: '包含、包括。',
+        },
+      ],
+    },
+    {
+      word: 'attempt',
+      phonetic: '/əˈtempt/',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning: 'v. 试图；尝试 n. 试图；尝试',
+      toeicSceneFocus:
+        '描述努力做某事但结果不确定的动词/名词。用于项目计划、问题解决、目标设定等场景。名词常与“make”搭配（make an attempt）。暗示可能需要努力且可能失败。',
+      keyCollocations: [
+        'attempt to do (试图做…)',
+        'make an attempt (尝试)',
+        'first attempt (第一次尝试)',
+        'attempted robbery (抢劫未遂) [法律]',
+        'in an attempt to (为了试图…)',
+      ],
+      toeicExampleSentences: [
+        'We will attempt to resolve the technical issue by the end of the day. (我们将尝试在今天下班前解决这个技术问题。)',
+        'Despite several attempts to contact the client, we have received no response. (尽管多次尝试联系客户，我们仍未收到回复。)',
+        'The team’s first attempt at the new marketing strategy was not successful. (团队对新营销策略的首次尝试并不成功。)',
+        'The software update is an attempt to improve system security and performance. (此次软件更新是为了尝试提高系统安全性和性能。)',
+      ],
+      sceneAssociation:
+        '想象项目回顾中说“Our initial attempt failed, but we learned valuable lessons.”（我们最初的尝试失败了，但我们吸取了宝贵的教训。），或计划“We’ll attempt a new approach.”（我们将尝试一种新方法。）。',
+      confusingWordsComparison: [
+        {
+          word: 'attempt (v./n.)',
+          coreDifference: '“试图、尝试”，强调付出努力去做可能困难或失败的事。',
+          toeicSceneFocus: '付出努力去尝试（可能失败）。',
+        },
+        {
+          word: 'try',
+          coreDifference:
+            '“尝试”，通用词，努力做某事，比 attempt 更口语化、更普通。',
+          toeicSceneFocus: '尝试做某事（通用，口语）。',
+        },
+        {
+          word: 'endeavor (v./n.)',
+          coreDifference: '“努力、力图”，正式用语，指付出巨大、真诚的努力。',
+          toeicSceneFocus: '付出巨大努力（正式）。',
+        },
+      ],
+    },
+    {
+      word: 'attend',
+      phonetic: '/əˈtend/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '参加；出席；照料；处理',
+      toeicSceneFocus:
+        '商务社交和职责核心动词。1) 参加或出席会议、活动、课程。2) 处理、注意（attend to）。名词“attendance”（出席）和“attendee”（出席者）也高频。是日程安排和跟进工作的必备词。',
+      keyCollocations: [
+        'attend a meeting (参加会议)',
+        'attend a conference (参加会议)',
+        'attend to (处理；照料)',
+        'attention (注意力) [同根名词]',
+        'regular attendance (定期出席)',
+      ],
+      toeicExampleSentences: [
+        'All department managers are required to attend the monthly strategy meeting. (所有部门经理都必须参加月度战略会议。)',
+        'Over 500 industry professionals are expected to attend the annual trade fair. (预计将有超过500名行业专业人士参加年度贸易博览会。)',
+        'Could you please attend to this customer’s complaint as soon as possible? (你能尽快处理一下这位客户的投诉吗？)',
+        'Your attendance at the safety training workshop is mandatory. (您必须参加安全培训研讨会。)',
+      ],
+      sceneAssociation:
+        '想象日历邀请“You are invited to attend the Product Launch Event.”（诚邀您出席产品发布会。），或经理说“I have a urgent matter to attend to.”（我有一件紧急事情要处理。）。',
+      confusingWordsComparison: [
+        {
+          word: 'attend',
+          coreDifference:
+            '“参加、出席”，指到场参加活动；“处理”某事（attend to）。',
+          toeicSceneFocus: '参加会议/活动；处理（事务）。',
+        },
+        {
+          word: 'participate',
+          coreDifference:
+            '“参与”，强调在活动中积极投入、互动，而不仅仅是出席。',
+          toeicSceneFocus: '积极参与、融入活动。',
+        },
+        {
+          word: 'join',
+          coreDifference:
+            '“加入”，指成为团体的一员或与他人一起活动，强调“成为一部分”。',
+          toeicSceneFocus: '加入组织；参与正在进行的事。',
+        },
+      ],
+    },
+    {
+      word: 'attract',
+      phonetic: '/əˈtrækt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '吸引；引起（兴趣、注意力）',
+      toeicSceneFocus:
+        '市场营销、人才招聘和商业策略核心动词。指通过提供好处、具有吸引力或有趣来引起注意、兴趣或人/物的到来。其名词“attraction”和形容词“attractive”同样重要。',
+      keyCollocations: [
+        'attract customers/investors (吸引客户/投资者)',
+        'attract attention (引起注意)',
+        'attract talent (吸引人才)',
+        'attractive offer (有吸引力的报价)',
+        'tourist attraction (旅游景点)',
+      ],
+      toeicExampleSentences: [
+        'The company aims to attract top talent by offering competitive salaries and benefits. (该公司旨在通过提供有竞争力的薪酬福利来吸引顶尖人才。)',
+        'The window display is designed to attract the attention of potential customers. (橱窗展示的设计旨在吸引潜在顾客的注意。)',
+        'The new tax incentives are expected to attract more foreign investment to the region. (新的税收优惠政策预计将为该地区吸引更多外国投资。)',
+        'We need to make the job position more attractive to experienced candidates. (我们需要使这个职位对经验丰富的候选人更具吸引力。)',
+      ],
+      sceneAssociation:
+        '想象招聘广告标题“We Attract the Best and Brightest.”（我们吸引最优秀、最聪明的人才。），或市场计划目标“The campaign’s goal is to attract new users.”（该 campaign 的目标是吸引新用户。）。',
+      confusingWordsComparison: [
+        {
+          word: 'attract',
+          coreDifference:
+            '“吸引”，指人或物因其魅力、优点等自然而然地引起兴趣、喜爱或靠近。',
+          toeicSceneFocus: '引起兴趣、注意力或人/物的到来。',
+        },
+        {
+          word: 'appeal (v.)',
+          coreDifference:
+            '“有吸引力”，不及物动词，常与to连用（appeal to），表示对某人有吸引力。',
+          toeicSceneFocus: '对…有吸引力（不及物，需加to）。',
+        },
+        {
+          word: 'draw',
+          coreDifference:
+            '“吸引；拉”，与attract近义，但更强调“引来”的动作或结果；也有“绘画”之意。',
+          toeicSceneFocus: '吸引（注意力、人群）。',
+        },
+      ],
+    },
+    {
+      word: 'attribute',
+      phonetic: '/əˈtrɪbjuːt/ (v.), /ˈætrɪbjuːt/ (n.)',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning: 'v. 把…归因于；认为是…所为 n. 属性；特性',
+      toeicSceneFocus:
+        '动词是分析和报告中的关键逻辑词，用于说明原因或来源。名词指某人或某物的品质、特征。在商务分析、产品描述和绩效评估中均常见。',
+      keyCollocations: [
+        'attribute A to B (把A归因于B)',
+        'key attribute (关键属性)',
+        'personal attribute (个人特质)',
+        'product attribute (产品属性)',
+        'be attributed to (归功于；归因于)',
+      ],
+      toeicExampleSentences: [
+        'The CEO attributed the company’s success to its innovative culture and dedicated employees. (首席执行官将公司的成功归因于其创新文化和敬业的员工。)',
+        'One of the key attributes we look for in a candidate is strong problem-solving skills. (我们在候选人身上寻找的关键特质之一是强大的解决问题的能力。)',
+        'The delay in delivery can be attributed to severe weather conditions. (交货延迟可归因于恶劣的天气条件。)',
+        'The product’s main selling points are its durability and other positive attributes. (该产品的主要卖点是其耐用性及其他积极特性。)',
+      ],
+      sceneAssociation:
+        '动词：想象季度报告写道“The sales growth is largely attributed to the new marketing strategy.”（销售增长主要归功于新的营销策略。）。名词：想象产品规格表里列着“Product Attributes: lightweight, waterproof, durable.”（产品属性：轻便、防水、耐用。）。',
+      confusingWordsComparison: [
+        {
+          word: 'attribute (v.)',
+          coreDifference:
+            '“把…归因于”，指将结果、品质或创造物归于某个原因、来源或人物。',
+          toeicSceneFocus: '将结果归因于某个原因。',
+        },
+        {
+          word: 'contribute (v.)',
+          coreDifference:
+            '“贡献；促成”，指为某事出一份力，是导致结果的部分原因，而非唯一原因。',
+          toeicSceneFocus: '对…有贡献；是…的部分原因。',
+        },
+        {
+          word: 'characteristic (n.)',
+          coreDifference:
+            '“特征、特点”，与 attribute (n.) 近义，指区分某人/物的典型特征。',
+          toeicSceneFocus: '典型特征、特点。',
+        },
+      ],
+    },
+    {
+      word: 'authorize',
+      phonetic: '/ˈɔːθəraɪz/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '授权；批准；许可',
+      coreMeaning: '授权；批准；许可',
+      toeicSceneFocus:
+        '权限管理、财务和法律领域核心动词。指正式授予某人进行某项活动或使用某物的权力。涉及付款授权、访问权限授予、代表公司签署文件等场景。名词“authorization”和形容词“authorized”同样高频。',
+      keyCollocations: [
+        'authorize payment (授权付款)',
+        'authorize someone to do (授权某人做…)',
+        'authorized personnel (经授权的人员)',
+        'written authorization (书面授权)',
+        'be authorized by (经…授权)',
+      ],
+      toeicExampleSentences: [
+        'Only department heads are authorized to approve expenses over $5,000. (只有部门主管有权批准超过5000美元的费用。)',
+        'Please authorize the bank transfer by signing this form. (请签署此表格以授权银行转账。)',
+        'You need special authorization to access the confidential files in the server room. (您需要特殊授权才能访问服务器机房中的机密文件。)',
+        'The contract must be authorized by a legal representative of the company. (合同必须由公司的法定代表授权。)',
+      ],
+      sceneAssociation:
+        '想象在刷卡机上签字“Authorize Payment?”（授权付款？），或办公室门上贴着“Authorized Personnel Only”（仅限授权人员进入）。',
+      confusingWordsComparison: [
+        {
+          word: 'authorize',
+          coreDifference:
+            '“授权、批准”，指正式给予某人进行某事的合法权力或许可。',
+          toeicSceneFocus: '正式授予权力或许可。',
+        },
+        {
+          word: 'approve',
+          coreDifference:
+            '“批准、同意”，表示对计划、行动等的认可，不一定涉及正式授权权力。',
+          toeicSceneFocus: '表示同意、认可。',
+        },
+        {
+          word: 'permit (v.)',
+          coreDifference:
+            '“允许”，指允许某事发生或某人做某事，可能不如authorize正式。',
+          toeicSceneFocus: '允许（做某事）。',
+        },
+      ],
+    },
+    {
+      word: 'award',
+      phonetic: '/əˈwɔːrd/',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning: 'v. 授予；判给 n. 奖；奖品；裁定',
+      toeicSceneFocus:
+        '名词指因成就而获得的“奖项、奖金”，动词指正式“授予”奖项、合同、赔偿等。常见于颁奖典礼、公司荣誉、投标结果（award a contract）及法律仲裁场景。',
+      keyCollocations: [
+        'win an award (获奖)',
+        'award a contract (授予合同)',
+        'annual awards ceremony (年度颁奖典礼)',
+        'award prize money (颁发奖金)',
+        'receive an award (接受奖项)',
+      ],
+      toeicExampleSentences: [
+        'She was awarded ‘Employee of the Year’ for her outstanding contributions. (因其杰出贡献，她被授予“年度最佳员工”奖。)',
+        'The construction project was awarded to the firm with the most competitive bid. (该建筑项目被授予了投标最具竞争力的公司。)',
+        'The company received an industry award for innovation in sustainable design. (该公司因其在可持续设计方面的创新而获得了一个行业奖项。)',
+        'The court awarded damages to the plaintiff in the lawsuit. (法院在诉讼中判给原告损害赔偿金。)',
+      ],
+      sceneAssociation:
+        '想象新闻标题“Local Company Awarded Major Government Contract”（本地公司获得重大政府合同），或公司大厅的展示柜里放着“Excellence in Service Award”（卓越服务奖）的奖杯。',
+      confusingWordsComparison: [
+        {
+          word: 'award (v./n.)',
+          coreDifference:
+            '“授予/奖项”，指官方或正式地给予奖励、合同、赔偿等；也指所授予的奖品。',
+          toeicSceneFocus: '正式授予（奖项、合同）；奖项本身。',
+        },
+        {
+          word: 'reward (v./n.)',
+          coreDifference:
+            '“奖励/报酬”，指为某人的努力、帮助或成就给予的回报，可以是物质或非物质的。',
+          toeicSceneFocus: '对努力或帮助的回报、酬谢。',
+        },
+        {
+          word: 'grant (v./n.)',
+          coreDifference:
+            '“授予/拨款”，指正式同意给予（尤指资金、许可、权利），常基于申请。',
+          toeicSceneFocus: '批准给予（资金、许可）。',
+        },
+      ],
+    },
+    {
+      word: 'able',
+      phonetic: '/ˈeɪbl/（英/美）',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '能够的；有能力的；能干的',
+      toeicSceneFocus:
+        '通用高频词，适用于职场能力描述、任务执行承诺等语境，是托业阅读（简历、工作描述）和听力（职场对话）中的核心词，常用搭配 **be able to do sth.**',
+      keyCollocations: [
+        'be able to handle（能够处理）',
+        'able candidate（能干的候选人）',
+        'able to complete（能够完成）',
+      ],
+      toeicExampleSentences: [
+        'She is able to communicate fluently with clients in three languages.（她能够用三种语言与客户流利沟通。）',
+        'Only the most able employees will be promoted to the management team.（只有最能干的员工才会被提拔到管理团队。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'able',
+          coreDifference: '强调“具备完成某事的能力”，后接不定式to do',
+          sceneFocus: '职场能力、任务执行场景',
+        },
+        {
+          word: 'capable',
+          coreDifference: '强调“有潜在能力”，常用搭配be capable of doing sth.',
+          sceneFocus: '能力潜力、岗位要求场景',
+        },
+      ],
+    },
+    {
+      word: 'aboard',
+      phonetic: '/əˈbɔːd/（英）；/əˈbɔːrd/（美）',
+      partOfSpeech: 'prep. 介词；adv. 副词',
+      coreMeaning:
+        '1. 介词：在（船、飞机、火车）上；上（船、飞机、火车）  2. 副词：在船（或飞机、火车）上；上船（或飞机、火车）',
+      toeicSceneFocus:
+        '交通出行高频词，多出现于机票/车票信息、机场广播、商务出行通知等语境，是托业听力（机场/车站播报）的常考词',
+      keyCollocations: [
+        'go aboard the plane（登机）',
+        'all aboard（请各位上车/登机）',
+        'aboard a ship（在船上）',
+      ],
+      toeicExampleSentences: [
+        'All passengers must be aboard the train ten minutes before departure.（所有乘客必须在发车前十分钟上车。）',
+        'The CEO and his team were already aboard when we arrived at the airport.（我们到达机场时，CEO和他的团队已经登机了。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'aboard',
+          coreDifference:
+            '侧重“在交通工具上”或“登上交通工具”，对象是船、飞机、火车等',
+          sceneFocus: '交通出行场景',
+        },
+        {
+          word: 'abroad',
+          coreDifference: '副词，意为“在国外；到国外”，与地点相关',
+          sceneFocus: '海外出差、留学场景',
+        },
+      ],
+    },
+    {
+      word: 'absolutely',
+      phonetic: '/ˈæbsəluːtli/（英/美）',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '绝对地；完全地；毫无疑问地；（口语）当然',
+      toeicSceneFocus:
+        '通用高频词，口语和书面语均可使用，在托业听力（日常对话、商务洽谈）中常用于肯定回应，书面语中用于强调观点',
+      keyCollocations: [
+        'absolutely correct（完全正确）',
+        'absolutely necessary（绝对必要）',
+        'absolutely agree（完全同意）',
+      ],
+      toeicExampleSentences: [
+        'A: Can you finish the report by tomorrow? B: Absolutely!（A：你明天前能完成报告吗？B：当然可以！）',
+        'It is absolutely essential to follow the safety regulations in the factory.（在工厂里遵守安全规定是绝对必要的。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'absolutely',
+          coreDifference: '语气强烈，强调“完全、毫无例外”，可用于口语回应',
+          sceneFocus: '观点强调、口语回应场景',
+        },
+        {
+          word: 'completely',
+          coreDifference: '侧重“彻底、全部”，多用于描述动作完成的程度',
+          sceneFocus: '动作完成、状态描述场景',
+        },
+      ],
+    },
+    {
+      word: 'academic',
+      phonetic: '/ˌækəˈdemɪk/（英/美）',
+      partOfSpeech: 'adj. 形容词；n. 名词',
+      coreMeaning:
+        '1. 形容词：学术的；学业的；理论的  2. 名词：学者；大学生；学术人员',
+      toeicSceneFocus:
+        '多出现于教育培训、学术合作、商务报告等语境，是托业阅读（培训方案、学术文档）中的常考词，侧重“学术领域或理论层面”',
+      keyCollocations: [
+        'academic research（学术研究）',
+        'academic performance（学业表现）',
+        'academic conference（学术会议）',
+      ],
+      toeicExampleSentences: [
+        'The company has established an academic partnership with several universities.（该公司与多所大学建立了学术合作关系。）',
+        'She is an academic who specializes in international trade policies.（她是一名专攻国际贸易政策的学者。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'academic',
+          coreDifference: '侧重“学术的、理论的”，与教育、研究相关',
+          sceneFocus: '教育培训、学术研究场景',
+        },
+        {
+          word: 'scholarly',
+          coreDifference:
+            '更正式，强调“博学的、学术性强的”，多用于描述著作或学者',
+          sceneFocus: '学术著作、学者评价场景',
+        },
+      ],
+    },
+    {
+      word: 'acclaimed',
+      phonetic: '/əˈkleɪmd/（英/美）',
+      partOfSpeech: 'adj. 形容词；v. 动词（acclaim的过去式和过去分词）',
+      coreMeaning:
+        '1. 形容词：备受赞誉的；广受好评的  2. 动词：称赞；喝彩；欢呼',
+      toeicSceneFocus:
+        '多出现于产品评价、人物介绍、企业宣传等语境，是托业阅读（产品广告、企业年报）中的常考词，侧重“获得高度认可”',
+      keyCollocations: [
+        'acclaimed writer（广受赞誉的作家）',
+        'critically acclaimed（广受评论家好评的）',
+        'acclaimed for its quality（因质量而备受好评）',
+      ],
+      toeicExampleSentences: [
+        'This critically acclaimed product has won several international awards.（这款广受评论家好评的产品获得了多项国际大奖。）',
+        'The new manager was acclaimed for her excellent leadership skills.（这位新任经理因其出色的领导能力而受到称赞。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'acclaimed',
+          coreDifference: '强调“被公众或专业人士广泛称赞”，语气正式',
+          sceneFocus: '产品、人物、作品的高度评价场景',
+        },
+        {
+          word: 'popular',
+          coreDifference: '强调“受大众欢迎的”，侧重受众广泛，不一定有专业认可',
+          sceneFocus: '日常商品、娱乐活动的受欢迎场景',
+        },
+      ],
+    },
+    {
+      word: 'accordingly',
+      phonetic: '/əˈkɔːdɪŋli/（英）；/əˈkɔːrdɪŋli/（美）',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '照着；相应地；因此；所以',
+      toeicSceneFocus:
+        '商务书面语高频词，多出现于合同条款、工作邮件、商务报告等语境，是托业阅读（邮件、合同）的核心词，侧重“根据情况做出调整或得出结论”',
+      keyCollocations: [
+        'act accordingly（采取相应行动）',
+        'adjust accordingly（相应调整）',
+        'modify the plan accordingly（相应修改计划）',
+      ],
+      toeicExampleSentences: [
+        'The market demand has changed, so we need to adjust our production plan accordingly.（市场需求发生了变化，因此我们需要相应调整生产计划。）',
+        'Please read the instructions carefully and act accordingly.（请仔细阅读说明书并照此执行。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'accordingly',
+          coreDifference: '侧重“根据某种情况做出相应反应”，可表因果或承接',
+          sceneFocus: '商务决策、计划调整场景',
+        },
+        {
+          word: 'therefore',
+          coreDifference: '侧重“因果关系中的结果”，语气更强烈',
+          sceneFocus: '逻辑论证、结论推导场景',
+        },
+      ],
+    },
+    {
+      word: 'accurate',
+      phonetic: '/ˈækjərət/（英/美）',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '准确的；精确的；正确无误的',
+      toeicSceneFocus:
+        '多出现于数据统计、报告撰写、信息传递等语境，是托业阅读（财务报告、数据文档）中的高频词，侧重“信息或数据与事实完全相符”',
+      keyCollocations: [
+        'accurate data（准确的数据）',
+        'accurate prediction（精确的预测）',
+        'accurate information（准确的信息）',
+      ],
+      toeicExampleSentences: [
+        'It is crucial to provide accurate financial data for the annual audit.（为年度审计提供准确的财务数据至关重要。）',
+        'The weather forecast for tomorrow is surprisingly accurate.（明天的天气预报出奇地准确。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'accurate',
+          coreDifference: '强调“信息、数据与事实一致”，侧重正确性',
+          sceneFocus: '数据统计、信息传递场景',
+        },
+        {
+          word: 'precise',
+          coreDifference: '强调“精确到细节”，侧重精准度，可用于测量、计算等',
+          sceneFocus: '科学测量、精密计算场景',
+        },
+      ],
+    },
+    {
+      word: 'active',
+      phonetic: '/ˈæktɪv/（英/美）',
+      partOfSpeech: 'adj. 形容词；n. 名词',
+      coreMeaning:
+        '1. 形容词：积极的；活跃的；主动的；有效的  2. 名词：积极分子；活跃的人',
+      toeicSceneFocus:
+        '通用高频词，适用于职场表现、市场活动、账户状态等语境，是托业阅读（员工评价、活动通知）和听力（职场对话）中的核心词',
+      keyCollocations: [
+        'active participation（积极参与）',
+        'active market（活跃的市场）',
+        'active account（有效账户）',
+      ],
+      toeicExampleSentences: [
+        'Employees are encouraged to take active part in the company’s team-building activities.（鼓励员工积极参与公司的团建活动。）',
+        'This product is still active in the market after ten years of its launch.（这款产品上市十年后在市场上仍保持活跃状态。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'active',
+          coreDifference: '强调“主动参与的、状态活跃的”，可用于人或事物',
+          sceneFocus: '职场表现、市场状态场景',
+        },
+        {
+          word: 'energetic',
+          coreDifference: '侧重“精力充沛的”，多用于描述人的精神状态',
+          sceneFocus: '人物状态、工作活力场景',
+        },
+      ],
+    },
+    {
+      word: 'actual',
+      phonetic: '/ˈæktʃuəl/（英/美）',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '实际的；真实的；事实上的',
+      toeicSceneFocus:
+        '多出现于商务分析、计划执行、事实陈述等语境，是托业阅读（项目报告、市场分析）中的常考词，侧重“与理论或表象相反的实际情况”',
+      keyCollocations: [
+        'actual cost（实际成本）',
+        'actual situation（实际情况）',
+        'actual figures（真实数据）',
+      ],
+      toeicExampleSentences: [
+        'The actual cost of the project was much higher than we had estimated.（这个项目的实际成本比我们预估的高出很多。）',
+        'You need to consider the actual needs of customers when designing the product.（设计产品时你需要考虑客户的实际需求。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'actual',
+          coreDifference: '强调“真实存在的、与预估或理论相对的实际情况”',
+          sceneFocus: '成本核算、情况分析场景',
+        },
+        {
+          word: 'real',
+          coreDifference: '强调“真实的、非虚构的”，可用于人、事物或感受',
+          sceneFocus: '真实事物、情感表达场景',
+        },
+      ],
+    },
+    {
+      word: 'additionally',
+      phonetic: '/əˈdɪʃənəli/（英/美）',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '此外；另外；额外地',
+      toeicSceneFocus:
+        '商务书面语高频词，多出现于报告撰写、邮件沟通、方案说明等语境，是托业阅读（报告、邮件）的核心词，用于补充信息或增加论点',
+      keyCollocations: [
+        'additionally provide（额外提供）',
+        'additionally note（另外说明）',
+        'additionally require（额外要求）',
+      ],
+      toeicExampleSentences: [
+        'The new software can improve work efficiency; additionally, it can reduce operational costs.（这款新软件能提高工作效率，此外还能降低运营成本。）',
+        'We need to prepare the presentation slides; additionally, we should practice the speech several times.（我们需要准备演示幻灯片，另外还应该多练习几遍演讲。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'additionally',
+          coreDifference: '正式用语，侧重“补充额外信息”，多用于书面语',
+          sceneFocus: '商务报告、邮件写作场景',
+        },
+        {
+          word: 'besides',
+          coreDifference:
+            '口语和书面语均可，侧重“除了……之外还有”，可用于句首或句中',
+          sceneFocus: '日常对话、非正式写作场景',
+        },
+      ],
+    },
+    {
+      word: 'adjacent',
+      phonetic: '/əˈdʒeɪsnt/（英/美）',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '邻近的；毗邻的；相邻的',
+      toeicSceneFocus:
+        '多出现于场地描述、建筑规划、商务选址等语境，是托业阅读（场地合同、建筑方案）中的常考词，常用搭配 **adjacent to**',
+      keyCollocations: [
+        'adjacent to the office（毗邻办公室）',
+        'adjacent room（相邻的房间）',
+        'adjacent building（邻近的建筑）',
+      ],
+      toeicExampleSentences: [
+        'Our new office is adjacent to a subway station, which is very convenient for commuting.（我们的新办公室毗邻地铁站，通勤非常方便。）',
+        'Please store the documents in the cabinet adjacent to the printer.（请把文件存放在打印机旁边的柜子里。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'adjacent',
+          coreDifference: '正式用语，强调“物理空间上直接相邻”，无间隔',
+          sceneFocus: '场地、建筑、位置描述场景',
+        },
+        {
+          word: 'nearby',
+          coreDifference: '强调“在附近”，不一定直接相邻，可作形容词或副词',
+          sceneFocus: '地点位置、周边设施描述场景',
+        },
+      ],
+    },
+    {
+      word: 'administrative',
+      phonetic: '/ədˈmɪnɪstrətɪv/（英/美）',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '行政的；管理的；行政事务的',
+      toeicSceneFocus:
+        '职场高频词，多出现于企业管理、岗位描述、规章制度等语境，是托业阅读（岗位招聘、公司规章）中的核心词，侧重“行政管理相关的”',
+      keyCollocations: [
+        'administrative work（行政工作）',
+        'administrative department（行政部门）',
+        'administrative staff（行政人员）',
+      ],
+      toeicExampleSentences: [
+        'She is responsible for all administrative tasks in the marketing department.（她负责市场部的所有行政工作。）',
+        'The company has revised its administrative regulations to improve efficiency.（该公司修订了行政规章制度以提高效率。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'administrative',
+          coreDifference: '侧重“与企业行政管理相关的”，修饰工作、部门、人员等',
+          sceneFocus: '企业管理、职场分工场景',
+        },
+        {
+          word: 'managerial',
+          coreDifference: '侧重“与管理职能相关的”，修饰岗位、决策、技能等',
+          sceneFocus: '管理岗位、决策制定场景',
+        },
+      ],
+    },
+    {
+      word: 'afterward',
+      phonetic: '/ˈɑːftəwəd/（英）；/ˈæftərwərd/（美）',
+      partOfSpeech: 'adv. 副词（亦作afterwards）',
+      coreMeaning: '后来；以后；之后',
+      toeicSceneFocus:
+        '通用高频词，口语和书面语均可使用，在托业听力（日常对话、会议安排）和阅读（事件描述）中常用于表示时间先后顺序',
+      keyCollocations: [
+        'shortly afterward（不久之后）',
+        'immediately afterward（立即）',
+        'shortly afterward（随后不久）',
+      ],
+      toeicExampleSentences: [
+        'The meeting ended at 5 p.m., and we had a team dinner afterward.（会议下午五点结束，之后我们一起吃了团队晚餐。）',
+        'He made a speech at the conference and afterward answered questions from the audience.（他在会议上发表了演讲，随后回答了听众的提问。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'afterward',
+          coreDifference: '强调“某个动作或事件之后”，单独作状语',
+          sceneFocus: '时间顺序、事件描述场景',
+        },
+        {
+          word: 'later',
+          coreDifference:
+            '可表示“一段时间之后”，常与具体时间搭配，如two hours later',
+          sceneFocus: '具体时间、延迟安排场景',
+        },
+      ],
+    },
+    {
+      word: 'alongside',
+      phonetic: '/əlɒŋˈsaɪd/（英）；/əlɔːŋˈsaɪd/（美）',
+      partOfSpeech: 'prep. 介词；adv. 副词',
+      coreMeaning:
+        '1. 介词：在……旁边；与……一起；与……并肩  2. 副词：在旁边；并肩地',
+      toeicSceneFocus:
+        '多出现于商务合作、人员安排、物品摆放等语境，是托业阅读（合作协议、工作安排）中的常考词，侧重“并列存在或共同行动”',
+      keyCollocations: [
+        'work alongside（与……并肩工作）',
+        'alongside the competitors（与竞争对手一起）',
+        'place alongside（放在……旁边）',
+      ],
+      toeicExampleSentences: [
+        'She will work alongside the senior manager to complete the project.（她将与高级经理并肩工作，完成这个项目。）',
+        'Our new product will be displayed alongside those of leading brands at the exhibition.（我们的新产品将在展会上与领先品牌的产品一同展出。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'alongside',
+          coreDifference:
+            '强调“空间上并列”或“合作中并肩”，可表物理位置或抽象合作',
+          sceneFocus: '合作共事、物品陈列场景',
+        },
+        {
+          word: 'beside',
+          coreDifference: '侧重“物理空间上在……旁边”，语义较单一',
+          sceneFocus: '位置摆放、空间描述场景',
+        },
+      ],
+    },
+    {
+      word: 'alternative',
+      phonetic: '/ɔːlˈtɜːnətɪv/（英）；/ɔːlˈtɜːrnətɪv/（美）',
+      partOfSpeech: 'adj. 形容词；n. 名词',
+      coreMeaning:
+        '1. 形容词：可供选择的；替代的；另类的  2. 名词：可供选择的事物；替代品',
+      toeicSceneFocus:
+        '商务高频词，多出现于方案选择、产品替代、策略制定等语境，是托业阅读（方案报告、商务谈判）中的核心词，常用搭配 **alternative to**',
+      keyCollocations: [
+        'alternative solution（替代方案）',
+        'alternative energy（可再生能源）',
+        'have no alternative but to do（别无选择只能做）',
+      ],
+      toeicExampleSentences: [
+        'If this plan fails, we have an alternative solution ready to implement.（如果这个计划失败，我们有一个备用方案可以实施。）',
+        'Many companies are now using alternative energy to reduce carbon emissions.（许多公司现在正在使用可再生能源来减少碳排放。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'alternative',
+          coreDifference: '强调“可替代的、可供选择的”，有多个选项时使用',
+          sceneFocus: '方案选择、产品替代场景',
+        },
+        {
+          word: 'substitute',
+          coreDifference: '强调“替代缺失的事物”，常用搭配substitute for',
+          sceneFocus: '物品替代、人员替换场景',
+        },
+      ],
+    },
+    {
+      word: 'amateur',
+      phonetic: '/ˈæmətə/（英）；/ˈæmətʃər/（美）',
+      partOfSpeech: 'adj. 形容词；n. 名词',
+      coreMeaning:
+        '1. 形容词：业余的；非职业的；外行的  2. 名词：业余爱好者；外行',
+      toeicSceneFocus:
+        '多出现于文体活动、技能描述、产品评价等语境，是托业阅读（活动通知、兴趣介绍）中的常考词，侧重“非职业性或非专业性”',
+      keyCollocations: [
+        'amateur photographer（业余摄影师）',
+        'amateur competition（业余比赛）',
+        'amateur level（业余水平）',
+      ],
+      toeicExampleSentences: [
+        'He is an amateur musician who plays the piano in his spare time.（他是一名业余音乐家，业余时间弹钢琴。）',
+        'This amateur team surprisingly won the championship in the regional competition.（这支业余队伍出人意料地赢得了地区比赛的冠军。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'amateur',
+          coreDifference: '强调“非职业、非专业的”，可用于人或活动',
+          sceneFocus: '兴趣爱好、文体活动场景',
+        },
+        {
+          word: 'hobbyist',
+          coreDifference: '特指“有某种爱好的人”，语义更具体',
+          sceneFocus: '兴趣爱好、小众爱好场景',
+        },
+      ],
+    },
+    {
+      word: 'annual',
+      phonetic: '/ˈænjuəl/（英/美）',
+      partOfSpeech: 'adj. 形容词；n. 名词',
+      coreMeaning:
+        '1. 形容词：每年的；年度的；一年一次的  2. 名词：年报；年鉴；年度活动',
+      toeicSceneFocus:
+        '商务核心高频词，多出现于企业年报、年度会议、财务报告等语境，是托业阅读（年报、财务文档）中的必考点',
+      keyCollocations: [
+        'annual report（年度报告）',
+        'annual meeting（年度会议）',
+        'annual budget（年度预算）',
+      ],
+      toeicExampleSentences: [
+        'The company will release its annual report on its official website next week.（该公司将于下周在官网发布年度报告。）',
+        'All employees are required to attend the annual meeting held in December.（所有员工都必须参加12月举行的年度会议。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'annual',
+          coreDifference: '强调“每年一次的”，修饰报告、会议、预算等',
+          sceneFocus: '企业财务、年度活动场景',
+        },
+        {
+          word: 'yearly',
+          coreDifference: '与annual语义相近，但更口语化，可作副词',
+          sceneFocus: '日常表达、非正式报告场景',
+        },
+      ],
+    },
+    {
+      word: 'approximately',
+      phonetic: '/əˈprɒksɪmətli/（英）；/əˈprɑːksɪmətli/（美）',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '大约；大概；近似地',
+      toeicSceneFocus:
+        '通用高频词，多出现于数据估算、时间描述、商务报价等语境，是托业阅读（财务报告、报价单）和听力（商务对话）中的核心词，用于表示不确定的数值或时间',
+      keyCollocations: [
+        'approximately 100 people（大约100人）',
+        'approximately $500（大约500美元）',
+        'arrive approximately at 3 p.m.（大约下午3点到达）',
+      ],
+      toeicExampleSentences: [
+        'The project will cost approximately one million dollars and take six months to complete.（这个项目大约需要一百万美元，耗时六个月完成。）',
+        'Approximately 200 customers attended the new product launch event.（大约有200名客户参加了新产品发布会。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'approximately',
+          coreDifference: '正式用语，侧重“数值或时间的近似估算”，书面语常用',
+          sceneFocus: '商务报价、数据统计场景',
+        },
+        {
+          word: 'about',
+          coreDifference: '口语和书面语均可，语义更宽泛，可表示“大约”或“关于”',
+          sceneFocus: '日常对话、非正式描述场景',
+        },
+      ],
+    },
+    {
+      word: 'architectural',
+      phonetic: '/ˌɑːkɪˈtektʃərəl/（英）；/ˌɑːrkɪˈtektʃərəl/（美）',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '建筑学的；建筑上的；具有建筑特色的',
+      toeicSceneFocus:
+        '多出现于建筑设计、房地产开发、场地规划等语境，是托业阅读（建筑方案、房产广告）中的常考词，侧重“与建筑设计或风格相关的”',
+      keyCollocations: [
+        'architectural design（建筑设计）',
+        'architectural style（建筑风格）',
+        'architectural firm（建筑事务所）',
+      ],
+      toeicExampleSentences: [
+        'This building is famous for its unique architectural style that combines modern and traditional elements.（这座建筑因其融合了现代与传统元素的独特建筑风格而闻名。）',
+        'The company hired a leading architectural firm to design its new headquarters.（该公司聘请了一家顶尖建筑事务所设计新总部。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'architectural',
+          coreDifference:
+            '侧重“与建筑学、建筑设计相关的”，修饰设计、风格、事务所等',
+          sceneFocus: '建筑设计、房产开发场景',
+        },
+        {
+          word: 'structural',
+          coreDifference: '侧重“与建筑结构相关的”，修饰结构、工程、问题等',
+          sceneFocus: '建筑结构、工程施工场景',
+        },
+      ],
+    },
+    {
+      word: 'aside',
+      phonetic: '/əˈsaɪd/（英/美）',
+      partOfSpeech: 'adv. 副词；n. 名词；prep. 介词',
+      coreMeaning:
+        '1. 副词：在旁边；到旁边；撇开不谈  2. 名词：旁白；插话；离题话  3. 介词：除……之外',
+      toeicSceneFocus:
+        '多出现于商务会议、日常对话、写作表达等语境，是托业听力（会议对话）和阅读（文章写作）中的常考词，常用搭配 **set aside**（留出；搁置）',
+      keyCollocations: [
+        'set aside time（留出时间）',
+        'put aside differences（搁置分歧）',
+        'aside from（除……之外）',
+      ],
+      toeicExampleSentences: [
+        'We need to set aside two hours every week for team training.（我们需要每周留出两个小时进行团队培训。）',
+        'Aside from the cost, the plan is very feasible for our company.（除了成本问题，这个计划对我们公司来说非常可行。）',
+      ],
+      confusingWordsComparison: [
+        {
+          word: 'aside',
+          coreDifference: '可表示空间位置、搁置事物或“除……之外”，搭配丰富',
+          sceneFocus: '时间安排、分歧处理、补充说明场景',
+        },
+        {
+          word: 'apart',
+          coreDifference:
+            '侧重“分离、分开”，常用搭配apart from（除……之外），与aside from语义相近',
+          sceneFocus: '事物分离、补充说明场景',
+        },
+      ],
+    },
+  ],
   recruitment: [
     {
       word: 'candidate',

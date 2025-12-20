@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "webpack serve --mode development --open",
-    "build": "webpack --mode production",
+    "build": "npm run format && webpack --mode production",
     "build:dev": "webpack --mode development",
     "serve": "npm run build && npm start",
     "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",

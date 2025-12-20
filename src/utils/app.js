@@ -1,6 +1,7 @@
 // 获取分类名称
 export function getCategoryName(category) {
   const names = {
+    mixiaole: '米小勒',
     recruitment: '职场招聘与人才发展',
     business_communication: '商务沟通与会议',
     business_transaction: '商务交易与合同',

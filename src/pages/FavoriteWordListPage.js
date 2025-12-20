@@ -8,29 +8,6 @@ import { getCategoryName, getFirstSlashContent } from '../utils/app';
 import '../index.css';
 import './WordListPage.css';
 
-const categoryIconMap = {
-  recruitment: '👔',
-  business_communication: '💼',
-  business_transaction: '🤝',
-  marketing: '📢',
-  logistics: '🚚',
-  finance: '💰',
-  office_administration: '📋',
-  product_tech: '💻',
-  legal: '⚖️',
-  travel: '✈️',
-  education: '📚',
-  healthcare: '🏥',
-  construction: '🏗️',
-  food: '🍽️',
-  arts: '🎨',
-  nature: '🌳',
-  society: '🏛️',
-  psychology: '🧠',
-  digital: '🔢',
-  time: '📅',
-};
-
 // 收藏单词行组件，包含发音、释义显示功能
 function FavoriteWordRow({
   item,
@@ -82,14 +59,6 @@ function FavoriteWordRow({
       >
         <span className="meaning-text">
           {isMeaningVisible ? getShortMeaning(item.data || {}) : '点击显示释义'}
-        </span>
-      </td>
-      <td className="col-pos">
-        <span
-          className="favorite-category-icon"
-          title={getCategoryName(item.category)}
-        >
-          {categoryIconMap[item.category] || '📘'}
         </span>
       </td>
     </tr>
@@ -264,7 +233,6 @@ function FavoriteWordListPage() {
                     </button>
                   </span>
                 </th>
-                <th className="col-pos">场景</th>
               </tr>
             </thead>
             <tbody>
