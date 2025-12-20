@@ -5,6 +5,12 @@ import { getCategoryName } from '../utils/app';
 
 const categories = [
   {
+    key: 'mixiaole',
+    icon: '📢',
+    name: '米小勒',
+    desc: '小红书米小勒博主推荐单词',
+  },
+  {
     key: 'recruitment',
     icon: '👔',
     name: '职场招聘与人才发展',
