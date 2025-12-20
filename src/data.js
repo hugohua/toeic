@@ -31181,4 +31181,11785 @@ export const wordData = {
       ],
     },
   ],
+  finance:[
+    {
+      "word": "revenue",
+      "phonetic": "/ˈrevənjuː/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "收入，收益（指公司通过销售、投资等获得的总收入）",
+      "toeicSceneFocus": "多出现于财务报告、业绩分析、商业计划等语境，是描述公司收入来源的正式用词，托业阅读（财务报表）和听力（商务讨论）中频繁考查",
+      "keyCollocations": [
+        "annual revenue（年度收入）",
+        "revenue stream（收入来源）",
+        "tax revenue（税收收入）"
+      ],
+      "toeicExampleSentences": [
+        "The company's revenue increased by 20% this fiscal year.（公司本财年收入增长了20%。）",
+        "Advertising is our primary source of revenue.（广告是我们主要的收入来源。）"
+      ],
+      "sceneAssociation": "可以联想‘财务总监在会议上展示收入（revenue）增长图表’的画面，或‘年度报告中突出显示的收入（revenue）数字’，结合商务中‘公司总收入’的核心概念记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "income",
+          "coreDifference": "income泛指个人或公司的收入；revenue更正式，指公司运营总收入",
+          "toeicSceneFocus": "个人财务、公司收益场景"
+        },
+        {
+          "word": "earnings",
+          "coreDifference": "earnings指净收益；revenue指毛收入",
+          "toeicSceneFocus": "利润分析、业绩报告场景"
+        },
+        {
+          "word": "proceeds",
+          "coreDifference": "proceeds指销售或交易所得；revenue指持续收入来源",
+          "toeicSceneFocus": "销售、投资回报场景"
+        },
+        {
+          "word": "profit",
+          "coreDifference": "profit是利润；revenue是收入，未扣除成本",
+          "toeicSceneFocus": "财务分析、损益表场景"
+        }
+      ]
+    },
+    {
+      "word": "profit",
+      "phonetic": "/ˈprɒfɪt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "利润，盈利（指收入扣除成本后的净收益）",
+      "toeicSceneFocus": "多出现于财务分析、业绩评估、投资决策等语境，是描述经营成果的核心词，托业阅读（财务报告）和听力（商务谈判）中常见",
+      "keyCollocations": [
+        "net profit（净利润）",
+        "profit margin（利润率）",
+        "make a profit（盈利）"
+      ],
+      "toeicExampleSentences": [
+        "The company achieved a record profit of $5 million.（公司实现了创纪录的500万美元利润。）",
+        "We need to improve our profit margin by reducing costs.（我们需要通过降低成本来提高利润率。）"
+      ],
+      "sceneAssociation": "可以联想‘CEO宣布年度利润（profit）增长’的画面，或‘财务报表中用绿色标注的利润（profit）数字’，结合商务中‘收入减去成本后的盈余’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "gain",
+          "coreDifference": "gain指获得的好处；profit特指商业利润",
+          "toeicSceneFocus": "投资、收益场景"
+        },
+        {
+          "word": "margin",
+          "coreDifference": "margin指利润率；profit指利润额",
+          "toeicSceneFocus": "财务比率、定价策略场景"
+        },
+        {
+          "word": "earnings",
+          "coreDifference": "earnings可指收入或利润；profit更精确指净收益",
+          "toeicSceneFocus": "业绩报告、薪酬场景"
+        },
+        {
+          "word": "revenue",
+          "coreDifference": "revenue是收入；profit是收入减去成本后的部分",
+          "toeicSceneFocus": "财务报表分析场景"
+        }
+      ]
+    },
+    {
+      "word": "expense",
+      "phonetic": "/ɪkˈspens/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "费用，开支（指为业务或目的花费的钱）",
+      "toeicSceneFocus": "多出现于财务报告、报销、预算管理等语境，是描述支出的常用词，托业阅读（费用报表）和听力（报销讨论）中频繁考查",
+      "keyCollocations": [
+        "business expense（业务开支）",
+        "travel expense（差旅费）",
+        "expense account（费用账户）"
+      ],
+      "toeicExampleSentences": [
+        "Please keep all receipts for business expenses.（请保留所有业务开支的收据。）",
+        "The company covers travel and accommodation expenses.（公司支付差旅和住宿费用。）"
+      ],
+      "sceneAssociation": "可以联想‘员工提交费用报销单（expense）’的画面，或‘财务经理审核各部门开支（expense）’，结合商务中‘花费的资金’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "cost",
+          "coreDifference": "cost指成本；expense指已发生的开支",
+          "toeicSceneFocus": "定价、成本核算场景"
+        },
+        {
+          "word": "expenditure",
+          "coreDifference": "expenditure更正式；expense更常用",
+          "toeicSceneFocus": "政府预算、财务报告场景"
+        },
+        {
+          "word": "outlay",
+          "coreDifference": "outlay指初始支出；expense指一般开支",
+          "toeicSceneFocus": "投资、启动成本场景"
+        },
+        {
+          "word": "charge",
+          "coreDifference": "charge指收费项目；expense指实际花费",
+          "toeicSceneFocus": "费用结构、账单场景"
+        }
+      ]
+    },
+    {
+      "word": "budget",
+      "phonetic": "/ˈbʌdʒɪt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "预算（指计划期内的财务收支计划）",
+      "toeicSceneFocus": "多出现于财务规划、项目管理、成本控制等语境，是描述资金计划的常用词，托业阅读（财务文件）和听力（预算讨论）中常见",
+      "keyCollocations": [
+        "annual budget（年度预算）",
+        "budget constraint（预算限制）",
+        "stick to a budget（遵守预算）"
+      ],
+      "toeicExampleSentences": [
+        "The marketing department has a budget of $50,000 for the campaign.（市场部有5万美元的活动预算。）",
+        "We need to stay within budget for this project.（我们需要将项目控制在预算内。）"
+      ],
+      "sceneAssociation": "可以联想‘财务团队在会议上制定年度预算（budget）’的画面，或‘经理查看部门预算（budget）分配表’，结合商务中‘资金使用计划’的核心概念记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "estimate",
+          "coreDifference": "estimate是估算；budget是正式计划",
+          "toeicSceneFocus": "成本预估、项目规划场景"
+        },
+        {
+          "word": "allocation",
+          "coreDifference": "allocation指分配；budget指整体计划",
+          "toeicSceneFocus": "资源分配、预算划分场景"
+        },
+        {
+          "word": "plan",
+          "coreDifference": "plan泛指计划；budget特指财务计划",
+          "toeicSceneFocus": "战略规划、财务安排场景"
+        },
+        {
+          "word": "expense",
+          "coreDifference": "expense是实际开支；budget是计划开支",
+          "toeicSceneFocus": "财务对比、支出监控场景"
+        }
+      ]
+    },
+    {
+      "word": "invoice",
+      "phonetic": "/ˈɪnvɔɪs/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "发票，发货单（指列明货物或服务及价格的正式单据）",
+      "toeicSceneFocus": "多出现于商务交易、付款流程、会计记录等语境，是描述付款请求的正式文件，托业阅读（合同、邮件）和听力（财务对话）中频繁考查",
+      "keyCollocations": [
+        "send an invoice（发送发票）",
+        "invoice amount（发票金额）",
+        "pay an invoice（支付发票）"
+      ],
+      "toeicExampleSentences": [
+        "Please send the invoice to our accounting department.（请将发票发送到我们的会计部门。）",
+        "The invoice is due within 30 days of receipt.（发票应在收到后30天内付款。）"
+      ],
+      "sceneAssociation": "可以联想‘供应商通过邮件发送发票（invoice）’的画面，或‘客户收到发票（invoice）后安排付款’，结合商务中‘正式付款请求’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "bill",
+          "coreDifference": "bill更通用；invoice更正式，用于商业交易",
+          "toeicSceneFocus": "日常账单、服务费用场景"
+        },
+        {
+          "word": "statement",
+          "coreDifference": "statement是汇总账单；invoice是单个交易单据",
+          "toeicSceneFocus": "银行对账、账户汇总场景"
+        },
+        {
+          "word": "receipt",
+          "coreDifference": "receipt是付款凭证；invoice是付款请求",
+          "toeicSceneFocus": "交易确认、报销凭证场景"
+        },
+        {
+          "word": "order",
+          "coreDifference": "order是订单；invoice是结算单据",
+          "toeicSceneFocus": "采购流程、订单履行场景"
+        }
+      ]
+    },
+    {
+      "word": "receipt",
+      "phonetic": "/rɪˈsiːt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "收据，收条（指收到付款或物品的凭证）",
+      "toeicSceneFocus": "多出现于购物、报销、财务记录等语境，是描述收款证明的常用词，托业阅读（报销政策）和听力（购物对话）中常见",
+      "keyCollocations": [
+        "make out a receipt（开具收据）",
+        "keep the receipt（保留收据）",
+        "payment receipt（付款收据）"
+      ],
+      "toeicExampleSentences": [
+        "Please keep your receipt for expense reimbursement.（请保留收据用于费用报销。）",
+        "The customer asked for a receipt after payment.（付款后，顾客要求收据。）"
+      ],
+      "sceneAssociation": "可以联想‘收银员打印购物收据（receipt）给顾客’的画面，或‘财务部要求提供收据（receipt）进行报销’，结合商务中‘付款证明’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "invoice",
+          "coreDifference": "invoice是付款请求；receipt是付款证明",
+          "toeicSceneFocus": "交易流程、财务单据场景"
+        },
+        {
+          "word": "voucher",
+          "coreDifference": "voucher是代金券；receipt是付款凭证",
+          "toeicSceneFocus": "优惠、报销场景"
+        },
+        {
+          "word": "acknowledgment",
+          "coreDifference": "acknowledgment是确认函；receipt是收付款证明",
+          "toeicSceneFocus": "商务确认、收函场景"
+        },
+        {
+          "word": "proof",
+          "coreDifference": "proof是通用证明；receipt特指收款证明",
+          "toeicSceneFocus": "证据、凭证场景"
+        }
+      ]
+    },
+    {
+      "word": "account",
+      "phonetic": "/əˈkaʊnt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "账户，账目（指财务记录或银行账户）",
+      "toeicSceneFocus": "多出现于银行、会计、客户管理等语境，是描述记录或账户的通用词，托业阅读（银行文件）和听力（金融对话）中频繁考查",
+      "keyCollocations": [
+        "bank account（银行账户）",
+        "account balance（账户余额）",
+        "take into account（考虑）"
+      ],
+      "toeicExampleSentences": [
+        "Please provide your bank account details for the transfer.（请提供您的银行账户信息以便转账。）",
+        "The accountant reconciles the accounts every month.（会计师每月核对账目。）"
+      ],
+      "sceneAssociation": "可以联想‘个人查看银行账户（account）余额’的画面，或‘会计师整理公司账目（account）’，结合商务中‘财务记录或账户’的核心概念记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "ledger",
+          "coreDifference": "ledger是账簿；account是账户或账目",
+          "toeicSceneFocus": "会计记录、簿记场景"
+        },
+        {
+          "word": "record",
+          "coreDifference": "record是通用记录；account特指财务记录",
+          "toeicSceneFocus": "档案管理、数据记录场景"
+        },
+        {
+          "word": "profile",
+          "coreDifference": "profile是个人资料；account是账户信息",
+          "toeicSceneFocus": "用户管理、系统登录场景"
+        },
+        {
+          "word": "file",
+          "coreDifference": "file是文件；account是条目式记录",
+          "toeicSceneFocus": "文档管理、存储场景"
+        }
+      ]
+    },
+    {
+      "word": "payment",
+      "phonetic": "/ˈpeɪmənt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "付款，支付（指支付款项的行为或金额）",
+      "toeicSceneFocus": "多出现于交易、合同、财务结算等语境，是描述支付行为的常用词，托业阅读（付款通知）和听力（商务对话）中常见",
+      "keyCollocations": [
+        "make a payment（进行付款）",
+        "payment method（支付方式）",
+        "monthly payment（月付）"
+      ],
+      "toeicExampleSentences": [
+        "The payment for the goods is due next week.（货款下周到期。）",
+        "We accept various payment methods including credit cards.（我们接受多种支付方式，包括信用卡。）"
+      ],
+      "sceneAssociation": "可以联想‘客户在线完成付款（payment）’的画面，或‘财务部门处理付款（payment）流程’，结合商务中‘资金转移’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "installment",
+          "coreDifference": "installment是分期付款；payment是单次付款",
+          "toeicSceneFocus": "贷款、分期付款场景"
+        },
+        {
+          "word": "remittance",
+          "coreDifference": "remittance是汇款；payment是付款行为",
+          "toeicSceneFocus": "国际汇款、转账场景"
+        },
+        {
+          "word": "settlement",
+          "coreDifference": "settlement是结算；payment是支付动作",
+          "toeicSceneFocus": "合同履行、债务清偿场景"
+        },
+        {
+          "word": "deposit",
+          "coreDifference": "deposit是预付款或存款；payment是完整付款",
+          "toeicSceneFocus": "押金、存款场景"
+        }
+      ]
+    },
+    {
+      "word": "deposit",
+      "phonetic": "/dɪˈpɒzɪt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "存款，押金（指存入账户的钱或租赁预付款）",
+      "toeicSceneFocus": "多出现于银行业务、租赁合同、交易协议等语境，是描述资金存放的常用词，托业阅读（银行条款）和听力（租赁对话）中频繁考查",
+      "keyCollocations": [
+        "make a deposit（存款）",
+        "security deposit（押金）",
+        "deposit account（存款账户）"
+      ],
+      "toeicExampleSentences": [
+        "Please make a deposit of 500 dollars to secure the booking.（请支付500美元押金以确保预订。）",
+        "She deposited the check into her savings account.（她将支票存入储蓄账户。）"
+      ],
+      "sceneAssociation": "可以联想‘客户在银行柜台办理存款（deposit）’的画面，或‘租户支付房屋押金（deposit）’，结合商务中‘资金存放或预付’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "down payment",
+          "coreDifference": "down payment是首付；deposit是押金或存款",
+          "toeicSceneFocus": "购房、购车场景"
+        },
+        {
+          "word": "security",
+          "coreDifference": "security是担保物；deposit是现金押金",
+          "toeicSceneFocus": "金融担保、抵押场景"
+        },
+        {
+          "word": "contribution",
+          "coreDifference": "contribution是贡献；deposit是存入资金",
+          "toeicSceneFocus": "投资、捐款场景"
+        },
+        {
+          "word": "payment",
+          "coreDifference": "payment是付款；deposit是预付款或存款",
+          "toeicSceneFocus": "交易、银行业务场景"
+        }
+      ]
+    },
+    {
+      "word": "refund",
+      "phonetic": "/ˈriːfʌnd/",
+      "partOfSpeech": "n./v. 名词/动词",
+      "coreMeaning": "退款（指退还已支付的款项）",
+      "toeicSceneFocus": "多出现于客户服务、退货政策、交易纠纷等语境，是描述退款行为的常用词，托业阅读（退货政策）和听力（客服对话）中常见",
+      "keyCollocations": [
+        "issue a refund（办理退款）",
+        "refund policy（退款政策）",
+        "full refund（全额退款）"
+      ],
+      "toeicExampleSentences": [
+        "The store offers a full refund within 30 days.（商店提供30天内全额退款。）",
+        "You can request a refund if the product is defective.（如果产品有缺陷，您可以要求退款。）"
+      ],
+      "sceneAssociation": "可以联想‘客服代表为客户办理退款（refund）’的画面，或‘顾客在收银台要求退款（refund）’，结合商务中‘返还资金’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "reimbursement",
+          "coreDifference": "reimbursement是报销；refund是退还付款",
+          "toeicSceneFocus": "费用报销、补偿场景"
+        },
+        {
+          "word": "rebate",
+          "coreDifference": "rebate是折扣返还；refund是全额退款",
+          "toeicSceneFocus": "促销、回扣场景"
+        },
+        {
+          "word": "return",
+          "coreDifference": "return是退货；refund是退款",
+          "toeicSceneFocus": "零售退货流程场景"
+        },
+        {
+          "word": "payment",
+          "coreDifference": "payment是付款；refund是反向操作",
+          "toeicSceneFocus": "交易、退款流程场景"
+        }
+      ]
+    },
+    {
+      "word": "tax",
+      "phonetic": "/tæks/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "税，税款（指向政府缴纳的强制性费用）",
+      "toeicSceneFocus": "多出现于财务、法律、政府政策等语境，是描述税务的通用词，托业阅读（税务文件）和听力（财务讨论）中频繁考查",
+      "keyCollocations": [
+        "income tax（所得税）",
+        "tax return（纳税申报表）",
+        "pay taxes（缴税）"
+      ],
+      "toeicExampleSentences": [
+        "The government has increased the tax on imported goods.（政府提高了进口商品的税。）",
+        "We need to file our tax return by the end of April.（我们需要在4月底前提交纳税申报表。）"
+      ],
+      "sceneAssociation": "可以联想‘会计师在计算公司应缴税款（tax）’的画面，或‘新闻报道中讨论税率（tax）变化’，结合商务中‘向政府缴纳的强制性费用’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "levy",
+          "coreDifference": "levy是征收；tax是税款本身",
+          "toeicSceneFocus": "政府征收、税收政策场景"
+        },
+        {
+          "word": "duty",
+          "coreDifference": "duty是关税或责任；tax是更广泛的税",
+          "toeicSceneFocus": "海关、进口场景"
+        },
+        {
+          "word": "tariff",
+          "coreDifference": "tariff是关税；tax是通用税收",
+          "toeicSceneFocus": "国际贸易、关税政策场景"
+        },
+        {
+          "word": "fee",
+          "coreDifference": "fee是服务费；tax是政府税收",
+          "toeicSceneFocus": "服务收费、政府收费场景"
+        }
+      ]
+    },
+    {
+      "word": "fee",
+      "phonetic": "/fiː/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "费，费用（指为特定服务支付的费用）",
+      "toeicSceneFocus": "多出现于服务收费、会员制度、专业服务等语境，是描述服务费用的常用词，托业阅读（价格表）和听力（服务咨询）中常见",
+      "keyCollocations": [
+        "service fee（服务费）",
+        "entrance fee（入场费）",
+        "membership fee（会员费）"
+      ],
+      "toeicExampleSentences": [
+        "There is a small service fee for online transactions.（在线交易需支付少量服务费。）",
+        "The annual membership fee is $100.（年费为100美元。）"
+      ],
+      "sceneAssociation": "可以联想‘健身房会员支付会员费（fee）’的画面，或‘银行收取服务费（fee）的通知’，结合商务中‘为服务支付的费用’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "charge",
+          "coreDifference": "charge是收费行为；fee是费用本身",
+          "toeicSceneFocus": "费用结构、收费场景"
+        },
+        {
+          "word": "cost",
+          "coreDifference": "cost是成本；fee是特定服务费用",
+          "toeicSceneFocus": "成本分析、定价场景"
+        },
+        {
+          "word": "rate",
+          "coreDifference": "rate是费率；fee是固定费用",
+          "toeicSceneFocus": "利率、费率场景"
+        },
+        {
+          "word": "price",
+          "coreDifference": "price是价格；fee是附加费用",
+          "toeicSceneFocus": "产品定价、服务报价场景"
+        }
+      ]
+    },
+    {
+      "word": "charge",
+      "phonetic": "/tʃɑːrdʒ/",
+      "partOfSpeech": "v. 动词",
+      "coreMeaning": "收费，要价（指为服务或商品索要费用）",
+      "toeicSceneFocus": "多出现于商务定价、服务收费、财务政策等语境，是描述收费行为的动词，托业阅读（价格表）和听力（商务谈判）中频繁考查",
+      "keyCollocations": [
+        "charge for（为……收费）",
+        "charge a fee（收取费用）",
+        "credit card charge（信用卡收费）"
+      ],
+      "toeicExampleSentences": [
+        "We don't charge for delivery within the city limits.（市区内我们不收取配送费。）",
+        "The mechanic will charge $100 for the repair.（修理工将收取100美元的修理费。）"
+      ],
+      "sceneAssociation": "可以联想‘餐厅服务员告知顾客收费（charge）标准’的画面，或‘公司宣布新服务收费（charge）政策’，结合商务中‘索要费用’的动作记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "fee",
+          "coreDifference": "fee是费用名词；charge是收费动词",
+          "toeicSceneFocus": "费用支付、服务收费场景"
+        },
+        {
+          "word": "cost",
+          "coreDifference": "cost是成本；charge是索要的价格",
+          "toeicSceneFocus": "成本核算、定价场景"
+        },
+        {
+          "word": "expense",
+          "coreDifference": "expense是开支；charge是收费项目",
+          "toeicSceneFocus": "财务记录、费用管理场景"
+        },
+        {
+          "word": "bill",
+          "coreDifference": "bill是账单；charge是收费行为",
+          "toeicSceneFocus": "账单生成、付款请求场景"
+        }
+      ]
+    },
+    {
+      "word": "cost",
+      "phonetic": "/kɒst/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "成本，费用（指生产或购买所需的花费）",
+      "toeicSceneFocus": "多出现于财务分析、定价策略、项目预算等语境，是描述成本的通用词，托业阅读（财务报告）和听力（商务讨论）中常见",
+      "keyCollocations": [
+        "production cost（生产成本）",
+        "cost-effective（成本效益高的）",
+        "cut costs（削减成本）"
+      ],
+      "toeicExampleSentences": [
+        "The company is trying to reduce manufacturing costs.（公司正试图降低生产成本。）",
+        "We need to calculate the total cost of the project.（我们需要计算项目的总成本。）"
+      ],
+      "sceneAssociation": "可以联想‘工厂经理分析生产成本（cost）’的画面，或‘团队讨论如何降低成本（cost）’，结合商务中‘生产或购买所需花费’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "price",
+          "coreDifference": "price是售价；cost是成本",
+          "toeicSceneFocus": "定价、销售场景"
+        },
+        {
+          "word": "expense",
+          "coreDifference": "expense是已发生的开支；cost是预估或总成本",
+          "toeicSceneFocus": "费用报销、开支记录场景"
+        },
+        {
+          "word": "investment",
+          "coreDifference": "investment是投资；cost是支出",
+          "toeicSceneFocus": "投资分析、资本支出场景"
+        },
+        {
+          "word": "charge",
+          "coreDifference": "charge是收费；cost是内在成本",
+          "toeicSceneFocus": "服务收费、成本结构场景"
+        }
+      ]
+    },
+    {
+      "word": "capital",
+      "phonetic": "/ˈkæpɪtl/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "资本，资金（指用于投资或业务运营的资金）",
+      "toeicSceneFocus": "多出现于金融、投资、企业管理等语境，是描述资金的正式用词，托业阅读（财务文件）和听力（投资讨论）中频繁考查",
+      "keyCollocations": [
+        "working capital（运营资本）",
+        "capital investment（资本投资）",
+        "raise capital（筹集资金）"
+      ],
+      "toeicExampleSentences": [
+        "The startup needs to raise capital for expansion.（初创公司需要筹集资金用于扩张。）",
+        "We have sufficient capital to complete the project.（我们有足够的资金完成该项目。）"
+      ],
+      "sceneAssociation": "可以联想‘投资者向初创公司注入资本（capital）’的画面，或‘企业财务总监讨论资本（capital）结构’，结合商务中‘用于投资的资金’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "fund",
+          "coreDifference": "fund是基金；capital是资本金",
+          "toeicSceneFocus": "基金、投资项目场景"
+        },
+        {
+          "word": "asset",
+          "coreDifference": "asset是资产；capital是资金",
+          "toeicSceneFocus": "资产配置、资产负债表场景"
+        },
+        {
+          "word": "investment",
+          "coreDifference": "investment是投资行为；capital是投入的资金",
+          "toeicSceneFocus": "投资分析、融资场景"
+        },
+        {
+          "word": "money",
+          "coreDifference": "money是货币；capital是用于生产的资金",
+          "toeicSceneFocus": "资金管理、财务规划场景"
+        }
+      ]
+    },
+    {
+      "word": "asset",
+      "phonetic": "/ˈæset/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "资产（指有价值的资源或财产）",
+      "toeicSceneFocus": "多出现于财务报表、资产评估、企业管理等语境，是描述财产的正式用词，托业阅读（资产负债表）和听力（财务分析）中常见",
+      "keyCollocations": [
+        "fixed asset（固定资产）",
+        "current asset（流动资产）",
+        "asset management（资产管理）"
+      ],
+      "toeicExampleSentences": [
+        "The company's main asset is its brand reputation.（公司的主要资产是其品牌声誉。）",
+        "Real estate is considered a valuable asset.（房地产被视为有价值的资产。）"
+      ],
+      "sceneAssociation": "可以联想‘资产负债表上列出的各项资产（asset）’的画面，或‘经理讨论如何利用公司资产（asset）’，结合商务中‘有价值的资源或财产’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "property",
+          "coreDifference": "property是实物资产；asset包括无形资产",
+          "toeicSceneFocus": "房地产、财产管理场景"
+        },
+        {
+          "word": "resource",
+          "coreDifference": "resource是资源；asset是已确认的资产",
+          "toeicSceneFocus": "资源管理、资产盘点场景"
+        },
+        {
+          "word": "investment",
+          "coreDifference": "investment是投资；asset是持有的财产",
+          "toeicSceneFocus": "投资组合、资产评估场景"
+        },
+        {
+          "word": "capital",
+          "coreDifference": "capital是资金；asset是资金形成的财产",
+          "toeicSceneFocus": "资本资产、财务结构场景"
+        }
+      ]
+    },
+    {
+      "word": "liability",
+      "phonetic": "/ˌlaɪəˈbɪləti/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "负债，债务（指欠他人的债务或责任）",
+      "toeicSceneFocus": "多出现于财务报表、法律事务、保险等语境，是描述债务的正式用词，托业阅读（财务报告）和听力（法律讨论）中频繁考查",
+      "keyCollocations": [
+        "legal liability（法律责任）",
+        "liability insurance（责任保险）",
+        "current liability（流动负债）"
+      ],
+      "toeicExampleSentences": [
+        "The company reduced its total liabilities this quarter.（公司本季度减少了总负债。）",
+        "He accepted liability for the accident.（他接受了事故的责任。）"
+      ],
+      "sceneAssociation": "可以联想‘资产负债表上的负债（liability）项目’的画面，或‘律师讨论法律责任（liability）’，结合商务中‘债务或法律义务’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "debt",
+          "coreDifference": "debt是具体债务；liability是更广泛的负债",
+          "toeicSceneFocus": "借贷、债务管理场景"
+        },
+        {
+          "word": "obligation",
+          "coreDifference": "obligation是义务；liability是财务负债",
+          "toeicSceneFocus": "合同义务、法律责任场景"
+        },
+        {
+          "word": "encumbrance",
+          "coreDifference": "encumbrance是负担；liability是会计负债",
+          "toeicSceneFocus": "产权负担、财务限制场景"
+        },
+        {
+          "word": "expense",
+          "coreDifference": "expense是开支；liability是未来需支付的债务",
+          "toeicSceneFocus": "财务报表、债务分析场景"
+        }
+      ]
+    },
+    {
+      "word": "equity",
+      "phonetic": "/ˈekwəti/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "权益，股本（指资产减去负债后的净值）",
+      "toeicSceneFocus": "多出现于财务分析、投资、企业管理等语境，是描述股东权益的正式用词，托业阅读（财务报表）和听力（投资讨论）中常见",
+      "keyCollocations": [
+        "shareholder equity（股东权益）",
+        "home equity（房屋净值）",
+        "equity investment（股权投资）"
+      ],
+      "toeicExampleSentences": [
+        "The company's equity has increased due to profitable operations.（由于运营盈利，公司权益增加。）",
+        "They are seeking equity financing for the new venture.（他们正在为新企业寻求股权融资。）"
+      ],
+      "sceneAssociation": "可以联想‘资产负债表中的股东权益（equity）’的画面，或‘投资者讨论股权（equity）分配’，结合商务中‘资产净值’的核心概念记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "value",
+          "coreDifference": "value是价值；equity是净值",
+          "toeicSceneFocus": "资产评估、价值判断场景"
+        },
+        {
+          "word": "ownership",
+          "coreDifference": "ownership是所有权；equity是所有权对应的净值",
+          "toeicSceneFocus": "股权结构、所有权场景"
+        },
+        {
+          "word": "stake",
+          "coreDifference": "stake是股份；equity是权益总额",
+          "toeicSceneFocus": "投资、股权分配场景"
+        },
+        {
+          "word": "capital",
+          "coreDifference": "capital是投入资金；equity是所有者权益",
+          "toeicSceneFocus": "资本结构、财务分析场景"
+        }
+      ]
+    },
+    {
+      "word": "debt",
+      "phonetic": "/det/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "债务，欠款（指欠他人的钱）",
+      "toeicSceneFocus": "多出现于财务、借贷、债务管理等语境，是描述债务的通用词，托业阅读（贷款协议）和听力（财务讨论）中频繁考查",
+      "keyCollocations": [
+        "national debt（国债）",
+        "pay off debt（还清债务）",
+        "debt ratio（负债率）"
+      ],
+      "toeicExampleSentences": [
+        "The company is trying to reduce its debt load.（公司正试图减少债务负担。）",
+        "He has a significant amount of student loan debt.（他有大量学生贷款债务。）"
+      ],
+      "sceneAssociation": "可以联想‘个人查看信用卡债务（debt）账单’的画面，或‘企业讨论如何偿还债务（debt）’，结合商务中‘欠款或负债’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "loan",
+          "coreDifference": "loan是贷款；debt是债务总额",
+          "toeicSceneFocus": "借贷、还款场景"
+        },
+        {
+          "word": "liability",
+          "coreDifference": "liability是会计负债；debt是具体欠款",
+          "toeicSceneFocus": "财务报表、债务分析场景"
+        },
+        {
+          "word": "obligation",
+          "coreDifference": "obligation是义务；debt是金钱债务",
+          "toeicSceneFocus": "合同义务、财务责任场景"
+        },
+        {
+          "word": "credit",
+          "coreDifference": "credit是信贷；debt是已发生的债务",
+          "toeicSceneFocus": "信用额度、借贷场景"
+        }
+      ]
+    },
+    {
+      "word": "credit",
+      "phonetic": "/ˈkredɪt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "信用，信贷（指借款能力或账户贷方）",
+      "toeicSceneFocus": "多出现于银行业务、财务、信用评估等语境，是描述信用的通用词，托业阅读（银行条款）和听力（金融咨询）中常见",
+      "keyCollocations": [
+        "credit card（信用卡）",
+        "credit rating（信用评级）",
+        "on credit（赊账）"
+      ],
+      "toeicExampleSentences": [
+        "Your credit score affects your loan approval.（你的信用评分影响贷款审批。）",
+        "The store allows customers to buy on credit.（商店允许客户赊账购买。）"
+      ],
+      "sceneAssociation": "可以联想‘银行经理评估客户信用（credit）’的画面，或‘使用信用卡（credit card）支付’，结合商务中‘借贷能力或贷方’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "loan",
+          "coreDifference": "loan是贷款；credit是信用额度",
+          "toeicSceneFocus": "借贷、信贷审批场景"
+        },
+        {
+          "word": "trust",
+          "coreDifference": "trust是信任；credit是金融信用",
+          "toeicSceneFocus": "商业信任、信用评估场景"
+        },
+        {
+          "word": "reputation",
+          "coreDifference": "reputation是声誉；credit是财务信用",
+          "toeicSceneFocus": "品牌声誉、信用评级场景"
+        },
+        {
+          "word": "debt",
+          "coreDifference": "debt是债务；credit是借款能力",
+          "toeicSceneFocus": "负债、信贷场景"
+        }
+      ]
+    },
+    {
+      "word": "loan",
+      "phonetic": "/ləʊn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "贷款，借款（指向他人借入的资金）",
+      "toeicSceneFocus": "多出现于银行业务、融资、个人财务等语境，是描述借款的通用词，托业阅读（贷款申请）和听力（金融对话）中频繁考查",
+      "keyCollocations": [
+        "apply for a loan（申请贷款）",
+        "loan agreement（贷款协议）",
+        "pay off a loan（还清贷款）"
+      ],
+      "toeicExampleSentences": [
+        "The bank approved a loan for the business expansion.（银行批准了用于业务扩张的贷款。）",
+        "We need to repay the loan within five years.（我们需要在五年内还清贷款。）"
+      ],
+      "sceneAssociation": "可以联想‘客户在银行申请贷款（loan）’的画面，或‘企业获得贷款（loan）用于投资’，结合商务中‘借入资金’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "credit",
+          "coreDifference": "credit是信用；loan是具体借款",
+          "toeicSceneFocus": "信贷额度、借贷场景"
+        },
+        {
+          "word": "advance",
+          "coreDifference": "advance是预付款；loan是正式贷款",
+          "toeicSceneFocus": "预付款、工资预支场景"
+        },
+        {
+          "word": "mortgage",
+          "coreDifference": "mortgage是抵押贷款；loan是通用贷款",
+          "toeicSceneFocus": "房贷、抵押场景"
+        },
+        {
+          "word": "debt",
+          "coreDifference": "debt是债务；loan是债务形式",
+          "toeicSceneFocus": "债务管理、还款场景"
+        }
+      ]
+    },
+    {
+      "word": "mortgage",
+      "phonetic": "/ˈmɔːɡɪdʒ/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "抵押贷款（指以房产作为担保的贷款）",
+      "toeicSceneFocus": "多出现于房地产、银行业务、个人理财等语境，是描述房贷的专用词，托业阅读（贷款文件）和听力（购房对话）中常见",
+      "keyCollocations": [
+        "mortgage payment（房贷还款）",
+        "apply for a mortgage（申请房贷）",
+        "mortgage rate（房贷利率）"
+      ],
+      "toeicExampleSentences": [
+        "They took out a 30-year mortgage to buy the house.（他们申请了30年期抵押贷款来买房。）",
+        "The monthly mortgage payment is $1,500.（每月房贷还款为1500美元。）"
+      ],
+      "sceneAssociation": "可以联想‘购房者签署抵押贷款（mortgage）合同’的画面，或‘家庭讨论如何支付房贷（mortgage）’，结合商务中‘房产担保贷款’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "loan",
+          "coreDifference": "loan是通用贷款；mortgage特指房贷",
+          "toeicSceneFocus": "借贷、融资场景"
+        },
+        {
+          "word": "lien",
+          "coreDifference": "lien是留置权；mortgage是抵押贷款",
+          "toeicSceneFocus": "法律担保、产权场景"
+        },
+        {
+          "word": "security",
+          "coreDifference": "security是担保物；mortgage是担保贷款",
+          "toeicSceneFocus": "金融担保、抵押场景"
+        },
+        {
+          "word": "debt",
+          "coreDifference": "debt是债务；mortgage是特定债务形式",
+          "toeicSceneFocus": "负债、房贷管理场景"
+        }
+      ]
+    },
+    {
+      "word": "salary",
+      "phonetic": "/ˈsæləri/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "薪水，薪资（指按月或年支付的固定报酬）",
+      "toeicSceneFocus": "多出现于人力资源、雇佣合同、薪酬谈判等语境，是描述白领薪资的正式词，托业阅读（招聘广告）和听力（薪资讨论）中频繁考查",
+      "keyCollocations": [
+        "annual salary（年薪）",
+        "salary increase（加薪）",
+        "monthly salary（月薪）"
+      ],
+      "toeicExampleSentences": [
+        "The position offers a competitive salary and benefits.（该职位提供有竞争力的薪水和福利。）",
+        "She received a 10% salary increase after the performance review.（绩效评估后，她的薪水增加了10%。）"
+      ],
+      "sceneAssociation": "可以联想‘员工查看工资单上的薪水（salary）’的画面，或‘面试中讨论期望薪水（salary）’，结合商务中‘固定报酬’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "wage",
+          "coreDifference": "wage是按小时计的工资；salary是固定月薪/年薪",
+          "toeicSceneFocus": "蓝领工资、时薪场景"
+        },
+        {
+          "word": "pay",
+          "coreDifference": "pay是通用报酬；salary是白领固定薪资",
+          "toeicSceneFocus": "薪酬支付、工资场景"
+        },
+        {
+          "word": "compensation",
+          "coreDifference": "compensation是总报酬；salary是基本工资",
+          "toeicSceneFocus": "薪酬福利、全面报酬场景"
+        },
+        {
+          "word": "earnings",
+          "coreDifference": "earnings是收入总额；salary是固定部分",
+          "toeicSceneFocus": "收入计算、财务报告场景"
+        }
+      ]
+    },
+    {
+      "word": "wage",
+      "phonetic": "/weɪdʒ/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "工资，工钱（指按小时或天计算的报酬）",
+      "toeicSceneFocus": "多出现于劳动市场、蓝领工作、薪酬计算等语境，是描述计时工资的常用词，托业阅读（劳工政策）和听力（工资讨论）中常见",
+      "keyCollocations": [
+        "minimum wage（最低工资）",
+        "hourly wage（时薪）",
+        "wage increase（工资上涨）"
+      ],
+      "toeicExampleSentences": [
+        "The company increased the hourly wage for factory workers.（公司提高了工厂工人的时薪。）",
+        "Minimum wage varies by state.（最低工资因州而异。）"
+      ],
+      "sceneAssociation": "可以联想‘工厂工人查看计时工资（wage）单’的画面，或‘工会谈判提高工资（wage）’，结合商务中‘按时间计算的报酬’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "salary",
+          "coreDifference": "salary是固定月薪；wage是计时工资",
+          "toeicSceneFocus": "白领vs蓝领薪酬场景"
+        },
+        {
+          "word": "pay",
+          "coreDifference": "pay是通用词；wage特指计时工资",
+          "toeicSceneFocus": "工资支付、薪酬场景"
+        },
+        {
+          "word": "earnings",
+          "coreDifference": "earnings是总收入；wage是基本工资",
+          "toeicSceneFocus": "收入分析、财务场景"
+        },
+        {
+          "word": "income",
+          "coreDifference": "income是收入；wage是工资收入",
+          "toeicSceneFocus": "个人财务、收入统计场景"
+        }
+      ]
+    },
+    {
+      "word": "bonus",
+      "phonetic": "/ˈbəʊnəs/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "奖金，红利（指额外支付的报酬）",
+      "toeicSceneFocus": "多出现于绩效考核、激励机制、年终奖励等语境，是描述额外奖励的常用词，托业阅读（员工手册）和听力（绩效讨论）中频繁考查",
+      "keyCollocations": [
+        "year-end bonus（年终奖）",
+        "performance bonus（绩效奖金）",
+        "signing bonus（签约奖金）"
+      ],
+      "toeicExampleSentences": [
+        "Employees will receive a bonus based on their performance.（员工将根据绩效获得奖金。）",
+        "The sales team earned a bonus for exceeding targets.（销售团队因超额完成目标而获得奖金。）"
+      ],
+      "sceneAssociation": "可以联想‘员工收到年终奖金（bonus）通知’的画面，或‘经理宣布团队奖金（bonus）’，结合商务中‘额外奖励’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "commission",
+          "coreDifference": "commission是佣金；bonus是固定奖金",
+          "toeicSceneFocus": "销售提成、佣金场景"
+        },
+        {
+          "word": "incentive",
+          "coreDifference": "incentive是激励；bonus是奖励金",
+          "toeicSceneFocus": "激励计划、绩效奖励场景"
+        },
+        {
+          "word": "reward",
+          "coreDifference": "reward是奖励；bonus是金钱奖励",
+          "toeicSceneFocus": "奖励机制、员工激励场景"
+        },
+        {
+          "word": "salary",
+          "coreDifference": "salary是基本工资；bonus是额外奖金",
+          "toeicSceneFocus": "薪酬结构、总收入场景"
+        }
+      ]
+    },
+    {
+      "word": "commission",
+      "phonetic": "/kəˈmɪʃn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "佣金，提成（指按销售额比例计算的报酬）",
+      "toeicSceneFocus": "多出现于销售行业、代理协议、激励机制等语境，是描述业绩提成的专用词，托业阅读（销售合同）和听力（佣金讨论）中常见",
+      "keyCollocations": [
+        "sales commission（销售佣金）",
+        "commission rate（佣金率）",
+        "earn a commission（赚取佣金）"
+      ],
+      "toeicExampleSentences": [
+        "The salesperson earns a 5% commission on each sale.（销售人员每笔销售赚取5%的佣金。）",
+        "She exceeded her quota and earned a high commission.（她超出了配额，获得了高额佣金。）"
+      ],
+      "sceneAssociation": "可以联想‘销售员查看佣金（commission）报表’的画面，或‘代理商讨论佣金（commission）比例’，结合商务中‘按业绩比例计算的报酬’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "bonus",
+          "coreDifference": "bonus是固定奖金；commission是可变佣金",
+          "toeicSceneFocus": "销售激励、奖励场景"
+        },
+        {
+          "word": "fee",
+          "coreDifference": "fee是服务费；commission是销售提成",
+          "toeicSceneFocus": "服务收费、代理场景"
+        },
+        {
+          "word": "percentage",
+          "coreDifference": "percentage是百分比；commission是佣金金额",
+          "toeicSceneFocus": "销售计算、提成场景"
+        },
+        {
+          "word": "payment",
+          "coreDifference": "payment是付款；commission是特定类型报酬",
+          "toeicSceneFocus": "报酬支付、佣金结算场景"
+        }
+      ]
+    },
+    {
+      "word": "allowance",
+      "phonetic": "/əˈlaʊəns/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "津贴，补助（指定期发放的补贴或零用钱）",
+      "toeicSceneFocus": "多出现于薪酬福利、差旅补贴、儿童零用钱等语境，是描述额外补助的常用词，托业阅读（福利政策）和听力（津贴讨论）中频繁考查",
+      "keyCollocations": [
+        "travel allowance（差旅津贴）",
+        "housing allowance（住房补贴）",
+        "daily allowance（每日津贴）"
+      ],
+      "toeicExampleSentences": [
+        "The company provides a housing allowance for expatriate staff.（公司为外籍员工提供住房补贴。）",
+        "He receives a monthly allowance from his parents.（他每月从父母那里得到零用钱。）"
+      ],
+      "sceneAssociation": "可以联想‘员工报销差旅津贴（allowance）’的画面，或‘家长给孩子零用钱（allowance）’，结合商务中‘定期补贴’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "stipend",
+          "coreDifference": "stipend是固定津贴；allowance是补助",
+          "toeicSceneFocus": "实习津贴、生活费场景"
+        },
+        {
+          "word": "subsidy",
+          "coreDifference": "subsidy是政府补贴；allowance是个人补助",
+          "toeicSceneFocus": "政府补贴、企业福利场景"
+        },
+        {
+          "word": "benefit",
+          "coreDifference": "benefit是福利；allowance是现金补贴",
+          "toeicSceneFocus": "员工福利、保险场景"
+        },
+        {
+          "word": "payment",
+          "coreDifference": "payment是付款；allowance是特殊补贴",
+          "toeicSceneFocus": "薪酬支付、补贴发放场景"
+        }
+      ]
+    },
+    {
+      "word": "raise",
+      "phonetic": "/reɪz/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "加薪（指工资或薪水的增加）",
+      "toeicSceneFocus": "多出现于绩效评估、薪资谈判、人事变动等语境，是描述工资增长的常用词，托业阅读（人事通知）和听力（薪资讨论）中常见",
+      "keyCollocations": [
+        "pay raise（加薪）",
+        "raise in salary（薪资上涨）",
+        "ask for a raise（要求加薪）"
+      ],
+      "toeicExampleSentences": [
+        "She received a 5% raise after her annual review.（年度评估后，她获得了5%的加薪。）",
+        "The manager approved a raise for the top performers.（经理批准了对表现最佳员工的加薪。）"
+      ],
+      "sceneAssociation": "可以联想‘员工向经理要求加薪（raise）’的画面，或‘人事部门通知加薪（raise）’，结合商务中‘工资增长’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "increase",
+          "coreDifference": "increase是通用增加；raise特指工资增长",
+          "toeicSceneFocus": "薪资调整、增长场景"
+        },
+        {
+          "word": "promotion",
+          "coreDifference": "promotion是晋升；raise是加薪",
+          "toeicSceneFocus": "职业发展、人事变动场景"
+        },
+        {
+          "word": "increment",
+          "coreDifference": "increment是增量；raise是工资上涨",
+          "toeicSceneFocus": "薪资增长、逐步增加场景"
+        },
+        {
+          "word": "bonus",
+          "coreDifference": "bonus是奖金；raise是基本工资增长",
+          "toeicSceneFocus": "薪酬结构、总收入场景"
+        }
+      ]
+    },
+    {
+      "word": "financial",
+      "phonetic": "/faɪˈnænʃl/",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "财务的，金融的（指与金钱或财务管理相关的）",
+      "toeicSceneFocus": "多出现于财务报告、银行业务、经济分析等语境，是描述财务属性的通用形容词，托业阅读（财务文件）和听力（金融新闻）中频繁考查",
+      "keyCollocations": [
+        "financial statement（财务报表）",
+        "financial advisor（财务顾问）",
+        "financial crisis（金融危机）"
+      ],
+      "toeicExampleSentences": [
+        "The company is in a strong financial position.（公司财务状况良好。）",
+        "We need to review the financial implications of this decision.（我们需要审查这一决策的财务影响。）"
+      ],
+      "sceneAssociation": "可以联想‘财务顾问分析财务（financial）报表’的画面，或‘新闻报道中讨论金融（financial）市场’，结合商务中‘与金钱管理相关’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "monetary",
+          "coreDifference": "monetary是货币的；financial是财务的",
+          "toeicSceneFocus": "货币政策、货币场景"
+        },
+        {
+          "word": "fiscal",
+          "coreDifference": "fiscal是财政的；financial是财务的",
+          "toeicSceneFocus": "财政政策、政府预算场景"
+        },
+        {
+          "word": "economic",
+          "coreDifference": "economic是经济的；financial是财务的",
+          "toeicSceneFocus": "经济分析、宏观场景"
+        },
+        {
+          "word": "banking",
+          "coreDifference": "banking是银行业；financial是金融的",
+          "toeicSceneFocus": "银行业务、金融服务场景"
+        }
+      ]
+    },
+    {
+      "word": "accountant",
+      "phonetic": "/əˈkaʊntənt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "会计师（指从事会计工作的专业人员）",
+      "toeicSceneFocus": "多出现于财务工作、招聘、会计服务等语境，是描述会计职业的常用词，托业阅读（招聘广告）和听力（职场对话）中常见",
+      "keyCollocations": [
+        "certified accountant（注册会计师）",
+        "work as an accountant（担任会计师）",
+        "accountant general（总会计师）"
+      ],
+      "toeicExampleSentences": [
+        "The accountant prepares the monthly financial reports.（会计师准备每月的财务报告。）",
+        "We need to hire a qualified accountant for the accounting department.（我们需要为会计部门招聘一名合格的会计师。）"
+      ],
+      "sceneAssociation": "可以联想‘会计师在办公室处理账目（accountant）’的画面，或‘招聘广告中寻找会计师（accountant）’，结合商务中‘会计专业人员’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "auditor",
+          "coreDifference": "auditor是审计师；accountant是会计师",
+          "toeicSceneFocus": "审计、财务监督场景"
+        },
+        {
+          "word": "bookkeeper",
+          "coreDifference": "bookkeeper是簿记员；accountant是会计师",
+          "toeicSceneFocus": "记账、基础会计场景"
+        },
+        {
+          "word": "controller",
+          "coreDifference": "controller是财务总监；accountant是会计师",
+          "toeicSceneFocus": "财务管理、高级职位场景"
+        },
+        {
+          "word": "finance",
+          "coreDifference": "finance是财务；accountant是财务人员",
+          "toeicSceneFocus": "财务部门、职业场景"
+        }
+      ]
+    },
+    {
+      "word": "auditor",
+      "phonetic": "/ˈɔːdɪtər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "审计师（指审查财务记录的专业人员）",
+      "toeicSceneFocus": "多出现于财务审计、合规检查、监管等语境，是描述审计职业的专用词，托业阅读（审计报告）和听力（合规讨论）中常见",
+      "keyCollocations": [
+        "external auditor（外部审计师）",
+        "internal auditor（内部审计师）",
+        "audit report（审计报告）"
+      ],
+      "toeicExampleSentences": [
+        "The auditor reviewed our financial statements.（审计师审查了我们的财务报表。）",
+        "We need to schedule an appointment with the auditor.（我们需要与审计师预约时间。）"
+      ],
+      "sceneAssociation": "可以联想‘审计师在检查财务记录（auditor）’的画面，或‘公司接受外部审计师（auditor）审查’，结合商务中‘财务审查人员’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "accountant",
+          "coreDifference": "accountant是记账；auditor是审查",
+          "toeicSceneFocus": "会计vs审计场景"
+        },
+        {
+          "word": "inspector",
+          "coreDifference": "inspector是检查员；auditor是财务审查师",
+          "toeicSceneFocus": "质量检查、监管场景"
+        },
+        {
+          "word": "reviewer",
+          "coreDifference": "reviewer是评审员；auditor是审计师",
+          "toeicSceneFocus": "审核、评估场景"
+        },
+        {
+          "word": "examiner",
+          "coreDifference": "examiner是审查员；auditor是审计师",
+          "toeicSceneFocus": "检查、审计场景"
+        }
+      ]
+    },
+    {
+      "word": "bookkeeping",
+      "phonetic": "/ˈbʊkkiːpɪŋ/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "簿记（指记录财务交易的系统）",
+      "toeicSceneFocus": "多出现于会计基础、财务管理、日常记账等语境，是描述记账工作的专用词，托业阅读（会计教材）和听力（财务基础讨论）中常见",
+      "keyCollocations": [
+        "double-entry bookkeeping（复式簿记）",
+        "bookkeeping software（簿记软件）",
+        "manual bookkeeping（手工记账）"
+      ],
+      "toeicExampleSentences": [
+        "Accurate bookkeeping is essential for financial management.（准确的簿记对财务管理至关重要。）",
+        "The company uses accounting software for bookkeeping.（公司使用会计软件进行簿记。）"
+      ],
+      "sceneAssociation": "可以联想‘簿记员在账簿上记录交易（bookkeeping）’的画面，或‘学习基础簿记（bookkeeping）技能’，结合商务中‘记录财务交易’的基础工作记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "accounting",
+          "coreDifference": "accounting是会计学；bookkeeping是记账",
+          "toeicSceneFocus": "会计专业、财务系统场景"
+        },
+        {
+          "word": "recording",
+          "coreDifference": "recording是记录；bookkeeping是财务记账",
+          "toeicSceneFocus": "数据记录、档案管理场景"
+        },
+        {
+          "word": "ledger",
+          "coreDifference": "ledger是账簿；bookkeeping是记账行为",
+          "toeicSceneFocus": "会计工具、账簿管理场景"
+        },
+        {
+          "word": "document",
+          "coreDifference": "document是文件；bookkeeping是记账过程",
+          "toeicSceneFocus": "文档管理、财务记录场景"
+        }
+      ]
+    },
+    {
+      "word": "record",
+      "phonetic": "/ˈrekərd/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "记录，档案（指保存的信息或文件）",
+      "toeicSceneFocus": "多出现于档案管理、数据保存、审计等语境，是描述信息保存的通用词，托业阅读（政策文件）和听力（记录管理）中频繁考查",
+      "keyCollocations": [
+        "keep a record（保留记录）",
+        "medical record（医疗记录）",
+        "criminal record（犯罪记录）"
+      ],
+      "toeicExampleSentences": [
+        "Please keep a record of all transactions.（请保留所有交易的记录。）",
+        "The company maintains records for tax purposes.（公司为税务目的保存记录。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在电脑上更新记录（record）’的画面，或‘档案柜中存放着各种记录（record）’，结合商务中‘信息保存’的核心概念记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "document",
+          "coreDifference": "document是文件；record是记录",
+          "toeicSceneFocus": "文档、正式文件场景"
+        },
+        {
+          "word": "file",
+          "coreDifference": "file是档案；record是条目式记录",
+          "toeicSceneFocus": "档案管理、存储场景"
+        },
+        {
+          "word": "entry",
+          "coreDifference": "entry是条目；record是完整记录",
+          "toeicSceneFocus": "账目条目、数据录入场景"
+        },
+        {
+          "word": "history",
+          "coreDifference": "history是历史；record是具体记录",
+          "toeicSceneFocus": "历史数据、档案场景"
+        }
+      ]
+    }
+  ],
+  office_administration:[
+    {
+      "word": "stationery",
+      "phonetic": "/ˈsteɪʃənri/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "文具（指办公用品，如纸张、笔等）",
+      "toeicSceneFocus": "多出现于办公采购、库存管理、日常办公等语境，是描述办公用品的常用词，托业阅读（采购清单）和听力（办公室对话）中常见",
+      "keyCollocations": [
+        "office stationery（办公文具）",
+        "stationery supplies（文具用品）",
+        "buy stationery（购买文具）"
+      ],
+      "toeicExampleSentences": [
+        "We need to order more stationery for the office.（我们需要为办公室订购更多文具。）",
+        "The stationery cabinet is running low on pens and paper.（文具柜里的笔和纸快用完了。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在文具柜前挑选文具（stationery）’的画面，或‘采购部门列出文具（stationery）清单’，结合商务中‘办公用品’的核心概念记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "supplies",
+          "coreDifference": "supplies更泛指各类物资；stationery特指文具",
+          "toeicSceneFocus": "物资采购、办公场景"
+        },
+        {
+          "word": "materials",
+          "coreDifference": "materials是原材料；stationery是办公用品",
+          "toeicSceneFocus": "生产、材料管理场景"
+        },
+        {
+          "word": "equipment",
+          "coreDifference": "equipment是设备；stationery是消耗品",
+          "toeicSceneFocus": "设备、工具场景"
+        },
+        {
+          "word": "tools",
+          "coreDifference": "tools是工具；stationery是书写用品",
+          "toeicSceneFocus": "工具、仪器场景"
+        }
+      ]
+    },
+    {
+      "word": "enclose",
+      "phonetic": "/ɪnˈkləʊz/",
+      "partOfSpeech": "v. 动词",
+      "coreMeaning": "附上，装入（指在信件或包裹中放入文件或物品）",
+      "toeicSceneFocus": "多出现于商务信函、邮件沟通、文件提交等语境，是描述附带文件的正式动词，托业阅读（商务邮件）和听力（通信对话）中频繁考查",
+      "keyCollocations": [
+        "enclose a document（附上文件）",
+        "enclose with（随信附上）",
+        "please find enclosed（随函附上）"
+      ],
+      "toeicExampleSentences": [
+        "I have enclosed the completed application form.（我已附上填写好的申请表。）",
+        "Please enclose a copy of your ID with the application.（请随申请附上身份证复印件。）"
+      ],
+      "sceneAssociation": "可以联想‘在信封中装入文件（enclose）并封口’的画面，或‘邮件中说明已附上（enclose）相关材料’，结合商务中‘随信附带’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "attach",
+          "coreDifference": "attach用于电子邮件；enclose用于实体信件",
+          "toeicSceneFocus": "邮件、通信场景"
+        },
+        {
+          "word": "include",
+          "coreDifference": "include是包含；enclose是物理附上",
+          "toeicSceneFocus": "内容包含、清单场景"
+        },
+        {
+          "word": "insert",
+          "coreDifference": "insert是插入；enclose是封装",
+          "toeicSceneFocus": "文件处理、包装场景"
+        },
+        {
+          "word": "contain",
+          "coreDifference": "contain是包含；enclose是附带",
+          "toeicSceneFocus": "容器、内容场景"
+        }
+      ]
+    },
+    {
+      "word": "submit",
+      "phonetic": "/səbˈmɪt/",
+      "partOfSpeech": "v. 动词",
+      "coreMeaning": "提交，呈递（指正式递交文件、申请或报告）",
+      "toeicSceneFocus": "多出现于申请流程、报告提交、审批程序等语境，是描述正式递交的动词，托业阅读（申请指南）和听力（工作汇报）中常见",
+      "keyCollocations": [
+        "submit an application（提交申请）",
+        "submit a report（提交报告）",
+        "submit before deadline（在截止日期前提交）"
+      ],
+      "toeicExampleSentences": [
+        "Please submit your proposal by Friday.（请在周五前提交你的提案。）",
+        "All employees must submit their timesheets monthly.（所有员工必须每月提交时间表。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在系统中点击提交（submit）按钮’的画面，或‘将纸质报告提交（submit）给经理’，结合商务中‘正式递交’的动作记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "present",
+          "coreDifference": "present是展示；submit是递交",
+          "toeicSceneFocus": "演示、汇报场景"
+        },
+        {
+          "word": "hand in",
+          "coreDifference": "hand in较口语化；submit更正式",
+          "toeicSceneFocus": "日常交作业、交报告场景"
+        },
+        {
+          "word": "forward",
+          "coreDifference": "forward是转发；submit是首次提交",
+          "toeicSceneFocus": "邮件转发、传递场景"
+        },
+        {
+          "word": "provide",
+          "coreDifference": "provide是提供；submit是正式呈递",
+          "toeicSceneFocus": "提供信息、资料场景"
+        }
+      ]
+    },
+    {
+      "word": "approve",
+      "phonetic": "/əˈpruːv/",
+      "partOfSpeech": "v. 动词",
+      "coreMeaning": "批准，通过（指正式同意或认可某事）",
+      "toeicSceneFocus": "多出现于审批流程、合同签署、预算批准等语境，是描述官方同意的动词，托业阅读（通知邮件）和听力（审批讨论）中频繁考查",
+      "keyCollocations": [
+        "approve a request（批准请求）",
+        "management approval（管理层批准）",
+        "get approved（获得批准）"
+      ],
+      "toeicExampleSentences": [
+        "The manager approved my vacation request.（经理批准了我的休假请求。）",
+        "The budget needs to be approved by the CFO.（预算需要得到首席财务官的批准。）"
+      ],
+      "sceneAssociation": "可以联想‘经理在文件上签字批准（approve）’的画面，或‘系统显示请求已批准（approve）’，结合商务中‘官方同意’的核心概念记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "authorize",
+          "coreDifference": "authorize是授权；approve是批准",
+          "toeicSceneFocus": "授权、许可场景"
+        },
+        {
+          "word": "confirm",
+          "coreDifference": "confirm是确认；approve是同意",
+          "toeicSceneFocus": "确认、核实场景"
+        },
+        {
+          "word": "accept",
+          "coreDifference": "accept是接受；approve是正式批准",
+          "toeicSceneFocus": "接受、认可场景"
+        },
+        {
+          "word": "permit",
+          "coreDifference": "permit是允许；approve是审批通过",
+          "toeicSceneFocus": "许可、授权场景"
+        }
+      ]
+    },
+    {
+      "word": "arrange",
+      "phonetic": "/əˈreɪndʒ/",
+      "partOfSpeech": "v. 动词",
+      "coreMeaning": "安排，整理（指组织或筹备某事）",
+      "toeicSceneFocus": "多出现于会议安排、行程规划、事务协调等语境，是描述组织筹备的动词，托业阅读（邮件）和听力（工作协调）中常见",
+      "keyCollocations": [
+        "arrange a meeting（安排会议）",
+        "arrange for（为……做安排）",
+        "make arrangements（做安排）"
+      ],
+      "toeicExampleSentences": [
+        "I will arrange a meeting with the client next week.（我会在下周安排与客户的会议。）",
+        "Can you arrange for a taxi to the airport?（你能安排一辆出租车去机场吗？）"
+      ],
+      "sceneAssociation": "可以联想‘助理在日历上安排会议（arrange）’的画面，或‘团队讨论如何安排（arrange）项目进度’，结合商务中‘组织筹备’的动作记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "organize",
+          "coreDifference": "organize是系统组织；arrange是具体安排",
+          "toeicSceneFocus": "活动组织、项目管理场景"
+        },
+        {
+          "word": "schedule",
+          "coreDifference": "schedule是制定时间表；arrange是全面安排",
+          "toeicSceneFocus": "时间规划、日程场景"
+        },
+        {
+          "word": "coordinate",
+          "coreDifference": "coordinate是协调；arrange是筹备",
+          "toeicSceneFocus": "协调、合作场景"
+        },
+        {
+          "word": "plan",
+          "coreDifference": "plan是计划；arrange是实施安排",
+          "toeicSceneFocus": "计划制定、战略场景"
+        }
+      ]
+    },
+    {
+      "word": "register",
+      "phonetic": "/ˈredʒɪstər/",
+      "partOfSpeech": "v. 动词",
+      "coreMeaning": "注册，登记（指正式记录信息或报名）",
+      "toeicSceneFocus": "多出现于报名活动、公司注册、信息登记等语境，是描述正式记录的动词，托业阅读（注册表）和听力（报名对话）中常见",
+      "keyCollocations": [
+        "register for（注册参加）",
+        "register a company（注册公司）",
+        "register online（在线注册）"
+      ],
+      "toeicExampleSentences": [
+        "You need to register for the conference before Friday.（你需要在周五前注册参加会议。）",
+        "The company was registered with the local government.（该公司已在当地政府注册。）"
+      ],
+      "sceneAssociation": "可以联想‘用户在网站上注册（register）账号’的画面，或‘填写表格注册（register）会议’，结合商务中‘正式记录’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "enroll",
+          "coreDifference": "enroll是报名课程；register是通用注册",
+          "toeicSceneFocus": "课程报名、入学场景"
+        },
+        {
+          "word": "sign up",
+          "coreDifference": "sign up较口语化；register更正式",
+          "toeicSceneFocus": "日常报名、注册场景"
+        },
+        {
+          "word": "record",
+          "coreDifference": "record是记录；register是登记注册",
+          "toeicSceneFocus": "档案记录、数据场景"
+        },
+        {
+          "word": "list",
+          "coreDifference": "list是列出；register是正式登记",
+          "toeicSceneFocus": "列表、清单场景"
+        }
+      ]
+    },
+    {
+      "word": "reserve",
+      "phonetic": "/rɪˈzɜːrv/",
+      "partOfSpeech": "v. 动词",
+      "coreMeaning": "预订，预留（指提前保留座位、房间等）",
+      "toeicSceneFocus": "多出现于酒店、机票、会议室预订等语境，是描述预留的动词，托业阅读（预订确认）和听力（预订对话）中频繁考查",
+      "keyCollocations": [
+        "reserve a room（预订房间）",
+        "make a reservation（做预订）",
+        "reserved parking（预留停车位）"
+      ],
+      "toeicExampleSentences": [
+        "I'd like to reserve a table for two at 7 PM.（我想预订一张晚上7点的两人桌。）",
+        "Please reserve a conference room for the meeting.（请为会议预订一间会议室。）"
+      ],
+      "sceneAssociation": "可以联想‘客人通过电话预订酒店房间（reserve）’的画面，或‘助理在系统中预订会议室（reserve）’，结合商务中‘提前保留’的动作记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "book",
+          "coreDifference": "book是预订；reserve是预留",
+          "toeicSceneFocus": "票务、住宿预订场景"
+        },
+        {
+          "word": "hold",
+          "coreDifference": "hold是暂时保留；reserve是正式预订",
+          "toeicSceneFocus": "物品保留、座位场景"
+        },
+        {
+          "word": "engage",
+          "coreDifference": "engage是占用；reserve是预留",
+          "toeicSceneFocus": "时间占用、预约场景"
+        },
+        {
+          "word": "schedule",
+          "coreDifference": "schedule是安排时间；reserve是保留位置",
+          "toeicSceneFocus": "日程规划、预订场景"
+        }
+      ]
+    },
+    {
+      "word": "policy",
+      "phonetic": "/ˈpɒləsi/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "政策，方针（指组织制定的规则或指导原则）",
+      "toeicSceneFocus": "多出现于公司规定、保险条款、政府政策等语境，是描述规则的正式词，托业阅读（员工手册）和听力（政策解释）中常见",
+      "keyCollocations": [
+        "company policy（公司政策）",
+        "privacy policy（隐私政策）",
+        "return policy（退货政策）"
+      ],
+      "toeicExampleSentences": [
+        "All employees must follow the company's dress code policy.（所有员工必须遵守公司的着装政策。）",
+        "The store has a strict refund policy.（商店有严格的退货政策。）"
+      ],
+      "sceneAssociation": "可以联想‘HR在会议上解释公司政策（policy）’的画面，或‘员工手册中列出的休假政策（policy）’，结合商务中‘规则或方针’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "procedure",
+          "coreDifference": "procedure是程序；policy是政策",
+          "toeicSceneFocus": "操作程序、流程场景"
+        },
+        {
+          "word": "regulation",
+          "coreDifference": "regulation是法规；policy是内部政策",
+          "toeicSceneFocus": "法律规章、合规场景"
+        },
+        {
+          "word": "guideline",
+          "coreDifference": "guideline是指导原则；policy是必须遵守的政策",
+          "toeicSceneFocus": "指导文件、建议场景"
+        },
+        {
+          "word": "rule",
+          "coreDifference": "rule是规则；policy是成文的方针",
+          "toeicSceneFocus": "规则、制度场景"
+        }
+      ]
+    },
+    {
+      "word": "instruction",
+      "phonetic": "/ɪnˈstrʌkʃn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "指示，指令（指操作指导或命令）",
+      "toeicSceneFocus": "多出现于操作说明、培训指导、工作指示等语境，是描述指导的常用词，托业阅读（说明书）和听力（工作指示）中常见",
+      "keyCollocations": [
+        "follow instructions（遵循指示）",
+        "operating instructions（操作说明）",
+        "give instructions（给出指示）"
+      ],
+      "toeicExampleSentences": [
+        "Please read the instructions carefully before using the machine.（使用机器前请仔细阅读说明。）",
+        "The manager gave clear instructions for the project.（经理给出了清晰的项目指示。）"
+      ],
+      "sceneAssociation": "可以联想‘操作员按照说明书（instruction）操作设备’的画面，或‘经理给出工作指示（instruction）’，结合商务中‘操作指导’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "direction",
+          "coreDifference": "direction是方向或指导；instruction是具体指令",
+          "toeicSceneFocus": "方向指引、指导场景"
+        },
+        {
+          "word": "order",
+          "coreDifference": "order是命令；instruction是指导性指示",
+          "toeicSceneFocus": "命令、指令场景"
+        },
+        {
+          "word": "guidance",
+          "coreDifference": "guidance是引导；instruction是明确指令",
+          "toeicSceneFocus": "指导、咨询场景"
+        },
+        {
+          "word": "manual",
+          "coreDifference": "manual是手册；instruction是其中的内容",
+          "toeicSceneFocus": "说明书、操作手册场景"
+        }
+      ]
+    },
+    {
+      "word": "memo",
+      "phonetic": "/ˈmeməʊ/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "备忘录，便条（指简短的内部通信）",
+      "toeicSceneFocus": "多出现于办公室沟通、内部通知、工作记录等语境，是描述简短商务便条的词，托业阅读（内部邮件）和听力（办公室对话）中常见",
+      "keyCollocations": [
+        "internal memo（内部备忘录）",
+        "memo to staff（给员工的备忘录）",
+        "write a memo（写备忘录）"
+      ],
+      "toeicExampleSentences": [
+        "The manager sent a memo about the new policy.（经理发送了关于新政策的备忘录。）",
+        "Please write a memo to remind everyone about the meeting.（请写个备忘录提醒大家会议。）"
+      ],
+      "sceneAssociation": "可以联想‘经理在电脑上写备忘录（memo）给团队’的画面，或‘办公桌上放着的备忘录（memo）’，结合商务中‘内部简短沟通’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "note",
+          "coreDifference": "note是便条；memo是正式内部备忘录",
+          "toeicSceneFocus": "便条、笔记场景"
+        },
+        {
+          "word": "email",
+          "coreDifference": "email是邮件；memo是书面备忘录",
+          "toeicSceneFocus": "电子通信、内部沟通场景"
+        },
+        {
+          "word": "letter",
+          "coreDifference": "letter是信件；memo是内部便条",
+          "toeicSceneFocus": "正式信函、外部通信场景"
+        },
+        {
+          "word": "reminder",
+          "coreDifference": "reminder是提醒；memo是信息记录",
+          "toeicSceneFocus": "提醒、通知场景"
+        }
+      ]
+    },
+    {
+      "word": "letter",
+      "phonetic": "/ˈletər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "信，信件（指正式的书面通信）",
+      "toeicSceneFocus": "多出现于商务通信、正式通知、求职信等语境，是描述书面信函的常用词，托业阅读（商务信函）和听力（通信讨论）中常见",
+      "keyCollocations": [
+        "cover letter（求职信）",
+        "business letter（商务信函）",
+        "send a letter（发送信件）"
+      ],
+      "toeicExampleSentences": [
+        "She sent a letter of resignation to her employer.（她给雇主发送了辞职信。）",
+        "Please reply to the client's letter as soon as possible.（请尽快回复客户的信件。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在办公室写商务信函（letter）’的画面，或‘收到正式通知信（letter）’，结合商务中‘正式书面沟通’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "mail",
+          "coreDifference": "mail是邮件总称；letter是具体信件",
+          "toeicSceneFocus": "邮件收发、邮政场景"
+        },
+        {
+          "word": "correspondence",
+          "coreDifference": "correspondence是通信往来；letter是单封信",
+          "toeicSceneFocus": "商务通信、信函往来场景"
+        },
+        {
+          "word": "message",
+          "coreDifference": "message是信息；letter是正式信件",
+          "toeicSceneFocus": "信息传递、沟通场景"
+        },
+        {
+          "word": "document",
+          "coreDifference": "document是文件；letter是信函",
+          "toeicSceneFocus": "文档、正式文件场景"
+        }
+      ]
+    },
+    {
+      "word": "email",
+      "phonetic": "/ˈiːmeɪl/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "电子邮件（指电子通信信息）",
+      "toeicSceneFocus": "多出现于商务沟通、日常办公、网络通信等语境，是现代商务通信的核心词，托业阅读（邮件）和听力（电话会议）中频繁考查",
+      "keyCollocations": [
+        "send an email（发送邮件）",
+        "email address（电子邮件地址）",
+        "by email（通过邮件）"
+      ],
+      "toeicExampleSentences": [
+        "Please send the report via email by the end of the day.（请在今天下班前通过邮件发送报告。）",
+        "I received an email from the client confirming the meeting.（我收到了客户确认会议的邮件。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在电脑前查看邮件（email）’的画面，或‘通过邮件（email）与客户沟通’，结合商务中‘电子通信’的核心记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "message",
+          "coreDifference": "message是信息；email是电子信件",
+          "toeicSceneFocus": "信息、通信场景"
+        },
+        {
+          "word": "memo",
+          "coreDifference": "memo是内部备忘录；email是电子通信",
+          "toeicSceneFocus": "内部沟通、邮件场景"
+        },
+        {
+          "word": "letter",
+          "coreDifference": "letter是纸质信；email是电子信",
+          "toeicSceneFocus": "传统vs现代通信场景"
+        },
+        {
+          "word": "communication",
+          "coreDifference": "communication是沟通；email是通信方式",
+          "toeicSceneFocus": "沟通方式、通信场景"
+        }
+      ]
+    },
+    {
+      "word": "report",
+      "phonetic": "/rɪˈpɔːrt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "报告，汇报（指对信息的正式陈述或总结）",
+      "toeicSceneFocus": "多出现于业绩汇报、项目总结、调查报告等语境，是描述信息总结的常用词，托业阅读（报告文档）和听力（工作汇报）中常见",
+      "keyCollocations": [
+        "financial report（财务报告）",
+        "submit a report（提交报告）",
+        "progress report（进展报告）"
+      ],
+      "toeicExampleSentences": [
+        "The sales team will present their monthly report tomorrow.（销售团队明天将展示他们的月度报告。）",
+        "Please complete the incident report by Friday.（请在周五前完成事故报告。）"
+      ],
+      "sceneAssociation": "可以联想‘团队会议上展示业绩报告（report）’的画面，或‘经理审阅年度报告（report）’，结合商务中‘信息总结和汇报’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "summary",
+          "coreDifference": "summary是摘要；report是详细报告",
+          "toeicSceneFocus": "总结、摘要场景"
+        },
+        {
+          "word": "analysis",
+          "coreDifference": "analysis是分析；report是包含分析的报告",
+          "toeicSceneFocus": "分析、研究场景"
+        },
+        {
+          "word": "statement",
+          "coreDifference": "statement是声明；report是全面报告",
+          "toeicSceneFocus": "财务报表、声明场景"
+        },
+        {
+          "word": "record",
+          "coreDifference": "record是记录；report是汇报文件",
+          "toeicSceneFocus": "档案、记录场景"
+        }
+      ]
+    },
+    {
+      "word": "document",
+      "phonetic": "/ˈdɒkjʊmənt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "文件，文档（指正式的书面或电子记录）",
+      "toeicSceneFocus": "多出现于文件管理、合同、档案等语境，是描述正式记录的通用词，托业阅读（合同、文件）和听力（文档讨论）中常见",
+      "keyCollocations": [
+        "official document（官方文件）",
+        "document management（文档管理）",
+        "legal document（法律文件）"
+      ],
+      "toeicExampleSentences": [
+        "Please sign all required documents before the meeting.（请在会议前签署所有需要的文件。）",
+        "The company stores all documents electronically.（公司将所有文件电子化存储。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在电脑上编辑文档（document）’的画面，或‘档案柜中存放着重要文件（document）’，结合商务中‘正式书面记录’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "paper",
+          "coreDifference": "paper是纸张；document是文件内容",
+          "toeicSceneFocus": "办公用品、纸质材料场景"
+        },
+        {
+          "word": "file",
+          "coreDifference": "file是档案；document是具体文件",
+          "toeicSceneFocus": "档案管理、存储场景"
+        },
+        {
+          "word": "record",
+          "coreDifference": "record是记录；document是正式文件",
+          "toeicSceneFocus": "记录、档案场景"
+        },
+        {
+          "word": "form",
+          "coreDifference": "form是表格；document是广义文件",
+          "toeicSceneFocus": "表格、表单场景"
+        }
+      ]
+    },
+    {
+      "word": "file",
+      "phonetic": "/faɪl/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "档案，文件（指按顺序存放的文件集合）",
+      "toeicSceneFocus": "多出现于档案管理、计算机文件、记录存储等语境，是描述文件集合的词，托业阅读（档案系统）和听力（文件管理）中常见",
+      "keyCollocations": [
+        "file cabinet（文件柜）",
+        "save a file（保存文件）",
+        "access a file（访问文件）"
+      ],
+      "toeicExampleSentences": [
+        "Please organize all client files in the cabinet.（请将所有客户档案整理到文件柜中。）",
+        "I can't find the digital file on the server.（我在服务器上找不到这个数字文件。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在文件柜中查找档案（file）’的画面，或‘电脑桌面上的文件（file）夹’，结合商务中‘文件存储和管理’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "folder",
+          "coreDifference": "folder是文件夹；file是具体文件",
+          "toeicSceneFocus": "计算机、文件组织场景"
+        },
+        {
+          "word": "document",
+          "coreDifference": "document是单个文档；file是文件集合",
+          "toeicSceneFocus": "文档、文件场景"
+        },
+        {
+          "word": "record",
+          "coreDifference": "record是记录；file是档案文件",
+          "toeicSceneFocus": "档案、记录场景"
+        },
+        {
+          "word": "archive",
+          "coreDifference": "archive是存档；file是当前文件",
+          "toeicSceneFocus": "存储、历史档案场景"
+        }
+      ]
+    },
+    {
+      "word": "form",
+      "phonetic": "/fɔːm/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "表格，表单（指用于填写信息的格式化文件）",
+      "toeicSceneFocus": "多出现于申请、登记、信息收集等语境，是描述标准化表格的词，托业阅读（申请表）和听力（填表对话）中常见",
+      "keyCollocations": [
+        "application form（申请表）",
+        "fill out a form（填写表格）",
+        "registration form（登记表）"
+      ],
+      "toeicExampleSentences": [
+        "Please complete the registration form and return it to us.（请填写登记表并返还给我们。）",
+        "You need to fill out a job application form online.（你需要在线填写求职申请表。）"
+      ],
+      "sceneAssociation": "可以联想‘顾客在前台填写表格（form）’的画面，或‘员工在线填写申请表（form）’，结合商务中‘信息收集格式’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "document",
+          "coreDifference": "document是广义文件；form是特定表格",
+          "toeicSceneFocus": "文档、表格场景"
+        },
+        {
+          "word": "application",
+          "coreDifference": "application是申请；form是申请表",
+          "toeicSceneFocus": "申请、报名场景"
+        },
+        {
+          "word": "questionnaire",
+          "coreDifference": "questionnaire是问卷；form是通用表格",
+          "toeicSceneFocus": "调查、问卷场景"
+        },
+        {
+          "word": "record",
+          "coreDifference": "record是记录；form是输入表格",
+          "toeicSceneFocus": "数据记录、档案场景"
+        }
+      ]
+    },
+    {
+      "word": "application",
+      "phonetic": "/ˌæplɪˈkeɪʃn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "申请，申请书（指正式请求或软件应用）",
+      "toeicSceneFocus": "多出现于求职、软件使用、行政申请等语境，是描述请求的正式词，托业阅读（招聘启事）和听力（申请讨论）中常见",
+      "keyCollocations": [
+        "job application（求职申请）",
+        "application form（申请表）",
+        "software application（软件应用）"
+      ],
+      "toeicExampleSentences": [
+        "We received over 200 applications for the position.（我们收到了200多份该职位的申请。）",
+        "Please submit your application before the deadline.（请在截止日期前提交申请。）"
+      ],
+      "sceneAssociation": "可以联想‘求职者在线填写申请（application）’的画面，或‘HR筛选工作申请（application）’，结合商务中‘正式请求’的核心概念记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "request",
+          "coreDifference": "request是请求；application是正式申请",
+          "toeicSceneFocus": "请求、申请场景"
+        },
+        {
+          "word": "form",
+          "coreDifference": "form是表格；application是申请文件",
+          "toeicSceneFocus": "表格、表单场景"
+        },
+        {
+          "word": "software",
+          "coreDifference": "software是软件；application是应用软件",
+          "toeicSceneFocus": "IT、软件场景"
+        },
+        {
+          "word": "petition",
+          "coreDifference": "petition是请愿；application是正式申请",
+          "toeicSceneFocus": "请愿、申请场景"
+        }
+      ]
+    },
+    {
+      "word": "registration",
+      "phonetic": "/ˌredʒɪˈstreɪʃn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "注册，登记（指正式记录信息的过程）",
+      "toeicSceneFocus": "多出现于报名活动、公司注册、车辆登记等语境，是描述注册过程的词，托业阅读（注册通知）和听力（注册对话）中常见",
+      "keyCollocations": [
+        "registration fee（注册费）",
+        "online registration（在线注册）",
+        "registration desk（登记处）"
+      ],
+      "toeicExampleSentences": [
+        "The registration for the conference closes tomorrow.（会议注册明天截止。）",
+        "Please complete your registration at the front desk.（请在前台完成登记。）"
+      ],
+      "sceneAssociation": "可以联想‘会议现场的登记处（registration）’的画面，或‘用户完成在线注册（registration）’，结合商务中‘正式记录过程’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "enrollment",
+          "coreDifference": "enrollment是报名；registration是注册登记",
+          "toeicSceneFocus": "课程报名、入学场景"
+        },
+        {
+          "word": "license",
+          "coreDifference": "license是执照；registration是登记",
+          "toeicSceneFocus": "执照、许可场景"
+        },
+        {
+          "word": "subscription",
+          "coreDifference": "subscription是订阅；registration是注册",
+          "toeicSceneFocus": "订阅、会员场景"
+        },
+        {
+          "word": "record",
+          "coreDifference": "record是记录；registration是登记行为",
+          "toeicSceneFocus": "记录、档案场景"
+        }
+      ]
+    },
+    {
+      "word": "confirmation",
+      "phonetic": "/ˌkɒnfəˈmeɪʃn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "确认，证实（指对某事的正式确认）",
+      "toeicSceneFocus": "多出现于预订确认、订单确认、信息核实等语境，是描述确认的常用词，托业阅读（确认邮件）和听力（确认对话）中常见",
+      "keyCollocations": [
+        "confirmation number（确认号码）",
+        "send confirmation（发送确认）",
+        "booking confirmation（预订确认）"
+      ],
+      "toeicExampleSentences": [
+        "You will receive a confirmation email shortly.（您将很快收到确认邮件。）",
+        "Please bring your confirmation number to the check-in.（请携带确认号码办理登机。）"
+      ],
+      "sceneAssociation": "可以联想‘收到预订确认（confirmation）邮件’的画面，或‘客户要求订单确认（confirmation）’，结合商务中‘核实和确认’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "verification",
+          "coreDifference": "verification是核实；confirmation是确认",
+          "toeicSceneFocus": "验证、核实场景"
+        },
+        {
+          "word": "approval",
+          "coreDifference": "approval是批准；confirmation是确认",
+          "toeicSceneFocus": "审批、同意场景"
+        },
+        {
+          "word": "acknowledgment",
+          "coreDifference": "acknowledgment是收到确认；confirmation是内容确认",
+          "toeicSceneFocus": "接收确认、回执场景"
+        },
+        {
+          "word": "receipt",
+          "coreDifference": "receipt是收据；confirmation是确认函",
+          "toeicSceneFocus": "收付款、确认场景"
+        }
+      ]
+    },
+    {
+      "word": "notification",
+      "phonetic": "/ˌnəʊtɪfɪˈkeɪʃn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "通知，通告（指告知某事发生的消息）",
+      "toeicSceneFocus": "多出现于系统通知、人事通知、法律通告等语境，是描述告知信息的词，托业阅读（通知邮件）和听力（通知对话）中常见",
+      "keyCollocations": [
+        "notification system（通知系统）",
+        "send a notification（发送通知）",
+        "legal notification（法律通知）"
+      ],
+      "toeicExampleSentences": [
+        "You will receive a notification when the package is delivered.（包裹送达时您会收到通知。）",
+        "The HR department sent a notification about the holiday schedule.（人力资源部门发送了关于假期安排的通知。）"
+      ],
+      "sceneAssociation": "可以联想‘手机收到系统通知（notification）’的画面，或‘员工查看人事通知（notification）’，结合商务中‘信息告知’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "announcement",
+          "coreDifference": "announcement是公告；notification是通知",
+          "toeicSceneFocus": "公告、发布场景"
+        },
+        {
+          "word": "alert",
+          "coreDifference": "alert是警报；notification是普通通知",
+          "toeicSceneFocus": "警报、紧急场景"
+        },
+        {
+          "word": "message",
+          "coreDifference": "message是信息；notification是系统通知",
+          "toeicSceneFocus": "信息、通信场景"
+        },
+        {
+          "word": "warning",
+          "coreDifference": "warning是警告；notification是中性通知",
+          "toeicSceneFocus": "警告、警示场景"
+        }
+      ]
+    },
+    {
+      "word": "announcement",
+      "phonetic": "/əˈnaʊnsmənt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "公告，宣布（指公开告知某事的消息）",
+      "toeicSceneFocus": "多出现于公司公告、新闻发布、会议宣布等语境，是描述公开告知的词，托业阅读（公告板）和听力（会议宣布）中常见",
+      "keyCollocations": [
+        "make an announcement（发布公告）",
+        "official announcement（官方公告）",
+        "public announcement（公开宣告）"
+      ],
+      "toeicExampleSentences": [
+        "The manager made an announcement about the new hire.（经理宣布了新员工入职的消息。）",
+        "Please listen for the announcement at the gate.（请留意登机口的广播。）"
+      ],
+      "sceneAssociation": "可以联想‘经理在会议上宣布（announcement）重要消息’的画面，或‘公司公告板上的公告（announcement）’，结合商务中‘公开告知’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "notification",
+          "coreDifference": "notification是通知；announcement是公开宣告",
+          "toeicSceneFocus": "通知、公告场景"
+        },
+        {
+          "word": "statement",
+          "coreDifference": "statement是声明；announcement是宣布",
+          "toeicSceneFocus": "声明、表态场景"
+        },
+        {
+          "word": "proclamation",
+          "coreDifference": "proclamation是正式公告；announcement是通用宣告",
+          "toeicSceneFocus": "官方公告、法律场景"
+        },
+        {
+          "word": "release",
+          "coreDifference": "release是发布；announcement是宣告",
+          "toeicSceneFocus": "新闻发布会、发布场景"
+        }
+      ]
+    },
+    {
+      "word": "notice",
+      "phonetic": "/ˈnəʊtɪs/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "通知，注意（指书面或口头告知）",
+      "toeicSceneFocus": "多出现于书面通知、离职通知、公告等语境，是描述告知的常用词，托业阅读（通知信）和听力（通知对话）中常见",
+      "keyCollocations": [
+        "give notice（给予通知）",
+        "notice period（通知期）",
+        "written notice（书面通知）"
+      ],
+      "toeicExampleSentences": [
+        "The tenant gave two weeks' notice to move out.（租户提前两周通知要搬走。）",
+        "Please read the notice on the bulletin board.（请阅读公告板上的通知。）"
+      ],
+      "sceneAssociation": "可以联想‘员工收到离职通知（notice）’的画面，或‘公告栏上张贴的通知（notice）’，结合商务中‘告知或提醒’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "notification",
+          "coreDifference": "notification是通知；notice是书面通知",
+          "toeicSceneFocus": "通知、通告场景"
+        },
+        {
+          "word": "warning",
+          "coreDifference": "warning是警告；notice是普通通知",
+          "toeicSceneFocus": "警告、警示场景"
+        },
+        {
+          "word": "announcement",
+          "coreDifference": "announcement是公告；notice是通知",
+          "toeicSceneFocus": "公告、通知场景"
+        },
+        {
+          "word": "sign",
+          "coreDifference": "sign是标志；notice是通知内容",
+          "toeicSceneFocus": "标志、指示牌场景"
+        }
+      ]
+    },
+    {
+      "word": "alert",
+      "phonetic": "/əˈlɜːrt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "警报，提醒（指紧急或重要提醒）",
+      "toeicSceneFocus": "多出现于系统警报、安全提醒、天气预警等语境，是描述紧急通知的词，托业阅读（安全通知）和听力（警报对话）中常见",
+      "keyCollocations": [
+        "weather alert（天气预警）",
+        "security alert（安全警报）",
+        "send an alert（发送警报）"
+      ],
+      "toeicExampleSentences": [
+        "The system sent an alert about unauthorized access.（系统发送了关于未经授权访问的警报。）",
+        "Please pay attention to the security alerts.（请注意安全警报。）"
+      ],
+      "sceneAssociation": "可以联想‘手机收到天气预警（alert）’的画面，或‘系统弹出安全警报（alert）’，结合商务中‘紧急提醒’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "warning",
+          "coreDifference": "warning是警告；alert是提醒",
+          "toeicSceneFocus": "警告、警示场景"
+        },
+        {
+          "word": "notification",
+          "coreDifference": "notification是通知；alert是紧急通知",
+          "toeicSceneFocus": "通知、警报场景"
+        },
+        {
+          "word": "alarm",
+          "coreDifference": "alarm是警报器；alert是警报信息",
+          "toeicSceneFocus": "警报系统、紧急场景"
+        },
+        {
+          "word": "message",
+          "coreDifference": "message是信息；alert是紧急信息",
+          "toeicSceneFocus": "信息、紧急通信场景"
+        }
+      ]
+    },
+    {
+      "word": "warning",
+      "phonetic": "/ˈwɔːnɪŋ/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "警告，警示（指提醒危险或问题的消息）",
+      "toeicSceneFocus": "多出现于安全警告、风险提示、人事警告等语境，是描述警示的词，托业阅读（安全手册）和听力（警告对话）中常见",
+      "keyCollocations": [
+        "safety warning（安全警告）",
+        "give a warning（发出警告）",
+        "warning label（警示标签）"
+      ],
+      "toeicExampleSentences": [
+        "The warning sign indicates a hazardous area.（警告标志表示危险区域。）",
+        "He received a written warning for poor performance.（他因表现不佳收到了书面警告。）"
+      ],
+      "sceneAssociation": "可以联想‘施工现场的安全警告（warning）标志’的画面，或‘经理给员工发出警告（warning）’，结合商务中‘风险警示’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "caution",
+          "coreDifference": "caution是谨慎；warning是警告",
+          "toeicSceneFocus": "谨慎、注意场景"
+        },
+        {
+          "word": "alert",
+          "coreDifference": "alert是提醒；warning是严重警告",
+          "toeicSceneFocus": "提醒、警报场景"
+        },
+        {
+          "word": "danger",
+          "coreDifference": "danger是危险；warning是对危险的警告",
+          "toeicSceneFocus": "危险、安全场景"
+        },
+        {
+          "word": "threat",
+          "coreDifference": "threat是威胁；warning是对威胁的警告",
+          "toeicSceneFocus": "威胁、风险场景"
+        }
+      ]
+    },
+    {
+      "word": "message",
+      "phonetic": "/ˈmesɪdʒ/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "消息，信息（指传达的信息或口信）",
+      "toeicSceneFocus": "多出现于通信、留言、信息传递等语境，是描述信息的通用词，托业阅读（邮件）和听力（留言）中常见",
+      "keyCollocations": [
+        "voice message（语音留言）",
+        "leave a message（留言）",
+        "text message（短信）"
+      ],
+      "toeicExampleSentences": [
+        "I left a message for you on your voicemail.（我在你的语音信箱里留了言。）",
+        "The urgent message was sent to all staff.（紧急消息已发送给所有员工。）"
+      ],
+      "sceneAssociation": "可以联想‘查看手机上的短信（message）’的画面，或‘接听电话时留言（message）’，结合商务中‘信息传递’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "information",
+          "coreDifference": "information是信息；message是具体消息",
+          "toeicSceneFocus": "信息、数据场景"
+        },
+        {
+          "word": "communication",
+          "coreDifference": "communication是沟通；message是沟通内容",
+          "toeicSceneFocus": "沟通、通信场景"
+        },
+        {
+          "word": "note",
+          "coreDifference": "note是便条；message是信息",
+          "toeicSceneFocus": "便条、笔记场景"
+        },
+        {
+          "word": "letter",
+          "coreDifference": "letter是信件；message是简短消息",
+          "toeicSceneFocus": "信函、通信场景"
+        }
+      ]
+    },
+    {
+      "word": "communication",
+      "phonetic": "/kəˌmjuːnɪˈkeɪʃn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "沟通，通信（指信息交流的过程）",
+      "toeicSceneFocus": "多出现于商务沟通、团队合作、通信方式等语境，是描述交流的词，托业阅读（沟通技巧）和听力（团队讨论）中常见",
+      "keyCollocations": [
+        "communication skills（沟通技巧）",
+        "business communication（商务沟通）",
+        "effective communication（有效沟通）"
+      ],
+      "toeicExampleSentences": [
+        "Good communication is essential for team success.（良好的沟通对团队成功至关重要。）",
+        "We need to improve communication between departments.（我们需要改善部门间的沟通。）"
+      ],
+      "sceneAssociation": "可以联想‘团队会议中进行沟通（communication）’的画面，或‘通过不同渠道进行沟通（communication）’，结合商务中‘信息交流’的核心概念记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "interaction",
+          "coreDifference": "interaction是互动；communication是沟通",
+          "toeicSceneFocus": "互动、交流场景"
+        },
+        {
+          "word": "dialogue",
+          "coreDifference": "dialogue是对话；communication是整体沟通",
+          "toeicSceneFocus": "对话、谈判场景"
+        },
+        {
+          "word": "exchange",
+          "coreDifference": "exchange是交换；communication是信息交流",
+          "toeicSceneFocus": "交流、交换场景"
+        },
+        {
+          "word": "message",
+          "coreDifference": "message是消息；communication是沟通行为",
+          "toeicSceneFocus": "信息、通信场景"
+        }
+      ]
+    },
+    {
+      "word": "mail",
+      "phonetic": "/meɪl/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "邮件，邮政（指通过邮局发送的信件或包裹）",
+      "toeicSceneFocus": "多出现于邮寄、快递、邮政服务等语境，是描述邮件的通用词，托业阅读（邮寄通知）和听力（快递对话）中常见",
+      "keyCollocations": [
+        "send by mail（邮寄）",
+        "regular mail（普通邮件）",
+        "mail delivery（邮件递送）"
+      ],
+      "toeicExampleSentences": [
+        "Please send the contract by mail.（请通过邮件发送合同。）",
+        "The mail arrives at 10 AM every day.（邮件每天上午10点送达。）"
+      ],
+      "sceneAssociation": "可以联想‘邮递员分发邮件（mail）’的画面，或‘办公室收到邮件（mail）’，结合商务中‘邮政服务’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "post",
+          "coreDifference": "post是英式用法；mail是美式用法",
+          "toeicSceneFocus": "邮政服务、邮寄场景"
+        },
+        {
+          "word": "parcel",
+          "coreDifference": "parcel是包裹；mail是邮件总称",
+          "toeicSceneFocus": "包裹、快递场景"
+        },
+        {
+          "word": "letter",
+          "coreDifference": "letter是信件；mail是邮件集合",
+          "toeicSceneFocus": "信函、通信场景"
+        },
+        {
+          "word": "package",
+          "coreDifference": "package是包裹；mail是邮寄物品",
+          "toeicSceneFocus": "包装、快递场景"
+        }
+      ]
+    },
+    {
+      "word": "post",
+      "phonetic": "/pəʊst/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "邮政，邮件（指英式用法的邮件服务）",
+      "toeicSceneFocus": "多出现于英式英语语境、邮寄、邮政服务等语境，是描述邮件的英式词，托业阅读（国际邮件）和听力（英式对话）中常见",
+      "keyCollocations": [
+        "by post（通过邮寄）",
+        "postal service（邮政服务）",
+        "post office（邮局）"
+      ],
+      "toeicExampleSentences": [
+        "Please send the documents by post.（请通过邮寄发送文件。）",
+        "The postman delivers mail twice a day.（邮递员每天送两次邮件。）"
+      ],
+      "sceneAssociation": "可以联想‘英国邮局（post office）的场景’的画面，或‘通过邮政（post）发送信件’，结合国际商务中‘英式邮件服务’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "mail",
+          "coreDifference": "mail是美式用法；post是英式用法",
+          "toeicSceneFocus": "邮件、邮政场景"
+        },
+        {
+          "word": "courier",
+          "coreDifference": "courier是快递；post是普通邮政",
+          "toeicSceneFocus": "快递、特快服务场景"
+        },
+        {
+          "word": "delivery",
+          "coreDifference": "delivery是递送；post是邮政服务",
+          "toeicSceneFocus": "递送、物流场景"
+        },
+        {
+          "word": "shipment",
+          "coreDifference": "shipment是货运；post是邮件",
+          "toeicSceneFocus": "货运、物流场景"
+        }
+      ]
+    },
+    {
+      "word": "courier",
+      "phonetic": "/ˈkʊriər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "快递员，快递服务（指专门递送包裹的服务或人员）",
+      "toeicSceneFocus": "多出现于快递服务、物流、包裹递送等语境，是描述快递的词，托业阅读（快递单）和听力（快递对话）中常见",
+      "keyCollocations": [
+        "express courier（快递）",
+        "courier service（快递服务）",
+        "hire a courier（雇佣快递员）"
+      ],
+      "toeicExampleSentences": [
+        "The courier will deliver the package tomorrow.（快递员明天会送达包裹。）",
+        "We use an international courier for overseas shipments.（我们使用国际快递进行海外运输。）"
+      ],
+      "sceneAssociation": "可以联想‘快递员（courier）上门取件’的画面，或‘通过快递（courier）发送紧急文件’，结合商务中‘快速递送’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "delivery",
+          "coreDifference": "delivery是递送；courier是快递服务",
+          "toeicSceneFocus": "递送、物流场景"
+        },
+        {
+          "word": "messenger",
+          "coreDifference": "messenger是信使；courier是快递员",
+          "toeicSceneFocus": "信使、通信场景"
+        },
+        {
+          "word": "parcel",
+          "coreDifference": "parcel是包裹；courier是快递",
+          "toeicSceneFocus": "包裹、快递场景"
+        },
+        {
+          "word": "post",
+          "coreDifference": "post是邮政；courier是快递",
+          "toeicSceneFocus": "邮政、快递对比场景"
+        }
+      ]
+    },
+    {
+      "word": "express",
+      "phonetic": "/ɪkˈspres/",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "快速的，特快的（指加快速度的）",
+      "toeicSceneFocus": "多出现于快递服务、特快列车、快速通道等语境，是描述速度的词，托业阅读（快递选项）和听力（服务对话）中常见",
+      "keyCollocations": [
+        "express delivery（特快专递）",
+        "express mail（快递邮件）",
+        "express train（特快列车）"
+      ],
+      "toeicExampleSentences": [
+        "Please choose express shipping for faster delivery.（请选择特快运输以加快递送。）",
+        "The company offers express service for urgent orders.（公司为紧急订单提供快速服务。）"
+      ],
+      "sceneAssociation": "可以联想‘特快专递（express delivery）的包装盒’的画面，或‘乘坐特快列车（express train）出差’，结合商务中‘快速服务’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "fast",
+          "coreDifference": "fast是通用词；express特指快递或特快",
+          "toeicSceneFocus": "速度、快速场景"
+        },
+        {
+          "word": "quick",
+          "coreDifference": "quick是快速的；express是正式快速服务",
+          "toeicSceneFocus": "快速、效率场景"
+        },
+        {
+          "word": "urgent",
+          "coreDifference": "urgent是紧急的；express是快速的",
+          "toeicSceneFocus": "紧急、优先场景"
+        },
+        {
+          "word": "special",
+          "coreDifference": "special是特殊的；express是特快的",
+          "toeicSceneFocus": "特殊服务、优先场景"
+        }
+      ]
+    },
+    {
+      "word": "delivery",
+      "phonetic": "/dɪˈlɪvəri/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "递送，交付（指将物品送到指定地点）",
+      "toeicSceneFocus": "多出现于物流、快递、送货服务等语境，是描述递送过程的词，托业阅读（配送通知）和听力（送货对话）中常见",
+      "keyCollocations": [
+        "home delivery（送货上门）",
+        "delivery date（交付日期）",
+        "free delivery（免费送货）"
+      ],
+      "toeicExampleSentences": [
+        "The delivery of the goods will be on Monday.（货物将于周一送达。）",
+        "We offer same-day delivery for local orders.（我们为本地订单提供当日送达服务。）"
+      ],
+      "sceneAssociation": "可以联想‘快递员进行送货（delivery）’的画面，或‘客户等待包裹递送（delivery）’，结合商务中‘物品送达’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "shipment",
+          "coreDifference": "shipment是货运；delivery是交付行为",
+          "toeicSceneFocus": "货运、物流场景"
+        },
+        {
+          "word": "transport",
+          "coreDifference": "transport是运输；delivery是送达",
+          "toeicSceneFocus": "运输、交通场景"
+        },
+        {
+          "word": "handover",
+          "coreDifference": "handover是移交；delivery是递送",
+          "toeicSceneFocus": "交接、移交场景"
+        },
+        {
+          "word": "transfer",
+          "coreDifference": "transfer是转移；delivery是送达",
+          "toeicSceneFocus": "转移、传输场景"
+        }
+      ]
+    },
+    {
+      "word": "pickup",
+      "phonetic": "/ˈpɪkʌp/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "取件，接送（指取走物品或接送人员）",
+      "toeicSceneFocus": "多出现于快递取件、车辆接送、货物提取等语境，是描述取件的词，托业阅读（快递服务）和听力（接送对话）中常见",
+      "keyCollocations": [
+        "curbside pickup（路边取件）",
+        "pickup time（取件时间）",
+        "schedule a pickup（安排取件）"
+      ],
+      "toeicExampleSentences": [
+        "Please schedule a pickup for the package.（请安排包裹取件。）",
+        "The pickup will be at 9 AM tomorrow.（取件将在明天上午9点进行。）"
+      ],
+      "sceneAssociation": "可以联想‘快递员上门取件（pickup）’的画面，或‘安排车辆接送（pickup）员工’，结合商务中‘取走物品’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "collection",
+          "coreDifference": "collection是收集；pickup是取件",
+          "toeicSceneFocus": "收集、领取场景"
+        },
+        {
+          "word": "retrieval",
+          "coreDifference": "retrieve是检索；pickup是取件",
+          "toeicSceneFocus": "检索、取回场景"
+        },
+        {
+          "word": "dropoff",
+          "coreDifference": "dropoff是投递；pickup是取件",
+          "toeicSceneFocus": "投递、取件对比场景"
+        },
+        {
+          "word": "delivery",
+          "coreDifference": "delivery是递送；pickup是取件",
+          "toeicSceneFocus": "物流、递送场景"
+        }
+      ]
+    },
+    {
+      "word": "dropoff",
+      "phonetic": "/ˈdrɒpɒf/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "投递，放下（指将物品送到某处或放下人员）",
+      "toeicSceneFocus": "多出现于快递投递、车辆放下乘客、货物交付等语境，是描述投递的词，托业阅读（配送选项）和听力（投递对话）中常见",
+      "keyCollocations": [
+        "package dropoff（包裹投递）",
+        "dropoff location（投递地点）",
+        "curbside dropoff（路边放下）"
+      ],
+      "toeicExampleSentences": [
+        "The package dropoff is at the reception desk.（包裹投递在前台。）",
+        "Please arrange for a dropoff of the documents.（请安排文件投递。）"
+      ],
+      "sceneAssociation": "可以联想‘将包裹放在门口投递（dropoff）’的画面，或‘出租车在公司门口放下（dropoff）乘客’，结合商务中‘放置物品或人员’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "delivery",
+          "coreDifference": "delivery是递送；dropoff是投递行为",
+          "toeicSceneFocus": "递送、交付场景"
+        },
+        {
+          "word": "drop",
+          "coreDifference": "drop是放下；dropoff是投递点",
+          "toeicSceneFocus": "放置、投递场景"
+        },
+        {
+          "word": "leave",
+          "coreDifference": "leave是留下；dropoff是投递",
+          "toeicSceneFocus": "留下、遗留场景"
+        },
+        {
+          "word": "deposit",
+          "coreDifference": "deposit是存放；dropoff是投递",
+          "toeicSceneFocus": "存放、投递场景"
+        }
+      ]
+    },
+    {
+      "word": "office",
+      "phonetic": "/ˈɒfɪs/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "办公室，事务所（指工作场所或政府部门）",
+      "toeicSceneFocus": "多出现于工作场所、公司部门、政府机构等语境，是描述工作地点的通用词，托业阅读（公司介绍）和听力（办公室对话）中常见",
+      "keyCollocations": [
+        "office building（办公楼）",
+        "head office（总部）",
+        "office hours（办公时间）"
+      ],
+      "toeicExampleSentences": [
+        "The new office is located in the city center.（新办公室位于市中心。）",
+        "Please come to my office for a meeting.（请来我的办公室开会。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在办公室（office）工作’的画面，或‘参观公司总部（head office）’，结合商务中‘工作场所’的核心概念记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "workplace",
+          "coreDifference": "workplace是工作场所；office是具体办公室",
+          "toeicSceneFocus": "工作环境、场所场景"
+        },
+        {
+          "word": "room",
+          "coreDifference": "room是房间；office是工作空间",
+          "toeicSceneFocus": "房间、空间场景"
+        },
+        {
+          "word": "department",
+          "coreDifference": "department是部门；office是办公地点",
+          "toeicSceneFocus": "部门、组织场景"
+        },
+        {
+          "word": "building",
+          "coreDifference": "building是建筑物；office是办公场所",
+          "toeicSceneFocus": "建筑、设施场景"
+        }
+      ]
+    },
+    {
+      "word": "desk",
+      "phonetic": "/desk/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "办公桌，服务台（指工作台或接待处）",
+      "toeicSceneFocus": "多出现于办公室家具、接待服务、工作区域等语境，是描述办公家具的词，托业阅读（办公室布局）和听力（办公室对话）中常见",
+      "keyCollocations": [
+        "reception desk（接待台）",
+        "desk lamp（台灯）",
+        "sit at a desk（坐在办公桌前）"
+      ],
+      "toeicExampleSentences": [
+        "Please leave your documents at the front desk.（请将文件留在前台。）",
+        "My desk is near the window.（我的办公桌在窗户附近。）"
+      ],
+      "sceneAssociation": "可以联想‘员工坐在办公桌（desk）前工作’的画面，或‘客户在接待台（desk）咨询’，结合商务中‘工作家具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "table",
+          "coreDifference": "table是桌子；desk是办公桌",
+          "toeicSceneFocus": "家具、会议桌场景"
+        },
+        {
+          "word": "counter",
+          "coreDifference": "counter是柜台；desk是服务台",
+          "toeicSceneFocus": "柜台、服务场景"
+        },
+        {
+          "word": "workstation",
+          "coreDifference": "workstation是工作站；desk是办公桌",
+          "toeicSceneFocus": "IT、工作区场景"
+        },
+        {
+          "word": "station",
+          "coreDifference": "station是站点；desk是工作台",
+          "toeicSceneFocus": "站点、岗位场景"
+        }
+      ]
+    },
+    {
+      "word": "chair",
+      "phonetic": "/tʃeər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "椅子，主席职位（指坐具或主持人的位置）",
+      "toeicSceneFocus": "多出现于办公室家具、会议座位、主持职位等语境，是描述坐具或职位的词，托业阅读（办公室布局）和听力（会议安排）中常见",
+      "keyCollocations": [
+        "office chair（办公椅）",
+        "chair person（主席）",
+        "take a chair（坐下）"
+      ],
+      "toeicExampleSentences": [
+        "The meeting room has comfortable chairs.（会议室有舒适的椅子。）",
+        "She was elected chair of the committee.（她被选为委员会主席。）"
+      ],
+      "sceneAssociation": "可以联想‘会议室里摆放的椅子（chair）’的画面，或‘主席（chair）主持会议’，结合商务中‘坐具或职位’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "seat",
+          "coreDifference": "seat是座位；chair是椅子",
+          "toeicSceneFocus": "座位、位置场景"
+        },
+        {
+          "word": "seat",
+          "coreDifference": "seat是座位；chair是椅子",
+          "toeicSceneFocus": "座位、位置场景"
+        },
+        {
+          "word": "position",
+          "coreDifference": "position是职位；chair是主席职位",
+          "toeicSceneFocus": "职位、岗位场景"
+        },
+        {
+          "word": "throne",
+          "coreDifference": "throne是王座；chair是普通椅子",
+          "toeicSceneFocus": "王位、权力场景"
+        }
+      ]
+    },
+    {
+      "word": "table",
+      "phonetic": "/ˈteɪbl/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "桌子，表格（指家具或数据表格）",
+      "toeicSceneFocus": "多出现于会议桌、家具、数据表格等语境，是描述桌子或表格的词，托业阅读（办公室布局、数据文档）和听力（会议安排）中常见",
+      "keyCollocations": [
+        "meeting table（会议桌）",
+        "table of contents（目录）",
+        "round table（圆桌）"
+      ],
+      "toeicExampleSentences": [
+        "Please put the documents on the table.（请将文件放在桌子上。）",
+        "The data is shown in the table below.（数据在下表中显示。）"
+      ],
+      "sceneAssociation": "可以联想‘会议室的会议桌（table）’的画面，或‘查看数据表格（table）’，结合商务中‘家具或数据’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "desk",
+          "coreDifference": "desk是办公桌；table是通用桌子",
+          "toeicSceneFocus": "办公家具、工作场景"
+        },
+        {
+          "word": "chart",
+          "coreDifference": "chart是图表；table是表格",
+          "toeicSceneFocus": "数据展示、图表场景"
+        },
+        {
+          "word": "graph",
+          "coreDifference": "graph是曲线图；table是数据表",
+          "toeicSceneFocus": "数据分析、图表场景"
+        },
+        {
+          "word": "furniture",
+          "coreDifference": "furniture是家具；table是具体桌子",
+          "toeicSceneFocus": "家具、设施场景"
+        }
+      ]
+    },
+    {
+      "word": "computer",
+      "phonetic": "/kəmˈpjuːtər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "计算机，电脑（指电子计算设备）",
+      "toeicSceneFocus": "多出现于办公设备、IT支持、技术使用等语境，是描述办公设备的词，托业阅读（设备清单）和听力（技术支持对话）中常见",
+      "keyCollocations": [
+        "desktop computer（台式电脑）",
+        "computer program（计算机程序）",
+        "use a computer（使用电脑）"
+      ],
+      "toeicExampleSentences": [
+        "Each employee has a computer at their desk.（每位员工办公桌上都有一台电脑。）",
+        "The computer crashed and needs to be restarted.（电脑死机了，需要重启。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在电脑（computer）前工作’的画面，或‘IT部门维修电脑（computer）’，结合商务中‘办公设备’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "laptop",
+          "coreDifference": "laptop是笔记本电脑；computer是计算机总称",
+          "toeicSceneFocus": "移动办公、设备场景"
+        },
+        {
+          "word": "PC",
+          "coreDifference": "PC是个人电脑；computer是通用词",
+          "toeicSceneFocus": "计算机、IT场景"
+        },
+        {
+          "word": "device",
+          "coreDifference": "device是设备；computer是特定设备",
+          "toeicSceneFocus": "设备、装置场景"
+        },
+        {
+          "word": "machine",
+          "coreDifference": "machine是机器；computer是计算机",
+          "toeicSceneFocus": "机械、设备场景"
+        }
+      ]
+    },
+    {
+      "word": "laptop",
+      "phonetic": "/ˈlæptɒp/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "笔记本电脑（指便携式计算机）",
+      "toeicSceneFocus": "多出现于移动办公、设备采购、技术使用等语境，是描述便携电脑的词，托业阅读（设备说明）和听力（办公讨论）中常见",
+      "keyCollocations": [
+        "laptop computer（笔记本电脑）",
+        "carry a laptop（携带笔记本电脑）",
+        "laptop battery（笔记本电池）"
+      ],
+      "toeicExampleSentences": [
+        "She works from home using a laptop.（她使用笔记本电脑在家工作。）",
+        "The new laptop has a longer battery life.（新笔记本电脑电池续航更长。）"
+      ],
+      "sceneAssociation": "可以联想‘员工携带笔记本电脑（laptop）出差’的画面，或‘在咖啡店使用笔记本电脑（laptop）办公’，结合商务中‘移动办公设备’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "computer",
+          "coreDifference": "computer是计算机；laptop是笔记本电脑",
+          "toeicSceneFocus": "计算机、设备场景"
+        },
+        {
+          "word": "notebook",
+          "coreDifference": "notebook是笔记本；laptop是笔记本电脑",
+          "toeicSceneFocus": "笔记本、记录场景"
+        },
+        {
+          "word": "portable",
+          "coreDifference": "portable是便携的；laptop是便携电脑",
+          "toeicSceneFocus": "便携设备、移动场景"
+        },
+        {
+          "word": "tablet",
+          "coreDifference": "tablet是平板电脑；laptop是笔记本电脑",
+          "toeicSceneFocus": "移动设备、平板场景"
+        }
+      ]
+    },
+    {
+      "word": "printer",
+      "phonetic": "/ˈprɪntər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "打印机（指打印文件的设备）",
+      "toeicSceneFocus": "多出现于办公设备、IT支持、设备故障等语境，是描述打印设备的词，托业阅读（设备清单）和听力（技术支持）中常见",
+      "keyCollocations": [
+        "laser printer（激光打印机）",
+        "printer driver（打印机驱动）",
+        "connect a printer（连接打印机）"
+      ],
+      "toeicExampleSentences": [
+        "The printer is out of paper.（打印机没纸了。）",
+        "Please print the report using the color printer.（请使用彩色打印机打印报告。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在打印机（printer）前等待打印’的画面，或‘IT部门安装打印机（printer）’，结合商务中‘办公打印设备’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "scanner",
+          "coreDifference": "scanner是扫描仪；printer是打印机",
+          "toeicSceneFocus": "扫描、打印设备场景"
+        },
+        {
+          "word": "copier",
+          "coreDifference": "copier是复印机；printer是打印机",
+          "toeicSceneFocus": "复印、打印场景"
+        },
+        {
+          "word": "printing",
+          "coreDifference": "printing是打印；printer是打印机",
+          "toeicSceneFocus": "打印、印刷场景"
+        },
+        {
+          "word": "output",
+          "coreDifference": "output是输出；printer是输出设备",
+          "toeicSceneFocus": "输出、设备场景"
+        }
+      ]
+    },
+    {
+      "word": "scanner",
+      "phonetic": "/ˈskænər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "扫描仪（指扫描文件的设备）",
+      "toeicSceneFocus": "多出现于办公设备、文档数字化、IT支持等语境，是描述扫描设备的词，托业阅读（设备说明）和听力（技术支持对话）中常见",
+      "keyCollocations": [
+        "document scanner（文件扫描仪）",
+        "scan a document（扫描文件）",
+        "flatbed scanner（平板扫描仪）"
+      ],
+      "toeicExampleSentences": [
+        "Please scan the signed contract and email it back.（请扫描已签署的合同并发邮件回来。）",
+        "The scanner is not working properly.（扫描仪工作不正常。）"
+      ],
+      "sceneAssociation": "可以联想‘员工使用扫描仪（scanner）扫描文件’的画面，或‘IT部门调试扫描仪（scanner）’，结合商务中‘文档数字化设备’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "printer",
+          "coreDifference": "printer是打印机；scanner是扫描仪",
+          "toeicSceneFocus": "打印、扫描设备场景"
+        },
+        {
+          "word": "camera",
+          "coreDifference": "camera是相机；scanner是扫描仪",
+          "toeicSceneFocus": "摄影、扫描场景"
+        },
+        {
+          "word": "digitizer",
+          "coreDifference": "digitizer是数字化仪；scanner是扫描仪",
+          "toeicSceneFocus": "数字化、设备场景"
+        },
+        {
+          "word": "copier",
+          "coreDifference": "copier是复印机；scanner是扫描仪",
+          "toeicSceneFocus": "复印、扫描场景"
+        }
+      ]
+    },
+    {
+      "word": "copier",
+      "phonetic": "/ˈkɒpiər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "复印机（指复印文件的设备）",
+      "toeicSceneFocus": "多出现于办公设备、复印服务、设备维护等语境，是描述复印设备的词，托业阅读（设备清单）和听力（办公室对话）中常见",
+      "keyCollocations": [
+        "photocopier（复印机）",
+        "copy a document（复印文件）",
+        "office copier（办公室复印机）"
+      ],
+      "toeicExampleSentences": [
+        "The copier is out of toner.（复印机没墨粉了。）",
+        "Please make three copies of this report.（请复印三份这份报告。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在复印机（copier）前复印文件’的画面，或‘维修人员修理复印机（copier）’，结合商务中‘复印设备’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "printer",
+          "coreDifference": "printer是打印机；copier是复印机",
+          "toeicSceneFocus": "打印、复印设备场景"
+        },
+        {
+          "word": "scanner",
+          "coreDifference": "scanner是扫描仪；copier是复印机",
+          "toeicSceneFocus": "扫描、复印场景"
+        },
+        {
+          "word": "copy",
+          "coreDifference": "copy是复印件；copier是复印机",
+          "toeicSceneFocus": "复印、副本场景"
+        },
+        {
+          "word": "machine",
+          "coreDifference": "machine是机器；copier是复印机",
+          "toeicSceneFocus": "机器、设备场景"
+        }
+      ]
+    },
+    {
+      "word": "fax",
+      "phonetic": "/fæks/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "传真（指通过电话线传输文件的设备或文件）",
+      "toeicSceneFocus": "多出现于商务通信、文件传输、传统办公等语境，是描述传真的词，托业阅读（商务信函）和听力（传真对话）中常见",
+      "keyCollocations": [
+        "send a fax（发送传真）",
+        "fax machine（传真机）",
+        "fax number（传真号码）"
+      ],
+      "toeicExampleSentences": [
+        "Please send the contract by fax.（请通过传真发送合同。）",
+        "The fax machine is in the copy room.（传真机在复印室。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在传真机（fax）前发送文件’的画面，或‘收到客户传真（fax）’，结合商务中‘传统文件传输’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "email",
+          "coreDifference": "email是电子邮件；fax是传真",
+          "toeicSceneFocus": "电子通信、传统通信场景"
+        },
+        {
+          "word": "scan",
+          "coreDifference": "scan是扫描；fax是传真",
+          "toeicSceneFocus": "扫描、传输场景"
+        },
+        {
+          "word": "transmission",
+          "coreDifference": "transmission是传输；fax是传真",
+          "toeicSceneFocus": "传输、通信场景"
+        },
+        {
+          "word": "document",
+          "coreDifference": "document是文件；fax是传真文件",
+          "toeicSceneFocus": "文件、通信场景"
+        }
+      ]
+    },
+    {
+      "word": "phone",
+      "phonetic": "/fəʊn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "电话，电话机（指通信设备）",
+      "toeicSceneFocus": "多出现于商务沟通、电话会议、客户服务等语境，是描述电话的通用词，托业阅读（电话留言）和听力（电话对话）中常见",
+      "keyCollocations": [
+        "answer the phone（接电话）",
+        "phone call（电话）",
+        "on the phone（在打电话）"
+      ],
+      "toeicExampleSentences": [
+        "Please answer the phone when it rings.（电话响时请接听。）",
+        "I'll call you back on the phone later.（我稍后会给你回电话。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在办公桌前接电话（phone）’的画面，或‘客户通过电话（phone）咨询’，结合商务中‘电话通信’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "telephone",
+          "coreDifference": "telephone是正式用语；phone是口语化",
+          "toeicSceneFocus": "电话、通信场景"
+        },
+        {
+          "word": "call",
+          "coreDifference": "call是电话呼叫；phone是电话设备",
+          "toeicSceneFocus": "通话、呼叫场景"
+        },
+        {
+          "word": "cellphone",
+          "coreDifference": "cellphone是手机；phone是通用电话",
+          "toeicSceneFocus": "移动电话、设备场景"
+        },
+        {
+          "word": "handset",
+          "coreDifference": "handset是手机；phone是电话",
+          "toeicSceneFocus": "手机、设备场景"
+        }
+      ]
+    },
+    {
+      "word": "telephone",
+      "phonetic": "/ˈtelɪfəʊn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "电话（指正式用语的电话设备）",
+      "toeicSceneFocus": "多出现于正式商务、电话服务、通信设备等语境，是描述电话的正式词，托业阅读（商务文档）和听力（正式电话）中常见",
+      "keyCollocations": [
+        "telephone number（电话号码）",
+        "on the telephone（在打电话）",
+        "telephone system（电话系统）"
+      ],
+      "toeicExampleSentences": [
+        "Please provide your telephone number.（请提供您的电话号码。）",
+        "The telephone is ringing in the office.（办公室的电话在响。）"
+      ],
+      "sceneAssociation": "可以联想‘商务会议上使用电话（telephone）’的画面，或‘客户通过电话（telephone）联系公司’，结合商务中‘正式电话通信’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "phone",
+          "coreDifference": "phone是口语；telephone是正式用语",
+          "toeicSceneFocus": "电话、通信场景"
+        },
+        {
+          "word": "landline",
+          "coreDifference": "landline是座机；telephone是电话",
+          "toeicSceneFocus": "固定电话、通信场景"
+        },
+        {
+          "word": "extension",
+          "coreDifference": "extension是分机；telephone是总机",
+          "toeicSceneFocus": "分机、内部通信场景"
+        },
+        {
+          "word": "receiver",
+          "coreDifference": "receiver是听筒；telephone是电话机",
+          "toeicSceneFocus": "电话配件、设备场景"
+        }
+      ]
+    },
+    {
+      "word": "cellphone",
+      "phonetic": "/ˈselfəʊn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "手机，移动电话（指便携式电话设备）",
+      "toeicSceneFocus": "多出现于移动通信、个人设备、商务移动办公等语境，是描述手机的词，托业阅读（设备说明）和听力（移动办公对话）中常见",
+      "keyCollocations": [
+        "cellphone number（手机号码）",
+        "use a cellphone（使用手机）",
+        "cellphone app（手机应用）"
+      ],
+      "toeicExampleSentences": [
+        "Please turn off your cellphone during the meeting.（会议期间请关闭手机。）",
+        "I can be reached on my cellphone.（可以通过我的手机联系到我。）"
+      ],
+      "sceneAssociation": "可以联想‘员工用手机（cellphone）回复工作邮件’的画面，或‘客户通过手机（cellphone）联系业务’，结合商务中‘移动通信’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "mobile",
+          "coreDifference": "mobile是移动的；cellphone是手机",
+          "toeicSceneFocus": "移动设备、通信场景"
+        },
+        {
+          "word": "smartphone",
+          "coreDifference": "smartphone是智能手机；cellphone是手机",
+          "toeicSceneFocus": "智能设备、移动办公场景"
+        },
+        {
+          "word": "phone",
+          "coreDifference": "phone是电话；cellphone是移动电话",
+          "toeicSceneFocus": "通信设备、电话场景"
+        },
+        {
+          "word": "handset",
+          "coreDifference": "handset是手机；cellphone是移动电话",
+          "toeicSceneFocus": "手机、设备场景"
+        }
+      ]
+    },
+    {
+      "word": "hardware",
+      "phonetic": "/ˈhɑːrdwer/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "硬件（指计算机的物理组件）",
+      "toeicSceneFocus": "多出现于IT设备、计算机维护、技术采购等语境，是描述计算机硬件的词，托业阅读（技术文档）和听力（IT支持对话）中常见",
+      "keyCollocations": [
+        "computer hardware（计算机硬件）",
+        "hardware store（五金店）",
+        "hardware upgrade（硬件升级）"
+      ],
+      "toeicExampleSentences": [
+        "We need to upgrade the computer hardware.（我们需要升级计算机硬件。）",
+        "The hardware store sells tools and equipment.（五金店出售工具和设备。）"
+      ],
+      "sceneAssociation": "可以联想‘IT部门更换计算机硬件（hardware）’的画面，或‘购买硬件（hardware）组件’，结合商务中‘物理设备’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "software",
+          "coreDifference": "software是软件；hardware是硬件",
+          "toeicSceneFocus": "软件、硬件对比场景"
+        },
+        {
+          "word": "equipment",
+          "coreDifference": "equipment是设备；hardware是硬件",
+          "toeicSceneFocus": "设备、设施场景"
+        },
+        {
+          "word": "components",
+          "coreDifference": "components是组件；hardware是硬件",
+          "toeicSceneFocus": "组件、零件场景"
+        },
+        {
+          "word": "tools",
+          "coreDifference": "tools是工具；hardware是硬件",
+          "toeicSceneFocus": "工具、设备场景"
+        }
+      ]
+    },
+    {
+      "word": "platform",
+      "phonetic": "/ˈplætfɔːm/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "平台（指技术系统或基础架构）",
+      "toeicSceneFocus": "多出现于技术平台、操作系统、商业平台等语境，是描述技术基础的词，托业阅读（技术文档）和听力（IT讨论）中常见",
+      "keyCollocations": [
+        "software platform（软件平台）",
+        "trading platform（交易平台）",
+        "social media platform（社交媒体平台）"
+      ],
+      "toeicExampleSentences": [
+        "Our system runs on a Windows platform.（我们的系统运行在Windows平台上。）",
+        "The company uses an online platform for sales.（公司使用在线平台进行销售。）"
+      ],
+      "sceneAssociation": "可以联想‘技术团队讨论软件平台（platform）’的画面，或‘使用交易平台（platform）进行交易’，结合商务中‘技术基础架构’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "system",
+          "coreDifference": "system是系统；platform是平台",
+          "toeicSceneFocus": "系统、架构场景"
+        },
+        {
+          "word": "framework",
+          "coreDifference": "framework是框架；platform是平台",
+          "toeicSceneFocus": "框架、结构场景"
+        },
+        {
+          "word": "base",
+          "coreDifference": "base是基础；platform是平台",
+          "toeicSceneFocus": "基础、基地场景"
+        },
+        {
+          "word": "technology",
+          "coreDifference": "technology是技术；platform是技术平台",
+          "toeicSceneFocus": "技术、科技场景"
+        }
+      ]
+    },
+    {
+      "word": "network",
+      "phonetic": "/ˈnetwɜːrk/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "网络（指连接的系统或关系网）",
+      "toeicSceneFocus": "多出现于计算机网络、社交网络、业务网络等语境，是描述连接系统的词，托业阅读（网络说明）和听力（IT支持）中常见",
+      "keyCollocations": [
+        "computer network（计算机网络）",
+        "social network（社交网络）",
+        "network connection（网络连接）"
+      ],
+      "toeicExampleSentences": [
+        "The office network is down due to maintenance.（办公室网络因维护而中断。）",
+        "She has a wide professional network.（她拥有广泛的职业网络。）"
+      ],
+      "sceneAssociation": "可以联想‘IT部门设置网络（network）’的画面，或‘参加商务活动扩展人脉（network）’，结合商务中‘连接系统或关系’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "connection",
+          "coreDifference": "connection是连接；network是网络",
+          "toeicSceneFocus": "连接、网络场景"
+        },
+        {
+          "word": "web",
+          "coreDifference": "web是网络；network是网络系统",
+          "toeicSceneFocus": "网络、互联网场景"
+        },
+        {
+          "word": "system",
+          "coreDifference": "system是系统；network是连接的系统",
+          "toeicSceneFocus": "系统、网络场景"
+        },
+        {
+          "word": "grid",
+          "coreDifference": "grid是网格；network是网络",
+          "toeicSceneFocus": "网格、网络结构场景"
+        }
+      ]
+    },
+    {
+      "word": "device",
+      "phonetic": "/dɪˈvaɪs/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "设备，装置（指工具或技术产品）",
+      "toeicSceneFocus": "多出现于电子设备、办公设备、技术产品等语境，是描述设备的通用词，托业阅读（设备清单）和听力（技术讨论）中常见",
+      "keyCollocations": [
+        "electronic device（电子设备）",
+        "mobile device（移动设备）",
+        "storage device（存储设备）"
+      ],
+      "toeicExampleSentences": [
+        "Please turn off all electronic devices.（请关闭所有电子设备。）",
+        "The device allows remote access to the system.（该设备允许远程访问系统。）"
+      ],
+      "sceneAssociation": "可以联想‘会议室里禁止使用电子设备（device）’的画面，或‘使用移动设备（device）办公’，结合商务中‘技术设备’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "equipment",
+          "coreDifference": "equipment是设备总称；device是具体装置",
+          "toeicSceneFocus": "设备、设施场景"
+        },
+        {
+          "word": "gadget",
+          "coreDifference": "gadget是小工具；device是设备",
+          "toeicSceneFocus": "小工具、设备场景"
+        },
+        {
+          "word": "appliance",
+          "coreDifference": "appliance是家电；device是通用设备",
+          "toeicSceneFocus": "家电、电器场景"
+        },
+        {
+          "word": "machine",
+          "coreDifference": "machine是机器；device是装置",
+          "toeicSceneFocus": "机器、设备场景"
+        }
+      ]
+    },
+    {
+      "word": "appliance",
+      "phonetic": "/əˈplaɪəns/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "电器，器具（指家用或办公电器）",
+      "toeicSceneFocus": "多出现于家电、办公电器、设备采购等语境，是描述电器的词，托业阅读（采购清单）和听力（办公室对话）中常见",
+      "keyCollocations": [
+        "household appliance（家用电器）",
+        "kitchen appliance（厨房电器）",
+        "office appliance（办公电器）"
+      ],
+      "toeicExampleSentences": [
+        "The office kitchen has a new coffee appliance.（办公室厨房有新的咖啡机。）",
+        "We need to purchase office appliances for the new space.（我们需要为新办公场所购买办公电器。）"
+      ],
+      "sceneAssociation": "可以联想‘办公室厨房里的电器（appliance）’的画面，或‘采购办公电器（appliance）’，结合商务中‘电器设备’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "device",
+          "coreDifference": "device是通用设备；appliance是电器",
+          "toeicSceneFocus": "设备、电器场景"
+        },
+        {
+          "word": "equipment",
+          "coreDifference": "equipment是设备；appliance是电器",
+          "toeicSceneFocus": "设备、设施场景"
+        },
+        {
+          "word": "instrument",
+          "coreDifference": "instrument是仪器；appliance是电器",
+          "toeicSceneFocus": "仪器、工具场景"
+        },
+        {
+          "word": "machine",
+          "coreDifference": "machine是机器；appliance是电器",
+          "toeicSceneFocus": "机器、电器场景"
+        }
+      ]
+    },
+    {
+      "word": "gadget",
+      "phonetic": "/ˈɡædʒɪt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "小工具，小装置（指小巧实用的设备）",
+      "toeicSceneFocus": "多出现于科技产品、办公小工具、创新设备等语境，是描述小巧设备的词，托业阅读（产品介绍）和听力（技术讨论）中常见",
+      "keyCollocations": [
+        "tech gadget（科技小工具）",
+        "office gadget（办公小工具）",
+        "useful gadget（实用小工具）"
+      ],
+      "toeicExampleSentences": [
+        "The new gadget helps organize cables.（这个新工具帮助整理电线。）",
+        "He loves buying the latest tech gadgets.（他喜欢购买最新的科技小工具。）"
+      ],
+      "sceneAssociation": "可以联想‘办公桌上摆放着各种小工具（gadget）’的画面，或‘科技爱好者讨论新出的小工具（gadget）’，结合商务中‘实用小设备’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "device",
+          "coreDifference": "device是设备；gadget是小工具",
+          "toeicSceneFocus": "设备、小工具场景"
+        },
+        {
+          "word": "tool",
+          "coreDifference": "tool是工具；gadget是小装置",
+          "toeicSceneFocus": "工具、装置场景"
+        },
+        {
+          "word": "gizmo",
+          "coreDifference": "gizmo是小玩意；gadget是小工具",
+          "toeicSceneFocus": "小玩意、设备场景"
+        },
+        {
+          "word": "implement",
+          "coreDifference": "implement是工具；gadget是小装置",
+          "toeicSceneFocus": "工具、器械场景"
+        }
+      ]
+    },
+    {
+      "word": "instrument",
+      "phonetic": "/ˈɪnstrəmənt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "仪器，工具（指精密工具或乐器）",
+      "toeicSceneFocus": "多出现于科学仪器、医疗设备、专业工具等语境，是描述精密工具的词，托业阅读（技术说明）和听力（专业对话）中常见",
+      "keyCollocations": [
+        "medical instrument（医疗仪器）",
+        "musical instrument（乐器）",
+        "scientific instrument（科学仪器）"
+      ],
+      "toeicExampleSentences": [
+        "The surgeon used precise instruments.（外科医生使用了精密仪器。）",
+        "We need to calibrate the measuring instrument.（我们需要校准测量仪器。）"
+      ],
+      "sceneAssociation": "可以联想‘医生使用医疗仪器（instrument）’的画面，或‘实验室里的科学仪器（instrument）’，结合商务中‘精密工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "tool",
+          "coreDifference": "tool是工具；instrument是精密仪器",
+          "toeicSceneFocus": "工具、仪器场景"
+        },
+        {
+          "word": "device",
+          "coreDifference": "device是设备；instrument是仪器",
+          "toeicSceneFocus": "设备、仪器场景"
+        },
+        {
+          "word": "apparatus",
+          "coreDifference": "apparatus是装置；instrument是仪器",
+          "toeicSceneFocus": "装置、设备场景"
+        },
+        {
+          "word": "implement",
+          "coreDifference": "implement是工具；instrument是仪器",
+          "toeicSceneFocus": "工具、器械场景"
+        }
+      ]
+    },
+    {
+      "word": "implement",
+      "phonetic": "/ˈɪmplɪmənt/",
+      "partOfSpeech": "v. 动词",
+      "coreMeaning": "实施，执行（指将计划或政策付诸实践）",
+      "toeicSceneFocus": "多出现于项目执行、政策实施、系统部署等语境，是描述执行的动词，托业阅读（项目计划）和听力（工作讨论）中常见",
+      "keyCollocations": [
+        "implement a plan（实施计划）",
+        "implement changes（实施变革）",
+        "implement a system（部署系统）"
+      ],
+      "toeicExampleSentences": [
+        "The company will implement new policies next month.（公司下月将实施新政策。）",
+        "We need to implement the software update.（我们需要部署软件更新。）"
+      ],
+      "sceneAssociation": "可以联想‘团队执行项目计划（implement）’的画面，或‘IT部门部署新系统（implement）’，结合商务中‘将计划付诸实践’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "execute",
+          "coreDifference": "execute是执行；implement是实施",
+          "toeicSceneFocus": "执行、实施场景"
+        },
+        {
+          "word": "apply",
+          "coreDifference": "apply是应用；implement是实施",
+          "toeicSceneFocus": "应用、使用场景"
+        },
+        {
+          "word": "enforce",
+          "coreDifference": "enforce是强制执行；implement是实施",
+          "toeicSceneFocus": "强制、执行场景"
+        },
+        {
+          "word": "carry out",
+          "coreDifference": "carry out是执行；implement是实施",
+          "toeicSceneFocus": "执行、完成场景"
+        }
+      ]
+    },
+    {
+      "word": "utensil",
+      "phonetic": "/juːˈtensl/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "器具，用具（指厨房或办公用具）",
+      "toeicSceneFocus": "多出现于厨房用具、办公用具、日常工具等语境，是描述实用工具的词，托业阅读（采购清单）和听力（办公室对话）中常见",
+      "keyCollocations": [
+        "kitchen utensil（厨房用具）",
+        "cooking utensil（烹饪用具）",
+        "office utensil（办公用具）"
+      ],
+      "toeicExampleSentences": [
+        "Please provide basic kitchen utensils.（请提供基本的厨房用具。）",
+        "The office has all necessary utensils for meetings.（办公室有会议所需的所有用具。）"
+      ],
+      "sceneAssociation": "可以联想‘办公室茶水间里的厨房用具（utensil）’的画面，或‘采购办公用具（utensil）’，结合商务中‘实用工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "tool",
+          "coreDifference": "tool是工具；utensil是用具",
+          "toeicSceneFocus": "工具、用具场景"
+        },
+        {
+          "word": "implement",
+          "coreDifference": "implement是工具；utensil是器具",
+          "toeicSceneFocus": "工具、器械场景"
+        },
+        {
+          "word": "instrument",
+          "coreDifference": "instrument是仪器；utensil是用具",
+          "toeicSceneFocus": "仪器、用具场景"
+        },
+        {
+          "word": "device",
+          "coreDifference": "device是设备；utensil是用具",
+          "toeicSceneFocus": "设备、用具场景"
+        }
+      ]
+    },
+    {
+      "word": "supplies",
+      "phonetic": "/səˈplaɪz/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "供应品，物资（指日常使用的物品或材料）",
+      "toeicSceneFocus": "多出现于办公用品、医疗物资、日常采购等语境，是描述消耗品的词，托业阅读（采购清单）和听力（库存对话）中常见",
+      "keyCollocations": [
+        "office supplies（办公用品）",
+        "medical supplies（医疗物资）",
+        "order supplies（订购物资）"
+      ],
+      "toeicExampleSentences": [
+        "We need to restock office supplies.（我们需要补充办公用品。）",
+        "The hospital is running low on medical supplies.（医院的医疗物资快用完了。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在采购办公用品（supplies）’的画面，或‘仓库里存放着各种物资（supplies）’，结合商务中‘消耗品或物资’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "materials",
+          "coreDifference": "materials是原材料；supplies是供应品",
+          "toeicSceneFocus": "材料、物资场景"
+        },
+        {
+          "word": "stock",
+          "coreDifference": "stock是库存；supplies是物资",
+          "toeicSceneFocus": "库存、物资场景"
+        },
+        {
+          "word": "provisions",
+          "coreDifference": "provisions是供应品；supplies是物资",
+          "toeicSceneFocus": "供应、储备场景"
+        },
+        {
+          "word": "resources",
+          "coreDifference": "resources是资源；supplies是物资",
+          "toeicSceneFocus": "资源、物资场景"
+        }
+      ]
+    },
+    {
+      "word": "paper",
+      "phonetic": "/ˈpeɪpər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "纸，纸张（指书写或打印材料）",
+      "toeicSceneFocus": "多出现于办公用品、文档打印、纸张规格等语境，是描述办公材料的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "paper size（纸张尺寸）",
+        "print on paper（打印在纸上）",
+        "a sheet of paper（一张纸）"
+      ],
+      "toeicExampleSentences": [
+        "Please print the report on A4 paper.（请用A4纸打印报告。）",
+        "We are running low on printer paper.（我们的打印纸快用完了。）"
+      ],
+      "sceneAssociation": "可以联想‘打印机里放入纸张（paper）’的画面，或‘用纸张（paper）打印文件’，结合商务中‘办公材料’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "document",
+          "coreDifference": "document是文件；paper是纸张",
+          "toeicSceneFocus": "文件、纸张场景"
+        },
+        {
+          "word": "sheet",
+          "coreDifference": "sheet是张；paper是纸",
+          "toeicSceneFocus": "纸张、表格场景"
+        },
+        {
+          "word": "card",
+          "card是卡片；paper是纸张",
+          "toeicSceneFocus": "卡片、纸张场景"
+        },
+        {
+          "word": "material",
+          "material是材料；paper是纸张",
+          "toeicSceneFocus": "材料、办公材料场景"
+        }
+      ]
+    },
+    {
+      "word": "pen",
+      "phonetic": "/pen/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "笔，钢笔（指书写工具）",
+      "toeicSceneFocus": "多出现于办公用品、书写工具、日常用品等语境，是描述文具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "ballpoint pen（圆珠笔）",
+        "pen and paper（笔和纸）",
+        "sign with a pen（用笔签名）"
+      ],
+      "toeicExampleSentences": [
+        "Please sign the document with a pen.（请用笔在文件上签名。）",
+        "We need to buy more pens for the office.（我们需要为办公室购买更多笔。）"
+      ],
+      "sceneAssociation": "可以联想‘员工用笔（pen）在文件上签名’的画面，或‘办公桌上摆放着笔（pen）’，结合商务中‘书写工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "pencil",
+          "coreDifference": "pencil是铅笔；pen是钢笔",
+          "toeicSceneFocus": "书写工具、文具场景"
+        },
+        {
+          "word": "marker",
+          "marker是马克笔；pen是笔",
+          "toeicSceneFocus": "标记工具、文具场景"
+        },
+        {
+          "word": "writing",
+          "writing是书写；pen是笔",
+          "toeicSceneFocus": "书写、文具场景"
+        },
+        {
+          "word": "tool",
+          "tool是工具；pen是书写工具",
+          "toeicSceneFocus": "工具、文具场景"
+        }
+      ]
+    },
+    {
+      "word": "pencil",
+      "phonetic": "/ˈpensl/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "铅笔（指可擦除的书写工具）",
+      "toeicSceneFocus": "多出现于办公用品、文具、草稿绘制等语境，是描述文具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "pencil case（铅笔盒）",
+        "sharpen a pencil（削铅笔）",
+        "write with a pencil（用铅笔写）"
+      ],
+      "toeicExampleSentences": [
+        "Please write your notes with a pencil.（请用铅笔写笔记。）",
+        "The conference room has pencils and paper.（会议室有铅笔和纸。）"
+      ],
+      "sceneAssociation": "可以联想‘用铅笔（pencil）在纸上草拟草稿’的画面，或‘员工在会议中用铅笔（pencil）做笔记’，结合商务中‘可擦除书写工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "pen",
+          "coreDifference": "pen是钢笔；pencil是铅笔",
+          "toeicSceneFocus": "书写工具、文具场景"
+        },
+        {
+          "word": "marker",
+          "marker是马克笔；pencil是铅笔",
+          "toeicSceneFocus": "标记工具、文具场景"
+        },
+        {
+          "word": "crayon",
+          "crayon是蜡笔；pencil是铅笔",
+          "toeicSceneFocus": "蜡笔、文具场景"
+        },
+        {
+          "word": "chalk",
+          "chalk是粉笔；pencil是铅笔",
+          "toeicSceneFocus": "粉笔、文具场景"
+        }
+      ]
+    },
+    {
+      "word": "marker",
+      "phonetic": "/ˈmɑːkər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "马克笔，记号笔（指用于标记的笔）",
+      "toeicSceneFocus": "多出现于办公用品、标记工具、演示材料等语境，是描述标记工具的词，托业阅读（采购清单）和听力（演示对话）中常见",
+      "keyCollocations": [
+        "highlighter marker（荧光马克笔）",
+        "whiteboard marker（白板笔）",
+        "permanent marker（永久性记号笔）"
+      ],
+      "toeicExampleSentences": [
+        "Please use a red marker to circle the errors.（请用红色马克笔圈出错误。）",
+        "We need more whiteboard markers for the meeting.（我们需要更多白板笔用于会议。）"
+      ],
+      "sceneAssociation": "可以联想‘用马克笔（marker）在白板上标记重点’的画面，或‘在演示材料上用马克笔（marker）标注’，结合商务中‘标记工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "pen",
+          "coreDifference": "pen是笔；marker是马克笔",
+          "toeicSceneFocus": "书写工具、标记场景"
+        },
+        {
+          "word": "highlighter",
+          "coreDifference": "highlighter是荧光笔；marker是马克笔",
+          "toeicSceneFocus": "高亮、标记场景"
+        },
+        {
+          "word": "brush",
+          "brush是刷子；marker是马克笔",
+          "toeicSceneFocus": "刷子、标记场景"
+        },
+        {
+          "word": "stamp",
+          "stamp是印章；marker是记号笔",
+          "toeicSceneFocus": "印章、标记场景"
+        }
+      ]
+    },
+    {
+      "word": "highlighter",
+      "phonetic": "/ˈhaɪlaɪtər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "荧光笔（指用于高亮文本的笔）",
+      "toeicSceneFocus": "多出现于办公用品、学习工具、文本标记等语境，是描述高亮工具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "highlighter pen（荧光笔）",
+        "use a highlighter（使用荧光笔）",
+        "yellow highlighter（黄色荧光笔）"
+      ],
+      "toeicExampleSentences": [
+        "Please use a highlighter to mark important points.（请用荧光笔标记重点。）",
+        "She always carries a highlighter for reading.（她总是带着荧光笔阅读。）"
+      ],
+      "sceneAssociation": "可以联想‘用荧光笔（highlighter）在文件上高亮关键信息’的画面，或‘学生用荧光笔（highlighter）标记课本’，结合商务中‘高亮工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "marker",
+          "coreDifference": "marker是马克笔；highlighter是荧光笔",
+          "toeicSceneFocus": "标记工具、文具场景"
+        },
+        {
+          "word": "highlight",
+          "coreDifference": "highlight是高亮；highlighter是荧光笔",
+          "toeicSceneFocus": "高亮、标记场景"
+        },
+        {
+          "word": "pen",
+          "pen是笔；highlighter是荧光笔",
+          "toeicSceneFocus": "书写工具、文具场景"
+        },
+        {
+          "word": "color",
+          "color是颜色；highlighter是彩色笔",
+          "toeicSceneFocus": "颜色、标记场景"
+        }
+      ]
+    },
+    {
+      "word": "eraser",
+      "phonetic": "/ɪˈreɪzər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "橡皮擦（指用于擦除铅笔字迹的工具）",
+      "toeicSceneFocus": "多出现于办公用品、文具、修正工具等语境，是描述修正工具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "pencil eraser（铅笔橡皮）",
+        "erase with an eraser（用橡皮擦）",
+        "rubber eraser（橡胶橡皮）"
+      ],
+      "toeicExampleSentences": [
+        "Please use an eraser to correct the pencil marks.（请用橡皮擦修改铅笔痕迹。）",
+        "The eraser is on the end of the pencil.（橡皮在铅笔的末端。）"
+      ],
+      "sceneAssociation": "可以联想‘用橡皮擦（eraser）擦掉铅笔字迹’的画面，或‘在草稿上用橡皮擦（eraser）修改’，结合商务中‘修正工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "correction",
+          "coreDifference": "correction是修正；eraser是橡皮",
+          "toeicSceneFocus": "修正、修改场景"
+        },
+        {
+          "word": "delete",
+          "delete是删除；eraser是橡皮",
+          "toeicSceneFocus": "删除、清除场景"
+        },
+        {
+          "word": "remove",
+          "remove是移除；eraser是擦除",
+          "toeicSceneFocus": "移除、擦除场景"
+        },
+        {
+          "word": "tool",
+          "tool是工具；eraser是修正工具",
+          "toeicSceneFocus": "工具、文具场景"
+        }
+      ]
+    },
+    {
+      "word": "sharpener",
+      "phonetic": "/ˈʃɑːpnər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "卷笔刀，削笔器（指用于削尖铅笔的工具）",
+      "toeicSceneFocus": "多出现于办公用品、文具、铅笔工具等语境，是描述铅笔工具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "pencil sharpener（卷笔刀）",
+        "electric sharpener（电动卷笔刀）",
+        "manual sharpener（手动卷笔刀）"
+      ],
+      "toeicExampleSentences": [
+        "The pencil sharpener is broken.（卷笔刀坏了。）",
+        "Please use a sharpener to sharpen the pencils.（请用卷笔刀削尖铅笔。）"
+      ],
+      "sceneAssociation": "可以联想‘用卷笔刀（sharpener）削铅笔’的画面，或‘办公桌上的卷笔刀（sharpener）’，结合商务中‘铅笔工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "knife",
+          "coreDifference": "knife是刀；sharpener是卷笔刀",
+          "toeicSceneFocus": "刀具、工具场景"
+        },
+        {
+          "word": "grinder",
+          "grinder是研磨器；sharpener是削笔器",
+          "toeicSceneFocus": "研磨、工具场景"
+        },
+        {
+          "word": "tool",
+          "tool是工具；sharpener是卷笔刀",
+          "toeicSceneFocus": "工具、文具场景"
+        },
+        {
+          "word": "cutter",
+          "cutter是切割器；sharpener是削笔器",
+          "toeicSceneFocus": "切割、工具场景"
+        }
+      ]
+    },
+    {
+      "word": "ruler",
+      "phonetic": "/ˈruːlər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "尺子，直尺（指测量或画直线的工具）",
+      "toeicSceneFocus": "多出现于办公用品、测量工具、文具等语境，是描述测量工具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "measuring ruler（测量尺）",
+        "use a ruler（使用尺子）",
+        "straight ruler（直尺）"
+      ],
+      "toeicExampleSentences": [
+        "Please use a ruler to draw a straight line.（请用尺子画一条直线。）",
+        "The ruler is on the desk.（尺子在桌子上。）"
+      ],
+      "sceneAssociation": "可以联想‘用尺子（ruler）画线’的画面，或‘在图纸上用尺子（ruler）测量’，结合商务中‘测量工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "measure",
+          "coreDifference": "measure是测量；ruler是尺子",
+          "toeicSceneFocus": "测量、工具场景"
+        },
+        {
+          "word": "scale",
+          "scale是刻度尺；ruler是直尺",
+          "toeicSceneFocus": "刻度、测量场景"
+        },
+        {
+          "word": "straightedge",
+          "straightedge是直尺；ruler是尺子",
+          "toeicSceneFocus": "直尺、工具场景"
+        },
+        {
+          "word": "tool",
+          "tool是工具；ruler是测量工具",
+          "toeicSceneFocus": "工具、文具场景"
+        }
+      ]
+    },
+    {
+      "word": "scissors",
+      "phonetic": "/ˈsɪzərz/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "剪刀（指用于切割的工具）",
+      "toeicSceneFocus": "多出现于办公用品、裁剪工具、日常用品等语境，是描述切割工具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "a pair of scissors（一把剪刀）",
+        "cut with scissors（用剪刀剪）",
+        "safety scissors（安全剪刀）"
+      ],
+      "toeicExampleSentences": [
+        "Please cut the paper with scissors.（请用剪刀剪纸。）",
+        "There is a pair of scissors in the drawer.（抽屉里有一把剪刀。）"
+      ],
+      "sceneAssociation": "可以联想‘用剪刀（scissors）裁剪纸张’的画面，或‘在办公室用剪刀（scissors）剪材料’，结合商务中‘切割工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "cutter",
+          "coreDifference": "cutter是切割器；scissors是剪刀",
+          "toeicSceneFocus": "切割、工具场景"
+        },
+        {
+          "word": "knife",
+          "knife是刀；scissors是剪刀",
+          "toeicSceneFocus": "刀具、工具场景"
+        },
+        {
+          "word": "blade",
+          "blade是刀片；scissors是剪刀",
+          "toeicSceneFocus": "刀片、工具场景"
+        },
+        {
+          "word": "tool",
+          "tool是工具；scissors是剪刀",
+          "toeicSceneFocus": "工具、文具场景"
+        }
+      ]
+    },
+    {
+      "word": "stapler",
+      "phonetic": "/ˈsteɪplər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "订书机（指用于装订纸张的工具）",
+      "toeicSceneFocus": "多出现于办公用品、文件装订、办公室工具等语境，是描述装订工具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "staple gun（钉枪）",
+        "use a stapler（使用订书机）",
+        "desk stapler（桌面订书机）"
+      ],
+      "toeicExampleSentences": [
+        "Please staple the documents together.（请将文件订在一起。）",
+        "The stapler is out of staples.（订书机没钉了。）"
+      ],
+      "sceneAssociation": "可以联想‘用订书机（stapler）装订文件’的画面，或‘办公桌上的订书机（stapler）’，结合商务中‘装订工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "staple",
+          "coreDifference": "staple是钉；stapler是订书机",
+          "toeicSceneFocus": "钉子、装订场景"
+        },
+        {
+          "word": "clip",
+          "clip是夹子；stapler是订书机",
+          "toeicSceneFocus": "夹子、装订场景"
+        },
+        {
+          "word": "binder",
+          "binder是活页夹；stapler是订书机",
+          "toeicSceneFocus": "活页夹、装订场景"
+        },
+        {
+          "word": "tool",
+          "tool是工具；stapler是装订工具",
+          "toeicSceneFocus": "工具、办公场景"
+        }
+      ]
+    },
+    {
+      "word": "staples",
+      "phonetic": "/ˈsteɪplz/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "订书钉（指用于订书机的金属钉）",
+      "toeicSceneFocus": "多出现于办公用品、装订材料、采购清单等语境，是描述装订材料的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "staple refills（订书钉补充装）",
+        "staple remover（起钉器）",
+        "box of staples（一盒订书钉）"
+      ],
+      "toeicExampleSentences": [
+        "We need to buy more staples for the stapler.（我们需要为订书机购买更多订书钉。）",
+        "The stapler needs staples.（订书机需要订书钉。）"
+      ],
+      "sceneAssociation": "可以联想‘给订书机装入订书钉（staples）’的画面，或‘办公用品柜里的订书钉（staples）’，结合商务中‘装订材料’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "staple",
+          "coreDifference": "staple是订书钉；staples是复数形式",
+          "toeicSceneFocus": "装订材料、文具场景"
+        },
+        {
+          "word": "clip",
+          "clip是夹子；staples是订书钉",
+          "toeicSceneFocus": "夹子、装订场景"
+        },
+        {
+          "word": "pin",
+          "pin是别针；staples是订书钉",
+          "toeicSceneFocus": "别针、固定场景"
+        },
+        {
+          "word": "nail",
+          "nail是钉子；staples是订书钉",
+          "toeicSceneFocus": "钉子、固定场景"
+        }
+      ]
+    },
+    {
+      "word": "paperclip",
+      "phonetic": "/ˈpeɪpərklɪp/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "回形针，曲别针（指用于固定纸张的金属丝）",
+      "toeicSceneFocus": "多出现于办公用品、文件整理、文具等语境，是描述固定工具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "paper clip（回形针）",
+        "use a paperclip（使用回形针）",
+        "large paperclip（大号回形针）"
+      ],
+      "toeicExampleSentences": [
+        "Please attach the documents with a paperclip.（请用回形针固定文件。）",
+        "There are paperclips in the drawer.（抽屉里有回形针。）"
+      ],
+      "sceneAssociation": "可以联想‘用回形针（paperclip）固定纸张’的画面，或‘办公桌上的回形针（paperclip）’，结合商务中‘固定工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "clip",
+          "coreDifference": "clip是夹子；paperclip是回形针",
+          "toeicSceneFocus": "夹子、固定场景"
+        },
+        {
+          "word": "pin",
+          "pin是别针；paperclip是回形针",
+          "toeicSceneFocus": "别针、固定场景"
+        },
+        {
+          "word": "fastener",
+          "fastener是紧固件；paperclip是回形针",
+          "toeicSceneFocus": "紧固件、固定场景"
+        },
+        {
+          "word": "staple",
+          "staple是订书钉；paperclip是回形针",
+          "toeicSceneFocus": "装订、固定场景"
+        }
+      ]
+    },
+    {
+      "word": "clip",
+      "phonetic": "/klɪp/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "夹子，回形针（指用于固定物品的工具）",
+      "toeicSceneFocus": "多出现于办公用品、文件整理、固定工具等语境，是描述固定工具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "paper clip（回形针）",
+        "hair clip（发夹）",
+        "attach with a clip（用夹子固定）"
+      ],
+      "toeicExampleSentences": [
+        "Use a clip to hold the papers together.（用夹子把纸夹在一起。）",
+        "The clip broke and the papers fell apart.（夹子坏了，纸散开了。）"
+      ],
+      "sceneAssociation": "可以联想‘用夹子（clip）固定纸张’的画面，或‘办公桌上的夹子（clip）’，结合商务中‘固定工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "paperclip",
+          "coreDifference": "paperclip是回形针；clip是夹子",
+          "toeicSceneFocus": "回形针、固定场景"
+        },
+        {
+          "word": "fastener",
+          "fastener是紧固件；clip是夹子",
+          "toeicSceneFocus": "紧固件、固定场景"
+        },
+        {
+          "word": "clamp",
+          "clamp是夹钳；clip是夹子",
+          "toeicSceneFocus": "夹钳、固定场景"
+        },
+        {
+          "word": "pin",
+          "pin是别针；clip是夹子",
+          "toeicSceneFocus": "别针、固定场景"
+        }
+      ]
+    },
+    {
+      "word": "folder",
+      "phonetic": "/ˈfəʊldər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "文件夹（指用于存放文件的折叠夹）",
+      "toeicSceneFocus": "多出现于办公用品、文件管理、档案整理等语境，是描述文件存放工具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "file folder（文件夹）",
+        "folder structure（文件夹结构）",
+        "plastic folder（塑料文件夹）"
+      ],
+      "toeicExampleSentences": [
+        "Please organize the documents in a folder.（请将文件整理到文件夹中。）",
+        "The folder contains all project files.（该文件夹包含所有项目文件。）"
+      ],
+      "sceneAssociation": "可以联想‘将文件放入文件夹（folder）’的画面，或‘电脑里的文件夹（folder）结构’，结合商务中‘文件存放工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "file",
+          "coreDifference": "file是文件；folder是文件夹",
+          "toeicSceneFocus": "文件、文件夹场景"
+        },
+        {
+          "word": "binder",
+          "binder是活页夹；folder是文件夹",
+          "toeicSceneFocus": "活页夹、文件管理场景"
+        },
+        {
+          "word": "directory",
+          "directory是目录；folder是文件夹",
+          "toeicSceneFocus": "目录、文件系统场景"
+        },
+        {
+          "word": "envelope",
+          "envelope是信封；folder是文件夹",
+          "toeicSceneFocus": "信封、文件场景"
+        }
+      ]
+    },
+    {
+      "word": "binder",
+      "phonetic": "/ˈbaɪndər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "活页夹，装订机（指用于装订纸张的工具）",
+      "toeicSceneFocus": "多出现于办公用品、文件装订、档案管理等语境，是描述装订工具的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "ring binder（活页夹）",
+        "three-ring binder（三孔活页夹）",
+        "binder clips（活页夹夹子）"
+      ],
+      "toeicExampleSentences": [
+        "Please put the report in a binder.（请将报告放入活页夹中。）",
+        "The binder holds all the meeting notes.（活页夹里装着所有会议记录。）"
+      ],
+      "sceneAssociation": "可以联想‘用活页夹（binder）装订报告’的画面，或‘办公柜里的活页夹（binder）’，结合商务中‘装订工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "folder",
+          "coreDifference": "folder是文件夹；binder是活页夹",
+          "toeicSceneFocus": "文件夹、装订场景"
+        },
+        {
+          "word": "stapler",
+          "stapler是订书机；binder是活页夹",
+          "toeicSceneFocus": "订书机、装订场景"
+        },
+        {
+          "word": "notebook",
+          "notebook是笔记本；binder是活页夹",
+          "toeicSceneFocus": "笔记本、装订场景"
+        },
+        {
+          "word": "clip",
+          "clip是夹子；binder是活页夹",
+          "toeicSceneFocus": "夹子、装订场景"
+        }
+      ]
+    },
+    {
+      "word": "notebook",
+      "phonetic": "/ˈnəʊtbʊk/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "笔记本，笔记本电脑（指用于记录的本子或便携电脑）",
+      "toeicSceneFocus": "多出现于办公用品、会议记录、IT设备等语境，是描述记录工具或电脑的词，托业阅读（采购清单）和听力（办公对话）中常见",
+      "keyCollocations": [
+        "notebook computer（笔记本电脑）",
+        "spiral notebook（螺旋笔记本）",
+        "take notes in a notebook（在笔记本上做笔记）"
+      ],
+      "toeicExampleSentences": [
+        "She takes notes in her notebook during meetings.（她在会议期间在笔记本上做笔记。）",
+        "I need a new notebook computer for work.（我需要一台新的笔记本电脑用于工作。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在笔记本（notebook）上做会议记录’的画面，或‘使用笔记本（notebook）电脑办公’，结合商务中‘记录工具或电脑’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "journal",
+          "coreDifference": "journal是日志；notebook是笔记本",
+          "toeicSceneFocus": "日志、记录场景"
+        },
+        {
+          "word": "laptop",
+          "laptop是笔记本电脑；notebook是笔记本电脑",
+          "toeicSceneFocus": "笔记本电脑、设备场景"
+        },
+        {
+          "word": "pad",
+          "pad是便签本；notebook是笔记本",
+          "toeicSceneFocus": "便签、记录场景"
+        },
+        {
+          "word": "diary",
+          "diary是日记；notebook是笔记本",
+          "toeicSceneFocus": "日记、记录场景"
+        }
+      ]
+    },
+    {
+      "word": "journal",
+      "phonetic": "/ˈdʒɜːnəl/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "日志，期刊（指记录日常活动或学术出版物）",
+      "toeicSceneFocus": "多出现于商务记录、学术期刊、日常记录等语境，是描述记录或出版物的词，托业阅读（商务文档）和听力（专业讨论）中常见",
+      "keyCollocations": [
+        "business journal（商业期刊）",
+        "keep a journal（写日志）",
+        "research journal（研究期刊）"
+      ],
+      "toeicExampleSentences": [
+        "She keeps a daily journal of her work.（她每天写工作日志。）",
+        "The article was published in a scientific journal.（该文章发表在科学期刊上。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在写工作日志（journal）’的画面，或‘阅读商业期刊（journal）’，结合商务中‘记录或出版物’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "diary",
+          "diary是日记；journal是日志",
+          "toeicSceneFocus": "日记、日志场景"
+        },
+        {
+          "word": "log",
+          "log是日志；journal是期刊",
+          "toeicSceneFocus": "日志、记录场景"
+        },
+        {
+          "word": "periodical",
+          "periodical是期刊；journal是期刊",
+          "toeicSceneFocus": "期刊、出版物场景"
+        },
+        {
+          "word": "notebook",
+          "notebook是笔记本；journal是日志",
+          "toeicSceneFocus": "笔记本、记录场景"
+        }
+      ]
+    },
+    {
+      "word": "diary",
+      "phonetic": "/ˈdaɪəri/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "日记，日程本（指个人日常记录或计划本）",
+      "toeicSceneFocus": "多出现于个人记录、日程管理、日常规划等语境，是描述个人记录的词，托业阅读（日程安排）和听力（个人规划）中常见",
+      "keyCollocations": [
+        "keep a diary（写日记）",
+        "daily diary（每日日程本）",
+        "appointment diary（预约日程本）"
+      ],
+      "toeicExampleSentences": [
+        "She writes in her diary every night.（她每晚写日记。）",
+        "Please check your appointment diary for availability.（请查看你的预约日程本是否有空。）"
+      ],
+      "sceneAssociation": "可以联想‘个人写日记（diary）’的画面，或‘用日程本（diary）记录预约’，结合商务中‘个人记录或日程’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "journal",
+          "journal是日志；diary是日记",
+          "toeicSceneFocus": "日志、日记场景"
+        },
+        {
+          "word": "calendar",
+          "calendar是日历；diary是日程本",
+          "toeicSceneFocus": "日历、日程场景"
+        },
+        {
+          "word": "planner",
+          "planner是计划本；diary是日程本",
+          "toeicSceneFocus": "计划本、日程场景"
+        },
+        {
+          "word": "log",
+          "log是日志；diary是日记",
+          "toeicSceneFocus": "日志、记录场景"
+        }
+      ]
+    },
+    {
+      "word": "calendar",
+      "phonetic": "/ˈkælɪndər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "日历，日程表（指显示日期和计划的工具）",
+      "toeicSceneFocus": "多出现于日程管理、时间规划、会议安排等语境，是描述时间管理的词，托业阅读（日程表）和听力（会议安排）中常见",
+      "keyCollocations": [
+        "calendar year（日历年）",
+        "calendar date（日历日期）",
+        "schedule a meeting on the calendar（在日历上安排会议）"
+      ],
+      "toeicExampleSentences": [
+        "Please mark the meeting on the calendar.（请在日历上标记会议。）",
+        "The calendar shows all public holidays.（日历显示所有公共假期。）"
+      ],
+      "sceneAssociation": "可以联想‘在日历（calendar）上标记重要日期’的画面，或‘团队查看日历（calendar）安排会议’，结合商务中‘时间管理工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "schedule",
+          "schedule是时间表；calendar是日历",
+          "toeicSceneFocus": "时间表、日程场景"
+        },
+        {
+          "word": "planner",
+          "planner是计划本；calendar是日历",
+          "toeicSceneFocus": "计划本、日程场景"
+        },
+        {
+          "word": "diary",
+          "diary是日程本；calendar是日历",
+          "toeicSceneFocus": "日程本、日历场景"
+        },
+        {
+          "word": "timetable",
+          "timetable是时刻表；calendar是日历",
+          "toeicSceneFocus": "时刻表、时间场景"
+        }
+      ]
+    },
+    {
+      "word": "planner",
+      "phonetic": "/ˈplænər/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "计划本，规划器（指用于规划时间或活动的工具）",
+      "toeicSceneFocus": "多出现于时间管理、项目规划、日程安排等语境，是描述规划工具的词，托业阅读（日程表）和听力（工作讨论）中常见",
+      "keyCollocations": [
+        "daily planner（每日计划本）",
+        "project planner（项目规划器）",
+        "use a planner（使用计划本）"
+      ],
+      "toeicExampleSentences": [
+        "She uses a planner to organize her tasks.（她使用计划本来组织任务。）",
+        "The project planner outlines all milestones.（项目规划器列出了所有里程碑。）"
+      ],
+      "sceneAssociation": "可以联想‘用计划本（planner）安排一周任务’的画面，或‘项目团队使用规划器（planner）’，结合商务中‘时间规划工具’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "schedule",
+          "schedule是时间表；planner是计划本",
+          "toeicSceneFocus": "时间表、规划场景"
+        },
+        {
+          "word": "calendar",
+          "calendar是日历；planner是计划本",
+          "toeicSceneFocus": "日历、日程场景"
+        },
+        {
+          "word": "agenda",
+          "agenda是议程；planner是计划本",
+          "toeicSceneFocus": "议程、计划场景"
+        },
+        {
+          "word": "diary",
+          "diary是日记；planner是计划本",
+          "toeicSceneFocus": "日记、日程场景"
+        }
+      ]
+    },
+    {
+      "word": "schedule",
+      "phonetic": "/ˈʃedjuːl/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "时间表，日程安排（指计划或活动的时间安排）",
+      "toeicSceneFocus": "多出现于项目管理、会议安排、时间规划等语境，是描述时间安排的词，托业阅读（日程表）和听力（工作讨论）中常见",
+      "keyCollocations": [
+        "work schedule（工作时间表）",
+        "on schedule（按时）",
+        "schedule a meeting（安排会议）"
+      ],
+      "toeicExampleSentences": [
+        "The project is on schedule.（项目按计划进行。）",
+        "Please check the schedule for available time slots.（请查看日程表中的可用时间段。）"
+      ],
+      "sceneAssociation": "可以联想‘团队会议上查看项目时间表（schedule）’的画面，或‘安排会议时间表（schedule）’，结合商务中‘时间安排’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "planner",
+          "planner是计划本；schedule是时间表",
+          "toeicSceneFocus": "计划本、时间表场景"
+        },
+        {
+          "word": "calendar",
+          "calendar是日历；schedule是时间表",
+          "toeicSceneFocus": "日历、日程场景"
+        },
+        {
+          "word": "timeline",
+          "timeline是时间线；schedule是时间表",
+          "toeicSceneFocus": "时间线、时间表场景"
+        },
+        {
+          "word": "timetable",
+          "timetable是时刻表；schedule是时间表",
+          "toeicSceneFocus": "时刻表、时间表场景"
+        }
+      ]
+    },
+    {
+      "word": "timeline",
+      "phonetic": "/ˈtaɪmlaɪn/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "时间线，时间轴（指按时间顺序排列的事件序列）",
+      "toeicSceneFocus": "多出现于项目规划、历史事件、时间管理等语境，是描述时间顺序的词，托业阅读（项目文档）和听力（进度讨论）中常见",
+      "keyCollocations": [
+        "project timeline（项目时间线）",
+        "timeline of events（事件时间线）",
+        "create a timeline（创建时间线）"
+      ],
+      "toeicExampleSentences": [
+        "The project timeline shows all key deadlines.（项目时间线显示所有关键截止日期。）",
+        "We need to create a timeline for the marketing campaign.（我们需要为营销活动创建时间线。）"
+      ],
+      "sceneAssociation": "可以联想‘用时间线（timeline）展示项目进度’的画面，或‘团队讨论时间线（timeline）安排’，结合商务中‘时间顺序规划’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "schedule",
+          "schedule是时间表；timeline是时间线",
+          "toeicSceneFocus": "时间表、时间线场景"
+        },
+        {
+          "word": "chronology",
+          "chronology是年表；timeline是时间线",
+          "toeicSceneFocus": "年表、时间顺序场景"
+        },
+        {
+          "word": "sequence",
+          "sequence是序列；timeline是时间线",
+          "toeicSceneFocus": "序列、顺序场景"
+        },
+        {
+          "word": "roadmap",
+          "roadmap是路线图；timeline是时间线",
+          "toeicSceneFocus": "路线图、规划场景"
+        }
+      ]
+    },
+    {
+      "word": "timetable",
+      "phonetic": "/ˈtaɪmteɪbl/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "时刻表，时间表（指公共交通或学校的固定时间安排）",
+      "toeicSceneFocus": "多出现于交通、教育、工作安排等语境，是描述固定时间表的词，托业阅读（时刻表）和听力（时间讨论）中常见",
+      "keyCollocations": [
+        "bus timetable（公交时刻表）",
+        "train timetable（火车时刻表）",
+        "class timetable（课程表）"
+      ],
+      "toeicExampleSentences": [
+        "Please check the train timetable for departure times.（请查看火车时刻表的发车时间。）",
+        "The class timetable has been updated.（课程表已更新。）"
+      ],
+      "sceneAssociation": "可以联想‘查看公交时刻表（timetable）’的画面，或‘学生查看课程表（timetable）’，结合商务中‘固定时间表’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "schedule",
+          "schedule是时间表；timetable是时刻表",
+          "toeicSceneFocus": "时间表、时刻表场景"
+        },
+        {
+          "word": "itinerary",
+          "itinerary是行程；timetable是时刻表",
+          "toeicSceneFocus": "行程、路线场景"
+        },
+        {
+          "word": "calendar",
+          "calendar是日历；timetable是时刻表",
+          "toeicSceneFocus": "日历、时间场景"
+        },
+        {
+          "word": "diary",
+          "diary是日程本；timetable是时刻表",
+          "toeicSceneFocus": "日程本、时间场景"
+        }
+      ]
+    },
+    {
+      "word": "environment",
+      "phonetic": "/ɪnˈvaɪrənmənt/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "环境，工作环境（指周围的情况或条件）",
+      "toeicSceneFocus": "多出现于工作环境、自然环境、办公环境等语境，是描述条件的词，托业阅读（公司介绍）和听力（工作讨论）中常见",
+      "keyCollocations": [
+        "work environment（工作环境）",
+        "office environment（办公环境）",
+        "friendly environment（友好的环境）"
+      ],
+      "toeicExampleSentences": [
+        "The company provides a positive work environment.（公司提供积极的工作环境。）",
+        "We need to improve the office environment.（我们需要改善办公环境。）"
+      ],
+      "sceneAssociation": "可以联想‘员工在舒适的工作环境（environment）中工作’的画面，或‘团队讨论改善办公环境（environment）’，结合商务中‘工作条件或环境’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "setting",
+          "setting是设置；environment是环境",
+          "toeicSceneFocus": "设置、场景场景"
+        },
+        {
+          "word": "atmosphere",
+          "atmosphere是氛围；environment是环境",
+          "toeicSceneFocus": "氛围、气氛场景"
+        },
+        {
+          "word": "surroundings",
+          "surroundings是周围环境；environment是环境",
+          "toeicSceneFocus": "周围环境、环境场景"
+        },
+        {
+          "word": "context",
+          "context是上下文；environment是环境",
+          "toeicSceneFocus": "上下文、背景场景"
+        }
+      ]
+    },
+    {
+      "word": "workplace",
+      "phonetic": "/ˈwɜːrkpleɪs/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "工作场所（指工作的地方）",
+      "toeicSceneFocus": "多出现于工作环境、公司文化、办公地点等语境，是描述工作地点的词，托业阅读（公司政策）和听力（工作讨论）中常见",
+      "keyCollocations": [
+        "safe workplace（安全工作场所）",
+        "workplace safety（工作场所安全）",
+        "modern workplace（现代化工作场所）"
+      ],
+      "toeicExampleSentences": [
+        "The company is committed to a safe workplace.（公司致力于安全的工作场所。）",
+        "We need to create a more inclusive workplace.（我们需要创造一个更具包容性的工作场所。）"
+      ],
+      "sceneAssociation": "可以联想‘现代化的工作场所（workplace）’的画面，或‘团队讨论工作场所（workplace）政策’，结合商务中‘工作地点’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "office",
+          "office是办公室；workplace是工作场所",
+          "toeicSceneFocus": "办公室、工作场所场景"
+        },
+        {
+          "word": "site",
+          "site是地点；workplace是工作场所",
+          "toeicSceneFocus": "地点、现场场景"
+        },
+        {
+          "word": "location",
+          "location是位置；workplace是工作场所",
+          "toeicSceneFocus": "位置、地点场景"
+        },
+        {
+          "word": "environment",
+          "environment是环境；workplace是工作场所",
+          "toeicSceneFocus": "环境、工作场景"
+        }
+      ]
+    },
+    {
+      "word": "building",
+      "phonetic": "/ˈbɪldɪŋ/",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "建筑物，大楼（指用于居住或工作的建筑）",
+      "toeicSceneFocus": "多出现于办公场所、建筑设施、公司总部等语境，是描述建筑的词，托业阅读（公司介绍）和听力（位置讨论）中常见",
+      "keyCollocations": [
+        "office building（办公楼）",
+        "building management（大楼管理）",
+        "enter a building（进入大楼）"
+      ],
+      "toeicExampleSentences": [
+        "The company occupies a modern office building.（公司占据一栋现代化办公楼。）",
+        "Please meet in the lobby of the main building.（请在主楼大厅见面。）"
+      ],
+      "sceneAssociation": "可以联想‘现代化的办公大楼（building）’的画面，或‘进入公司大楼（building）’，结合商务中‘办公建筑’的记忆",
+      "confusingWordsComparison": [
+        {
+          "word": "structure",
+          "structure是结构；building是建筑物",
+          "toeicSceneFocus": "结构、建筑场景"
+        },
+        {
+          "word": "facility",
+          "facility是设施；building是建筑物",
+          "toeicSceneFocus": "设施、建筑场景"
+        },
+        {
+          "word": "complex",
+          "complex是综合建筑；building是大楼",
+          "toeicSceneFocus": "综合建筑、园区场景"
+        },
+        {
+          "word": "tower",
+          "tower是塔楼；building是建筑物",
+          "toeicSceneFocus": "塔楼、建筑场景"
+        }
+      ]
+    },
+
+  {
+    "word": "room",
+       "phonetic": "/ruːm/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "房间；空间（指建筑物内的空间或可用的余地）",
+       "toeicSceneFocus": "多出现于办公室布局、会议室预订、酒店安排等语境，是描述空间或房间的常用词，托业阅读（设施说明）和听力（办公安排）中常见",
+       "keyCollocations": [
+         "meeting room（会议室）",
+         "room for improvement（改进空间）",
+         "conference room（会议厅）"
+       ],
+       "toeicExampleSentences": [
+         "Please reserve a meeting room for the team discussion.（请为团队讨论预订一间会议室。）",
+         "There is no room for error in this project.（这个项目容不得半点差错。）"
+       ],
+       "sceneAssociation": "可以联想‘办公室走廊上标有会议室（room）门牌’的画面，或‘酒店前台分配房间（room）’，结合商务中‘空间或房间’的核心概念记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "space",
+           "coreDifference": "space更通用，指可用空间；room特指房间或余地",
+           "toeicSceneFocus": "办公布局、空间规划场景"
+         },
+         {
+           "word": "area",
+           "coreDifference": "area指区域；room指具体房间或空间",
+           "toeicSceneFocus": "区域描述、设施管理场景"
+         },
+         {
+           "word": "office",
+           "coreDifference": "office是办公室；room是其组成部分",
+           "toeicSceneFocus": "办公环境、设施安排场景"
+         },
+         {
+           "word": "venue",
+           "coreDifference": "venue是活动场所；room是具体房间",
+           "toeicSceneFocus": "活动场地、会议场所场景"
+         }
+       ]
+     },
+     {
+       "word": "space",
+       "phonetic": "/speɪs/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "空间，空地（指可用的区域或位置）",
+       "toeicSceneFocus": "多出现于办公室设计、存储空间、场地安排等语境，是描述空间布局的通用词，托业阅读（设施报告）和听力（空间讨论）中频繁考查",
+       "keyCollocations": [
+         "parking space（停车位）",
+         "workspace（工作空间）",
+         "storage space（存储空间）"
+       ],
+       "toeicExampleSentences": [
+         "We need more storage space for office supplies.（我们需要更多存储空间来存放办公用品。）",
+         "The new office design maximizes open space.（新办公室设计最大化利用了开放空间。）"
+       ],
+       "sceneAssociation": "可以联想‘办公室平面图上标出各种空间（space）’的画面，或‘停车场寻找空位（space）’，结合商务中‘可用区域’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "room",
+           "coreDifference": "room是具体房间；space是泛指空间",
+           "toeicSceneFocus": "空间规划、设施布局场景"
+         },
+         {
+           "word": "area",
+           "coreDifference": "area是较大区域；space是可用空间",
+           "toeicSceneFocus": "区域规划、场地使用场景"
+         },
+         {
+           "word": "capacity",
+           "coreDifference": "capacity是容量；space是物理空间",
+           "toeicSceneFocus": "容量限制、空间利用场景"
+         },
+         {
+           "word": "volume",
+           "coreDifference": "volume是体积；space是空间",
+           "toeicSceneFocus": "三维空间、存储场景"
+         }
+       ]
+     },
+     {
+       "word": "area",
+       "phonetic": "/ˈeəriə/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "区域，地区（指特定范围或地段）",
+       "toeicSceneFocus": "多出现于地理描述、办公区域、市场划分等语境，是描述范围的常用词，托业阅读（公司报告）和听力（区域讨论）中常见",
+       "keyCollocations": [
+         "local area（本地区域）",
+         "business area（业务领域）",
+         "parking area（停车区域）"
+       ],
+       "toeicExampleSentences": [
+         "The sales team covers a large geographical area.（销售团队覆盖大面积地理区域。）",
+         "Please keep the work area clean and organized.（请保持工作区域整洁有序。）"
+       ],
+       "sceneAssociation": "可以联想‘地图上标出的销售区域（area）’的画面，或‘办公室中划分的各个工作区（area）’，结合商务中‘特定范围’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "region",
+           "coreDifference": "region是较大区域；area更通用",
+           "toeicSceneFocus": "地理区域、市场划分场景"
+         },
+         {
+           "word": "zone",
+           "coreDifference": "zone是功能区；area是普通区域",
+           "toeicSceneFocus": "功能分区、管制区域场景"
+         },
+         {
+           "word": "district",
+           "coreDifference": "district是行政区；area是泛指区域",
+           "toeicSceneFocus": "行政区域、管辖范围场景"
+         },
+         {
+           "word": "space",
+           "coreDifference": "space是空间；area是区域",
+           "toeicSceneFocus": "空间利用、区域规划场景"
+         }
+       ]
+     },
+     {
+       "word": "location",
+       "phonetic": "/ləʊˈkeɪʃn/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "位置，地点（指具体的位置或场所）",
+       "toeicSceneFocus": "多出现于地址信息、办公选址、物流配送等语境，是描述具体位置的常用词，托业阅读（通知、广告）和听力（地址确认）中频繁考查",
+       "keyCollocations": [
+         "business location（营业地点）",
+         "prime location（黄金地段）",
+         "job location（工作地点）"
+       ],
+       "toeicExampleSentences": [
+         "The new office location is conveniently located near the subway.（新办公地点靠近地铁站，交通便利。）",
+         "Please provide your current location for the delivery.（请提供您的当前位置以便配送。）"
+       ],
+       "sceneAssociation": "可以联想‘GPS上显示的公司位置（location）’的画面，或‘招聘广告中注明的工作地点（location）’，结合商务中‘具体场所’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "address",
+           "coreDifference": "address是详细地址；location是位置",
+           "toeicSceneFocus": "地址信息、邮寄场景"
+         },
+         {
+           "word": "site",
+           "coreDifference": "site是场地；location是位置",
+           "toeicSceneFocus": "建筑场地、项目地点场景"
+         },
+         {
+           "word": "position",
+           "coreDifference": "position是位置或职位；location是地点",
+           "toeicSceneFocus": "地理定位、职业场景"
+         },
+         {
+           "word": "place",
+           "coreDifference": "place是地方；location更精确",
+           "toeicSceneFocus": "场所描述、位置场景"
+         }
+       ]
+     },
+     {
+       "word": "address",
+       "phonetic": "/ˈædres/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "地址（指具体的通信或物理地址）",
+       "toeicSceneFocus": "多出现于邮寄、联系信息、公司注册等语境，是描述通信地址的通用词，托业阅读（表格填写）和听力（信息确认）中常见",
+       "keyCollocations": [
+         "email address（电子邮件地址）",
+         "business address（公司地址）",
+         "home address（家庭住址）"
+       ],
+       "toeicExampleSentences": [
+         "Please provide your mailing address for the documents.（请提供您的邮寄地址以便寄送文件。）",
+         "The company's address is listed on the website.（公司地址列在网站上。）"
+       ],
+       "sceneAssociation": "可以联想‘填写表格时输入电子邮件地址（address）’的画面，或‘快递员根据地址（address）送货’，结合商务中‘通信或物理地址’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "location",
+           "coreDifference": "location是位置；address是详细地址",
+           "toeicSceneFocus": "位置描述、地址场景"
+         },
+         {
+           "word": "residence",
+           "coreDifference": "residence是住所；address是地址",
+           "toeicSceneFocus": "居住地、邮寄场景"
+         },
+         {
+           "word": "destination",
+           "coreDifference": "destination是目的地；address是起点地址",
+           "toeicSceneFocus": "物流、旅行场景"
+         },
+         {
+           "word": "coordinates",
+           "coreDifference": "coordinates是坐标；address是文字地址",
+           "toeicSceneFocus": "地理位置、导航场景"
+         }
+       ]
+     },
+     {
+       "word": "contact",
+       "phonetic": "/ˈkɒntækt/",
+       "partOfSpeech": "n./v. 名词/动词",
+       "coreMeaning": "联系，接触（指联系某人或接触信息）",
+       "toeicSceneFocus": "多出现于商务沟通、联系信息、客户互动等语境，是描述沟通行为的常用词，托业阅读（名片、邮件）和听力（电话对话）中频繁考查",
+       "keyCollocations": [
+         "contact information（联系信息）",
+         "make contact（取得联系）",
+         "point of contact（联系人）"
+       ],
+       "toeicExampleSentences": [
+         "Please contact the sales department for more details.（请联系销售部门获取更多详情。）",
+         "Her contact information is included in the email signature.（她的联系信息包含在邮件签名中。）"
+       ],
+       "sceneAssociation": "可以联想‘交换名片并记录联系（contact）信息’的画面，或‘通过电话联系（contact）客户’，结合商务中‘沟通联系’的核心动作记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "communication",
+           "coreDifference": "communication是交流；contact是联系行为",
+           "toeicSceneFocus": "沟通方式、信息交换场景"
+         },
+         {
+           "word": "reach",
+           "coreDifference": "reach是联系上；contact是主动接触",
+           "toeicSceneFocus": "联系尝试、成功沟通场景"
+         },
+         {
+           "word": "connection",
+           "coreDifference": "connection是连接；contact是接触",
+           "toeicSceneFocus": "网络连接、人际关系场景"
+         },
+         {
+           "word": "interaction",
+           "coreDifference": "interaction是互动；contact是单向联系",
+           "toeicSceneFocus": "客户互动、社交场景"
+         }
+       ]
+     },
+     {
+       "word": "information",
+       "phonetic": "/ˌɪnfərˈmeɪʃn/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "信息，资料（指数据或知识）",
+       "toeicSceneFocus": "多出现于商务沟通、资料提供、信息查询等语境，是描述信息的通用词，托业阅读（手册、通知）和听力（信息交换）中常见",
+       "keyCollocations": [
+         "contact information（联系信息）",
+         "background information（背景信息）",
+         "for your information（供您参考）"
+       ],
+       "toeicExampleSentences": [
+         "Please provide the necessary information to complete the form.（请提供完成表格所需的信息。）",
+         "For your information, the meeting has been rescheduled.（通知您，会议已重新安排。）"
+       ],
+       "sceneAssociation": "可以联想‘客户咨询产品信息（information）’的画面，或‘会议中分享项目信息（information）’，结合商务中‘数据或知识’的核心概念记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "data",
+           "coreDifference": "data是原始数据；information是加工后的信息",
+           "toeicSceneFocus": "数据分析、信息处理场景"
+         },
+         {
+           "word": "details",
+           "coreDifference": "details是细节；information是整体信息",
+           "toeicSceneFocus": "具体细节、信息查询场景"
+         },
+         {
+           "word": "facts",
+           "coreDifference": "facts是事实；information是信息",
+           "toeicSceneFocus": "事实陈述、信息核实场景"
+         },
+         {
+           "word": "knowledge",
+           "coreDifference": "knowledge是知识；information是具体信息",
+           "toeicSceneFocus": "知识管理、信息共享场景"
+         }
+       ]
+     },
+     {
+       "word": "data",
+       "phonetic": "/ˈdeɪtə/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "数据（指用于分析或决策的事实和统计）",
+       "toeicSceneFocus": "多出现于市场分析、报告、技术讨论等语境，是描述数据的通用词，托业阅读（报告）和听力（数据分析）中常见",
+       "keyCollocations": [
+         "collect data（收集数据）",
+         "market data（市场数据）",
+         "data analysis（数据分析）"
+       ],
+       "toeicExampleSentences": [
+         "The survey will collect data on customer preferences.（调查将收集关于客户偏好的数据。）",
+         "We need to analyze the sales data to identify trends.（我们需要分析销售数据以识别趋势。）"
+       ],
+       "sceneAssociation": "可以联想‘屏幕上显示数据（data）图表’的画面，或‘团队讨论如何分析数据（data）’，结合商务中‘用于分析的事实’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "information",
+           "coreDifference": "information是信息；data是原始数据",
+           "toeicSceneFocus": "信息处理、数据分析场景"
+         },
+         {
+           "word": "statistics",
+           "coreDifference": "statistics是统计数据；data是原始数据",
+           "toeicSceneFocus": "统计分析、报告场景"
+         },
+         {
+           "word": "figure",
+           "coreDifference": "figure是数字；data是数据集合",
+           "toeicSceneFocus": "数字报告、财务数据场景"
+         },
+         {
+           "word": "record",
+           "coreDifference": "record是记录；data是分析数据",
+           "toeicSceneFocus": "档案管理、数据存储场景"
+         }
+       ]
+     },
+     {
+       "word": "fact",
+       "phonetic": "/fækt/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "事实，真相（指已知或证明的真实情况）",
+       "toeicSceneFocus": "多出现于报告、论证、讨论等语境，是描述真实情况的常用词，托业阅读（新闻、论文）和听力（辩论）中常见",
+       "keyCollocations": [
+         "in fact（事实上）",
+         "as a matter of fact（实际上）",
+         "fact sheet（情况说明书）"
+       ],
+       "toeicExampleSentences": [
+         "In fact, our sales have increased by 15%.（事实上，我们的销售额增长了15%。）",
+         "The fact sheet provides key information about the product.（情况说明书提供了产品的关键信息。）"
+       ],
+       "sceneAssociation": "可以联想‘会议中陈述事实（fact）支持观点’的画面，或‘报告中列出关键事实（fact）’，结合商务中‘真实情况’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "truth",
+           "coreDifference": "truth是真理；fact是具体事实",
+           "toeicSceneFocus": "真相、诚实场景"
+         },
+         {
+           "word": "reality",
+           "coreDifference": "reality是现实；fact是事实",
+           "toeicSceneFocus": "现实情况、实际场景"
+         },
+         {
+           "word": "evidence",
+           "coreDifference": "evidence是证据；fact是已知事实",
+           "toeicSceneFocus": "证据支持、论证场景"
+         },
+         {
+           "word": "detail",
+           "coreDifference": "detail是细节；fact是事实",
+           "toeicSceneFocus": "细节描述、事实陈述场景"
+         }
+       ]
+     },
+     {
+       "word": "figure",
+       "phonetic": "/ˈfɪɡər/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "数字，数值（指数字或图表中的数值）",
+       "toeicSceneFocus": "多出现于财务报告、数据分析、图表描述等语境，是描述数字的常用词，托业阅读（报表）和听力（数字讨论）中常见",
+       "keyCollocations": [
+         "sales figures（销售数字）",
+         "key figure（关键数字）",
+         "figure out（弄清楚）"
+       ],
+       "toeicExampleSentences": [
+         "The latest sales figures show a positive trend.（最新销售数字显示积极趋势。）",
+         "Can you figure out the total cost?（你能算出总成本吗？）"
+       ],
+       "sceneAssociation": "可以联想‘财务报表上的数字（figure）’的画面，或‘图表中突出显示的数字（figure）’，结合商务中‘数值或图表数据’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "number",
+           "coreDifference": "number是数字；figure是数值",
+           "toeicSceneFocus": "数字计算、数量场景"
+         },
+         {
+           "word": "data",
+           "coreDifference": "data是数据；figure是具体数字",
+           "toeicSceneFocus": "数据分析、报告场景"
+         },
+         {
+           "word": "statistic",
+           "coreDifference": "statistic是统计数字；figure是数值",
+           "toeicSceneFocus": "统计分析、指标场景"
+         },
+         {
+           "word": "amount",
+           "coreDifference": "amount是总额；figure是单个数字",
+           "toeicSceneFocus": "金额、总量场景"
+         }
+       ]
+     },
+     {
+       "word": "statistic",
+       "phonetic": "/stəˈtɪstɪk/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "统计数字，统计数据（指用于分析的数值信息）",
+       "toeicSceneFocus": "多出现于市场研究、报告分析、绩效评估等语境，是描述统计的专用词，托业阅读（研究报告）和听力（数据分析）中常见",
+       "keyCollocations": [
+         "key statistic（关键统计数据）",
+         "job statistics（就业统计数据）",
+         "statistical data（统计数据）"
+       ],
+       "toeicExampleSentences": [
+         "The report includes statistics on employee turnover.（报告包含员工流失率的统计数据。）",
+         "We need to gather statistics to support our proposal.（我们需要收集统计数据来支持我们的提案。）"
+       ],
+       "sceneAssociation": "可以联想‘市场调研报告中的统计数字（statistic）’的画面，或‘会议上展示的统计（statistic）图表’，结合商务中‘用于分析的数值’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "figure",
+           "coreDifference": "figure是数字；statistic是统计数字",
+           "toeicSceneFocus": "数字报告、统计分析场景"
+         },
+         {
+           "word": "data",
+           "coreDifference": "data是原始数据；statistic是加工后的统计",
+           "toeicSceneFocus": "数据处理、统计场景"
+         },
+         {
+           "word": "percentage",
+           "coreDifference": "percentage是百分比；statistic是统计数字",
+           "toeicSceneFocus": "百分比计算、统计场景"
+         },
+         {
+           "word": "ratio",
+           "coreDifference": "ratio是比率；statistic是统计数字",
+           "toeicSceneFocus": "比率分析、统计数据场景"
+         }
+       ]
+     },
+     {
+       "word": "detail",
+       "phonetic": "/ˈdiːteɪl/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "细节，详情（指具体的信息或要素）",
+       "toeicSceneFocus": "多出现于产品描述、项目说明、会议讨论等语境，是描述具体内容的常用词，托业阅读（说明书）和听力（细节询问）中常见",
+       "keyCollocations": [
+         "in detail（详细地）",
+         "detail-oriented（注重细节的）",
+         "full details（全部详情）"
+       ],
+       "toeicExampleSentences": [
+         "Please explain the plan in detail.（请详细说明计划。）",
+         "For more details, visit our website.（更多详情，请访问我们的网站。）"
+       ],
+       "sceneAssociation": "可以联想‘客户询问产品细节（detail）’的画面，或‘会议中详细讨论项目细节（detail）’，结合商务中‘具体信息’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "specific",
+           "coreDifference": "specific是具体的；detail是细节",
+           "toeicSceneFocus": "具体要求、细节描述场景"
+         },
+         {
+           "word": "particular",
+           "coreDifference": "particular是特定的；detail是详细内容",
+           "toeicSceneFocus": "特定细节、个别情况场景"
+         },
+         {
+           "word": "information",
+           "coreDifference": "information是信息；detail是详细信息",
+           "toeicSceneFocus": "信息提供、细节查询场景"
+         },
+         {
+           "word": "item",
+           "coreDifference": "item是条目；detail是具体内容",
+           "toeicSceneFocus": "列表条目、细节项目场景"
+         }
+       ]
+     },
+     {
+       "word": "particular",
+       "phonetic": "/pəˈtɪkjələr/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "特定的，特别的（指具体的或特殊的）",
+       "toeicSceneFocus": "多出现于需求描述、问题讨论、选择说明等语境，是强调具体性的常用词，托业阅读（需求说明）和听力（特别要求）中常见",
+       "keyCollocations": [
+         "in particular（特别是）",
+         "particular interest（特别兴趣）",
+         "particular case（特定情况）"
+       ],
+       "toeicExampleSentences": [
+         "I am interested in particular products for office use.（我对特定的办公产品感兴趣。）",
+         "In particular, we need to focus on customer satisfaction.（特别是，我们需要关注客户满意度。）"
+       ],
+       "sceneAssociation": "可以联想‘客户提出特定（particular）要求’的画面，或‘会议中强调特定（particular）问题’，结合商务中‘具体或特殊’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "specific",
+           "coreDifference": "specific是具体的；particular是特殊的",
+           "toeicSceneFocus": "具体要求、特殊需求场景"
+         },
+         {
+           "word": "special",
+           "coreDifference": "special是特别的；particular是特定的",
+           "toeicSceneFocus": "特别活动、个别情况场景"
+         },
+         {
+           "word": "detailed",
+           "coreDifference": "detailed是详细的；particular是特定的",
+           "toeicSceneFocus": "详细说明、细节场景"
+         },
+         {
+           "word": "individual",
+           "coreDifference": "individual是个体的；particular是特定的",
+           "toeicSceneFocus": "个人需求、个别案例场景"
+         }
+       ]
+     },
+     {
+       "word": "specific",
+       "phonetic": "/spəˈsɪfɪk/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "具体的，明确的（指明确指定的或详细的）",
+       "toeicSceneFocus": "多出现于需求说明、指令传达、问题描述等语境，是强调明确性的常用词，托业阅读（合同、说明）和听力（明确要求）中常见",
+       "keyCollocations": [
+         "specific requirement（具体要求）",
+         "be specific about（对……具体说明）",
+         "specific example（具体例子）"
+       ],
+       "toeicExampleSentences": [
+         "Please provide specific details about the issue.（请提供有关问题的具体细节。）",
+         "We have specific guidelines for quality control.（我们有具体的质控指南。）"
+       ],
+       "sceneAssociation": "可以联想‘经理给出具体（specific）指示’的画面，或‘客户描述具体（specific）需求’，结合商务中‘明确具体’的核心概念记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "particular",
+           "coreDifference": "particular是特定的；specific是具体的",
+           "toeicSceneFocus": "特殊需求、具体说明场景"
+         },
+         {
+           "word": "exact",
+           "coreDifference": "exact是精确的；specific是具体的",
+           "toeicSceneFocus": "精确要求、细节场景"
+         },
+         {
+           "word": "explicit",
+           "coreDifference": "explicit是明确的；specific是具体的",
+           "toeicSceneFocus": "明确指令、正式说明场景"
+         },
+         {
+           "word": "detailed",
+           "coreDifference": "detailed是详细的；specific是具体的",
+           "toeicSceneFocus": "详细描述、具体信息场景"
+         }
+       ]
+     },
+     {
+       "word": "general",
+       "phonetic": "/ˈdʒenrəl/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "一般的，总体的（指普遍的或概括的）",
+       "toeicSceneFocus": "多出现于政策、概述、类别等语境，是描述概括性的常用词，托业阅读（报告、通知）和听力（总体讨论）中常见",
+       "keyCollocations": [
+         "general manager（总经理）",
+         "in general（一般来说）",
+         "general information（一般信息）"
+       ],
+       "toeicExampleSentences": [
+         "In general, the project is proceeding as planned.（总体来说，项目按计划进行。）",
+         "The general manager will attend the meeting.（总经理将出席会议。）"
+       ],
+       "sceneAssociation": "可以联想‘会议中讨论总体（general）情况’的画面，或‘公司政策概述（general）’，结合商务中‘概括或总体’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "overall",
+           "coreDifference": "overall是整体的；general是总体的",
+           "toeicSceneFocus": "整体评估、总体情况场景"
+         },
+         {
+           "word": "broad",
+           "coreDifference": "broad是广泛的；general是概括的",
+           "toeicSceneFocus": "广泛范围、概述场景"
+         },
+         {
+           "word": "common",
+           "coreDifference": "common是常见的；general是普遍的",
+           "toeicSceneFocus": "常见情况、一般场景"
+         },
+         {
+           "word": "universal",
+           "coreDifference": "universal是通用的；general是总体的",
+           "toeicSceneFocus": "通用标准、普遍适用场景"
+         }
+       ]
+     },
+     {
+       "word": "overall",
+       "phonetic": "/ˈəʊvərɔːl/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "整体的，全面的（指总的或全面的）",
+       "toeicSceneFocus": "多出现于绩效评估、总结报告、项目回顾等语境，是描述整体性的常用词，托业阅读（总结）和听力（总体评价）中常见",
+       "keyCollocations": [
+         "overall performance（整体表现）",
+         "overall cost（总成本）",
+         "overall situation（总体情况）"
+       ],
+       "toeicExampleSentences": [
+         "The overall performance of the team is excellent.（团队的整体表现优秀。）",
+         "We need to consider the overall impact of the decision.（我们需要考虑这一决定的总体影响。）"
+       ],
+       "sceneAssociation": "可以联想‘年度报告中总结整体（overall）业绩’的画面，或‘会议中评估整体（overall）情况’，结合商务中‘全面或总体’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "general",
+           "coreDifference": "general是总体的；overall是全面的",
+           "toeicSceneFocus": "总体概述、全面评估场景"
+         },
+         {
+           "word": "total",
+           "coreDifference": "total是总数；overall是整体",
+           "toeicSceneFocus": "总数计算、整体情况场景"
+         },
+         {
+           "word": "comprehensive",
+           "coreDifference": "comprehensive是全面的；overall是整体的",
+           "toeicSceneFocus": "全面分析、综合报告场景"
+         },
+         {
+           "word": "aggregate",
+           "coreDifference": "aggregate是合计的；overall是整体的",
+           "toeicSceneFocus": "汇总数据、总体趋势场景"
+         }
+       ]
+     },
+     {
+       "word": "total",
+       "phonetic": "/ˈtəʊtl/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "总的，完全的（指全部的或总计的）",
+       "toeicSceneFocus": "多出现于财务计算、统计总结、数量统计等语境，是描述总数的常用词，托业阅读（报表）和听力（数字计算）中常见",
+       "keyCollocations": [
+         "total cost（总成本）",
+         "total number（总数）",
+         "in total（总共）"
+       ],
+       "toeicExampleSentences": [
+         "The total cost of the project is $50,000.（项目总成本为5万美元。）",
+         "There are 50 employees in total.（总共有50名员工。）"
+       ],
+       "sceneAssociation": "可以联想‘收银员计算总金额（total）’的画面，或‘报告中列出总数（total）’，结合商务中‘全部或总计’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "overall",
+           "coreDifference": "overall是整体的；total是总计的",
+           "toeicSceneFocus": "整体评估、总数场景"
+         },
+         {
+           "word": "complete",
+           "coreDifference": "complete是完整的；total是总数",
+           "toeicSceneFocus": "完整性、总计场景"
+         },
+         {
+           "word": "full",
+           "coreDifference": "full是满的；total是总数",
+           "toeicSceneFocus": "容量、总额场景"
+         },
+         {
+           "word": "sum",
+           "coreDifference": "sum是求和；total是总数",
+           "toeicSceneFocus": "计算、总额场景"
+         }
+       ]
+     },
+     {
+       "word": "complete",
+       "phonetic": "/kəmˈpliːt/",
+       "partOfSpeech": "adj./v. 形容词/动词",
+       "coreMeaning": "完整的；完成（指全部的或使结束）",
+       "toeicSceneFocus": "多出现于任务完成、表格填写、项目结束等语境，是描述完整性或完成动作的常用词，托业阅读（指示）和听力（任务讨论）中常见",
+       "keyCollocations": [
+         "complete the form（填写表格）",
+         "complete task（完成任务）",
+         "complete list（完整列表）"
+       ],
+       "toeicExampleSentences": [
+         "Please complete the application form and return it.（请填写申请表并返回。）",
+         "The project will be complete by next week.（项目将于下周完成。）"
+       ],
+       "sceneAssociation": "可以联想‘员工填写完整表格（complete）’的画面，或‘会议宣布项目完成（complete）’，结合商务中‘完整或结束’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "finish",
+           "coreDifference": "finish是结束；complete是完成",
+           "toeicSceneFocus": "任务完成、结束场景"
+         },
+         {
+           "word": "full",
+           "coreDifference": "full是满的；complete是完整的",
+           "toeicSceneFocus": "容量、完整性场景"
+         },
+         {
+           "word": "entire",
+           "coreDifference": "entire是全部的；complete是完整的",
+           "toeicSceneFocus": "整体、全部场景"
+         },
+         {
+           "word": "done",
+           "coreDifference": "done是完成的；complete是完整的",
+           "toeicSceneFocus": "任务完成、状态场景"
+         }
+       ]
+     },
+     {
+       "word": "entire",
+       "phonetic": "/ɪnˈtaɪər/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "全部的，整个的（指完整的或全部的）",
+       "toeicSceneFocus": "多出现于整体描述、项目范围、组织结构等语境，是强调全部的常用词，托业阅读（报告）和听力（整体讨论）中常见",
+       "keyCollocations": [
+         "entire team（整个团队）",
+         "entire process（整个过程）",
+         "entire area（整个区域）"
+       ],
+       "toeicExampleSentences": [
+         "The entire team participated in the training.（整个团队参加了培训。）",
+         "We need to consider the entire situation.（我们需要考虑整个情况。）"
+       ],
+       "sceneAssociation": "可以联想‘整个团队（entire team）开会’的画面，或‘整个项目（entire process）回顾’，结合商务中‘全部或整体’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "whole",
+           "coreDifference": "whole是整体；entire是全部的",
+           "toeicSceneFocus": "整体、全部场景"
+         },
+         {
+           "word": "complete",
+           "coreDifference": "complete是完整的；entire是全部的",
+           "toeicSceneFocus": "完整性、整体场景"
+         },
+         {
+           "word": "total",
+           "coreDifference": "total是总数；entire是全部的",
+           "toeicSceneFocus": "总数、整体场景"
+         },
+         {
+           "word": "full",
+           "coreDifference": "full是满的；entire是全部的",
+           "toeicSceneFocus": "容量、整体场景"
+         }
+       ]
+     },
+     {
+       "word": "whole",
+       "phonetic": "/həʊl/",
+       "partOfSpeech": "adj./n. 形容词/名词",
+       "coreMeaning": "整个的；整体（指全部的或整体）",
+       "toeicSceneFocus": "多出现于整体概念、组织、项目等语境，是描述整体的通用词，托业阅读（说明）和听力（整体讨论）中常见",
+       "keyCollocations": [
+         "the whole team（整个团队）",
+         "whole number（整数）",
+         "on the whole（总体上）"
+       ],
+       "toeicExampleSentences": [
+         "The whole project took six months to complete.（整个项目花了六个月完成。）",
+         "On the whole, the meeting was productive.（总体来说，会议富有成效。）"
+       ],
+       "sceneAssociation": "可以联想‘整个公司（whole company）参加活动’的画面，或‘整体而言（on the whole）’的评价，结合商务中‘整体或全部’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "entire",
+           "coreDifference": "entire是全部的；whole是整体",
+           "toeicSceneFocus": "全部、整体场景"
+         },
+         {
+           "word": "complete",
+           "coreDifference": "complete是完整的；whole是整体",
+           "toeicSceneFocus": "完整性、整体场景"
+         },
+         {
+           "word": "full",
+           "coreDifference": "full是满的；whole是整体",
+           "toeicSceneFocus": "容量、整体场景"
+         },
+         {
+           "word": "total",
+           "coreDifference": "total是总数；whole是整体",
+           "toeicSceneFocus": "总数、整体场景"
+         }
+       ]
+     },
+     {
+       "word": "full",
+       "phonetic": "/fʊl/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "满的，完全的（指充满的或完整的）",
+       "toeicSceneFocus": "多出现于容量、时间、信息等语境，是描述充满或完整的常用词，托业阅读（说明）和听力（容量讨论）中常见",
+       "keyCollocations": [
+         "full time（全职）",
+         "full capacity（满负荷）",
+         "full details（全部详情）"
+       ],
+       "toeicExampleSentences": [
+         "The meeting room is at full capacity.（会议室已满员。）",
+         "Please provide full details of the incident.（请提供事件的全部详情。）"
+       ],
+       "sceneAssociation": "可以联想‘会议室满座（full）的画面，或‘报告提供全部详情（full details）’，结合商务中‘充满或完整’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "complete",
+           "coreDifference": "complete是完整的；full是满的",
+           "toeicSceneFocus": "完整性、容量场景"
+         },
+         {
+           "word": "entire",
+           "coreDifference": "entire是全部的；full是满的",
+           "toeicSceneFocus": "全部、容量场景"
+         },
+         {
+           "word": "total",
+           "coreDifference": "total是总数；full是满的",
+           "toeicSceneFocus": "总数、满额场景"
+         },
+         {
+           "word": "packed",
+           "coreDifference": "packed是拥挤的；full是满的",
+           "toeicSceneFocus": "拥挤、容量场景"
+         }
+       ]
+     },
+     {
+       "word": "partial",
+       "phonetic": "/ˈpɑːʃl/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "部分的，不完全的（指部分的或偏袒的）",
+       "toeicSceneFocus": "多出现于付款、完成度、偏好等语境，是描述部分的常用词，托业阅读（合同条款）和听力（部分支付）中常见",
+       "keyCollocations": [
+         "partial payment（部分付款）",
+         "partial refund（部分退款）",
+         "partial completion（部分完成）"
+       ],
+       "toeicExampleSentences": [
+         "We can accept partial payment in advance.（我们可以接受部分预付款。）",
+         "The project is only partially complete.（项目仅部分完成。）"
+       ],
+       "sceneAssociation": "可以联想‘客户要求部分退款（partial refund）’的画面，或‘项目部分（partial）完成通知’，结合商务中‘部分或不完全’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "incomplete",
+           "coreDifference": "incomplete是不完整的；partial是部分的",
+           "toeicSceneFocus": "未完成、部分场景"
+         },
+         {
+           "word": "half",
+           "coreDifference": "half是一半；partial是部分",
+           "toeicSceneFocus": "一半、部分场景"
+         },
+         {
+           "word": "biased",
+           "coreDifference": "biased是偏见的；partial是偏袒的",
+           "toeicSceneFocus": "偏见、偏好场景"
+         },
+         {
+           "word": "segment",
+           "coreDifference": "segment是片段；partial是部分的",
+           "toeicSceneFocus": "分段、部分场景"
+         }
+       ]
+     },
+     {
+       "word": "part",
+       "phonetic": "/pɑːrt/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "部分，部件（指整体中的一个成分）",
+       "toeicSceneFocus": "多出现于产品组成、项目分解、组织结构等语境，是描述部分的通用词，托业阅读（说明）和听力（讨论）中常见",
+       "keyCollocations": [
+         "part of（……的一部分）",
+         "spare part（备用部件）",
+         "key part（关键部分）"
+       ],
+       "toeicExampleSentences": [
+         "This is an important part of the process.（这是过程中的重要部分。）",
+         "We need to order spare parts for the machine.（我们需要订购机器的备用部件。）"
+       ],
+       "sceneAssociation": "可以联想‘机器备用部件（part）订单’的画面，或‘项目中的关键部分（part）’，结合商务中‘组成部分’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "portion",
+           "coreDifference": "portion是份额；part是部分",
+           "toeicSceneFocus": "份额、分配场景"
+         },
+         {
+           "word": "segment",
+           "coreDifference": "segment是片段；part是部件",
+           "toeicSceneFocus": "分段、部件场景"
+         },
+         {
+           "word": "piece",
+           "coreDifference": "piece是件；part是部分",
+           "toeicSceneFocus": "单件、部分场景"
+         },
+         {
+           "word": "component",
+           "coreDifference": "component是组件；part是部分",
+           "toeicSceneFocus": "组件、部件场景"
+         }
+       ]
+     },
+     {
+       "word": "piece",
+       "phonetic": "/piːs/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "件，片（指单个物品或部分）",
+       "toeicSceneFocus": "多出现于物品计数、样品、组件等语境，是描述单个物品的常用词，托业阅读（库存）和听力（物品描述）中常见",
+       "keyCollocations": [
+         "piece of（……的一件）",
+         "a piece of paper（一张纸）",
+         "piece of equipment（一件设备）"
+       ],
+       "toeicExampleSentences": [
+         "Please send a sample piece of the product.（请寄送一件产品样品。）",
+         "Each piece of furniture is carefully inspected.（每件家具都经过仔细检查。）"
+       ],
+       "sceneAssociation": "可以联想‘样品桌上摆放着每件（piece）产品’的画面，或‘仓库中计数物品件数（piece）’，结合商务中‘单个物品’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "item",
+           "coreDifference": "item是项目；piece是件",
+           "toeicSceneFocus": "物品条目、计数场景"
+         },
+         {
+           "word": "part",
+           "coreDifference": "part是部分；piece是单件",
+           "toeicSceneFocus": "组成部分、单件场景"
+         },
+         {
+           "word": "unit",
+           "coreDifference": "unit是单位；piece是件",
+           "toeicSceneFocus": "单位、单元场景"
+         },
+         {
+           "word": "portion",
+           "coreDifference": "portion是份额；piece是件",
+           "toeicSceneFocus": "分配、单件场景"
+         }
+       ]
+     },
+     {
+       "word": "section",
+       "phonetic": "/ˈsekʃn/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "部分，章节（指整体中的一个部分或区域）",
+       "toeicSceneFocus": "多出现于文档、组织、区域等语境，是描述划分部分的常用词，托业阅读（报告、手册）和听力（区域讨论）中常见",
+       "keyCollocations": [
+         "section of（……的部分）",
+         "business section（商业区）",
+         "section manager（部门经理）"
+       ],
+       "toeicExampleSentences": [
+         "Please refer to section 3 of the contract.（请参考合同第3部分。）",
+         "The sales section has expanded its team.（销售部门已扩大团队。）"
+       ],
+       "sceneAssociation": "可以联想‘合同中的各个章节（section）’的画面，或‘办公室的各个部门（section）’，结合商务中‘划分部分’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "part",
+           "coreDifference": "part是部分；section是章节或区域",
+           "toeicSceneFocus": "组成部分、章节场景"
+         },
+         {
+           "word": "segment",
+           "coreDifference": "segment是片段；section是部分",
+           "toeicSceneFocus": "分段、部分场景"
+         },
+         {
+           "word": "department",
+           "coreDifference": "department是部门；section是分部",
+           "toeicSceneFocus": "组织结构、部门场景"
+         },
+         {
+           "word": "division",
+           "coreDifference": "division是分部；section是小部分",
+           "toeicSceneFocus": "大部门、分部场景"
+         }
+       ]
+     },
+     {
+       "word": "segment",
+       "phonetic": "/ˈseɡmənt/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "片段，部分（指整体中的一部分或市场细分）",
+       "toeicSceneFocus": "多出现于市场分析、数据划分、产品线等语境，是描述细分部分的常用词，托业阅读（市场报告）和听力（市场讨论）中常见",
+       "keyCollocations": [
+         "market segment（市场细分）",
+         "segment of（……的片段）",
+         "target segment（目标细分）"
+       ],
+       "toeicExampleSentences": [
+         "We are targeting a new market segment.（我们正在瞄准一个新的市场细分。）",
+         "The report analyzes each segment of the industry.（报告分析了行业的每个细分部分。）"
+       ],
+       "sceneAssociation": "可以联想‘市场图表显示不同细分（segment）’的画面，或‘产品针对特定细分（segment）设计’，结合商务中‘细分部分’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "section",
+           "coreDifference": "section是部分；segment是片段",
+           "toeicSceneFocus": "部分、细分场景"
+         },
+         {
+           "word": "portion",
+           "coreDifference": "portion是份额；segment是片段",
+           "toeicSceneFocus": "分配、细分场景"
+         },
+         {
+           "word": "part",
+           "coreDifference": "part是部分；segment是细分",
+           "toeicSceneFocus": "组成、市场细分场景"
+         },
+         {
+           "word": "slice",
+           "coreDifference": "slice是切片；segment是片段",
+           "toeicSceneFocus": "切片、细分场景"
+         }
+       ]
+     },
+     {
+       "word": "portion",
+       "phonetic": "/ˈpɔːʃn/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "份额，部分（指分配的一部分）",
+       "toeicSceneFocus": "多出现于分配、比例、份额等语境，是描述分配部分的常用词，托业阅读（财务报告）和听力（分配讨论）中常见",
+       "keyCollocations": [
+         "portion of（……的一部分）",
+         "large portion（大部分）",
+         "portion control（份额控制）"
+       ],
+       "toeicExampleSentences": [
+         "A large portion of the budget is allocated to marketing.（预算的大部分分配给了市场营销。）",
+         "Each team member received a portion of the bonus.（每个团队成员都获得了一部分奖金。）"
+       ],
+       "sceneAssociation": "可以联想‘分配预算时划分各部分（portion）’的画面，或‘市场份额中各部分（portion）’，结合商务中‘分配份额’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "share",
+           "coreDifference": "share是份额；portion是部分",
+           "toeicSceneFocus": "份额、股份场景"
+         },
+         {
+           "word": "segment",
+           "coreDifference": "segment是片段；portion是份额",
+           "toeicSceneFocus": "细分、分配场景"
+         },
+         {
+           "word": "piece",
+           "coreDifference": "piece是件；portion是份额",
+           "toeicSceneFocus": "单件、分配场景"
+         },
+         {
+           "word": "fraction",
+           "coreDifference": "fraction是分数；portion是部分",
+           "toeicSceneFocus": "比例、部分场景"
+         }
+       ]
+     },
+     {
+       "word": "share",
+       "phonetic": "/ʃeər/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "份额，股份（指拥有的部分或股票）",
+       "toeicSceneFocus": "多出现于市场分析、投资、分配等语境，是描述份额或股票的常用词，托业阅读（财务报告）和听力（投资讨论）中常见",
+       "keyCollocations": [
+         "market share（市场份额）",
+         "share of（……的份额）",
+         "share price（股价）"
+       ],
+       "toeicExampleSentences": [
+         "Our company has a 20% market share.（我们公司占有20%的市场份额。）",
+         "The share price increased by 5% today.（股价今天上涨了5%。）"
+       ],
+       "sceneAssociation": "可以联想‘会议室讨论市场份额（share）’的画面，或‘股票经纪人查看股价（share price）’，结合商务中‘份额或股份’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "portion",
+           "coreDifference": "portion是份额；share是股份",
+           "toeicSceneFocus": "分配、股份场景"
+         },
+         {
+           "word": "stock",
+           "coreDifference": "stock是股票；share是股份",
+           "toeicSceneFocus": "股票、投资场景"
+         },
+         {
+           "word": "stake",
+           "coreDifference": "stake是股权；share是份额",
+           "toeicSceneFocus": "股权、利益场景"
+         },
+         {
+           "word": "percentage",
+           "coreDifference": "percentage是百分比；share是份额",
+           "toeicSceneFocus": "百分比、份额场景"
+         }
+       ]
+     },
+     {
+       "word": "percentage",
+       "phonetic": "/pəˈsentɪdʒ/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "百分比（指每百中的比例）",
+       "toeicSceneFocus": "多出现于数据分析、绩效指标、统计报告等语境，是描述比例的常用词，托业阅读（报表）和听力（数字讨论）中常见",
+       "keyCollocations": [
+         "high percentage（高百分比）",
+         "percentage of（……的百分比）",
+         "percentage point（百分点）"
+       ],
+       "toeicExampleSentences": [
+         "A high percentage of customers are satisfied with the service.（大部分客户对服务感到满意。）",
+         "The sales increased by 15 percentage points.（销售额增长了15个百分点。）"
+       ],
+       "sceneAssociation": "可以联想‘图表上显示的百分比（percentage）’的画面，或‘报告中提到的百分比（percentage）’，结合商务中‘比例’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "ratio",
+           "coreDifference": "ratio是比率；percentage是百分比",
+           "toeicSceneFocus": "比率、比例场景"
+         },
+         {
+           "word": "proportion",
+           "coreDifference": "proportion是比例；percentage是百分比",
+           "toeicSceneFocus": "比例、份额场景"
+         },
+         {
+           "word": "share",
+           "coreDifference": "share是份额；percentage是百分比",
+           "toeicSceneFocus": "份额、百分比场景"
+         },
+         {
+           "word": "rate",
+           "coreDifference": "rate是率；percentage是百分比",
+           "toeicSceneFocus": "比率、率场景"
+         }
+       ]
+     },
+     {
+       "word": "ratio",
+       "phonetic": "/ˈreɪʃiəʊ/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "比率，比例（指两个数量的比较）",
+       "toeicSceneFocus": "多出现于财务分析、数据比较、绩效指标等语境，是描述比例关系的常用词，托业阅读（报告）和听力（数据讨论）中常见",
+       "keyCollocations": [
+         "ratio of（……的比率）",
+         "debt ratio（负债率）",
+         "ratio between（……之间的比率）"
+       ],
+       "toeicExampleSentences": [
+         "The debt ratio has decreased this year.（负债率今年有所下降。）",
+         "The ratio of men to women is 2:1.（男女比例为2:1。）"
+       ],
+       "sceneAssociation": "可以联想‘财务报表上的比率（ratio）分析’的画面，或‘讨论男女比例（ratio）’，结合商务中‘比较关系’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "percentage",
+           "coreDifference": "percentage是百分比；ratio是比率",
+           "toeicSceneFocus": "百分比、比率场景"
+         },
+         {
+           "word": "proportion",
+           "coreDifference": "proportion是比例；ratio是比率",
+           "toeicSceneFocus": "比例、比率场景"
+         },
+         {
+           "word": "rate",
+           "coreDifference": "rate是率；ratio是比率",
+           "toeicSceneFocus": "比率、率场景"
+         },
+         {
+           "word": "fraction",
+           "coreDifference": "fraction是分数；ratio是比率",
+           "toeicSceneFocus": "分数、比率场景"
+         }
+       ]
+     },
+     {
+       "word": "rate",
+       "phonetic": "/reɪt/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "率，比率（指单位时间内的数量或速度）",
+       "toeicSceneFocus": "多出现于财务、速度、效率等语境，是描述比率或速度的常用词，托业阅读（报告）和听力（速度讨论）中常见",
+       "keyCollocations": [
+         "exchange rate（汇率）",
+         "interest rate（利率）",
+         "at a rapid rate（以快速率）"
+       ],
+       "toeicExampleSentences": [
+         "The interest rate has been reduced.（利率已下调。）",
+         "We need to increase production at a faster rate.（我们需要以更快的速度提高产量。）"
+       ],
+       "sceneAssociation": "可以联想‘屏幕上显示汇率（rate）变化’的画面，或‘讨论生产率（rate）’，结合商务中‘比率或速度’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "ratio",
+           "coreDifference": "ratio是比率；rate是率",
+           "toeicSceneFocus": "比率、率场景"
+         },
+         {
+           "word": "percentage",
+           "coreDifference": "percentage是百分比；rate是率",
+           "toeicSceneFocus": "百分比、率场景"
+         },
+         {
+           "word": "speed",
+           "coreDifference": "speed是速度；rate是速率",
+           "toeicSceneFocus": "速度、速率场景"
+         },
+         {
+           "word": "proportion",
+           "coreDifference": "proportion是比例；rate是率",
+           "toeicSceneFocus": "比例、率场景"
+         }
+       ]
+     },
+     {
+       "word": "amount",
+       "phonetic": "/əˈmaʊnt/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "数量，金额（指总量或总金额）",
+       "toeicSceneFocus": "多出现于财务、采购、数量统计等语境，是描述总量的通用词，托业阅读（发票）和听力（数量讨论）中常见",
+       "keyCollocations": [
+         "large amount（大量）",
+         "amount of（……的数量）",
+         "total amount（总金额）"
+       ],
+       "toeicExampleSentences": [
+         "The total amount due is $500.（应付总金额为500美元。）",
+         "A large amount of time was spent on planning.（大量时间花在了规划上。）"
+       ],
+       "sceneAssociation": "可以联想‘发票上的总金额（amount）’的画面，或‘讨论采购数量（amount）’，结合商务中‘总量或总金额’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "quantity",
+           "coreDifference": "quantity是数量；amount是总量",
+           "toeicSceneFocus": "数量、总量场景"
+         },
+         {
+           "word": "sum",
+           "coreDifference": "sum是求和；amount是总额",
+           "toeicSceneFocus": "求和、总额场景"
+         },
+         {
+           "word": "number",
+           "coreDifference": "number是数字；amount是数量",
+           "toeicSceneFocus": "数字、数量场景"
+         },
+         {
+           "word": "volume",
+           "coreDifference": "volume是体积；amount是数量",
+           "toeicSceneFocus": "体积、数量场景"
+         }
+       ]
+     },
+     {
+       "word": "quantity",
+       "phonetic": "/ˈkwɒntəti/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "数量，量（指物品的多少）",
+       "toeicSceneFocus": "多出现于采购、生产、库存等语境，是描述数量的常用词，托业阅读（订单）和听力（数量讨论）中常见",
+       "keyCollocations": [
+         "large quantity（大量）",
+         "quantity of（……的数量）",
+         "quantity control（数量控制）"
+       ],
+       "toeicExampleSentences": [
+         "We ordered a large quantity of supplies.（我们订购了大量物资。）",
+         "The quality is more important than the quantity.（质量比数量更重要。）"
+       ],
+       "sceneAssociation": "可以联想‘仓库中清点数量（quantity）’的画面，或‘采购订单上的数量（quantity）’，结合商务中‘物品多少’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "amount",
+           "coreDifference": "amount是总量；quantity是数量",
+           "toeicSceneFocus": "总量、数量场景"
+         },
+         {
+           "word": "number",
+           "coreDifference": "number是数字；quantity是数量",
+           "toeicSceneFocus": "数字、数量场景"
+         },
+         {
+           "word": "volume",
+           "coreDifference": "volume是体积；quantity是数量",
+           "toeicSceneFocus": "体积、数量场景"
+         },
+         {
+           "word": "stock",
+           "coreDifference": "stock是库存；quantity是数量",
+           "toeicSceneFocus": "库存、数量场景"
+         }
+       ]
+     },
+     {
+       "word": "number",
+       "phonetic": "/ˈnʌmbər/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "数字，数量（指计数的数字或数量）",
+       "toeicSceneFocus": "多出现于计数、编号、统计等语境，是描述数字的通用词，托业阅读（表格）和听力（数字确认）中常见",
+       "keyCollocations": [
+         "number of（……的数量）",
+         "phone number（电话号码）",
+         "large number（大量）"
+       ],
+       "toeicExampleSentences": [
+         "A large number of customers attended the event.（大量客户参加了活动。）",
+         "Please provide your reference number.（请提供您的参考号码。）"
+       ],
+       "sceneAssociation": "可以联想‘填写表格时输入电话号码（number）’的画面，或‘报告中显示的数字（number）’，结合商务中‘计数或数字’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "quantity",
+           "coreDifference": "quantity是数量；number是数字",
+           "toeicSceneFocus": "数量、数字场景"
+         },
+         {
+           "word": "amount",
+           "coreDifference": "amount是总量；number是数字",
+           "toeicSceneFocus": "总量、数字场景"
+         },
+         {
+           "word": "figure",
+           "coreDifference": "figure是数值；number是数字",
+           "toeicSceneFocus": "数值、数字场景"
+         },
+         {
+           "word": "count",
+           "coreDifference": "count是计数；number是数字",
+           "toeicSceneFocus": "计数、数字场景"
+         }
+       ]
+     },
+     {
+       "word": "count",
+       "phonetic": "/kaʊnt/",
+       "partOfSpeech": "v. 动词",
+       "coreMeaning": "计数，计算（指逐个数或包括）",
+       "toeicSceneFocus": "多出现于库存盘点、统计、选举等语境，是描述计数行为的动词，托业阅读（库存报告）和听力（计数讨论）中常见",
+       "keyCollocations": [
+         "count on（指望）",
+         "count the number（计数）",
+         "head count（人数统计）"
+       ],
+       "toeicExampleSentences": [
+         "Please count the items in the inventory.（请清点库存中的物品。）",
+         "We can count on your support for this project.（我们可以指望你对这个项目的支持。）"
+       ],
+       "sceneAssociation": "可以联想‘仓库管理员计数（count）库存’的画面，或‘会议中统计人数（count）’，结合商务中‘逐个数’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "number",
+           "coreDifference": "number是数字；count是计数行为",
+           "toeicSceneFocus": "数字、计数场景"
+         },
+         {
+           "word": "tally",
+           "coreDifference": "tally是统计；count是计数",
+           "toeicSceneFocus": "统计、计数场景"
+         },
+         {
+           "word": "calculate",
+           "coreDifference": "calculate是计算；count是计数",
+           "toeicSceneFocus": "计算、计数场景"
+         },
+         {
+           "word": "reckon",
+           "coreDifference": "reckon是估算；count是计数",
+           "toeicSceneFocus": "估算、计数场景"
+         }
+       ]
+     },
+     {
+       "word": "sum",
+       "phonetic": "/sʌm/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "总数，和（指总和或金额）",
+       "toeicSceneFocus": "多出现于财务计算、数学、总结等语境，是描述总和的常用词，托业阅读（财务报告）和听力（计算讨论）中常见",
+       "keyCollocations": [
+         "sum of（……的总和）",
+         "large sum（巨款）",
+         "sum up（总结）"
+       ],
+       "toeicExampleSentences": [
+         "The sum of all expenses is $2,000.（所有开支的总和是2000美元。）",
+         "He inherited a large sum of money.（他继承了一大笔钱。）"
+       ],
+       "sceneAssociation": "可以联想‘财务报表上计算总和（sum）’的画面，或‘会议中总结（sum up）要点’，结合商务中‘总和或总结’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "total",
+           "coreDifference": "total是总数；sum是总和",
+           "toeicSceneFocus": "总数、总和场景"
+         },
+         {
+           "word": "amount",
+           "coreDifference": "amount是总量；sum是总和",
+           "toeicSceneFocus": "总量、总和场景"
+         },
+         {
+           "word": "aggregate",
+           "coreDifference": "aggregate是合计；sum是总和",
+           "toeicSceneFocus": "合计、总和场景"
+         },
+         {
+           "word": "summary",
+           "coreDifference": "summary是摘要；sum是总和",
+           "toeicSceneFocus": "摘要、总结场景"
+         }
+       ]
+     },
+     {
+       "word": "aggregate",
+       "phonetic": "/ˈæɡrɪɡət/",
+       "partOfSpeech": "adj./v. 形容词/动词",
+       "coreMeaning": "合计的；合计（指总计或集合）",
+       "toeicSceneFocus": "多出现于财务、数据汇总、统计等语境，是描述合计的正式词，托业阅读（报告）和听力（数据讨论）中常见",
+       "keyCollocations": [
+         "aggregate amount（总金额）",
+         "aggregate data（汇总数据）",
+         "in aggregate（总体上）"
+       ],
+       "toeicExampleSentences": [
+         "The aggregate sales for the quarter were impressive.（本季度的总销售额令人印象深刻。）",
+         "We need to aggregate all the data into one report.（我们需要将所有数据汇总到一份报告中。）"
+       ],
+       "sceneAssociation": "可以联想‘将所有数据合计（aggregate）成总表’的画面，或‘讨论总体（in aggregate）数据’，结合商务中‘总计或集合’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "total",
+           "coreDifference": "total是总数；aggregate是合计",
+           "toeicSceneFocus": "总数、合计场景"
+         },
+         {
+           "word": "sum",
+           "coreDifference": "sum是总和；aggregate是汇总",
+           "toeicSceneFocus": "总和、汇总场景"
+         },
+         {
+           "word": "overall",
+           "coreDifference": "overall是整体的；aggregate是合计的",
+           "toeicSceneFocus": "整体、合计场景"
+         },
+         {
+           "word": "collect",
+           "coreDifference": "collect是收集；aggregate是汇总",
+           "toeicSceneFocus": "收集、汇总场景"
+         }
+       ]
+     },
+     {
+       "word": "average",
+       "phonetic": "/ˈævərɪdʒ/",
+       "partOfSpeech": "n./adj. 名词/形容词",
+       "coreMeaning": "平均；平均的（指总和除以数量的结果）",
+       "toeicSceneFocus": "多出现于数据分析、绩效评估、统计等语境，是描述平均值的常用词，托业阅读（报告）和听力（数据讨论）中常见",
+       "keyCollocations": [
+         "on average（平均而言）",
+         "average of（……的平均）",
+         "above average（高于平均）"
+       ],
+       "toeicExampleSentences": [
+         "On average, employees work 40 hours per week.（平均而言，员工每周工作40小时。）",
+         "The average score improved by 10%.（平均分提高了10%。）"
+       ],
+       "sceneAssociation": "可以联想‘图表上显示的平均值（average）’的画面，或‘绩效报告中的平均（average）数据’，结合商务中‘平均值’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "mean",
+           "coreDifference": "mean是平均数；average是平均",
+           "toeicSceneFocus": "统计平均、数值场景"
+         },
+         {
+           "word": "median",
+           "coreDifference": "median是中位数；average是平均",
+           "toeicSceneFocus": "中位数、统计场景"
+         },
+         {
+           "word": "normal",
+           "coreDifference": "normal是正常的；average是平均的",
+           "toeicSceneFocus": "正常水平、平均场景"
+         },
+         {
+           "word": "typical",
+           "coreDifference": "typical是典型的；average是平均的",
+           "toeicSceneFocus": "典型、平均场景"
+         }
+       ]
+     },
+     {
+       "word": "mean",
+       "phonetic": "/miːn/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "平均数，平均值（指数学上的平均）",
+       "toeicSceneFocus": "多出现于数学、统计、数据分析等语境，是描述平均数的专用词，托业阅读（技术报告）和听力（数据讨论）中常见",
+       "keyCollocations": [
+         "arithmetic mean（算术平均数）",
+         "mean of（……的平均数）",
+         "mean value（平均值）"
+       ],
+       "toeicExampleSentences": [
+         "The mean of the data set is 25.（数据集的平均数是25。）",
+         "We calculate the mean to analyze the trend.（我们计算平均数来分析趋势。）"
+       ],
+       "sceneAssociation": "可以联想‘统计图表上标出的平均数（mean）’的画面，或‘计算数据的平均数（mean）’，结合商务中‘数学平均值’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "average",
+           "coreDifference": "average是平均；mean是平均数",
+           "toeicSceneFocus": "平均、平均数场景"
+         },
+         {
+           "word": "median",
+           "coreDifference": "median是中位数；mean是平均数",
+           "toeicSceneFocus": "中位数、统计场景"
+         },
+         {
+           "word": "norm",
+           "coreDifference": "norm是标准；mean是平均数",
+           "toeicSceneFocus": "标准、基准场景"
+         },
+         {
+           "word": "typical",
+           "coreDifference": "typical是典型的；mean是平均数",
+           "toeicSceneFocus": "典型、平均场景"
+         }
+       ]
+     },
+     {
+       "word": "median",
+       "phonetic": "/ˈmiːdiən/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "中位数（指排序后位于中间的值）",
+       "toeicSceneFocus": "多出现于统计分析、数据报告、市场研究等语境，是描述中位数的专用词，托业阅读（技术报告）和听力（数据讨论）中常见",
+       "keyCollocations": [
+         "median of（……的中位数）",
+         "median income（中位收入）",
+         "median value（中位值）"
+       ],
+       "toeicExampleSentences": [
+         "The median income for the area is $50,000.（该地区的中位收入为5万美元。）",
+         "We use the median to avoid skew from outliers.（我们使用中位数来避免异常值的影响。）"
+       ],
+       "sceneAssociation": "可以联想‘统计报告中显示的中位数（median）’的画面，或‘讨论收入中位数（median）’，结合商务中‘中位数值’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "mean",
+           "coreDifference": "mean是平均数；median是中位数",
+           "toeicSceneFocus": "平均数、中位数场景"
+         },
+         {
+           "word": "average",
+           "coreDifference": "average是平均；median是中位数",
+           "toeicSceneFocus": "平均、中位数场景"
+         },
+         {
+           "word": "center",
+           "coreDifference": "center是中心；median是中间值",
+           "toeicSceneFocus": "中心、中间场景"
+         },
+         {
+           "word": "middle",
+           "coreDifference": "middle是中间；median是中位数",
+           "toeicSceneFocus": "中间、中位数场景"
+         }
+       ]
+     },
+     {
+       "word": "mode",
+       "phonetic": "/məʊd/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "众数（指数据中出现最频繁的值）",
+       "toeicSceneFocus": "多出现于统计分析、数据报告等语境，是描述众数的专用词，托业阅读（技术文档）和听力（数据讨论）中常见",
+       "keyCollocations": [
+         "mode of（……的众数）",
+         "modal value（众数值）",
+         "frequency mode（频率众数）"
+       ],
+       "toeicExampleSentences": [
+         "The mode of the data set is 15.（数据集的众数是15。）",
+         "We calculate the mode to identify the most common value.（我们计算众数以识别最常见的值。）"
+       ],
+       "sceneAssociation": "可以联想‘统计分析中计算众数（mode）’的画面，或‘讨论最常见的值（mode）’，结合商务中‘出现频率最高的值’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "mean",
+           "coreDifference": "mean是平均数；mode是众数",
+           "toeicSceneFocus": "平均数、众数场景"
+         },
+         {
+           "word": "average",
+           "coreDifference": "average是平均；mode是众数",
+           "toeicSceneFocus": "平均、众数场景"
+         },
+         {
+           "word": "typical",
+           "coreDifference": "typical是典型的；mode是众数",
+           "toeicSceneFocus": "典型、众数场景"
+         },
+         {
+           "word": "norm",
+           "coreDifference": "norm是标准；mode是众数",
+           "toeicSceneFocus": "标准、众数场景"
+         }
+       ]
+     },
+     {
+       "word": "range",
+       "phonetic": "/reɪndʒ/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "范围，幅度（指从最低到最高值的区间）",
+       "toeicSceneFocus": "多出现于数据分析、价格区间、温度范围等语境，是描述范围的常用词，托业阅读（图表）和听力（范围讨论）中常见",
+       "keyCollocations": [
+         "price range（价格范围）",
+         "range of（……的范围）",
+         "full range（全范围）"
+       ],
+       "toeicExampleSentences": [
+         "The price range is between $10 and $20.（价格范围在10到20美元之间。）",
+         "We offer a wide range of products.（我们提供各种产品。）"
+       ],
+       "sceneAssociation": "可以联想‘产品目录中显示价格范围（range）’的画面，或‘温度计上显示的范围（range）’，结合商务中‘数值区间’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "scope",
+           "coreDifference": "scope是范围；range是区间",
+           "toeicSceneFocus": "范围、区间场景"
+         },
+         {
+           "word": "extent",
+           "coreDifference": "extent是程度；range是范围",
+           "toeicSceneFocus": "程度、范围场景"
+         },
+         {
+           "word": "spectrum",
+           "coreDifference": "spectrum是光谱；range是范围",
+           "toeicSceneFocus": "光谱、范围场景"
+         },
+         {
+           "word": "variety",
+           "coreDifference": "variety是多样性；range是范围",
+           "toeicSceneFocus": "多样性、范围场景"
+         }
+       ]
+     },
+     {
+       "word": "minimum",
+       "phonetic": "/ˈmɪnɪməm/",
+       "partOfSpeech": "n./adj. 名词/形容词",
+       "coreMeaning": "最小值；最低的（指最低或最小的数量）",
+       "toeicSceneFocus": "多出现于标准设定、最低要求、数据极值等语境，是描述最低限的常用词，托业阅读（政策）和听力（要求讨论）中常见",
+       "keyCollocations": [
+         "minimum wage（最低工资）",
+         "minimum requirement（最低要求）",
+         "at a minimum（至少）"
+       ],
+       "toeicExampleSentences": [
+         "The minimum age for employment is 18.（就业最低年龄为18岁。）",
+         "We need a minimum of 10 participants.（我们至少需要10名参与者。）"
+       ],
+       "sceneAssociation": "可以联想‘最低工资标准（minimum wage）通知’的画面，或‘会议中讨论最低要求（minimum）’，结合商务中‘最低限’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "lowest",
+           "coreDifference": "lowest是最低的；minimum是最小值",
+           "toeicSceneFocus": "最低、最小值场景"
+         },
+         {
+           "word": "least",
+           "coreDifference": "least是最少的；minimum是最小值",
+           "toeicSceneFocus": "最少、最小值场景"
+         },
+         {
+           "word": "smallest",
+           "coreDifference": "smallest是最小的；minimum是最小值",
+           "toeicSceneFocus": "最小、最小值场景"
+         },
+         {
+           "word": "bottom",
+           "coreDifference": "bottom是底部；minimum是最小值",
+           "toeicSceneFocus": "底部、最小值场景"
+         }
+       ]
+     },
+     {
+       "word": "maximum",
+       "phonetic": "/ˈmæksɪməm/",
+       "partOfSpeech": "n./adj. 名词/形容词",
+       "coreMeaning": "最大值；最高的（指最高或最大的数量）",
+       "toeicSceneFocus": "多出现于极限设定、最高标准、数据极值等语境，是描述最高限的常用词，托业阅读（政策）和听力（限制讨论）中常见",
+       "keyCollocations": [
+         "maximum capacity（最大容量）",
+         "maximum limit（最高限额）",
+         "at maximum（最多）"
+       ],
+       "toeicExampleSentences": [
+         "The maximum capacity of the room is 50 people.（房间的最大容量为50人。）",
+         "Speed limit is a maximum of 60 mph.（限速最高为每小时60英里。）"
+       ],
+       "sceneAssociation": "可以联想‘会议室标牌显示最大容量（maximum）’的画面，或‘讨论最高限额（maximum）’，结合商务中‘最高限’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "highest",
+           "coreDifference": "highest是最高的；maximum是最大值",
+           "toeicSceneFocus": "最高、最大值场景"
+         },
+         {
+           "word": "greatest",
+           "coreDifference": "greatest是最大的；maximum是最大值",
+           "toeicSceneFocus": "最大、最大值场景"
+         },
+         {
+           "word": "peak",
+           "coreDifference": "peak是峰值；maximum是最大值",
+           "toeicSceneFocus": "峰值、最大值场景"
+         },
+         {
+           "word": "top",
+           "coreDifference": "top是顶部；maximum是最大值",
+           "toeicSceneFocus": "顶部、最大值场景"
+         }
+       ]
+     },
+     {
+       "word": "high",
+       "phonetic": "/haɪ/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "高的（指高度、数值或水平较高的）",
+       "toeicSceneFocus": "多出现于描述数值、水平、质量等语境，是描述高程度的通用词，托业阅读（报告）和听力（描述）中常见",
+       "keyCollocations": [
+         "high quality（高质量）",
+         "high level（高水平）",
+         "high cost（高成本）"
+       ],
+       "toeicExampleSentences": [
+         "The company maintains high standards of quality.（公司保持高质量标准。）",
+         "Sales figures are high this quarter.（本季度销售数字很高。）"
+       ],
+       "sceneAssociation": "可以联想‘产品展示高质量（high quality）’的画面，或‘销售数字很高（high）’，结合商务中‘高程度’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "tall",
+           "coreDifference": "tall是身高高；high是高度高",
+           "toeicSceneFocus": "身高、高度场景"
+         },
+         {
+           "word": "elevated",
+           "coreDifference": "elevated是升高的；high是高的",
+           "toeicSceneFocus": "提升、高度场景"
+         },
+         {
+           "word": "peak",
+           "coreDifference": "peak是峰值；high是高",
+           "toeicSceneFocus": "峰值、高度场景"
+         },
+         {
+           "word": "upper",
+           "coreDifference": "upper是上方的；high是高的",
+           "toeicSceneFocus": "上方、高度场景"
+         }
+       ]
+     },
+     {
+       "word": "low",
+       "phonetic": "/ləʊ/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "低的（指高度、数值或水平较低的）",
+       "toeicSceneFocus": "多出现于描述数值、水平、成本等语境，是描述低程度的通用词，托业阅读（报告）和听力（描述）中常见",
+       "keyCollocations": [
+         "low cost（低成本）",
+         "low level（低水平）",
+         "low price（低价）"
+       ],
+       "toeicExampleSentences": [
+         "We need to keep costs as low as possible.（我们需要将成本保持在尽可能低的水平。）",
+         "The temperature is low today.（今天温度很低。）"
+       ],
+       "sceneAssociation": "可以联想‘低价促销（low price）标签’的画面，或‘成本很低（low）的项目’，结合商务中‘低程度’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "short",
+           "coreDifference": "short是短的；low是低的",
+           "toeicSceneFocus": "长度、高度场景"
+         },
+         {
+           "word": "reduced",
+           "coreDifference": "reduced是减少的；low是低的",
+           "toeicSceneFocus": "减少、低水平场景"
+         },
+         {
+           "word": "minimal",
+           "coreDifference": "minimal是最小的；low是低的",
+           "toeicSceneFocus": "最小、低程度场景"
+         },
+         {
+           "word": "bottom",
+           "coreDifference": "bottom是底部的；low是低的",
+           "toeicSceneFocus": "底部、低水平场景"
+         }
+       ]
+     },
+     {
+       "word": "top",
+       "phonetic": "/tɒp/",
+       "partOfSpeech": "n./adj. 名词/形容词",
+       "coreMeaning": "顶部；最高的（指最高位置或程度）",
+       "toeicSceneFocus": "多出现于排名、位置、质量等语境，是描述最高点的常用词，托业阅读（排名）和听力（位置描述）中常见",
+       "keyCollocations": [
+         "top priority（首要任务）",
+         "top manager（高层管理者）",
+         "top of（……的顶部）"
+       ],
+       "toeicExampleSentences": [
+         "Customer satisfaction is our top priority.（客户满意度是我们的首要任务。）",
+         "She is one of the top performers in the company.（她是公司表现最佳的员工之一。）"
+       ],
+       "sceneAssociation": "可以联想‘会议中强调首要任务（top priority）’的画面，或‘高层管理者（top manager）开会’，结合商务中‘最高点或首要’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "highest",
+           "coreDifference": "highest是最高的；top是顶部",
+           "toeicSceneFocus": "最高、顶部场景"
+         },
+         {
+           "word": "peak",
+           "coreDifference": "peak是峰值；top是顶部",
+           "toeicSceneFocus": "峰值、顶部场景"
+         },
+         {
+           "word": "upper",
+           "coreDifference": "upper是上方的；top是顶部",
+           "toeicSceneFocus": "上方、顶部场景"
+         },
+         {
+           "word": "chief",
+           "coreDifference": "chief是主要的；top是高层的",
+           "toeicSceneFocus": "首席、高层场景"
+         }
+       ]
+     },
+     {
+       "word": "bottom",
+       "phonetic": "/ˈbɒtəm/",
+       "partOfSpeech": "n./adj. 名词/形容词",
+       "coreMeaning": "底部；最低的（指最低位置或程度）",
+       "toeicSceneFocus": "多出现于位置描述、排名、基础等语境，是描述最低点的常用词，托业阅读（报告）和听力（位置描述）中常见",
+       "keyCollocations": [
+         "at the bottom of（在……底部）",
+         "bottom line（底线）",
+         "bottom price（最低价）"
+       ],
+       "toeicExampleSentences": [
+         "The bottom line is that we need to cut costs.（底线是我们需要削减成本。）",
+         "Please find the details at the bottom of the page.（请在页面底部找到详情。）"
+       ],
+       "sceneAssociation": "可以联想‘合同上的底线（bottom line）’的画面，或‘页面底部（bottom）的条款’，结合商务中‘最低点或基础’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "lowest",
+           "coreDifference": "lowest是最低的；bottom是底部",
+           "toeicSceneFocus": "最低、底部场景"
+         },
+         {
+           "word": "base",
+           "coreDifference": "base是基础；bottom是底部",
+           "toeicSceneFocus": "基础、底部场景"
+         },
+         {
+           "word": "minimum",
+           "coreDifference": "minimum是最小值；bottom是底部",
+           "toeicSceneFocus": "最小值、底部场景"
+         },
+         {
+           "word": "foot",
+           "coreDifference": "foot是脚下；bottom是底部",
+           "toeicSceneFocus": "脚下、底部场景"
+         }
+       ]
+     },
+     {
+       "word": "first",
+       "phonetic": "/fɜːrst/",
+       "partOfSpeech": "adj./adv. 形容词/副词",
+       "coreMeaning": "第一；首先（指顺序中的第一个）",
+       "toeicSceneFocus": "多出现于时间顺序、排名、优先级等语境，是描述首位的通用词，托业阅读（指示）和听力（顺序讨论）中常见",
+       "keyCollocations": [
+         "first of all（首先）",
+         "first place（第一名）",
+         "first come, first served（先到先得）"
+       ],
+       "toeicExampleSentences": [
+         "First of all, let me welcome everyone.（首先，让我欢迎大家。）",
+         "She finished in first place in the competition.（她在比赛中获得了第一名。）"
+       ],
+       "sceneAssociation": "可以联想‘会议上首先（first）发言’的画面，或‘排名中第一（first）名’，结合商务中‘首位或首先’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "initial",
+           "coreDifference": "initial是初始的；first是第一",
+           "toeicSceneFocus": "初始、首先场景"
+         },
+         {
+           "word": "primary",
+           "coreDifference": "primary是主要的；first是第一",
+           "toeicSceneFocus": "主要、首要场景"
+         },
+         {
+           "word": "leading",
+           "coreDifference": "leading是领先的；first是第一",
+           "toeicSceneFocus": "领先、第一场景"
+         },
+         {
+           "word": "foremost",
+           "coreDifference": "foremost是最重要的；first是第一",
+           "toeicSceneFocus": "最重要、第一场景"
+         }
+       ]
+     },
+     {
+       "word": "last",
+       "phonetic": "/lɑːst/",
+       "partOfSpeech": "adj./adv. 形容词/副词",
+       "coreMeaning": "最后；上一个（指顺序中的最后一个）",
+       "toeicSceneFocus": "多出现于时间顺序、排名、最终状态等语境，是描述末位的通用词，托业阅读（通知）和听力（顺序讨论）中常见",
+       "keyCollocations": [
+         "last but not least（最后但同样重要）",
+         "last week（上周）",
+         "at last（终于）"
+       ],
+       "toeicExampleSentences": [
+         "Last but not least, I would like to thank the organizers.（最后但同样重要的是，我要感谢组织者。）",
+         "The last meeting was held in March.（上次会议于3月举行。）"
+       ],
+       "sceneAssociation": "可以联想‘会议中最后（last）发言’的画面，或‘上周（last week）的报告’，结合商务中‘末尾或上一个’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "final",
+           "coreDifference": "final是最终的；last是最后的",
+           "toeicSceneFocus": "最终、最后场景"
+         },
+         {
+           "word": "ultimate",
+           "coreDifference": "ultimate是终极的；last是最后的",
+           "toeicSceneFocus": "终极、最后场景"
+         },
+         {
+           "word": "eventual",
+           "coreDifference": "eventual是最终的；last是最后的",
+           "toeicSceneFocus": "最终、最后场景"
+         },
+         {
+           "word": "concluding",
+           "coreDifference": "concluding是结束的；last是最后的",
+           "toeicSceneFocus": "结束、最后场景"
+         }
+       ]
+     },
+     {
+       "word": "middle",
+       "phonetic": "/ˈmɪdl/",
+       "partOfSpeech": "n./adj. 名词/形容词",
+       "coreMeaning": "中间；中部的（指中间位置或时间）",
+       "toeicSceneFocus": "多出现于位置描述、时间点、顺序等语境，是描述中间的常用词，托业阅读（说明）和听力（位置描述）中常见",
+       "keyCollocations": [
+         "in the middle of（在……中间）",
+         "middle manager（中层管理者）",
+         "middle of the night（半夜）"
+       ],
+       "toeicExampleSentences": [
+         "The meeting is in the middle of the afternoon.（会议在下午中间时段。）",
+         "He is a middle manager in the company.（他是公司的中层管理者。）"
+       ],
+       "sceneAssociation": "可以联想‘中层管理者（middle manager）开会’的画面，或‘会议在下午中间（middle）时段’，结合商务中‘中间位置或时间’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "center",
+           "coreDifference": "center是中心；middle是中间",
+           "toeicSceneFocus": "中心、中间场景"
+         },
+         {
+           "word": "mid",
+           "coreDifference": "mid是中期的；middle是中间",
+           "toeicSceneFocus": "中期、中间场景"
+         },
+         {
+           "word": "medium",
+           "coreDifference": "medium是中等的；middle是中间",
+           "toeicSceneFocus": "中等、中间场景"
+         },
+         {
+           "word": "average",
+           "coreDifference": "average是平均的；middle是中间",
+           "toeicSceneFocus": "平均、中间场景"
+         }
+       ]
+     },
+     {
+       "word": "center",
+       "phonetic": "/ˈsentər/",
+       "partOfSpeech": "n. 名词",
+       "coreMeaning": "中心，中央（指核心位置或地点）",
+       "toeicSceneFocus": "多出现于位置描述、组织核心、城市中心等语境，是描述中心的常用词，托业阅读（地图、通知）和听力（位置讨论）中常见",
+       "keyCollocations": [
+         "city center（市中心）",
+         "research center（研究中心）",
+         "at the center of（在……中心）"
+       ],
+       "toeicExampleSentences": [
+         "The office is located in the city center.（办公室位于市中心。）",
+         "The research center focuses on new technologies.（研究中心专注于新技术。）"
+       ],
+       "sceneAssociation": "可以联想‘办公室位于市中心（city center）’的画面，或‘研究中心（research center）’，结合商务中‘核心位置或地点’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "middle",
+           "coreDifference": "middle是中间；center是中心",
+           "toeicSceneFocus": "中间、中心场景"
+         },
+         {
+           "word": "core",
+           "coreDifference": "core是核心；center是中心",
+           "toeicSceneFocus": "核心、中心场景"
+         },
+         {
+           "word": "heart",
+           "coreDifference": "heart是心脏；center是中心",
+           "toeicSceneFocus": "心脏、中心场景"
+         },
+         {
+           "word": "hub",
+           "coreDifference": "hub是枢纽；center是中心",
+           "toeicSceneFocus": "枢纽、中心场景"
+         }
+       ]
+     },
+     {
+       "word": "front",
+       "phonetic": "/frʌnt/",
+       "partOfSpeech": "n./adj. 名词/形容词",
+       "coreMeaning": "前面；前部的（指位置在前的）",
+       "toeicSceneFocus": "多出现于位置描述、排队、建筑等语境，是描述前部的常用词，托业阅读（指示）和听力（位置讨论）中常见",
+       "keyCollocations": [
+         "in front of（在……前面）",
+         "front desk（前台）",
+         "front line（前线）"
+       ],
+       "toeicExampleSentences": [
+         "Please wait in front of the building.（请在建筑物前等待。）",
+         "The front desk is open24 hours.（前台24小时开放。）"
+       ],
+       "sceneAssociation": "可以联想‘酒店前台（front desk）’的画面，或‘在建筑物前（front）等待’，结合商务中‘前部位置’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "forefront",
+           "coreDifference": "forefront是最前沿；front是前面",
+           "toeicSceneFocus": "前沿、前面场景"
+         },
+         {
+           "word": "leading",
+           "coreDifference": "leading是领先的；front是前部的",
+           "toeicSceneFocus": "领先、前部场景"
+         },
+         {
+           "word": "forward",
+           "coreDifference": "forward是向前的；front是前部的",
+           "toeicSceneFocus": "向前、前部场景"
+         },
+         {
+           "word": "before",
+           "coreDifference": "before是在……之前；front是前面",
+           "toeicSceneFocus": "之前、前面场景"
+         }
+       ]
+     },
+     {
+       "word": "back",
+       "phonetic": "/bæk/",
+       "partOfSpeech": "n./adj./adv. 名词/形容词/副词",
+       "coreMeaning": "后面；后部的；向后（指位置在后或返回）",
+       "toeicSceneFocus": "多出现于位置描述、返回、支持等语境，是描述后部或返回的通用词，托业阅读（指示）和听力（位置讨论）中常见",
+       "keyCollocations": [
+         "at the back of（在……后面）",
+         "back up（支持）",
+         "back to work（返回工作）"
+       ],
+       "toeicExampleSentences": [
+         "Please go to the back of the line.（请到队伍后面。）",
+         "We need to back up the data regularly.（我们需要定期备份数据。）"
+       ],
+       "sceneAssociation": "可以联想‘排队时到队伍后面（back）’的画面，或‘支持（back up）团队决定’，结合商务中‘后部或返回’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "rear",
+           "coreDifference": "rear是后方；back是后面",
+           "toeicSceneFocus": "后方、后面场景"
+         },
+         {
+           "word": "reverse",
+           "coreDifference": "reverse是反向；back是向后",
+           "toeicSceneFocus": "反向、向后场景"
+         },
+         {
+           "word": "support",
+           "coreDifference": "support是支持；back是支持",
+           "toeicSceneFocus": "支持、后盾场景"
+         },
+         {
+           "word": "return",
+           "coreDifference": "return是返回；back是回",
+           "toeicSceneFocus": "返回、回程场景"
+         }
+       ]
+     },
+     {
+       "word": "left",
+       "phonetic": "/left/",
+       "partOfSpeech": "n./adj./adv. 名词/形容词/副词",
+       "coreMeaning": "左边；左侧的；向左（指左侧位置或方向）",
+       "toeicSceneFocus": "多出现于方向指引、位置描述等语境，是描述左侧的通用词，托业阅读（地图）和听力（方向讨论）中常见",
+       "keyCollocations": [
+         "turn left（向左转）",
+         "on the left side（在左侧）",
+         "left behind（留下）"
+       ],
+       "toeicExampleSentences": [
+         "Turn left at the next intersection.（在下一个十字路口向左转。）",
+         "The office is on the left side of the street.（办公室在街道左侧。）"
+       ],
+       "sceneAssociation": "可以联想‘地图上指示向左转（turn left）’的画面，或‘办公室在左侧（left side）’，结合商务中‘左侧位置或方向’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "leftward",
+           "coreDifference": "leftward是向左的；left是左侧",
+           "toeicSceneFocus": "向左、左侧场景"
+         },
+         {
+           "word": "left-hand",
+           "coreDifference": "left-hand是左手侧；left是左侧",
+           "toeicSceneFocus": "左手侧、左侧场景"
+         },
+         {
+           "word": "port",
+           "coreDifference": "port是左舷；left是左侧",
+           "toeicSceneFocus": "航海、左侧场景"
+         },
+         {
+           "word": "starboard",
+           "coreDifference": "starboard是右舷；left是左舷",
+           "toeicSceneFocus": "航海、右侧场景"
+         }
+       ]
+     },
+     {
+       "word": "right",
+       "phonetic": "/raɪt/",
+       "partOfSpeech": "n./adj./adv. 名词/形容词/副词",
+       "coreMeaning": "右边；右侧的；正确；向右（指右侧位置或正确）",
+       "toeicSceneFocus": "多出现于方向指引、正确性、权利等语境，是描述右侧或正确的通用词，托业阅读（指示）和听力（方向讨论）中常见",
+       "keyCollocations": [
+         "turn right（向右转）",
+         "right answer（正确答案）",
+         "human right（人权）"
+       ],
+       "toeicExampleSentences": [
+         "Take the second right.（在第二个路口右转。）",
+         "You have the right to appeal the decision.（你有权对决定提出上诉。）"
+       ],
+       "sceneAssociation": "可以联想‘地图上指示向右转（turn right）’的画面，或‘找到正确（right）答案’，结合商务中‘右侧或正确’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "correct",
+           "coreDifference": "correct是正确的；right是正确",
+           "toeicSceneFocus": "正确、准确场景"
+         },
+         {
+           "word": "appropriate",
+           "coreDifference": "appropriate是适当的；right是正确的",
+           "toeicSceneFocus": "适当、正确场景"
+         },
+         {
+           "word": "rightful",
+           "coreDifference": "rightful是合法的；right是权利",
+           "toeicSceneFocus": "合法、权利场景"
+         },
+         {
+           "word": "starboard",
+           "coreDifference": "starboard是右舷；right是右侧",
+           "toeicSceneFocus": "航海、右侧场景"
+         }
+       ]
+     },
+     {
+       "word": "upper",
+       "phonetic": "/ˈʌpər/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "上部的，较高的（指位置较高或级别较高）",
+       "toeicSceneFocus": "多出现于位置描述、级别等语境，是描述上部或高级的常用词，托业阅读（说明）和听力（位置讨论）中常见",
+       "keyCollocations": [
+         "upper level（上层）",
+         "upper management（高层管理）",
+         "upper class（上层阶级）"
+       ],
+       "toeicExampleSentences": [
+         "The upper floor is reserved for executives.（上层楼层为高管专用。）",
+         "We need approval from upper management.（我们需要高层管理的批准。）"
+       ],
+       "sceneAssociation": "可以联想‘高层管理（upper management）开会’的画面，或‘上层（upper level）楼层’，结合商务中‘上部或高级’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "higher",
+           "coreDifference": "higher是更高的；upper是上部的",
+           "toeicSceneFocus": "更高、上部场景"
+         },
+         {
+           "word": "top",
+           "coreDifference": "top是顶部的；upper是上部的",
+           "toeicSceneFocus": "顶部、上部场景"
+         },
+         {
+           "word": "above",
+           "coreDifference": "above是上面的；upper是上部的",
+           "toeicSceneFocus": "上面、上部场景"
+         },
+         {
+           "word": "over",
+           "coreDifference": "over是上方的；upper是上部的",
+           "toeicSceneFocus": "上方、上部场景"
+         }
+       ]
+     },
+     {
+       "word": "lower",
+       "phonetic": "/ˈləʊər/",
+       "partOfSpeech": "adj./v. 形容词/动词",
+       "coreMeaning": "较低的；降低（指位置较低或使降低）",
+       "toeicSceneFocus": "多出现于位置描述、成本降低等语境，是描述下部或降低的常用词，托业阅读（报告）和听力（降低讨论）中常见",
+       "keyCollocations": [
+         "lower level（下层）",
+         "lower cost（降低成本）",
+         "lower price（更低价格）"
+       ],
+       "toeicExampleSentences": [
+         "We need to lower the operating costs.（我们需要降低运营成本。）",
+         "The lower level is used for storage.（下层用于存储。）"
+       ],
+       "sceneAssociation": "可以联想‘降低（lower）成本的计划’的画面，或‘下层（lower level）存储空间’，结合商务中‘下部或降低’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "reduce",
+           "coreDifference": "reduce是减少；lower是降低",
+           "toeicSceneFocus": "减少、降低场景"
+         },
+         {
+           "word": "decrease",
+           "coreDifference": "decrease是下降；lower是降低",
+           "toeicSceneFocus": "下降、降低场景"
+         },
+         {
+           "word": "under",
+           "coreDifference": "under是下方；lower是下部",
+           "toeicSceneFocus": "下方、下部场景"
+         },
+         {
+           "word": "bottom",
+           "coreDifference": "bottom是底部；lower是下部",
+           "toeicSceneFocus": "底部、下部场景"
+         }
+       ]
+     },
+     {
+       "word": "inner",
+       "phonetic": "/ˈɪnər/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "内部的，内在的（指位置在内部的）",
+       "toeicSceneFocus": "多出现于位置描述、核心区域等语境，是描述内部的常用词，托业阅读（说明）和听力（位置讨论）中常见",
+       "keyCollocations": [
+         "inner circle（核心圈子）",
+         "inner city（内城）",
+         "inner part（内部部分）"
+       ],
+       "toeicExampleSentences": [
+         "The inner city has many historical buildings.（内城有许多历史建筑。）",
+         "We need to focus on the inner workings of the company.（我们需要关注公司的内部运作。）"
+       ],
+       "sceneAssociation": "可以联想‘公司内部运作（inner workings）’的画面，或‘内城（inner city）办公室’，结合商务中‘内部或核心’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "internal",
+           "coreDifference": "internal是内部的；inner是内在的",
+           "toeicSceneFocus": "内部、内在场景"
+         },
+         {
+           "word": "inside",
+           "coreDifference": "inside是里面；inner是内部的",
+           "toeicSceneFocus": "里面、内部场景"
+         },
+         {
+           "word": "inward",
+           "coreDifference": "inward是向内的；inner是内部的",
+           "toeicSceneFocus": "向内、内部场景"
+         },
+         {
+           "word": "central",
+           "coreDifference": "central是中心的；inner是内部的",
+           "toeicSceneFocus": "中心、内部场景"
+         }
+       ]
+     },
+     {
+       "word": "outer",
+       "phonetic": "/ˈaʊtər/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "外部的，外层的（指位置在外部的）",
+       "toeicSceneFocus": "多出现于位置描述、外围区域等语境，是描述外部的常用词，托业阅读（说明）和听力（位置讨论）中常见",
+       "keyCollocations": [
+         "outer space（外太空）",
+         "outer layer（外层）",
+         "outer area（外部区域）"
+       ],
+       "toeicExampleSentences": [
+         "The outer layer provides protection.（外层提供保护。）",
+         "Parking is available in the outer lot.（外部停车场有停车位。）"
+       ],
+       "sceneAssociation": "可以联想‘外部（outer）停车场’的画面，或‘外层（outer layer）包装’，结合商务中‘外部或外层’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "external",
+           "coreDifference": "external是外部的；outer是外层的",
+           "toeicSceneFocus": "外部、外层场景"
+         },
+         {
+           "word": "outside",
+           "coreDifference": "outside是外面；outer是外部的",
+           "toeicSceneFocus": "外面、外部场景"
+         },
+         {
+           "word": "outward",
+           "coreDifference": "outward是向外的；outer是外部的",
+           "toeicSceneFocus": "向外、外部场景"
+         },
+         {
+           "word": "peripheral",
+           "coreDifference": "peripheral是外围的；outer是外部的",
+           "toeicSceneFocus": "外围、外部场景"
+         }
+       ]
+     },
+     {
+       "word": "near",
+       "phonetic": "/nɪər/",
+       "partOfSpeech": "prep./adj. 介词/形容词",
+       "coreMeaning": "靠近；附近的（指距离较近的）",
+       "toeicSceneFocus": "多出现于位置描述、距离等语境，是描述邻近的通用词，托业阅读（广告）和听力（位置讨论）中常见",
+       "keyCollocations": [
+         "near by（在附近）",
+         "near to（靠近）",
+         "near future（不久的将来）"
+       ],
+       "toeicExampleSentences": [
+         "The new office is near the subway station.（新办公室靠近地铁站。）",
+         "We will launch the product in the near future.（我们将在不久的将来推出产品。）"
+       ],
+       "sceneAssociation": "可以联想‘办公室靠近（near）地铁站’的画面，或‘产品在不久的将来（near future）推出’，结合商务中‘邻近或不久’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "close",
+           "coreDifference": "close是接近；near是靠近",
+           "toeicSceneFocus": "接近、靠近场景"
+         },
+         {
+           "word": "adjacent",
+           "coreDifference": "adjacent是相邻的；near是邻近的",
+           "toeicSceneFocus": "相邻、邻近场景"
+         },
+         {
+           "word": "proximate",
+           "coreDifference": "proximate是近似的；near是靠近",
+           "toeicSceneFocus": "近似、靠近场景"
+         },
+         {
+           "word": "neighboring",
+           "coreDifference": "neighboring是邻近的；near是靠近",
+           "toeicSceneFocus": "邻近、附近场景"
+         }
+       ]
+     },
+     {
+       "word": "far",
+       "phonetic": "/fɑːr/",
+       "partOfSpeech": "adj./adv. 形容词/副词",
+       "coreMeaning": "远的；遥远地（指距离较远的）",
+       "toeicSceneFocus": "多出现于位置描述、距离等语境，是描述遥远的通用词，托业阅读（广告）和听力（位置讨论）中常见",
+       "keyCollocations": [
+         "far away（遥远）",
+         "as far as（就……而言）",
+         "far from（远非）"
+       ],
+       "toeicExampleSentences": [
+         "The warehouse is far from the city center.（仓库离市中心很远。）",
+         "As far as I know, the meeting is still on.（据我所知，会议仍照常进行。）"
+       ],
+       "sceneAssociation": "可以联想‘仓库离市区很远（far）’的画面，或‘会议仍照常进行（as far as I know）’，结合商务中‘遥远或就……而言’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "distant",
+           "coreDifference": "distant是遥远的；far是远的",
+           "toeicSceneFocus": "遥远、远距离场景"
+         },
+         {
+           "word": "remote",
+           "coreDifference": "remote是偏远的；far是远的",
+           "toeicSceneFocus": "偏远、远距离场景"
+         },
+         {
+           "word": "faraway",
+           "coreDifference": "faraway是遥远的；far是远的",
+           "toeicSceneFocus": "遥远、远距离场景"
+         },
+         {
+           "word": "far-off",
+           "coreDifference": "far-off是远方的；far是远的",
+           "toeicSceneFocus": "远方、远距离场景"
+         }
+       ]
+     },
+     {
+       "word": "close",
+       "phonetic": "/kləʊs/",
+       "partOfSpeech": "adj./v. 形容词/动词",
+       "coreMeaning": "接近的；关闭（指距离近或结束）",
+       "toeicSceneFocus": "多出现于位置描述、结束、亲密等语境，是描述接近或关闭的通用词，托业阅读（通知）和听力（位置讨论）中常见",
+       "keyCollocations": [
+         "close to（接近）",
+         "close down（关闭）",
+         "close the deal（完成交易）"
+       ],
+       "toeicExampleSentences": [
+         "The store is close to the train station.（商店靠近火车站。）",
+         "We need to close the deal by Friday.（我们需要在周五前完成交易。）"
+       ],
+       "sceneAssociation": "可以联想‘商店靠近（close to）火车站’的画面，或‘完成交易（close the deal）’，结合商务中‘接近或关闭’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "near",
+           "coreDifference": "near是靠近；close是接近",
+           "toeicSceneFocus": "靠近、接近场景"
+         },
+         {
+           "word": "shut",
+           "coreDifference": "shut是关闭；close是关闭",
+           "toeicSceneFocus": "关闭、闭合场景"
+         },
+         {
+           "word": "end",
+           "coreDifference": "end是结束；close是结束",
+           "toeicSceneFocus": "结束、终止场景"
+         },
+         {
+           "word": "intimate",
+           "coreDifference": "intimate是亲密的；close是亲近的",
+           "toeicSceneFocus": "亲密、亲近场景"
+         }
+       ]
+     },
+     {
+       "word": "distant",
+       "phonetic": "/ˈdɪstənt/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "遥远的，远距离的（指距离较远的）",
+       "toeicSceneFocus": "多出现于位置描述、时间、关系等语境，是描述遥远的正式词，托业阅读（描述）和听力（位置讨论）中常见",
+       "keyCollocations": [
+         "distant from（远离）",
+         "distant past（遥远的过去）",
+         "distant relative（远亲）"
+       ],
+       "toeicExampleSentences": [
+         "The remote office is distant from headquarters.（远程办公室远离总部。）",
+         "We have distant plans for expansion.（我们有长远的扩张计划。）"
+       ],
+       "sceneAssociation": "可以联想‘远程办公室远离（distant from）总部’的画面，或‘长远（distant）计划’，结合商务中‘遥远或长远’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "far",
+           "coreDifference": "far是远的；distant是遥远的",
+           "toeicSceneFocus": "远、遥远场景"
+         },
+         {
+           "word": "remote",
+           "coreDifference": "remote是偏远的；distant是遥远的",
+           "toeicSceneFocus": "偏远、遥远场景"
+         },
+         {
+           "word": "far-off",
+           "coreDifference": "far-off是远方的；distant是遥远的",
+           "toeicSceneFocus": "远方、遥远场景"
+         },
+         {
+           "word": "faraway",
+           "coreDifference": "faraway是遥远的；distant是遥远的",
+           "toeicSceneFocus": "遥远、远距离场景"
+         }
+       ]
+     },
+     {
+       "word": "early",
+       "phonetic": "/ˈɜːrli/",
+       "partOfSpeech": "adj./adv. 形容词/副词",
+       "coreMeaning": "早的；提早地（指时间较早的）",
+       "toeicSceneFocus": "多出现于时间安排、截止日期、早期阶段等语境，是描述时间早的通用词，托业阅读（通知）和听力（时间讨论）中常见",
+       "keyCollocations": [
+         "early stage（早期阶段）",
+         "in early（在早期）",
+         "early arrival（提前到达）"
+       ],
+       "toeicExampleSentences": [
+         "We need to finish the project at an early stage.（我们需要在早期阶段完成项目。）",
+         "Please arrive early to avoid delays.（请提前到达以避免延误。）"
+       ],
+       "sceneAssociation": "可以联想‘项目早期阶段（early stage）’的画面，或‘提前到达（early arrival）避免延误’，结合商务中‘时间较早’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "premature",
+           "coreDifference": "premature是过早的；early是早的",
+           "toeicSceneFocus": "过早、提前场景"
+         },
+         {
+           "word": "advanced",
+           "coreDifference": "advanced是提前的；early是早的",
+           "toeicSceneFocus": "提前、早期场景"
+         },
+         {
+           "word": "prior",
+           "coreDifference": "prior是之前的；early是早的",
+           "toeicSceneFocus": "之前、早期场景"
+         },
+         {
+           "word": "timely",
+           "coreDifference": "timely是及时的；early是早的",
+           "toeicSceneFocus": "及时、提前场景"
+         }
+       ]
+     },
+     {
+       "word": "late",
+       "phonetic": "/leɪt/",
+       "partOfSpeech": "adj./adv. 形容词/副词",
+       "coreMeaning": "迟的；晚地（指时间较晚的或迟的）",
+       "toeicSceneFocus": "多出现于时间安排、迟到、截止日期等语境，是描述时间晚的通用词，托业阅读（通知）和听力（时间讨论）中常见",
+       "keyCollocations": [
+         "late for（迟到）",
+         "late payment（延迟付款）",
+         "in late（在后期）"
+       ],
+       "toeicExampleSentences": [
+         "Please do not be late for the meeting.（请不要迟到。）",
+         "We received a late payment from the client.（我们收到了客户的延迟付款。）"
+       ],
+       "sceneAssociation": "可以联想‘会议迟到（late for）’的画面，或‘延迟付款（late payment）通知’，结合商务中‘时间较晚’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "delayed",
+           "coreDifference": "delayed是延迟的；late是迟的",
+           "toeicSceneFocus": "延迟、迟到场景"
+         },
+         {
+           "word": "tardy",
+           "coreDifference": "tardy是迟缓的；late是迟的",
+           "toeicSceneFocus": "迟缓、迟到场景"
+         },
+         {
+           "word": "overdue",
+           "coreDifference": "overdue是逾期的；late是迟的",
+           "toeicSceneFocus": "逾期、延迟场景"
+         },
+         {
+           "word": "belated",
+           "coreDifference": "belated是迟来的；late是迟的",
+           "toeicSceneFocus": "迟来、延迟场景"
+         }
+       ]
+     },
+     {
+       "word": "on-time",
+       "phonetic": "/ˈɒn taɪm/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "准时的，按时的（指按时发生的）",
+       "toeicSceneFocus": "多出现于时间安排、交付、会议等语境，是描述准时的常用词，托业阅读（报告）和听力（时间确认）中常见",
+       "keyCollocations": [
+         "on-time arrival（准时到达）",
+         "on-time delivery（按时交付）",
+         "on-time performance（准点率）"
+       ],
+       "toeicExampleSentences": [
+         "The flight arrived on time.（航班准时到达。）",
+         "We ensure on-time delivery of all orders.（我们确保所有订单按时交付。）"
+       ],
+       "sceneAssociation": "可以联想‘航班准时（on-time）到达’的画面，或‘按时交付（on-time delivery）订单’，结合商务中‘准时或按时’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "punctual",
+           "coreDifference": "punctual是准时的；on-time是按时的",
+           "toeicSceneFocus": "准时、按时场景"
+         },
+         {
+           "word": "timely",
+           "coreDifference": "timely是及时的；on-time是准时的",
+           "toeicSceneFocus": "及时、准时场景"
+         },
+         {
+           "word": "schedule",
+           "coreDifference": "schedule是安排；on-time是准时的",
+           "toeicSceneFocus": "安排、准时场景"
+         },
+         {
+           "word": "prompt",
+           "coreDifference": "prompt是迅速的；on-time是准时的",
+           "toeicSceneFocus": "迅速、准时场景"
+         }
+       ]
+     },
+     {
+       "word": "punctual",
+       "phonetic": "/ˈpʌŋktʃuəl/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "准时的，守时的（指严格遵守时间的）",
+       "toeicSceneFocus": "多出现于时间管理、职业素养等语境，是描述守时的正式词，托业阅读（政策）和听力（时间讨论）中常见",
+       "keyCollocations": [
+         "punctual arrival（准时到达）",
+         "punctuality（守时）",
+         "be punctual for（对……准时）"
+       ],
+       "toeicExampleSentences": [
+         "Please be punctual for the meeting.（请准时参加会议。）",
+         "He is always punctual for appointments.（他总是准时赴约。）"
+       ],
+       "sceneAssociation": "可以联想‘员工准时（punctual）参加会议’的画面，或‘守时（punctuality）的重要性’，结合商务中‘守时或准时’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "on-time",
+           "coreDifference": "on-time是按时的；punctual是准时的",
+           "toeicSceneFocus": "按时、准时场景"
+         },
+         {
+           "word": "prompt",
+           "coreDifference": "prompt是迅速的；punctual是准时的",
+           "toeicSceneFocus": "迅速、准时场景"
+         },
+         {
+           "word": "timely",
+           "coreDifference": "timely是及时的；punctual是准时的",
+           "toeicSceneFocus": "及时、准时场景"
+         },
+         {
+           "word": "schedule",
+           "coreDifference": "schedule是安排；punctual是准时的",
+           "toeicSceneFocus": "安排、准时场景"
+         }
+       ]
+     },
+     {
+       "word": "prompt",
+       "phonetic": "/prɒmpt/",
+       "partOfSpeech": "adj./v. 形容词/动词",
+       "coreMeaning": "迅速的；促使（指及时或迅速的）",
+       "toeicSceneFocus": "多出现于服务、回应、行动等语境，是描述迅速的常用词，托业阅读（通知）和听力（服务讨论）中常见",
+       "keyCollocations": [
+         "prompt response（迅速回应）",
+         "prompt delivery（及时交付）",
+         "prompt action（迅速行动）"
+       ],
+       "toeicExampleSentences": [
+         "Thank you for your prompt response.（感谢您的迅速回应。）",
+         "We need to take prompt action to resolve the issue.（我们需要迅速采取行动解决问题。）"
+       ],
+       "sceneAssociation": "可以联想‘迅速回应（prompt response）客户咨询’的画面，或‘及时交付（prompt delivery）货物’，结合商务中‘迅速或及时’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "quick",
+           "coreDifference": "quick是快速的；prompt是迅速的",
+           "toeicSceneFocus": "快速、迅速场景"
+         },
+         {
+           "word": "immediate",
+           "coreDifference": "immediate是立即的；prompt是迅速的",
+           "toeicSceneFocus": "立即、迅速场景"
+         },
+         {
+           "word": "timely",
+           "coreDifference": "timely是及时的；prompt是迅速的",
+           "toeicSceneFocus": "及时、迅速场景"
+         },
+         {
+           "word": "expeditious",
+           "coreDifference": "expeditious是迅速的；prompt是迅速的",
+           "toeicSceneFocus": "迅速、高效场景"
+         }
+       ]
+     },
+     {
+       "word": "slow",
+       "phonetic": "/sləʊ/",
+       "partOfSpeech": "adj./v. 形容词/动词",
+       "coreMeaning": "慢的；减慢（指速度低的或使变慢）",
+       "toeicSceneFocus": "多出现于速度描述、进度、网络等语境，是描述慢的通用词，托业阅读（报告）和听力（速度讨论）中常见",
+       "keyCollocations": [
+         "slow down（减慢）",
+         "slow progress（缓慢进展）",
+         "slow response（缓慢回应）"
+       ],
+       "toeicExampleSentences": [
+         "The project progress is slow due to lack of resources.（由于缺乏资源，项目进展缓慢。）",
+         "We need to slow down the production line for safety.（我们需要减慢生产线的速度以确保安全。）"
+       ],
+       "sceneAssociation": "可以联想‘项目进展缓慢（slow progress）’的画面，或‘减慢（slow down）生产线速度’，结合商务中‘慢或减慢’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "sluggish",
+           "coreDifference": "sluggish是迟缓的；slow是慢的",
+           "toeicSceneFocus": "迟缓、慢速场景"
+         },
+         {
+           "word": "delayed",
+           "coreDifference": "delayed是延迟的；slow是慢的",
+           "toeicSceneFocus": "延迟、慢速场景"
+         },
+         {
+           "word": "gradual",
+           "coreDifference": "gradual是逐步的；slow是慢的",
+           "toeicSceneFocus": "逐步、慢速场景"
+         },
+         {
+           "word": "leisurely",
+           "coreDifference": "leisurely是悠闲的；slow是慢的",
+           "toeicSceneFocus": "悠闲、慢速场景"
+         }
+       ]
+     },
+     {
+       "word": "fast",
+       "phonetic": "/fɑːst/",
+       "partOfSpeech": "adj./adv. 形容词/副词",
+       "coreMeaning": "快的；快速地（指速度高的或迅速地）",
+       "toeicSceneFocus": "多出现于速度描述、服务、网络等语境，是描述快的通用词，托业阅读（广告）和听力（速度讨论）中常见",
+       "keyCollocations": [
+         "fast food（快餐）",
+         "fast pace（快节奏）",
+         "fast delivery（快速交付）"
+       ],
+       "toeicExampleSentences": [
+         "We need a fast response to this inquiry.（我们需要对这一询问快速回应。）",
+         "The fast food restaurant is convenient for lunch.（快餐店便于午餐。）"
+       ],
+       "sceneAssociation": "可以联想‘快餐（fast food）店’的画面，或‘快速回应（fast response）客户’，结合商务中‘快速或快节奏’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "quick",
+           "coreDifference": "quick是快速的；fast是快的",
+           "toeicSceneFocus": "快速、快场景"
+         },
+         {
+           "word": "rapid",
+           "coreDifference": "rapid是迅速的；fast是快的",
+           "toeicSceneFocus": "迅速、快场景"
+         },
+         {
+           "word": "speedy",
+           "coreDifference": "speedy是迅速的；fast是快的",
+           "toeicSceneFocus": "迅速、快场景"
+         },
+         {
+           "word": "swift",
+           "coreDifference": "swift是敏捷的；fast是快的",
+           "toeicSceneFocus": "敏捷、快场景"
+         }
+       ]
+     },
+     {
+       "word": "quick",
+       "phonetic": "/kwɪk/",
+       "partOfSpeech": "adj./adv. 形容词/副词",
+       "coreMeaning": "快速的；迅速地（指时间短或动作快）",
+       "toeicSceneFocus": "多出现于服务、回应、动作等语境，是描述快速的常用词，托业阅读（指示）和听力（服务讨论）中常见",
+       "keyCollocations": [
+         "quick response（快速回应）",
+         "quick fix（快速修复）",
+         "quickly（迅速地）"
+       ],
+       "toeicExampleSentences": [
+         "Please provide a quick response to the client.（请快速回应客户。）",
+         "We need a quick solution to this problem.（我们需要这个问题的快速解决方案。）"
+       ],
+       "sceneAssociation": "可以联想‘快速回应（quick response）客户邮件’的画面，或‘快速解决（quick fix）问题’，结合商务中‘快速或迅速’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "fast",
+           "coreDifference": "fast是快的；quick是快速的",
+           "toeicSceneFocus": "快、快速场景"
+         },
+         {
+           "word": "rapid",
+           "coreDifference": "rapid是迅速的；quick是快速的",
+           "toeicSceneFocus": "迅速、快速场景"
+         },
+         {
+           "word": "prompt",
+           "coreDifference": "prompt是迅速的；quick是快速的",
+           "toeicSceneFocus": "迅速、快速场景"
+         },
+         {
+           "word": "swift",
+           "coreDifference": "swift是敏捷的；quick是快速的",
+           "toeicSceneFocus": "敏捷、快速场景"
+         }
+       ]
+     },
+     {
+       "word": "rapid",
+       "phonetic": "/ˈræpɪd/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "迅速的，快速的（指速度非常快的）",
+       "toeicSceneFocus": "多出现于速度、增长、变化等语境，是描述迅速的正式词，托业阅读（报告）和听力（速度讨论）中常见",
+       "keyCollocations": [
+         "rapid growth（快速增长）",
+         "rapid response（迅速回应）",
+         "rapid development（快速发展）"
+       ],
+       "toeicExampleSentences": [
+         "The company has experienced rapid growth.（公司经历了快速增长。）",
+         "We need a rapid response to the emergency.（我们需要对紧急情况迅速回应。）"
+       ],
+       "sceneAssociation": "可以联想‘公司快速增长（rapid growth）’的画面，或‘紧急情况的迅速回应（rapid response）’，结合商务中‘迅速或快速’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "fast",
+           "coreDifference": "fast是快的；rapid是迅速的",
+           "toeicSceneFocus": "快、迅速场景"
+         },
+         {
+           "word": "quick",
+           "coreDifference": "quick是快速的；rapid是迅速的",
+           "toeicSceneFocus": "快速、迅速场景"
+         },
+         {
+           "word": "swift",
+           "coreDifference": "swift是敏捷的；rapid是迅速的",
+           "toeicSceneFocus": "敏捷、迅速场景"
+         },
+         {
+           "word": "speedy",
+           "coreDifference": "speedy是迅速的；rapid是迅速的",
+           "toeicSceneFocus": "迅速、快速场景"
+         }
+       ]
+     },
+     {
+       "word": "speedy",
+       "phonetic": "/ˈspiːdi/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "迅速的，快速的（指动作或过程快的）",
+       "toeicSceneFocus": "多出现于服务、交付、处理等语境，是描述迅速的常用词，托业阅读（广告）和听力（服务讨论）中常见",
+       "keyCollocations": [
+         "speedy delivery（快速交付）",
+         "speedy resolution（迅速解决）",
+         "speedy process（快速流程）"
+       ],
+       "toeicExampleSentences": [
+         "We guarantee speedy delivery within 24 hours.（我们保证24小时内快速交付。）",
+         "The speedy resolution of the issue was appreciated.（问题的迅速解决受到赞赏。）"
+       ],
+       "sceneAssociation": "可以联想‘快速交付（speedy delivery）服务’的画面，或‘问题的迅速解决（speedy resolution）’，结合商务中‘迅速或快速’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "rapid",
+           "coreDifference": "rapid是迅速的；speedy是迅速的",
+           "toeicSceneFocus": "迅速、快速场景"
+         },
+         {
+           "word": "fast",
+           "coreDifference": "fast是快的；speedy是迅速的",
+           "toeicSceneFocus": "快、迅速场景"
+         },
+         {
+           "word": "quick",
+           "coreDifference": "quick是快速的；speedy是迅速的",
+           "toeicSceneFocus": "快速、迅速场景"
+         },
+         {
+           "word": "swift",
+           "coreDifference": "swift是敏捷的；speedy是迅速的",
+           "toeicSceneFocus": "敏捷、迅速场景"
+         }
+       ]
+     },
+     {
+       "word": "unsuccessful",
+       "phonetic": "/ˌʌnsəkˈsesfl/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "不成功的，失败的（指未达到目标或结果的）",
+       "toeicSceneFocus": "多出现于项目评估、求职、商业尝试等语境，是描述失败的常用词，托业阅读（报告）和听力（结果讨论）中常见",
+       "keyCollocations": [
+         "unsuccessful attempt（不成功的尝试）",
+         "unsuccessful candidate（未成功的候选人）",
+         "remain unsuccessful（仍未成功）"
+       ],
+       "toeicExampleSentences": [
+         "The negotiation was unsuccessful.（谈判不成功。）",
+         "He was an unsuccessful candidate for the position.（他是该职位的未成功候选人。）"
+       ],
+       "sceneAssociation": "可以联想‘谈判不成功（unsuccessful）’的画面，或‘求职未成功（unsuccessful candidate）’，结合商务中‘失败或未成功’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "failed",
+           "coreDifference": "failed是失败的；unsuccessful是未成功的",
+           "toeicSceneFocus": "失败、未成功场景"
+         },
+         {
+           "word": "fruitless",
+           "coreDifference": "fruitless是无果的；unsuccessful是不成功的",
+           "toeicSceneFocus": "无果、失败场景"
+         },
+         {
+           "word": "ineffective",
+           "coreDifference": "ineffective是无效的；unsuccessful是不成功的",
+           "toeicSceneFocus": "无效、失败场景"
+         },
+         {
+           "word": "abortive",
+           "coreDifference": "abortive是流产的；unsuccessful是未成功的",
+           "toeicSceneFocus": "流产、失败场景"
+         }
+       ]
+     },
+     {
+       "word": "failed",
+       "phonetic": "/feɪld/",
+       "partOfSpeech": "adj. 形容词",
+       "coreMeaning": "失败的（指未成功的或已失败的）",
+       "toeicSceneFocus": "多出现于项目、交易、努力等语境，是描述失败的直接词，托业阅读（报告）和听力（结果讨论）中常见",
+       "keyCollocations": [
+         "failed project（失败的项目）",
+         "failed attempt（失败的尝试）",
+         "failed business（倒闭的企业）"
+       ],
+       "toeicExampleSentences": [
+         "The project failed due to lack of funding.（项目因缺乏资金而失败。）",
+         "We had a failed attempt to launch the product.（我们推出产品的尝试失败了。）"
+       ],
+       "sceneAssociation": "可以联想‘项目失败（failed project）’的画面，或‘企业倒闭（failed business）’，结合商务中‘失败’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "unsuccessful",
+           "coreDifference": "unsuccessful是未成功的；failed是失败的",
+           "toeicSceneFocus": "未成功、失败场景"
+         },
+         {
+           "word": "defeated",
+           "coreDifference": "defeated是被击败的；failed是失败的",
+           "toeicSceneFocus": "击败、失败场景"
+         },
+         {
+           "word": "abortive",
+           "coreDifference": "abortive是流产的；failed是失败的",
+           "toeicSceneFocus": "流产、失败场景"
+         },
+         {
+           "word": "fruitless",
+           "coreDifference": "fruitless是无果的；failed是失败的",
+           "toeicSceneFocus": "无果、失败场景"
+         }
+       ]
+     },
+     {
+       "word": "achieved",
+       "phonetic": "/əˈtʃiːvd/",
+       "partOfSpeech": "v. 动词",
+       "coreMeaning": "实现，达到（指通过努力获得结果）",
+       "toeicSceneFocus": "多出现于目标达成、绩效、成就等语境，是描述实现目标的动词，托业阅读（报告）和听力（成就讨论）中常见",
+       "keyCollocations": [
+         "achieve goal（实现目标）",
+         "achieve success（取得成功）",
+         "achieve target（达到目标）"
+       ],
+       "toeicExampleSentences": [
+         "We achieved our sales target for the quarter.（我们实现了本季度的销售目标。）",
+         "She achieved great success in her career.（她在职业生涯中取得了巨大成功。）"
+       ],
+       "sceneAssociation": "可以联想‘团队实现（achieved）销售目标’的画面，或‘个人取得（achieved）职业成功’，结合商务中‘实现或达到’的记忆",
+       "confusingWordsComparison": [
+         {
+           "word": "attain",
+           "coreDifference": "attain是达到；achieve是实现",
+           "toeicSceneFocus": "达到、实现场景"
+         },
+         {
+           "word": "accomplish",
+           "coreDifference": "accomplish是完成；achieve是实现",
+           "toeicSceneFocus": "完成、实现场景"
+         },
+         {
+           "word": "reach",
+           "coreDifference": "reach是达到；achieve是实现",
+           "toeicSceneFocus": "达到、实现场景"
+         },
+         {
+           "word": "fulfill",
+           "coreDifference": "fulfill是履行；achieve是实现",
+           "toeicSceneFocus": "履行、实现场景"
+         }
+       ]
+     },
+
+  {
+    "word": "abolished",
+    "phonetic": "/əˈbɒlɪʃt/（英）；/əˈbɑːlɪʃt/（美）",
+    "partOfSpeech": "v. 动词（abolish的过去式和过去分词）",
+    "coreMeaning": "废除；废止；取消（指正式、彻底地终止法律、制度、习俗等长期存在的事物）",
+    "toeicSceneFocus": "多出现于政策法规、企业制度、传统惯例等语境，是托业阅读（政策文件、企业公告）和听力（商务会议、政策讨论）中的常考词，侧重“**彻底、正式终止**”",
+    "keyCollocations": [
+      "abolished the law（废除法律）",
+      "abolished the system（废止制度）",
+      "abolished the rule（取消规定）",
+      "abolished the tax（废除税种）"
+    ],
+    "toeicExampleSentences": [
+      "The government abolished the outdated tax law to stimulate economic growth.（政府废除了过时的税法以刺激经济增长。）",
+      "The company abolished the rigid dress code to create a more relaxed working environment.（公司取消了严格的着装规定，以营造更宽松的工作环境。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "abolished",
+        "coreDifference": "彻底、正式终止法律、制度等长期存在的事物，不可逆",
+        "sceneFocus": "政策、制度、法规场景"
+      },
+      {
+        "word": "discontinued",
+        "coreDifference": "停止生产、供应产品或提供服务，侧重“业务层面的终止”",
+        "sceneFocus": "产品、服务、业务场景"
+      }
+    ]
+  },
+  {
+    "word": "discontinued",
+    "phonetic": "/ˌdɪskənˈtɪnjuːd/（英）；/ˌdɪskənˈtɪnjuːd/（美）",
+    "partOfSpeech": "v. 动词（discontinue的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：停止（生产、供应、使用）；终止（服务、项目） 2. 形容词：停产的；停售的",
+    "toeicSceneFocus": "多出现于产品管理、服务运营、项目推进等语境，是托业阅读（产品公告、业务通知）和听力（商务洽谈、运营沟通）中的高频词，侧重“**产品/服务/项目的终止**”",
+    "keyCollocations": [
+      "discontinued the product（停产产品）",
+      "discontinued the service（终止服务）",
+      "discontinued the project（中止项目）",
+      "discontinued model（停产型号）"
+    ],
+    "toeicExampleSentences": [
+      "The manufacturer discontinued this line of laptops due to low sales volume.（由于销量低迷，厂商停产了这款笔记本电脑系列。）",
+      "Our company has decided to discontinue the after-sales service for the old equipment.（我司已决定终止老旧设备的售后服务。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "discontinued",
+        "coreDifference": "针对产品、服务、项目的停止，可因市场需求调整，可能可逆",
+        "sceneFocus": "产品生产、服务提供、项目执行场景"
+      },
+      {
+        "word": "stopped",
+        "coreDifference": "通用词汇，指任何动作、行为的停止，适用范围最广",
+        "sceneFocus": "日常动作、行为、进程场景"
+      }
+    ]
+  },
+  {
+    "word": "stopped",
+    "phonetic": "/stɒpt/（英）；/stɑːpt/（美）",
+    "partOfSpeech": "v. 动词（stop的过去式和过去分词）",
+    "coreMeaning": "停止；终止；停下（指动作、行为、进程的中断，是最通用的表达）",
+    "toeicSceneFocus": "适用于所有停止动作的语境，是托业阅读和听力中的基础高频词，侧重“**动作的中断，无正式/非正式之分**”",
+    "keyCollocations": [
+      "stopped the meeting（停止会议）",
+      "stopped working（停止工作）",
+      "stopped the production（暂停生产）",
+      "stopped to rest（停下来休息）"
+    ],
+    "toeicExampleSentences": [
+      "The manager stopped the meeting to address the urgent issue reported by the team.（经理暂停会议，以处理团队上报的紧急问题。）",
+      "The machine stopped working suddenly, causing a delay in the production schedule.（机器突然停止运转，导致生产计划延误。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "stopped",
+        "coreDifference": "通用词，可指任何动作、进程的临时或永久停止，口语和书面语均可",
+        "sceneFocus": "所有动作、行为、进程场景"
+      },
+      {
+        "word": "halted",
+        "coreDifference": "正式用语，指进程、活动的突然、强制终止",
+        "sceneFocus": "工程、项目、军事行动等正式场景"
+      }
+    ]
+  },
+  {
+    "word": "halted",
+    "phonetic": "/hɔːltɪd/（英）；/hɔːltɪd/（美）",
+    "partOfSpeech": "v. 动词（halt的过去式和过去分词）",
+    "coreMeaning": "（使）停止；（使）中断（指进程、活动的突然、强制终止，语气较正式）",
+    "toeicSceneFocus": "多出现于工程建设、项目推进、交通运营等正式语境，是托业阅读（项目报告、官方通知）中的常考词，侧重“**突然、强制的终止**”",
+    "keyCollocations": [
+      "halted the project（中止项目）",
+      "halted the construction（停止施工）",
+      "halted the shipment（暂停运输）",
+      "halted the operation（停止运营）"
+    ],
+    "toeicExampleSentences": [
+      "The construction of the new factory was halted due to environmental concerns.（由于环保问题，新工厂的建设被暂停。）",
+      "The company halted all shipments to the region after the outbreak of the trade dispute.（贸易争端爆发后，公司暂停了发往该地区的所有货物运输。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "halted",
+        "coreDifference": "正式、强制的停止，常因外部因素（如政策、安全问题）导致",
+        "sceneFocus": "工程、运输、项目等正式场景"
+      },
+      {
+        "word": "ceased",
+        "coreDifference": "正式书面语，指完全、永久的停止，语气更强烈",
+        "sceneFocus": "正式文件、法律文书、学术表述场景"
+      }
+    ]
+  },
+  {
+    "word": "ceased",
+    "phonetic": "/siːst/（英）；/siːst/（美）",
+    "partOfSpeech": "v. 动词（cease的过去式和过去分词）",
+    "coreMeaning": "停止；终止；结束（正式书面用语，指完全、永久地停止某种行为或状态）",
+    "toeicSceneFocus": "多出现于法律文件、企业年报、正式公告等语境，是托业阅读（正式文书）中的常考词，侧重“**永久、彻底的终止，书面化**”",
+    "keyCollocations": [
+      "ceased operations（停止运营）",
+      "ceased to exist（不复存在）",
+      "ceased production（永久停产）",
+      "ceased the cooperation（终止合作）"
+    ],
+    "toeicExampleSentences": [
+      "The joint venture ceased operations after its contract expired at the end of last year.（这家合资企业在去年年底合同到期后停止了运营。）",
+      "The company has ceased to provide financial support for the non-profit organization.（该公司已终止对这家非营利组织的资金支持。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "ceased",
+        "coreDifference": "书面正式用语，强调永久、彻底的停止，几乎不可逆",
+        "sceneFocus": "法律文件、正式公告、长期合作场景"
+      },
+      {
+        "word": "paused",
+        "coreDifference": "临时的暂停，动作可随时恢复",
+        "sceneFocus": "会议、播放、工作进程等临时场景"
+      }
+    ]
+  },
+  {
+    "word": "paused",
+    "phonetic": "/pɔːzd/（英）；/pɔːzd/（美）",
+    "partOfSpeech": "v. 动词（pause的过去式和过去分词）",
+    "coreMeaning": "暂停；停顿（指动作、进程的短暂中断，之后可以恢复）",
+    "toeicSceneFocus": "适用于会议、播放、工作等临时中断的场景，是托业听力（日常对话、会议沟通）中的高频词，侧重“**短暂、可逆的暂停**”",
+    "keyCollocations": [
+      "paused the presentation（暂停演示）",
+      "paused for a break（暂停休息）",
+      "paused the project（暂停项目）",
+      "paused to think（停下来思考）"
+    ],
+    "toeicExampleSentences": [
+      "The speaker paused for a few seconds to let the audience digest the key points.（演讲者停顿了几秒，让听众消化关键点。）",
+      "We paused the project temporarily to wait for the updated technical specifications.（我们暂时暂停项目，等待更新后的技术参数。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "paused",
+        "coreDifference": "短暂、临时的暂停，明确表示后续会恢复",
+        "sceneFocus": "演讲、会议、项目等临时中断场景"
+      },
+      {
+        "word": "suspended",
+        "coreDifference": "正式的暂停，常因纪律、安全等原因，暂停时间可能较长",
+        "sceneFocus": "职位、资格、项目等正式暂停场景"
+      }
+    ]
+  },
+  {
+    "word": "suspended",
+    "phonetic": "/səˈspendɪd/（英）；/səˈspendɪd/（美）",
+    "partOfSpeech": "v. 动词（suspend的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：暂停；中止；暂缓（因特定原因暂时停止，常含正式性）；吊销（资格、执照） 2. 形容词：暂停的；暂缓的",
+    "toeicSceneFocus": "多出现于人事管理、资格认证、项目监管等正式语境，是托业阅读（企业规章、官方通知）中的常考词，侧重“**因规则、安全等原因的正式暂停**”",
+    "keyCollocations": [
+      "suspended the employee（暂停员工职务）",
+      "suspended the license（吊销执照）",
+      "suspended the program（中止项目）",
+      "suspended the meeting（暂缓会议）"
+    ],
+    "toeicExampleSentences": [
+      "The employee was suspended for three days for violating the company’s confidentiality policy.（该员工因违反公司保密政策被停职三天。）",
+      "The regulatory authority suspended the company’s business license due to irregular operations.（监管机构因该公司运营不规范吊销了其营业执照。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "suspended",
+        "coreDifference": "正式的暂停或吊销，常与纪律、法规相关，暂停时长可长可短",
+        "sceneFocus": "人事、执照、项目监管场景"
+      },
+      {
+        "word": "paused",
+        "coreDifference": "日常的短暂暂停，无纪律性含义",
+        "sceneFocus": "日常动作、会议等临时场景"
+      }
+    ]
+  },
+  {
+    "word": "resumed",
+    "phonetic": "/rɪˈzjuːmd/（英）；/rɪˈzuːmd/（美）",
+    "partOfSpeech": "v. 动词（resume的过去式和过去分词）",
+    "coreMeaning": "（中断后）重新开始；恢复；继续（指暂停或中止的动作、进程重新启动）",
+    "toeicSceneFocus": "适用于项目、工作、会议等中断后恢复的场景，是托业阅读和听力中的高频词，侧重“**中断后的继续**”",
+    "keyCollocations": [
+      "resumed work（恢复工作）",
+      "resumed the meeting（继续会议）",
+      "resumed production（恢复生产）",
+      "resumed the service（恢复服务）"
+    ],
+    "toeicExampleSentences": [
+      "The factory resumed production after the maintenance work was completed last week.（工厂在上周维护工作完成后恢复了生产。）",
+      "Negotiations between the two companies resumed after a one-month break.（两家公司的谈判在中断一个月后重新开始。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "resumed",
+        "coreDifference": "必须有“中断”的前提，强调“恢复之前的状态”",
+        "sceneFocus": "中断后恢复的工作、会议、生产场景"
+      },
+      {
+        "word": "continued",
+        "coreDifference": "无中断前提，强调“持续进行”",
+        "sceneFocus": "持续的动作、进程场景"
+      }
+    ]
+  },
+  {
+    "word": "continued",
+    "phonetic": "/kənˈtɪnjuːd/（英）；/kənˈtɪnjuːd/（美）",
+    "partOfSpeech": "v. 动词（continue的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "继续；持续；延续（指动作、状态不间断地进行，或中断后仍继续）",
+    "toeicSceneFocus": "通用词汇，适用于所有持续动作的语境，是托业阅读和听力中的基础高频词，侧重“**动作的不间断或持续进行**”",
+    "keyCollocations": [
+      "continued to work（继续工作）",
+      "continued growth（持续增长）",
+      "continued support（持续支持）",
+      "continued the project（继续推进项目）"
+    ],
+    "toeicExampleSentences": [
+      "The company continued to expand its overseas market despite the global economic downturn.（尽管全球经济低迷，该公司仍继续拓展海外市场。）",
+      "We appreciate your continued support for our products over the past decade.（感谢您过去十年对我们产品的持续支持。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "continued",
+        "coreDifference": "可指无中断的持续，也可指中断后的继续，适用范围广",
+        "sceneFocus": "所有持续动作、状态场景"
+      },
+      {
+        "word": "proceeded",
+        "coreDifference": "正式用语，指按照计划、流程继续推进，常与with搭配",
+        "sceneFocus": "正式流程、项目推进场景"
+      }
+    ]
+  },
+  {
+    "word": "proceeded",
+    "phonetic": "/prəˈsiːdɪd/（英）；/prəˈsiːdɪd/（美）",
+    "partOfSpeech": "v. 动词（proceed的过去式和过去分词）",
+    "coreMeaning": "继续进行；开展；推进（正式用语，指按照预定计划、流程或授权继续行动）",
+    "toeicSceneFocus": "多出现于商务流程、项目执行、正式会议等语境，是托业阅读（流程文件、会议纪要）中的常考词，侧重“**按计划、有步骤地推进**”",
+    "keyCollocations": [
+      "proceeded with the plan（推进计划）",
+      "proceeded to discuss（继续讨论）",
+      "proceeded to the next stage（进入下一阶段）",
+      "proceeded according to the schedule（按计划进行）"
+    ],
+    "toeicExampleSentences": [
+      "After obtaining the approval from the board, we proceeded with the investment plan.（获得董事会批准后，我们推进了这项投资计划。）",
+      "The meeting proceeded to the next agenda item after resolving the initial issue.（解决完初始问题后，会议进入了下一个议程项目。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "proceeded",
+        "coreDifference": "正式、有计划地推进，常与with搭配，强调“遵循流程”",
+        "sceneFocus": "正式项目、会议议程、审批流程场景"
+      },
+      {
+        "word": "advanced",
+        "coreDifference": "强调“向前发展、取得进展”，侧重“进步性”",
+        "sceneFocus": "技术、事业、项目进展场景"
+      }
+    ]
+  },
+  {
+    "word": "advanced",
+    "phonetic": "/ədˈvɑːnst/（英）；/ədˈvænst/（美）",
+    "partOfSpeech": "v. 动词（advance的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：推进；促进；进展；提前 2. 形容词：先进的；高级的；晚期的",
+    "toeicSceneFocus": "多出现于技术发展、项目进展、时间调整等语境，是托业阅读（技术报告、项目总结）中的高频词，侧重“**向前发展、进步或提前**”",
+    "keyCollocations": [
+      "advanced the project（推进项目）",
+      "advanced technology（先进技术）",
+      "advanced the deadline（提前截止日期）",
+      "advanced to the final stage（进入决赛阶段）"
+    ],
+    "toeicExampleSentences": [
+      "The research team has advanced the development of the new battery technology by two months.（研究团队将新电池技术的研发进度提前了两个月。）",
+      "Our company adopts advanced production equipment to improve efficiency and quality.（我司采用先进的生产设备以提升效率和质量。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "advanced",
+        "coreDifference": "动词侧重“推进、提前”，形容词侧重“先进的”，强调“进步性”",
+        "sceneFocus": "技术研发、项目进度、设备升级场景"
+      },
+      {
+        "word": "progressed",
+        "coreDifference": "侧重“取得进展、逐步发展”，强调“过程性”",
+        "sceneFocus": "学习、项目、事业发展场景"
+      }
+    ]
+  },
+  {
+    "word": "progressed",
+    "phonetic": "/prəˈɡresɪd/（英）；/prəˈɡresɪd/（美）",
+    "partOfSpeech": "v. 动词（progress的过去式和过去分词）",
+    "coreMeaning": "进展；发展；进步（指在某一过程中逐步取得进展，向目标靠近）",
+    "toeicSceneFocus": "多出现于项目管理、学习提升、事业发展等语境，是托业阅读（项目报告、绩效评估）中的常考词，侧重“**逐步发展、取得阶段性进展**”",
+    "keyCollocations": [
+      "progressed well（进展顺利）",
+      "progressed to the next phase（进入下一阶段）",
+      "progressed in the career（事业发展）",
+      "progressed with the task（推进任务）"
+    ],
+    "toeicExampleSentences": [
+      "The construction project has progressed well and is expected to be completed ahead of schedule.（该建设项目进展顺利，有望提前完工。）",
+      "She has progressed rapidly in her career since joining the company three years ago.（自三年前加入公司以来，她的事业发展迅速。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "progressed",
+        "coreDifference": "强调“阶段性进展、逐步靠近目标”，常与well、rapidly等副词搭配",
+        "sceneFocus": "项目、事业、学习进展场景"
+      },
+      {
+        "word": "moved forward",
+        "coreDifference": "口语化表达，侧重“向前推进、克服障碍继续”",
+        "sceneFocus": "日常工作、团队合作、问题解决场景"
+      }
+    ]
+  },
+  {
+    "word": "moved forward",
+    "phonetic": "/muːvd ˈfɔːwəd/（英）；/muːvd ˈfɔːrwərd/（美）",
+    "partOfSpeech": "动词短语（move forward的过去式）",
+    "coreMeaning": "向前推进；继续前进；进展（口语化表达，指克服困难或障碍后继续推进某事）",
+    "toeicSceneFocus": "适用于日常商务沟通、团队协作、问题解决等场景，是托业听力（会议对话、工作交流）中的高频表达，侧重“**克服阻碍后的推进**”",
+    "keyCollocations": [
+      "moved forward with the plan（推进计划）",
+      "moved forward despite difficulties（迎难而上）",
+      "moved forward to the next step（进入下一步）",
+      "moved forward with the negotiation（继续谈判）"
+    ],
+    "toeicExampleSentences": [
+      "The team moved forward with the project plan despite facing several technical challenges.（尽管面临多项技术挑战，团队仍推进了项目计划。）",
+      "After resolving the disagreement, both parties moved forward with the negotiation.（解决分歧后，双方继续推进谈判。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "moved forward",
+        "coreDifference": "口语化，强调“克服障碍后推进”，语气较轻松",
+        "sceneFocus": "日常工作、谈判、团队项目场景"
+      },
+      {
+        "word": "developed",
+        "coreDifference": "侧重“发展、开发”，强调“从无到有或从简单到复杂的过程”",
+        "sceneFocus": "产品开发、技术研发、市场发展场景"
+      }
+    ]
+  },
+  {
+    "word": "developed",
+    "phonetic": "/dɪˈveləpt/（英）；/dɪˈveləpt/（美）",
+    "partOfSpeech": "v. 动词（develop的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：发展；开发；研制；培养 2. 形容词：发达的；成熟的",
+    "toeicSceneFocus": "多出现于产品研发、市场拓展、能力培养等语境，是托业阅读（产品报告、市场分析）中的高频核心词，侧重“**从无到有、从初级到高级的发展过程**”",
+    "keyCollocations": [
+      "developed a new product（开发新产品）",
+      "developed the market（拓展市场）",
+      "developed skills（培养技能）",
+      "developed country（发达国家）"
+    ],
+    "toeicExampleSentences": [
+      "The R&D department has developed a new software that can improve work efficiency by 30%.（研发部门开发了一款能将工作效率提升30%的新软件。）",
+      "Over the past five years, the company has developed a strong customer base in the Asian market.（过去五年，该公司在亚洲市场拓展了庞大的客户群。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "developed",
+        "coreDifference": "强调“开发、发展”的过程，可用于产品、市场、能力等",
+        "sceneFocus": "产品研发、市场拓展、技能培养场景"
+      },
+      {
+        "word": "evolved",
+        "coreDifference": "侧重“演变、进化”，强调“随时间推移的渐进式变化”",
+        "sceneFocus": "商业模式、技术、文化演变场景"
+      }
+    ]
+  },
+  {
+    "word": "evolved",
+    "phonetic": "/ɪˈvɒlvd/（英）；/ɪˈvɑːlvd/（美）",
+    "partOfSpeech": "v. 动词（evolve的过去式和过去分词）",
+    "coreMeaning": "演变；进化；逐步发展（指事物随时间推移逐渐发生变化，变得更复杂或完善）",
+    "toeicSceneFocus": "多出现于商业模式、技术迭代、行业发展等语境，是托业阅读（行业报告、趋势分析）中的常考词，侧重“**随时间的渐进式演变**”",
+    "keyCollocations": [
+      "evolved the business model（演变商业模式）",
+      "evolved over time（随时间演变）",
+      "evolved the technology（迭代技术）",
+      "evolved into a leader（发展成为领导者）"
+    ],
+    "toeicExampleSentences": [
+      "The company’s business model has evolved from offline retail to online e-commerce over the past decade.（过去十年，该公司的商业模式从线下零售逐步演变为线上电商。）",
+      "Mobile payment technology has evolved rapidly since the widespread use of smartphones.（自智能手机普及以来，移动支付技术发展迅速。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "evolved",
+        "coreDifference": "强调“渐进式、随时间的演变”，侧重“变化的过程性”",
+        "sceneFocus": "商业模式、技术迭代、行业发展场景"
+      },
+      {
+        "word": "transformed",
+        "coreDifference": "强调“彻底的、根本性的改变”，侧重“变化的结果”",
+        "sceneFocus": "企业转型、技术革新、面貌改变场景"
+      }
+    ]
+  },
+  {
+    "word": "changed",
+    "phonetic": "/tʃeɪndʒd/（英）；/tʃeɪndʒd/（美）",
+    "partOfSpeech": "v. 动词（change的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "改变；变化；更换（通用词汇，指事物在形态、性质、状态上发生的任何变化）",
+    "toeicSceneFocus": "适用于所有变化场景，是托业阅读和听力中的基础高频词，侧重“**任何形式的变化，无程度之分**”",
+    "keyCollocations": [
+      "changed the plan（改变计划）",
+      "changed the policy（调整政策）",
+      "changed the schedule（更改日程）",
+      "changed a lot（变化很大）"
+    ],
+    "toeicExampleSentences": [
+      "We changed the meeting time from Monday to Wednesday to accommodate more participants.（为了容纳更多参会者，我们将会议时间从周一改到了周三。）",
+      "The market demand has changed significantly since the launch of the new competitor’s product.（自竞品新产品上市以来，市场需求发生了显著变化。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "changed",
+        "coreDifference": "通用词，可指任何程度的变化，适用范围最广",
+        "sceneFocus": "所有形态、性质、状态变化场景"
+      },
+      {
+        "word": "modified",
+        "coreDifference": "强调“局部的、细微的修改”，侧重“不改变本质”",
+        "sceneFocus": "方案、文件、产品的局部调整场景"
+      }
+    ]
+  },
+  {
+    "word": "transformed",
+    "phonetic": "/trænsˈfɔːmd/（英）；/trænsˈfɔːrmd/（美）",
+    "partOfSpeech": "v. 动词（transform的过去式和过去分词）",
+    "coreMeaning": "使改变形态；使改观；使转型（指事物发生彻底、根本性的变化，本质或面貌焕然一新）",
+    "toeicSceneFocus": "多出现于企业转型、技术革新、城市发展等语境，是托业阅读（行业报告、企业案例）中的高频词，侧重“**彻底的、根本性的改变**”",
+    "keyCollocations": [
+      "transformed the company（使公司转型）",
+      "transformed the industry（变革行业）",
+      "transformed the workflow（改变工作流程）",
+      "transformed into a new look（焕然一新）"
+    ],
+    "toeicExampleSentences": [
+      "The introduction of artificial intelligence has transformed the company’s traditional manufacturing workflow.（人工智能的引入彻底改变了该公司传统的生产流程。）",
+      "The old factory has been transformed into a modern office building with advanced facilities.（这座老旧工厂被改造成了一座设施先进的现代化办公楼。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "transformed",
+        "coreDifference": "强调“彻底、根本性的改变”，变化程度大",
+        "sceneFocus": "企业转型、技术革新、面貌革新场景"
+      },
+      {
+        "word": "adjusted",
+        "coreDifference": "强调“微调、调整”，以适应新情况，变化程度小",
+        "sceneFocus": "计划、策略、参数的微调场景"
+      }
+    ]
+  },
+  {
+    "word": "modified",
+    "phonetic": "/ˈmɒdɪfaɪd/（英）；/ˈmɑːdɪfaɪd/（美）",
+    "partOfSpeech": "v. 动词（modify的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "修改；修订；调整（指对事物进行局部的、细微的改动，不改变其本质）",
+    "toeicSceneFocus": "多出现于方案设计、文件修订、产品优化等语境，是托业阅读（方案文档、产品说明）中的常考词，侧重“**局部的、细微的调整**”",
+    "keyCollocations": [
+      "modified the plan（修改计划）",
+      "modified the design（调整设计）",
+      "modified the contract（修订合同）",
+      "modified version（修订版）"
+    ],
+    "toeicExampleSentences": [
+      "The design team modified the product’s appearance based on customer feedback to improve its market appeal.（设计团队根据客户反馈调整了产品外观，以提升其市场吸引力。）",
+      "We have modified the contract terms slightly to meet the requirements of both parties.（我们对合同条款做了小幅修改，以满足双方的要求。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "modified",
+        "coreDifference": "局部、细微的修改，不改变事物本质",
+        "sceneFocus": "方案、设计、合同的局部调整场景"
+      },
+      {
+        "word": "adjusted",
+        "coreDifference": "为适应新情况而进行的“微调、校准”，更侧重“适应性”",
+        "sceneFocus": "计划、策略、仪器参数的校准场景"
+      }
+    ]
+  },
+  {
+    "word": "adjusted",
+    "phonetic": "/əˈdʒʌstɪd/（英）；/əˈdʒʌstɪd/（美）",
+    "partOfSpeech": "v. 动词（adjust的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "调整；校准；适应（指为适应新情况或达到标准而进行的微调，侧重“适应性调整”）",
+    "toeicSceneFocus": "多出现于计划调整、策略优化、仪器校准等语境，是托业阅读和听力中的高频词，侧重“**为适应而做的微调**”",
+    "keyCollocations": [
+      "adjusted the strategy（调整策略）",
+      "adjusted the budget（调整预算）",
+      "adjusted the equipment（校准设备）",
+      "adjusted to the new environment（适应新环境）"
+    ],
+    "toeicExampleSentences": [
+      "The marketing team adjusted the promotion strategy according to the latest market data.（营销团队根据最新市场数据调整了促销策略。）",
+      "It took her a few weeks to adjust to the fast-paced working environment of the new company.（她花了几周时间才适应新公司快节奏的工作环境。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "adjusted",
+        "coreDifference": "为适应新情况的微调或校准，侧重“适应性”",
+        "sceneFocus": "策略、预算、设备、环境适应场景"
+      },
+      {
+        "word": "changed",
+        "coreDifference": "通用词，可指任何程度的变化，无“适应性”含义",
+        "sceneFocus": "所有变化场景"
+      }
+    ]
+  },
+
+  {
+    "word": "room",
+    "phonetic": "/ruːm/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "房间；室；空间",
+    "toeicSceneFocus": "高频出现于办公室环境描述、设备安排、会议预定、差旅住宿等场景。在托业听力（办公室对话、电话预订）和阅读（办公室通知、邮件）中，常考查具体房间（如conference room）或抽象空间（是否有空余位置/时间）。",
+    "keyCollocations": [
+      "conference room (会议室)",
+      "meeting room (会议室)",
+      "stock room (储藏室)",
+      "spare room (空房间)",
+      "make room for (为…腾出空间)"
+    ],
+    "toeicExampleSentences": [
+      "The weekly strategy meeting has been moved to the main conference room on the second floor. (每周的战略会议已改到二楼的主会议室举行。)",
+      "We need to clear out the stock room to make room for the new inventory. (我们需要清理储藏室，为新库存腾出空间。)",
+      "Is there room in your schedule for a brief call this afternoon? (你下午的日程安排里，有空间进行一个简短的电话沟通吗？)"
+    ],
+    "sceneAssociation": "联想“办公室平面图”上标注的各种room，或酒店预订邮件中确认的“a room with a view”。",
+    "confusingWordsComparison": [
+      {
+        "word": "room",
+        "coreDifference": "通常指有特定用途或界限的“房间”，也可指抽象的“空间、余地”。",
+        "toeicSceneFocus": "具体地点或抽象可能性。"
+      },
+      {
+        "word": "space",
+        "coreDifference": "指更广泛、可测量的“空间、场地”，或虚拟的“网页/文档空间”。",
+        "toeicSceneFocus": "办公场地租赁、网页设计、存储空间描述。"
+      }
+    ]
+  },
+  {
+    "word": "space",
+    "phonetic": "/speɪs/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "空间；空地；空白；太空",
+    "toeicSceneFocus": "在商务语境下，常指办公空间、租赁场地、存储空间、文档/网页空白处。是描述物理场地限制、布局规划和资源分配的关键词，多见于房地产广告、办公室搬迁通知、IT存储说明等材料。",
+    "keyCollocations": [
+      "office space (办公空间)",
+      "parking space (停车位)",
+      "storage space (存储空间)",
+      "limited space (有限空间)",
+      "blank space (空白处)"
+    ],
+    "toeicExampleSentences": [
+      "The company is looking to lease additional office space in the downtown area to accommodate its growing team. (公司正寻求在市中心租赁额外的办公空间，以容纳其不断壮大的团队。)",
+      "Please make sure to leave enough space at the bottom of the form for your signature. (请确保在表格底部留有足够的空白处用于签名。)",
+      "Due to limited storage space, we encourage employees to digitize old paper files. (由于存储空间有限，我们鼓励员工将旧纸质文件数字化。)"
+    ],
+    "sceneAssociation": "联想“寻找新办公室”时考虑的“square footage”（平方英尺），或电脑弹出的“disk space full”（磁盘空间已满）提示。",
+    "confusingWordsComparison": [
+      {
+        "word": "space",
+        "coreDifference": "侧重“可容纳或占用的三维空间或面积”，也指虚拟空白。",
+        "toeicSceneFocus": "场地、容量、空白。"
+      },
+      {
+        "word": "room",
+        "coreDifference": "更常指建筑内的具体“房间”，或抽象“余地”。",
+        "toeicSceneFocus": "具体房间或可能性。"
+      },
+      {
+        "word": "area",
+        "coreDifference": "强调被划定用于特定目的的“区域、地段”，不强调容量。",
+        "toeicSceneFocus": "功能区域、地理区域。"
+      }
+    ]
+  },
+  {
+    "word": "area",
+    "phonetic": "/ˈeriə/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "地区；区域；领域；面积",
+    "toeicSceneFocus": "广泛应用于描述商业区、办公功能区、市场覆盖范围、专业领域等。托业听力中常出现在办公室布局、城市导览、市场报告对话中；阅读中则见于公司介绍、市场分析、工作职责描述。",
+    "keyCollocations": [
+      "metropolitan area (大都市区)",
+      "downtown area (市中心区)",
+      "work area (工作区)",
+      "common area (公共区域)",
+      "area of expertise (专业领域)"
+    ],
+    "toeicExampleSentences": [
+      "Our new branch is located in a thriving commercial area with excellent public transport links. (我们的新分公司位于一个公共交通便利、繁荣的商业区。)",
+      "The reception area has been renovated to provide a more welcoming atmosphere for visitors. (接待区已翻新，为访客提供更热情的氛围。)",
+      "Her main area of responsibility includes client relations and contract negotiations. (她的主要职责领域包括客户关系和合同谈判。)"
+    ],
+    "sceneAssociation": "想象办公室的“open-plan work area”（开放式工作区），或市场报告地图上被高亮的“target sales area”（目标销售区域）。",
+    "confusingWordsComparison": [
+      {
+        "word": "area",
+        "coreDifference": "强调被划定边界或有特定功能的“区域”，可以是物理的或抽象的。",
+        "toeicSceneFocus": "功能分区、地理区域、知识领域。"
+      },
+      {
+        "word": "location",
+        "coreDifference": "指一个具体的“地点、位置”，通常更精确。",
+        "toeicSceneFocus": "具体地址、场所位置。"
+      },
+      {
+        "word": "district",
+        "coreDifference": "常指行政或功能上划分的正式“区”，如“financial district”（金融区）。",
+        "toeicSceneFocus": "城市行政区、特定功能聚集区。"
+      }
+    ]
+  },
+  {
+    "word": "location",
+    "phonetic": "/loʊˈkeɪʃ(ə)n/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "位置；地点；场所",
+    "toeicSceneFocus": "托业核心词汇，频繁出现在涉及公司地址、活动举办地、设施位置、分支机构、物流配送等所有需要指明具体“在哪里”的场景。是听力Part 1（图片描述）、Part 3/4（对话和独白）及阅读通知、广告中的必考概念。",
+    "keyCollocations": [
+      "central location (中心位置)",
+      "prime location (黄金地段)",
+      "on-site location (现场地点)",
+      "remote location (偏远地点)",
+      "change of location (地点变更)"
+    ],
+    "toeicExampleSentences": [
+      "The success of a retail store heavily depends on its location and accessibility. (零售店的成功很大程度上取决于其地理位置和可达性。)",
+      "Due to unforeseen circumstances, the venue for the product launch has been changed to a new location. (由于不可预见的情况，产品发布会的举办地点已更换至一个新场所。)",
+      "Please confirm the delivery location with the client before dispatching the goods. (在发货前，请与客户确认送货地点。)"
+    ],
+    "sceneAssociation": "联想商务名片上的地址，或会议邀请函末尾的“Location: Conference Room A”。",
+    "confusingWordsComparison": [
+      {
+        "word": "location",
+        "coreDifference": "指一个具体存在或事件发生的“地点、位置”。",
+        "toeicSceneFocus": "具体地址、场所、事件举办地。"
+      },
+      {
+        "word": "address",
+        "coreDifference": "特指包含门牌号、街道、城市等详细信息的“通讯地址”。",
+        "toeicSceneFocus": "邮寄、注册、联系所用的具体地址信息。"
+      },
+      {
+        "word": "site",
+        "coreDifference": "常指用于特定活动（建筑、活动）的“场地、现场”，或“网站”。",
+        "toeicSceneFocus": "建筑工地、活动场地、网址。"
+      }
+    ]
+  },
+  {
+    "word": "address",
+    "phonetic": "/əˈdres/ (n.), /əˈdres/ (v.)",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 地址；演说 v. 处理；解决；对…发表讲话；在（信封等）上写姓名地址",
+    "toeicSceneFocus": "名词义为托业超高频词，出现在所有需要填写、确认或更新联系信息的场景（注册表、订单、客户资料）。动词义是商务沟通和问题解决的核心词，意为“着手处理（问题、关切）”，是托业听力对话和阅读邮件中关于客户服务、项目管理的关键动作。",
+    "keyCollocations": [
+      "mailing address (邮寄地址)",
+      "email address (电子邮件地址)",
+      "billing address (账单地址)",
+      "to address an issue (处理问题)",
+      "to address the audience (向听众发表讲话)"
+    ],
+    "toeicExampleSentences": [
+      "Please ensure that your shipping address is correct before submitting the online order. (在提交在线订单前，请确保您的送货地址正确。)",
+      "The management held an urgent meeting to address the recent decline in customer satisfaction. (管理层召开紧急会议，着手处理近期客户满意度下降的问题。)",
+      "All inquiries should be addressed to our customer service department. (所有问询应致电我们的客户服务部处理。)"
+    ],
+    "sceneAssociation": "名词：联想网购结账时填写的地址栏。动词：联想项目经理在会议上说“We need to address this risk.”（我们需要处理这个风险。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "address (n.)",
+        "coreDifference": "具体的通讯或地理位置信息。",
+        "toeicSceneFocus": "联系信息、地理位置详情。"
+      },
+      {
+        "word": "location",
+        "coreDifference": "更泛指“位置、地点”，不一定是详细的邮寄地址。",
+        "toeicSceneFocus": "泛指的地点、场所。"
+      }
+    ]
+  },
+  {
+    "word": "contact",
+    "phonetic": "/ˈkɑːntækt/ (n., v.)",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 联系；联络人；联系人 v. 联系；接触",
+    "toeicSceneFocus": "托业核心动词和名词。动词义贯穿所有商务沟通场景（打电话、发电邮）。名词义指“联系人”（人）或“联系”（行为）。是听力（电话沟通、安排事宜）和阅读（邮件签名、指示说明）的绝对高频词。",
+    "keyCollocations": [
+      "contact information (联系信息)",
+      "point of contact (联系人)",
+      "emergency contact (紧急联系人)",
+      "make contact with (与…取得联系)",
+      "be in contact (保持联系)"
+    ],
+    "toeicExampleSentences": [
+      "If you have any questions, please do not hesitate to contact our support team. (如有任何疑问，请随时联系我们的支持团队。)",
+      "Mr. Kim is our main point of contact for all matters related to the Asian market. (金先生是我们所有亚洲市场相关事务的主要联系人。)",
+      "All attendees are required to provide their emergency contact details upon registration. (所有参会者需在注册时提供紧急联系人信息。)"
+    ],
+    "sceneAssociation": "联想商务邮件末尾的“Contact: John Smith, Tel: XXX”，或电话录音“Please contact us during business hours.”（请在营业时间联系我们。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "contact (v.)",
+        "coreDifference": "通用词，指通过任何方式“联系、联络”。",
+        "toeicSceneFocus": "泛指取得联系。"
+      },
+      {
+        "word": "call",
+        "coreDifference": "特指“打电话”联系。",
+        "toeicSceneFocus": "电话沟通。"
+      },
+      {
+        "word": "email",
+        "coreDifference": "特指“发送电子邮件”联系。",
+        "toeicSceneFocus": "电子邮件沟通。"
+      }
+    ]
+  },
+  {
+    "word": "information",
+    "phonetic": "/ˌɪnfərˈmeɪʃ(ə)n/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "信息；资料；情报（不可数名词）",
+    "toeicSceneFocus": "商务活动的核心，指被传递、获取、处理的各种“信息”。托业考试中无处不在，涉及会议议程、产品手册、市场报告、客户咨询、数据录入等所有需要信息流转的场景。注意其不可数，前面不加“an”，后面不加“s”。",
+    "keyCollocations": [
+      "background information (背景信息)",
+      "confidential information (机密信息)",
+      "up-to-date information (最新信息)",
+      "gather information (收集信息)",
+      "disclose information (披露信息)"
+    ],
+    "toeicExampleSentences": [
+      "The brochure contains all the necessary information about our product specifications and pricing. (这本手册包含了关于我们产品规格和价格的所有必要信息。)",
+      "For more detailed information, please refer to the company’s official website. (欲知更多详细信息，请参考公司官网。)",
+      "It is crucial to verify the accuracy of the financial information before presenting it to the board. (在向董事会呈报前，核实财务信息的准确性至关重要。)"
+    ],
+    "sceneAssociation": "想象一封邮件的主题行“Information Regarding Tomorrow’s Meeting”（关于明日会议的信息），或一个写着“Customer Information”（客户信息）的数据库文件夹。",
+    "confusingWordsComparison": [
+      {
+        "word": "information",
+        "coreDifference": "不可数名词，泛指各类“信息、资料”，是经过组织或可被理解的。",
+        "toeicSceneFocus": "广义的信息、知识。"
+      },
+      {
+        "word": "data",
+        "coreDifference": "“数据”，是原始的、未处理的数字或事实，常为可数名词（复数形式）。",
+        "toeicSceneFocus": "用于分析处理的原始资料，尤指数字数据。"
+      },
+      {
+        "word": "detail",
+        "coreDifference": "可数名词，指“细节、详情”，是信息的具体组成部分。",
+        "toeicSceneFocus": "具体、细小的信息点。"
+      }
+    ]
+  },
+  {
+    "word": "data",
+    "phonetic": "/ˈdeɪtə/ (常用), /ˈdætə/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "数据；资料（通常作复数名词处理，但单数用法也越来越普遍）",
+    "toeicSceneFocus": "在数字化办公和商业分析中至关重要。托业常考查与数据分析、报告、IT系统、市场研究、销售统计相关的场景。动词搭配如“analyze/collect/process data”是高频考点。",
+    "keyCollocations": [
+      "raw data (原始数据)",
+      "sales data (销售数据)",
+      "data analysis (数据分析)",
+      "data entry (数据录入)",
+      "data protection (数据保护)"
+    ],
+    "toeicExampleSentences": [
+      "The marketing team is analyzing the latest sales data to identify consumer trends. (市场团队正在分析最新的销售数据，以识别消费者趋势。)",
+      "All employees must complete the online training module on data security and privacy. (所有员工必须完成关于数据安全与隐私的在线培训模块。)",
+      "The report is based on data collected from over 10,000 customer surveys. (该报告基于从一万多份客户调查中收集的数据。)"
+    ],
+    "sceneAssociation": "联想屏幕上显示的Excel图表，或IT部门发布的“Data Backup Schedule”（数据备份时间表）通知。",
+    "confusingWordsComparison": [
+      {
+        "word": "data",
+        "coreDifference": "通常指用于计算、分析、推理的原始“数据”，尤指数字信息。",
+        "toeicSceneFocus": "分析处理的原始材料，常为数字形式。"
+      },
+      {
+        "word": "information",
+        "coreDifference": "是经过处理、组织后变得有意义、可理解的“信息”。",
+        "toeicSceneFocus": "处理后的、有意义的知识。"
+      },
+      {
+        "word": "statistic",
+        "coreDifference": "指单个的“统计数字、统计量”，或统计学这门学科。",
+        "toeicSceneFocus": "具体的统计数据项。"
+      }
+    ]
+  },
+  {
+    "word": "fact",
+    "phonetic": "/fækt/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "事实；实际情况",
+    "toeicSceneFocus": "在商务报告、提案、讨论和决策中用于陈述客观依据。常出现在论证观点、澄清误解、提供证据的语境中。短语“in fact”用于强调或修正前述内容，是听力转折信号词。",
+    "keyCollocations": [
+      "hard fact (确凿的事实)",
+      "face the facts (面对现实)",
+      "as a matter of fact (事实上)",
+      "check the facts (核实事实)",
+      "fact sheet (情况说明书)"
+    ],
+    "toeicExampleSentences": [
+      "Before making a decision, we need to base it on facts and figures, not just assumptions. (在做决定前，我们需要基于事实和数据，而不仅仅是假设。)",
+      "The proposal sounds promising, but we must verify the key facts presented in the document. (这个提议听起来不错，但我们必须核实文件中提出的关键事实。)",
+      "In fact, our market share has increased by 5% since the new campaign launched. (事实上，自新 campaign 推出以来，我们的市场份额增长了5%。)"
+    ],
+    "sceneAssociation": "联想会议中有人说“Let’s stick to the facts.”（让我们基于事实。），或报告附录中的“Key Facts and Figures”（关键事实与数据）。",
+    "confusingWordsComparison": [
+      {
+        "word": "fact",
+        "coreDifference": "被证实为真实的客观“事实”，与观点（opinion）相对。",
+        "toeicSceneFocus": "客观真实、可验证的情况。"
+      },
+      {
+        "word": "information",
+        "coreDifference": "中性词，泛指“信息”，不强调其是否已被证实。",
+        "toeeicSceneFocus": "泛指传递的内容。"
+      },
+      {
+        "word": "figure",
+        "coreDifference": "常指具体的“数字、数值”。",
+        "toeicSceneFocus": "数据、图表中的数字。"
+      }
+    ]
+  },
+  {
+    "word": "figure",
+    "phonetic": "/ˈfɪɡjər/",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 数字；人物；体型；图表 v. 计算；认为；出现",
+    "toeicSceneFocus": "名词“数字”义是托业高频考点，特指财务数据、统计数字、图表中的数值。名词“人物”义指重要或有影响力的人。动词“figure out”（算出，弄清楚）是解决商务问题的常用短语。",
+    "keyCollocations": [
+      "sales figures (销售数字)",
+      "key figure (关键人物)",
+      "double-digit figures (两位数)",
+      "figure out (弄清楚，解决)",
+      "as shown in Figure 1 (如图1所示)"
+    ],
+    "toeicExampleSentences": [
+      "The quarterly report shows that our revenue figures have exceeded expectations. (季度报告显示，我们的收入数字超出了预期。)",
+      "Can you help me figure out how to operate this new printer? (你能帮我弄清楚怎么操作这台新打印机吗？)",
+      "Mr. Lee is a prominent figure in the local business community. (李先生是当地商界的一位杰出人物。)"
+    ],
+    "sceneAssociation": "名词：联想财务简报PPT上巨大的、加粗的销售额数字。动词：联想同事讨论时说“I’ll figure it out.”（我会搞定的。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "figure (n.)",
+        "coreDifference": "常指具体的、有意义的“数字、数值”，或图表。",
+        "toeicSceneFocus": "财务数据、统计数字、图表。"
+      },
+      {
+        "word": "number",
+        "coreDifference": "更通用的“数字、号码”，强调数量或序列。",
+        "toeicSceneFocus": "数量、电话号码、编号。"
+      },
+      {
+        "word": "statistic",
+        "coreDifference": "特指通过统计方法得出的“统计数据”。",
+        "toeicSceneFocus": "统计结果、统计量。"
+      }
+    ]
+  },
+  {
+    "word": "statistic",
+    "phonetic": "/stəˈtɪstɪk/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "统计数字；统计资料；[复数] 统计学",
+    "toeicSceneFocus": "在呈现市场调研结果、业绩报告、社会趋势分析时使用。托业阅读图表题、市场分析文章及听力中的研究报告部分常出现。强调其作为量化证据的权威性。",
+    "keyCollocations": [
+      "official statistics (官方统计)",
+      "vital statistics (人口动态统计；重要数据)",
+      "according to statistics (据统计)",
+      "compile statistics (编制统计数据)",
+      "statistical analysis (统计分析)"
+    ],
+    "toeicExampleSentences": [
+      "Recent statistics indicate a growing preference for online shopping among consumers aged 25-40. (最近的统计数据显示，25至40岁的消费者对线上购物的偏好日益增长。)",
+      "The report includes a table of key statistics comparing our performance with industry averages. (报告中包含一个关键统计表，将我们的表现与行业平均水平进行了比较。)",
+      "A background in statistics is beneficial for this data analyst position. (统计学背景对这个数据分析师的职位是有益的。)"
+    ],
+    "sceneAssociation": "联想市场调研报告中的柱状图，旁边标注着“Key Statistics”（关键统计数据）。",
+    "confusingWordsComparison": [
+      {
+        "word": "statistic",
+        "coreDifference": "指一个具体的、通过统计方法得出的“统计数字”，或泛指“统计资料”。",
+        "toeicSceneFocus": "单个统计结果或数据集合。"
+      },
+      {
+        "word": "data",
+        "coreDifference": "构成统计数字基础的原始“数据”。",
+        "toeicSceneFocus": "原始材料。"
+      },
+      {
+        "word": "figure",
+        "coreDifference": "含义更广，可指任何“数字”，不一定是统计结果。",
+        "toeicSceneFocus": "通用数字、数值。"
+      }
+    ]
+  },
+  {
+    "word": "detail",
+    "phonetic": "/ˈdiːteɪl/ (n.), /dɪˈteɪl/ (v.)",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 细节；详情 v. 详述；详细说明",
+    "coreMeaning": "n. 细节；详情 v. 详述；详细说明",
+    "toeicSceneFocus": "名词是商务沟通、项目执行、质量控制的核心。托业考查在会议、邮件、报告中要求提供、确认或关注“细节”（attention to detail）的能力。动词常用于要求或提供更深入的解释。",
+    "keyCollocations": [
+      "in detail (详细地)",
+      "attention to detail (注重细节)",
+      "specific details (具体细节)",
+      "detailed report (详细的报告)",
+      "go into detail (详述)"
+    ],
+    "toeicExampleSentences": [
+      "Could you please provide more details about the proposed budget for the project? (您能否提供更多关于项目拟议预算的细节？)",
+      "The success of the event depends on careful planning and attention to every detail. (活动的成功取决于细致的规划和对每个细节的关注。)",
+      "The contract details all the responsibilities and obligations of both parties. (合同详细规定了双方的所有责任和义务。)"
+    ],
+    "sceneAssociation": "名词：联想项目计划书中长达数页的“Project Details”（项目详情）部分。动词：联想经理在邮件中写道“Please detail the steps involved.”（请详述涉及的步骤。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "detail",
+        "coreDifference": "可数名词，指一个具体的、细小的“细节、详情”。",
+        "toeicSceneFocus": "具体、零碎的信息点。"
+      },
+      {
+        "word": "information",
+        "coreDifference": "不可数名词，是“信息”的总称。",
+        "toeicSceneFocus": "信息的整体。"
+      },
+      {
+        "word": "particular",
+        "coreDifference": "作名词时（常用复数），指“详细情况、细节”，但更正式，且常与“specific”互换。",
+        "toeicSceneFocus": "正式文件中的具体项目、详情。"
+      }
+    ]
+  },
+  {
+    "word": "particular",
+    "phonetic": "/pərˈtɪkjələr/",
+    "partOfSpeech": "adj. 形容词；n. 名词 [常作复数]",
+    "coreMeaning": "adj. 特定的；特别的；讲究的 n. 详情；细节",
+    "toeicSceneFocus": "形容词义是限定范围、指定具体对象的关键词，如“a particular product”（特定产品）。名词复数形式“particulars”是正式用语，指“详细资料、细节”，常见于表格、合同或正式询问中。",
+    "keyCollocations": [
+      "in particular (特别，尤其)",
+      "particular interest (特别的兴趣)",
+      "for no particular reason (没有特别原因)",
+      "take down sb’s particulars (记下某人的详细资料)",
+      "specify the particulars (指明细节)"
+    ],
+    "toeicExampleSentences": [
+      "Is there a particular model you are interested in, or should I give you an overview of our full range? (您是对某个特定型号感兴趣，还是需要我为您概述我们的全系列产品？)",
+      "The training program, in particular the module on leadership, received excellent feedback. (这个培训项目，特别是关于领导力的模块，获得了极好的反馈。)",
+      "Please fill out this form with your personal particulars, including your full name and contact information. (请填写此表格，提供您的个人详细资料，包括全名和联系信息。)"
+    ],
+    "sceneAssociation": "形容词：联想客户说“I’m looking for a particular type of software.”（我在找一款特定的软件。）。名词：联想入职时填写的“Personal Particulars”（个人资料）表格。",
+    "confusingWordsComparison": [
+      {
+        "word": "particular (adj.)",
+        "coreDifference": "强调“特定的、个别的”，与“general”相对。",
+        "toeicSceneFocus": "指定一个，非泛指。"
+      },
+      {
+        "word": "specific",
+        "coreDifference": "与particular常可互换，但“specific”更强调“明确、具体而不含糊”。",
+        "toeicSceneFocus": "明确、具体。"
+      },
+      {
+        "word": "special",
+        "coreDifference": "强调“特别的、与众不同的”，含有“特殊待遇或性质”之意。",
+        "toeicSceneFocus": "不寻常的、独特的。"
+      }
+    ]
+  },
+  {
+    "word": "specific",
+    "phonetic": "/spəˈsɪfɪk/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "明确的；具体的；特定的",
+    "toeicSceneFocus": "商务沟通中用于避免模糊、要求或提供精确信息的关键词。常用于设定目标（specific goals）、说明要求（specific requirements）、给出指示（specific instructions）或询问细节（specific questions）。是提升沟通效率的核心词汇。",
+    "keyCollocations": [
+      "specific requirements (具体要求)",
+      "specific instructions (明确指示)",
+      "at a specific time (在特定时间)",
+      "be specific about (对…具体说明)",
+      "to be more specific (更具体地说)"
+    ],
+    "toeicExampleSentences": [
+      "The job description lists the specific qualifications and skills needed for the role. (职位描述列出了该职位所需的具体资格和技能。)",
+      "Could you be more specific about what kind of support you need from our team? (您能否更具体地说明您需要我们团队提供何种支持？)",
+      "Please follow the specific safety procedures outlined in the manual. (请遵循手册中概述的 specific 安全程序。)",
+      "We need to set specific and measurable objectives for the next quarter. (我们需要为下一季度设定具体且可衡量的目标。)"
+    ],
+    "sceneAssociation": "联想项目经理开会时说“Let’s get down to the specific tasks and deadlines.”（我们来谈谈具体的任务和截止日期。），或客户在邮件中问“Can you give me a specific quote?”（你能给我一个具体的报价吗？）。",
+    "confusingWordsComparison": [
+      {
+        "word": "specific",
+        "coreDifference": "强调“明确、具体、不含糊”，与“vague”相对。",
+        "toeicSceneFocus": "清晰的、精确的细节。"
+      },
+      {
+        "word": "particular",
+        "coreDifference": "常与“specific”互换，但更强调“特定的某一个”，与“general”相对。",
+        "toeicSceneFocus": "特指的，非泛泛的。"
+      },
+      {
+        "word": "detailed",
+        "coreDifference": "强调“包含许多细节的”，描述信息的丰富程度。",
+        "toeicSceneFocus": "详尽、全面的。"
+      }
+    ]
+  },
+  {
+    "word": "general",
+    "phonetic": "/ˈdʒen(ə)rəl/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "一般的；普通的；大致的；总的",
+    "toeicSceneFocus": "用于描述概括性、非具体细节的情况。常见于“general manager”（总经理）、“in general”（总体而言）、“general public”（公众）等短语。是与“specific/particular”相对的常用词，用于介绍背景、总体趋势或通用规则。",
+    "keyCollocations": [
+      "in general (总体上)",
+      "general public (公众)",
+      "general manager (总经理)",
+      "general idea (大体概念)",
+      "as a general rule (通常，一般而言)"
+    ],
+    "toeicExampleSentences": [
+      "The General Manager will preside over the annual strategy meeting next Monday. (总经理将于下周一主持年度战略会议。)",
+      "In general, customer feedback on the new design has been very positive. (总体而言，客户对新设计的反馈非常积极。)",
+      "Could you give me a general overview of the project timeline before we dive into the details? (在我们深入细节之前，你能给我一个项目时间表的大致概述吗？)"
+    ],
+    "sceneAssociation": "联想一份报告的标题“General Market Trends”（总体市场趋势），或会议开场白“Let’s start with a general update.”（让我们从总体进展开始。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "general",
+        "coreDifference": "“普遍的、概括的、大体的”，与“specific”相反。",
+        "toeicSceneFocus": "总体、非具体、通用的。"
+      },
+      {
+        "word": "common",
+        "coreDifference": "“常见的、共有的”，强调出现的频率或共享性。",
+        "toeicSceneFocus": "常见的现象、普遍的问题。"
+      },
+      {
+        "word": "usual",
+        "coreDifference": "“通常的、惯常的”，强调按照惯例或个人习惯。",
+        "toeicSceneFocus": "惯常做法、通常情况。"
+      }
+    ]
+  },
+  {
+    "word": "overall",
+    "phonetic": "/ˌoʊvərˈɔːl/ (adj., adv.)",
+    "partOfSpeech": "adj. 形容词；adv. 副词",
+    "coreMeaning": "adj. 总体的；全面的 adv. 总体来看；总的来说",
+    "toeicSceneFocus": "用于评估、总结和描述全局情况。形容词修饰名词如“overall performance”（整体表现）、“overall goal”（总体目标）。副词常用于引出结论，是对前述细节的概括，是托业听力对话和阅读段落结尾的高频信号词。",
+    "keyCollocations": [
+      "overall performance (整体表现)",
+      "overall objective (总体目标)",
+      "overall impression (总体印象)",
+      "overall, ... (总的来说…)",
+      "cost overall (总成本)"
+    ],
+    "toeicExampleSentences": [
+      "Despite some minor delays, the overall progress of the construction project is on schedule. (尽管有一些小的延误，但建设项目的总体进度是按计划进行的。)",
+      "The report evaluates the company’s overall financial health based on several key indicators. (该报告根据几个关键指标评估了公司的整体财务健康状况。)",
+      "Overall, the conference was a great success, with high attendance and positive feedback. (总的来说，这次会议非常成功，出席率高且反馈积极。)"
+    ],
+    "sceneAssociation": "联想业绩仪表盘上的“Overall KPI”（整体关键绩效指标），或经理在汇报结尾说“So overall, we’re in a good position.”（所以总体来看，我们处境不错。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "overall",
+        "coreDifference": "强调“包括所有部分、各方面在内的整体状况”。",
+        "toeicSceneFocus": "全面的、总括性的评估。"
+      },
+      {
+        "word": "total",
+        "coreDifference": "强调“数量的总和、总计”。",
+        "toeicSceneFocus": "数量的总计、合计。"
+      },
+      {
+        "word": "general",
+        "coreDifference": "“笼统的、大致的”，不涉及所有细节，与“specific”相对。",
+        "toeicSceneFocus": "大体的、非具体的描述。"
+      }
+    ]
+  },
+  {
+    "word": "total",
+    "phonetic": "/ˈtoʊtl/",
+    "partOfSpeech": "adj. 形容词；n. 名词；v. 动词",
+    "coreMeaning": "adj. 总的；全部的 n. 总数；合计 v. 总计达",
+    "toeicSceneFocus": "商务、财务和统计中的核心词汇。用于计算费用、收入、数量、时间等的总和。常见于账单、报表、总结和数据分析中。短语“a total of”和动词“total”是高频考点。",
+    "keyCollocations": [
+      "total cost (总成本)",
+      "total amount (总额)",
+      "in total (总共)",
+      "a total of (总计…)",
+      "total sales (总销售额)"
+    ],
+    "toeicExampleSentences": [
+      "The total expenditure for the marketing campaign reached $50,000. (这次营销活动的总支出达到了5万美元。)",
+      "Please add up these figures and give me the total. (请把这些数字加起来，告诉我总数。)",
+      "Participants in the workshop totaled 35 from various departments. (参加研讨会的来自各部门的人员总计35人。)"
+    ],
+    "sceneAssociation": "联想发票最底部的“Total Amount Due”（应付总额），或Excel表格中用SUM函数计算出的“Total”。",
+    "confusingWordsComparison": [
+      {
+        "word": "total",
+        "coreDifference": "强调“所有部分加在一起的总和、总计”。",
+        "toeicSceneFocus": "数量的总和、合计。"
+      },
+      {
+        "word": "overall",
+        "coreDifference": "强调“整体上的、全面的”，不一定是数字相加，而是综合性的。",
+        "toeicSceneFocus": "整体状况、综合评估。"
+      },
+      {
+        "word": "complete",
+        "coreDifference": "强调“完整的、全部的”，指没有缺失任何部分的状态。",
+        "toeicSceneFocus": "已完成、无缺失的整体。"
+      }
+    ]
+  },
+  {
+    "word": "complete",
+    "phonetic": "/kəmˈpliːt/",
+    "partOfSpeech": "adj. 形容词；v. 动词",
+    "coreMeaning": "adj. 完整的；完全的；完成的 v. 完成；使完整",
+    "toeicSceneFocus": "动词是项目管理、任务执行的核心。描述完成表格、报告、项目、交易等。形容词描述一个整体（a complete set）或强调程度（complete failure）。是听力中确认任务状态和阅读中描述进度的关键。",
+    "keyCollocations": [
+      "complete a form (填表)",
+      "complete a project (完成项目)",
+      "complete set (全套)",
+      "complete failure (彻底失败)",
+      "fully complete (全部完成)"
+    ],
+    "toeicExampleSentences": [
+      "All new employees are required to complete the online orientation module by Friday. (所有新员工必须在周五前完成在线入职培训模块。)",
+      "Please ensure you have provided a complete mailing address on the application form. (请确保您在申请表上提供了完整的邮寄地址。)",
+      "The merger deal is expected to be completed by the end of this quarter. (预计这笔并购交易将在本季度末完成。)"
+    ],
+    "sceneAssociation": "动词：联想待办事项列表上被划掉的“Complete monthly report”（完成月度报告）。形容词：联想一套“complete documentation”（完整文件）。",
+    "confusingWordsComparison": [
+      {
+        "word": "complete (v.)",
+        "coreDifference": "“完成、结束”，使某事达到终点。",
+        "toeicSceneFocus": "结束一项任务、流程。"
+      },
+      {
+        "word": "finish",
+        "coreDifference": "与“complete”常互换，但“finish”更口语化，有时仅指“结束”而非“使完整”。",
+        "toeicSceneFocus": "结束、做完某事。"
+      },
+      {
+        "word": "entire",
+        "coreDifference": "“整个的、全部的”，强调作为一个整体的范围。",
+        "toeicSceneFocus": "指整体范围，不指完成状态。"
+      }
+    ]
+  },
+  {
+    "word": "entire",
+    "phonetic": "/ɪnˈtaɪər/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "整个的；全部的；完整的",
+    "toeicSceneFocus": "强调一个事物作为整体的全部，没有分割或遗漏。常用于修饰时间（the entire day）、团队（the entire team）、项目（the entire process）等，表达“从头到尾、全体成员”的概念，语气比“whole”稍正式。",
+    "keyCollocations": [
+      "the entire team (整个团队)",
+      "entire process (整个过程)",
+      "entirely different (完全不同)",
+      "over the entire period (在整个期间内)",
+      "in its entirety (完整地)"
+    ],
+    "toeicExampleSentences": [
+      "The entire staff is invited to attend the year-end celebration party. (全体员工都被邀请参加年终庆祝派对。)",
+      "Due to a system upgrade, the online portal will be unavailable for the entire afternoon. (由于系统升级，整个下午在线门户将无法使用。)",
+      "We reviewed the entire proposal and found it to be comprehensive and well-structured. (我们审查了整个提案，发现它全面且结构良好。)"
+    ],
+    "sceneAssociation": "联想一封邮件通知“The entire building will undergo maintenance this weekend.”（整个大楼本周末将进行维护。），或经理说“I need the entire team’s input on this.”（我需要整个团队对此事的意见。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "entire",
+        "coreDifference": "“整个的”，强调整体的完整性，是作为一个单一整体来看，不可分割。",
+        "toeicSceneFocus": "强调整体的、全部的。"
+      },
+      {
+        "word": "whole",
+        "coreDifference": "“全部的”，与“entire”意思非常接近，常可互换，但“whole”更口语化，且在固定短语中（如 as a whole）不可替换。",
+        "toeicSceneFocus": "全部、整体，更常用。"
+      },
+      {
+        "word": "complete",
+        "coreDifference": "“完整的”，强调所有部分都齐全，已完备。",
+        "toeicSceneFocus": "无缺失的、已完备的状态。"
+      }
+    ]
+  },
+  {
+    "word": "whole",
+    "phonetic": "/hoʊl/",
+    "partOfSpeech": "adj. 形容词；n. 名词",
+    "coreMeaning": "adj. 全部的；整个的 n. 整体；全部",
+    "toeicSceneFocus": "含义与“entire”极为相似，但更口语化和常用。在商务交流中用于强调考虑或涉及某事物的全部，而非局部。常见短语“as a whole”（作为一个整体）是重要考点。",
+    "keyCollocations": [
+      "the whole day (一整天)",
+      "the whole world (全世界)",
+      "as a whole (作为一个整体)",
+      "on the whole (总的看来)",
+      "whole process (整个过程)"
+    ],
+    "toeicExampleSentences": [
+      "It took us the whole week to finalize the contract details. (我们花了整整一周才最终确定合同细节。)",
+      "We need to consider the impact of this decision on the company as a whole. (我们需要考虑这个决定对公司整体的影响。)",
+      "On the whole, the new policy has been well received by employees. (总的看来，新政策受到了员工的好评。)"
+    ],
+    "sceneAssociation": "联想同事抱怨“I spent the whole morning in meetings.”（我整个上午都在开会。），或分析师说“Let’s look at the market as a whole.”（让我们看看整个市场。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "whole",
+        "coreDifference": "“全部的、整体的”，强调完整性，常与“entire”互换，但更口语化。",
+        "toeicSceneFocus": "全部、整体。"
+      },
+      {
+        "word": "entire",
+        "coreDifference": "“整个的”，语气更正式，同样强调整体性。",
+        "toeicSceneFocus": "整个的、全部的（正式）。"
+      },
+      {
+        "word": "total",
+        "coreDifference": "“总的”，强调数量或程度上的总和。",
+        "toeicSceneFocus": "数量的总计。"
+      }
+    ]
+  },
+  {
+    "word": "full",
+    "phonetic": "/fʊl/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "满的；充满的；完全的；详尽的",
+    "toeicSceneFocus": "描述容量、程度或范围的极限状态。用于描述日程（full schedule）、参与程度（full participation）、详细信息（full details）、容量（full capacity）等。是商务沟通中表达“充分、完全、已满”状态的常用词。",
+    "keyCollocations": [
+      "full name (全名)",
+      "full-time (全职的)",
+      "full capacity (满负荷)",
+      "in full (全部地)",
+      "full refund (全额退款)"
+    ],
+    "toeicExampleSentences": [
+      "My schedule is completely full next week. Can we meet the week after? (我下周的日程完全排满了。我们能下下周见面吗？)",
+      "Please provide your full name and employee ID for verification. (请提供您的全名和员工ID以进行验证。)",
+      "The conference room is already at full capacity; we’ll need to look for a larger venue. (会议室已经满员了；我们需要找一个更大的场地。)",
+      "Payment must be made in full within 30 days of invoice date. (必须在发票日期起30天内全额付款。)"
+    ],
+    "sceneAssociation": "联想酒店预订回复“Sorry, we are fully booked.”（抱歉，我们已订满。），或表格上的“Full Name”（全名）字段。",
+    "confusingWordsComparison": [
+      {
+        "word": "full",
+        "coreDifference": "“满的”，指容量、内容或程度达到极限。",
+        "toeicSceneFocus": "充满、饱和、完全的状态。"
+      },
+      {
+        "word": "complete",
+        "coreDifference": "“完整的”，指所有部分齐全，无缺失。",
+        "toeicSceneFocus": "无缺失的完整性。"
+      },
+      {
+        "word": "entire/whole",
+        "coreDifference": "“整个的”，强调整体范围，而非“满”的状态。",
+        "toeicSceneFocus": "整体范围。"
+      }
+    ]
+  },
+  {
+    "word": "partial",
+    "phonetic": "/ˈpɑːrʃ(ə)l/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "部分的；不完全的；偏袒的",
+    "toeicSceneFocus": "在商务中主要描述“部分的”，如部分付款（partial payment）、部分完成（partial completion）、部分退款（partial refund）。也用于表示“偏袒的”，但此义在托业中较少作为考点。常与“complete/total”形成对比。",
+    "keyCollocations": [
+      "partial payment (部分付款)",
+      "partial refund (部分退款)",
+      "partial completion (部分完成)",
+      "partial shipment (分批装运)",
+      "be partial to (偏爱…)"
+    ],
+    "toeicExampleSentences": [
+      "The client has made a partial payment of 50% upfront, with the balance due upon delivery. (客户已预付了50%的部分款项，余款在交货时付清。)",
+      "Due to the delay, we can only offer a partial refund for your order. (由于延误，我们只能为您的订单提供部分退款。)",
+      "The project is only in its partial stage; the main development phase starts next month. (项目目前仅处于部分完成阶段；主要开发阶段下个月开始。)"
+    ],
+    "sceneAssociation": "联想一份合同条款“Partial delivery is allowed.”（允许分批交货。），或一封客服邮件“We can issue a partial credit.”（我们可以发放部分信用额度。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "partial",
+        "coreDifference": "“部分的、不完全的”，是“complete”的反义词。",
+        "toeicSceneFocus": "非全部的、部分的。"
+      },
+      {
+        "word": "part (n.)",
+        "coreDifference": "名词，指整体中的“一部分、部件”。",
+        "toeicSceneFocus": "一个组成部分。"
+      },
+      {
+        "word": "incomplete",
+        "coreDifference": "“未完成的”，强调尚未做完，而“partial”强调只是整体中的一部分。",
+        "toeicSceneFocus": "未完成的状态。"
+      }
+    ]
+  },
+  {
+    "word": "part",
+    "phonetic": "/pɑːrt/",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 部分；零件；角色 v. 分离；分开",
+    "toeicSceneFocus": "名词是高频词，指整体中的“一部分”，可以是抽象（part of the plan）或具体（spare part 备件）。动词短语“play a part in”（在…中起作用）和“take part in”（参加）是重要考点。也常见于描述机械或产品组件。",
+    "keyCollocations": [
+      "part of (…的一部分)",
+      "spare part (备件)",
+      "play a part in (在…中起作用)",
+      "take part in (参加)",
+      "on the part of (在…方面)"
+    ],
+    "toeicExampleSentences": [
+      "Effective communication is a crucial part of successful teamwork. (有效的沟通是成功团队协作的关键部分。)",
+      "We need to order a replacement part for the malfunctioning printer. (我们需要为出故障的打印机订购一个替换零件。)",
+      "All department heads are expected to take part in the quarterly review meeting. (所有部门主管都应参加季度评审会。)",
+      "The delay was due to an oversight on the part of the shipping company. (延误是由于运输公司方面的疏忽造成的。)"
+    ],
+    "sceneAssociation": "名词：联想项目分解图上的各个“part”，或仓库里的“spare parts inventory”（备件库存）。动词：联想团队建设活动邀请“All staff are encouraged to take part.”（鼓励全体员工参加。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "part (n.)",
+        "coreDifference": "“部分”，指一个整体中可分离或可区分的组成单元。",
+        "toeicSceneFocus": "组成部分、零件。"
+      },
+      {
+        "word": "section",
+        "coreDifference": "“部分、部门”，常指被明确划分出来的区域或章节。",
+        "toeicSceneFocus": "文件章节、组织机构部门、物理分区。"
+      },
+      {
+        "word": "portion",
+        "coreDifference": "“一部分、一份”，常指分配物或食物的一份。",
+        "toeicSceneFocus": "分配额、份额（尤指食物、预算）。"
+      }
+    ]
+  },
+  {
+    "word": "piece",
+    "phonetic": "/piːs/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "块；片；段；件；条",
+    "toeicSceneFocus": "用于指代一个完整的物品（a piece of equipment），或从较大整体上分离下来的一块（a piece of paper）。在商务语境中也常用于表示“一条信息/建议”（a piece of information/advice）。是描述具体物品数量或信息片段的常用量词。",
+    "keyCollocations": [
+      "a piece of paper (一张纸)",
+      "a piece of equipment (一件设备)",
+      "a piece of advice (一条建议)",
+      "fall to pieces (崩溃，粉碎)",
+      "in one piece (完好无损地)"
+    ],
+    "toeicExampleSentences": [
+      "Could you hand me that piece of paper on the printer? (你能把打印机上那张纸递给我吗？)",
+      "This is a critical piece of machinery for our production line. (这是我们生产线上的一台关键机器。)",
+      "I’d like to offer you a piece of advice based on my experience. (我想根据我的经验给你一条建议。)",
+      "All the furniture arrived in one piece, which is a relief. (所有家具都完好无损地送到了，这让人松了口气。)"
+    ],
+    "sceneAssociation": "联想便签上写着“Just a quick piece of information…”（只是一条简短的信息…），或指着设备说“We need to replace this piece.”（我们需要更换这个部件。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "piece",
+        "coreDifference": "“块、片、件”，用于指一个独立的物品，或从整体分离的一部分。常作量词。",
+        "toeicSceneFocus": "具体物品的量词，或碎片。"
+      },
+      {
+        "word": "part",
+        "coreDifference": "“部分、零件”，强调是整体中功能相关的组成部分。",
+        "toeicSceneFocus": "整体中功能性的组成部分。"
+      },
+      {
+        "word": "item",
+        "coreDifference": "“项目、条目”，尤指列表、目录或集合中的一个单独个体。",
+        "toeicSceneFocus": "列表中的一项、一件商品。"
+      }
+    ]
+  },
+  {
+    "word": "section",
+    "phonetic": "/ˈsekʃ(ə)n/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "部分；部门；区域；章节",
+    "toeicSceneFocus": "指被明确划分开的部分。在托业中应用广泛：公司部门（marketing section）、文件章节（Section 3）、报纸版面（business section）、城市区域（residential section）、商店区（electronics section）。强调其作为更大整体中一个清晰划分的区块。",
+    "keyCollocations": [
+      "marketing section (市场部)",
+      "business section (商业版)",
+      "frozen food section (冷冻食品区)",
+      "in the following section (在下一节)",
+      "cross-section (横截面；典型代表)"
+    ],
+    "toeicExampleSentences": [
+      "Please refer to Section 5 of the employee handbook for the detailed leave policy. (详细休假政策请参见员工手册第5节。)",
+      "She works in the finance section of the corporate headquarters. (她在公司总部的财务部门工作。)",
+      "You can find printers and scanners in the office equipment section on the third floor. (您可以在三楼的办公设备区找到打印机和扫描仪。)",
+      "The survey includes a cross-section of employees from all levels. (这项调查涵盖了各级员工的典型代表。)"
+    ],
+    "sceneAssociation": "联想报告文档侧边的导航栏，显示着“Section 1: Introduction”（第一节：引言），或超市指示牌“Dairy Section”（乳制品区）。",
+    "confusingWordsComparison": [
+      {
+        "word": "section",
+        "coreDifference": "“部分、部门”，指被清晰划分或分区的部分，通常有明确边界。",
+        "toeicSceneFocus": "划分出的区域、部门、章节。"
+      },
+      {
+        "word": "part",
+        "coreDifference": "“部分”，更通用，不一定有明显划分。",
+        "toeicSceneFocus": "通用的一部分。"
+      },
+      {
+        "word": "department",
+        "coreDifference": "“部门”，特指组织机构中的职能分支，与“section”在“部门”义上可互换，但“department”更正式、更大。",
+        "toeicSceneFocus": "公司或机构的正式部门。"
+      }
+    ]
+  },
+  {
+    "word": "segment",
+    "phonetic": "/ˈseɡment/ (n.), /seɡˈment/ (v.)",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 部分；片段；细分市场 v. 分割；划分",
+    "toeicSceneFocus": "名词是市场和商业分析中的关键术语，指根据特征（如 demographics 人口统计）划分的“细分市场”（market segment）。也指一个整体中被自然或逻辑划分的部分。动词“segment”是制定营销策略的重要动作。",
+    "keyCollocations": [
+      "market segment (细分市场)",
+      "target segment (目标细分市场)",
+      "segment a market (细分市场)",
+      "a segment of the population (一部分人口)",
+      "time segment (时间段)"
+    ],
+    "toeicExampleSentences": [
+      "Our new product is aimed at the premium segment of the consumer electronics market. (我们的新产品针对消费电子市场的高端细分市场。)",
+      "The workshop was divided into three segments, each focusing on a different skill set. (研讨会分为三个部分，每部分侧重不同的技能组合。)",
+      "Effective marketing requires you to segment your audience based on their needs and behaviors. (有效的营销要求你根据受众的需求和行为对其进行细分。)"
+    ],
+    "sceneAssociation": "联想市场分析饼图，被切成几块，每块标着“Segment A: 30%”。或一份营销计划写着“Segment the market by age and income.”（按年龄和收入细分市场。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "segment (n.)",
+        "coreDifference": "“部分、细分市场”，强调通过自然分界线或按类别划分出的部分。",
+        "toeicSceneFocus": "逻辑或类别划分的部分，尤指市场细分。"
+      },
+      {
+        "word": "section",
+        "coreDifference": "“部分、区域”，强调被物理或结构上划分开的区块。",
+        "toeicSceneFocus": "物理或结构上的分区。"
+      },
+      {
+        "word": "portion",
+        "coreDifference": "“一份、一部分”，强调是整体中分配或分出来的一份。",
+        "toeicSceneFocus": "分配额、份额。"
+      }
+    ]
+  },
+  {
+    "word": "portion",
+    "phonetic": "/ˈpɔːrʃ(ə)n/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "一部分；（尤指食物的一份；份额",
+    "coreMeaning": "一部分；（尤指食物的一份；份额",
+    "toeicSceneFocus": "常指被分配或分出来的一份，尤其是食物、预算、时间或责任的一份。在商务午餐、活动策划、预算分配和职责描述中可能出现。强调是整体中“应得或分配到的”那一部分。",
+    "keyCollocations": [
+      "a large portion of (一大部分)",
+      "portion size (份量)",
+      "portion control (份量控制)",
+      "allocate a portion (分配一份)",
+      "be responsible for a portion (负责一部分)"
+    ],
+    "toeicExampleSentences": [
+      "A significant portion of the annual budget is allocated to research and development. (年度预算的很大一部分被分配给了研发。)",
+      "Each team member is responsible for a portion of the presentation. (每位团队成员负责演示的一部分。)",
+      "The restaurant is known for its generous portion sizes. (这家餐厅以份量足而闻名。)"
+    ],
+    "sceneAssociation": "联想预算表上的一行“Portion for Marketing: $200,000”（市场部分：20万美元），或团队分工表上列出每个人的“Portion of Work”（工作份额）。",
+    "confusingWordsComparison": [
+      {
+        "word": "portion",
+        "coreDifference": "“一份、一部分”，常指被分配或分出来的份额，尤指食物。",
+        "toeicSceneFocus": "分配的份额、定量。"
+      },
+      {
+        "word": "part",
+        "coreDifference": "“部分”，通用词，不特指分配。",
+        "toeicSceneFocus": "通用的一部分。"
+      },
+      {
+        "word": "share",
+        "coreDifference": "“份额、股份”，常指共有事物中属于某人的一份，或公司的股份。",
+        "toeicSceneFocus": "股份、分担的份额。"
+      }
+    ]
+  },
+  {
+    "word": "share",
+    "phonetic": "/ʃer/",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 份额；股份；分享 v. 分享；分担；共有",
+    "toeicSceneFocus": "名词是金融（股票份额）和合作（责任份额）的核心词。动词是职场协作的核心动作，指分享信息、想法、资源。托业考试中，名词常出现在财经新闻、公司报告；动词则遍布于会议讨论、团队合作、文件分发的场景。",
+    "keyCollocations": [
+      "market share (市场份额)",
+      "share price (股价)",
+      "shareholder (股东)",
+      "share information (分享信息)",
+      "fair share (应得的一份；公平份额)"
+    ],
+    "toeicExampleSentences": [
+      "Our company aims to increase its market share by 10% this year. (我们公司目标是今年将市场份额提高10%。)",
+      "Could you share the sales report with the team via the shared drive? (你能通过共享驱动器把销售报告分享给团队吗？)",
+      "Each department needs to bear its fair share of the cost-cutting measures. (每个部门都需要承担其应分摊的成本削减措施份额。)",
+      "The share price of the tech firm soared after the product launch. (该科技公司股价在产品发布后飙升。)"
+    ],
+    "sceneAssociation": "名词：联想财经新闻标题“Company A’s market share grows.”（A公司市场份额增长。）。动词：联想会议主持人说“Let’s share our updates.”（我们来分享一下各自的进展。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "share (n.)",
+        "coreDifference": "“份额”，指整体中属于个人或群体的一部分，常与所有权或责任相关。",
+        "toeicSceneFocus": "股份、市场份额、责任份额。"
+      },
+      {
+        "word": "portion",
+        "coreDifference": "“一份”，指分配物中的一部分，尤指食物或预算。",
+        "toeicSceneFocus": "分配额、定量。"
+      },
+      {
+        "word": "percentage",
+        "coreDifference": "“百分比”，是表示比例的数字，而非实际的“份额”。",
+        "toeicSceneFocus": "百分比数字。"
+      }
+    ]
+  },
+  {
+    "word": "percentage",
+    "phonetic": "/pərˈsentɪdʒ/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "百分比；比例",
+    "toeicSceneFocus": "商业报告、数据分析、图表描述和绩效评估中的基础词汇。用于表达比例、增长率、份额、完成度等。是托业阅读图表题和听力中涉及数据比较、趋势分析的核心词。常与“of”连用。",
+    "keyCollocations": [
+      "a large/small percentage of (一大部分/一小部分)",
+      "percentage point (百分点)",
+      "account for a percentage (占…百分比)",
+      "increase by a percentage (增长…百分比)",
+      "in percentage terms (按百分比计算)"
+    ],
+    "toeicExampleSentences": [
+      "A significant percentage of our sales now come from online channels. (我们销售额的很大一部分现在来自线上渠道。)",
+      "The survey showed that over 60% (sixty percent) of employees are satisfied with the new benefits package. (调查显示，超过60%的员工对新福利方案感到满意。)",
+      "There was a 5 percentage point increase in customer retention this quarter. (本季度客户保留率提高了5个百分点。)",
+      "Please calculate the percentage of the budget spent on marketing. (请计算营销预算支出的百分比。)"
+    ],
+    "sceneAssociation": "联想饼图（pie chart）旁边标注的“Percentage of Total Revenue”（占总收入的百分比），或柱状图（bar chart）的Y轴标尺就是“Percentage (%)”。",
+    "confusingWordsComparison": [
+      {
+        "word": "percentage",
+        "coreDifference": "“百分比”，指以百分数表示的比例。",
+        "toeicSceneFocus": "比例、百分数。"
+      },
+      {
+        "word": "ratio",
+        "coreDifference": "“比率”，表示两个数量之间的比例关系（如2:1），而非百分数。",
+        "toeicSceneFocus": "两数之间的比例关系。"
+      },
+      {
+        "word": "proportion",
+        "coreDifference": "“比例、部分”，指部分与整体或部分与部分之间的关系，可以用分数、百分数或比率表示，概念更广。",
+        "toeicSceneFocus": "部分与整体的关系。"
+      }
+    ]
+  },
+  {
+    "word": "ratio",
+    "phonetic": "/ˈreɪʃioʊ/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "比；比率；比例",
+    "toeicSceneFocus": "用于精确描述两个相关数量之间的对比关系，常见于财务分析（debt-to-equity ratio 负债权益比）、人事（staff-to-client ratio 员工客户比）、生产（output-to-input ratio 投入产出比）等领域。是商业和数据分析中的重要概念，表达形式为A:B或A/B。",
+    "keyCollocations": [
+      "debt-to-equity ratio (负债权益比)",
+      "ratio of A to B (A与B的比率)",
+      "profit ratio (利润率)",
+      "in the ratio of (以…的比例)",
+      "high/low ratio (高/低比率)"
+    ],
+    "toeicExampleSentences": [
+      "The company maintains a healthy debt-to-equity ratio, which is attractive to investors. (公司保持着健康的负债权益比，这对投资者很有吸引力。)",
+      "The student-to-teacher ratio in this program is 10:1, ensuring personalized attention. (该项目师生比为10:1，确保了个性化关注。)",
+      "We need to improve the ratio of successful sales calls to total calls made. (我们需要提高成功销售电话数与总拨打电话数的比率。)"
+    ],
+    "sceneAssociation": "联想财务报表脚注中的“Current Ratio: 1.5”（流动比率：1.5），或一份效率报告分析“the ratio of output to cost”（产出成本比）。",
+    "confusingWordsComparison": [
+      {
+        "word": "ratio",
+        "coreDifference": "“比率”，表示两个量之间的倍数或对比关系（如3:1, 2/5）。",
+        "toeicSceneFocus": "两数之间的量化对比关系。"
+      },
+      {
+        "word": "percentage",
+        "coreDifference": "“百分比”，表示占整体的百分之多少。比率可以转换为百分比。",
+        "toeicSceneFocus": "以百分数表示的比例。"
+      },
+      {
+        "word": "rate",
+        "coreDifference": "“率、速率”，常指随时间变化的比率或单位价值（如增长率、利率）。",
+        "toeicSceneFocus": "变化速度、费率。"
+      }
+    ]
+  },
+  {
+    "word": "rate",
+    "phonetic": "/reɪt/",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 比率；速率；价格；费用；等级 v. 评估；评级；认为",
+    "toeicSceneFocus": "名词涵盖金融（interest rate 利率）、服务（hourly rate 时薪）、绩效（success rate 成功率）、变化（growth rate 增长率）等多个核心商务领域。动词常用于评估表现、产品或服务（rate highly 给予高度评价）。是托业考试中与数据、评价、定价相关的高频词。",
+    "keyCollocations": [
+      "interest rate (利率)",
+      "exchange rate (汇率)",
+      "growth rate (增长率)",
+      "hourly rate (时薪)",
+      "rate of return (回报率)",
+      "highly rate (高度评价)"
+    ],
+    "toeicExampleSentences": [
+      "The central bank decided to raise the interest rate by 0.25%. (央行决定将利率提高0.25%。)",
+      "What is the daily rate for renting a conference room? (租用会议室的日租金是多少？)",
+      "Our customer satisfaction rate has improved significantly this quarter. (本季度我们的客户满意度显著提高。)",
+      "The new software was highly rated by users for its ease of use. (这款新软件因其易用性而获得用户高度评价。)"
+    ],
+    "sceneAssociation": "名词：联想酒店预订网站显示的“Nightly Rate: $150”（每晚价格：150美元）。动词：联想产品评测“Rated 4.5 stars out of 5.”（评分4.5星，满分5星。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "rate (n.)",
+        "coreDifference": "“率、速率、价格”，常指随时间变化的比率、单位价值或费用。",
+        "toeicSceneFocus": "变化速度、单位价格、费用。"
+      },
+      {
+        "word": "ratio",
+        "coreDifference": "“比率”，表示两个静态数量之间的固定对比关系。",
+        "toeicSceneFocus": "静态的数量对比关系。"
+      },
+      {
+        "word": "speed",
+        "coreDifference": "“速度”，特指物理运动的快慢。",
+        "toeicSceneFocus": "物理运动速度。"
+      }
+    ]
+  },
+  {
+    "word": "amount",
+    "phonetic": "/əˈmaʊnt/",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 数量；总额 v. 合计；相当于",
+    "coreMeaning": "n. 数量；总额 v. 合计；相当于",
+    "toeicSceneFocus": "与不可数名词连用，表示金钱、时间、工作、信息等的“总量”。是财务、采购、资源管理和项目规划中的核心词。短语“a large/small amount of”和动词“amount to”（总计达；意味着）是高频考点。",
+    "keyCollocations": [
+      "a large amount of (大量的)",
+      "total amount (总额)",
+      "amount to (总计达；相当于)",
+      "for the amount of (就…的数量而言)",
+      "specify the amount (注明金额)"
+    ],
+    "toeicExampleSentences": [
+      "A significant amount of time was spent on market research before the product launch. (在产品发布前，大量的时间花在了市场调研上。)",
+      "Please indicate the amount of the donation on the check. (请在支票上注明捐款金额。)",
+      "The costs are expected to amount to approximately $10,000. (费用预计总计约1万美元。)",
+      "The delay does not amount to a breach of contract. (此次延误并不构成违约。)",
+      "For the amount of work involved, the fee seems reasonable. (就所涉及的工作量而言，这笔费用似乎是合理的。)"
+    ],
+    "sceneAssociation": "名词：联想发票上的“Amount Due”（应付金额）。动词：联想财务汇报“Expenses amounted to $5,000 last month.”（上月支出总计5000美元。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "amount (n.)",
+        "coreDifference": "“数量”，与不可数名词连用，指总量。",
+        "toeicSceneFocus": "不可数事物的总量（钱、时间、工作等）。"
+      },
+      {
+        "word": "number (n.)",
+        "coreDifference": "“数量”，与可数名词复数连用，指个体数目。",
+        "toeicSceneFocus": "可数事物的数目。"
+      },
+      {
+        "word": "quantity",
+        "coreDifference": "“数量”，较正式，可与可数或不可数名词连用，尤指大量。",
+        "toeicSceneFocus": "正式用语，尤指大的数量。"
+      }
+    ]
+  },
+  
+
+  {
+    "word": "adapted",
+    "phonetic": "/əˈdæptɪd/（英）；/əˈdæptɪd/（美）",
+    "partOfSpeech": "v. 动词（adapt的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：使适应；改编；改造（根据新环境或需求调整事物） 2. 形容词：适应的；改编的",
+    "toeicSceneFocus": "多出现于环境适应、产品改造、内容改编等语境，是托业阅读（产品说明、职场通知）中的常考词，侧重“**为适配新场景做调整**”",
+    "keyCollocations": [
+      "adapted to the new job（适应新工作）",
+      "adapted the software（改造软件）",
+      "adapted the novel into a movie（将小说改编成电影）"
+    ],
+    "toeicExampleSentences": [
+      "She quickly adapted to the team’s working style after joining the company.（入职后她迅速适应了团队的工作风格。）",
+      "The developer adapted the application to be compatible with different operating systems.（开发者改造了这款应用，使其能兼容不同的操作系统。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "adapted",
+        "coreDifference": "侧重“适应新环境/需求”或“改编原作”，强调“适配性”",
+        "sceneFocus": "职场适应、产品改造、内容改编场景"
+      },
+      {
+        "word": "adjusted",
+        "coreDifference": "侧重“微调参数/计划”以匹配目标，调整幅度更小",
+        "sceneFocus": "策略、预算、设备校准场景"
+      }
+    ]
+  },
+  {
+    "word": "revised",
+    "phonetic": "/rɪˈvaɪzd/（英）；/rɪˈvaɪzd/（美）",
+    "partOfSpeech": "v. 动词（revise的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：修订；修改；校订（对文件、计划、书稿进行完善性改动） 2. 形容词：修订版的；经校正的",
+    "toeicSceneFocus": "多出现于文件修订、计划调整、教材改版等语境，是托业阅读（合同文档、项目方案）中的高频词，侧重“**基于反馈或新信息的完善性修改**”",
+    "keyCollocations": [
+      "revised the contract（修订合同）",
+      "revised the project plan（修改项目计划）",
+      "revised edition（修订版）"
+    ],
+    "toeicExampleSentences": [
+      "The legal team revised the contract several times to avoid potential risks.（法务团队多次修订合同，以规避潜在风险。）",
+      "We revised the marketing plan based on the feedback from the focus group.（我们根据焦点小组的反馈修改了营销计划。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "revised",
+        "coreDifference": "侧重“对文件/计划的系统性完善”，修改更全面",
+        "sceneFocus": "合同、方案、教材的修订场景"
+      },
+      {
+        "word": "modified",
+        "coreDifference": "侧重“对事物的局部微调”，不改变核心框架",
+        "sceneFocus": "产品设计、方案细节的调整场景"
+      }
+    ]
+  },
+  {
+    "word": "updated",
+    "phonetic": "/ˌʌpˈdeɪtɪd/（英）；/ˌʌpˈdeɪtɪd/（美）",
+    "partOfSpeech": "v. 动词（update的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：更新；升级；使与时俱进（补充新信息或升级版本） 2. 形容词：最新的；更新后的",
+    "toeicSceneFocus": "多出现于软件升级、信息同步、数据更新等语境，是托业阅读和听力中的高频词，侧重“**补充新内容或升级到最新状态**”",
+    "keyCollocations": [
+      "updated the software（更新软件）",
+      "updated the customer database（更新客户数据库）",
+      "updated information（最新信息）"
+    ],
+    "toeicExampleSentences": [
+      "The IT department updated the company’s internal system to improve data security.（IT部门更新了公司的内部系统，以提升数据安全性。）",
+      "Please make sure you have the updated version of the manual before starting the operation.（开始操作前，请确保你有最新版本的手册。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "updated",
+        "coreDifference": "侧重“补充新信息、升级版本”，强调“时效性”",
+        "sceneFocus": "软件、数据库、信息的更新场景"
+      },
+      {
+        "word": "revised",
+        "coreDifference": "侧重“对原有内容的完善和校正”，强调“准确性”",
+        "sceneFocus": "文件、计划的修订场景"
+      }
+    ]
+  },
+  {
+    "word": "renewed",
+    "phonetic": "/rɪˈnjuːd/（英）；/rɪˈnuːd/（美）",
+    "partOfSpeech": "v. 动词（renew的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词： Renew；恢复；重新开始（延长有效期或重拾状态） 2. 形容词：更新的；恢复活力的",
+    "toeicSceneFocus": "多出现于合同续签、会员续费、状态恢复等语境，是托业阅读（商务合同、服务协议）中的常考词，侧重“**延续有效期或恢复原有状态**”",
+    "keyCollocations": [
+      "renewed the contract（续签合同）",
+      "renewed the membership（续会员）",
+      "renewed interest（重拾兴趣）"
+    ],
+    "toeicExampleSentences": [
+      "The two companies renewed their partnership for another three years.（两家公司续签了为期三年的合作协议。）",
+      "After a short break, she returned to work with renewed energy.（短暂休息后，她带着恢复的活力回到了工作岗位。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "renewed",
+        "coreDifference": "侧重“续签有效期”或“恢复状态”，强调“延续性”",
+        "sceneFocus": "合同、会员、精力状态的恢复场景"
+      },
+      {
+        "word": "restored",
+        "coreDifference": "侧重“修复破损/故障的事物”，使其回归原貌",
+        "sceneFocus": "文物、设备、系统的修复场景"
+      }
+    ]
+  },
+  {
+    "word": "restored",
+    "phonetic": "/rɪˈstɔːd/（英）；/rɪˈstɔːrd/（美）",
+    "partOfSpeech": "v. 动词（restore的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：修复；恢复；复原（将破损、故障的事物还原到原有状态） 2. 形容词：修复的；复原的",
+    "toeicSceneFocus": "多出现于设备维修、文物修复、系统还原等语境，是托业阅读（设备维护报告、资产修复记录）中的常考词，侧重“**修复破损部分，回归初始状态**”",
+    "keyCollocations": [
+      "restored the old building（修复老建筑）",
+      "restored the system to factory settings（将系统恢复出厂设置）",
+      "restored the damaged equipment（修复受损设备）"
+    ],
+    "toeicExampleSentences": [
+      "The technician restored the server to its normal function within two hours.（技术人员在两小时内恢复了服务器的正常功能。）",
+      "The museum spent a lot of money restoring the ancient painting.（博物馆花了大量资金修复这幅古画。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "restored",
+        "coreDifference": "侧重“修复破损/故障的对象”，强调“还原原貌”",
+        "sceneFocus": "设备、文物、系统的修复场景"
+      },
+      {
+        "word": "repaired",
+        "coreDifference": "侧重“修理损坏的部件”，使其能正常使用，更口语化",
+        "sceneFocus": "家电、车辆、日常用品的维修场景"
+      }
+    ]
+  },
+  {
+    "word": "recovered",
+    "phonetic": "/rɪˈkʌvəd/（英）；/rɪˈkʌvərd/（美）",
+    "partOfSpeech": "v. 动词（recover的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：恢复；康复；找回（身体康复、找回丢失物或恢复状态） 2. 形容词：恢复的；康复的",
+    "toeicSceneFocus": "多出现于身体康复、数据找回、经济复苏等语境，是托业阅读（健康报告、经济分析）中的高频词，侧重“**从疾病、损失中恢复**”",
+    "keyCollocations": [
+      "recovered from the illness（从疾病中康复）",
+      "recovered the lost data（找回丢失的数据）",
+      "recovered the market share（夺回市场份额）"
+    ],
+    "toeicExampleSentences": [
+      "It took him a month to recover from the flu and return to work.（他花了一个月时间从流感中康复，回到了工作岗位。）",
+      "The IT team successfully recovered the data lost in the system crash.（IT团队成功找回了系统崩溃时丢失的数据。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "recovered",
+        "coreDifference": "侧重“身体康复”或“找回丢失物/恢复状态”",
+        "sceneFocus": "健康、数据、经济的恢复场景"
+      },
+      {
+        "word": "healed",
+        "coreDifference": "侧重“伤口愈合”或“情感创伤平复”，更偏向生理/心理层面",
+        "sceneFocus": "伤口、情感的愈合场景"
+      }
+    ]
+  },
+  {
+    "word": "healed",
+    "phonetic": "/hiːld/（英）；/hiːld/（美）",
+    "partOfSpeech": "v. 动词（heal的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：（使）愈合；（使）康复；抚平（伤口愈合或心理创伤平复） 2. 形容词：愈合的；康复的",
+    "toeicSceneFocus": "多出现于伤口愈合、心理疏导等语境，是托业听力（日常对话、健康咨询）中的常考词，侧重“**生理伤口或心理创伤的痊愈**”",
+    "keyCollocations": [
+      "healed the wound（愈合伤口）",
+      "healed the emotional pain（抚平情感创伤）",
+      "fully healed（完全康复）"
+    ],
+    "toeicExampleSentences": [
+      "The cut on her hand healed completely after a week of careful care.（经过一周的精心护理，她手上的伤口完全愈合了。）",
+      "Time helped him heal the pain caused by the failure.（时间帮他抚平了失败带来的伤痛。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "healed",
+        "coreDifference": "侧重“伤口愈合”或“心理创伤平复”，更具象化",
+        "sceneFocus": "生理伤口、心理创伤的愈合场景"
+      },
+      {
+        "word": "recovered",
+        "coreDifference": "侧重“从疾病中康复”或“找回损失”，范围更广",
+        "sceneFocus": "疾病、数据、经济的恢复场景"
+      }
+    ]
+  },
+  {
+    "word": "fixed",
+    "phonetic": "/fɪkst/（英）；/fɪkst/（美）",
+    "partOfSpeech": "v. 动词（fix的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：修理；固定；确定（修理故障物品、固定位置或确定时间） 2. 形容词：固定的；确定的",
+    "toeicSceneFocus": "适用于日常物品维修、时间确定等场景，是托业听力（日常对话、工作沟通）中的高频词，侧重“**解决小故障或确定细节**”",
+    "keyCollocations": [
+      "fixed the broken printer（修理坏掉的打印机）",
+      "fixed the meeting time（确定会议时间）",
+      "fixed price（固定价格）"
+    ],
+    "toeicExampleSentences": [
+      "The handyman fixed the leaky faucet in the office this morning.（维修工今天早上修好了办公室漏水的水龙头。）",
+      "We have fixed the date of the annual conference as October 15th.（我们已将年度会议的日期确定为10月15日。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "fixed",
+        "coreDifference": "口语化，侧重“修理小物件”或“确定细节”",
+        "sceneFocus": "日常用品维修、时间/价格确定场景"
+      },
+      {
+        "word": "repaired",
+        "coreDifference": "可用于大小物件的维修，更正式，强调“修复故障使其正常运转”",
+        "sceneFocus": "车辆、设备的专业维修场景"
+      }
+    ]
+  },
+  {
+    "word": "repaired",
+    "phonetic": "/rɪˈpeəd/（英）；/rɪˈperd/（美）",
+    "partOfSpeech": "v. 动词（repair的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：修理；修补；修复（对损坏的设备、车辆等进行专业维修） 2. 形容词：经修理的",
+    "toeicSceneFocus": "多出现于设备维修、车辆保养等专业场景，是托业阅读（维修报告、服务单据）中的常考词，侧重“**专业的、系统性的维修**”",
+    "keyCollocations": [
+      "repaired the broken machine（修理故障机器）",
+      "repaired the car engine（维修汽车发动机）",
+      "repaired road（修好的道路）"
+    ],
+    "toeicExampleSentences": [
+      "The mechanic repaired the car’s transmission and tested it thoroughly.（机修工维修了汽车的变速箱，并进行了全面测试。）",
+      "The factory repaired all the defective equipment before the production restarted.（工厂在恢复生产前修理了所有故障设备。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "repaired",
+        "coreDifference": "侧重“专业维修设备、车辆等大型/复杂物件”",
+        "sceneFocus": "设备、车辆、道路的专业维修场景"
+      },
+      {
+        "word": "mended",
+        "coreDifference": "侧重“修补衣物、器皿等小件物品的破损处”，更温和",
+        "sceneFocus": "衣物、家具的修补场景"
+      }
+    ]
+  },
+  {
+    "word": "mended",
+    "phonetic": "/mendɪd/（英）；/mendɪd/（美）",
+    "partOfSpeech": "v. 动词（mend的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：修补；缝补；修复（修补衣物、家具等的小破损） 2. 形容词：修补好的",
+    "toeicSceneFocus": "多出现于衣物缝补、小物件修补等日常场景，是托业听力（生活对话）中的常考词，侧重“**对小件物品的轻度修补**”",
+    "keyCollocations": [
+      "mended the torn shirt（缝补撕破的衬衫）",
+      "mended the broken chair（修补坏掉的椅子）",
+      "mended fences（修补围栏）"
+    ],
+    "toeicExampleSentences": [
+      "Her grandmother mended the hole in her sweater with a needle and thread.（她奶奶用针线缝补好了她毛衣上的破洞。）",
+      "The carpenter mended the broken leg of the dining table in an hour.（木匠在一小时内修补好了餐桌的断腿。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "mended",
+        "coreDifference": "侧重“修补衣物、家具等小件物品的小破损”",
+        "sceneFocus": "衣物、家具的日常修补场景"
+      },
+      {
+        "word": "fixed",
+        "coreDifference": "范围更广，可指修理任何故障物品或确定细节",
+        "sceneFocus": "日常用品维修、时间/价格确定场景"
+      }
+    ]
+  },
+  {
+    "word": "corrected",
+    "phonetic": "/kəˈrektɪd/（英）；/kəˈrektɪd/（美）",
+    "partOfSpeech": "v. 动词（correct的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：改正；纠正；校正（修正错误、偏差或错题） 2. 形容词：改正的；校正的",
+    "toeicSceneFocus": "多出现于错误修正、数据校准、作业批改等语境，是托业阅读（报告、试卷）中的高频词，侧重“**修正错误或校准偏差**”",
+    "keyCollocations": [
+      "corrected the mistake（改正错误）",
+      "corrected the data（校正数据）",
+      "corrected the essay（批改作文）"
+    ],
+    "toeicExampleSentences": [
+      "The accountant corrected the error in the financial report before submitting it.（会计在提交财务报告前修正了其中的错误。）",
+      "The teacher corrected the students’ grammar mistakes carefully.（老师仔细批改了学生们的语法错误。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "corrected",
+        "coreDifference": "侧重“修正错误、偏差”，强调“纠偏”",
+        "sceneFocus": "报告、数据、作业的纠错场景"
+      },
+      {
+        "word": "revised",
+        "coreDifference": "侧重“对文件/计划的系统性完善”，不一定是纠正错误",
+        "sceneFocus": "合同、方案的修订场景"
+      }
+    ]
+  },
+  {
+    "word": "improved",
+    "phonetic": "/ɪmˈpruːvd/（英）；/ɪmˈpruːvd/（美）",
+    "partOfSpeech": "v. 动词（improve的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：改进；改善；提高（使事物变得更好） 2. 形容词：改进的；改善的",
+    "toeicSceneFocus": "通用词汇，适用于效率提升、质量改善等所有优化场景，是托业阅读和听力中的高频核心词，侧重“**整体水平的提升**”",
+    "keyCollocations": [
+      "improved efficiency（提高效率）",
+      "improved customer service（改善客户服务）",
+      "improved performance（提升业绩）"
+    ],
+    "toeicExampleSentences": [
+      "The new management method has greatly improved the company’s operational efficiency.（新的管理方法极大提高了公司的运营效率。）",
+      "Her English has improved significantly since she started taking online courses.（自从开始上网课，她的英语水平有了显著提升。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "improved",
+        "coreDifference": "通用词，侧重“整体水平变好”，范围广",
+        "sceneFocus": "效率、服务、能力的提升场景"
+      },
+      {
+        "word": "enhanced",
+        "coreDifference": "侧重“强化优势特征”，使事物的优点更突出",
+        "sceneFocus": "功能、体验、效果的强化场景"
+      }
+    ]
+  },
+  {
+    "word": "enhanced",
+    "phonetic": "/ɪnˈhɑːnst/（英）；/ɪnˈhænst/（美）",
+    "partOfSpeech": "v. 动词（enhance的过去式和过去分词）；adj. 形容词",
+    "coreMeaning": "1. 动词：增强；提高；美化（强化事物的优势或特征） 2. 形容词：增强的；优化的",
+    "toeicSceneFocus": "多出现于功能强化、体验优化、形象美化等语境，是托业阅读（产品宣传、技术报告）中的常考词，侧重“**突出优势，强化效果**”",
+    "keyCollocations": [
+      "enhanced the function（增强功能）",
+      "enhanced the user experience（优化用户体验）",
+      "enhanced the brand image（提升品牌形象）"
+    ],
+    "toeicExampleSentences": [
+      "The new software update has enhanced the security protection of the system.（新的软件更新增强了系统的安全防护能力。）",
+      "The lighting design enhanced the beauty of the exhibition hall.（灯光设计美化了展厅的视觉效果。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "enhanced",
+        "coreDifference": "侧重“强化优势、突出特点”，强调“锦上添花”",
+        "sceneFocus": "功能、体验、形象的强化场景"
+      },
+      {
+        "word": "improved",
+        "coreDifference": "侧重“整体水平提升”，可用于弥补不足或优化整体",
+        "sceneFocus": "效率、能力、服务的全面提升场景"
+      }
+    ]
+  },
+  {
+    "word": "better",
+    "phonetic": "/ˈbetə/（英）；/ˈbetər/（美）",
+    "partOfSpeech": "adj. 形容词（good的比较级）；adv. 副词（well的比较级）；v. 动词",
+    "coreMeaning": "1. 形容词：更好的；较好的 2. 副词：更好地；更 3. 动词：改善；胜过",
+    "toeicSceneFocus": "通用词汇，适用于所有比较场景，是托业阅读和听力中的基础高频词，侧重“**两者间的比较级，更优状态**”",
+    "keyCollocations": [
+      "better quality（更好的质量）",
+      "perform better（表现更好）",
+      "better the situation（改善局面）"
+    ],
+    "toeicExampleSentences": [
+      "This product has better quality and lower price than its competitors.（这款产品比竞品质量更好、价格更低。）",
+      "We need to work better together to achieve the team’s goal.（我们需要更好地合作，以实现团队目标。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "better",
+        "coreDifference": "比较级，侧重“两者间更优”，可作形、副、动词",
+        "sceneFocus": "所有比较、优化场景"
+      },
+      {
+        "word": "improved",
+        "coreDifference": "动词/形容词，侧重“事物自身的提升”，不强调比较",
+        "sceneFocus": "自身水平的改善场景"
+      }
+    ]
+  },
+  {
+    "word": "worse",
+    "phonetic": "/wɜːs/（英）；/wɜːrs/（美）",
+    "partOfSpeech": "adj. 形容词（bad的比较级）；adv. 副词（badly的比较级）；n. 名词",
+    "coreMeaning": "1. 形容词：更糟的；更差的 2. 副词：更糟地；更差地 3. 名词：更糟的情况",
+    "toeicSceneFocus": "通用词汇，适用于所有负面比较场景，是托业阅读和听力中的基础高频词，侧重“**两者间的比较级，更差状态**”",
+    "keyCollocations": [
+      "worse performance（更差的表现）",
+      "get worse（变糟）",
+      "worse than before（比以前更糟）"
+    ],
+    "toeicExampleSentences": [
+      "The company’s sales performance this quarter is worse than that of last quarter.（公司本季度的销售业绩比上季度更差。）",
+      "His health condition got worse after he ignored the doctor’s advice.（他忽视医嘱后，健康状况变得更糟了。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "worse",
+        "coreDifference": "比较级，侧重“两者间更差”，可作形、副、名词",
+        "sceneFocus": "所有负面比较场景"
+      },
+      {
+        "word": "worst",
+        "coreDifference": "最高级，侧重“三者及以上中最差”",
+        "sceneFocus": "多对象的负面比较场景"
+      }
+    ]
+  },
+  {
+    "word": "same",
+    "phonetic": "/seɪm/（英）；/seɪm/（美）",
+    "partOfSpeech": "adj. 形容词；pron. 代词；adv. 副词",
+    "coreMeaning": "1. 形容词：相同的；同一的 2. 代词：同样的人/事物 3. 副词：同样地",
+    "toeicSceneFocus": "通用词汇，适用于所有“无差异”场景，是托业阅读和听力中的高频词，常与the连用，侧重“**完全一致**”",
+    "keyCollocations": [
+      "the same as（与……相同）",
+      "same price（相同价格）",
+      "do the same（做同样的事）"
+    ],
+    "toeicExampleSentences": [
+      "This model has the same functions as the more expensive one.（这款型号和更贵的那款功能相同。）",
+      "We will hold the meeting at the same place as last time.（我们将在和上次相同的地点举行会议。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "same",
+        "coreDifference": "强调“完全一致”，常与the连用",
+        "sceneFocus": "所有无差异的对比场景"
+      },
+      {
+        "word": "similar",
+        "coreDifference": "强调“相似但不完全相同”",
+        "sceneFocus": "特征相近的对比场景"
+      }
+    ]
+  },
+  {
+    "word": "different",
+    "phonetic": "/ˈdɪfrənt/（英）；/ˈdɪfrənt/（美）",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "不同的；有差异的；各种各样的",
+    "toeicSceneFocus": "通用词汇，适用于所有“有差异”场景，是托业阅读和听力中的基础高频词，侧重“**存在区别**”",
+    "keyCollocations": [
+      "different from（与……不同）",
+      "different types（不同类型）",
+      "take different approaches（采取不同方法）"
+    ],
+    "toeicExampleSentences": [
+      "Different customers have different requirements for the product.（不同的客户对产品有不同的需求。）",
+      "This solution is completely different from the one we discussed before.（这个方案和我们之前讨论的完全不同。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "different",
+        "coreDifference": "通用词，强调“存在差异”，程度不限",
+        "sceneFocus": "所有有区别的对比场景"
+      },
+      {
+        "word": "dissimilar",
+        "coreDifference": "正式用语，强调“显著不同”，差异程度更大",
+        "sceneFocus": "正式文本中的对比场景"
+      }
+    ]
+  },
+  {
+    "word": "similar",
+    "phonetic": "/ˈsɪmələ/（英）；/ˈsɪmələr/（美）",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "相似的；类似的；近似的",
+    "toeicSceneFocus": "适用于特征、外观、方法相近的场景，是托业阅读（产品对比、方案分析）中的高频词，侧重“**特征相近但不完全相同**”",
+    "keyCollocations": [
+      "similar to（与……相似）",
+      "similar features（相似特征）",
+      "similar approach（类似方法）"
+    ],
+    "toeicExampleSentences": [
+      "The new product has a similar design to the previous version but with more functions.（新产品的设计和上一版相似，但功能更多。）",
+      "Our company uses a similar strategy to our competitors in the market.（我们公司在市场上采用了和竞品类似的策略。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "similar",
+        "coreDifference": "强调“特征相近”，但存在细微差别",
+        "sceneFocus": "产品、方案、外观的相似对比场景"
+      },
+      {
+        "word": "alike",
+        "coreDifference": "强调“非常相似”，可作形容词或副词，常作表语",
+        "sceneFocus": "人或事物的高度相似场景"
+      }
+    ]
+  },
+  {
+    "word": "alike",
+    "phonetic": "/əˈlaɪk/（英）；/əˈlaɪk/（美）",
+    "partOfSpeech": "adj. 形容词；adv. 副词",
+    "coreMeaning": "1. 形容词：相似的；相像的（常作表语） 2. 副词：相似地；同样地",
+    "toeicSceneFocus": "适用于人或事物高度相似的场景，是托业听力（日常对话）中的常考词，侧重“**高度相似，难以区分**”",
+    "keyCollocations": [
+      "look alike（看起来很像）",
+      "treat sb. alike（一视同仁对待某人）",
+      "think alike（想法一致）"
+    ],
+    "toeicExampleSentences": [
+      "The two sisters look so alike that people often mistake one for the other.（这对姐妹长得太像了，人们经常把她们认错。）",
+      "The manager treats all employees alike regardless of their positions.（经理对所有员工一视同仁，不分职位高低。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "alike",
+        "coreDifference": "强调“高度相似”，形容词常作表语，可作副词",
+        "sceneFocus": "外貌、待遇、想法的高度相似场景"
+      },
+      {
+        "word": "similar",
+        "coreDifference": "可作定语或表语，强调“特征相近”，差异更明显",
+        "sceneFocus": "各类事物的相似对比场景"
+      }
+    ]
+  },
+  {
+    "word": "dissimilar",
+    "phonetic": "/dɪˈsɪmɪlə/（英）；/dɪˈsɪmələr/（美）",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "不相似的；迥然不同的",
+    "toeicSceneFocus": "正式用语，适用于特征差异显著的场景，是托业阅读（学术报告、产品对比）中的常考词，侧重“**明显不同**”",
+    "keyCollocations": [
+      "dissimilar to（与……不相似）",
+      "dissimilar characteristics（不同特征）",
+      "dissimilar approaches（截然不同的方法）"
+    ],
+    "toeicExampleSentences": [
+      "The two products have dissimilar features and target different customer groups.（这两款产品特征迥异，针对不同的客户群体。）",
+      "His management style is dissimilar to that of his predecessor.（他的管理风格和前任截然不同。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "dissimilar",
+        "coreDifference": "正式用语，强调“显著不同”",
+        "sceneFocus": "正式文本中的差异对比场景"
+      },
+      {
+        "word": "different",
+        "coreDifference": "通用词，差异程度可大可小，口语书面语均可",
+        "sceneFocus": "所有差异对比场景"
+      }
+    ]
+  },
+  {
+    "word": "distinct",
+    "phonetic": "/dɪˈstɪŋkt/（英）；/dɪˈstɪŋkt/（美）",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "明显的；清晰的；独特的；有区别的",
+    "toeicSceneFocus": "适用于特征清晰可辨、差异明确的场景，是托业阅读（产品描述、市场分析）中的高频词，侧重“**特征鲜明，易于区分**”",
+    "keyCollocations": [
+      "distinct advantage（明显优势）",
+      "distinct features（独特特征）",
+      "distinct from（与……有区别）"
+    ],
+    "toeicExampleSentences": [
+      "This brand has a distinct advantage in terms of product durability.（该品牌在产品耐用性方面有明显优势。）",
+      "The two species have distinct physical characteristics that are easy to identify.（这两个物种有独特的身体特征，很容易识别。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "distinct",
+        "coreDifference": "强调“特征清晰、独特，易于区分”",
+        "sceneFocus": "优势、特征、物种的区分场景"
+      },
+      {
+        "word": "unique",
+        "coreDifference": "强调“独一无二，没有同类”",
+        "sceneFocus": "事物的独特性描述场景"
+      }
+    ]
+  },
+  {
+    "word": "unique",
+    "phonetic": "/juˈniːk/（英）；/juˈniːk/（美）",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "独一无二的；独特的；唯一的",
+    "toeicSceneFocus": "适用于事物具有不可复制特征的场景，是托业阅读（品牌宣传、产品介绍）中的高频词，侧重“**仅此一个，无可替代**”",
+    "keyCollocations": [
+      "unique design（独特设计）",
+      "unique opportunity（难得的机会）",
+      "unique to（为……所独有）"
+    ],
+    "toeicExampleSentences": [
+      "The company’s unique business model has made it a leader in the industry.（该公司独特的商业模式使其成为行业领导者。）",
+      "This cultural tradition is unique to the local people.（这种文化传统是当地人民所独有的。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "unique",
+        "coreDifference": "强调“独一无二，不可复制”",
+        "sceneFocus": "设计、模式、传统的独特性场景"
+      },
+      {
+        "word": "special",
+        "coreDifference": "强调“特殊的、与众不同的”，但不一定唯一",
+        "sceneFocus": "场合、礼物、待遇的特殊性场景"
+      }
+    ]
+  },
+  {
+    "word": "special",
+    "phonetic": "/ˈspeʃl/（英）；/ˈspeʃl/（美）",
+    "partOfSpeech": "adj. 形容词；n. 名词",
+    "coreMeaning": "1. 形容词：特殊的；特别的；专门的 2. 名词：特别节目；特价商品",
+    "toeicSceneFocus": "通用词汇，适用于所有“与众不同”或“专门用途”的场景，是托业阅读和听力中的高频词，侧重“**超出常规，有特殊性**”",
+    "keyCollocations": [
+      "special offer（特价优惠）",
+      "special occasion（特殊场合）",
+      "special purpose（专门用途）"
+    ],
+    "toeicExampleSentences": [
+      "The store is offering a special discount for customers who shop during the holiday.（商店为节假日购物的顾客提供特价优惠。）",
+      "We need to make a special arrangement for the VIP guests.（我们需要为贵宾做出专门安排。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "special",
+        "coreDifference": "强调“特殊、专门”，但不一定唯一",
+        "sceneFocus": "优惠、场合、安排的特殊性场景"
+      },
+      {
+        "word": "unique",
+        "coreDifference": "强调“独一无二”，无可替代",
+        "sceneFocus": "事物的唯一性描述场景"
+      }
+    ]
+  },
+  {
+    "word": "common",
+    "phonetic": "/ˈkɒmən/（英）；/ˈkɑːmən/（美）",
+    "partOfSpeech": "adj. 形容词；n. 名词",
+    "coreMeaning": "1. 形容词：常见的；普通的；共同的 2. 名词：公共用地；常识",
+    "toeicSceneFocus": "通用词汇，适用于“普遍存在”或“共同拥有”的场景，是托业阅读和听力中的高频词，侧重“**普遍性或共性**”",
+    "keyCollocations": [
+      "common problem（常见问题）",
+      "common goal（共同目标）",
+      "common sense（常识）"
+    ],
+    "toeicExampleSentences": [
+      "A lack of communication is a common problem in many teams.（沟通不畅是许多团队的常见问题。）",
+      "All members of the group share a common goal of increasing sales.（团队所有成员都有一个提高销售额的共同目标。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "common",
+        "coreDifference": "强调“常见的”或“共同的”",
+        "sceneFocus": "问题、目标、常识的描述场景"
+      },
+      {
+        "word": "ordinary",
+        "coreDifference": "强调“平凡的、普通的”，无特殊之处",
+        "sceneFocus": "人或事物的平凡性描述场景"
+      }
+    ]
+  },
+  {
+    "word": "ordinary",
+    "phonetic": "/ˈɔːdnri/（英）；/ˈɔːrdəneri/（美）",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "普通的；平凡的；平常的",
+    "toeicSceneFocus": "适用于人或事物无特殊之处的场景，是托业阅读（人物描述、产品介绍）中的常考词，侧重“**平凡无奇，没有亮点**”",
+    "keyCollocations": [
+      "ordinary people（普通人）",
+      "ordinary day（平凡的一天）",
+      "ordinary product（普通产品）"
+    ],
+    "toeicExampleSentences": [
+      "He is just an ordinary office worker who lives a simple life.（他只是一个过着简单生活的普通上班族。）",
+      "This ordinary-looking machine can perform complex tasks efficiently.（这台看起来平平无奇的机器能高效完成复杂任务。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "ordinary",
+        "coreDifference": "强调“平凡、无特殊之处”",
+        "sceneFocus": "人、生活、物品的平凡性场景"
+      },
+      {
+        "word": "usual",
+        "coreDifference": "强调“习惯性的、通常的”，符合常规",
+        "sceneFocus": "日常习惯、常规安排的描述场景"
+      }
+    ]
+  },
+  {
+    "word": "usual",
+    "phonetic": "/ˈjuːʒuəl/（英）；/ˈjuːʒuəl/（美）",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "通常的；惯常的；平常的",
+    "toeicSceneFocus": "适用于符合日常习惯或常规的场景，是托业听力（日常对话、工作沟通）中的高频词，侧重“**符合惯例，习惯性的**”",
+    "keyCollocations": [
+      "as usual（像往常一样）",
+      "usual routine（日常惯例）",
+      "usual time（平常时间）"
+    ],
+    "toeicExampleSentences": [
+      "As usual, she arrived at the office ten minutes early.（像往常一样，她提前十分钟到了办公室。）",
+      "We will hold the meeting at our usual place this Friday.（这周五我们将在常去的地点开会。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "usual",
+        "coreDifference": "强调“习惯性的、符合常规”",
+        "sceneFocus": "日常习惯、时间、地点的常规场景"
+      },
+      {
+        "word": "normal",
+        "coreDifference": "强调“符合标准或正常状态”，无异常",
+        "sceneFocus": "状态、指标的正常性场景"
+      }
+    ]
+  },
+  {
+    "word": "normal",
+    "phonetic": "/ˈnɔːml/（英）；/ˈnɔːrml/（美）",
+    "partOfSpeech": "adj. 形容词；n. 名词",
+    "coreMeaning": "1. 形容词：正常的；标准的；常态的 2. 名词：正常状态；标准",
+    "toeicSceneFocus": "适用于符合标准或无异常的场景，是托业阅读（健康报告、数据统计）中的高频词，侧重“**符合正常标准，无偏差**”",
+    "keyCollocations": [
+      "normal temperature（正常体温）",
+      "return to normal（恢复正常）",
+      "normal level（正常水平）"
+    ],
+    "toeicExampleSentences": [
+      "The test results show that all your vital signs are normal.（检测结果显示你的所有生命体征都正常。）",
+      "The market has returned to normal after the short-term fluctuation.（市场在短期波动后已恢复正常。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "normal",
+        "coreDifference": "强调“符合标准、无异常”",
+        "sceneFocus": "健康、市场、数据的正常状态场景"
+      },
+      {
+        "word": "regular",
+        "coreDifference": "强调“定期的、规律的”，有固定频率",
+        "sceneFocus": "作息、检查、消费的规律性场景"
+      }
+    ]
+  },
+  {
+    "word": "regular",
+    "phonetic": "/ˈreɡjələ/（英）；/ˈreɡjələr/（美）",
+    "partOfSpeech": "adj. 形容词；n. 名词",
+    "coreMeaning": "1. 形容词：定期的；规律的；常规的；普通的 2. 名词：常客；老主顾",
+    "toeicSceneFocus": "适用于有固定频率或常规的场景，是托业阅读（服务协议、日常安排）中的高频词，侧重“**规律性或常规性**”",
+    "keyCollocations": [
+      "regular meeting（定期会议）",
+      "regular customer（常客）",
+      "regular exercise（规律锻炼）"
+    ],
+    "toeicExampleSentences": [
+      "The company holds a regular meeting every Monday morning.（公司每周一早上开定期会议。）",
+      "She is a regular customer of this coffee shop and visits it every day.（她是这家咖啡店的常客，每天都会来。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "regular",
+        "coreDifference": "强调“定期的、规律的”或“常客”",
+        "sceneFocus": "会议、锻炼、客户的规律性场景"
+      },
+      {
+        "word": "standard",
+        "coreDifference": "强调“符合标准的、规范的”",
+        "sceneFocus": "产品、流程、服务的标准化场景"
+      }
+    ]
+  },
+  {
+    "word": "standard",
+    "phonetic": "/ˈstændəd/（英）；/ˈstændərd/（美）",
+    "partOfSpeech": "adj. 形容词；n. 名词",
+    "coreMeaning": "1. 形容词：标准的；规范的；合格的 2. 名词：标准；水准；规范",
+    "toeicSceneFocus": "适用于符合行业标准或规范的场景，是托业阅读（产品标准、流程规范）中的高频核心词，侧重“**符合既定标准**”",
+    "keyCollocations": [
+      "standard procedure（标准流程）",
+      "standard quality（标准质量）",
+      "meet the standard（达到标准）"
+    ],
+    "toeicExampleSentences": [
+      "All products must go through standard quality checks before leaving the factory.（所有产品出厂前都必须经过标准质量检测。）",
+      "The company has set a high standard for customer service in the industry.（该公司为行业内的客户服务设定了高标准。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "standard",
+        "coreDifference": "强调“符合行业标准、规范”",
+        "sceneFocus": "产品、流程、服务的标准化场景"
+      },
+      {
+        "word": "typical",
+        "coreDifference": "强调“典型的、有代表性的”",
+        "sceneFocus": "例子、特征的代表性场景"
+      }
+    ]
+  },
+  {
+    "word": "typical",
+    "phonetic": "/ˈtɪpɪkl/（英）；/ˈtɪpɪkl/（美）",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "典型的；有代表性的；特有的",
+    "toeicSceneFocus": "适用于具有代表性特征的场景，是托业阅读（案例分析、特征描述）中的常考词，侧重“**有代表性，能体现类别特征**”",
+    "keyCollocations": [
+      "typical example（典型例子）",
+      "typical feature（典型特征）",
+      "typical of（是……的典型特征）"
+    ],
+    "toeicExampleSentences": [
+      "This is a typical example of how to handle customer complaints effectively.（这是有效处理客户投诉的典型案例。）",
+      "It is typical of him to arrive late for meetings.（开会迟到是他的一贯作风。）"
+    ],
+    "confusingWordsComparison": [
+      {
+        "word": "typical",
+        "coreDifference": "强调“典型的、有代表性的”",
+        "sceneFocus": "案例、特征、行为的代表性场景"
+      },
+      {
+        "word": "standard",
+        "coreDifference": "强调“符合标准的、规范的”",
+        "sceneFocus": "产品、流程的标准化场景"
+      }
+    ]
+  },
+  {
+    "word": "quantity",
+    "phonetic": "/ˈkwɑːntəti/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "量；数量；（尤指）大量",
+    "toeicSceneFocus": "正式用语，指事物的数量，可用于可数和不可数名词，但更常见于与可数名词连用，特别是表示“大量”时。常见于采购订单、库存管理、生产制造和物流运输场景，如“order in large quantities”（大批量订购）。",
+    "keyCollocations": [
+      "large quantity (大量)",
+      "in quantity (大量地)",
+      "quantity discount (数量折扣)",
+      "a quantity of (一批…)",
+      "unknown quantity (未知数；难以预测的人/事)"
+    ],
+    "toeicExampleSentences": [
+      "We offer a discount for orders placed in large quantities. (我们对大批量订单提供折扣。)",
+      "Please check the quantity of items in the warehouse against the inventory list. (请根据库存清单核对仓库中的物品数量。)",
+      "A considerable quantity of raw materials was damaged during transit. (数量可观的一批原材料在运输过程中受损。)",
+      "The new manager is still an unknown quantity to most of the team. (对团队大多数成员来说，新经理仍然是个未知数。)"
+    ],
+    "sceneAssociation": "联想采购订单（Purchase Order）上的“Item, Quantity, Unit Price”栏目，或仓库告示“Limited Quantity Available”（数量有限）。",
+    "confusingWordsComparison": [
+      {
+        "word": "quantity",
+        "coreDifference": "“数量”，较正式，可指可数或不可数事物的量，尤指大量。",
+        "toeicSceneFocus": "正式用语，尤指大的、批量的数量。"
+      },
+      {
+        "word": "amount",
+        "coreDifference": "“数量”，与不可数名词连用，指总量。",
+        "toeicSceneFocus": "不可数事物的总量（钱、时间、工作等）。"
+      },
+      {
+        "word": "number",
+        "coreDifference": "“数量”，与可数名词复数连用，指个体数目。",
+        "toeicSceneFocus": "可数事物的数目。"
+      }
+    ]
+  },
+  {
+    "word": "number",
+    "phonetic": "/ˈnʌmbər/",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 数字；号码；数量 v. 编号；总计",
+    "toeicSceneFocus": "最基础的商务词汇之一。名词指“数字”（用于计算）、“号码”（电话、房间、订单号）或“数量”（与可数名词连用）。动词“number”意为“总计”，但更常用“amount to”。短语“a number of”（若干）是高频表达。",
+    "keyCollocations": [
+      "phone number (电话号码)",
+      "order number (订单号)",
+      "a number of (若干，许多)",
+      "in number (在数量上)",
+      "number one (第一；首要的)"
+    ],
+    "toeicExampleSentences": [
+      "Please quote your customer reference number when you call. (致电时请提供您的客户参考编号。)",
+      "A number of employees have expressed interest in the flexible work schedule. (一些员工对弹性工作制表示感兴趣。)",
+      "The number of participants has increased significantly compared to last year. (与去年相比，参与者人数显著增加。)",
+      "Our priority is number one: customer satisfaction. (我们的首要任务是：客户满意度。)"
+    ],
+    "sceneAssociation": "联想名片上的“Direct Line: +1-555-...” 或会议签到表上的“Number of Attendees”（出席人数）。",
+    "confusingWordsComparison": [
+      {
+        "word": "number (n.)",
+        "coreDifference": "“数目”，与可数名词复数连用。",
+        "toeicSceneFocus": "可数事物的个体数量、号码。"
+      },
+      {
+        "word": "amount (n.)",
+        "coreDifference": "“数量”，与不可数名词连用。",
+        "toeicSceneFocus": "不可数事物的总量。"
+      },
+      {
+        "word": "figure (n.)",
+        "coreDifference": "“数字”，常指具体的、有意义的数值（如财务数据）。",
+        "toeicSceneFocus": "具体的数值、数据。"
+      }
+    ]
+  },
+  {
+    "word": "count",
+    "phonetic": "/kaʊnt/",
+    "partOfSpeech": "v. 动词；n. 名词",
+    "coreMeaning": "v. 数；计算；认为；重要 n. 计数；总数",
+    "toeicSceneFocus": "动词是基本动作，用于清点库存、选票、人数等。引申义“很重要”（count for much/a lot）和“依赖”（count on）是商务协作和评估中的常用表达。名词“head count”指员工总数，是人事和预算场景关键词。",
+    "keyCollocations": [
+      "count on (依赖，指望)",
+      "head count (员工总数)",
+      "final count (最终计数)",
+      "count for (有价值，有重要性)",
+      "keep count of (记录…的数量)"
+    ],
+    "toeicExampleSentences": [
+      "We need an accurate head count for the company picnic to order enough food. (我们需要确切的员工总数来为公司野餐订购足够的食物。)",
+      "You can always count on Sarah to meet her deadlines. (你总是可以指望莎拉按时完成任务。)",
+      "In this industry, reputation counts for a great deal. (在这个行业，声誉至关重要。)",
+      "The warehouse staff will count the inventory at the end of each month. (仓库员工将在每月末清点库存。)"
+    ],
+    "sceneAssociation": "动词：联想仓库盘点场景“We need to count all the boxes.”（我们需要清点所有的箱子。）。名词：联想人事预算“We have a head count freeze.”（我们冻结了人员编制。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "count (v.)",
+        "coreDifference": "“数、计算”，指逐个数出总数。",
+        "toeicSceneFocus": "清点、计算数量。"
+      },
+      {
+        "word": "calculate",
+        "coreDifference": "“计算”，指通过数学运算得出结果，更复杂。",
+        "toeicSceneFocus": "数学运算、估算。"
+      },
+      {
+        "word": "matter",
+        "coreDifference": "“要紧、重要”，与“count for”意思相近，但“count for”更强调“有价值、有分量”。",
+        "toeicSceneFocus": "具有重要性。"
+      }
+    ]
+  },
+  {
+    "word": "sum",
+    "phonetic": "/sʌm/",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 总数；金额；算术 v. 总结；概括",
+    "toeicSceneFocus": "名词指数字的“总和”，尤指金钱总额（a large sum of money）。动词短语“sum up”（总结）是会议、报告和演示结尾的关键动作。是财务和总结性沟通中的核心词汇。",
+    "keyCollocations": [
+      "a large sum of money (一大笔钱)",
+      "sum total (总数)",
+      "in sum (总而言之)",
+      "sum up (总结)",
+      "lump sum (一次性付款)"
+    ],
+    "toeicExampleSentences": [
+      "The project required a substantial sum of investment upfront. (该项目需要前期投入一大笔资金。)",
+      "To sum up, the main benefits of the new system are increased efficiency and lower costs. (总而言之，新系统的主要好处是提高效率和降低成本。)",
+      "The sum of all expenses came to just under the budget. (所有费用的总和刚好低于预算。)",
+      "The payment will be made in a lump sum upon completion. (款项将在完成后一次性支付。)"
+    ],
+    "sceneAssociation": "名词：联想支票上写的“Pay the sum of…”（支付…款项）。动词：联想演讲者最后说“I’d like to sum up the key points.”（我想总结一下要点。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "sum (n.)",
+        "coreDifference": "“总数、总和”，尤指金钱或数字加在一起的结果。",
+        "toeicSceneFocus": "金额、数字的总和。"
+      },
+      {
+        "word": "total (n.)",
+        "coreDifference": "“总数”，与“sum”常互换，但“total”更通用。",
+        "toeicSceneFocus": "通用的总数、合计。"
+      },
+      {
+        "word": "amount (n.)",
+        "coreDifference": "“数量”，指不可数事物的总量，不特指相加的结果。",
+        "toeicSceneFocus": "不可数事物的总量。"
+      }
+    ]
+  },
+  {
+    "word": "aggregate",
+    "phonetic": "/ˈæɡrɪɡət/ (n., adj.), /ˈæɡrɪɡeɪt/ (v.)",
+    "partOfSpeech": "n. 名词；adj. 形容词；v. 动词",
+    "coreMeaning": "n. 总数；合计 adj. 总的；合计的 v. 合计；聚集",
+    "toeicSceneFocus": "较正式的商业和统计术语。名词/形容词指各部分集合成的“总量/总的”，如“aggregate demand”（总需求）。动词指“汇总”数据。常见于经济报告、公司财报和高层战略文件中，是托业阅读中可能遇到的高级词汇。",
+    "keyCollocations": [
+      "in the aggregate (总体上，总计)",
+      "aggregate data (汇总数据)",
+      "aggregate score (总分)",
+      "aggregate demand/supply (总需求/总供给)",
+      "aggregate results (综合结果)"
+    ],
+    "toeicExampleSentences": [
+      "The report presents the aggregate sales figures for all regions combined. (该报告展示了所有区域合并后的总销售额。)",
+      "In the aggregate, our performance this quarter has been satisfactory. (总体来看，我们本季度的表现是令人满意的。)",
+      "The software can aggregate data from multiple sources into a single dashboard. (该软件可以将来自多个来源的数据汇总到一个仪表板中。)"
+    ],
+    "sceneAssociation": "联想一份年度财报的摘要部分，标题是“Aggregate Financial Performance”（综合财务业绩）。",
+    "confusingWordsComparison": [
+      {
+        "word": "aggregate (n./adj.)",
+        "coreDifference": "“总数/总的”，正式用语，强调由多个部分集合而成的整体。",
+        "toeicSceneFocus": "正式场合的总计、汇总。"
+      },
+      {
+        "word": "total (n./adj.)",
+        "coreDifference": "“总数/总的”，通用词，意思相同但更常用。",
+        "toeicSceneFocus": "通用的总数。"
+      },
+      {
+        "word": "overall (adj.)",
+        "coreDifference": "“总体的”，强调全面的、综合的状况，不一定是数字相加。",
+        "toeicSceneFocus": "全面的、整体的状况。"
+      }
+    ]
+  },
+  {
+    "word": "average",
+    "phonetic": "/ˈæv(ə)rɪdʒ/",
+    "partOfSpeech": "n. 名词；adj. 形容词；v. 动词",
+    "coreMeaning": "n. 平均数；一般水平 adj. 平均的；普通的 v. 平均为",
+    "toeicSceneFocus": "数据分析、绩效评估和市场比较的基础词汇。用于计算均值、描述一般标准（above/below average）、或表示通常情况（on average）。是托业阅读图表题和听力中比较数据时的核心概念。",
+    "keyCollocations": [
+      "on average (平均而言)",
+      "above average (高于平均水平)",
+      "below average (低于平均水平)",
+      "average score (平均分)",
+      "industry average (行业平均水平)"
+    ],
+    "toeicExampleSentences": [
+      "On average, employees spend about two hours a day in meetings. (平均而言，员工每天花大约两小时在开会上。)",
+      "Our customer satisfaction rating is well above the industry average. (我们的客户满意度评分远高于行业平均水平。)",
+      "The company’s profits have averaged 5% growth per year over the last decade. (在过去十年中，公司利润平均每年增长5%。)"
+    ],
+    "sceneAssociation": "联想一份业绩评估表，上面有“Your score vs. Team Average”（你的分数 vs 团队平均分）的对比柱状图。",
+    "confusingWordsComparison": [
+      {
+        "word": "average (n.)",
+        "coreDifference": "“平均数”，指算术平均值，也指一般标准。",
+        "toeicSceneFocus": "算术平均值、一般水平。"
+      },
+      {
+        "word": "mean (n.)",
+        "coreDifference": "“平均值”，是“average”在统计学中的正式术语，特指算术平均数。",
+        "toeicSceneFocus": "统计学中的算术平均数（同 average）。"
+      },
+      {
+        "word": "median (n.)",
+        "coreDifference": "“中位数”，指一组数据按顺序排列后位于中间的值。",
+        "toeicSceneFocus": "统计学中的中位数。"
+      }
+    ]
+  },
+  {
+    "word": "mean",
+    "phonetic": "/miːn/",
+    "partOfSpeech": "n. 名词；adj. 形容词；v. 动词",
+    "coreMeaning": "n. 平均值；中庸 adj. 平均的；低劣的；吝啬的 v. 意思是；打算",
+    "toeicSceneFocus": "作名词时，是统计学术语，指“算术平均数”，与“average”同义，但更正式和技术化。托业考试在涉及数据分析、调研报告等较专业的阅读材料中可能出现。需注意与动词“意思是”和形容词“低劣的”区分。",
+    "keyCollocations": [
+      "arithmetic mean (算术平均数)",
+      "mean value (平均值)",
+      "above the mean (高于平均值)",
+      "standard deviation from the mean (与平均值的标准差)"
+    ],
+    "toeicExampleSentences": [
+      "The mean salary for the position is calculated based on data from all similar companies in the sector. (该职位的平均工资是根据该行业所有类似公司的数据计算得出的。)",
+      "In the survey, the mean score for product reliability was 4.2 out of 5. (在调查中，产品可靠性的平均得分为4.2分（满分5分）。)",
+      "What does this acronym mean in the financial report? (这个缩写在财务报告中是什么意思？)"
+    ],
+    "sceneAssociation": "联想一份科学的市场调研报告，在“Methodology”（方法论）部分写着“We calculated the mean and median of the responses.”（我们计算了回复的平均值和中位数。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "mean (n.)",
+        "coreDifference": "“平均值”，统计学术语，特指算术平均数。",
+        "toeicSceneFocus": "正式的算术平均数。"
+      },
+      {
+        "word": "average (n.)",
+        "coreDifference": "“平均数”，通用词，与“mean”在“算术平均数”上同义，但更常用。",
+        "toeicSceneFocus": "通用的平均数。"
+      },
+      {
+        "word": "median (n.)",
+        "coreDifference": "“中位数”，不同的集中趋势度量。",
+        "toeicSceneFocus": "中间值。"
+      }
+    ]
+  },
+  {
+    "word": "median",
+    "phonetic": "/ˈmiːdiən/",
+    "partOfSpeech": "n. 名词；adj. 形容词",
+    "coreMeaning": "n. 中位数；中间值 adj. 中间的；中位数的",
+    "toeicSceneFocus": "专业统计术语，指一组数据排序后处于中间位置的值。在商务报告中用于分析收入、房价、年龄等数据，能避免极端值影响，反映典型情况。常见于深度市场分析、薪酬报告或经济研究中。",
+    "keyCollocations": [
+      "median income (收入中位数)",
+      "median age (年龄中位数)",
+      "median price (价格中位数)",
+      "above/below the median (高于/低于中位数)"
+    ],
+    "toeicExampleSentences": [
+      "The median household income in the area has risen steadily over the past five years. (该地区的家庭收入中位数在过去五年中稳步上升。)",
+      "When a few executives have very high salaries, the mean salary is much higher than the median. (当少数高管薪资极高时，平均薪资会远高于中位数薪资。)",
+      "The report compares the median sales price of homes in different neighborhoods. (该报告比较了不同社区房屋销售价格的中位数。)"
+    ],
+    "sceneAssociation": "联想一份人口统计报告，用“Median Age: 42”来描述目标客户群的典型年龄，而不是容易受老年人拉高的“Average Age”。",
+    "confusingWordsComparison": [
+      {
+        "word": "median (n.)",
+        "coreDifference": "“中位数”，指排序后位于中间的值。",
+        "toeicSceneFocus": "统计学中的中位数。"
+      },
+      {
+        "word": "mean (n.)",
+        "coreDifference": "“平均值”，所有值相加除以个数。",
+        "toeicSceneFocus": "算术平均数。"
+      },
+      {
+        "word": "average (n.)",
+        "coreDifference": "“平均数”，通常指“mean”，但有时泛指各种平均。",
+        "toeicSceneFocus": "通常指算术平均数。"
+      }
+    ]
+  },
+  {
+    "word": "mode",
+    "phonetic": "/moʊd/",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "模式；方式；[统计] 众数（出现频率最高的值）",
+    "toeicSceneFocus": "在托业商务语境中，更常见的意思是“模式、方式”，如“mode of payment”（支付方式）、“mode of transportation”（运输方式）。作为统计术语“众数”出现频率较低，但可能在高级数据分析材料中见到。",
+    "keyCollocations": [
+      "mode of transportation (运输方式)",
+      "mode of payment (支付方式)",
+      "in mode (流行，时髦) [此义较少]",
+      "statistical mode (统计众数)"
+    ],
+    "toeicExampleSentences": [
+      "What is your preferred mode of payment: credit card or bank transfer? (您首选的支付方式是什么：信用卡还是银行转账？)",
+      "The most common mode of transportation for commuting in the city is the subway. (这座城市最常见的通勤交通方式是地铁。)",
+      "In the dataset, the number ‘5’ appears most frequently, making it the mode. (在该数据集中，数字‘5’出现频率最高，因此是众数。)"
+    ],
+    "sceneAssociation": "联想网购结账页面，下拉菜单让你选择“Mode of Delivery”（配送方式）。",
+    "confusingWordsComparison": [
+      {
+        "word": "mode (n.)",
+        "coreDifference": "“方式、模式”，也指统计学“众数”。",
+        "toeicSceneFocus": "商务中多指“方式”；统计中指“众数”。"
+      },
+      {
+        "word": "method",
+        "coreDifference": "“方法”，指做某事的具体步骤或系统。",
+        "toeicSceneFocus": "系统性的方法、步骤。"
+      },
+      {
+        "word": "mean/median",
+        "coreDifference": "不同的集中趋势统计量。",
+        "toeicSceneFocus": "平均值/中位数。"
+      }
+    ]
+  },
+  {
+    "word": "range",
+    "phonetic": "/reɪndʒ/",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 范围；幅度；一系列；山脉 v. （在…范围内）变化；排列",
+    "toeicSceneFocus": "名词是描述价格、选择、能力、温度等“范围”的关键词。动词描述在一定区间内变动。常见于产品目录（a wide range of products）、薪资谈判（salary range）、数据分析（age range）等场景。",
+    "keyCollocations": [
+      "a wide range of (范围广泛的)",
+      "price range (价格范围)",
+      "within the range of (在…范围内)",
+      "product range (产品系列)",
+      "range from... to... (范围从…到…)"
+    ],
+    "toeicExampleSentences": [
+      "Our company offers a wide range of financial services to both individuals and businesses. (我们公司为个人和企业提供范围广泛的金融服务。)",
+      "The salary for this position ranges from $50,000 to $65,000, depending on experience. (该职位的薪水在5万到6.5万美元之间，具体取决于经验。)",
+      "Please ensure that your proposal falls within the budget range we discussed. (请确保你的提案在我们讨论过的预算范围内。)"
+    ],
+    "sceneAssociation": "联想招聘广告上写着“Salary Range: Competitive”（薪资范围：有竞争力），或产品官网横幅“Explore Our Full Range of Solutions”（探索我们的全系列解决方案）。",
+    "confusingWordsComparison": [
+      {
+        "word": "range (n.)",
+        "coreDifference": "“范围”，指从下限到上限的区间，或一系列同类事物。",
+        "toeicSceneFocus": "区间、系列、种类。"
+      },
+      {
+        "word": "scope",
+        "coreDifference": "“范围”，指活动、影响或主题所涉及的范围、领域。",
+        "toeicSceneFocus": "项目、主题、职责的范围。"
+      },
+      {
+        "word": "variety",
+        "coreDifference": "“多样性”，指多种不同种类的事物。",
+        "toeicSceneFocus": "种类多样。"
+      }
+    ]
+  },
+  {
+    "word": "minimum",
+    "phonetic": "/ˈmɪnɪməm/",
+    "partOfSpeech": "n. 名词；adj. 形容词",
+    "coreMeaning": "n. 最小值；最低限度 adj. 最小的；最低的",
+    "toeicSceneFocus": "用于设定底线、要求或限制。常见于法律合同（minimum requirement）、工作条件（minimum wage）、订单量（minimum order quantity）、资源分配等场景。与“maximum”相对。",
+    "keyCollocations": [
+      "minimum wage (最低工资)",
+      "minimum requirement (最低要求)",
+      "minimum order (最低起订量)",
+      "at a minimum (至少)",
+      "keep to a minimum (保持在最低限度)"
+    ],
+    "toeicExampleSentences": [
+      "The job has a minimum requirement of three years of relevant experience. (该职位要求至少三年相关经验。)",
+      "We try to keep travel expenses to a minimum. (我们尽力将差旅费用保持在最低限度。)",
+      "Please note that there is a minimum order quantity of 100 units. (请注意，最低起订量为100件。)",
+      "Employees are paid at least the statutory minimum wage. (员工的工资至少达到法定最低工资标准。)"
+    ],
+    "sceneAssociation": "联想网上购物车提示“You have not reached the minimum order amount for free shipping.”（您尚未达到免运费的最低订单金额。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "minimum (n./adj.)",
+        "coreDifference": "“最小值/最小的”，指可能或允许的最低点。",
+        "toeicSceneFocus": "最低限度、最小值。"
+      },
+      {
+        "word": "least (adj./adv.)",
+        "coreDifference": "“最少的/最小地”，是“little”的最高级，用于比较。",
+        "toeicSceneFocus": "数量或程度上最少。"
+      },
+      {
+        "word": "maximim (n./adj.)",
+        "coreDifference": "“最大值/最大的”，反义词。",
+        "toeicSceneFocus": "最大值、最高限度。"
+      }
+    ]
+  },
+  {
+    "word": "maximum",
+    "phonetic": "/ˈmæksɪməm/",
+    "partOfSpeech": "n. 名词；adj. 形容词",
+    "coreMeaning": "n. 最大值；最大限度 adj. 最大的；最高的",
+    "toeicSceneFocus": "用于描述上限、容量极限或最佳状态。常见于资源限制（maximum capacity）、性能参数（maximum speed）、福利额度（maximum coverage）、时间限制（maximum duration）等。与“minimum”相对。",
+    "keyCollocations": [
+      "maximum capacity (最大容量)",
+      "to the maximum (最大限度地)",
+      "maximum benefit (最大利益/最高福利金)",
+      "maximum security (最高安全级别)",
+      "reach a maximum (达到最大值)"
+    ],
+    "toeicExampleSentences": [
+      "The conference room has a maximum capacity of 50 people. (会议室最多可容纳50人。)",
+      "We need to utilize our resources to the maximum to meet the deadline. (我们需要最大限度地利用我们的资源来赶上截止日期。)",
+      "The insurance policy has a maximum coverage limit of $1 million per incident. (该保险单每次事故的最高赔偿限额为100万美元。)",
+      "Ticket prices will be at a maximum during the holiday season. (节假日期间票价将达到最高点。)"
+    ],
+    "sceneAssociation": "联想电梯里的标识“Maximum Load: 10 Persons”（最大载重：10人），或酒店预订时“Maximum Stay: 14 nights”（最长入住：14晚）。",
+    "confusingWordsComparison": [
+      {
+        "word": "maximum (n./adj.)",
+        "coreDifference": "“最大值/最大的”，指可能或允许的最高点。",
+        "toeicSceneFocus": "最高限度、最大值。"
+      },
+      {
+        "word": "most (adj./adv.)",
+        "coreDifference": "“最多的/最多地”，是“many/much”的最高级，用于比较。",
+        "toeicSceneFocus": "数量或程度上最多。"
+      },
+      {
+        "word": "peak (n./adj.)",
+        "coreDifference": "“顶峰/高峰的”，指达到的最高点，尤指在某一时期。",
+        "toeicSceneFocus": "顶点、高峰期。"
+      }
+    ]
+  },
+  {
+    "word": "high",
+    "phonetic": "/haɪ/",
+    "partOfSpeech": "adj. 形容词；adv. 副词；n. 名词",
+    "coreMeaning": "adj. 高的；高度的；高级的 adv. 高；在高处 n. 最高水平；高点",
+    "toeicSceneFocus": "应用极其广泛。描述数值高（high price）、质量高（high quality）、级别高（high level）、程度高（high priority）。是评估绩效、成本、风险、标准等方面的核心形容词。名词“high”指高点或高水平。",
+    "keyCollocations": [
+      "high quality (高质量)",
+      "high cost (高成本)",
+      "high priority (高优先级)",
+      "high level (高水平)",
+      "reach an all-time high (达到历史最高点)"
+    ],
+    "toeicExampleSentences": [
+      "There is a high demand for professionals with digital marketing skills. (对拥有数字营销技能的专业人士需求很高。)",
+      "The project is of high priority and requires immediate attention. (该项目优先级很高，需要立即关注。)",
+      "Our sales reached an all-time high in the fourth quarter. (我们的销售额在第四季度达到了历史最高点。)",
+      "The position requires a high level of responsibility and autonomy. (该职位需要高度的责任心和自主性。)"
+    ],
+    "sceneAssociation": "联想股票走势图上的“52-week high”（52周高点），或产品描述“Made with high-grade materials”（采用高级材料制成）。",
+    "confusingWordsComparison": [
+      {
+        "word": "high (adj.)",
+        "coreDifference": "“高的”，指高度、程度、水平、数值等抽象或具体的高。",
+        "toeicSceneFocus": "抽象或具体的高度、高水平。"
+      },
+      {
+        "word": "tall",
+        "coreDifference": "“高的”，通常用于描述人、树木、建筑物等有垂直高度的物体。",
+        "toeicSceneFocus": "人或物体的垂直高度。"
+      },
+      {
+        "word": "expensive",
+        "coreDifference": "“昂贵的”，特指价格高。",
+        "toeicSceneFocus": "价格高。"
+      }
+    ]
+  },
+  {
+    "word": "low",
+    "phonetic": "/loʊ/",
+    "partOfSpeech": "adj. 形容词；adv. 副词；n. 名词",
+    "coreMeaning": "adj. 低的；少的；低级的 adv. 低；在低处 n. 最低水平；低点",
+    "coreMeaning": "adj. 低的；少的；低级的 adv. 低；在低处 n. 最低水平；低点",
+    "toeicSceneFocus": "与“high”相对，描述数值低（low price）、水平低（low efficiency）、数量少（low inventory）、优先级低（low priority）。用于成本控制、风险评估、绩效评价等各方面。名词“low”指低点。",
+    "keyCollocations": [
+      "low cost (低成本)",
+      "low risk (低风险)",
+      "in low supply (供应短缺)",
+      "at an all-time low (处于历史最低点)",
+      "low priority (低优先级)"
+    ],
+    "toeicExampleSentences": [
+      "Operating in that region carries a relatively low political risk. (在该地区运营的政治风险相对较低。)",
+      "Due to high demand, some models are currently in low supply. (由于需求旺盛，部分型号目前供应短缺。)",
+      "Employee morale hit an all-time low after the restructuring announcement. (重组公告发布后，员工士气跌至历史最低点。)",
+      "We’re looking for ways to maintain high quality while keeping costs low. (我们正在寻找在保持高质量的同时控制低成本的方法。)"
+    ],
+    "sceneAssociation": "联想燃油价格指示牌上显示的“Lowest Price in Town!”，或经济新闻“Unemployment rate hits a 10-year low.”（失业率创十年新低。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "low (adj.)",
+        "coreDifference": "“低的”，与“high”相对，指高度、程度、水平、数值等低。",
+        "toeicSceneFocus": "抽象或具体的低水平、低程度。"
+      },
+      {
+        "word": "short",
+        "coreDifference": "“矮的；短的”，指垂直高度低或长度短，也指时间短。",
+        "toeicSceneFocus": "高度矮、长度短、时间短。"
+      },
+      {
+        "word": "cheap",
+        "coreDifference": "“便宜的”，特指价格低，有时含贬义（质量差）。",
+        "toeicSceneFocus": "价格低廉（可能质量一般）。"
+      }
+    ]
+  },
+  {
+    "word": "top",
+    "phonetic": "/tɑːp/",
+    "partOfSpeech": "n. 名词；adj. 形容词；v. 动词",
+    "coreMeaning": "n. 顶部；顶端；最高职位 adj. 顶部的；最高的；最好的 v. 超过；居…之首",
+    "toeicSceneFocus": "名词指物理顶端（page top）或最高层级（company top）。形容词表示“顶级的、最好的”（top priority, top performer）。动词“top”意为“超过”。广泛用于描述排名、优先级、质量和位置。",
+    "keyCollocations": [
+      "top priority (重中之重)",
+      "top management (高层管理)",
+      "top seller (畅销品)",
+      "at the top of (在…的顶部/顶端)",
+      "top the list (名列前茅)"
+    ],
+    "toeicExampleSentences": [
+      "Ensuring data security is our top priority. (确保数据安全是我们的重中之重。)",
+      "She quickly rose to the top of her field. (她很快晋升至其领域的顶尖位置。)",
+      "This model is one of our top sellers this quarter. (这款型号是我们本季度的畅销品之一。)",
+      "The proposal topped all others in terms of innovation and feasibility. (该提案在创新性和可行性方面超过了所有其他提案。)"
+    ],
+    "sceneAssociation": "联想电子邮件开头的称呼“Dear Top Management，”（致高层管理层），或待办事项列表最上方标着“TOP PRIORITY”的任务。",
+    "confusingWordsComparison": [
+      {
+        "word": "top (adj.)",
+        "coreDifference": "“顶部的、最高的、最好的”，强调处于最上层或最优。",
+        "toeicSceneFocus": "最高级、最优的。"
+      },
+      {
+        "word": "highest",
+        "coreDifference": "“最高的”，是“high”的最高级，强调程度或数值上最高。",
+        "toeicSceneFocus": "程度、数值上的最高。"
+      },
+      {
+        "word": "best",
+        "coreDifference": "“最好的”，是“good”的最高级，强调质量最优。",
+        "toeicSceneFocus": "质量、表现最好。"
+      }
+    ]
+  },
+  {
+    "word": "bottom",
+    "phonetic": "/ˈbɑːtəm/",
+    "partOfSpeech": "n. 名词；adj. 形容词；v. 动词",
+    "coreMeaning": "n. 底部；底层；末端 adj. 底部的；最低的 v. 触底；查明原因",
+    "toeicSceneFocus": "与“top”相对。名词指物理底部（page bottom）或最差位置（bottom of the list）。形容词“bottom line”指“盈亏底线”，引申为“关键因素”。短语“bottom out”指（价格等）跌至谷底。",
+    "keyCollocations": [
+      "bottom line (底线；关键因素；盈亏账目底线)",
+      "at the bottom of (在…的底部)",
+      "rock bottom (最低点)",
+      "hit bottom (触底)",
+      "from top to bottom (从上到下，彻底地)"
+    ],
+    "toeicExampleSentences": [
+      "The most important details are often found at the bottom of the contract. (最重要的细节往往在合同的底部。)",
+      "The bottom line is that we need to increase sales by 15% to meet our targets. (关键是我们需要将销售额提高15%才能达到目标。)",
+      "Sales hit rock bottom during the economic recession. (销售在经济衰退期间跌至谷底。)",
+      "We need to get to the bottom of this recurring technical issue. (我们需要查明这个反复出现的技术问题的根本原因。)"
+    ],
+    "sceneAssociation": "联想财务报告末尾的“Net Profit”一行，那就是“The Bottom Line”（净利润）。或一份排名表，自己的名字“at the bottom of the page”（在页面底部）。",
+    "confusingWordsComparison": [
+      {
+        "word": "bottom (n.)",
+        "coreDifference": "“底部、底层”，与“top”相对，也指最差位置。",
+        "toeicSceneFocus": "最下层、最末端、最差等级。"
+      },
+      {
+        "word": "lowest",
+        "coreDifference": "“最低的”，是“low”的最高级，强调程度或数值上最低。",
+        "toeicSceneFocus": "程度、数值上的最低。"
+      },
+      {
+        "word": "base",
+        "coreDifference": "“基部、基础”，指支撑整体的底部或起点。",
+        "toeicSceneFocus": "基础、基地。"
+      }
+    ]
+  },
+  {
+    "word": "first",
+    "phonetic": "/fɜːrst/",
+    "partOfSpeech": "adj. 形容词；adv. 副词；n. 名词",
+    "coreMeaning": "adj. 第一的；最初的 adv. 首先；第一次 n. 第一个（人或事物）",
+    "toeicSceneFocus": "表示顺序、优先级或时间上的“第一”。用于步骤说明（first step）、产品发布（first generation）、客户接触（first impression）等。短语“at first”和“first of all”是组织语言和表述顺序的常用信号词。",
+    "keyCollocations": [
+      "first of all (首先)",
+      "at first (起初)",
+      "first impression (第一印象)",
+      "first quarter (第一季度)",
+      "in the first place (首先；原本)"
+    ],
+    "toeicExampleSentences": [
+      "First of all, I’d like to thank everyone for attending today’s meeting. (首先，我想感谢大家参加今天的会议。)",
+      "The first step in the process is to submit a formal application. (该流程的第一步是提交正式申请。)",
+      "Making a good first impression on potential clients is crucial. (给潜在客户留下良好的第一印象至关重要。)",
+      "Our revenue in the first quarter exceeded expectations. (我们第一季度的收入超出了预期。)"
+    ],
+    "sceneAssociation": "联想项目计划书的第一页写着“Phase 1: Initial Planning”（第一阶段：初步规划），或演示文稿的第一张幻灯片标题是“First, the agenda.”（首先，议程。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "first (adj.)",
+        "coreDifference": "“第一的”，指顺序、时间或重要性上排在最前。",
+        "toeicSceneFocus": "顺序、时间、重要性上的第一。"
+      },
+      {
+        "word": "initial (adj.)",
+        "coreDifference": "“最初的”，指开始阶段的，不一定是“第一”，而是早期。",
+        "toeicSceneFocus": "初期的、开始的。"
+      },
+      {
+        "word": "primary (adj.)",
+        "coreDifference": "“主要的、首要的”，强调重要性上第一，而非顺序。",
+        "toeicSceneFocus": "重要性上首要的。"
+      }
+    ]
+  },
+  {
+    "word": "last",
+    "phonetic": "/læst/",
+    "partOfSpeech": "adj. 形容词；adv. 副词；v. 动词；n. 名词",
+    "coreMeaning": "adj. 最后的；最近的；上一个的 adv. 最后；上一次 v. 持续 n. 最后的人或事物",
+    "toeicSceneFocus": "含义丰富。形容词指顺序最后（last page）、时间最近（last week）、上一次（last meeting）。动词“last”指持续。名词“the last”指最后一个。是描述时间、顺序和持续时间的核心词汇。",
+    "keyCollocations": [
+      "at last (最后，终于)",
+      "last but not least (最后但同样重要的)",
+      "last week/month/year (上周/上月/去年)",
+      "last long (持久)",
+      "to the last (直到最后)"
+    ],
+    "toeicExampleSentences": [
+      "The last item on the agenda is the budget review for next year. (议程上的最后一项是明年的预算审查。)",
+      "Our meeting with the client lasted for over two hours. (我们与客户的会议持续了两个多小时。)",
+      "Last but not least, I’d like to acknowledge the hard work of the support staff. (最后但同样重要的是，我要感谢后勤人员的辛勤工作。)",
+      "At last, we have reached an agreement on the contract terms. (我们终于就合同条款达成了协议。)"
+    ],
+    "sceneAssociation": "形容词：联想邮件签名下方的“Sent from my iPhone”，再往下是页面的“last line”。动词：联想产品保修卡上写着“Battery lasts up to 10 hours.”（电池续航长达10小时。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "last (adj.)",
+        "coreDifference": "“最后的”，指顺序上最后；也指“刚过去的”（last month）。",
+        "toeicSceneFocus": "顺序最后、最近过去的。"
+      },
+      {
+        "word": "final (adj.)",
+        "coreDifference": "“最终的”，强调一系列事件中的最后一个，不可更改。",
+        "toeicSceneFocus": "终局的、决定性的。"
+      },
+      {
+        "word": "latest (adj.)",
+        "coreDifference": "“最新的”，指时间上最近发生的或出现的。",
+        "toeicSceneFocus": "时间上最近的、最新的。"
+      }
+    ]
+  },
+  {
+    "word": "middle",
+    "phonetic": "/ˈmɪdl/",
+    "partOfSpeech": "n. 名词；adj. 形容词",
+    "coreMeaning": "n. 中间；中部；中期 adj. 中间的；中等的",
+    "toeicSceneFocus": "指时间、空间或过程的中间点。用于描述项目阶段（in the middle of a project）、地理位置（middle of the city）、年龄层（middle-aged）等。强调位于两端之间。",
+    "keyCollocations": [
+      "in the middle of (在…中间；正忙于)",
+      "middle management (中层管理)",
+      "middle of the year (年中)",
+      "middle ground (中间立场，折中方案)",
+      "right in the middle (正在正中间)"
+    ],
+    "toeicExampleSentences": [
+      "We are currently in the middle of negotiations with the supplier. (我们目前正在与供应商进行谈判。)",
+      "The report is due in the middle of next month. (报告定于下月中旬提交。)",
+      "Middle managers play a key role in communicating strategy to frontline staff. (中层管理者在向一线员工传达战略方面起着关键作用。)",
+      "We need to find a middle ground that satisfies both parties. (我们需要找到一个让双方都满意的折中方案。)"
+    ],
+    "sceneAssociation": "联想日历上用红圈标出的“Mid-Year Review”（年中评审）日期，或电话里说“Sorry, I’m in the middle of something.”（抱歉，我正在忙。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "middle (n.)",
+        "coreDifference": "“中间”，指与两端等距的中心区域或中心点。",
+        "toeicSceneFocus": "中心区域、中点。"
+      },
+      {
+        "word": "center (n.)",
+        "coreDifference": "“中心”，指精确的几何中心或活动核心。",
+        "toeicSceneFocus": "精确中心、核心区域。"
+      },
+      {
+        "word": "average (adj.)",
+        "coreDifference": "“平均的、一般的”，描述水平，而非位置。",
+        "toeicSceneFocus": "平均水平，非位置。"
+      }
+    ]
+  },
+  {
+    "word": "center",
+    "phonetic": "/ˈsentər/ (美式), /ˈsentə/ (英式 centre)",
+    "partOfSpeech": "n. 名词；v. 动词",
+    "coreMeaning": "n. 中心；中央；核心机构 v. 集中；使居中",
+    "toeicSceneFocus": "名词指物理中心（shopping center）、城市中心（city center）或活动核心（center of attention）。动词“center on/around”指“围绕、以…为中心”。是描述地理位置、商业机构和讨论焦点的常用词。",
+    "keyCollocations": [
+      "shopping center (购物中心)",
+      "city center (市中心)",
+      "call center (呼叫中心)",
+      "center of attention (关注的焦点)",
+      "center on/around (围绕，以…为中心)"
+    ],
+    "toeicExampleSentences": [
+      "Our new office is located in the financial center of the city. (我们的新办公室位于该市的金融中心。)",
+      "The discussion centered around the proposed changes to the marketing strategy. (讨论围绕拟议的市场战略变更展开。)",
+      "Please direct all customer inquiries to our regional call center. (请将所有客户问询转至我们的区域呼叫中心。)",
+      "The training center offers courses for employees at all levels. (培训中心为各级员工提供课程。)"
+    ],
+    "sceneAssociation": "联想地图APP上标记的“You are here”，旁边就是“City Center”（市中心）。或会议议题“The main issue centers on budget allocation.”（主要问题集中在预算分配上。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "center (n.)",
+        "coreDifference": "“中心”，指精确的中心点，或指重要的核心区域/机构。",
+        "toeicSceneFocus": "精确中心、核心区域、重要机构。"
+      },
+      {
+        "word": "middle (n.)",
+        "coreDifference": "“中间”，泛指两端之间的区域，不一定精确。",
+        "toeicSceneFocus": "中间区域，不一定是核心。"
+      },
+      {
+        "word": "focus (n.)",
+        "coreDifference": "“焦点”，指注意力、活动的集中点，抽象。",
+        "toeicSceneFocus": "注意力、活动的集中点。"
+      }
+    ]
+  },
+  {
+    "word": "front",
+    "phonetic": "/frʌnt/",
+    "partOfSpeech": "n. 名词；adj. 形容词；v. 动词",
+    "coreMeaning": "n. 前面；正面；前线 adj. 前面的；正面的 v. 面向；领导",
+    "toeicSceneFocus": "名词指物理位置的前部（store front）或抽象“阵线”（united front）。形容词“front desk”（前台）是办公室和酒店的关键部门。动词短语“front the cost”意为“承担费用”。",
+    "keyCollocations": [
+      "in front of (在…前面)",
+      "front desk (前台)",
+      "store front (店面)",
+      "united front (统一战线)",
+      "front the bill/cost (承担费用)"
+    ],
+    "toeicExampleSentences": [
+      "Please wait in the lobby in front of the elevators. (请在大厅电梯前等候。)",
+      "For any administrative questions, please contact the front desk. (如有任何行政问题，请联络前台。)",
+      "All departments presented a united front during the merger negotiations. (在并购谈判期间，所有部门都表现出了统一战线。)",
+      "The company will front the initial costs for the business trip. (公司将预支这次出差的初始费用。)"
+    ],
+    "sceneAssociation": "联想酒店大堂的“Front Desk”指示牌，或一份建筑平面图标着“Front Entrance”（主入口）。",
+    "confusingWordsComparison": [
+      {
+        "word": "front (n.)",
+        "coreDifference": "“前面、正面”，与“back”相对，指面向或朝向观察者的一面。",
+        "toeicSceneFocus": "前部、正面、前线。"
+      },
+      {
+        "word": "forefront (n.)",
+        "coreDifference": "“最前线、重要位置”，指活动或发展的领先位置。",
+        "toeicSceneFocus": "领先地位、最前沿。"
+      },
+      {
+        "word": "face (n.)",
+        "coreDifference": "“脸；表面”，指物体或人的正面。",
+        "toeicSceneFocus": "表面、面部。"
+      }
+    ]
+  },
+  {
+    "word": "back",
+    "phonetic": "/bæk/",
+    "partOfSpeech": "n. 名词；adj. 形容词；adv. 副词；v. 动词",
+    "coreMeaning": "n. 后面；背部；后部 adj. 后面的；过去的 adv. 向后；回原处 v. 支持；后退",
+    "toeicSceneFocus": "含义极多。名词/形容词指位置后面（back door）、时间上“过去的”（back issues of a magazine）。副词“back”表示“回来”（call back）。动词“back”表示“支持”（back a project）或“使后退”。是方位、时间和支持行为的核心词。",
+    "keyCollocations": [
+      "in the back (在后面)",
+      "back and forth (来回地)",
+      "call back (回电)",
+      "back up (支持；备份)",
+      "get back to (回复)"
+    ],
+    "toeicExampleSentences": [
+      "The storage room is at the back of the building. (储藏室在大楼的后面。)",
+      "I’ll get back to you with the information by tomorrow afternoon. (我将在明天下午前回复你相关信息。)",
+      "Management has decided to back the new initiative with full funding. (管理层已决定全力资助这项新计划。)",
+      "Please remember to back up your important files regularly. (请记得定期备份您的重要文件。)",
+      "Could you ask him to call me back when he’s free? (你能让他有空时给我回个电话吗？)"
+    ],
+    "sceneAssociation": "名词：联想办公室平面图上的“Back Exit”（后门出口）。动词：联想会议中“I back that proposal.”（我支持那个提议。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "back (adv.)",
+        "coreDifference": "“回来、向后”，表示返回原方向或原状态。",
+        "toeicSceneFocus": "返回、向后。"
+      },
+      {
+        "word": "again (adv.)",
+        "coreDifference": "“再次”，表示重复，不一定是返回。",
+        "toeicSceneFocus": "再一次。"
+      },
+      {
+        "word": "support (v.)",
+        "coreDifference": "“支持”，与“back (v.)”同义，但“back”更口语化，且在金融支持上更常用。",
+        "toeicSceneFocus": "提供支持（更正式、通用）。"
+      }
+    ]
+  },
+  {
+    "word": "left",
+    "phonetic": "/left/",
+    "partOfSpeech": "adj. 形容词；adv. 副词；n. 名词",
+    "coreMeaning": "adj. 左边的；剩余的 adv. 向左 n. 左边；左派",
+    "coreMeaning": "adj. 左边的；剩余的 adv. 向左 n. 左边；左派",
+    "toeicSceneFocus": "基本方位词。用于指路、描述位置（on the left side）、或表示“剩余的”（leftover budget）。是听力Part 1（图片描述）和Part 2（问路对话）的常见考点。",
+    "keyCollocations": [
+      "on the left (在左边)",
+      "turn left (向左转)",
+      "left-hand side (左手边)",
+      "be left with (只剩下)",
+      "left over (剩余的)"
+    ],
+    "toeicExampleSentices": [
+      "The printer is on the left-hand side of the reception desk. (打印机在接待台的左侧。)",
+      "After paying all the bills, we were left with a small profit. (支付完所有账单后，我们只剩下一小笔利润。)",
+      "Take the elevator to the third floor, and our office is the first door on your left. (乘电梯到三楼，我们的办公室就在你左边的第一间。)",
+      "Are there any sandwiches left over from the meeting? (会议后还有剩下的三明治吗？)"
+    ],
+    "sceneAssociation": "联想GPS导航语音“In 200 meters, turn left.”（200米后左转。），或查看预算表“Funds left: $1,200”（剩余资金：1200美元）。",
+    "confusingWordsComparison": [
+      {
+        "word": "left (adj.)",
+        "coreDifference": "“左边的”，与“right”相对的基本方位。",
+        "toeicSceneFocus": "左边方位。"
+      },
+      {
+        "word": "remaining (adj.)",
+        "coreDifference": "“剩余的”，是“left”在“剩下”意义上的更正式表达。",
+        "toeicSceneFocus": "剩余的、剩下的（更正式）。"
+      }
+    ]
+  },
+  {
+    "word": "right",
+    "phonetic": "/raɪt/",
+    "partOfSpeech": "adj. 形容词；adv. 副词；n. 名词",
+    "coreMeaning": "adj. 右边的；正确的；合适的 adv. 向右；正确地；恰好 n. 右边；权利；正确",
+    "toeicSceneFocus": "多义词高频词。方位义与“left”相对。核心义是“正确的、合适的”，用于判断、决策和合规性。名词“rights”指权利（如版权）。副词“right”可表强调（right now）。全方位覆盖托业考试。",
+    "keyCollocations": [
+      "on the right (在右边)",
+      "right away (立刻)",
+      "all rights reserved (版权所有)",
+      "right decision (正确的决定)",
+      "human rights (人权)"
+    ],
+    "toeicExampleSentences": [
+      "The conference room is the second door on the right down this hallway. (会议室是沿着这条走廊右边的第二间。)",
+      "Please send me the report right away; it’s urgent. (请立刻把报告发给我，这很紧急。)",
+      "I believe we made the right choice by partnering with that supplier. (我相信与那家供应商合作是正确的选择。)",
+      "The document is marked ‘© 2023, All rights reserved.’ (文件上标有“© 2023，版权所有”。)"
+    ],
+    "sceneAssociation": "形容词（正确）：联想经理说“You’re right about that.”（关于那点你是对的。）。方位：联想指示牌“Restrooms -> Right”（洗手间 -> 右转）。",
+    "confusingWordsComparison": [
+      {
+        "word": "right (adj.)",
+        "coreDifference": "“正确的、合适的”，与“wrong”相对；也指“右边的”。",
+        "toeicSceneFocus": "正确的、合适的；右边。"
+      },
+      {
+        "word": "correct (adj.)",
+        "coreDifference": "“正确的”，强调准确无误，无差错。",
+        "toeicSceneFocus": "准确无误的。"
+      },
+      {
+        "word": "appropriate (adj.)",
+        "coreDifference": "“合适的、得体的”，强调符合场合、情况。",
+        "toeicSceneFocus": "恰当的、得体的。"
+      }
+    ]
+  },
+  {
+    "word": "upper",
+    "phonetic": "/ˈʌpər/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "上面的；较高的；上层的",
+    "toeicSceneFocus": "描述垂直方向上的较高位置，或组织、社会中的较高层级。常见于描述建筑（upper floor）、肢体（upper body）、管理（upper management）、市场（upper market segment）等。与“lower”相对。",
+    "keyCollocations": [
+      "upper management (高层管理)",
+      "upper floor (上层)",
+      "upper limit (上限)",
+      "upper hand (优势，上风)",
+      "upper class (上流社会)"
+    ],
+    "toeicExampleSentences": [
+      "The decision needs approval from upper management. (这个决定需要高层管理的批准。)",
+      "The executive offices are located on the upper floors of the building. (高管办公室位于大楼的较高楼层。)",
+      "There is an upper limit on the amount of personal expenses that can be claimed. (可报销的个人费用金额设有上限。)",
+      "After the successful product launch, our company gained the upper hand in the market. (产品成功发布后，我们公司在市场上占据了优势。)"
+    ],
+    "sceneAssociation": "联想公司组织架构图，最上面是“Upper Management”（高层管理），下面是“Middle Management”（中层管理）。",
+    "confusingWordsComparison": [
+      {
+        "word": "upper (adj.)",
+        "coreDifference": "“上面的、较高的”，指垂直方向上的相对较高位置，或等级较高。",
+        "toeicSceneFocus": "垂直上方、等级较高。"
+      },
+      {
+        "word": "higher (adj.)",
+        "coreDifference": "“更高的”，是“high”的比较级，可指抽象程度更高或数值更大。",
+        "toeicSceneFocus": "程度更高、数值更大。"
+      },
+      {
+        "word": "top (adj.)",
+        "coreDifference": "“顶部的、最高的”，强调处于最顶端。",
+        "toeicSceneFocus": "最顶端、最优的。"
+      }
+    ]
+  },
+  {
+    "word": "lower",
+    "phonetic": "/ˈloʊər/",
+    "partOfSpeech": "adj. 形容词；v. 动词",
+    "coreMeaning": "adj. 较低的；下层的 v. 降低；减少",
+    "toeicSceneFocus": "形容词与“upper”相对，指位置较低（lower level）或等级较低（lower cost）。动词是商务核心动作，指“降低”价格、成本、风险、音量等。是成本控制、风险管理和价格谈判中的关键动词。",
+    "keyCollocations": [
+      "lower cost (较低成本)",
+      "lower level (较低层级)",
+      "lower price (较低价格)",
+      "lower risk (较低风险)",
+      "lower one’s voice (压低声音)"
+    ],
+    "toeicExampleSentences": [
+      "We are negotiating with suppliers to lower our production costs. (我们正在与供应商谈判以降低生产成本。)",
+      "The training room is on a lower level of the parking garage. (培训室位于停车场的一个较低楼层。)",
+      "To remain competitive, we may have to lower our prices. (为了保持竞争力，我们可能不得不降低价格。)",
+      "Please lower your voice during the conference call. (电话会议期间请压低声音。)"
+    ],
+    "sceneAssociation": "动词：联想降价促销海报“Prices Lowered!”（降价啦！）。形容词：联想预算表上的“Lower-than-expected expenditure”（低于预期的支出）。",
+    "confusingWordsComparison": [
+      {
+        "word": "lower (v.)",
+        "coreDifference": "“降低、减少”，指使高度、水平、数量、价格等下降。",
+        "toeicSceneFocus": "使…下降、减少。"
+      },
+      {
+        "word": "reduce",
+        "coreDifference": "“减少、缩小”，与“lower”在“减少”义上常互换，但“reduce”更强调规模、数量的缩小。",
+        "toeicSceneFocus": "减少规模、数量。"
+      },
+      {
+        "word": "decrease (v.)",
+        "coreDifference": "“减少、降低”，与“lower”和“reduce”同义，是更中性的词。",
+        "toeicSceneFocus": "数量、程度上的减少。"
+      }
+    ]
+  },
+  {
+    "word": "inner",
+    "phonetic": "/ˈɪnər/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "内部的；内心的；核心的",
+    "toeicSceneFocus": "指空间上的内部（inner city），或抽象意义上的内在、核心（inner workings, inner circle）。用于描述组织结构、机械原理或个人特质，比“inside”更正式。",
+    "keyCollocations": [
+      "inner city (内城区)",
+      "inner circle (核心圈子)",
+      "inner workings (内部运作)",
+      "inner strength (内在力量)",
+      "inner peace (内心平静)"
+    ],
+    "toeicExampleSentences": [
+      "Only a few members of the inner circle were aware of the merger plans. (只有核心圈子的少数成员知道合并计划。)",
+      "The training will give you an understanding of the inner workings of the company. (这次培训将让你了解公司的内部运作。)",
+      "The project aims to revitalize businesses in the inner city. (该项目旨在重振内城区的商业。)"
+    ],
+    "sceneAssociation": "联想一份机密文件标题“For the Inner Circle Only”（仅限核心圈层阅览），或描述机器“The inner mechanism is complex.”（内部机械结构很复杂。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "inner (adj.)",
+        "coreDifference": "“内部的”，强调更深层、更核心或更靠近中心的部分。",
+        "toeicSceneFocus": "更深层、更核心的内部。"
+      },
+      {
+        "word": "inside (adj./prep.)",
+        "coreDifference": "“里面的”，通用词，指在某个空间或物体之内。",
+        "toeicSceneFocus": "在…里面（通用）。"
+      },
+      {
+        "word": "internal (adj.)",
+        "coreDifference": "“内部的”，常指组织、系统或身体内部的，与“external”相对，更正式。",
+        "toeicSceneFocus": "组织内部、身体内部、国内。"
+      }
+    ]
+  },
+  {
+    "word": "outer",
+    "phonetic": "/ˈaʊtər/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "外部的；外面的",
+    "toeicSceneFocus": "与“inner”相对，指空间上的外部（outer walls）或远离中心的（outer suburbs）。用于描述物理结构、包装或范围。比“outside”更正式。",
+    "keyCollocations": [
+      "outer space (外太空)",
+      "outer layer (外层)",
+      "outer wall (外墙)",
+      "outer limits (极限)",
+      "outer suburbs (远郊)"
+    ],
+    "toeicExampleSentences": [
+      "The packaging has a durable outer layer to protect the product during shipping. (包装有一个耐用的外层，以在运输过程中保护产品。)",
+      "The office is located in the outer suburbs, which means a longer commute. (办公室位于远郊，这意味着通勤时间更长。)",
+      "Please check the outer perimeter of the building for any security issues. (请检查大楼外围是否有任何安全问题。)"
+    ],
+    "sceneAssociation": "联想产品说明书“The outer shell is made of recycled plastic.”（外壳由再生塑料制成。），或城市规划图上的“Outer Ring Road”（外环路）。",
+    "confusingWordsComparison": [
+      {
+        "word": "outer (adj.)",
+        "coreDifference": "“外部的”，强调远离中心的外层或外部。",
+        "toeicSceneFocus": "外层、外部、远离中心的。"
+      },
+      {
+        "word": "outside (adj./prep.)",
+        "coreDifference": "“外面的”，通用词，指在外部。",
+        "toeicSceneFocus": "在…外面（通用）。"
+      },
+      {
+        "word": "external (adj.)",
+        "coreDifference": "“外部的”，常指来自或属于外界的，与“internal”相对，更正式。",
+        "toeicSceneFocus": "外界的、对外的、外用的。"
+      }
+    ]
+  },
+  {
+    "word": "near",
+    "phonetic": "/nɪr/",
+    "partOfSpeech": "prep. 介词；adj. 形容词；adv. 副词",
+    "coreMeaning": "prep. 在…附近 adj. 近的；亲近的 adv. 几乎；接近",
+    "toeicSceneFocus": "表示空间或时间上的接近。用于描述地理位置（near the station）、时间点（near the end）或关系亲近。是问路、安排会议、描述项目进度的常用词。副词“nearly”（几乎）是高频考点。",
+    "keyCollocations": [
+      "near future (不久的将来)",
+      "near the end (接近尾声)",
+      "nearby (附近)",
+      "nowhere near (远不及)",
+      "nearly (几乎)"
+    ],
+    "toeicExampleSentences": [
+      "Our headquarters is conveniently located near the central train station. (我们的总部 conveniently 位于中央火车站附近。)",
+      "The project is near completion, with only a few minor tasks remaining. (项目已接近完成，只剩下一些零星任务。)",
+      "We expect to finalize the deal in the near future. (我们预计在不久的将来敲定这笔交易。)",
+      "The attendance was nowhere near our expectations. (出席人数远未达到我们的预期。)",
+      "I’ve nearly finished reviewing the document. (我几乎快审完那份文件了。)"
+    ],
+    "sceneAssociation": "联想找办公室时说的“We need a location near public transport.”（我们需要一个靠近公共交通的地点。），或进度汇报“We’re near the finish line.”（我们接近终点了。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "near (prep./adj.)",
+        "coreDifference": "“在…附近/近的”，指空间或时间上距离短。",
+        "toeicSceneFocus": "空间或时间上接近。"
+      },
+      {
+        "word": "close (adj./adv.)",
+        "coreDifference": "“近的/接近地”，与“near”常互换，但“close”可表示关系亲密。",
+        "toeicSceneFocus": "距离近；关系紧密。"
+      },
+      {
+        "word": "next to",
+        "coreDifference": "“紧挨着”，表示紧邻，距离比“near”更近。",
+        "toeicSceneFocus": "紧邻、旁边。"
+      }
+    ]
+  },
+  {
+    "word": "far",
+    "phonetic": "/fɑːr/",
+    "partOfSpeech": "adv. 副词；adj. 形容词",
+    "coreMeaning": "adv. 远；久远地；大大地 adj. 远的；遥远的",
+    "toeicSceneFocus": "表示空间、时间或程度上的“远”。用于比较（far better）、描述距离（far away）、或表示“远远不”（far from）。短语“so far”（迄今为止）、“as far as... is concerned”（就…而言）是高频表达。",
+    "keyCollocations": [
+      "so far (迄今为止)",
+      "far from (远非，一点也不)",
+      "as far as (就…而言；远至)",
+      "far away (遥远)",
+      "by far (…得多；最…)"
+    ],
+    "toeicExampleSentences": [
+      "So far, feedback on the new policy has been mostly positive. (迄今为止，对新政策的反馈大多是积极的。)",
+      "The new software is far more efficient than the old system. (新软件比旧系统高效得多。)",
+      "The warehouse is located far from the city center to reduce costs. (为降低成本，仓库位于远离市中心的地方。)",
+      "As far as I know, the meeting is still scheduled for tomorrow. (就我所知，会议仍定于明天举行。)",
+      "This is by far the best proposal we have received. (这是我们迄今收到的最好的提案。)"
+    ],
+    "sceneAssociation": "联想进度报告开头“So far, we’ve completed 70% of the tasks.”（迄今为止，我们已完成70%的任务。），或比较产品时说“Option A is far superior.”（方案A要好得多。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "far (adv.)",
+        "coreDifference": "“远”，指空间、时间或程度上的距离大。",
+        "toeicSceneFocus": "距离远、程度大。"
+      },
+      {
+        "word": "distant (adj.)",
+        "coreDifference": "“遥远的”，正式用语，多作形容词，描述空间或时间距离大，或关系疏远。",
+        "toeicSceneFocus": "遥远的（正式）；关系疏远的。"
+      },
+      {
+        "word": "remote (adj.)",
+        "coreDifference": "“偏远的”，强调地理位置孤立、难到达。",
+        "toeicSceneFocus": "偏僻的、偏远的。"
+      }
+    ]
+  },
+  {
+    "word": "close",
+    "phonetic": "/kloʊs/ (adj., adv.), /kloʊz/ (v.)",
+    "partOfSpeech": "adj. 形容词；adv. 副词；v. 动词",
+    "coreMeaning": "adj. 近的；亲密的；严密的 adv. 接近地 v. 关闭；结束；靠近",
+    "toeicSceneFocus": "形容词/副词指距离或关系上“接近”，是“near”的同义词。动词是商务核心动词，指“关闭”店铺、会议、交易、账户等。名词“closing”指结束（如收盘、结尾）。含义覆盖方位、关系和终结动作。",
+    "keyCollocations": [
+      "close the deal (达成交易)",
+      "close relationship (密切关系)",
+      "close to (接近)",
+      "close down (关闭，停业)",
+      "in close proximity (非常接近)"
+    ],
+    "toeicExampleSentences": [
+      "We are close to finalizing the contract with the new client. (我们即将与新客户敲定合同。)",
+      "The store will close at 8 p.m. on weekdays. (该店平日下午8点关门。)",
+      "She maintains a close working relationship with all her team members. (她与所有团队成员都保持着密切的工作关系。)",
+      "The two companies have offices in close proximity to each other. (这两家公司的办公室彼此非常接近。)",
+      "Due to sustained losses, the factory was forced to close down. (由于持续亏损，该工厂被迫关闭。)"
+    ],
+    "sceneAssociation": "动词：联想店铺门口的牌子“Closed”（已关门）。形容词：联想地图上两个标记“These locations are very close.”（这些地点非常近。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "close (adj.)",
+        "coreDifference": "“近的、亲密的”，与“near”同义，并可指关系紧密。",
+        "toeicSceneFocus": "距离近；关系紧密。"
+      },
+      {
+        "word": "shut (v.)",
+        "coreDifference": "“关闭”，与“close (v.)”同义，但更口语化，且不用于“结束交易”等抽象义。",
+        "toeicSceneFocus": "关闭（门、窗、店铺），口语化。"
+      },
+      {
+        "word": "end (v.)",
+        "coreDifference": "“结束”，指使某事停止，不一定是“关闭”一个实体。",
+        "toeicSceneFocus": "使…终止、完结。"
+      }
+    ]
+  },
+  {
+    "word": "distant",
+    "phonetic": "/ˈdɪstənt/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "遥远的；疏远的；远房的",
+    "toeicSceneFocus": "正式用语，描述空间、时间上的遥远距离（distant location），或人际关系的疏远（distant relative）。在商务中，可能用于描述市场（distant market）、未来（distant future）或冷淡的沟通态度。相比“far”，语气更正式且书面化。",
+    "keyCollocations": [
+      "distant future (遥远的未来)",
+      "distant memory (遥远的记忆)",
+      "distant relative (远房亲戚)",
+      "distant location (遥远的地点)",
+      "seem distant (显得疏远)"
+    ],
+    "toeicExampleSentences": [
+      "The possibility of fully automated offices is a prospect for the distant future. (全自动化办公室的可能性是遥远未来的前景。)",
+      "The company has expanded its operations to more distant markets. (公司已将业务扩展至更遥远的市场。)",
+      "Due to the time difference and infrequent contact, our relationship with that branch has become somewhat distant. (由于时差和联系不频繁，我们与该分公司的关系变得有些疏远。)",
+      "We heard a distant sound of construction from our office, but it didn’t cause much disturbance. (我们从办公室听到了远处施工的声音，但这并未造成太大干扰。)"
+    ],
+    "sceneAssociation": "联想一份五年战略规划中，将目标分为“near-term”（近期）和“distant”（远期）。或描述一个冷淡的合作伙伴：“He was polite but distant.”（他礼貌但疏远）。",
+    "confusingWordsComparison": [
+      {
+        "word": "distant (adj.)",
+        "coreDifference": "“遥远的”，正式用语，多作形容词，描述空间或时间距离大，或关系疏远。",
+        "toeicSceneFocus": "正式语境下的遥远距离；关系的疏远。"
+      },
+      {
+        "word": "far (adv./adj.)",
+        "coreDifference": "“远”，通用词，可作副词或形容词，使用范围更广，更口语化。",
+        "toeicSceneFocus": "通用，指空间、时间或程度上的远。"
+      },
+      {
+        "word": "remote (adj.)",
+        "coreDifference": "“偏远的”，强调地理位置孤立、难以到达，也指“可能性极小的”。",
+        "toeicSceneFocus": "偏僻难至的地点；微乎其微的可能性。"
+      }
+    ]
+  },
+  {
+    "word": "early",
+    "phonetic": "/ˈɜːrli/",
+    "partOfSpeech": "adj. 形容词；adv. 副词",
+    "coreMeaning": "adj. 早的；初期的 adv. 提早；在早期",
+    "toeicSceneFocus": "描述时间点早于预期或常规（early arrival, early stage）。是日程安排、项目管理、阶段描述和时效性沟通中的关键词。短语“early bird”指早到者或早鸟优惠。",
+    "keyCollocations": [
+      "early stage (早期阶段)",
+      "early bird discount (早鸟折扣)",
+      "at an early date (尽早)",
+      "in the early days (在初期)",
+      "arrive early (提前到达)"
+    ],
+    "toeicExampleSentences": [
+      "We identified the issue at an early stage of the project, which saved us considerable cost. (我们在项目的早期阶段就发现了这个问题，这为我们节省了大量成本。)",
+      "To secure the best price, consider booking your flight well in advance to get an early bird discount. (为了获得最优惠价格，请考虑提前很久预订航班以享受早鸟折扣。)",
+      "Please submit your report at your earliest convenience. (请在您方便时尽早提交报告。)",
+      "It’s always a good practice to arrive a few minutes early for a business meeting. (商务会议提前几分钟到达总是一个好习惯。)"
+    ],
+    "sceneAssociation": "联想会议邀请函上的“Early registration ends on Friday.”（提前注册于周五截止。），或项目时间轴上的“Early Development Phase”（早期开发阶段）。",
+    "confusingWordsComparison": [
+      {
+        "word": "early (adj./adv.)",
+        "coreDifference": "“早的/提早”，指时间上早于通常或预期的时间。",
+        "toeicSceneFocus": "时间上提前、初期。"
+      },
+      {
+        "word": "soon (adv.)",
+        "coreDifference": "“不久、很快”，指从现在开始不久的将来，强调时间间隔短。",
+        "toeicSceneFocus": "短期内即将发生。"
+      },
+      {
+        "word": "punctual (adj.)",
+        "coreDifference": "“准时的”，指正好在约定时间，不早不晚。",
+        "toeicSceneFocus": "严守时间，不迟到。"
+      }
+    ]
+  },
+  {
+    "word": "late",
+    "phonetic": "/leɪt/",
+    "partOfSpeech": "adj. 形容词；adv. 副词",
+    "coreMeaning": "adj. 迟到的；晚期的；已故的 adv. 晚；迟",
+    "toeicSceneFocus": "描述晚于预定时间（late for a meeting）、项目后期（late phase）或时间上的“晚”（late in the day）。名词“delay”是迟到原因的常用表达。商务中需避免迟到，此词常与负面结果相关。",
+    "keyCollocations": [
+      "be late for (迟到)",
+      "late payment (逾期付款)",
+      "in the late afternoon (傍晚时分)",
+      "late stage (后期阶段)",
+      "of late (近来，最近)"
+    ],
+    "toeicExampleSentences": [
+      "Persistent late payments can damage a company’s credit rating. (持续的逾期付款会损害公司的信用评级。)",
+      "We apologize for the late delivery, which was due to unforeseen logistical issues. (我们对延迟交货表示歉意，这是由于不可预见的物流问题造成的。)",
+      "The project is in its late stages, and we are currently conducting final testing. (项目已进入后期阶段，我们目前正在进行最终测试。)",
+      "Please inform us immediately if you anticipate being late for the conference call. (如果您预计会迟到参加电话会议，请立即通知我们。)"
+    ],
+    "sceneAssociation": "联想一封催款邮件标题“Reminder: Late Invoice Payment”（提醒：发票逾期未付），或向客户道歉“We’re running 10 minutes late.”（我们要迟到10分钟。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "late (adj./adv.)",
+        "coreDifference": "“迟的/晚地”，指晚于预定或通常时间。",
+        "toeicSceneFocus": "迟到、晚期、时间晚。"
+      },
+      {
+        "word": "delayed (adj.)",
+        "coreDifference": "“延误的、延迟的”，强调因故被推迟，是造成“late”的原因。",
+        "toeicSceneFocus": "被延误的状态。"
+      },
+      {
+        "word": "recent (adj.)",
+        "coreDifference": "“最近的”，指不久之前发生的，与“晚”无关。",
+        "toeicSceneFocus": "近来的、新近的。"
+      }
+    ]
+  },
+  {
+    "word": "on-time",
+    "phonetic": "/ˌɒn ˈtaɪm/ (美式), /ˌɒn ˈtaɪm/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "准时的；按时的",
+    "toeicSceneFocus": "描述严格符合预定时间表的状态，是物流、项目管理、会议和交付的核心要求。强调结果（货物、人员、服务）在预定时间点到达或完成。是评估可靠性和专业性的重要指标。",
+    "keyCollocations": [
+      "on-time delivery (准时交付)",
+      "on-time performance (准点率)",
+      "on-time arrival (准时到达)",
+      "on-time rate (准时率)",
+      "ensure on-time completion (确保按时完成)"
+    ],
+    "toeicExampleSentences": [
+      "Our carrier guarantees on-time delivery for all express shipments. (我们的承运商保证所有快递件准时送达。)",
+      "The airline is known for its excellent on-time performance. (该航空公司以其出色的准点率而闻名。)",
+      "Punctuality is valued in this company; we expect all meetings to start on time. (守时在这家公司受到重视；我们希望所有会议都能准时开始。)",
+      "The contractor’s ability to ensure on-time completion of the project was a key factor in awarding them the contract. (承包商确保项目按时完成的能力是授予他们合同的一个关键因素。)"
+    ],
+    "sceneAssociation": "联想物流跟踪信息显示“Status: On-time for delivery”（状态：预计准时送达），或项目管理软件中一个标记为绿色“On Track”（按计划进行）的任务。",
+    "confusingWordsComparison": [
+      {
+        "word": "on-time (adj.)",
+        "coreDifference": "“准时的”，描述事件或交付物在预定时间发生或到达的状态。",
+        "toeicSceneFocus": "事件/交付物符合预定时间的结果状态。"
+      },
+      {
+        "word": "punctual (adj.)",
+        "coreDifference": "“守时的”，描述人或其行为习惯于准时的特质。",
+        "toeicSceneFocus": "人守时的品质或习惯。"
+      },
+      {
+        "word": "prompt (adj.)",
+        "coreDifference": "“迅速的、及时的”，强调反应或行动快，不拖拉，不一定严格卡点。",
+        "toeicSceneFocus": "迅速、不延迟的行动。"
+      }
+    ]
+  },
+  {
+    "word": "punctual",
+    "phonetic": "/ˈpʌŋktʃuəl/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "准时的；守时的",
+    "toeicSceneFocus": "描述个人或实体严守约定时间的品质和习惯，是职业素养和专业性的重要体现。在托业听力（职场对话评价）和阅读（员工守则、商务礼仪）中，常作为积极特质被强调。",
+    "keyCollocations": [
+      "be punctual (守时)",
+      "punctual arrival (准时到达)",
+      "punctual person (守时的人)",
+      "punctual start (准时开始)",
+      "known for being punctual (以守时著称)"
+    ],
+    "toeicExampleSentences": [
+      "It is essential to be punctual for all client meetings to maintain a professional image. (所有客户会议都必须守时，以保持专业形象。)",
+      "She is always punctual, if not early, for our weekly team briefings. (她参加我们的每周团队简报总是很准时，甚至常常早到。)",
+      "The seminar will have a punctual start at 9:00 AM; latecomers may not be admitted. (研讨会将于上午9点准时开始；迟到者可能不得入场。)",
+      "His punctual submission of reports is highly appreciated by the management. (他准时提交报告受到了管理层的高度赞赏。)"
+    ],
+    "sceneAssociation": "联想一份新员工入职手册中写着“Punctuality is expected for all work-related activities.”（所有工作相关活动都要求守时。），或同事评价“You can always count on him to be punctual.”（你总是可以指望他守时。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "punctual (adj.)",
+        "coreDifference": "“守时的”，形容人或其行为严格遵守时间的品质。",
+        "toeicSceneFocus": "人的守时品质、习惯。"
+      },
+      {
+        "word": "on-time (adj.)",
+        "coreDifference": "“准时的”，描述事件本身按计划时间发生的结果状态。",
+        "toeicSceneFocus": "事件/结果的准时状态。"
+      },
+      {
+        "word": "timely (adj.)",
+        "coreDifference": "“及时的”，指在适当或需要的时间发生，不一定是严格“准时”，但恰逢其时。",
+        "toeicSceneFocus": "时机正好的、不迟的。"
+      }
+    ]
+  },
+  {
+    "word": "prompt",
+    "phonetic": "/prɑːmpt/",
+    "partOfSpeech": "adj. 形容词；v. 动词",
+    "coreMeaning": "adj. 迅速的；及时的；敏捷的 v. 促使；提示",
+    "toeicSceneFocus": "形容词是商务沟通和服务中的高频褒义词，赞扬快速反应（prompt reply, prompt service）。动词指“促使”行动或决定。两者在客户服务、内部协作和决策场景中都至关重要。",
+    "keyCollocations": [
+      "prompt reply/response (迅速回复)",
+      "prompt payment (及时付款)",
+      "prompt action (迅速行动)",
+      "prompt attention (及时关注)",
+      "prompt someone to do sth. (促使某人做某事)"
+    ],
+    "toeicExampleSentences": [
+      "We thank you for your prompt payment of the invoice. (感谢您及时支付发票款项。)",
+      "The customer service team is known for its prompt and helpful responses. (客服团队以其迅速且有用的回复而闻名。)",
+      "The unexpected drop in sales prompted a review of our marketing strategy. (销售额的意外下降促使我们重新审视营销策略。)",
+      "Your prompt attention to this matter would be greatly appreciated. (如您能及时关注此事，我们将不胜感激。)"
+    ],
+    "sceneAssociation": "形容词：联想收到一封客户邮件，称赞“Thank you for your prompt assistance.”（感谢您的及时协助。）。动词：联想市场数据“The survey results prompted a change in design.”（调查结果促使设计发生了改变。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "prompt (adj.)",
+        "coreDifference": "“迅速的、及时的”，强调行动或反应快速，没有不必要的延迟。",
+        "toeicSceneFocus": "行动/反应的迅速性。"
+      },
+      {
+        "word": "quick (adj.)",
+        "coreDifference": "“快的”，通用词，可形容动作、思维等快速，但不如“prompt”强调“及时性”。",
+        "toeicSceneFocus": "速度快、耗时短。"
+      },
+      {
+        "word": "punctual (adj.)",
+        "coreDifference": "“准时的”，强调在确切的时间点，而非速度。",
+        "toeicSceneFocus": "严守时间点。"
+      }
+    ]
+  },
+  {
+    "word": "slow",
+    "phonetic": "/sloʊ/",
+    "partOfSpeech": "adj. 形容词；v. 动词",
+    "coreMeaning": "adj. 慢的；迟钝的；清淡的 v. （使）放慢；减速",
+    "toeicSceneFocus": "形容词描述低于预期或理想的速度（slow progress, slow connection），或市场活动不活跃（slow season）。动词指主动降低速度或进度。常出现在问题诊断、进度汇报和市场分析中，多为需要改进的负面因素。",
+    "keyCollocations": [
+      "slow down (减速；放慢速度)",
+      "slow progress (进展缓慢)",
+      "slow season (淡季)",
+      "slow response (反应慢)",
+      "slow growth (缓慢增长)"
+    ],
+    "toeicExampleSentences": [
+      "The slow internet connection is severely affecting our video conference quality. (缓慢的网络连接严重影响了我们的视频会议质量。)",
+      "We need to identify the causes of the slow progress in the second phase of the project. (我们需要找出项目第二阶段进展缓慢的原因。)",
+      "Retail business is usually slow during the summer months. (零售业在夏季月份通常比较清淡。)",
+      "Could you please slow down a bit? I’m having trouble taking notes. (你能稍微慢一点吗？我做笔记有点跟不上。)"
+    ],
+    "sceneAssociation": "形容词：联想进度报告会上项目经理说“Development has been slower than anticipated.”（开发进度比预期的慢。）。动词：联想司机说“Let’s slow down and review the plan.”（我们放慢速度，重新审视一下计划。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "slow (adj.)",
+        "coreDifference": "“慢的”，形容速度低、进展缓。",
+        "toeicSceneFocus": "速度慢、进展迟缓。"
+      },
+      {
+        "word": "delayed (adj.)",
+        "coreDifference": "“延误的”，指因故被推迟，已经晚于原计划。",
+        "toeicSceneFocus": "被推迟、已延误的状态。"
+      },
+      {
+        "word": "gradual (adj.)",
+        "coreDifference": "“渐进的”，强调缓慢但持续的变化过程，常为中性或褒义。",
+        "toeicSceneFocus": "逐步的、渐进的（变化）。"
+      }
+    ]
+  },
+  {
+    "word": "fast",
+    "phonetic": "/fæst/",
+    "partOfSpeech": "adj. 形容词；adv. 副词",
+    "coreMeaning": "adj. 快的；迅速的；牢固的 adv. 快；迅速地；牢固地",
+    "toeicSceneFocus": "描述高速度（fast delivery）、快速进程（fast growth）或时间短暂（fast-paced）。是衡量效率、服务质量和市场变化的核心词汇。副词“fast”直接修饰动词。注意“fast”强调物体自身运动或过程进行的速度。",
+    "keyCollocations": [
+      "fast-growing (快速增长的)",
+      "fast track (快速通道)",
+      "fast-paced (快节奏的)",
+      "fast food (快餐)",
+      "hold fast to (坚持)"
+    ],
+    "toeicExampleSentences": [
+      "We offer fast and reliable shipping to all major cities. (我们为所有主要城市提供快速可靠的运输服务。)",
+      "The tech industry is known for its fast-paced and dynamic environment. (科技产业以其快节奏和充满活力的环境而闻名。)",
+      "She was put on the fast track to management due to her exceptional performance. (由于表现优异，她被列入管理层的快速晋升通道。)",
+      "The new processor makes data analysis much faster. (新的处理器使数据分析快得多。)"
+    ],
+    "sceneAssociation": "联想快递广告“Fast Delivery Guaranteed!”（保证快速送达！），或描述一家初创公司“a fast-growing startup”（一家快速增长初创公司）。",
+    "confusingWordsComparison": [
+      {
+        "word": "fast (adj./adv.)",
+        "coreDifference": "“快的/快地”，强调运动或过程本身的速度快。",
+        "toeicSceneFocus": "（自身）速度快。"
+      },
+      {
+        "word": "quick (adj.)",
+        "coreDifference": "“快的”，强调持续时间短、反应敏捷或完成迅速，常形容人或其行动。",
+        "toeicSceneFocus": "反应快、耗时短（多形容人/行动）。"
+      },
+      {
+        "word": "rapid (adj.)",
+        "coreDifference": "“迅速的”，正式用语，常形容变化、增长等抽象过程的快速。",
+        "toeicSceneFocus": "（变化、发展）迅速（正式）。"
+      }
+    ]
+  },
+  {
+    "word": "quick",
+    "phonetic": "/kwɪk/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "快的；迅速的；敏捷的",
+    "toeicSceneFocus": "强调耗时短、反应迅速或行动敏捷。常用于请求快速回应（a quick reply）、快速查看（a quick look）、快速学习（a quick learner）等场景。比“fast”更常用来形容人的思维、反应或短暂的动作。",
+    "keyCollocations": [
+      "quick response (快速回复)",
+      "quick look (快速浏览)",
+      "quick learner (学得快的人)",
+      "make a quick decision (迅速做出决定)",
+      "in quick succession (接二连三地)"
+    ],
+    "toeicExampleSentences": [
+      "Could you give me a quick update on the project status? (你能快速给我更新一下项目状态吗？)",
+      "We need a quick solution to this technical glitch before the client presentation. (在客户演示之前，我们需要一个快速解决这个技术故障的方案。)",
+      "She’s a quick learner and has already mastered the new software. (她学得很快，已经掌握了新软件。)",
+      "For a quick overview, please refer to the executive summary on page one. (如需快速概览，请参阅第一页的执行摘要。)"
+    ],
+    "sceneAssociation": "联想紧急会议上说“Let’s have a quick call to align.”（我们快速开个电话会议对齐一下。），或称赞同事“Thanks for the quick turnaround on that report!”（感谢你这么快就完成了那份报告！）。",
+    "confusingWordsComparison": [
+      {
+        "word": "quick (adj.)",
+        "coreDifference": "“快的”，强调反应敏捷、行动迅速或所需时间短，多用于人、思维或短暂动作。",
+        "toeicSceneFocus": "反应敏捷、行动迅速、耗时短。"
+      },
+      {
+        "word": "fast (adj.)",
+        "coreDifference": "“快的”，强调运动或过程本身的速度高。",
+        "toeicSceneFocus": "（物体、过程）速度快。"
+      },
+      {
+        "word": "prompt (adj.)",
+        "coreDifference": "“迅速的、及时的”，强调及时性，没有拖延。",
+        "toeicSceneFocus": "及时、不拖延的（行动/回应）。"
+      }
+    ]
+  },
+  {
+    "word": "rapid",
+    "phonetic": "/ˈræpɪd/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "迅速的；快速的",
+    "toeicSceneFocus": "正式用语，多用于描述变化、增长、发展等抽象过程的快速进行。常见于商业报告、市场分析和科技领域，形容快速的变化或进步（rapid growth, rapid development）。语气比“fast”更正式、书面。",
+    "keyCollocations": [
+      "rapid growth (快速增长)",
+      "rapid development (快速发展)",
+      "rapid change (快速变化)",
+      "rapid response (快速响应)",
+      "rapid expansion (快速扩张)"
+    ],
+    "toeicExampleSentences": [
+      "The company has seen rapid growth in its Asian markets over the past two years. (过去两年，该公司在亚洲市场经历了快速增长。)",
+      "The rapid development of artificial intelligence is transforming many industries. (人工智能的快速发展正在改变许多行业。)",
+      "We need to adapt to the rapid changes in consumer preferences. (我们需要适应消费者偏好的快速变化。)",
+      "A rapid response to customer complaints is crucial for maintaining brand reputation. (对客户投诉的快速响应对于维护品牌声誉至关重要。)"
+    ],
+    "sceneAssociation": "联想财经新闻标题“Rapid Expansion for E-commerce Giant”（电商巨头快速扩张），或科技白皮书中“the rapid pace of innovation”（快速的创新步伐）。",
+    "confusingWordsComparison": [
+      {
+        "word": "rapid (adj.)",
+        "coreDifference": "“迅速的”，正式用语，常形容变化、发展、进步等抽象过程的快速。",
+        "toeicSceneFocus": "（变化、发展）迅速（正式书面语）。"
+      },
+      {
+        "word": "fast (adj.)",
+        "coreDifference": "“快的”，通用词，可形容具体运动或抽象过程的速度。",
+        "toeicSceneFocus": "通用，速度快。"
+      },
+      {
+        "word": "swift (adj.)",
+        "coreDifference": "“迅速的、敏捷的”，与“rapid”意思接近，但常形容动作或反应的轻快、敏捷。",
+        "toeicSceneFocus": "动作/反应敏捷、迅速（常带优雅感）。"
+      }
+    ]
+  },
+  {
+    "word": "speedy",
+    "phonetic": "/ˈspiːdi/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "快速的；迅速的",
+    "toeicSceneFocus": "与“quick”和“fast”意思相近，但更强调“高速且高效地完成”，常带有褒义，用于描述令人满意的快速服务或解决。常见于客户服务、物流和问题解决的语境中，表达积极评价。",
+    "keyCollocations": [
+      "speedy recovery (早日康复)",
+      "speedy delivery (快速交付)",
+      "speedy resolution (快速解决)",
+      "speedy service (快速服务)",
+      "speedy response (迅速答复)"
+    ],
+    "toeicExampleSentences": [
+      "We apologize for the inconvenience and assure you of a speedy resolution to the issue. (我们对此造成的不便表示歉意，并向您保证会迅速解决该问题。)",
+      "Thank you for your speedy reply to our inquiry. (感谢您对我们问询的迅速回复。)",
+      "The courier company is known for its reliable and speedy delivery. (这家快递公司以其可靠和快速的投递服务而闻名。)",
+      "We wish you a speedy recovery from your illness. (我们祝您早日康复。)"
+    ],
+    "sceneAssociation": "联想一封客服邮件结尾“We strive for a speedy resolution.”（我们致力于快速解决问题。），或产品宣传语“Enjoy speedy checkout with our one-click payment.”（使用我们的一键支付享受快速结账。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "speedy (adj.)",
+        "coreDifference": "“快速的”，强调高速且常指高效、顺利的完成，多含褒义。",
+        "toeicSceneFocus": "高速且高效的（常为褒义）。"
+      },
+      {
+        "word": "quick (adj.)",
+        "coreDifference": "“快的”，通用词，强调耗时短，中性词。",
+        "toeicSceneFocus": "耗时短、反应快。"
+      },
+      {
+        "word": "fast (adj.)",
+        "coreDifference": "“快的”，强调运动或过程的速度本身。",
+        "toeicSceneFocus": "（自身）速度快。"
+      }
+    ]
+  },
+  {
+    "word": "unsuccessful",
+    "phonetic": "/ˌʌnsəkˈsesfl/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "不成功的；失败的",
+    "toeicSceneFocus": "正式用语，描述尝试、努力、申请、谈判等未达到预期目标。用于项目回顾、绩效评估、投标结果等场景。语气比“failed”稍缓和，但仍明确表示未成功。",
+    "keyCollocations": [
+      "unsuccessful attempt (失败的尝试)",
+      "unsuccessful applicant (未成功的申请者)",
+      "unsuccessful bid (未中标)",
+      "unsuccessful negotiation (失败的谈判)",
+      "prove unsuccessful (被证明不成功)"
+    ],
+    "toeicExampleSentences": [
+      "Despite our best efforts, the marketing campaign was ultimately unsuccessful in boosting sales. (尽管我们尽了最大努力，这次营销活动最终未能成功提升销售额。)",
+      "All unsuccessful candidates will be notified via email by the end of the week. (所有未成功的候选人将在本周末前通过电子邮件收到通知。)",
+      "Our bid for the government contract was unsuccessful this time. (我们这次对政府合同的投标未成功。)",
+      "Several attempts to contact the supplier proved unsuccessful. (多次联系供应商的尝试均未成功。)"
+    ],
+    "sceneAssociation": "联想一份内部项目复盘报告标题“Analysis of Unsuccessful Product Launch”（不成功产品发布分析），或收到一封拒信“We regret to inform you that your application was unsuccessful.”（我们遗憾地通知您，您的申请未成功。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "unsuccessful (adj.)",
+        "coreDifference": "“不成功的”，正式用语，直接描述未达到成功的结果。",
+        "toeicSceneFocus": "未达到成功目标（正式）。"
+      },
+      {
+        "word": "failed (adj.)",
+        "coreDifference": "“失败的”，语气更强烈、直接，常暗示彻底的失败或过失。",
+        "toeicSceneFocus": "已失败、未通过（语气更强）。"
+      },
+      {
+        "word": "ineffective (adj.)",
+        "coreDifference": "“无效的”，强调未能产生预期效果，但不一定是彻底“失败”。",
+        "toeicSceneFocus": "没有效果、不起作用。"
+      }
+    ]
+  },
+  {
+    "word": "failed",
+    "phonetic": "/feɪld/",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "失败的；不成功的",
+    "coreMeaning": "失败的；不成功的",
+    "toeicSceneFocus": "直接且语气较强的词，描述尝试、计划、系统或测试的彻底失败。用于事后分析、问题报告和总结教训。常作为定语修饰名词（failed attempt, failed system），明确指向负面结果。",
+    "keyCollocations": [
+      "failed attempt (失败的尝试)",
+      "failed experiment (失败的实验)",
+      "failed transaction (失败的交易)",
+      "failed test (失败的测试)",
+      "failed state (失败国家) [商务中较少]"
+    ],
+    "toeicExampleSentences": [
+      "The failed software update caused significant downtime for the network. (失败的软件更新导致网络长时间停机。)",
+      "After a failed attempt to negotiate a lower price, we decided to look for another supplier. (在尝试谈判降低价格失败后，我们决定寻找另一家供应商。)",
+      "The audit revealed several failed quality control checks. (审计发现了几次失败的质量控制检查。)",
+      "The system automatically logs all failed login attempts for security review. (系统会自动记录所有失败的登录尝试以供安全审查。)"
+    ],
+    "sceneAssociation": "联想IT故障报告“Root Cause: Failed hardware component.”（根本原因：硬件组件故障。），或会议讨论“We need to learn from this failed project.”（我们需要从这个失败的项目中吸取教训。）。",
+    "confusingWordsComparison": [
+      {
+        "word": "failed (adj.)",
+        "coreDifference": "“失败的”，语气强烈，指彻底未达到目标或停止运作。",
+        "toeicSceneFocus": "彻底的失败、故障。"
+      },
+      {
+        "word": "unsuccessful (adj.)",
+        "coreDifference": "“不成功的”，语气稍缓和，更正式，仅表示未成功。",
+        "toeicSceneFocus": "未成功（较正式）。"
+      },
+      {
+        "word": "defective (adj.)",
+        "coreDifference": "“有缺陷的”，指产品本身存在瑕疵或故障。",
+        "toeicSceneFocus": "（产品）有缺陷的。"
+      }
+    ]
+  },
+  {
+    "word": "achieved",
+    "phonetic": "/əˈtʃiːvd/",
+    "partOfSpeech": "v. 动词 (achieve 的过去式和过去分词)；adj. 形容词 (较少用)",
+    "coreMeaning": "v. 达到；实现；获得",
+    "toeicSceneFocus": "“achieve”的过去分词，高频用于描述已达成目标、已完成里程碑或已获得成就。是绩效评估、年度报告、项目总结和简历中的核心积极词汇，强调通过努力取得成功结果。",
+    "keyCollocations": [
+      "achieved goal (已实现的目标)",
+      "achieved success (取得成功)",
+      "achieved result (取得的成果)",
+      "targets achieved (已达成指标)",
+      "hard-achieved (来之不易的)"
+    ],
+    "toeicExampleSentences": [
+      "The team successfully achieved all its quarterly objectives ahead of schedule. (该团队成功提前完成了所有季度目标。)",
+      "We have achieved significant cost savings through process optimization. (通过流程优化，我们实现了显著的成本节约。)",
+      "This milestone marks a major breakthrough achieved by our R&D department. (这一里程碑标志着我们研发部门取得的一项重大突破。)",
+      "The sales targets set for the last fiscal year were not only met but exceeded. (上一财年设定的销售目标不仅达到而且超额完成。)"
+    ],
+    "sceneAssociation": "联想简历中的 bullet point “Achieved a 20% increase in regional sales within one year.”（一年内实现区域销售额增长20%。），或公司年报开头“Key Achievements This Year”（本年度主要成就）。",
+    "confusingWordsComparison": [
+      {
+        "word": "achieve (v.)",
+        "coreDifference": "“实现、达到”，指通过努力、技能或毅力成功完成（困难的事）或达到（目标）。",
+        "toeicSceneFocus": "通过努力达成目标、取得成就。"
+      },
+      {
+        "word": "accomplish (v.)",
+        "coreDifference": "“完成、实现”，与“achieve”非常接近，常可互换，强调成功完成一项任务或使命。",
+        "toeicSceneFocus": "成功完成（任务、工作）。"
+      },
+      {
+        "word": "attain (v.)",
+        "coreDifference": "“获得、达到”，较正式，常指经过长期努力后达到某种水平、状态或目标。",
+        "toeicSceneFocus": "经过努力后获得（目标、水平），较正式。"
+      }
+    ]
+  }
+
+
+   
+  ]
+  
 };

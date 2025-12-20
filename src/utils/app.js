@@ -5,7 +5,6 @@ export function getCategoryName(category) {
     business_communication: '商务沟通与会议',
     business_transaction: '商务交易与合同',
     marketing: '市场营销与推广',
-    logistics: '物流与运输',
     finance: '财务与会计',
     office_administration: '办公行政与文书',
     product_tech: '产品与技术',
