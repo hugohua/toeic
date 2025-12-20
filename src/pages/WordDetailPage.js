@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate, useSearchParams, useLocation } from 'react-router-dom';
+import {
+  useParams,
+  useNavigate,
+  useSearchParams,
+  useLocation,
+} from 'react-router-dom';
 import { useSpeech } from 'react-text-to-speech';
 import { wordData } from '../data';
 import Header from '../components/Header';
@@ -85,9 +90,7 @@ function WordDetailPage() {
     favoritesState.from === 'favorites' &&
     Array.isArray(favoritesState.favoriteList);
   const favoriteList = isFromFavorites ? favoritesState.favoriteList : [];
-  const favoriteIndex = isFromFavorites
-    ? favoritesState.favoriteIndex || 0
-    : 0;
+  const favoriteIndex = isFromFavorites ? favoritesState.favoriteIndex || 0 : 0;
 
   // 使用 useSpeech，传入当前单词作为 text
   const { start } = useSpeech({
@@ -205,7 +208,9 @@ function WordDetailPage() {
     word.coreMeaning ||
     (word.partOfSpeech ? `${word.partOfSpeech} ${word.coreMeaning}` : '暂无');
   const toeicSceneFocus = word.toeicSceneFocus || word.sceneFocus || '暂无';
-  const progressCurrent = isFromFavorites ? favoriteIndex + 1 : currentIndex + 1;
+  const progressCurrent = isFromFavorites
+    ? favoriteIndex + 1
+    : currentIndex + 1;
   const progressTotal = isFromFavorites ? favoriteList.length : words.length;
 
   let keyCollocationsHtml = '';

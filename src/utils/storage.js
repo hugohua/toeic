@@ -183,9 +183,7 @@ export function getFavoriteWords() {
 // 判断某个单词是否已被收藏
 export function isFavoriteWord(word, category) {
   const list = getFavoriteWords();
-  return list.some(
-    (item) => item.word === word && item.category === category
-  );
+  return list.some((item) => item.word === word && item.category === category);
 }
 
 // 切换收藏状态，返回最新是否已收藏

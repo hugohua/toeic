@@ -79,20 +79,20 @@ function WordListPage() {
   const { category } = useParams();
   const navigate = useNavigate();
   const [words, setWords] = useState([]);
-  
+
   // 从 sessionStorage 恢复状态
   const getStorageKey = (key) => `wordList_${category}_${key}`;
-  
+
   const [showAllMeanings, setShowAllMeanings] = useState(() => {
     const saved = sessionStorage.getItem(getStorageKey('showAllMeanings'));
     return saved ? JSON.parse(saved) : false;
   });
-  
+
   const [meaningVisibility, setMeaningVisibility] = useState(() => {
     const saved = sessionStorage.getItem(getStorageKey('meaningVisibility'));
     return saved ? JSON.parse(saved) : {};
   });
-  
+
   const [favoriteWords, setFavoriteWords] = useState(new Set());
 
   // 初始化收藏状态
@@ -198,7 +198,7 @@ function WordListPage() {
   const handleToggleFavorite = (e, word) => {
     e.stopPropagation(); // 阻止触发行点击
     storage.toggleFavoriteWord(word, category);
-    
+
     // 更新本地状态以实时反映UI变化
     const key = `${category}-${word}`;
     setFavoriteWords((prev) => {
@@ -294,7 +294,9 @@ function WordListPage() {
             </thead>
             <tbody>
               {words.map((word, index) => {
-                const isFavorited = favoriteKeySet.has(`${category}-${word.word}`);
+                const isFavorited = favoriteKeySet.has(
+                  `${category}-${word.word}`
+                );
                 return (
                   <WordRow
                     key={`${word.word}-${index}`}

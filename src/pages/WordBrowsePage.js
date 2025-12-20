@@ -180,9 +180,7 @@ function WordBrowsePage() {
                 onClick={handleToggleFavorite}
                 title={isFavorite ? '取消收藏该单词' : '收藏该单词'}
               >
-                <span className="favorite-icon">
-                  {isFavorite ? '★' : '☆'}
-                </span>
+                <span className="favorite-icon">{isFavorite ? '★' : '☆'}</span>
               </button>
             </div>
             <div className="phonetic">{currentWord.phonetic || '/ˈwɜːrd/'}</div>

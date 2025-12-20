@@ -95,15 +95,15 @@ function FavoriteWordRow({
 
 function FavoriteWordListPage() {
   const navigate = useNavigate();
-  
+
   // 从 sessionStorage 恢复状态
   const getStorageKey = (key) => `favoritesPage_${key}`;
-  
+
   const [showAllMeanings, setShowAllMeanings] = useState(() => {
     const saved = sessionStorage.getItem(getStorageKey('showAllMeanings'));
     return saved ? JSON.parse(saved) : false;
   });
-  
+
   const [meaningVisibility, setMeaningVisibility] = useState(() => {
     const saved = sessionStorage.getItem(getStorageKey('meaningVisibility'));
     return saved ? JSON.parse(saved) : {};
