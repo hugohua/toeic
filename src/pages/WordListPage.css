@@ -229,3 +229,9 @@
     font-size: 12px;
   }
 }
+
+.word-phonetic {
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+}

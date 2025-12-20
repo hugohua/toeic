@@ -25,3 +25,12 @@ export function getCategoryName(category) {
   };
   return names[category] || '背单词';
 }
+
+export function getFirstSlashContent(str) {
+  if (!str) return '';
+  // 使用正则表达式匹配第一个完整的 /.../ 结构
+  const regex = /\/([^\/]*)\//;
+  const match = str.match(regex);
+  // 如果匹配成功，返回整个匹配的字符串（包括两边的斜杠）
+  return match ? match[0] : '';
+}

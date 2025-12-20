@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useSpeech } from 'react-text-to-speech';
 import { wordData } from '../data';
 import Header from '../components/Header';
-import { getCategoryName } from '../utils/app';
+import { getCategoryName, getFirstSlashContent } from '../utils/app';
 import * as storage from '../utils/storage';
 import '../index.css';
 import './WordListPage.css';
@@ -50,6 +50,9 @@ function WordRow({
           title="点击播放发音"
         >
           {word.word}
+          <span className="word-phonetic">
+            {getFirstSlashContent(word.phonetic)}
+          </span>
         </span>
       </td>
       <td

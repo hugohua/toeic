@@ -4,7 +4,7 @@ import { useSpeech } from 'react-text-to-speech';
 import Header from '../components/Header';
 import { getFavoriteWords } from '../utils/storage';
 import { wordData } from '../data';
-import { getCategoryName } from '../utils/app';
+import { getCategoryName, getFirstSlashContent } from '../utils/app';
 import '../index.css';
 import './WordListPage.css';
 
@@ -70,6 +70,9 @@ function FavoriteWordRow({
           title="点击播放发音"
         >
           {item.word}
+          <span className="word-phonetic">
+            {getFirstSlashContent(item.phonetic)}
+          </span>
         </span>
       </td>
       <td
