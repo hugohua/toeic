@@ -3,6 +3,7 @@ import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useSpeech } from 'react-text-to-speech';
 import { wordData } from '../data';
 import Header from '../components/Header';
+import PhraseCell from '../components/PhraseCell';
 import { getCategoryName } from '../utils/app';
 import { startStudy, saveWordStatus } from '../utils/storage';
 import { scheduleReview } from '../utils/ebbinghaus';
@@ -251,6 +252,11 @@ function WordStudyPage() {
               {currentWord.word}
             </div>
             <div className="phonetic">{currentWord.phonetic || '/ˈwɜːrd/'}</div>
+            {currentWord.phrase && (
+              <div className="word-phrase" style={{ marginTop: '12px', fontSize: '14px', color: '#666' }}>
+                <PhraseCell phraseText={currentWord.phrase} />
+              </div>
+            )}
             <button
               className="btn-view-detail"
               onClick={viewWordDetail}

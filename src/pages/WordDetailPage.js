@@ -8,6 +8,7 @@ import {
 import { useSpeech } from 'react-text-to-speech';
 import { wordData } from '../data';
 import Header from '../components/Header';
+import PhraseCell from '../components/PhraseCell';
 import { getCategoryName } from '../utils/app';
 import * as storage from '../utils/storage';
 
@@ -329,6 +330,17 @@ function WordDetailPage() {
               className="section-content"
               dangerouslySetInnerHTML={{ __html: coreMeaning }}
             />
+          </div>
+
+          <div className="detail-section">
+            <h3 className="section-title">短语短句</h3>
+            <div className="section-content">
+              {word.phrase ? (
+                <PhraseCell phraseText={word.phrase} />
+              ) : (
+                <p style={{ color: '#999' }}>暂无</p>
+              )}
+            </div>
           </div>
 
           <div className="detail-section">
