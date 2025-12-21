@@ -1,0 +1,49 @@
+请将这些托业单词，按照上面的JSON格式进行输出，整合输出成一个数组对象即可。toeicSceneFocus尽量符合托业考试特点
+
+后续我将给你一组单词，请给出每个单词的解释，用代码库框住，JSON格式输出。
+其中phrase是该单词的短语或短句，不用太长每个短语2-10个单词内即可。
+单个单词的格式如下：
+{
+    "word": "candidate",
+    phonetic: '/ɑːrˈtɪkjuleɪt/（音标）',
+    "phrase": "a qualified job candidate",
+    "partOfSpeech": "n. 名词",
+    "coreMeaning": "候选人；申请者；求职者（指申请职位、竞选岗位或参与选拔的人）",
+    "toeicSceneFocus": "多出现于招聘广告、面试沟通、人事通知、职位选拔等语境，是描述“潜在录用对象”的正式商务用词，托业阅读（招聘启事、人事邮件）和听力（职场对话）中频繁考查",
+    "keyCollocations": [
+    "job candidate（求职者）",
+    "candidate for sth.（……的候选人/申请者）",
+    "qualified candidate（合格候选人）",
+    "shortlisted candidate（入围候选人）",
+    "interview a candidate（面试候选人）"
+    ],
+    "toeicExampleSentences": [
+    "The company received over 200 applications, but only 10 candidates were shortlisted for interviews.（公司收到了200多份申请，但仅10名候选人入围面试。）",
+    "She is a strong candidate for the marketing manager position due to her rich industry experience.（凭借丰富的行业经验，她是营销经理岗位的有力候选人。）",
+    "The HR team will assess each candidate’s professional skills and cultural fit.（人力资源团队将评估每位候选人的专业技能和文化适配度。）",
+    "We are still looking for qualified candidates to fill the vacant positions in the IT department.（我们仍在寻找合格的候选人填补IT部门的空缺岗位。）"
+    ],
+    "sceneAssociation": "可以联想“招聘面试现场，HR正在与候选人（candidate）沟通工作经历”的画面，或“人事邮件中写着‘恭喜你成为该职位的最终候选人（final candidate）’”，结合职场选拔中“申请或被选拔的人”的核心场景快速记忆",
+    "confusingWordsComparison": [
+    {
+        "word": "candidate",
+        "coreDifference": "侧重“正式申请职位、参与选拔的候选人”，范围较窄（多指向职场/选拔）",
+        "toeicSceneFocus": "招聘、职位竞争、人才评估场景"
+    },
+    {
+        "word": "applicant",
+        "coreDifference": "泛指“申请者”，可指申请职位、学校、项目等，范围更广",
+        "toeicSceneFocus": "各类申请场景（职场、学术、福利等）"
+    },
+    {
+        "word": "aspirant",
+        "coreDifference": "侧重“有抱负、渴望获得某职位/身份的人”，语气较书面",
+        "toeicSceneFocus": "高阶职位选拔、职业发展相关场景"
+    },
+    {
+        "word": "interviewee",
+        "coreDifference": "侧重“参加面试的人”，仅聚焦“面试环节”",
+        "toeicSceneFocus": "面试沟通、面试流程相关描述"
+    }
+    ]
+},
