@@ -253,7 +253,10 @@ function WordStudyPage() {
             </div>
             <div className="phonetic">{currentWord.phonetic || '/ˈwɜːrd/'}</div>
             {currentWord.phrase && (
-              <div className="word-phrase" style={{ marginTop: '12px', fontSize: '14px', color: '#666' }}>
+              <div
+                className="word-phrase"
+                style={{ marginTop: '12px', fontSize: '14px', color: '#666' }}
+              >
                 <PhraseCell phraseText={currentWord.phrase} />
               </div>
             )}

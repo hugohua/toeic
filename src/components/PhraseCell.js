@@ -24,4 +24,3 @@ function PhraseCell({ phraseText }) {
 }
 
 export default PhraseCell;
-
