@@ -23,12 +23,13 @@ function HomePage() {
       <Header title="选择学习场景" subtitle="选择一个场景开始背单词" />
       <main className="main-content">
         <div className="category-list">
-          {categories.map((category) => (
+          {categories.map((category, index) => (
             <div
               key={category.key}
               className="category-card"
               data-category={category.key}
             >
+              <div className="category-number">{index + 1}</div>
               <div className="category-icon">{category.icon}</div>
               <h2>{category.name}</h2>
               <p className="category-desc">{category.desc}</p>

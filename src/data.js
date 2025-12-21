@@ -43381,4 +43381,7446 @@ export const wordData = {
       phrase: 'A typical example',
     },
   ],
+  product_tech:[
+    {
+        "word": "merchandise",
+        "phonetic": "/ˈmɜːrtʃəndaɪs/",
+        "phrase": "quality merchandise on display",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "商品，货物（总称）；特指待售的、用于买卖的货物",
+        "toeicSceneFocus": "多出现于零售、仓储、物流、海关、展会、产品目录等语境，是描述“待售商品”的正式商务用词，尤其在库存盘点、运输单据、销售报告中高频使用",
+        "keyCollocations": [
+            "display merchandise（展示商品）",
+            "ship merchandise（运输货物）",
+            "return merchandise（退货）",
+            "damaged merchandise（损坏的商品）",
+            "a wide range of merchandise（种类繁多的商品）"
+        ],
+        "toeicExampleSentences": [
+            "All merchandise in the warehouse must be inventoried at the end of each quarter.（仓库中的所有商品必须在每季度末进行盘点。）",
+            "The new safety standards apply to all imported merchandise sold in our stores.（新的安全标准适用于我们商店销售的所有进口商品。）",
+            "Due to a shipping delay, the merchandise you ordered will arrive next Monday.（由于运输延迟，您订购的商品将于下周一到达。）"
+        ],
+        "sceneAssociation": "联想“大型仓库中整齐堆放的、贴有条形码的待售货品箱”，或“零售店橱窗里展示（display）的最新产品”，核心是“用于买卖交易的物品总称”",
+        "confusingWordsComparison": [
+            {
+                "word": "merchandise",
+                "coreDifference": "不可数名词，泛指“待售的商品总称”，强调其商业属性，正式且书面",
+                "toeicSceneFocus": "库存、物流、商业报告、零售管理"
+            },
+            {
+                "word": "product",
+                "coreDifference": "可数名词，特指经过生产或制造出来的“具体产品”，强调其作为生产成果的属性",
+                "toeicSceneFocus": "产品开发、市场营销、说明书、功能描述"
+            },
+            {
+                "word": "goods",
+                "coreDifference": "可数名词（常以复数形式出现），泛指“动产、物品”，可用于商业（商品）或法律语境，比merchandise更宽泛",
+                "toeicSceneFocus": "运输、贸易、法律合同、经济学场景"
+            }
+        ]
+    },
+    {
+        "word": "product",
+        "phonetic": "/ˈprɑːdʌkt/",
+        "phrase": "launch a new product",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "产品；制品（指通过工业生产或制造过程产生的结果）",
+        "toeicSceneFocus": "核心商务词汇，贯穿产品研发、市场营销、客户服务、售后服务等全流程。托业阅读（产品说明书、广告、用户反馈）和听力（销售会议、客户咨询）中无处不在",
+        "keyCollocations": [
+            "product launch（产品发布）",
+            "product line（产品线）",
+            "product development（产品开发）",
+            "finished product（成品）",
+            "product features（产品特性）"
+        ],
+        "toeicExampleSentences": [
+            "Our R&D department is responsible for improving existing products and designing new ones.（我们的研发部门负责改进现有产品和设计新产品。）",
+            "The brochure provides detailed information about the product’s specifications and warranty.（宣传册提供了该产品规格和保修的详细信息。）",
+            "Customer feedback is crucial for evaluating the market performance of a product.（客户反馈对于评估产品的市场表现至关重要。）"
+        ],
+        "sceneAssociation": "想象“一场产品发布会（product launch），聚光灯下展示着最新的高科技产品原型”，或“工厂流水线末端，一个完成组装的成品（finished product）被打包”，紧扣“被制造出来的具体物品”这一核心",
+        "confusingWordsComparison": [
+            {
+                "word": "product",
+                "coreDifference": "可数名词，特指“制造/生产出来的物品”，是merchandise的核心组成部分",
+                "toeicSceneFocus": "制造、营销、技术、服务全链路"
+            },
+            {
+                "word": "merchandise",
+                "coreDifference": "不可数名词，强调“用于销售的货物总称”，商业属性更强",
+                "toeicSceneFocus": "销售、库存、物流、零售"
+            },
+            {
+                "word": "item",
+                "coreDifference": "可数名词，泛指“一件物品/商品”，范围最广，可指代清单中的任何一项",
+                "toeicSceneFocus": "购物清单、订单、目录、库存项"
+            }
+        ]
+    },
+    {
+        "word": "goods",
+        "phonetic": "/ɡʊdz/",
+        "phrase": "ship the goods overseas",
+        "partOfSpeech": "n. 名词（复数）",
+        "coreMeaning": "货物，商品；动产（泛指用于交易或运输的物品，常用复数形式）",
+        "toeicSceneFocus": "国际贸易、物流运输、海关文件、供应链管理、经济学报告中的高频词。托业阅读（提单、合同条款、贸易新闻）和听力（货运安排、清关对话）中常考",
+        "keyCollocations": [
+            "consumer goods（消费品）",
+            "capital goods（资本货物，生产资料）",
+            "durable goods（耐用品）",
+            "deliver goods（交付货物）",
+            "goods in transit（在途货物）"
+        ],
+        "toeicExampleSentences": [
+            "The contract specifies that the goods must be delivered within 30 days after the order is confirmed.（合同规定，货物必须在订单确认后30天内交付。）",
+            "A sharp increase in fuel prices will raise the cost of transporting goods.（燃油价格急剧上涨将提高货物运输成本。）",
+            "Please ensure all necessary documents are prepared for customs clearance of the imported goods.（请确保为进口货物的清关准备好所有必要文件。）"
+        ],
+        "sceneAssociation": "联想“巨大的集装箱货轮正在码头装卸来自世界各地的货物（goods）”，或“卡车在高速公路上运输着用防水布覆盖的货物”，场景核心是“处于移动或交易状态的大宗物品”",
+        "confusingWordsComparison": [
+            {
+                "word": "goods",
+                "coreDifference": "常以复数形式出现，范围广，泛指“物品/货物”，尤指用于贸易运输的，是经济学和贸易术语",
+                "toeicSceneFocus": "国际贸易、物流、经济学、法律合同"
+            },
+            {
+                "word": "merchandise",
+                "coreDifference": "不可数名词，特指“待售商品”，商业零售属性更强",
+                "toeicSceneFocus": "零售、库存、销售报告"
+            },
+            {
+                "word": "commodity",
+                "coreDifference": "可数名词，特指“可交易的大宗初级产品或原材料”（如石油、粮食、金属），强调其标准化和可互换性",
+                "toeicSceneFocus": "金融市场、大宗贸易、原材料采购"
+            }
+        ]
+    },
+    {
+        "word": "item",
+        "phonetic": "/ˈaɪtəm/",
+        "phrase": "check each item carefully",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "项目；条目；一件商品（或物品）",
+        "toeicSceneFocus": "应用极其广泛，可指代清单、列表、目录、订单、发票、议程中的任何一项。托业阅读（采购订单、会议议程、产品目录）和听力（核对清单、点餐、购物）中基础且高频",
+        "keyCollocations": [
+            "agenda item（议程项目）",
+            "line item（明细项目）",
+            "lost item（遗失物品）",
+            "individual item（单件商品）",
+            "item on the list（列表上的项目）"
+        ],
+        "toeicExampleSentences": [
+            "Please review the attached invoice and confirm that all items listed are correct.（请查看随附的发票，并确认列出的所有项目均正确无误。）",
+            "The first item on today’s meeting agenda is the quarterly budget review.（今天会议议程的第一个项目是季度预算审查。）",
+            "You can return any item within 30 days of purchase if it is in its original packaging.（您可以在购买后30天内退回任何保持原包装的商品。）"
+        ],
+        "sceneAssociation": "想象“一份Excel采购订单，上面罗列着从1到N的各个行项目（line items）”，或“会议中主持人说‘让我们进入下一个议程项目（next agenda item）’”，核心是“列表/集合中的一个单独个体”",
+        "confusingWordsComparison": [
+            {
+                "word": "item",
+                "coreDifference": "可数名词，泛指“清单/集合中的一项”，或“一件具体的物品”，用法最灵活",
+                "toeicSceneFocus": "清单、目录、订单、议程、泛指的商品"
+            },
+            {
+                "word": "product",
+                "coreDifference": "特指“制造/生产出来的产品”，是item的一种具体类型",
+                "toeicSceneFocus": "制造、营销、具体产品"
+            },
+            {
+                "word": "article",
+                "coreDifference": "可指“一件商品”（尤指衣物等），或“文章、条款”，在商品意义上与item有时可互换，但更正式",
+                "toeicSceneFocus": "法律条款、合同条文、或商品目录（如 clothing articles）"
+            }
+        ]
+    },
+    {
+        "word": "commodity",
+        "phonetic": "/kəˈmɑːdəti/",
+        "phrase": "prices of agricultural commodities",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "商品；大宗商品；日用品（尤指可进行大规模交易、标准化的初级产品或原材料）",
+        "toeicSceneFocus": "多出现在金融、贸易、经济类文章中。托业阅读（市场报告、财经新闻、供应链分析）中常涉及原油、金属、农产品等大宗商品的价格波动、供需关系及国际贸易",
+        "keyCollocations": [
+            "commodity prices（商品价格）",
+            "commodity market（商品市场）",
+            "agricultural commodities（农产品）",
+            "hard commodity（硬商品，如金属、能源）",
+            "soft commodity（软商品，如农产品）"
+        ],
+        "toeicExampleSentences": [
+            "Fluctuations in global commodity prices can significantly impact the manufacturing costs of our company.（全球大宗商品价格的波动会严重影响我公司的制造成本。）",
+            "The country is a major exporter of agricultural commodities like wheat and soybeans.（该国是小麦和大豆等农产品的主要出口国。）",
+            "Investing in the commodity market requires a deep understanding of global supply and demand.（投资商品市场需要对全球供需有深刻理解。）"
+        ],
+        "sceneAssociation": "联想“芝加哥商品交易所（CME）的交易大厅，屏幕上滚动着原油、黄金、玉米的实时价格”，或“一篇财经报道分析‘全球农产品（agricultural commodities）收成对价格的影响’”，紧扣“标准化、可交易的基础物资”这一经济概念",
+        "confusingWordsComparison": [
+            {
+                "word": "commodity",
+                "coreDifference": "强调“作为交易对象、标准化的大宗产品或原材料”，具有金融和经济学色彩",
+                "toeicSceneFocus": "金融市场、大宗贸易、经济学分析"
+            },
+            {
+                "word": "goods",
+                "coreDifference": "泛指用于交易或运输的“货物”，范围更广，不特指标准化大宗品",
+                "toeicSceneFocus": "物流、贸易、泛指货物"
+            },
+            {
+                "word": "merchandise",
+                "coreDifference": "特指“待售的商品总称”，商业零售属性强，不一定是初级产品",
+                "toeicSceneFocus": "零售、库存、销售"
+            }
+        ]
+    },
+    {
+        "word": "appliance",
+        "phonetic": "/əˈplaɪəns/",
+        "phrase": "energy-efficient home appliance",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "器具；电器（尤指家用电器）",
+        "toeicSceneFocus": "常见于产品介绍、用户手册、售后服务、零售广告、节能环保等话题。托业阅读（产品说明书、广告传单）和听力（客户咨询维修、商店导购）中涉及",
+        "keyCollocations": [
+            "household appliance（家用电器）",
+            "kitchen appliance（厨房电器）",
+            "electrical appliance（电器）",
+            "appliance store（电器商店）",
+            "repair an appliance（修理电器）"
+        ],
+        "toeicExampleSentences": [
+            "The warranty for this major appliance covers parts and labor for two years.（这台大家电的保修期是两年，涵盖零件和人工。）",
+            "We are having a promotion on all small kitchen appliances this weekend.（本周末我们所有的小型厨房电器都有促销活动。）",
+            "Before calling for service, please check if the appliance is properly plugged in and the circuit breaker is on.（在请求维修服务前，请检查电器是否已正确插入插座且断路器处于开启状态。）"
+        ],
+        "sceneAssociation": "想象“家电卖场（appliance store）里陈列的冰箱、洗衣机、微波炉”，或“产品手册上标注的‘节能电器（energy-efficient appliance）’能效等级”，核心是“执行特定家庭功能（如烹饪、清洁）的电动/机械设备”",
+        "confusingWordsComparison": [
+            {
+                "word": "appliance",
+                "coreDifference": "特指“家用电器”，功能相对固定（如冰箱、洗衣机），是device的一种",
+                "toeicSceneFocus": "家庭、零售、售后、节能"
+            },
+            {
+                "word": "device",
+                "coreDifference": "泛指“设备、装置”，用途广泛，不限于家用，可大可小，可简单可复杂",
+                "toeicSceneFocus": "技术、工具、泛指设备"
+            },
+            {
+                "word": "equipment",
+                "coreDifference": "不可数名词，是“设备、器材”的总称，通常不特指单个物品",
+                "toeicSceneFocus": "办公、工业、体育、泛指装备"
+            },
+            {
+                "word": "tool",
+                "coreDifference": "通常指手持的、用于完成特定手工或机械工作的“工具”",
+                "toeicSceneFocus": "维修、手工、专业工作"
+            }
+        ]
+    },
+    {
+        "word": "device",
+        "phonetic": "/dɪˈvaɪs/",
+        "phrase": "a portable electronic device",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "装置；设备；仪器（为特定用途设计或发明的机械或电子物品）",
+        "toeicSceneFocus": "现代职场核心词汇，覆盖从个人电子设备到专业仪器。托业阅读（科技新闻、产品说明、安全规定）和听力（IT支持、设备操作培训、会议讨论）中极为常见",
+        "keyCollocations": [
+            "electronic device（电子设备）",
+            "mobile device（移动设备）",
+            "storage device（存储设备）",
+            "medical device（医疗设备）",
+            "safety device（安全装置）"
+        ],
+        "toeicExampleSentences": [
+            "All mobile devices must be switched to silent mode during the conference.（会议期间，所有移动设备必须调至静音模式。）",
+            "The technician installed a new monitoring device on the production line to improve efficiency.（技术员在生产线上安装了一个新的监控装置以提高效率。）",
+            "This software is compatible with a wide range of devices and operating systems.（该软件兼容多种设备和操作系统。）"
+        ],
+        "sceneAssociation": "想象“机场安检提示‘请将电子设备（electronic devices）从包中取出’”，或“工程师正在调试一个精密的测量设备（measuring device）”，核心是“为特定目的设计的技术装置”",
+        "confusingWordsComparison": [
+            {
+                "word": "device",
+                "coreDifference": "可数名词，指“为特定功能设计的装置”，用途广泛，是appliance, tool的上位词",
+                "toeicSceneFocus": "技术、电子、专业仪器、泛指设备"
+            },
+            {
+                "word": "appliance",
+                "coreDifference": "特指“家用电器”，是device用于家庭场景的子类",
+                "toeicSceneFocus": "家用电器"
+            },
+            {
+                "word": "gadget",
+                "coreDifference": "指“小巧新颖的装置或小玩意儿”，常带有趣味性或科技感，不如device正式",
+                "toeicSceneFocus": "非正式语境，描述新奇小工具"
+            }
+        ]
+    },
+    {
+        "word": "equipment",
+        "phonetic": "/ɪˈkwɪpmənt/",
+        "phrase": "modern office equipment",
+        "partOfSpeech": "n. 名词（不可数）",
+        "coreMeaning": "设备；器材；装备（为特定活动或工作所需物品的总称，不可数名词）",
+        "toeicSceneFocus": "职场通用词汇，指代办公、生产、运动、安全等各类所需物品的集合。托业阅读（采购清单、设施介绍、安全手册）和听力（设备租赁、安装维护、预算讨论）中高频出现",
+        "keyCollocations": [
+            "office equipment（办公设备）",
+            "safety equipment（安全设备）",
+            "sports equipment（体育器材）",
+            "manufacturing equipment（制造设备）",
+            "rent equipment（租赁设备）"
+        ],
+        "toeicExampleSentences": [
+            "The company will provide all necessary safety equipment to employees working on the construction site.（公司将向在建筑工地工作的员工提供所有必要的安全设备。）",
+            "We need to upgrade our computer equipment in the design department to handle the new software.（我们需要更新设计部门的计算机设备以运行新软件。）",
+            "The cost of the specialized laboratory equipment is included in the project budget.（专业实验室设备的费用已包含在项目预算内。）"
+        ],
+        "sceneAssociation": "想象“一间配备齐全的健身房，里面摆放着各种运动器材（sports equipment）”，或“一份采购申请单，上面列着‘办公设备（office equipment）：打印机3台，投影仪1台’”，核心是“完成某项工作或活动所需的一整套工具或机器”",
+        "confusingWordsComparison": [
+            {
+                "word": "equipment",
+                "coreDifference": "不可数名词，是“设备、器材”的总称，强调整套或类别",
+                "toeicSceneFocus": "泛指装备、设施、成套器材"
+            },
+            {
+                "word": "device",
+                "coreDifference": "可数名词，指“单个的装置或仪器”，是equipment的组成部分",
+                "toeicSceneFocus": "单个技术装置"
+            },
+            {
+                "word": "facility",
+                "coreDifference": "指“设施、场所”，通常是建筑物或大型固定设备，为某种活动提供便利",
+                "toeicSceneFocus": "工厂、场馆、基础设施"
+            }
+        ]
+    },
+    {
+        "word": "tool",
+        "phonetic": "/tuːl/",
+        "phrase": "essential maintenance tools",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "工具；器具（用于手工操作或完成特定任务的器械，也常引申为“方法、手段”）",
+        "toeicSceneFocus": "涵盖实体工具（维修、手工）和抽象工具（软件、方法）。托业阅读（工作指南、产品维护说明、项目管理）和听力（工作安排、问题解决讨论）中常见",
+        "keyCollocations": [
+            "hand tool（手工工具）",
+            "power tool（电动工具）",
+            "diagnostic tool（诊断工具）",
+            "marketing tool（营销工具）",
+            "management tool（管理工具）"
+        ],
+        "toeicExampleSentences": [
+            "The maintenance team is equipped with a complete set of tools for emergency repairs.（维修团队配备有全套应急维修工具。）",
+            "This software is an invaluable tool for analyzing large sets of sales data.（这款软件是分析大量销售数据的宝贵工具。）",
+            "Please ensure that all tools are returned to the storage room after use.（请确保所有工具使用后归还储藏室。）"
+        ],
+        "sceneAssociation": "联想“工匠的工具箱，里面整齐摆放着锤子、螺丝刀等手工工具（hand tools）”，或“在商业演示中，PPT被称为‘有效的沟通工具（effective communication tool）’”，既指实体器械，也指抽象的方法手段",
+        "confusingWordsComparison": [
+            {
+                "word": "tool",
+                "coreDifference": "可数名词，核心指“手持的操作工具”，可具体可抽象（如软件工具），强调其功能性",
+                "toeicSceneFocus": "维修、手工、软件、方法手段"
+            },
+            {
+                "word": "equipment",
+                "coreDifference": "不可数名词，是“设备”的总称，范围更广，不特指手持工具",
+                "toeicSceneFocus": "成套设备、设施"
+            },
+            {
+                "word": "instrument",
+                "coreDifference": "指“精密的仪器或乐器”，或法律文件中的“文书”，通常比tool更精密、专业",
+                "toeicSceneFocus": "科学仪器、测量工具、法律文书"
+            }
+        ]
+    },
+    {
+        "word": "technology",
+        "phonetic": "/tekˈnɑːlədʒi/",
+        "phrase": "invest in new technology",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "技术；科技；工艺（指科学知识在实际应用中的总和，或特定的技术方法、设备）",
+        "toeicSceneFocus": "商业世界的核心驱动力，话题常涉及技术创新、投资、采纳、培训及影响。托业阅读（行业分析、公司新闻、产品发布）和听力（战略会议、IT提案、培训通知）中必不可少",
+        "keyCollocations": [
+            "information technology (IT)（信息技术）",
+            "cutting-edge technology（尖端技术）",
+            "technology company（科技公司）",
+            "adopt new technology（采用新技术）",
+            "technology transfer（技术转让）"
+        ],
+        "toeicExampleSentences": [
+            "The rapid advancement of information technology has transformed the way we work.（信息技术的飞速发展改变了我们的工作方式。）",
+            "To stay competitive, the firm plans to invest heavily in green technology this year.（为了保持竞争力，公司计划今年在绿色科技上投入巨资。）",
+            "A training session will be held next week to introduce the new database technology to all staff.（下周将举办一场培训，向所有员工介绍新的数据库技术。）"
+        ],
+        "sceneAssociation": "想象“科技展会（tech expo）上展示的虚拟现实和人工智能等前沿科技（cutting-edge technology）”，或“公司董事会正在讨论一项重大的技术投资（technology investment）提案”，核心是“将知识应用于实践的体系与方法”",
+        "confusingWordsComparison": [
+            {
+                "word": "technology",
+                "coreDifference": "指“技术/科技”的总称或领域，是抽象概念或知识体系，也可指一类技术",
+                "toeicSceneFocus": "科技领域、技术战略、创新、投资"
+            },
+            {
+                "word": "technique",
+                "coreDifference": "指“技巧、方法、手法”，强调做某事的具体方式或技能",
+                "toeicSceneFocus": "操作技巧、工作方法、工艺手法"
+            },
+            {
+                "word": "device/equipment",
+                "coreDifference": "指具体的“设备、装置”，是technology的物理载体或体现",
+                "toeicSceneFocus": "具体的硬件设备"
+            }
+        ]
+    },
+    {
+        "word": "software",
+        "phonetic": "/ˈsɔːftwer/",
+        "phrase": "install the latest software",
+        "partOfSpeech": "n. 名词（不可数）",
+        "coreMeaning": "软件（计算机程序和数据的总称，与硬件相对）",
+        "toeicSceneFocus": "现代办公环境的基础。托业阅读（IT政策、产品说明、服务协议）和听力（IT支持对话、软件培训、故障排除）中的绝对高频词，常与 hardware, application, update, license 等同现",
+        "keyCollocations": [
+            "software developer（软件开发人员）",
+            "software update/upgrade（软件更新/升级）",
+            "licensed software（授权软件）",
+            "accounting software（会计软件）",
+            "customized software（定制软件）"
+        ],
+        "toeicExampleSentences": [
+            "All employees are required to install the latest antivirus software on their work computers.（所有员工都必须在工作电脑上安装最新的杀毒软件。）",
+            "The accounting department is evaluating several new financial software packages.（财务部门正在评估几款新的财务软件包。）",
+            "Please contact the IT help desk if you encounter any problems with the software installation.（如果您在软件安装过程中遇到任何问题，请联系IT服务台。）"
+        ],
+        "sceneAssociation": "想象“电脑弹出窗口提示‘有可用的软件更新（software update available）’”，或“IT部门群发邮件‘禁止安装未经授权的软件（unauthorized software）’”，核心是“让计算机运行的程序和指令”",
+        "confusingWordsComparison": [
+            {
+                "word": "software",
+                "coreDifference": "不可数名词，是“软件”的总称，与硬件（hardware）相对，指所有程序和数据",
+                "toeicSceneFocus": "泛指计算机程序、IT管理、许可证"
+            },
+            {
+                "word": "application (app)",
+                "coreDifference": "可数名词，指“应用程序”，是software中用于完成特定任务（如文字处理、浏览网页）的具体程序",
+                "toeicSceneFocus": "具体应用软件、移动应用"
+            },
+            {
+                "word": "program",
+                "coreDifference": "可数名词，与 application 含义非常接近，常可互换，但program更偏技术底层，application更偏用户应用",
+                "toeicSceneFocus": "计算机程序、日程安排（双关）"
+            }
+        ]
+    },
+    {
+        "word": "hardware",
+        "phonetic": "/ˈhɑːrdwer/",
+        "phrase": "computer hardware requirements",
+        "partOfSpeech": "n. 名词（不可数）",
+        "coreMeaning": "硬件（计算机及电子设备的物理组件，如CPU、内存、硬盘等）",
+        "toeicSceneFocus": "与software成对出现，涉及设备采购、配置、维护、升级。托业阅读（采购规格、技术手册、招标书）和听力（讨论电脑配置、设备故障、采购预算）中常见",
+        "keyCollocations": [
+            "computer hardware（计算机硬件）",
+            "hardware upgrade（硬件升级）",
+            "hardware failure（硬件故障）",
+            "hardware specifications（硬件规格）",
+            "hardware store（五金店，注意此特殊含义）"
+        ],
+        "toeicExampleSentences": [
+            "The new graphic design software has very high hardware requirements.（新的图形设计软件对硬件要求非常高。）",
+            "The IT department is scheduling a hardware upgrade for all servers during the weekend.（IT部门计划在周末对所有服务器进行硬件升级。）",
+            "The problem was caused by a hardware failure, not a software bug.（该问题是由硬件故障引起的，而非软件漏洞。）"
+        ],
+        "sceneAssociation": "联想“打开电脑机箱看到的 motherboard, CPU, RAM 等物理组件”，或“一份采购需求表上列着‘硬件配置最低要求（minimum hardware requirements）’”，核心是“计算机系统中‘摸得着’的物理部分”",
+        "confusingWordsComparison": [
+            {
+                "word": "hardware",
+                "coreDifference": "不可数名词，指计算机或电子设备的“物理硬件”，与software（软件）相对",
+                "toeicSceneFocus": "计算机物理组件、设备采购、故障诊断"
+            },
+            {
+                "word": "software",
+                "coreDifference": "不可数名词，指“软件”，是硬件上运行的程序和数据",
+                "toeicSceneFocus": "计算机程序、应用、许可证"
+            },
+            {
+                "word": "equipment",
+                "coreDifference": "泛指所有“设备”，范围比hardware大，可以包含硬件，也包括其他非电子设备",
+                "toeicSceneFocus": "泛指所有设备器材"
+            }
+        ]
+    },
+    {
+        "word": "application",
+        "phonetic": "/ˌæplɪˈkeɪʃn/",
+        "phrase": "submit an online application",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "1. 应用，运用；2. 申请，申请表；3. 应用程序（常缩写为 app）",
+        "toeicSceneFocus": "托业考试中的多义词高频考点，必须根据上下文判断。义项1见于商业实践（如理论应用）；义项2见于职场流程（如职位申请）；义项3见于IT和技术场景（如手机应用）。阅读和听力中均高频出现",
+        "keyCollocations": [
+            "job application（职位申请）",
+            "practical application（实际应用）",
+            "mobile application（移动应用程序）",
+            "application form（申请表）",
+            "software application（软件应用程序）"
+        ],
+        "toeicExampleSentences": [
+            "**（义项2: 申请）** Please complete the attached application form and return it to the HR department by Friday.（请填写随附的申请表，并于周五前交回人力资源部。）",
+            "**（义项1: 应用）** The training focuses on the practical application of marketing theories in real business cases.（培训侧重于市场营销理论在实际商业案例中的应用。）",
+            "**（义项3: 应用程序）** We have developed a new mobile application to allow customers to track their orders in real time.（我们开发了一款新的移动应用程序，让客户能够实时追踪订单。）"
+        ],
+        "sceneAssociation": "**场景1（申请）：** 想象“求职者填写一份在线职位申请表（online job application form）”。**场景2（应用）：** 想象“培训师在白板上写下‘理论与实践的应用（theory and practice application）’”。**场景3（程序）：** 想象“手机屏幕上排列着各种社交媒体和工具类应用图标”",
+        "confusingWordsComparison": [
+            {
+                "word": "application (app)",
+                "coreDifference": "多义词，核心是“应用/施用”。在IT领域与program同义，但更侧重面向用户的“应用软件”。作“申请”解时，是职场高频词。",
+                "toeicSceneFocus": "申请流程、理论应用、软件程序（尤其移动端）"
+            },
+            {
+                "word": "program",
+                "coreDifference": "主要指“计算机程序”，是application更技术化的表达；也指“项目、计划”。作“程序”解时，与application常互换。",
+                "toeicSceneFocus": "计算机程序、项目计划、活动日程"
+            },
+            {
+                "word": "request",
+                "coreDifference": "意为“请求、要求”，比application（申请）更宽泛、非正式，不特指填表申请。",
+                "toeicSceneFocus": "日常请求、非正式要求"
+            }
+        ]
+    },
+    {
+        "word": "program",
+        "phonetic": "/ˈproʊɡræm/",
+        "phrase": "a computer program",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "1. 节目，计划，方案；2. （计算机）程序",
+        "toeicSceneFocus": "另一高频多义词。义项1广泛用于商业活动、培训、社会责任等（如培训计划、电视节目）。义项2是IT和技术场景基础词。托业阅读（公司内部通知、社会责任报告、技术文档）和听力（会议安排、IT支持）中需根据语境区分",
+        "keyCollocations": [
+            "training program（培训计划）",
+            "computer program（计算机程序）",
+            "television program（电视节目）",
+            "loyalty program（忠诚度计划）",
+            "development program（发展计划）"
+        ],
+        "toeicExampleSentences": [
+            "**（义项1: 计划/方案）** The company has launched a new employee wellness program to improve staff health.（公司推出了一项新的员工健康计划以改善员工健康状况。）",
+            "**（义项2: 程序）** A bug in the accounting program caused errors in the financial report.（会计程序中的一个漏洞导致了财务报告出错。）",
+            "**（义项1: 节目）** The documentary will be broadcast as part of a special educational program next month.（这部纪录片将作为下个月特别教育节目的一部分播出。）"
+        ],
+        "sceneAssociation": "**场景1（计划）：** 想象“公司内网公告‘新员工入职培训计划（new employee orientation program）启动’”。**场景2（程序）：** 想象“程序员在屏幕上编写代码，调试一个软件程序（software program）”。**场景3（节目）：** 想象“电视节目表（TV program schedule）”",
+        "confusingWordsComparison": [
+            {
+                "word": "program",
+                "coreDifference": "多义词。作“程序”解时，与application基本同义，但program听起来更底层/技术化。作“计划”解时，是核心商业词汇。",
+                "toeicSceneFocus": "项目计划、培训方案、计算机程序、电视节目"
+            },
+            {
+                "word": "application (app)",
+                "coreDifference": "作“程序”解时，更侧重面向用户的“应用软件”，尤指移动端app。另有“申请”、“应用”之意。",
+                "toeicSceneFocus": "应用程序（尤指app）、申请、理论应用"
+            },
+            {
+                "word": "project",
+                "coreDifference": "指“项目”，通常有明确起止时间、目标和资源，是program（计划）中更具体、临时性的组成部分。",
+                "toeicSceneFocus": "具体项目、工程"
+            }
+        ]
+    },
+    {
+        "word": "platform",
+        "phonetic": "/ˈplætfɔːrm/",
+        "phrase": "a cloud computing platform",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "平台；站台；讲台（可指物理平台，但更多指提供基础服务或环境的抽象平台，如技术平台、社交平台）",
+        "toeicSceneFocus": "现代商业和科技领域核心词。托业阅读（科技新闻、商业模式介绍、服务广告）和听力（IT方案讨论、营销会议）中，常指数字或商业生态系统，如社交媒体平台、云计算平台、电商平台等",
+        "keyCollocations": [
+            "social media platform（社交媒体平台）",
+            "online platform（在线平台）",
+            "trading platform（交易平台）",
+            "platform as a service (PaaS)（平台即服务）",
+            "provide a platform（提供一个平台）"
+        ],
+        "toeicExampleSentences": [
+            "The company uses various social media platforms to engage with its customers.（该公司利用各种社交媒体平台与客户互动。）",
+            "Our new e-commerce platform allows for seamless online shopping and payment.（我们的新电商平台可实现无缝的在线购物和支付。）",
+            "The software is built on a secure and scalable cloud platform.（该软件构建在一个安全且可扩展的云平台上。）"
+        ],
+        "sceneAssociation": "想象“一个科技公司CEO在发布会上介绍‘我们开放的平台（open platform）将连接开发者与用户’”，或“地铁的电子屏显示‘下一班列车将在2号站台（platform 2）进站’”，核心是“一个供其他事物运行、展示或交互的基础或场所”",
+        "confusingWordsComparison": [
+            {
+                "word": "platform",
+                "coreDifference": "原义“站台”，现多引申为“提供基础服务/环境的平台”（数字或商业），强调其“基础性”和“连接性”。",
+                "toeicSceneFocus": "技术/商业生态系统、在线服务基础、站台"
+            },
+            {
+                "word": "network",
+                "coreDifference": "指“网络”，强调“连接”本身及连接的节点，可以是物理的或人际的。",
+                "toeicSceneFocus": "计算机网络、人际网络、广播网"
+            },
+            {
+                "word": "website",
+                "coreDifference": "指具体的“网站”，是platform的一种具体表现形式（如一个电商平台会有一个网站）。",
+                "toeicSceneFocus": "具体的网站地址、网页"
+            }
+        ]
+    },
+    {
+        "word": "network",
+        "phonetic": "/ˈnetwɜːrk/",
+        "phrase": "expand the professional network",
+        "partOfSpeech": "n. 名词 / v. 动词",
+        "coreMeaning": "n. 网络；关系网；广播网 v. 建立网络关系，人际交往",
+        "toeicSceneFocus": "名词义是IT和商务双重核心词。IT方面指计算机网络（如局域网、互联网）；商务方面指人际/商业关系网。动词义是重要的职场社交行为。托业阅读（IT故障报告、行业分析、职业发展文章）和听力（会议社交、系统维护对话）中高频",
+        "keyCollocations": [
+            "computer network（计算机网络）",
+            "social network（社交网络）",
+            "network security（网络安全）",
+            "professional network（职业关系网）",
+            "network with colleagues（与同事建立联系）"
+        ],
+        "toeicExampleSentences": [
+            "**（n. IT网络）** A firewall is essential for protecting the company’s internal network from cyber attacks.（防火墙对于保护公司内部网络免受网络攻击至关重要。）",
+            "**（n. 关系网）** Attending industry conferences is a good way to build a strong professional network.（参加行业会议是建立强大职业关系网的好方法。）",
+            "**（v. 社交）** The reception after the seminar will be a great opportunity to network with experts in the field.（研讨会后的招待会将是与该领域专家建立联系的绝佳机会。）"
+        ],
+        "sceneAssociation": "**场景1（IT网络）：** 想象“IT管理员看着一张复杂的计算机网络拓扑图”。**场景2（关系网）：** 想象“商务人士在行业交流会上交换名片，拓展人脉（expand their network）”。核心是“相互连接的系统或人群”",
+        "confusingWordsComparison": [
+            {
+                "word": "network",
+                "coreDifference": "指“相互连接构成的网络系统”，可以是实体（计算机）或虚拟（人际），强调互联的结构。作动词时意为“社交”。",
+                "toeicSceneFocus": "计算机网络、人际关系网、社交活动"
+            },
+            {
+                "word": "platform",
+                "coreDifference": "指“平台”，是网络运行或活动发生的“基础和环境”，如社交网络（network）运行在社交平台（platform）上。",
+                "toeicSceneFocus": "服务平台、基础设施、站台"
+            },
+            {
+                "word": "internet",
+                "coreDifference": "特指全球性的“互联网”，是最大的、公共的计算机网络（network）。",
+                "toeicSceneFocus": "国际互联网、线上访问"
+            }
+        ]
+    },
+    {
+        "word": "internet",
+        "phonetic": "/ˈɪntərnet/",
+        "phrase": "access the internet wirelessly",
+        "partOfSpeech": "n. 名词（常与 the 连用）",
+        "coreMeaning": "互联网，因特网（全球性的计算机网络系统）",
+        "toeicSceneFocus": "现代商业活动和信息获取的基础设施。托业阅读（关于远程工作、在线服务、数字营销的文章）和听力（讨论网络连接问题、线上会议安排、研究信息）中作为背景词频繁出现，常与access, connection, speed, via the internet等搭配",
+        "keyCollocations": [
+            "access the internet（访问互联网）",
+            "high-speed internet（高速互联网）",
+            "over the internet（通过互联网）",
+            "internet connection（网络连接）",
+            "internet service provider (ISP)（互联网服务提供商）"
+        ],
+        "toeicExampleSentences": [
+            "Most of our customer service inquiries are now handled via email or through the internet.（我们现在的大部分客户服务咨询都通过电子邮件或互联网处理。）",
+            "The hotel offers complimentary high-speed internet access in all rooms and public areas.（该酒店在所有客房和公共区域提供免费的高速互联网接入。）",
+            "A stable internet connection is crucial for participating in the video conference.（稳定的网络连接对于参加视频会议至关重要。）"
+        ],
+        "sceneAssociation": "想象“笔记本电脑或手机屏幕上表示Wi-Fi信号的图标”，或“广告语‘随时随地连接互联网（connect to the internet anytime, anywhere）’”，核心是“那个全球性的、用于信息交换的虚拟网络空间”",
+        "confusingWordsComparison": [
+            {
+                "word": "internet",
+                "coreDifference": "特指全球性的公共“互联网”，通常与定冠词the连用（the Internet）。",
+                "toeicSceneFocus": "全球互联网接入、在线服务"
+            },
+            {
+                "word": "network",
+                "coreDifference": "泛指任何“网络”，可以是一个公司内部的局域网（local area network），也可以是人际网络，范围比internet广。",
+                "toeicSceneFocus": "任何类型的网络（包括互联网）"
+            },
+            {
+                "word": "web / World Wide Web",
+                "coreDifference": "特指“万维网”，是基于互联网（Internet）的一种信息检索和服务系统，是互联网的一部分。日常口语中常与internet混用，但技术上不同。",
+                "toeicSceneFocus": "网页、网站、网上冲浪"
+            }
+        ]
+    },
+    {
+        "word": "website",
+        "phonetic": "/ˈwebsaɪt/",
+        "phrase": "visit the company website",
+        "partOfSpeech": "n. 名词",
+        "coreMeaning": "网站（互联网上包含特定内容、可通过浏览器访问的站点）",
+        "coreMeaning": "网站（互联网上包含特定内容、可通过浏览器访问的站点）",
+        "toeicSceneFocus": "公司线上门户，用于信息发布、营销、服务和电子商务。托业阅读（邮件中提及“详情请访问我们的网站”、网页公告、线上订单通知）和听力（客户服务中引导用户查看网站、讨论网站更新）中极为常见",
+        "keyCollocations": [
+            "company website（公司网站）",
+            "official website（官方网站）",
+            "website address/URL（网址）",
+            "browse a website（浏览网站）",
+            "update the website（更新网站）"
+        ],
+        "toeicExampleSentences": [
+            "For more detailed product specifications, please refer to our official website.（更多详细的产品规格，请参阅我们的官方网站。）",
+            "The online application form is available on the careers section of our website.（在线申请表可在我们网站的职业招聘版块找到。）",
+            "We are currently redesigning our website to improve user experience and mobile compatibility.（我们正在重新设计网站，以改善用户体验和移动设备兼容性。）"
+        ],
+        "sceneAssociation": "想象“在浏览器地址栏输入‘www.companyname.com’访问一个公司的官方网站”，或“一封邮件的落款写着‘欲知详情，请访问我们的网站（For more information, visit our website.）’”，核心是“互联网上的一个具体‘地址’和其承载的页面集合”",
+        "confusingWordsComparison": [
+            {
+                "word": "website",
+                "coreDifference": "可数名词，指具体的“网站”，是互联网上的一个站点，由多个网页（web pages）组成。",
+                "toeicSceneFocus": "具体的网站地址、公司门户、信息页面"
+            },
+            {
+                "word": "web page",
+                "coreDifference": "指“网页”，是网站（website）中的一个单独页面。",
+                "toeicSceneFocus": "网站的单个页面"
+            },
+            {
+                "word": "platform",
+                "coreDifference": "指“平台”，可能包含多个网站和服务，是更宏大的生态系统。一个电商平台（platform）可能包含其主网站（website）和移动应用（app）。",
+                "toeicSceneFocus": "服务平台、生态系统、基础环境"
+            }
+        ]
+    },
+    {
+        "word": "app",
+        "phonetic": "/æp/",
+        "phrase": "download a useful app",
+        "partOfSpeech": "n. 名词 (application的缩写)",
+        "coreMeaning": "应用，应用程序（尤指移动设备上的应用程序）",
+        "toeicSceneFocus": "移动互联网时代的标志性词汇。托业阅读（关于移动商务、数字生活方式的文章、广告）和听力（日常生活或职场中讨论使用手机应用解决问题、提高效率的场景）中越来越普遍",
+        "keyCollocations": [
+            "mobile app（移动应用）",
+            "download an app（下载应用）",
+            "app store（应用商店）",
+            "weather app（天气应用）",
+            "productivity app（效率应用）"
+        ],
+        "toeicExampleSentences": [
+            "You can manage your bank account and make transfers through our secure mobile app.（您可以通过我们安全的手机应用管理银行账户并进行转账。）",
+            "There’s a great app for learning languages that I use during my commute.（有一款很棒的学习语言的应用，我通勤时用它。）",
+            "The company is developing a new app to streamline the internal reporting process.（公司正在开发一款新的应用，以简化内部报告流程。）"
+        ],
+        "sceneAssociation": "想象“在智能手机屏幕上用手指滑动，寻找并点击一个应用商店（App Store）图标，然后下载一个健身应用（fitness app）”，核心是“安装在智能手机或平板电脑上、用于完成特定任务的小程序”",
+        "confusingWordsComparison": [
+            {
+                "word": "app",
+                "coreDifference": "application的简写，口语化，**特指移动设备（手机、平板）上的应用程序**。",
+                "toeicSceneFocus": "移动应用、手机软件、便捷工具"
+            },
+            {
+                "word": "application",
+                "coreDifference": "正式说法，可指任何设备（包括电脑）上的应用程序，含义更广（还包括“申请”、“应用”）。",
+                "toeicSceneFocus": "正式场合的应用程序、申请、应用（广义）"
+            },
+            {
+                "word": "software",
+                "coreDifference": "不可数名词，是“软件”的总称，包括所有操作系统、应用程序等。App是software的一种。",
+                "toeicSceneFocus": "软件总称、许可证、安装包"
+            }
+        ]
+    },
+
+    {
+      "word": "mobile",
+      "phonetic": "/ˈməʊbaɪl/（英式）/ˈmoʊbl/（美式）",
+      "phrase": "mobile payment system",
+      "partOfSpeech": "adj. 形容词；n. 名词",
+      "coreMeaning": "adj. 移动的；可便携的；灵活的；n. 移动电话；手机",
+      "toeicSceneFocus": "高频出现在商务通信、移动办公、电子支付、营销推广等语境，托业听力（职场对话、广告播报）和阅读（商务邮件、产品说明、公告）中常考查“移动设备、移动服务”相关表达，是描述数字化办公场景的核心词汇",
+      "keyCollocations": [
+          "mobile phone（手机）",
+          "mobile device（移动设备）",
+          "mobile office（移动办公）",
+          "mobile app（移动应用）",
+          "mobile network（移动网络）"
+      ],
+      "toeicExampleSentences": [
+          "Most employees use mobile devices to access company emails while traveling on business.（大多数员工出差时使用移动设备查看公司邮件。）",
+          "The company launched a new mobile payment service to improve customer convenience.（该公司推出了新的移动支付服务，以提升客户便利性。）",
+          "Mobile working arrangements have become increasingly popular in modern enterprises.（移动办公模式在现代企业中越来越普及。）",
+          "Please ensure your mobile number is updated in the company’s HR system.（请确保你的手机号码已在公司人事系统中更新。）"
+      ],
+      "sceneAssociation": "可联想“商务人士在机场用mobile phone处理工作邮件，或公司公告中写着‘支持mobile payment缴纳费用’”的画面，结合“便携、可移动”的核心特征，记忆其在商务场景中的应用",
+      "confusingWordsComparison": [
+          {
+              "word": "mobile",
+              "coreDifference": "侧重“可移动的、便携的”，强调空间上的灵活性，可修饰设备、办公模式等",
+              "toeicSceneFocus": "移动办公、通信、支付等商务场景"
+          },
+          {
+              "word": "portable",
+              "coreDifference": "侧重“便于携带的”，更强调“易搬运”，多修饰具体物品（如电脑、音箱）",
+              "toeicSceneFocus": "办公设备、电子产品描述场景"
+          },
+          {
+              "word": "flexible",
+              "coreDifference": "侧重“灵活的”，可指时间、安排、规则等，范围更广，不局限于“移动”",
+              "toeicSceneFocus": "工作安排、合同条款、管理模式场景"
+          }
+      ]
+  },
+  {
+      "word": "digital",
+      "phonetic": "/ˈdɪdʒɪtl/",
+      "phrase": "digital marketing strategy",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "数字的；数码的；数字化的；使用数字技术的",
+      "toeicSceneFocus": "核心出现在电子商务、数字营销、电子文档、信息技术等托业高频场景，阅读（商务报告、产品介绍）和听力（职场讨论、技术培训）中均高频考查，是描述“数字化商务”的核心词汇",
+      "keyCollocations": [
+          "digital technology（数字技术）",
+          "digital document（电子文档）",
+          "digital economy（数字经济）",
+          "digital platform（数字平台）",
+          "digital transformation（数字化转型）"
+      ],
+      "toeicExampleSentences": [
+          "The company is investing heavily in digital transformation to improve operational efficiency.（该公司正大力投资数字化转型，以提升运营效率。）",
+          "Digital marketing has replaced traditional advertising in many industries.（数字营销已在许多行业取代了传统广告。）",
+          "All official documents are now stored in digital format for easy access.（所有官方文件现在都以数字格式存储，方便查阅。）",
+          "Our team provides training on how to use digital tools for remote work.（我们团队提供关于如何使用数字工具进行远程工作的培训。）"
+      ],
+      "sceneAssociation": "联想“企业会议室中，员工汇报digital marketing方案，展示数字平台的运营数据”，或“商务邮件中要求提交digital版本的报告”，结合“数字技术、数字化”的核心场景记忆",
+      "confusingWordsComparison": [
+          {
+              "word": "digital",
+              "coreDifference": "侧重“基于数字技术的、以数字形式存在的”，核心是“数字/数码”属性",
+              "toeicSceneFocus": "数字化商务、信息技术、营销推广场景"
+          },
+          {
+              "word": "electronic",
+              "coreDifference": "侧重“电子的、依靠电子设备运行的”，范围更广（如电子设备、电子信号）",
+              "toeicSceneFocus": "电子设备、电子支付、电子通信场景"
+          },
+          {
+              "word": "virtual",
+              "coreDifference": "侧重“虚拟的、非实体的”，强调“无物理形态”，如虚拟会议、虚拟产品",
+              "toeicSceneFocus": "远程办公、虚拟会议、线上服务场景"
+          }
+      ]
+  },
+  {
+      "word": "online",
+      "phonetic": "/ˌɒnˈlaɪn/（英式）/ˌɑːnˈlaɪn/（美式）",
+      "phrase": "online customer service",
+      "partOfSpeech": "adj. 形容词；adv. 副词",
+      "coreMeaning": "adj. 在线的；联网的；线上的；adv. 在线地；联网地；在网上",
+      "toeicSceneFocus": "超高频出现在电子商务、线上购物、在线会议、远程办公、线上客服等托业核心场景，听力（客服对话、职场沟通）和阅读（电商平台说明、办公通知）中几乎必考，是描述“线上商务行为”的基础且核心词汇",
+      "keyCollocations": [
+          "online shopping（网上购物）",
+          "online meeting（在线会议）",
+          "online course（在线课程）",
+          "online transaction（线上交易）",
+          "online banking（网上银行）"
+      ],
+      "toeicExampleSentences": [
+          "Our company offers online training courses for new employees worldwide.（我们公司为全球的新员工提供在线培训课程。）",
+          "Most customers prefer to contact online customer service rather than calling the hotline.（大多数客户更喜欢联系线上客服，而非拨打热线电话。）",
+          "All online transactions are protected by advanced encryption technology.（所有线上交易均由先进的加密技术保护。）",
+          "The manager will join the discussion online from his home office tomorrow.（经理明天将从居家办公室在线参与讨论。）"
+      ],
+      "sceneAssociation": "联想“上班族在家通过online meeting参加公司例会，或消费者在电商平台进行online shopping支付”，结合“联网、线上完成”的核心特征记忆，贴合托业高频的远程办公、电商场景",
+      "confusingWordsComparison": [
+          {
+              "word": "online",
+              "coreDifference": "侧重“通过网络连接的、线上进行的”，强调“联网状态/线上渠道”",
+              "toeicSceneFocus": "线上办公、购物、交易、沟通场景"
+          },
+          {
+              "word": "virtual",
+              "coreDifference": "侧重“虚拟的、非实体的”，可指无物理形态的场景/事物（如虚拟展厅），不一定依赖实时联网",
+              "toeicSceneFocus": "虚拟会议、虚拟产品展示、远程协作场景"
+          },
+          {
+              "word": "digital",
+              "coreDifference": "侧重“数字属性的”，是描述事物形态的形容词，而非“行为发生的渠道”",
+              "toeicSceneFocus": "数字化产品、技术、转型场景"
+          }
+      ]
+  },
+  {
+      "word": "offline",
+      "phonetic": "/ˌɒfˈlaɪn/（英式）/ˌɔːfˈlaɪn/（美式）",
+      "phrase": "offline business negotiation",
+      "partOfSpeech": "adj. 形容词；adv. 副词",
+      "coreMeaning": "adj. 离线的；未联网的；线下的；adv. 离线地；未联网地；线下地",
+      "toeicSceneFocus": "常与online对比出现在商务沟通、交易、营销等场景，托业阅读（商务计划、营销方案）和听力（职场对话、客服沟通）中考查“线下活动、离线操作”相关表达，如线下会议、离线文件处理",
+      "keyCollocations": [
+          "offline mode（离线模式）",
+          "offline payment（线下支付）",
+          "offline event（线下活动）",
+          "offline data（离线数据）",
+          "offline meeting（线下会议）"
+      ],
+      "toeicExampleSentences": [
+          "You can download the document for offline viewing when there is no network.（没有网络时，你可以下载该文档离线查看。）",
+          "The company combines online and offline marketing to reach more customers.（该公司结合线上和线下营销，以触达更多客户。）",
+          "Important contracts need to be signed in offline meetings to ensure authenticity.（重要合同需要在离线会议中签署，以确保真实性。）",
+          "The system automatically syncs offline data to the cloud when reconnected to the network.（重新联网后，系统会自动将离线数据同步到云端。）"
+      ],
+      "sceneAssociation": "联想“商务人士在无网络的会议室处理offline文件，或公司举办offline产品发布会，与线上活动形成对比”，结合“未联网、线下实体”的核心特征记忆，贴合托业中“线上线下结合”的商务场景",
+      "confusingWordsComparison": [
+          {
+              "word": "offline",
+              "coreDifference": "侧重“未联网的、线下进行的”，是online的反义词，强调“网络状态/行为渠道”",
+              "toeicSceneFocus": "线下活动、离线操作、非联网场景"
+          },
+          {
+              "word": "physical",
+              "coreDifference": "侧重“物理的、实体的”，强调“有具体形态”，不一定与“网络”相关",
+              "toeicSceneFocus": "实体产品、物理办公场所、线下交易场景"
+          },
+          {
+              "word": "in-person",
+              "coreDifference": "侧重“亲自的、当面的”，强调“人与人直接接触”，如当面面试",
+              "toeicSceneFocus": "线下面试、当面沟通、实地拜访场景"
+          }
+      ]
+  },
+  {
+      "word": "virtual",
+      "phonetic": "/ˈvɜːtʃuəl/",
+      "phrase": "virtual team collaboration",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "虚拟的；模拟的；实质上的；非实体的；（通过计算机）虚拟的",
+      "toeicSceneFocus": "核心出现在远程办公、虚拟会议、线上展会、数字产品等托业高频场景，阅读（商务报告、办公通知）和听力（职场讨论、技术介绍）中常考查“虚拟协作、虚拟服务”相关表达，是后疫情时代商务场景的核心词汇",
+      "keyCollocations": [
+          "virtual meeting（虚拟会议）",
+          "virtual reality（虚拟现实）",
+          "virtual office（虚拟办公室）",
+          "virtual team（虚拟团队）",
+          "virtual exhibition（虚拟展会）"
+      ],
+      "toeicExampleSentences": [
+          "The virtual conference attracted participants from over 50 countries around the world.（这场虚拟会议吸引了来自全球50多个国家的参与者。）",
+          "Many companies now adopt virtual office models to reduce operational costs.（许多公司现在采用虚拟办公室模式，以降低运营成本。）",
+          "The new software provides a virtual reality experience for product demonstration.（这款新软件为产品展示提供了虚拟现实体验。）",
+          "Virtual team collaboration tools have become essential for cross-border projects.（虚拟团队协作工具已成为跨境项目的必备品。）"
+      ],
+      "sceneAssociation": "联想“跨国团队通过virtual meeting讨论项目进度，或企业搭建virtual exhibition展示产品，无需实体场地”，结合“非实体、模拟真实”的核心特征记忆，贴合托业远程办公、数字化商务场景",
+      "confusingWordsComparison": [
+          {
+              "word": "virtual",
+              "coreDifference": "侧重“虚拟的、非实体的”，可指模拟真实场景的数字环境，或“实质上的（虽未正式确认）”",
+              "toeicSceneFocus": "虚拟办公、会议、展会、虚拟现实场景"
+          },
+          {
+              "word": "online",
+              "coreDifference": "侧重“线上的、联网的”，强调“通过网络进行”，不一定是“模拟实体”",
+              "toeicSceneFocus": "线上购物、沟通、交易场景"
+          },
+          {
+              "word": "digital",
+              "coreDifference": "侧重“数字属性的”，描述事物的形态，而非“场景的虚拟性”",
+              "toeicSceneFocus": "数字化技术、转型、文档场景"
+          }
+      ]
+  },
+  {
+      "word": "physical",
+      "phonetic": "/ˈfɪzɪkl/",
+      "phrase": "physical store location",
+      "partOfSpeech": "adj. 形容词；n. 名词",
+      "coreMeaning": "adj. 物理的；实体的；有形的；身体的；物质的；n. 体检",
+      "toeicSceneFocus": "高频出现在商务场景中“实体与虚拟对比”的语境，如实体店铺、物理办公场所、实物产品等，托业阅读（商业计划、产品说明）和听力（职场对话、营销讨论）中常考查“实体资产、线下场景”相关表达，也会考查“体检”的商务用法（如员工体检）",
+      "keyCollocations": [
+          "physical store（实体店）",
+          "physical product（实物产品）",
+          "physical examination（体检）",
+          "physical address（实际地址）",
+          "physical asset（实体资产）"
+      ],
+      "toeicExampleSentences": [
+          "Many e-commerce companies now open physical stores to enhance customer experience.（许多电商公司现在开设实体店，以提升客户体验。）",
+          "All employees are required to take an annual physical examination.（所有员工都需进行年度体检。）",
+          "The contract specifies the physical location of the warehouse for goods storage.（合同明确了用于存储货物的仓库实际地址。）",
+          "Physical copies of the report will be distributed at the meeting tomorrow.（报告的纸质版将在明天的会议上分发。）"
+      ],
+      "sceneAssociation": "联想“电商企业既有线上店铺，也有physical store供客户线下体验，或公司通知员工参加annual physical examination”，结合“实体、有形、身体相关”的核心特征记忆，贴合托业“线上线下结合”“职场福利”等场景",
+      "confusingWordsComparison": [
+          {
+              "word": "physical",
+              "coreDifference": "侧重“物理的、实体的、身体的”，涵盖“有形事物”和“身体相关”两大维度",
+              "toeicSceneFocus": "实体店铺/产品、体检、物理地址场景"
+          },
+          {
+              "word": "tangible",
+              "coreDifference": "侧重“有形的、可触摸的”，仅指向“有实体形态的事物”，无“身体相关”含义",
+              "toeicSceneFocus": "有形资产、实物产品描述场景"
+          },
+          {
+              "word": "offline",
+              "coreDifference": "侧重“线下的、未联网的”，强调“行为渠道/网络状态”，而非“事物形态”",
+              "toeicSceneFocus": "线下活动、离线操作场景"
+          }
+      ]
+  },
+  {
+      "word": "real",
+      "phonetic": "/riːəl/（英式）/ˈriːəl/（美式）",
+      "phrase": "real business opportunity",
+      "partOfSpeech": "adj. 形容词；adv. 副词；n. 名词",
+      "coreMeaning": "adj. 真实的；实际的；真正的；现实的；adv. 真正地；确实地；n. 现实；真实",
+      "toeicSceneFocus": "通用高频词汇，出现在商务谈判、市场分析、职场沟通等各类托业场景，常考查“真实的需求、实际的收益、真正的问题”等表达，阅读（商务报告、合同条款）和听力（职场对话、客户沟通）中均会涉及，侧重“与虚假/想象相反”",
+      "keyCollocations": [
+          "real time（实时）",
+          "real cost（实际成本）",
+          "real demand（真实需求）",
+          "real profit（实际利润）",
+          "real situation（实际情况）"
+      ],
+      "toeicExampleSentences": [
+          "The report reflects the real situation of the company’s market share in Asia.（这份报告反映了该公司在亚洲市场份额的实际情况。）",
+          "We need to focus on meeting customers’ real needs rather than hypothetical ones.（我们需要专注于满足客户的真实需求，而非假设的需求。）",
+          "The system provides real-time updates on inventory levels for the warehouse.（该系统为仓库提供库存水平的实时更新。）",
+          "The real challenge is to reduce costs while maintaining product quality.（真正的挑战是在保持产品质量的同时降低成本。）"
+      ],
+      "sceneAssociation": "联想“商务谈判中，双方讨论项目的real cost和real profit，而非表面数据，或市场调研中挖掘客户的real demand”，结合“真实、实际、非虚构”的核心特征记忆，贴合托业“务实的商务沟通”场景",
+      "confusingWordsComparison": [
+          {
+              "word": "real",
+              "coreDifference": "侧重“真实的、实际的”，强调“与虚假/想象/理论相反”，使用范围最广",
+              "toeicSceneFocus": "各类商务场景，描述真实情况、需求、成本等"
+          },
+          {
+              "word": "actual",
+              "coreDifference": "侧重“实际的、事实上的”，强调“与名义/预期/表面相反”，更侧重“事实层面”",
+              "toeicSceneFocus": "数据对比、实际结果、事实描述场景"
+          },
+          {
+              "word": "genuine",
+              "coreDifference": "侧重“真诚的、正宗的”，可指人的态度或物品的真伪，强调“非伪造/非伪装”",
+              "toeicSceneFocus": "客户态度、产品真伪、合作诚意场景"
+          }
+      ]
+  },
+  {
+      "word": "actual",
+      "phonetic": "/ˈæktʃuəl/",
+      "phrase": "actual sales figures",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "实际的；事实上的；真实的；（强调事情的真实情况）确实的",
+      "toeicSceneFocus": "高频出现在商务报告、财务分析、项目总结等托业场景，常与“预期、计划、名义”对比考查，如“实际销售额、实际成本、实际完成时间”，阅读（财务报表、项目报告）和听力（职场汇报、会议讨论）中侧重考查“数据/结果的实际值”",
+      "keyCollocations": [
+          "actual cost（实际成本）",
+          "actual time（实际时间）",
+          "actual result（实际结果）",
+          "actual income（实际收入）",
+          "actual performance（实际表现）"
+      ],
+      "toeicExampleSentences": [
+          "The actual sales volume was 20% lower than the projected figure.（实际销售额比预计数字低20%。）",
+          "Please provide the actual cost of the project rather than the estimated one.（请提供该项目的实际成本，而非预估成本。）",
+          "The actual completion time of the task was delayed by two weeks due to supply issues.（由于供应问题，该任务的实际完成时间推迟了两周。）",
+          "The manager was surprised by the team’s actual performance in the first quarter.（经理对团队第一季度的实际表现感到惊讶。）"
+      ],
+      "sceneAssociation": "联想“财务人员向管理层汇报actual sales figures，与年初的计划值对比，或项目负责人说明任务的actual completion time”，结合“与预期/计划对比的实际值”的核心特征记忆，贴合托业财务、项目场景",
+      "confusingWordsComparison": [
+          {
+              "word": "actual",
+              "coreDifference": "侧重“实际的、事实上的”，强调“与预期/计划/名义不符的真实结果”，多修饰数据、时间、结果等",
+              "toeicSceneFocus": "财务分析、项目总结、数据汇报场景"
+          },
+          {
+              "word": "real",
+              "coreDifference": "侧重“真实的、非虚构的”，强调“与虚假/想象相反”，使用范围更广",
+              "toeicSceneFocus": "各类商务场景，描述真实需求、情况、成本等"
+          },
+          {
+              "word": "practical",
+              "coreDifference": "侧重“实用的、切实可行的”，强调“具有实际应用价值”，而非“真实与否”",
+              "toeicSceneFocus": "方案、方法、建议的可行性分析场景"
+          }
+      ]
+  },
+  {
+      "word": "genuine",
+      "phonetic": "/ˈdʒenjuɪn/",
+      "phrase": "genuine customer feedback",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "真诚的；真实的；正宗的；非伪造的；（情感、态度）真挚的",
+      "toeicSceneFocus": "出现在客户沟通、产品鉴定、商务合作等托业场景，常考查“真诚的合作意愿、正宗的产品、真实的客户反馈”等表达，阅读（产品说明、合作协议）和听力（客户投诉、商务谈判）中侧重考查“真伪/态度的真实性”",
+      "keyCollocations": [
+          "genuine leather（真皮）",
+          "genuine concern（真切的关心）",
+          "genuine interest（真实的兴趣）",
+          "genuine product（正品）",
+          "genuine apology（真诚的道歉）"
+      ],
+      "toeicExampleSentences": [
+          "The company is committed to providing customers with genuine products and after-sales service.（该公司致力于为客户提供正品和优质的售后服务。）",
+          "Her genuine interest in the project made her a valuable member of the team.（她对该项目的真实兴趣使她成为团队中有价值的一员。）",
+          "We appreciate your genuine feedback on our new service.（我们感谢你对我们新服务的真诚反馈。）",
+          "The supplier offered a genuine apology for the delayed delivery of goods.（供应商为货物延迟交付致以真诚的道歉。）"
+      ],
+      "sceneAssociation": "联想“客户投诉时要求确认产品是genuine product，或商务谈判中一方表达genuine合作意愿，消除对方顾虑”，结合“真挚的态度、非伪造的物品”的核心特征记忆，贴合托业客户服务、商务合作场景",
+      "confusingWordsComparison": [
+          {
+              "word": "genuine",
+              "coreDifference": "侧重“真诚的（态度/情感）、正宗的（物品）”，强调“非伪装/非伪造”",
+              "toeicSceneFocus": "产品真伪、合作态度、客户反馈场景"
+          },
+          {
+              "word": "authentic",
+              "coreDifference": "侧重“真实的、正宗的”，强调“与原版/原产地一致”，更侧重“来源的真实性”",
+              "toeicSceneFocus": "进口产品、文化产品、文件真伪场景"
+          },
+          {
+              "word": "real",
+              "coreDifference": "侧重“真实的、非虚构的”，范围最广，不特指“态度/来源”",
+              "toeicSceneFocus": "各类商务场景，描述真实情况、需求等"
+          }
+      ]
+  },
+  {
+      "word": "authentic",
+      "phonetic": "/ɔːˈθentɪk/",
+      "phrase": "authentic international brand",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "真实的；真正的；正宗的；可靠的；（物品、文件）真迹的；（人）真诚的",
+      "toeicSceneFocus": "出现在产品贸易、品牌认证、文件审核等托业场景，常考查“正宗的进口产品、真实的文件、可靠的信息”等表达，阅读（产品标签、海关文件、商务合同）和听力（贸易谈判、产品介绍）中侧重考查“来源/真伪的权威性”",
+      "keyCollocations": [
+          "authentic document（真实文件）",
+          "authentic information（可靠信息）",
+          "authentic signature（真实签名）",
+          "authentic flavor（正宗口味）",
+          "authentic brand（正宗品牌）"
+      ],
+      "toeicExampleSentences": [
+          "Customs officials need to verify the authenticity of the import documents.（海关官员需要核实进口文件的真实性。）",
+          "This restaurant serves authentic Italian cuisine imported directly from Italy.（这家餐厅供应正宗的意大利菜，食材直接从意大利进口。）",
+          "The contract is invalid without an authentic signature from the legal representative.（没有法定代表人的真实签名，该合同无效。）",
+          "We only provide authentic market research data to our clients.（我们只为客户提供可靠的市场调研数据。）"
+      ],
+      "sceneAssociation": "联想“海关审核authentic import documents，确认产品是authentic brand的正品，或餐厅宣传提供authentic异国料理”，结合“来源正宗、具有权威性的真实”的核心特征记忆，贴合托业国际贸易、产品认证场景",
+      "confusingWordsComparison": [
+          {
+              "word": "authentic",
+              "coreDifference": "侧重“正宗的、真实的”，强调“与原版/原产地/官方标准一致”，具有权威性",
+              "toeicSceneFocus": "国际贸易、产品认证、文件审核场景"
+          },
+          {
+              "word": "genuine",
+              "coreDifference": "侧重“真诚的、非伪造的”，强调“无虚假/伪装”，可修饰态度、物品，无“权威性”侧重",
+              "toeicSceneFocus": "产品真伪、合作态度、客户反馈场景"
+          },
+          {
+              "word": "original",
+              "coreDifference": "侧重“原始的、最初的”，强调“最先存在的版本”，而非“真伪”",
+              "toeicSceneFocus": "文件原件、原始方案、原创设计场景"
+          }
+      ]
+  },
+  {
+      "word": "original",
+      "phonetic": "/əˈrɪdʒənl/",
+      "phrase": "original contract document",
+      "partOfSpeech": "adj. 形容词；n. 名词",
+      "coreMeaning": "adj. 原始的；最初的；原创的；正版的；n. 原件；原作；原创作品",
+      "toeicSceneFocus": "高频出现在商务文件处理、版权、项目设计等托业场景，常考查“合同原件、原始方案、原创设计、正版产品”等表达，阅读（合同条款、版权协议、文件通知）和听力（职场沟通、法务咨询）中侧重考查“版本的最初性/原创性”",
+      "keyCollocations": [
+          "original document（原件）",
+          "original plan（原始计划）",
+          "original design（原创设计）",
+          "original copy（正本）",
+          "original idea（原创想法）"
+      ],
+      "toeicExampleSentences": [
+          "Please submit the original of the contract to the legal department for filing.（请将合同原件提交给法务部备案。）",
+          "The original plan was adjusted due to changes in market demand.（由于市场需求的变化，原始计划被调整了。）",
+          "The company owns the copyright of all original designs of the products.（该公司拥有所有产品原创设计的版权。）",
+          "We only sell original software to avoid legal risks.（我们只销售正版软件，以避免法律风险。）"
+      ],
+      "sceneAssociation": "联想“法务人员要求提交contract的original原件，而非复印件，或设计师展示产品的original design，强调原创性”，结合“最初的、原创的、正版的”核心特征记忆，贴合托业文件处理、版权保护场景",
+      "confusingWordsComparison": [
+          {
+              "word": "original",
+              "coreDifference": "侧重“原始的、最初的、原创的”，强调“最先存在的版本/原创性”，与“复制/改编”相反",
+              "toeicSceneFocus": "文件原件、原创设计、原始计划场景"
+          },
+          {
+              "word": "authentic",
+              "coreDifference": "侧重“正宗的、真实的”，强调“来源/真伪的权威性”，与“伪造/仿冒”相反",
+              "toeicSceneFocus": "国际贸易、产品认证、文件审核场景"
+          },
+          {
+              "word": "genuine",
+              "coreDifference": "侧重“非伪造的、真诚的”，强调“无虚假”，范围更广，无“最初性”含义",
+              "toeicSceneFocus": "产品真伪、合作态度场景"
+          }
+      ]
+  },
+  {
+      "word": "copy",
+      "phonetic": "/ˈkɒpi/（英式）/ˈkɑːpi/（美式）",
+      "phrase": "copy of business license",
+      "partOfSpeech": "n. 名词；v. 动词",
+      "coreMeaning": "n. 副本；复印件；复制品；稿件；一册；v. 复制；抄写；模仿；抄袭",
+      "toeicSceneFocus": "通用高频词汇，出现在文件处理、办公操作、版权等托业场景，常考查“文件复印件、复制数据、抄袭设计”等表达，阅读（文件通知、版权协议）和听力（职场指令、办公沟通）中侧重考查“副本/复制”的基础用法，是办公场景的核心词汇",
+      "keyCollocations": [
+          "copy of a document（文件副本）",
+          "make a copy（复印；复制）",
+          "hard copy（纸质副本）",
+          "soft copy（电子副本）",
+          "copy data（复制数据）"
+      ],
+      "toeicExampleSentences": [
+          "Please make three copies of the invoice for the finance department.（请为财务部复印三份发票。）",
+          "The soft copy of the report has been sent to your email, and the hard copy will be delivered tomorrow.（报告的电子副本已发送至你的邮箱，纸质副本将于明天送达。）",
+          "It is illegal to copy copyrighted products without permission.（未经许可复制受版权保护的产品是违法的。）",
+          "She was asked to copy the key points of the meeting into the official record.（她被要求将会议要点抄写到正式记录中。）"
+      ],
+      "sceneAssociation": "联想“行政人员为客户准备business license的copy复印件，或办公时copy会议纪要的数据”，结合“副本、复制”的核心特征记忆，贴合托业日常办公、文件处理场景",
+      "confusingWordsComparison": [
+          {
+              "word": "copy",
+              "coreDifference": "侧重“副本、复制”，可指文件的复印件、物品的复制品，也可指“复制”的动作，使用范围最广",
+              "toeicSceneFocus": "日常办公、文件处理、版权场景"
+          },
+          {
+              "word": "duplicate",
+              "coreDifference": "侧重“完全相同的副本/复制”，强调“与原件完全一致”，更正式，可指“重复的事物”",
+              "toeicSceneFocus": "正式文件复制、数据备份、重复订单场景"
+          },
+          {
+              "word": "replica",
+              "coreDifference": "侧重“仿制品、复制品”，多指按比例复刻的物品（如产品模型），不用于文件",
+              "toeicSceneFocus": "产品展示、模型制作、工艺品复刻场景"
+          }
+      ]
+  },
+  {
+      "word": "duplicate",
+      "phonetic": "/ˈdjuːplɪkət/（adj./n.）/ˈdjuːplɪkeɪt/（v.）（英式）；/ˈduːplɪkət/（adj./n.）/ˈduːplɪkeɪt/（v.）（美式）",
+      "phrase": "duplicate order confirmation",
+      "partOfSpeech": "adj. 形容词；n. 名词；v. 动词",
+      "coreMeaning": "adj. 完全相同的；复制的；重复的；n. 副本；复制品；完全相同的事物；v. 复制；重复；使加倍",
+      "toeicSceneFocus": "正式商务场景词汇，出现在订单处理、文件备份、数据管理等托业场景，常考查“重复订单、文件副本、复制数据”等表达，阅读（订单确认函、数据报告）和听力（客服沟通、办公指令）中侧重考查“完全一致的副本/重复”，比copy更正式",
+      "keyCollocations": [
+          "duplicate copy（副本）",
+          "duplicate invoice（重复发票）",
+          "duplicate data（重复数据）",
+          "in duplicate（一式两份）",
+          "duplicate a document（复制文件）"
+      ],
+      "toeicExampleSentences": [
+          "The contract should be prepared in duplicate for both parties to sign.（合同应一式两份，供双方签署。）",
+          "The system detected a duplicate order and automatically canceled it.（系统检测到重复订单，并自动取消了该订单。）",
+          "Please duplicate the key documents and store the originals in the safe.（请复制核心文件，并将原件存放在保险柜中。）",
+          "Duplicate data in the database will affect the accuracy of the analysis.（数据库中的重复数据会影响分析的准确性。）"
+      ],
+      "sceneAssociation": "联想“财务人员发现duplicate invoice重复发票，要求核实，或行政人员将合同准备in duplicate一式两份”，结合“完全相同、重复、正式副本”的核心特征记忆，贴合托业正式文件、订单处理场景",
+      "confusingWordsComparison": [
+          {
+              "word": "duplicate",
+              "coreDifference": "侧重“完全相同的、重复的”，强调“与原件无差别”，正式用语，可指“重复的事物（如订单）”",
+              "toeicSceneFocus": "正式文件、订单处理、数据管理场景"
+          },
+          {
+              "word": "copy",
+              "coreDifference": "侧重“副本、复制”，通用用语，可指近似的副本，不一定完全一致，使用范围更广",
+              "toeicSceneFocus": "日常办公、文件复印场景"
+          },
+          {
+              "word": "replica",
+              "coreDifference": "侧重“仿制品”，多指物品的复刻品，不用于文件/数据的重复",
+              "toeicSceneFocus": "产品模型、工艺品复刻场景"
+          }
+      ]
+  },
+  {
+      "word": "replica",
+      "phonetic": "/ˈreplɪkə/",
+      "phrase": "replica of product prototype",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "复制品；仿制品；（按原比例制作的）模型；复刻品",
+      "toeicSceneFocus": "出现在产品展示、贸易、工艺品销售等托业场景，常考查“产品原型复刻品、艺术品仿制品、模型展示”等表达，阅读（产品目录、贸易合同）和听力（产品介绍、展会沟通）中侧重考查“按比例复刻的物品”，不用于文件副本",
+      "keyCollocations": [
+          "replica of a painting（画作复制品）",
+          "product replica（产品复刻品）",
+          "exact replica（精确复刻品）",
+          "scale replica（比例模型）",
+          "replica watch（复刻手表）"
+      ],
+      "toeicExampleSentences": [
+          "The company displayed a scale replica of the new factory at the trade show.（该公司在展会上展示了新工厂的比例模型。）",
+          "This replica of the antique vase is sold at a fraction of the original price.（这个古董花瓶的复刻品售价仅为原件的一小部分。）",
+          "The museum sells high-quality replicas of famous artworks to visitors.（该博物馆向游客出售高质量的著名艺术品复刻品。）",
+          "The engineer made a replica of the product prototype for testing.（工程师制作了产品原型的复刻品用于测试。）"
+      ],
+      "sceneAssociation": "联想“展会中企业展示product prototype的replica比例模型，或商店销售古董的replica复刻品”，结合“按比例复刻的物品、仿制品”的核心特征记忆，贴合托业产品展示、贸易展会场景",
+      "confusingWordsComparison": [
+          {
+              "word": "replica",
+              "coreDifference": "侧重“按原比例制作的复制品/模型”，多指物品（如艺术品、产品），不用于文件，强调“复刻的相似度”",
+              "toeicSceneFocus": "产品展示、展会、工艺品销售场景"
+          },
+          {
+              "word": "copy",
+              "coreDifference": "侧重“副本、复制件”，可指文件、物品的复制，通用用语，不一定按比例",
+              "toeicSceneFocus": "日常办公、文件复印场景"
+          },
+          {
+              "word": "duplicate",
+              "coreDifference": "侧重“完全相同的副本/重复事物”，正式用语，可指文件、数据、订单等",
+              "toeicSceneFocus": "正式文件、订单处理场景"
+          }
+      ]
+  },
+  {
+      "word": "counterfeit",
+      "phonetic": "/ˈkaʊntəfɪt/",
+      "phrase": "counterfeit brand watches",
+      "partOfSpeech": "adj. 形容词；n. 名词；v. 动词",
+      "coreMeaning": "adj. 伪造的；假冒的；n. 伪造品；假冒商品；v. 伪造；假冒；仿造",
+      "toeicSceneFocus": "出现在产品贸易、海关检查、知识产权保护等托业场景，常考查“假冒品牌产品、伪造文件、假币”等表达，阅读（海关公告、版权协议、产品投诉）和听力（贸易谈判、客户投诉）中侧重考查“故意伪造的假冒品”，具有违法性",
+      "keyCollocations": [
+          "counterfeit money（假币）",
+          "counterfeit goods（假冒商品）",
+          "counterfeit signature（伪造签名）",
+          "counterfeit product（假冒产品）",
+          "counterfeit document（伪造文件）"
+      ],
+      "toeicExampleSentences": [
+          "Customs seized a large quantity of counterfeit luxury goods at the port.（海关在港口查获了大量假冒奢侈品。）",
+          "Selling counterfeit products will result in legal liability and fines.（销售假冒产品将承担法律责任并被罚款。）",
+          "The bank has a special team to identify counterfeit banknotes.（该银行有专门的团队识别假币。）",
+          "He was accused of counterfeiting the company’s official seal to sign contracts.（他被指控伪造公司公章签署合同。）"
+      ],
+      "sceneAssociation": "联想“海关查获counterfeit luxury goods假冒奢侈品，或企业起诉竞争对手销售counterfeit product假冒产品”，结合“故意伪造、违法的假冒品”的核心特征记忆，贴合托业国际贸易、知识产权场景",
+      "confusingWordsComparison": [
+          {
+              "word": "counterfeit",
+              "coreDifference": "侧重“伪造的、假冒的”，强调“故意仿造以冒充正品”，具有违法性，多修饰商品、货币、文件等",
+              "toeicSceneFocus": "海关检查、知识产权、产品打假场景"
+          },
+          {
+              "word": "fake",
+              "coreDifference": "侧重“假的、伪造的”，通用口语化用语，可修饰物品、表情、身份等，违法性不如counterfeit强",
+              "toeicSceneFocus": "日常商务沟通、产品真伪识别场景"
+          },
+          {
+              "word": "forged",
+              "coreDifference": "侧重“伪造的（文件、签名）”，强调“通过篡改/仿造制作假的文件/签名”，动词forge更常用",
+              "toeicSceneFocus": "法务、文件审核场景"
+          }
+      ]
+  },
+  {
+      "word": "fake",
+      "phonetic": "/feɪk/",
+      "phrase": "fake product certification",
+      "partOfSpeech": "adj. 形容词；n. 名词；v. 动词",
+      "coreMeaning": "adj. 假的；伪造的；冒充的；n. 假货；赝品；冒充者；v. 伪造；假装；冒充",
+      "toeicSceneFocus": "通用高频词汇，出现在客户沟通、产品鉴定、职场社交等托业场景，常考查“假冒产品、假证书、假装合作意愿”等表达，阅读（产品投诉、商务邮件）和听力（客户对话、职场沟通）中用法灵活，比counterfeit更口语化，违法性较弱",
+      "keyCollocations": [
+          "fake ID（假身份证）",
+          "fake signature（假签名）",
+          "fake smile（假笑）",
+          "fake news（假新闻）",
+          "fake brand（假冒品牌）"
+      ],
+      "toeicExampleSentences": [
+          "The customer returned the product because it was a fake and not genuine.（该客户退回了产品，因为它是假货而非正品。）",
+          "He was caught using a fake ID to enter the restricted area of the company.（他因使用假身份证进入公司禁区而被抓住。）",
+          "Her fake enthusiasm for the project made the manager suspicious.（她对该项目的虚假热情让经理产生了怀疑。）",
+          "The company issued a statement to refute the fake news about its bankruptcy.（该公司发表声明，驳斥关于其破产的假新闻。）"
+      ],
+      "sceneAssociation": "联想“客户发现购买的产品有fake certification假证书，要求退货，或员工假装fake enthusiasm虚假热情参与项目”，结合“假的、伪造的、假装的”核心特征记忆，贴合托业客户服务、职场沟通场景",
+      "confusingWordsComparison": [
+          {
+              "word": "fake",
+              "coreDifference": "侧重“假的、伪造的”，口语化，可修饰物品、表情、身份等，违法性弱，还可指“假装”",
+              "toeicSceneFocus": "日常商务沟通、产品真伪、职场社交场景"
+          },
+          {
+              "word": "counterfeit",
+              "coreDifference": "侧重“故意伪造的、假冒的”，正式用语，强调“冒充正品牟利”，具有违法性，多修饰商品、货币",
+              "toeicSceneFocus": "海关检查、知识产权、产品打假场景"
+          },
+          {
+              "word": "false",
+              "coreDifference": "侧重“错误的、虚假的”，多修饰信息、陈述、证件等，强调“与事实不符”",
+              "toeicSceneFocus": "信息核实、证件审核、陈述验证场景"
+          }
+      ]
+  },
+  {
+      "word": "false",
+      "phonetic": "/fɔːls/（英式）/fɔːls/（美式）",
+      "phrase": "false business information",
+      "partOfSpeech": "adj. 形容词；adv. 副词；n. 名词",
+      "coreMeaning": "adj. 错误的；虚假的；伪造的；不真实的；假的；adv. 欺诈地；叛卖地；n. 谬误；欺骗",
+      "toeicSceneFocus": "高频出现在商务沟通、信息核实、法务、客户投诉等托业场景，常考查“虚假信息、错误陈述、伪造证件”等表达，阅读（商务报告、合同条款、投诉函）和听力（职场对话、法务咨询）中侧重考查“与事实/真相不符”，可修饰信息、证件、陈述等",
+      "keyCollocations": [
+          "false information（虚假信息）",
+          "false statement（虚假陈述）",
+          "false document（假文件）",
+          "false alarm（假警报）",
+          "false claim（虚假索赔）"
+      ],
+      "toeicExampleSentences": [
+          "Providing false information on the application form will result in rejection.（在申请表上提供虚假信息将导致申请被驳回。）",
+          "The company was sued for making false claims about the effectiveness of its products.（该公司因对其产品功效作出虚假宣传而被起诉。）",
+          "The alarm turned out to be a false one, and the office was safe.（警报最终被证实是假的，办公室是安全的。）",
+          "He made a false statement in the meeting to cover up the mistake.（他在会议上作出虚假陈述，以掩盖错误。）"
+      ],
+      "sceneAssociation": "联想“面试官发现候选人提供false information虚假信息，拒绝录用，或公司因false claim虚假宣传被投诉”，结合“与事实不符、错误的、虚假的”核心特征记忆，贴合托业信息核实、法务投诉场景",
+      "confusingWordsComparison": [
+          {
+              "word": "false",
+              "coreDifference": "侧重“错误的、虚假的”，强调“与事实/真相不符”，可修饰信息、陈述、证件等，中性偏负面",
+              "toeicSceneFocus": "信息核实、法务、投诉、警报场景"
+          },
+          {
+              "word": "fake",
+              "coreDifference": "侧重“伪造的、假装的”，口语化，可修饰物品、表情等，还可作名词/动词",
+              "toeicSceneFocus": "产品真伪、职场社交场景"
+          },
+          {
+              "word": "spurious",
+              "coreDifference": "侧重“虚假的、欺骗性的”，正式用语，强调“看似真实实则虚假”",
+              "toeicSceneFocus": "数据、论据、借口场景"
+          }
+      ]
+  },
+  {
+      "word": "spurious",
+      "phonetic": "/ˈspjʊəriəs/（英式）/ˈspjʊriəs/（美式）",
+      "phrase": "spurious market research data",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "虚假的；伪造的；欺骗性的；看似合理实则错误的；（论据、借口）站不住脚的",
+      "toeicSceneFocus": "正式商务场景词汇，出现在市场分析、商务谈判、法务等托业场景，常考查“虚假数据、站不住脚的借口、欺骗性的论据”等表达，阅读（商务报告、法务文件）和听力（高端商务谈判、数据分析汇报）中侧重考查“看似真实实则虚假”，比false更正式、更强调“欺骗性”",
+      "keyCollocations": [
+          "spurious argument（虚假论据）",
+          "spurious excuse（站不住脚的借口）",
+          "spurious claim（虚假索赔）",
+          "spurious data（虚假数据）",
+          "spurious evidence（伪证）"
+      ],
+      "toeicExampleSentences": [
+          "The analyst pointed out that the spurious data in the report misled the management.（分析师指出，报告中的虚假数据误导了管理层。）",
+          "The supplier provided a spurious excuse for the delayed delivery of goods.（供应商为货物延迟交付提供了站不住脚的借口。）",
+          "His spurious argument was quickly refuted by the opposing party in the negotiation.（他的虚假论据在谈判中很快被对方驳斥。）",
+          "The court rejected the claim due to spurious evidence provided by the plaintiff.（法院因原告提供伪证而驳回了该索赔请求。）"
+      ],
+      "sceneAssociation": "联想“市场分析师发现spurious data虚假数据，指出其欺骗性，或谈判中一方用spurious excuse站不住脚的借口推脱责任”，结合“看似真实、实则虚假、具有欺骗性”的核心特征记忆，贴合托业高端商务谈判、数据分析场景",
+      "confusingWordsComparison": [
+          {
+              "word": "spurious",
+              "coreDifference": "侧重“虚假的、欺骗性的”，正式用语，强调“看似合理实则错误/虚假”，多修饰论据、数据、借口",
+              "toeicSceneFocus": "高端商务谈判、数据分析、法务场景"
+          },
+          {
+              "word": "false",
+              "coreDifference": "侧重“错误的、虚假的”，通用用语，强调“与事实不符”，使用范围更广",
+              "toeicSceneFocus": "各类商务场景，修饰信息、陈述、证件等"
+          },
+          {
+              "word": "bogus",
+              "coreDifference": "侧重“伪造的、假的”，口语化，强调“毫无根据的、伪造的”，多修饰证件、票据、借口",
+              "toeicSceneFocus": "日常商务沟通、证件审核场景"
+          }
+      ]
+  },
+  {
+      "word": "bogus",
+      "phonetic": "/ˈbəʊɡəs/（英式）/ˈboʊɡəs/（美式）",
+      "phrase": "bogus business license",
+      "partOfSpeech": "adj. 形容词；n. 名词",
+      "coreMeaning": "adj. 伪造的；假的；虚假的；毫无根据的；n. 假货；伪造品",
+      "toeicSceneFocus": "口语化商务词汇，出现在证件审核、客户沟通、职场投诉等托业场景，常考查“伪造的证件、虚假的票据、毫无根据的谣言”等表达，阅读（投诉函、审核报告）和听力（职场对话、客服沟通）中侧重考查“明显伪造/毫无根据”，比fake更口语化，比spurious更直白",
+      "keyCollocations": [
+          "bogus certificate（假证书）",
+          "bogus invoice（假发票）",
+          "bogus claim（虚假索赔）",
+          "bogus rumor（无根据的谣言）",
+          "bogus contract（假合同）"
+      ],
+      "toeicExampleSentences": [
+          "The company was found to be operating with a bogus business license.（该公司被发现使用伪造的营业执照经营。）",
+          "The accountant identified a number of bogus invoices in the financial records.（会计在财务记录中发现了多张假发票。）",
+          "Bogus rumors about the company’s bankruptcy caused a drop in its stock price.（关于该公司破产的无根据谣言导致其股价下跌。）",
+          "She was charged with using a bogus certificate to apply for the senior position.（她因使用假证书申请高级职位而被起诉。）"
+      ],
+      "sceneAssociation": "联想“审核人员发现企业使用bogus business license伪造的营业执照，或财务人员查出bogus invoice假发票”，结合“伪造的、毫无根据的、明显虚假”的核心特征记忆，贴合托业证件审核、财务核查场景",
+      "confusingWordsComparison": [
+          {
+              "word": "bogus",
+              "coreDifference": "侧重“伪造的、毫无根据的”，口语化，强调“明显虚假、无依据”，多修饰证件、票据、谣言",
+              "toeicSceneFocus": "证件审核、财务核查、谣言澄清场景"
+          },
+          {
+              "word": "fake",
+              "coreDifference": "侧重“假的、伪造的”，通用口语化用语，可修饰物品、表情、身份等，范围更广",
+              "toeicSceneFocus": "产品真伪、职场社交场景"
+          },
+          {
+              "word": "fraudulent",
+              "coreDifference": "侧重“欺诈性的、诈骗的”，正式用语，强调“涉及欺诈行为”，具有违法性",
+              "toeicSceneFocus": "金融诈骗、合同欺诈、商业欺诈场景"
+          }
+      ]
+  },
+  {
+      "word": "fraudulent",
+      "phonetic": "/ˈfrɔːdjələnt/（英式）/ˈfrɔːdʒələnt/（美式）",
+      "phrase": "fraudulent financial transaction",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "欺诈的；诈骗的；骗人的；不诚实的；（行为）涉及欺诈的",
+      "toeicSceneFocus": "正式商务/法务场景词汇，出现在金融、法务、商务合规等托业场景，常考查“欺诈性交易、财务造假、商业欺诈”等表达，阅读（法务文件、金融报告、合规通知）和听力（高端商务谈判、法务咨询）中侧重考查“涉及欺诈的违法行为”，是托业金融/法务场景的核心词汇",
+      "keyCollocations": [
+          "fraudulent activity（欺诈活动）",
+          "fraudulent transaction（欺诈交易）",
+          "fraudulent practice（欺诈行为）",
+          "fraudulent claim（欺诈性索赔）",
+          "fraudulent accounting（财务造假）"
+      ],
+      "toeicExampleSentences": [
+          "The bank reported the fraudulent transaction to the police immediately.（该银行立即向警方报告了这起欺诈交易。）",
+          "The CEO was arrested for fraudulent accounting to hide the company’s losses.（首席执行官因财务造假掩盖公司亏损而被捕。）",
+          "The company has a strict policy to prevent fraudulent practices in procurement.（该公司有严格的政策，防止采购中的欺诈行为。）",
+          "Insurance companies often investigate to avoid paying fraudulent claims.（保险公司经常进行调查，以避免支付欺诈性索赔。）"
+      ],
+      "sceneAssociation": "联想“银行风控部门发现fraudulent transaction欺诈交易，报警处理，或审计人员查出企业fraudulent accounting财务造假”，结合“欺诈性的、涉及违法诈骗”的核心特征记忆，贴合托业金融、法务、合规场景",
+      "confusingWordsComparison": [
+          {
+              "word": "fraudulent",
+              "coreDifference": "侧重“欺诈的、诈骗的”，正式用语，强调“涉及欺诈违法行为”，多修饰行为、交易、财务操作",
+              "toeicSceneFocus": "金融、法务、商务合规场景"
+          },
+          {
+              "word": "counterfeit",
+              "coreDifference": "侧重“伪造的、假冒的”，强调“仿造正品牟利”，多修饰商品、货币、文件",
+              "toeicSceneFocus": "海关检查、产品打假场景"
+          },
+          {
+              "word": "bogus",
+              "coreDifference": "侧重“伪造的、无根据的”，口语化，强调“明显虚假”，无“欺诈牟利”的核心侧重",
+              "toeicSceneFocus": "证件审核、财务核查场景"
+          }
+      ]
+  },
+  {
+      "word": "obligated",
+      "phonetic": "/ˈɒblɪɡeɪtɪd/",
+      "phrase": "feel obligated to comply",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "有义务的；必须做的（指因法律、道德或承诺而必须履行某事）",
+      "toeicSceneFocus": "多出现于商务合同、公司政策、道德规范等语境，描述个人或公司必须遵守的责任，在托业阅读（合同条款、政策文件）和听力（职责讨论）中常见",
+      "keyCollocations": [
+          "obligated to do sth.",
+          "legally obligated",
+          "morally obligated",
+          "feel obligated"
+      ],
+      "toeicExampleSentences": [
+          "Employees are obligated to report any conflicts of interest to their supervisor.（员工有义务向主管报告任何利益冲突。）",
+          "The company is legally obligated to provide a safe working environment.（公司有法律义务提供安全的工作环境。）"
+      ],
+      "sceneAssociation": "联想职场中签署合同的场景，或经理向员工解释公司政策时强调‘you are obligated to follow these rules’",
+      "confusingWordsComparison": [
+          {
+              "word": "committed",
+              "coreDifference": "obligated 强调外部义务（如法律），committed 强调内部承诺和投入",
+              "toeicSceneFocus": "obligated 用于责任和义务，committed 用于项目承诺"
+          },
+          {
+              "word": "dedicated",
+              "coreDifference": "dedicated 强调奉献和专注，而非义务",
+              "toeicSceneFocus": "dedicated 用于描述员工对工作的奉献"
+          }
+      ]
+  },
+  {
+      "word": "committed",
+      "phonetic": "/kəˈmɪtɪd/",
+      "phrase": "committed to achieving goals",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "承诺的；投入的（指对某事或某人有强烈的责任感和奉献精神）",
+      "toeicSceneFocus": "常用于职场绩效、项目管理、团队合作等语境，描述个人或团队对目标的投入程度，在托业听力（工作讨论）和阅读（公司报告）中频繁出现",
+      "keyCollocations": [
+          "committed to doing sth.",
+          "highly committed",
+          "committed employee",
+          "commit to a plan"
+      ],
+      "toeicExampleSentences": [
+          "Our team is committed to meeting the project deadline.（我们团队致力于满足项目截止日期。）",
+          "She is a committed employee who always goes the extra mile.（她是一位敬业的员工，总是付出额外努力。）"
+      ],
+      "sceneAssociation": "想象团队会议上，经理强调‘we need to be committed to the new strategy’，或员工在绩效评估中表达对公司目标的承诺",
+      "confusingWordsComparison": [
+          {
+              "word": "dedicated",
+              "coreDifference": "committed 强调承诺和责任，dedicated 强调专注和奉献",
+              "toeicSceneFocus": "两者都用于描述员工态度，但 committed 更侧重于责任，dedicated 更侧重于热情"
+          },
+          {
+              "word": "obligated",
+              "coreDifference": "obligated 强制性更强，committed 更自愿",
+              "toeicSceneFocus": "obligated 用于法律义务，committed 用于个人承诺"
+          }
+      ]
+  },
+  {
+      "word": "dedicated",
+      "phonetic": "/ˈdedɪkeɪtɪd/",
+      "phrase": "dedicated professional team",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "奉献的；专注的（指全身心投入某项工作或事业）",
+      "toeicSceneFocus": "常见于人力资源描述、员工表彰、公司文化宣传等语境，在托业阅读（招聘广告、公司介绍）和听力（同事赞扬）中考查",
+      "keyCollocations": [
+          "dedicated to sth.",
+          "dedicated team",
+          "highly dedicated",
+          "dedicated professional"
+      ],
+      "toeicExampleSentences": [
+          "The dedicated staff worked overtime to complete the project.（敬业的员工加班完成项目。）",
+          "He is dedicated to improving customer satisfaction.（他致力于提高客户满意度。）"
+      ],
+      "sceneAssociation": "联想公司颁奖典礼上，表彰‘dedicated employee of the year’的画面，或项目团队中成员互相鼓励‘stay dedicated’",
+      "confusingWordsComparison": [
+          {
+              "word": "committed",
+              "coreDifference": "dedicated 强调专注和热情，committed 强调责任和承诺",
+              "toeicSceneFocus": "dedicated 用于描述对工作的热爱，committed 用于描述对目标的坚持"
+          },
+          {
+              "word": "devoted",
+              "coreDifference": "devoted 更情感化，常用于个人关系；dedicated 更职业化",
+              "toeicSceneFocus": "dedicated 多用于职场，devoted 可用于工作或个人奉献"
+          }
+      ]
+  },
+  {
+      "word": "devoted",
+      "phonetic": "/dɪˈvoʊtɪd/",
+      "phrase": "devoted to her career",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "献身的；忠诚的（指深爱或全身心投入某人或某事）",
+      "toeicSceneFocus": "多用于描述个人对工作、家庭或事业的深层情感投入，在托业听力（个人访谈）和阅读（人物传记）中出现",
+      "keyCollocations": [
+          "devoted to sb./sth.",
+          "devoted parent",
+          "devoted follower",
+          "deeply devoted"
+      ],
+      "toeicExampleSentences": [
+          "She is devoted to her family and her job.（她全心投入家庭和工作。）",
+          "The manager is devoted to developing his team's skills.（经理致力于培养团队技能。）"
+      ],
+      "sceneAssociation": "想象一位资深员工在采访中说‘I’m devoted to this company’，或描述一位 devoted 的领导如何关心下属",
+      "confusingWordsComparison": [
+          {
+              "word": "dedicated",
+              "coreDifference": "devoted 情感更强烈，常用于个人关系；dedicated 更中性，用于职业",
+              "toeicSceneFocus": "devoted 用于深层情感投入，dedicated 用于职业奉献"
+          },
+          {
+              "word": "loyal",
+              "coreDifference": "loyal 强调忠诚不渝，devoted 强调热爱和投入",
+              "toeicSceneFocus": "loyal 用于客户或员工忠诚度，devoted 用于个人奉献"
+          }
+      ]
+  },
+  {
+      "word": "loyal",
+      "phonetic": "/ˈlɔɪəl/",
+      "phrase": "loyal customer base",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "忠诚的；忠实的（指对某人、组织或品牌保持长期支持）",
+      "toeicSceneFocus": "常见于客户关系、品牌管理、团队建设等语境，在托业阅读（市场营销文章）和听力（客户反馈）中频繁考查",
+      "keyCollocations": [
+          "loyal to the company",
+          "loyal customer",
+          "remain loyal",
+          "loyal employee"
+      ],
+      "toeicExampleSentences": [
+          "We value our loyal customers and offer them discounts.（我们重视忠诚客户并提供折扣。）",
+          "He has been a loyal employee for over 10 years.（他是一位忠诚的员工，已工作超过10年。）"
+      ],
+      "sceneAssociation": "联想公司会议上讨论‘how to retain loyal customers’，或员工在入职周年时被表彰为‘loyal staff’",
+      "confusingWordsComparison": [
+          {
+              "word": "faithful",
+              "coreDifference": "loyal 强调支持和不背叛，faithful 强调守信和可靠",
+              "toeicSceneFocus": "loyal 用于客户或员工忠诚，faithful 用于承诺或关系中的忠实"
+          },
+          {
+              "word": "devoted",
+              "coreDifference": "devoted 强调情感投入，loyal 强调行为上的忠诚",
+              "toeicSceneFocus": "devoted 用于个人奉献，loyal 用于组织忠诚"
+          }
+      ]
+  },
+  {
+      "word": "faithful",
+      "phonetic": "/ˈfeɪθfəl/",
+      "phrase": "faithful to the agreement",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "忠诚的；守信的（指遵守承诺或保持忠实）",
+      "toeicSceneFocus": "多用于合同履行、关系维护、品牌忠诚等语境，在托业阅读（合同条款）和听力（商务谈判）中出现",
+      "keyCollocations": [
+          "faithful to sth.",
+          "faithful customer",
+          "remain faithful",
+          "faithful representation"
+      ],
+      "toeicExampleSentences": [
+          "The supplier has been faithful to the contract terms.（供应商一直遵守合同条款。）",
+          "We need to stay faithful to our core values.（我们需要坚守核心价值观。）"
+      ],
+      "sceneAssociation": "想象商务会议中，一方强调‘we must be faithful to our promises’，或客户对品牌表示‘I’m faithful to this product’",
+      "confusingWordsComparison": [
+          {
+              "word": "loyal",
+              "coreDifference": "faithful 强调守信和一致性，loyal 强调支持和不背叛",
+              "toeicSceneFocus": "faithful 用于遵守承诺，loyal 用于长期支持"
+          },
+          {
+              "word": "trustworthy",
+              "coreDifference": "trustworthy 强调可信赖，faithful 强调忠实",
+              "toeicSceneFocus": "trustworthy 用于描述可靠的人，faithful 用于描述守信的行为"
+          }
+      ]
+  },
+  {
+      "word": "trustworthy",
+      "phonetic": "/ˈtrʌstˌwɜːrði/",
+      "phrase": "trustworthy business partner",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "值得信赖的；可靠的（指为人诚实可靠，可信任）",
+      "toeicSceneFocus": "常用于招聘评估、合作伙伴选择、领导力评价等语境，在托业阅读（公司简介）和听力（团队讨论）中常见",
+      "keyCollocations": [
+          "trustworthy person",
+          "trustworthy source",
+          "rely on trustworthy",
+          "trustworthy employee"
+      ],
+      "toeicExampleSentences": [
+          "We need a trustworthy accountant to handle our finances.（我们需要一位值得信赖的会计师来管理财务。）",
+          "Her trustworthy nature makes her a great team leader.（她值得信赖的品质使她成为优秀的团队领导。）"
+      ],
+      "sceneAssociation": "想象面试中，面试官询问‘how do you prove you are trustworthy?’，或公司评估供应商时强调‘must be trustworthy’",
+      "confusingWordsComparison": [
+          {
+              "word": "reliable",
+              "coreDifference": "trustworthy 强调诚实和可信赖，reliable 强调一致性和可预测性",
+              "toeicSceneFocus": "trustworthy 用于人格可信，reliable 用于行为可靠"
+          },
+          {
+              "word": "faithful",
+              "coreDifference": "faithful 强调忠实，trustworthy 强调可信任",
+              "toeicSceneFocus": "faithful 用于承诺，trustworthy 用于人格"
+          }
+      ]
+  },
+  {
+      "word": "reliable",
+      "phonetic": "/rɪˈlaɪəbəl/",
+      "phrase": "reliable source of information",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "可靠的；可依赖的（指某人或某物 consistently perform well without failure）",
+      "toeicSceneFocus": "多用于描述设备、数据、人员等在工作中的稳定性，在托业阅读（产品说明、绩效评估）和听力（工作汇报）中频繁出现",
+      "keyCollocations": [
+          "reliable source",
+          "reliable employee",
+          "highly reliable",
+          "reliable performance"
+      ],
+      "toeicExampleSentences": [
+          "Our new software is more reliable and reduces errors.（我们的新软件更可靠，减少了错误。）",
+          "She is a reliable team member who always meets deadlines.（她是一位可靠的团队成员，总是按时完成任务。）"
+      ],
+      "sceneAssociation": "想象项目会议上，经理说‘we need reliable data to make decisions’，或员工被评价为‘very reliable’",
+      "confusingWordsComparison": [
+          {
+              "word": "dependable",
+              "coreDifference": "reliable 强调一致性和性能，dependable 强调可依赖和信任",
+              "toeicSceneFocus": "reliable 用于设备或系统，dependable 用于人际关系"
+          },
+          {
+              "word": "trustworthy",
+              "coreDifference": "trustworthy 强调可信赖，reliable 强调可预测",
+              "toeicSceneFocus": "trustworthy 用于人格，reliable 用于行为"
+          }
+      ]
+  },
+  {
+      "word": "dependable",
+      "phonetic": "/dɪˈpendəbəl/",
+      "phrase": "dependable team member",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "可靠的；可依赖的（指值得信任，能在需要时提供支持）",
+      "toeicSceneFocus": "常用于团队合作、领导力、客户服务等语境，在托业听力（同事互动）和阅读（公司文化）中考查",
+      "keyCollocations": [
+          "dependable person",
+          "dependable support",
+          "be dependable",
+          "rely on dependable"
+      ],
+      "toeicExampleSentences": [
+          "A dependable assistant can greatly improve efficiency.（一位可靠的助手能大大提高效率。）",
+          "We need dependable suppliers to ensure smooth operations.（我们需要可靠的供应商来确保运营顺畅。）"
+      ],
+      "sceneAssociation": "想象团队中成员说‘I can count on him, he’s very dependable’，或经理在评估时写道‘shows dependable work ethic’",
+      "confusingWordsComparison": [
+          {
+              "word": "reliable",
+              "coreDifference": "dependable 强调可依赖和信任，reliable 强调一致性和性能",
+              "toeicSceneFocus": "dependable 用于人际关系，reliable 用于设备或系统"
+          },
+          {
+              "word": "trustworthy",
+              "coreDifference": "trustworthy 强调可信赖，dependable 强调可用性",
+              "toeicSceneFocus": "trustworthy 用于诚实，dependable 用于支持"
+          }
+      ]
+  },
+  {
+      "word": "credible",
+      "phonetic": "/ˈkredəbəl/",
+      "phrase": "credible witness testimony",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "可信的；可靠的（指信息、来源或人具有可信度）",
+      "toeicSceneFocus": "多用于商务报告、新闻媒体、学术研究等语境，在托业阅读（文章分析）和听力（新闻播报）中常见",
+      "keyCollocations": [
+          "credible source",
+          "credible evidence",
+          "credible candidate",
+          "make credible"
+      ],
+      "toeicExampleSentences": [
+          "The report lacks credible data to support its conclusions.（报告缺乏可信数据支持其结论。）",
+          "She is a credible expert in the field of finance.（她是金融领域的可信专家。）"
+      ],
+      "sceneAssociation": "想象法庭或商务会议中，讨论‘is this source credible?’，或评估新闻时强调‘must be credible’",
+      "confusingWordsComparison": [
+          {
+              "word": "believable",
+              "coreDifference": "credible 强调专业可信度，believable 强调一般可信性",
+              "toeicSceneFocus": "credible 用于专家或数据，believable 用于故事或借口"
+          },
+          {
+              "word": "reliable",
+              "coreDifference": "reliable 强调一致性，credible 强调可信度",
+              "toeicSceneFocus": "reliable 用于性能，credible 用于信息"
+          }
+      ]
+  },
+  {
+      "word": "believable",
+      "phonetic": "/bɪˈliːvəbəl/",
+      "phrase": "believable explanation",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "可信的；合理的（指某事容易被接受或相信）",
+      "toeicSceneFocus": "常用于日常沟通、问题解决、客户反馈等语境，在托业听力（对话解释）和阅读（描述性文章）中出现",
+      "keyCollocations": [
+          "believable story",
+          "believable excuse",
+          "make believable",
+          "hardly believable"
+      ],
+      "toeicExampleSentences": [
+          "The manager provided a believable reason for the delay.（经理给出了一个可信的延迟理由。）",
+          "We need believable marketing claims to attract customers.（我们需要可信的营销宣传来吸引客户。）"
+      ],
+      "sceneAssociation": "想象客户抱怨时，客服给出‘a believable explanation’，或同事间讨论‘is that believable?’",
+      "confusingWordsComparison": [
+          {
+              "word": "credible",
+              "coreDifference": "believable 强调容易相信，credible 强调专业可信",
+              "toeicSceneFocus": "believable 用于日常场景，credible 用于正式场合"
+          },
+          {
+              "word": "trustworthy",
+              "coreDifference": "trustworthy 强调人格可信，believable 强调内容可信",
+              "toeicSceneFocus": "trustworthy 用于人，believable 用于说法"
+          }
+      ]
+  },
+  {
+      "word": "honest",
+      "phonetic": "/ˈɒnɪst/",
+      "phrase": "honest feedback",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "诚实的；坦率的（指言行真实，不欺骗）",
+      "toeicSceneFocus": "多用于绩效评估、沟通反馈、商业道德等语境，在托业阅读（公司政策）和听力（职场对话）中频繁考查",
+      "keyCollocations": [
+          "honest person",
+          "honest feedback",
+          "be honest with",
+          "honest mistake"
+      ],
+      "toeicExampleSentences": [
+          "We appreciate your honest opinion on the new proposal.（我们感谢您对新提议的诚实意见。）",
+          "An honest employee admits mistakes and learns from them.（诚实的员工承认错误并从中学习。）"
+      ],
+      "sceneAssociation": "想象绩效评估中，经理说‘I need you to be honest about your challenges’，或团队会议中鼓励‘honest communication’",
+      "confusingWordsComparison": [
+          {
+              "word": "ethical",
+              "coreDifference": "honest 强调诚实，ethical 强调遵守道德规范",
+              "toeicSceneFocus": "honest 用于个人行为，ethical 用于职业操守"
+          },
+          {
+              "word": "moral",
+              "coreDifference": "moral 强调道德标准，honest 强调真实",
+              "toeicSceneFocus": "moral 用于原则，honest 用于言行"
+          }
+      ]
+  },
+  {
+      "word": "ethical",
+      "phonetic": "/ˈeθɪkəl/",
+      "phrase": "ethical business practices",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "道德的；伦理的（指符合职业道德或社会规范）",
+      "toeicSceneFocus": "常见于公司治理、企业社会责任、行业规范等语境，在托业阅读（商业伦理文章）和听力（政策讨论）中出现",
+      "keyCollocations": [
+          "ethical standards",
+          "ethical behavior",
+          "ethical dilemma",
+          "unethical practice"
+      ],
+      "toeicExampleSentences": [
+          "The company follows ethical guidelines in all operations.（公司在所有运营中遵循道德准则。）",
+          "Choosing ethical suppliers is part of our commitment.（选择道德供应商是我们承诺的一部分。）"
+      ],
+      "sceneAssociation": "想象公司会议上讨论‘ethical implications of the decision’，或培训中强调‘maintain ethical standards’",
+      "confusingWordsComparison": [
+          {
+              "word": "moral",
+              "coreDifference": "ethical 侧重职业伦理，moral 侧重个人道德",
+              "toeicSceneFocus": "ethical 用于商业环境，moral 用于个人信念"
+          },
+          {
+              "word": "honest",
+              "coreDifference": "honest 强调诚实，ethical 强调符合规范",
+              "toeicSceneFocus": "honest 用于日常行为，ethical 用于专业决策"
+          }
+      ]
+  },
+  {
+      "word": "moral",
+      "phonetic": "/ˈmɒrəl/",
+      "phrase": "moral responsibility",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "道德的；道义的（指基于是非观念的）",
+      "toeicSceneFocus": "多用于价值观讨论、决策分析、社会责任等语境，在托业阅读（评论文章）和听力（伦理辩论）中考查",
+      "keyCollocations": [
+          "moral obligation",
+          "moral values",
+          "moral support",
+          "moral dilemma"
+      ],
+      "toeicExampleSentences": [
+          "We have a moral duty to protect the environment.（我们有保护环境的道义责任。）",
+          "The decision raised moral questions about fairness.（该决定引发了关于公平的道德问题。）"
+      ],
+      "sceneAssociation": "想象商务谈判中，一方提出‘this raises moral concerns’，或团队讨论‘moral implications of layoffs’",
+      "confusingWordsComparison": [
+          {
+              "word": "ethical",
+              "coreDifference": "moral 侧重个人信念，ethical 侧重职业规范",
+              "toeicSceneFocus": "moral 用于价值观，ethical 用于行业标准"
+          },
+          {
+              "word": "upright",
+              "coreDifference": "upright 强调正直行为，moral 强调道德标准",
+              "toeicSceneFocus": "upright 用于描述人格，moral 用于指导原则"
+          }
+      ]
+  },
+  {
+      "word": "upright",
+      "phonetic": "/ˈʌpraɪt/",
+      "phrase": "upright business leader",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "正直的；诚实的（指行为端正，遵守道德）",
+      "toeicSceneFocus": "常用于领导力描述、公司声誉、个人品格等语境，在托业阅读（人物介绍）和听力（道德故事）中出现",
+      "keyCollocations": [
+          "upright citizen",
+          "upright character",
+          "remain upright",
+          "upright conduct"
+      ],
+      "toeicExampleSentences": [
+          "He is known as an upright executive who never compromises integrity.（他是一位以正直著称的高管，从不妥协诚信。）",
+          "An upright approach to business builds long-term trust.（正直的商业方式建立长期信任。）"
+      ],
+      "sceneAssociation": "想象公司年报中描述创始人‘an upright leader’，或新闻中赞扬某人的‘upright behavior’",
+      "confusingWordsComparison": [
+          {
+              "word": "principled",
+              "coreDifference": "upright 强调行为正直，principled 强调遵循原则",
+              "toeicSceneFocus": "upright 用于人格，principled 用于决策"
+          },
+          {
+              "word": "moral",
+              "coreDifference": "moral 强调道德标准，upright 强调行为表现",
+              "toeicSceneFocus": "moral 用于指导，upright 用于实践"
+          }
+      ]
+  },
+  {
+      "word": "principled",
+      "phonetic": "/ˈprɪnsəpəld/",
+      "phrase": "principled decision-making",
+      "partOfSpeech": "adj. 形容词",
+      "coreMeaning": "有原则的；基于原则的（指行为或决策基于坚定的道德标准）",
+      "toeicSceneFocus": "多用于领导力、管理决策、企业文化等语境，在托业阅读（商业伦理）和听力（管理讨论）中常见",
+      "keyCollocations": [
+          "principled approach",
+          "principled stand",
+          "highly principled",
+          "principled leader"
+      ],
+      "toeicExampleSentences": [
+          "The CEO made a principled decision to reject the unethical deal.（CEO 做出有原则的决定，拒绝了不道德的交易。）",
+          "We need principled managers to guide the team.（我们需要有原则的管理者来指导团队。）"
+      ],
+      "sceneAssociation": "想象董事会会议中，领导说‘we must take a principled stance’，或员工手册中强调‘principled behavior’",
+      "confusingWordsComparison": [
+          {
+              "word": "upright",
+              "coreDifference": "principled 强调基于原则，upright 强调行为正直",
+              "toeicSceneFocus": "principled 用于决策过程，upright 用于人格评价"
+          },
+          {
+              "word": "ethical",
+              "coreDifference": "ethical 强调符合规范，principled 强调坚持原则",
+              "toeicSceneFocus": "ethical 用于一般道德，principled 用于坚定立场"
+          }
+      ]
+  },
+  {
+      "word": "integrity",
+      "phonetic": "/ɪnˈteɡrəti/",
+      "phrase": "demonstrate professional integrity",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "正直；诚实；完整性（指坚持道德标准，言行一致）",
+      "toeicSceneFocus": "常见于招聘要求、领导力评价、公司价值观等语境，在托业阅读（招聘广告）和听力（面试对话）中频繁考查",
+      "keyCollocations": [
+          "integrity and honesty",
+          "personal integrity",
+          "lack of integrity",
+          "maintain integrity"
+      ],
+      "toeicExampleSentences": [
+          "We seek candidates with strong integrity and ethical standards.（我们寻找具有高度正直和道德标准的候选人。）",
+          "His integrity in handling finances earned the team's trust.（他在财务管理中的正直赢得了团队的信任。）"
+      ],
+      "sceneAssociation": "想象招聘广告中要求‘must have high integrity’，或绩效评估中评价‘shows great integrity’",
+      "confusingWordsComparison": [
+          {
+              "word": "honesty",
+              "coreDifference": "integrity 强调整体正直，honesty 强调诚实行为",
+              "toeicSceneFocus": "integrity 用于全面品格，honesty 用于具体言行"
+          },
+          {
+              "word": "ethical",
+              "coreDifference": "ethical 强调道德规范，integrity 强调内在一致性",
+              "toeicSceneFocus": "ethical 用于遵守规则，integrity 用于个人品质"
+          }
+      ]
+  },
+  {
+      "word": "honesty",
+      "phonetic": "/ˈɒnɪsti/",
+      "phrase": "honesty in communication",
+      "partOfSpeech": "n. 名词",
+      "coreMeaning": "诚实；坦率（指不说谎、不欺骗的品质）",
+      "toeicSceneFocus": "多用于沟通原则、团队文化、客户服务等语境，在托业阅读（公司政策）和听力（日常对话）中出现",
+      "keyCollocations": [
+          "honesty is the best policy",
+          "practice honesty",
+          "value honesty",
+          "with honesty"
+      ],
+      "toeicExampleSentences": [
+          "Honesty is essential for building trust in the workplace.（诚实对于建立职场信任至关重要。）",
+          "We encourage open honesty among team members.（我们鼓励团队成员之间坦诚相待。）"
+      ],
+      "sceneAssociation": "想象团队建设活动中，经理说‘we value honesty in all communications’，或客户反馈中强调‘honesty is appreciated’",
+      "confusingWordsComparison": [
+          {
+              "word": "integrity",
+              "coreDifference": "honesty 强调诚实行为，integrity 强调整体正直",
+              "toeicSceneFocus": "honesty 用于日常言行，integrity 用于长期品格"
+          },
+          {
+              "word": "truthfulness",
+              "coreDifference": "truthfulness 强调说真话，honesty 强调不欺骗",
+              "toeicSceneFocus": "truthfulness 用于具体事实，honesty 用于态度"
+          }
+      ]
+  },
+
+  {
+    "word": "deceptive",
+    "phonetic": "/dɪˈseptɪv/",
+    "phrase": "deceptive marketing practices",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "欺骗性的，误导的（指通过歪曲事实、隐瞒真相或制造假象来误导他人的）",
+    "toeicSceneFocus": "高频商业伦理词汇。多出现于消费者权益、广告法规、商业道德相关的阅读文章，或描述不当商业行为的听力对话。常与广告、销售、数据陈述等场景结合，考查对不诚信商业行为的识别。",
+    "keyCollocations": [
+        "deceptive advertising（欺骗性广告）",
+        "deceptive practice（欺骗性做法）",
+        "deceptive packaging（误导性包装）",
+        "deceptive claim（虚假声明）",
+        "intentionally deceptive（故意欺骗的）"
+    ],
+    "toeicExampleSentences": [
+        "The advertisement was banned for making deceptive claims about the product's effectiveness.（该广告因对产品功效做出欺骗性声明而被禁。）",
+        "The company engaged in deceptive practices by hiding the additional fees in the fine print.（该公司通过在细则中隐藏额外费用从事欺骗性行为。）"
+    ],
+    "sceneAssociation": "联想“一则广告将普通食品包装成‘神奇减肥药’的画面”，核心是“通过虚假或误导性表象让人做出错误判断”",
+    "confusingWordsComparison": [
+        {
+            "word": "deceptive",
+            "coreDifference": "强调“本质或表象具有欺骗性”，能导致误解，可能有意或无意，但常暗示故意。",
+            "toeicSceneFocus": "广告、销售、产品陈述中的误导行为"
+        },
+        {
+            "word": "misleading",
+            "coreDifference": "强调“导致误解的结果”，是deceptive更常用、有时语气稍轻的同义词，法律和商业语境中常互换。",
+            "toeicSceneFocus": "信息传达、商业沟通中导致误解的情况"
+        },
+        {
+            "word": "dishonest",
+            "coreDifference": "直接指“不诚实的”，描述人或行为的品格，范围更广，不一定涉及精心设计的假象。",
+            "toeicSceneFocus": "对人品格的直接判断，如不诚实的员工"
+        }
+    ]
+},
+{
+    "word": "misleading",
+    "phonetic": "/ˌmɪsˈliːdɪŋ/",
+    "phrase": "potentially misleading information",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "误导性的，引人误解的（指可能或确实导致他人产生错误理解或判断的）",
+    "toeicSceneFocus": "托业高频词，与deceptive近义，广泛用于描述广告、标签、统计数据、财务报告或口头陈述中的不准确信息。是商业诚信、合规沟通场景的核心考查点。",
+    "keyCollocations": [
+        "misleading information（误导性信息）",
+        "misleading statement（误导性陈述）",
+        "misleading label（误导性标签）",
+        "highly misleading（极具误导性的）",
+        "accused of being misleading（被指控具有误导性）"
+    ],
+    "toeicExampleSentences": [
+        "The graph was criticized for being misleading because it did not start at zero on the vertical axis.（该图表因纵轴未从零开始而被批评为具有误导性。）",
+        "Providing misleading financial data to investors is a serious violation of securities regulations.（向投资者提供误导性财务数据是严重的证券法规违规行为。）"
+    ],
+    "sceneAssociation": "想象“一份产品对比图，刻意放大己方优势，导致消费者产生误解”，或“新闻标题‘该说法可能具有误导性（The claim could be misleading）’”，核心是“信息传递的效果是让人理解错误”",
+    "confusingWordsComparison": [
+        {
+            "word": "misleading",
+            "coreDifference": "强调“导致误解的客观结果”，可能是无意造成的，是法律和商业文件中描述不实信息的常用词。",
+            "toeicSceneFocus": "商业信息、广告、数据呈现的误导性"
+        },
+        {
+            "word": "deceptive",
+            "coreDifference": "语气更强，更直接地暗示“蓄意欺骗”的意图。",
+            "toeicSceneFocus": "蓄意欺骗的商业行为"
+        },
+        {
+            "word": "inaccurate",
+            "coreDifference": "仅指“不准确的”，不一定导致方向性误解；而misleading特指会导致错误结论的不准确。",
+            "toeicSceneFocus": "数据错误、信息不精确"
+        }
+    ]
+},
+{
+    "word": "dishonest",
+    "phonetic": "/dɪsˈɑːnɪst/",
+    "phrase": "fire an dishonest employee",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "不诚实的，欺诈的（指人或行为缺乏诚实、正直，涉及说谎、欺骗或盗窃）",
+    "toeicSceneFocus": "职场道德与纪律基本词汇。多出现在员工行为准则、内部调查、职业道德讨论、或涉及信任危机的商业场景中。是评估个人品格和商业信誉的关键词。",
+    "keyCollocations": [
+        "dishonest behavior（不诚实行为）",
+        "fundamentally dishonest（根本不诚实的）",
+        "proven to be dishonest（被证实不诚实）",
+        "act dishonestly（行事不诚实）",
+        "dishonest practices（欺诈行为）"
+    ],
+    "toeicExampleSentences": [
+        "The company has a zero-tolerance policy for dishonest conduct such as expense report fraud.（公司对费用报告欺诈等不诚实行为采取零容忍政策。）",
+        "He was dismissed for being dishonest about his qualifications on his resume.（他因在简历中对自己的资历不诚实而被解雇。）"
+    ],
+    "sceneAssociation": "联想“员工因虚报差旅费被管理层约谈的场景”，核心是“在诚实守信这一基本品格上存在缺陷”",
+    "confusingWordsComparison": [
+        {
+            "word": "dishonest",
+            "coreDifference": "直接描述“人或行为不诚实”，侧重于道德品格缺陷。",
+            "toeicSceneFocus": "员工品格、职场诚信、个人行为"
+        },
+        {
+            "word": "unethical",
+            "coreDifference": "指“不道德的”，违反职业或行业道德准则，范围比dishonest广，不一定直接涉及说谎（如利益冲突可能unethical但不一定dishonest）。",
+            "toeicSceneFocus": "违反职业操守、商业伦理的行为"
+        },
+        {
+            "word": "deceptive/misleading",
+            "coreDifference": "侧重于“通过某种方式误导他人”，是dishonest行为的一种具体表现方式。",
+            "toeicSceneFocus": "具体的误导手段和结果"
+        }
+    ]
+},
+{
+    "word": "unethical",
+    "phonetic": "/ʌnˈeθɪkl/",
+    "phrase": "an unethical business decision",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "不道德的，违反职业道德的（指不符合公认的道德标准或特定职业的行为准则）",
+    "toeicSceneFocus": "商业伦理、企业社会责任（CSR）和职业操守领域的核心词。托业阅读常在公司丑闻、道德困境案例、行业规范讨论中出现。听力中可能涉及对某项商业提议的道德质疑。",
+    "keyCollocations": [
+        "unethical conduct（不道德行为）",
+        "ethically unethical（道德上不正当的）",
+        "unethical competition（不道德竞争）",
+        "consider it unethical（认为这是不道德的）",
+        "unethical treatment（不道德的对待）"
+    ],
+    "toeicExampleSentences": [
+        "Many consider it unethical for a company to use child labor in its supply chain.（许多人认为公司在供应链中使用童工是不道德的。）",
+        "The journalist was accused of unethical behavior for publishing the story without verifying the facts.（该记者因未经核实事实就发表报道而被指控行为不道德。）"
+    ],
+    "sceneAssociation": "想象“一篇商业报道讨论某公司为降低成本而污染环境的‘不道德决策（unethical decision）’”，或“公司道德准则培训中列举的‘unethical scenarios’”，核心是“违背了公认的善恶标准或职业规范”",
+    "confusingWordsComparison": [
+        {
+            "word": "unethical",
+            "coreDifference": "违反“道德（ethics）”，即职业或社会的行为准则，不一定是非法的。",
+            "toeicSceneFocus": "商业伦理、职业操守、企业社会责任"
+        },
+        {
+            "word": "illegal",
+            "coreDifference": "违反“法律（law）”，是明确禁止的，后果是法律制裁。不道德的行为可能并不违法。",
+            "toeicSceneFocus": "违法行为、法律后果"
+        },
+        {
+            "word": "dishonest",
+            "coreDifference": "特指“不诚实”，是unethical行为的一种常见类型。",
+            "toeicSceneFocus": "诚信品格、欺诈行为"
+        }
+    ]
+},
+{
+    "word": "illegal",
+    "phonetic": "/ɪˈliːɡl/",
+    "phrase": "an illegal transaction",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "非法的，违法的（为法律所禁止的）",
+    "coreMeaning": "非法的，违法的（为法律所禁止的）",
+    "toeicSceneFocus": "法律合规、风险管理、公司治理场景的基石词汇。托业阅读和听力中涉及商业纠纷、监管调查、合同风险、知识产权侵权、雇佣法规等内容时必然出现。",
+    "keyCollocations": [
+        "illegal activity（非法活动）",
+        "illegal download（非法下载）",
+        "illegally obtained（非法获得的）",
+        "deemed illegal（被视为非法）",
+        "illegal under the law（根据法律是违法的）"
+    ],
+    "toeicExampleSentences": [
+        "The company was fined heavily for its illegal dumping of industrial waste.（该公司因非法倾倒工业废物而被处以重罚。）",
+        "It is illegal to discriminate against job applicants based on their age or gender.（基于年龄或性别歧视求职者是违法的。）"
+    ],
+    "sceneAssociation": "联想“警察或监管机构人员进入公司调查‘非法行为（illegal activities）’的画面”，或“合同条款中明确写有‘禁止任何非法用途（for any illegal purposes）’”，核心是“被成文法律明文禁止”",
+    "confusingWordsComparison": [
+        {
+            "word": "illegal",
+            "coreDifference": "最常用词，直接表示“违反法律”，后果是民事或刑事处罚。",
+            "toeicSceneFocus": "泛指任何违法行为，后果严重"
+        },
+        {
+            "word": "unlawful",
+            "coreDifference": "与 illegal 同义，但更正式，多用于法律条文、合同或官方声明中。",
+            "toeicSceneFocus": "正式法律文件、合同条款、官方公告"
+        },
+        {
+            "word": "unethical",
+            "coreDifference": "违反道德准则，但不一定违法。非法行为通常也是不道德的。",
+            "toeicSceneFocus": "道德层面，不一定涉及法律"
+        }
+    ]
+},
+{
+    "word": "lawful",
+    "phonetic": "/ˈlɔːfl/",
+    "phrase": "lawful business operations",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "合法的，法定的（符合法律规定的，被法律所允许或认可的）",
+    "toeicSceneFocus": "正式的法律和商业用语，强调行为的合法性依据。在托业阅读的公司章程、官方公告、合规声明以及听力中关于商业许可、合法权利的讨论中出现。",
+    "keyCollocations": [
+        "lawful authority（合法当局/权力）",
+        "lawful purpose（合法目的）",
+        "lawful owner（合法所有者）",
+        "lawfully permitted（法律允许的）",
+        "carry on a lawful business（经营合法生意）"
+    ],
+    "toeicExampleSentences": [
+        "The contract is only valid if it is entered into for a lawful purpose.（只有为合法目的签订的合同才有效。）",
+        "Employees have a lawful right to a safe working environment.（员工拥有安全工作环境的合法权利。）"
+    ],
+    "sceneAssociation": "想象“营业执照上写着‘准予合法经营（Lawful Business Operation）’”，或“律师在解释某行为是‘完全合法的（perfectly lawful）’”，核心是“行为本身符合法律框架”",
+    "confusingWordsComparison": [
+        {
+            "word": "lawful",
+            "coreDifference": "强调“符合法律、为法律所允许”，是legal更正式、更书面的同义词，尤用于与“权利、权力、行为”搭配。",
+            "toeicSceneFocus": "正式法律文本、权利声明、商业合规"
+        },
+        {
+            "word": "legal",
+            "coreDifference": "与 lawful 基本同义，但使用更广泛。此外，legal 还可指“与法律相关的”（如 legal advice 法律建议），而 lawful 无此意。",
+            "toeicSceneFocus": "通用合法性、法律事务、法律行业"
+        },
+        {
+            "word": "legitimate",
+            "coreDifference": "不仅指“合法”，还强调“合理、正当、被普遍接受的”，含义更广。合法的不一定都legitimate（如利用法律漏洞）。",
+            "toeicSceneFocus": "正当性、合理性、被认可的（如合法政府、正当理由）"
+        }
+    ]
+},
+{
+    "word": "legal",
+    "phonetic": "/ˈliːɡl/",
+    "phrase": "seek legal advice",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "1. 法律的，法律上的；2. 合法的",
+    "coreMeaning": "1. 法律的，法律上的；2. 合法的",
+    "toeicSceneFocus": "托业考试中最高频的法律相关词汇，兼具“法律的”和“合法的”双重含义。广泛出现在合同、法律咨询、公司合规、知识产权、雇佣关系等各类商业法律语境中。",
+    "keyCollocations": [
+        "legal advice（法律建议）",
+        "legal department（法律部门）",
+        "legal requirement（法律要求）",
+        "legal action（法律诉讼）",
+        "legal entity（法律实体）"
+    ],
+    "toeicExampleSentences": [
+        "**（义项1: 法律的）** All new employees must complete training on the company’s legal and ethical standards.（所有新员工必须完成公司法律和道德标准的培训。）",
+        "**（义项2: 合法的）** It is perfectly legal to work from home under the new company policy.（根据新公司政策，在家工作是完全合法的。）"
+    ],
+    "sceneAssociation": "**场景1（法律的）：** 想象“遇到合同问题，去找公司法务部门寻求法律意见（legal advice）”。**场景2（合法的）：** 想象“商家声明‘本促销活动完全合法（perfectly legal）’”，核心是“与法律相关或得到法律准许”",
+    "confusingWordsComparison": [
+        {
+            "word": "legal",
+            "coreDifference": "最通用词。可指“与法律相关的”，也可指“合法的”。作“合法”解时，与 lawful 基本同义但更常用。",
+            "toeicSceneFocus": "通用法律语境、合法性、法律行业"
+        },
+        {
+            "word": "lawful",
+            "coreDifference": "与legal（合法义）同义，但更正式、书面，强调“为法律所允许”的状态。",
+            "toeicSceneFocus": "正式文件、权利声明、法定权限"
+        },
+        {
+            "word": "legitimate",
+            "coreDifference": "强调“合理、正当、被承认的”，不仅合法，还合乎情理或传统。",
+            "toeicSceneFocus": "正当理由、合法政府、合理要求"
+        }
+    ]
+},
+{
+    "word": "legitimate",
+    "phonetic": "/lɪˈdʒɪtɪmət/",
+    "phrase": "a legitimate business concern",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "1. 合法的；2. 合理的，正当的；3. 正统的，法定的（被法律或习俗所承认和接受的）",
+    "toeicSceneFocus": "高阶商务词汇，强调“正当性”和“被认可性”，超越单纯的合法性。托业阅读中用于分析商业理由的合理性、权利的正当性、政府的合法性等深度语境。",
+    "keyCollocations": [
+        "legitimate reason（正当理由）",
+        "legitimate business（合法正当的生意）",
+        "legitimate government（合法政府）",
+        "legitimate interest（合法权益）",
+        "legitimate claim（合法的权利要求）"
+    ],
+    "toeicExampleSentences": [
+        "**（义项2: 合理的）** The union raised several legitimate concerns about the proposed changes to the safety procedures.（工会对拟议的安全程序变更提出了几点合理的关切。）",
+        "**（义项1: 合法的 & 3. 正统的）** Only legitimate ticket holders will be admitted to the conference.（只有持有效票证者方可进入会场。）"
+    ],
+    "sceneAssociation": "想象“在谈判中，一方提出一个‘正当的商业关切（legitimate business concern）’，对方无法轻易驳回”，或“新闻中称某政府为‘国际社会承认的合法政府（legitimate government）’”，核心是“既有法律依据，也合乎情理与认可”",
+    "confusingWordsComparison": [
+        {
+            "word": "legitimate",
+            "coreDifference": "核心是“正当、被承认”，强调合理性与被接受性。合法是其基础，但更进一层。",
+            "toeicSceneFocus": "正当理由、合理关切、被认可的权威"
+        },
+        {
+            "word": "legal/lawful",
+            "coreDifference": "仅强调“符合法律”，是legitimate的必要不充分条件。一个legitimate的理由必定是legal的，但一个legal的技术细节可能不被认为是legitimate的正当理由。",
+            "toeicSceneFocus": "单纯的法律符合性"
+        },
+        {
+            "word": "valid",
+            "coreDifference": "强调“有效、有根据”，可用于论据、理由、文件等。与legitimate在“理由”上常可互换，但valid不强调“被社会/道德认可”。",
+            "toeicSceneFocus": "有效的（文件、理由、论据）"
+        }
+    ]
+},
+{
+    "word": "valid",
+    "phonetic": "/ˈvælɪd/",
+    "phrase": "a valid passport",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "有效的；有根据的，合理的（指在法律上、逻辑上或事实上被认可、接受或具有效力）",
+    "toeicSceneFocus": "应用极其广泛的核心词。在托业商务场景中，主要用于：1. 文件、证件、票据的有效期（如护照、合同、优惠券）；2. 论点、理由、担忧的合理性。是听力对话中确认资格、阅读中判断条件时的关键信息点。",
+    "keyCollocations": [
+        "valid until（有效期至）",
+        "valid reason（正当理由）",
+        "valid contract（有效合同）",
+        "valid point（合理的观点）",
+        "remain valid（保持有效）"
+    ],
+    "toeicExampleSentences": [
+        "**（文件有效）** Your parking ticket is only valid for 24 hours from the time of issue.（您的停车票自签发起24小时内有效。）",
+        "**（理由合理）** If you have a valid reason for missing the deadline, please submit an explanation to your manager.（如果您有错过截止日期的正当理由，请向您的经理提交说明。）"
+    ],
+    "sceneAssociation": "想象“登机时检查‘有效身份证件（valid ID）’”，或“在会议讨论中，有人提出一个‘有根据的观点（valid point）’难以反驳”，核心是“符合规定、被认可、在效力期内”",
+    "confusingWordsComparison": [
+        {
+            "word": "valid",
+            "coreDifference": "强调“有效、成立、有根据”，可用于文件（在有效期内）、论点（逻辑合理）、理由（正当）。",
+            "toeicSceneFocus": "有效期、合理理由、有效文件、合乎逻辑"
+        },
+        {
+            "word": "legal/lawful",
+            "coreDifference": "特指“符合法律”，是valid的一个可能依据（合法合同是有效的），但valid范围更广（如一个数学证明也valid）。",
+            "toeicSceneFocus": "法律合规性"
+        },
+        {
+            "word": "legitimate",
+            "coreDifference": "强调“正当、被权威或道德认可”，语气比valid更强，更主观。一个valid理由可能只是逻辑上成立，而legitimate理由还暗示道德上的正当性。",
+            "toeicSceneFocus": "正当性、被社会/道德认可"
+        }
+    ]
+},
+{
+    "word": "invalid",
+    "phonetic": "/ɪnˈvælɪd/ （形容词）",
+    "phrase": "an invalid contract",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "无效的；无根据的（与 valid 相反，指在法律上、逻辑上不被认可，或已过期失效）",
+    "coreMeaning": "无效的；无根据的（与 valid 相反，指在法律上、逻辑上不被认可，或已过期失效）",
+    "toeicSceneFocus": "合同、票务、证件、论据等场景的关键词，是valid的反义词。托业听力中常见于因过期、信息错误或不合规而导致票证无效的对话；阅读中出现在合同条款解释、保修条件等部分。",
+    "keyCollocations": [
+        "invalid ticket（无效票）",
+        "invalid argument（无效论点）",
+        "considered invalid（被视为无效）",
+        "invalid email address（无效电子邮件地址）",
+        "declare invalid（宣布无效）"
+    ],
+    "toeicExampleSentences": [
+        "The warranty becomes invalid if the product is repaired by an unauthorized service center.（如果产品由非授权服务中心维修，保修将失效。）",
+        "Your password is invalid because it does not meet the minimum security requirements.（您的密码无效，因为它不符合最低安全要求。）"
+    ],
+    "sceneAssociation": "联想“在机场柜台，工作人员说‘抱歉，您的登机牌无效了（Your boarding pass is invalid）’”，或“合同上盖着‘VOID’（作废）的章”，核心是“失去效力或不被承认”",
+    "confusingWordsComparison": [
+        {
+            "word": "invalid",
+            "coreDifference": "valid 的直接反义词，指“无效的、无根据的”，强调当前状态不具备效力或合理性。",
+            "toeicSceneFocus": "文件失效、论据不成立、条件不符合"
+        },
+        {
+            "word": "void",
+            "coreDifference": "法律术语，指“自始无效的、法律上不存在的”，无效的程度比invalid更绝对、更根本。",
+            "toeicSceneFocus": "合同自始无效、法律上不存在"
+        },
+        {
+            "word": "expired",
+            "coreDifference": "特指“过期的”，是导致invalid的一个常见原因，但范围更窄。",
+            "toeicSceneFocus": "超过有效期"
+        }
+    ]
+},
+{
+    "word": "void",
+    "phonetic": "/vɔɪd/",
+    "phrase": "declare the contract void",
+    "partOfSpeech": "adj. 形容词 / n. 名词 / v. 动词",
+    "coreMeaning": "adj. 无效的，法律上不成立的；n. 空白，空虚；v. 使无效，取消",
+    "toeicSceneFocus": "法律和合同领域的正式术语。在托业阅读的合同条款、法律通知及听力中关于合同纠纷的对话里可能出现。强调合同或协议从签订之初就因重大缺陷而不具有任何法律效力。",
+    "keyCollocations": [
+        "null and void（无效的，法律术语固定搭配）",
+        "void the contract（使合同无效）",
+        "declare void（宣布无效）",
+        "void agreement（无效协议）",
+        "become void（变得无效）"
+    ],
+    "toeicExampleSentences": [
+        "**（adj. 无效的）** The contract was deemed void because it was signed under duress.（该合同因在胁迫下签署而被视为无效。）",
+        "**（v. 使无效）** A material breach of contract by one party may void the entire agreement.（一方的重大违约可能使整个协议无效。）"
+    ],
+    "sceneAssociation": "想象“一份合同因欺诈而被法官‘宣布无效（declared void）’，如同从未存在过”，核心是“因根本性缺陷而导致法律效力彻底丧失”",
+    "confusingWordsComparison": [
+        {
+            "word": "void",
+            "coreDifference": "法律术语，指“自始无效”，从开始就没有法律约束力，通常因根本性违法或缺陷导致。",
+            "toeicSceneFocus": "合同根本无效、法律上不存在"
+        },
+        {
+            "word": "invalid",
+            "coreDifference": "指“无效的”，原因更广泛（如过期、信息错误），不一定是从开始就无效。语气比void弱，也用于非法律语境（如无效论点）。",
+            "toeicSceneFocus": "泛指无效状态（文件、论据等）"
+        },
+        {
+            "word": "terminated",
+            "coreDifference": "指“被终止的”，合同原本有效，但因某种原因（如双方同意、一方违约）而被提前结束。",
+            "toeicSceneFocus": "有效合同的提前结束"
+        }
+    ]
+},
+{
+    "word": "null",
+    "phonetic": "/nʌl/",
+    "phrase": "null and void",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "无效的，无法律效力的（尤用于法律和数学领域，常与 void 连用）",
+    "toeicSceneFocus": "法律和合同书面语，极少单独使用，几乎总是以固定搭配“null and void”出现。托业阅读的法律条款、正式声明或合同终止通知中可能出现此短语，表示合同的彻底无效。",
+    "keyCollocations": [
+        "null and void（无效的，法律正式用语）",
+        "declare null and void（宣布无效）",
+        "render null and void（使无效）",
+        "consider null and void（视为无效）"
+    ],
+    "toeicExampleSentences": [
+        "Any amendment to this agreement not made in writing shall be considered null and void.（对本协议的任何非书面修改均应视为无效。）",
+        "Upon bankruptcy, the licensing agreement shall become null and void immediately.（一旦破产，该许可协议应立即失效。）"
+    ],
+    "sceneAssociation": "记忆法律文件或正式通知中加粗的短语“**null and void**”，表示绝对、彻底的无效状态。",
+    "confusingWordsComparison": [
+        {
+            "word": "null",
+            "coreDifference": "几乎完全作为“null and void”固定搭配的一部分，与void同义，强调法律效力的彻底缺失，是极其正式的法律用语。",
+            "toeicSceneFocus": "法律文件中表示彻底无效的固定短语"
+        },
+        {
+            "word": "void",
+            "coreDifference": "可单独使用，也可组成“null and void”。作为法律术语，含义与null在搭配中相同。",
+            "toeicSceneFocus": "法律上无效（可单独使用）"
+        },
+        {
+            "word": "invalid",
+            "coreDifference": "更通用的“无效”，可用于法律和非法律语境，不强调“自始无效”的绝对性。",
+            "toeicSceneFocus": "广泛意义上的无效"
+        }
+    ]
+},
+{
+    "word": "binding",
+    "phonetic": "/ˈbaɪndɪŋ/",
+    "phrase": "a binding agreement",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "有约束力的，必须遵守的（尤指在法律上或道义上对各方具有强制履行力）",
+    "toeicSceneFocus": "合同法核心词汇。托业阅读和听力中，凡是涉及合同、协议、承诺、仲裁裁决、公司政策等具有强制执行力的事项，均可能考查。是理解契约精神的关键。",
+    "keyCollocations": [
+        "binding contract（有约束力的合同）",
+        "legally binding（具有法律约束力的）",
+        "binding agreement（有约束力的协议）",
+        "binding arbitration（有约束力的仲裁）",
+        "binding on both parties（对双方均有约束力）"
+    ],
+    "toeicExampleSentences": [
+        "Once signed by both parties, the memorandum of understanding becomes a legally binding document.（一旦双方签署，谅解备忘录即成为具有法律约束力的文件。）",
+        "The decision of the arbitration panel is final and binding.（仲裁小组的裁决是终局的且有约束力的。）"
+    ],
+    "sceneAssociation": "联想“双方在律师见证下签署一份‘具有法律约束力的合同（legally binding contract）’，意味着必须遵守”，核心是“一旦成立，就必须履行，否则承担后果”",
+    "confusingWordsComparison": [
+        {
+            "word": "binding",
+            "coreDifference": "强调“产生义务和约束力”，必须被遵守。是合同效力的核心特征。",
+            "toeicSceneFocus": "合同、协议、裁决的约束力"
+        },
+        {
+            "word": "enforceable",
+            "coreDifference": "强调“可通过法律手段强制执行的”。一个有binding的合同通常是enforceable的。但有时合同虽有约束力，但可能因条款模糊而难以强制执行。",
+            "toeicSceneFocus": "法律上可强制执行性"
+        },
+        {
+            "word": "valid",
+            "coreDifference": "指“有效的、成立的”，是合同具有binding和enforceable性质的前提。有效合同通常也有约束力。",
+            "toeicSceneFocus": "合同本身有效成立"
+        }
+    ]
+},
+{
+    "word": "enforceable",
+    "phonetic": "/ɪnˈfɔːrsəbl/",
+    "phrase": "an enforceable court order",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "可强制执行的（指可通过法律程序或权威来确保其得到遵守或履行的）",
+    "toeicSceneFocus": "法律实务和合同谈判中的关键概念。托业阅读中可能在分析合同条款的效力、法律救济途径时出现。听力中可能在讨论合同纠纷的解决方案时提及。",
+    "keyCollocations": [
+        "legally enforceable（法律上可强制执行的）",
+        "enforceable contract（可强制执行的合同）",
+        "enforceable judgment（可强制执行的判决）",
+        "enforceable right（可强制执行的权利）",
+        "difficult to enforce（难以执行）"
+    ],
+    "toeicExampleSentences": [
+        "A non-compete clause must be reasonable in scope and duration to be enforceable.（竞业禁止条款必须在范围和期限上合理才可强制执行。）",
+        "The court issued an enforceable order requiring the company to cease the infringing activities.（法院发出了可强制执行的命令，要求该公司停止侵权活动。）"
+    ],
+    "sceneAssociation": "想象“一方违反合同，另一方向法院申请‘强制执行（seek enforcement）’该合同”，核心是“法律机器能够介入并保证其得到落实”",
+    "confusingWordsComparison": [
+        {
+            "word": "enforceable",
+            "coreDifference": "强调“可通过外部力量（尤其是法律）强制实施的可行性”。是binding的法律后果保障。",
+            "toeicSceneFocus": "法律上的可执行性、强制力保障"
+        },
+        {
+            "word": "binding",
+            "coreDifference": "强调“产生遵守的义务”，更侧重于契约本身的约束力性质。",
+            "toeicSceneFocus": "合同本身的约束力、义务产生"
+        },
+        {
+            "word": "valid",
+            "coreDifference": "是合同“有效成立”的状态，是binding和enforceable的前提。一个无效（invalid）合同自然无约束力且不可执行。",
+            "toeicSceneFocus": "合同有效成立的基础"
+        }
+    ]
+},
+{
+    "word": "unenforceable",
+    "phonetic": "/ˌʌnɪnˈfɔːrsəbl/",
+    "phrase": "an unenforceable contract clause",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "不可强制执行的，无法执行的（指因法律瑕疵、规定不合理或无法操作，而不能通过法律程序强制履行的）",
+    "toeicSceneFocus": "合同法和商业风险管理词汇。常在讨论合同条款缺陷、法律风险、或无效约定的语境中出现。是enforceable的直接反义词，理解它有助于把握合同的潜在风险点。",
+    "keyCollocations": [
+        "unenforceable provision（不可执行的条款）",
+        "legally unenforceable（法律上不可强制执行的）",
+        "unenforceable agreement（不可执行的协议）",
+        "unenforceable in court（在法庭上不可执行）",
+        "render unenforceable（导致不可执行）"
+    ],
+    "toeicExampleSentences": [
+        "The contract’s penalty clause was so excessive that a court ruled it unenforceable.（合同的惩罚性条款过于苛刻，以致法院裁定其不可执行。）",
+        "An oral agreement for the sale of real estate is generally unenforceable under the statute of frauds.（根据反欺诈法，不动产买卖的口头协议通常不可强制执行。）"
+    ],
+    "sceneAssociation": "想象“律师在审阅合同时，指出某一条款因过于模糊或违法而‘可能在法庭上不可执行（likely unenforceable in court）’”，核心是“虽有约定，但法律不保障其实现”",
+    "confusingWordsComparison": [
+        {
+            "word": "unenforceable",
+            "coreDifference": "enforceable 的直接反义词。特指“法律上无法强制执行的”，尽管合同或条款可能形式上存在。",
+            "toeicSceneFocus": "法律上无法强制执行的合同或条款"
+        },
+        {
+            "word": "void/invalid",
+            "coreDifference": "指“无效的”，从根本上不产生法律效力。一个void的条款当然是unenforceable的，但一个unenforceable的条款（如不合理但非法的违约金）可能合同其他部分仍然有效。",
+            "toeicSceneFocus": "整体或部分无效，法律上不成立"
+        },
+        {
+            "word": "non-binding",
+            "coreDifference": "指“无约束力的”，通常是因为各方明确约定其不具有法律约束力（如谅解备忘录中的部分条款），而非因法律瑕疵。",
+            "toeicSceneFocus": "各方约定无法律约束力"
+        }
+    ]
+},
+{
+    "word": "liable",
+    "phonetic": "/ˈlaɪəbl/",
+    "phrase": "hold the company liable",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "负有法律责任的，有义务的；很可能（遭受不利后果）的",
+    "toeicSceneFocus": "法律、保险、风险管理领域的关键词。托业阅读中常见于分析产品责任、公司义务、侵权赔偿、税务责任等文章。听力中可能在讨论事故后果、合同违约责任时出现。",
+    "keyCollocations": [
+        "liable for（对……负责）",
+        "legally liable（负有法律责任的）",
+        "hold sb liable（让某人负责）",
+        "liable to do sth（很可能做某事/易遭受）",
+        "strictly liable（严格责任）"
+    ],
+    "toeicExampleSentences": [
+        "**（有责任的）** Manufacturers are liable for any defects in their products that cause injury to consumers.（制造商对其产品中导致消费者受伤的任何缺陷负责。）",
+        "**（很可能）** Without proper maintenance, the equipment is liable to break down.（没有适当的维护，设备很可能会出故障。）"
+    ],
+    "sceneAssociation": "想象“产品责任诉讼中，原告律师声称‘被告公司应对损害负责（is liable for the damages）’”，或“警告标签上写着‘易碎，小心搬运（Fragile, liable to break）’”，核心是“在法律上担责”或“有负面倾向”",
+    "confusingWordsComparison": [
+        {
+            "word": "liable",
+            "coreDifference": "强调“在法律上负有责任，需承担不利后果（如赔偿）”，是强制的法律义务。也表“有……倾向”。",
+            "toeicSceneFocus": "法律责任、赔偿义务、负面倾向"
+        },
+        {
+            "word": "responsible",
+            "coreDifference": "泛指“有责任的”，可以是法律、道德、工作上的责任，范围最广。在法律语境中，liable比responsible更具体、后果更严重（通常是金钱赔偿）。",
+            "toeicSceneFocus": "广泛意义上的责任（工作、道德、因果）"
+        },
+        {
+            "word": "accountable",
+            "coreDifference": "强调“有义务做出解释、接受问责”，尤指对上级或公众。侧重于回答和说明的义务。",
+            "toeicSceneFocus": "问责、说明义务、向上负责"
+        }
+    ]
+},
+{
+    "word": "accountable",
+    "phonetic": "/əˈkaʊntəbl/",
+    "phrase": "be accountable to the board",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "负有责任的，应作解释的；应受问责的（尤指有义务就自己的行为、决定或管理的资源向他人进行说明和负责）",
+    "toeicSceneFocus": "公司治理、管理责任、公共行政领域的核心词汇。托业阅读中涉及企业社会责任、管理层职责、项目问责制、透明度报告等内容时常见。强调“可被追究、需交代”的责任。",
+    "keyCollocations": [
+        "accountable for（对……负责）",
+        "hold sb accountable（追究某人的责任）",
+        "publicly accountable（对公众负责的）",
+        "accountable to sb（对某人负责）",
+        "demand accountability（要求问责）"
+    ],
+    "toeicExampleSentences": [
+        "Managers are accountable for the performance and conduct of their teams.（经理应对其团队的绩效和行为负责。）",
+        "The new policy aims to make government spending more transparent and accountable.（新政策旨在使政府支出更加透明和可问责。）"
+    ],
+    "sceneAssociation": "想象“CEO在股东大会上‘向董事会汇报并接受问责（accountable to the board）’”，或“项目失败后，公众要求‘追究领导责任（hold the leadership accountable）’”，核心是“有义务向上级或利益相关方解释和交代”",
+    "confusingWordsComparison": [
+        {
+            "word": "accountable",
+            "coreDifference": "强调“有解释和接受问责的义务”，通常是对特定的人或机构（如上级、公众）负责，侧重于过程的透明和回应。",
+            "toeicSceneFocus": "公司治理、公共责任、向上汇报、接受质询"
+        },
+        {
+            "word": "responsible",
+            "coreDifference": "泛指“负有责任的”，是完成某项任务或对某事物负责，范围最广。Accountable 通常是 responsible 的最终问责对象。",
+            "toeicSceneFocus": "任务执行、因果责任、广泛职责"
+        },
+        {
+            "word": "liable",
+            "coreDifference": "特指“负有法律或经济赔偿责任”，是责任带来的具体不利后果。",
+            "toeicSceneFocus": "法律赔偿责任、承担损失"
+        }
+    ]
+},
+{
+    "word": "responsible",
+    "phonetic": "/rɪˈspɑːnsəbl/",
+    "phrase": "responsible for the project",
+    "partOfSpeech": "adj. 形容词",
+    "coreMeaning": "负有责任的；作为原因的；可靠的（指有义务、有职责去处理某事，或是导致某事发生的原因）",
+    "coreMeaning": "负有责任的；作为原因的；可靠的（指有义务、有职责去处理某事，或是导致某事发生的原因）",
+    "toeicSceneFocus": "职场和商业交流中最基础、最高频的责任相关词。广泛用于描述工作职责、事故原因、可靠的个人品质。托业听力和阅读中无处不在，如在职位描述、邮件指派任务、事故报告、个人介绍中。",
+    "keyCollocations": [
+        "responsible for（对……负责）",
+        "be held responsible（被认定应负责）",
+        "socially responsible（对社会负责的）",
+        "responsible party（责任方）",
+        "financially responsible（经济上负责的/可靠的）"
+    ],
+    "toeicExampleSentences": [
+        "**（有职责的）** She is responsible for managing the company’s social media accounts.（她负责管理公司的社交媒体账号。）",
+        "**（作为原因的）** An investigation is underway to determine who is responsible for the data breach.（一项调查正在进行中，以确定谁应对数据泄露负责。）",
+        "**（可靠的）** We are looking for a responsible and detail-oriented candidate for this position.（我们正在为这个职位寻找一位负责任且注重细节的候选人。）"
+    ],
+    "sceneAssociation": "想象“组织结构图上标注的‘负责部门（responsible department）’”，或“事故报告结论‘人为错误是主要原因（Human error was responsible）’”，核心是“与职责或因果关系紧密相连”",
+    "confusingWordsComparison": [
+        {
+            "word": "responsible",
+            "coreDifference": "**最通用**，可指“承担职责”、“是……的原因”或“性格可靠”。是责任概念的基石。",
+            "toeicSceneFocus": "工作职责、事故原因、个人品质"
+        },
+        {
+            "word": "accountable",
+            "coreDifference": "强调“接受问责、有解释义务”，通常是更高层级的、对最终结果的责任。一个人可以responsible for a task, 但向manager accountable for the outcome。",
+            "toeicSceneFocus": "最终问责、解释说明、向上负责"
+        },
+        {
+            "word": "liable",
+            "coreDifference": "特指“负有法律或经济赔偿的责任”，是responsible可能导致的严重后果。",
+            "toeicSceneFocus": "法律责任、经济赔偿"
+        }
+    ]
+},
+
+{
+  "word": "ethics",
+  "phonetic": "/ˈeθɪks/",
+  "phrase": "business ethics training",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "道德准则；伦理标准；（尤指特定群体或职业的）行为规范",
+  "toeicSceneFocus": "高频出现在商务合规、职场培训、企业社会责任等托业场景，阅读（企业守则、商务报告）和听力（职场会议、培训讲座）中常考查“商业伦理、职业操守”相关表达，是托业中描述“行为准则合理性”的核心词汇",
+  "keyCollocations": [
+      "business ethics（商业伦理）",
+      "professional ethics（职业道德）",
+      "ethical standards（道德标准）",
+      "code of ethics（道德守则）",
+      "ethics committee（伦理委员会）"
+  ],
+  "toeicExampleSentences": [
+      "All employees must complete the annual business ethics training to ensure compliance.（所有员工必须完成年度商业伦理培训，以确保合规。）",
+      "The company’s code of ethics prohibits accepting gifts from clients.（该公司的道德守则禁止收受客户礼品。）",
+      "The ethics committee will review the proposal to ensure it meets social responsibility requirements.（伦理委员会将审核该提案，确保其符合社会责任要求。）",
+      "Violating professional ethics may result in dismissal from the company.（违反职业道德可能会被公司解雇。）"
+  ],
+  "sceneAssociation": "可以联想“企业培训室中，讲师为员工讲解business ethics，强调职场行为规范”的画面，或“商务报告中提及公司遵守ethics standards以提升品牌形象”，结合“职业群体的道德准则”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "ethics",
+          "coreDifference": "侧重“特定职业/群体的道德规范、伦理准则”，具有专业性和指导性",
+          "toeicSceneFocus": "商业合规、职场培训、企业社会责任场景"
+      },
+      {
+          "word": "morality",
+          "coreDifference": "侧重“社会普遍认可的道德观念、是非善恶标准”，范围更广，更偏向个人品德",
+          "toeicSceneFocus": "社会公德、企业文化价值观讨论场景"
+      },
+      {
+          "word": "principles",
+          "coreDifference": "侧重“个人或组织的行为原则、信条”，是指导行为的基本准则，不一定涉及道德",
+          "toeicSceneFocus": "企业管理、个人职业操守、商务谈判场景"
+      }
+  ]
+},
+{
+  "word": "morality",
+  "phonetic": "/məˈræləti/",
+  "phrase": "morality and business practice",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "道德；道德准则；道德观念；是非善恶的标准",
+  "toeicSceneFocus": "出现在企业文化建设、商务伦理讨论、社会责任报告等托业场景，阅读（企业宣传册、商务评论）和听力（高管访谈、研讨会）中常考查“道德与商业行为的关系”，是比ethics更宏观的词汇",
+  "keyCollocations": [
+      "public morality（公共道德）",
+      "morality and ethics（道德与伦理）",
+      "traditional morality（传统道德）",
+      "moral values（道德价值观）",
+      "morality clause（道德条款）"
+  ],
+  "toeicExampleSentences": [
+      "The company’s success is based on a balance between profitability and morality.（该公司的成功建立在盈利与道德平衡的基础上。）",
+      "The new policy reflects the company’s commitment to public morality and social responsibility.（新政策体现了该公司对公共道德和社会责任的承诺。）",
+      "Some people argue that there is a conflict between business interests and morality.（有人认为商业利益与道德之间存在冲突。）",
+      "The morality clause in the contract prohibits any behavior that harms the brand’s reputation.（合同中的道德条款禁止任何损害品牌声誉的行为。）"
+  ],
+  "sceneAssociation": "可以联想“企业高管在研讨会上讨论morality and business practice，探讨如何兼顾盈利与道德”的画面，或“社会责任报告中强调公司坚守moral values”，结合“社会普遍道德观念”的核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "morality",
+          "coreDifference": "侧重“社会层面的道德观念、是非标准”，是宏观的道德体系",
+          "toeicSceneFocus": "企业文化、社会责任、道德与商业关系讨论场景"
+      },
+      {
+          "word": "ethics",
+          "coreDifference": "侧重“特定职业/群体的行为伦理规范”，是具体的准则要求",
+          "toeicSceneFocus": "商业合规、职业道德培训场景"
+      },
+      {
+          "word": "values",
+          "coreDifference": "侧重“个人或组织的价值观、价值取向”，是指导选择的信念",
+          "toeicSceneFocus": "企业文化建设、员工招聘、团队管理场景"
+      }
+  ]
+},
+{
+  "word": "values",
+  "phonetic": "/ˈvæljuːz/",
+  "phrase": "corporate core values",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "价值观；价值观念；（个人、群体或组织的）行为准则和信念",
+  "toeicSceneFocus": "超高频出现在企业文化、员工招聘、品牌建设等托业场景，阅读（企业官网介绍、招聘启事）和听力（职场面试、团队培训）中几乎必考“核心价值观、价值取向”相关表达，是描述企业文化的核心词汇",
+  "keyCollocations": [
+      "core values（核心价值观）",
+      "corporate values（企业价值观）",
+      "shared values（共同价值观）",
+      "moral values（道德价值观）",
+      "cultural values（文化价值观）"
+  ],
+  "toeicExampleSentences": [
+      "The company’s core values include integrity, innovation and customer satisfaction.（该公司的核心价值观包括诚信、创新和客户满意。）",
+      "During the interview, the HR manager will assess if your values match the company’s.（面试时，人力资源经理会评估你的价值观是否与公司相符。）",
+      "Shared values are essential for building a cohesive and efficient team.（共同的价值观对于打造有凝聚力和高效率的团队至关重要。）",
+      "The brand’s success is closely linked to its commitment to social values.（该品牌的成功与其对社会价值观的坚守密切相关。）"
+  ],
+  "sceneAssociation": "可以联想“招聘启事中明确列出corporate core values，求职者对照自身价值观匹配岗位”的画面，或“团队会议上强调shared values以提升协作效率”，结合“组织或个人的信念准则”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "values",
+          "coreDifference": "侧重“个人或组织的价值取向、信念”，是指导行为选择的内在标准",
+          "toeicSceneFocus": "企业文化、招聘面试、团队管理场景"
+      },
+      {
+          "word": "principles",
+          "coreDifference": "侧重“必须遵守的行为原则、信条”，比values更具强制性和指导性",
+          "toeicSceneFocus": "商务谈判、企业管理、个人职业操守场景"
+      },
+      {
+          "word": "standards",
+          "coreDifference": "侧重“衡量品质或行为的标准、规范”，是外在的、可量化的准则",
+          "toeicSceneFocus": "产品质量、服务规范、行业标准场景"
+      }
+  ]
+},
+{
+  "word": "standards",
+  "phonetic": "/ˈstændədz/",
+  "phrase": "quality standards for products",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "标准；规范；（衡量品质、能力、行为等的）准则和水平",
+  "toeicSceneFocus": "高频出现在产品质量、服务规范、行业监管等托业场景，阅读（产品说明书、行业报告）和听力（职场会议、客户投诉）中常考查“质量标准、行业标准”相关表达，是描述“规范化要求”的核心词汇",
+  "keyCollocations": [
+      "quality standards（质量标准）",
+      "industry standards（行业标准）",
+      "safety standards（安全标准）",
+      "service standards（服务标准）",
+      "meet standards（达到标准）"
+  ],
+  "toeicExampleSentences": [
+      "All products must meet international quality standards before being exported.（所有产品出口前必须达到国际质量标准。）",
+      "The company has raised its service standards to improve customer satisfaction.（该公司提高了服务标准，以提升客户满意度。）",
+      "Following industry safety standards can reduce the risk of workplace accidents.（遵守行业安全标准可以降低职场事故的风险。）",
+      "The new product failed to meet the required standards and was recalled immediately.（这款新产品未达到规定标准，被立即召回。）"
+  ],
+  "sceneAssociation": "可以联想“质检人员依据quality standards检测产品，判定是否合格出厂”的画面，或“客户投诉时要求企业遵守service standards”，结合“衡量品质的外在准则”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "standards",
+          "coreDifference": "侧重“衡量品质、服务或行为的客观标准、规范”，可量化、可执行",
+          "toeicSceneFocus": "产品质量、行业监管、服务规范场景"
+      },
+      {
+          "word": "regulations",
+          "coreDifference": "侧重“官方或机构制定的规章制度、法规”，具有强制性和约束力",
+          "toeicSceneFocus": "政府监管、企业合规、行业管理场景"
+      },
+      {
+          "word": "guidelines",
+          "coreDifference": "侧重“指导性的方针、指南”，不具有强制性，仅提供参考",
+          "toeicSceneFocus": "项目执行、员工操作、行业建议场景"
+      }
+  ]
+},
+{
+  "word": "principles",
+  "phonetic": "/ˈprɪnsəplz/",
+  "phrase": "principles of fair trade",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "原则；准则；（个人或组织的）行为信条；基本原理",
+  "toeicSceneFocus": "出现在商务谈判、企业管理、职业操守等托业场景，阅读（合同条款、企业守则）和听力（职场演讲、谈判对话）中常考查“公平原则、经营原则”相关表达，是描述“行为底线和信条”的正式词汇",
+  "keyCollocations": [
+      "basic principles（基本原则）",
+      "moral principles（道德原则）",
+      "principles of management（管理原则）",
+      "adhere to principles（坚持原则）",
+      "fundamental principles（根本原则）"
+  ],
+  "toeicExampleSentences": [
+      "The company adheres to the principles of fair trade and transparent pricing.（该公司坚持公平贸易和透明定价的原则。）",
+      "As a manager, you should not compromise your moral principles for short-term profits.（作为管理者，你不应为了短期利益而违背道德原则。）",
+      "The training course covers the fundamental principles of effective communication.（该培训课程涵盖有效沟通的基本原则。）",
+      "Both parties agreed to negotiate based on the principles of mutual benefit.（双方同意基于互利共赢的原则进行谈判。）"
+  ],
+  "sceneAssociation": "可以联想“商务谈判桌上，双方强调principles of mutual benefit，确保合作公平”的画面，或“管理者在会议上要求员工adhere to principles，坚守职业操守”，结合“指导行为的基本信条”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "principles",
+          "coreDifference": "侧重“个人或组织坚守的行为原则、信条”，是内在的、指导性的准则",
+          "toeicSceneFocus": "商务谈判、企业管理、职业操守场景"
+      },
+      {
+          "word": "rules",
+          "coreDifference": "侧重“具体的、必须遵守的规则、条例”，是外在的、针对性的要求",
+          "toeicSceneFocus": "职场管理、日常办公、活动组织场景"
+      },
+      {
+          "word": "values",
+          "coreDifference": "侧重“价值取向、信念”，是指导选择的标准，不一定具有强制性",
+          "toeicSceneFocus": "企业文化、招聘面试场景"
+      }
+  ]
+},
+{
+  "word": "rules",
+  "phonetic": "/ruːlz/",
+  "phrase": "office rules and regulations",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "规则；规章；条例；（组织、团体或活动的）具体行为准则",
+  "toeicSceneFocus": "通用高频词汇，出现在职场管理、日常办公、活动组织等托业场景，阅读（员工手册、办公通知）和听力（职场对话、新人培训）中常考查“办公规则、游戏规则”相关表达，是描述“具体行为约束”的基础词汇",
+  "keyCollocations": [
+      "office rules（办公规则）",
+      "rules and regulations（规章制度）",
+      "follow the rules（遵守规则）",
+      "break the rules（违反规则）",
+      "basic rules（基本规则）"
+  ],
+  "toeicExampleSentences": [
+      "All employees must follow the office rules, such as no smoking and punctuality.（所有员工必须遵守办公规则，例如禁止吸烟和准时出勤。）",
+      "The referee explained the rules of the game to the participants before the competition.（比赛前，裁判向参赛者讲解了比赛规则。）",
+      "Anyone who breaks the company’s rules will face disciplinary action.（任何违反公司规则的人都将面临纪律处分。）",
+      "We need to establish clear rules to ensure the smooth running of the project.（我们需要制定明确的规则，以确保项目顺利进行。）"
+  ],
+  "sceneAssociation": "可以联想“新人入职培训时，HR讲解office rules，强调考勤和着装要求”的画面，或“比赛现场裁判宣读rules of the game”，结合“具体的行为约束准则”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "rules",
+          "coreDifference": "侧重“组织或活动的具体行为规则”，针对性强，约束范围较窄",
+          "toeicSceneFocus": "职场管理、日常办公、活动组织场景"
+      },
+      {
+          "word": "regulations",
+          "coreDifference": "侧重“官方或行业的规章制度、法规”，具有普遍约束力和强制性",
+          "toeicSceneFocus": "政府监管、企业合规、行业管理场景"
+      },
+      {
+          "word": "policies",
+          "coreDifference": "侧重“组织的政策、方针”，是宏观的指导方案，而非具体细则",
+          "toeicSceneFocus": "企业管理、人力资源、公共事务场景"
+      }
+  ]
+},
+{
+  "word": "regulations",
+  "phonetic": "/ˌreɡjuˈleɪʃnz/",
+  "phrase": "government regulations on imports",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "规章制度；法规；条例；（官方制定的）强制性管理规定",
+  "toeicSceneFocus": "高频出现在国际贸易、政府监管、企业合规等托业场景，阅读（海关文件、行业公告）和听力（商务谈判、新闻播报）中常考查“进口法规、行业监管规定”相关表达，是描述“官方约束”的核心词汇",
+  "keyCollocations": [
+      "government regulations（政府法规）",
+      "import and export regulations（进出口条例）",
+      "safety regulations（安全法规）",
+      "comply with regulations（遵守法规）",
+      "industry regulations（行业规章）"
+  ],
+  "toeicExampleSentences": [
+      "All importers must comply with the government’s regulations on product labeling.（所有进口商必须遵守政府关于产品标签的法规。）",
+      "The new environmental regulations will affect many manufacturing companies.（新的环保法规将影响许多制造企业。）",
+      "Our legal team will review the contract to ensure it meets all industry regulations.（我们的法务团队将审核合同，确保其符合所有行业规章。）",
+      "Failure to follow safety regulations may lead to heavy fines and even closure.（不遵守安全法规可能会导致巨额罚款甚至停业。）"
+  ],
+  "sceneAssociation": "可以联想“外贸企业员工查阅import and export regulations，确保货物顺利通关”的画面，或“工厂张贴safety regulations，提醒员工规范操作”，结合“官方强制性管理规定”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "regulations",
+          "coreDifference": "侧重“官方或行业制定的强制性法规、规章”，具有普遍约束力",
+          "toeicSceneFocus": "国际贸易、政府监管、企业合规场景"
+      },
+      {
+          "word": "laws",
+          "coreDifference": "侧重“国家立法机关制定的法律”，是最高级别的强制性规范",
+          "toeicSceneFocus": "法务诉讼、合规管理、国家政策场景"
+      },
+      {
+          "word": "rules",
+          "coreDifference": "侧重“组织内部的具体规则”，约束力仅限特定群体",
+          "toeicSceneFocus": "职场管理、日常办公场景"
+      }
+  ]
+},
+{
+  "word": "laws",
+  "phonetic": "/lɔːz/",
+  "phrase": "labor laws of the country",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "法律；法令；法规；（国家立法机关制定的）强制性行为规范",
+  "toeicSceneFocus": "出现在法务合规、人力资源、国际贸易等托业场景，阅读（合同条款、法务文件）和听力（职场讲座、新闻报道）中常考查“劳动法、商业法”相关表达，是描述“最高级别强制规范”的正式词汇",
+  "keyCollocations": [
+      "labor laws（劳动法）",
+      "commercial laws（商法）",
+      "comply with the law（遵守法律）",
+      "break the law（违法）",
+      "protect by law（受法律保护）"
+  ],
+  "toeicExampleSentences": [
+      "The company must abide by the labor laws regarding employee working hours and salaries.（该公司必须遵守关于员工工时和薪资的劳动法。）",
+      "Intellectual property is protected by law in most countries around the world.（在世界大多数国家，知识产权都受法律保护。）",
+      "It is illegal to sell products that do not meet the safety standards set by law.（销售不符合法律规定安全标准的产品是违法的。）",
+      "Our legal department ensures that all business activities are in accordance with the law.（我们的法务部门确保所有商业活动都符合法律规定。）"
+  ],
+  "sceneAssociation": "可以联想“人力资源部门依据labor laws制定员工薪酬制度，避免违法风险”的画面，或“法务人员在合同中明确双方需comply with the law”，结合“国家制定的最高强制规范”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "laws",
+          "coreDifference": "侧重“国家立法机关制定的法律”，是具有最高法律效力的强制性规范",
+          "toeicSceneFocus": "法务合规、人力资源、国际贸易场景"
+      },
+      {
+          "word": "regulations",
+          "coreDifference": "侧重“政府或行业依据法律制定的规章条例”，法律效力低于法律",
+          "toeicSceneFocus": "政府监管、企业合规、行业管理场景"
+      },
+      {
+          "word": "policies",
+          "coreDifference": "侧重“组织或政府的政策方针”，不具有法律约束力",
+          "toeicSceneFocus": "企业管理、公共事务场景"
+      }
+  ]
+},
+{
+  "word": "policies",
+  "phonetic": "/ˈpɒləsiz/（英式）/ˈpɑːləsiz/（美式）",
+  "phrase": "company policies on remote work",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "政策；方针；（组织、政府的）指导性行动准则和方案",
+  "toeicSceneFocus": "超高频出现在企业管理、人力资源、公共事务等托业场景，阅读（员工手册、招聘广告、政府公告）和听力（职场面试、会议讨论）中几乎必考“公司政策、福利政策”相关表达，是描述“宏观指导方案”的核心词汇",
+  "keyCollocations": [
+      "company policies（公司政策）",
+      "human resources policies（人力资源政策）",
+      "remote work policies（远程办公政策）",
+      "implement policies（执行政策）",
+      "adjust policies（调整政策）"
+  ],
+  "toeicExampleSentences": [
+      "The company has updated its remote work policies to support employees with family needs.（该公司更新了远程办公政策，以支持有家庭需求的员工。）",
+      "During the interview, you can ask the HR about the company’s leave and benefits policies.（面试时，你可以向人力资源部门询问公司的休假和福利政策。）",
+      "The government’s new economic policies are expected to boost small businesses.（政府的新经济政策有望提振中小企业发展。）",
+      "All managers are responsible for ensuring that their teams understand and follow company policies.（所有管理者都有责任确保团队理解并遵守公司政策。）"
+  ],
+  "sceneAssociation": "可以联想“员工手册中详细列出company policies，包括考勤、福利和晋升机制”的画面，或“政府发布会公布new economic policies，助力企业发展”，结合“组织的宏观指导方案”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "policies",
+          "coreDifference": "侧重“组织或政府的宏观政策、方针”，是指导性方案，非具体细则",
+          "toeicSceneFocus": "企业管理、人力资源、公共事务场景"
+      },
+      {
+          "word": "procedures",
+          "coreDifference": "侧重“具体的操作流程、步骤”，是执行政策的详细方法",
+          "toeicSceneFocus": "日常办公、项目执行、客户服务场景"
+      },
+      {
+          "word": "guidelines",
+          "coreDifference": "侧重“指导性的指南、建议”，不具有强制性，比policies更灵活",
+          "toeicSceneFocus": "项目执行、员工操作、行业建议场景"
+      }
+  ]
+},
+{
+  "word": "procedures",
+  "phonetic": "/prəˈsiːdʒəz/",
+  "phrase": "emergency response procedures",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "程序；手续；步骤；（完成任务或处理事务的）标准化操作流程",
+  "toeicSceneFocus": "高频出现在日常办公、项目执行、客户服务等托业场景，阅读（员工操作手册、流程说明）和听力（职场培训、客服对话）中常考查“操作流程、应急程序”相关表达，是描述“标准化步骤”的核心词汇",
+  "keyCollocations": [
+      "operating procedures（操作流程）",
+      "emergency procedures（应急程序）",
+      "follow procedures（按流程操作）",
+      "standard procedures（标准流程）",
+      "approval procedures（审批手续）"
+  ],
+  "toeicExampleSentences": [
+      "All new employees must learn the standard operating procedures for the equipment.（所有新员工必须学习该设备的标准操作流程。）",
+      "The emergency response procedures must be followed in case of a fire or earthquake.（发生火灾或地震时，必须遵守应急响应程序。）",
+      "The approval procedures for expense claims may take up to three working days.（费用报销的审批手续可能需要长达三个工作日。）",
+      "We need to simplify the procedures to improve the efficiency of customer service.（我们需要简化流程，以提高客户服务效率。）"
+  ],
+  "sceneAssociation": "可以联想“工厂员工按照operating procedures操作机器，确保生产安全”的画面，或“办公室张贴emergency procedures，指导员工应对突发情况”，结合“标准化的操作步骤”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "procedures",
+          "coreDifference": "侧重“完成任务的标准化操作流程、步骤”，强调“步骤的规范性”",
+          "toeicSceneFocus": "日常办公、项目执行、设备操作场景"
+      },
+      {
+          "word": "protocols",
+          "coreDifference": "侧重“正式场合的礼仪、协议或数据通信的规程”，更具专业性和正式性",
+          "toeicSceneFocus": "商务礼仪、国际会议、信息技术场景"
+      },
+      {
+          "word": "instructions",
+          "coreDifference": "侧重“针对具体任务的指示、说明”，是一次性或针对性的指导",
+          "toeicSceneFocus": "产品使用、任务执行、职场指令场景"
+      }
+  ]
+},
+{
+  "word": "protocols",
+  "phonetic": "/ˈprəʊtəkɒlz/（英式）/ˈproʊtəkɑːlz/（美式）",
+  "phrase": "international trade protocols",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "协议；规程；（正式场合的）礼仪规范；（计算机）通信协议",
+  "toeicSceneFocus": "出现在国际贸易、国际会议、信息技术等托业场景，阅读（商务协议、技术文档）和听力（国际谈判、技术讲座）中常考查“贸易协议、通信协议”相关表达，是正式且专业性较强的词汇",
+  "keyCollocations": [
+      "trade protocols（贸易协议）",
+      "communication protocols（通信协议）",
+      "diplomatic protocols（外交礼仪）",
+      "follow protocols（遵守规程）",
+      "sign a protocol（签署协议）"
+  ],
+  "toeicExampleSentences": [
+      "The two countries signed a new trade protocol to promote bilateral economic cooperation.（两国签署了一项新的贸易协议，以促进双边经济合作。）",
+      "The IT department is responsible for maintaining the network communication protocols.（信息技术部门负责维护网络通信协议。）",
+      "All participants must follow the diplomatic protocols during the international conference.（国际会议期间，所有参会者必须遵守外交礼仪。）",
+      "This protocol outlines the steps for resolving disputes between the two parties.（该协议规定了解决双方争议的步骤。）"
+  ],
+  "sceneAssociation": "可以联想“国际谈判现场，双方代表sign a trade protocol，达成合作共识”的画面，或“IT工程师调试communication protocols，确保网络畅通”，结合“正式的协议或专业规程”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "protocols",
+          "coreDifference": "侧重“正式的协议、外交礼仪或专业技术规程”，专业性和正式性强",
+          "toeicSceneFocus": "国际贸易、国际会议、信息技术场景"
+      },
+      {
+          "word": "procedures",
+          "coreDifference": "侧重“日常工作的标准化操作流程”，通用性强，正式性低于protocol",
+          "toeicSceneFocus": "日常办公、设备操作、客户服务场景"
+      },
+      {
+          "word": "agreements",
+          "coreDifference": "侧重“双方达成的共识、协议”，范围更广，可涵盖非正式约定",
+          "toeicSceneFocus": "商务谈判、合同签订场景"
+      }
+  ]
+},
+{
+  "word": "guidelines",
+  "phonetic": "/ˈɡaɪdlaɪnz/",
+  "phrase": "guidelines for project management",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "指导方针；指导原则；行动指南；（为某一活动提供的）参考建议",
+  "toeicSceneFocus": "高频出现在项目管理、员工操作、行业建议等托业场景，阅读（项目计划书、行业指南）和听力（职场培训、会议讨论）中常考查“管理指南、操作指南”相关表达，是描述“指导性建议”的核心词汇",
+  "keyCollocations": [
+      "project guidelines（项目指南）",
+      "design guidelines（设计指南）",
+      "follow the guidelines（遵循指南）",
+      "issue guidelines（发布指南）",
+      "general guidelines（通用指导方针）"
+  ],
+  "toeicExampleSentences": [
+      "The project manager provided detailed guidelines for the team to follow.（项目经理为团队提供了详细的指导方针供其遵循。）",
+      "The industry association issued new guidelines for sustainable development.（行业协会发布了可持续发展的新指南。）",
+      "These guidelines are designed to help employees handle customer complaints effectively.（这些指南旨在帮助员工有效处理客户投诉。）",
+      "You can refer to the design guidelines when creating materials for the company.（为公司制作物料时，你可以参考这份设计指南。）"
+  ],
+  "sceneAssociation": "可以联想“项目启动会中，经理分发project guidelines，指导团队推进工作”的画面，或“员工查阅customer service guidelines，学习处理投诉的方法”，结合“指导性的参考建议”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "guidelines",
+          "coreDifference": "侧重“指导性的建议、指南”，不具有强制性，仅供参考和遵循",
+          "toeicSceneFocus": "项目管理、员工操作、行业建议场景"
+      },
+      {
+          "word": "rules",
+          "coreDifference": "侧重“必须遵守的具体规则”，具有强制性和约束力",
+          "toeicSceneFocus": "职场管理、日常办公场景"
+      },
+      {
+          "word": "instructions",
+          "coreDifference": "侧重“针对具体任务的详细指示、说明”，针对性强，步骤明确",
+          "toeicSceneFocus": "产品使用、任务执行场景"
+      }
+  ]
+},
+{
+  "word": "instructions",
+  "phonetic": "/ɪnˈstrʌkʃnz/",
+  "phrase": "instructions for product use",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "指示；说明；指令；（为完成特定任务提供的）详细操作指引",
+  "toeicSceneFocus": "通用高频词汇，出现在产品使用、任务执行、职场办公等托业场景，阅读（产品说明书、任务清单）和听力（职场指令、客服对话）中常考查“使用说明、操作指令”相关表达，是描述“具体指引”的基础词汇",
+  "keyCollocations": [
+      "operating instructions（操作说明）",
+      "follow instructions（遵照指示）",
+      "written instructions（书面说明）",
+      "give instructions（下达指令）",
+      "assembly instructions（组装说明）"
+  ],
+  "toeicExampleSentences": [
+      "Please read the operating instructions carefully before using the machine.（使用机器前，请仔细阅读操作说明。）",
+      "The manager gave clear instructions on how to prepare the monthly report.（经理就如何撰写月度报告下达了明确的指令。）",
+      "The assembly instructions are included in the product package.（组装说明包含在产品包装内。）",
+      "If you have any questions, please refer to the written instructions provided.（如有疑问，请参考提供的书面说明。）"
+  ],
+  "sceneAssociation": "可以联想“消费者拆开产品包装，查看instructions for product use，学习如何操作”的画面，或“员工收到经理的email，里面有完成任务的详细instructions”，结合“具体任务的操作指引”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "instructions",
+          "coreDifference": "侧重“针对具体任务的详细操作指引、指令”，步骤明确，针对性强",
+          "toeicSceneFocus": "产品使用、任务执行、职场指令场景"
+      },
+      {
+          "word": "directions",
+          "coreDifference": "侧重“方向指引或大致的行动指示”，范围较广，可指地理位置方向",
+          "toeicSceneFocus": "出行导航、任务大致指引场景"
+      },
+      {
+          "word": "orders",
+          "coreDifference": "侧重“上级对下级的正式命令”，具有强制性和权威性",
+          "toeicSceneFocus": "职场管理、军事、商务指令场景"
+      }
+  ]
+},
+{
+  "word": "directions",
+  "phonetic": "/dəˈrekʃnz/（英式）/daɪˈrekʃnz/（美式）",
+  "phrase": "directions to the conference center",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "方向；方位；指引；（做某事的）大致指示或说明",
+  "toeicSceneFocus": "出现在出行导航、任务指引、商务活动等托业场景，阅读（邀请函、导航手册）和听力（职场对话、问路场景）中常考查“路线指引、行动指示”相关表达，是描述“方向和大致指引”的基础词汇",
+  "keyCollocations": [
+      "give directions（指路；给出指引）",
+      "follow directions（遵照指示）",
+      "directions to a place（去某地的路线）",
+      "simple directions（简单的指引）",
+      "clear directions（清晰的指示）"
+  ],
+  "toeicExampleSentences": [
+      "Can you give me directions to the nearest subway station?（你能告诉我去最近地铁站的路线吗？）",
+      "The invitation includes directions to the conference center and parking information.（邀请函包含了前往会议中心的路线和停车信息。）",
+      "The supervisor gave general directions on how to handle the customer’s request.（主管就如何处理客户的请求给出了大致指示。）",
+      "Please follow the directions on the package to prepare the food.（请按照包装上的说明准备食物。）"
+  ],
+  "sceneAssociation": "可以联想“商务人士出差时，向路人询问directions to the conference center”的画面，或“员工收到主管的general directions，开始处理客户需求”，结合“方向或大致行动指引”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "directions",
+          "coreDifference": "侧重“地理位置的方向指引或行动的大致指示”，范围较广，可指物理方向",
+          "toeicSceneFocus": "出行导航、任务大致指引场景"
+      },
+      {
+          "word": "instructions",
+          "coreDifference": "侧重“具体任务的详细操作指引”，步骤清晰，针对性强",
+          "toeicSceneFocus": "产品使用、任务执行场景"
+      },
+      {
+          "word": "guidelines",
+          "coreDifference": "侧重“宏观的指导方针、指南”，不涉及具体步骤或方向",
+          "toeicSceneFocus": "项目管理、行业建议场景"
+      }
+  ]
+},
+{
+  "word": "orders",
+  "phonetic": "/ˈɔːdəz/",
+  "phrase": "manager’s orders on task priority",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "命令；指令；（上级对下级的）正式指示；订单",
+  "toeicSceneFocus": "高频出现在职场管理、商务订单、军事等托业场景，阅读（任务指令、订单确认函）和听力（职场对话、客服沟通）中常考查“工作指令、产品订单”相关表达，是描述“权威指令和商业订单”的核心词汇",
+  "keyCollocations": [
+      "give orders（下达命令）",
+      "follow orders（服从命令）",
+      "place an order（下订单）",
+      "cancel an order（取消订单）",
+      "work orders（工作指令）"
+  ],
+  "toeicExampleSentences": [
+      "All employees must follow the orders of their direct supervisors.（所有员工必须服从直属上司的命令。）",
+      "The customer placed a large order for our new product last week.（上周，该客户为我们的新产品下了一个大订单。）",
+      "The manager issued orders to prioritize the completion of the urgent project.（经理下达指令，优先完成这个紧急项目。）",
+      "We need to confirm the order details with the client before production.（生产前，我们需要与客户确认订单细节。）"
+  ],
+  "sceneAssociation": "可以联想“办公室里，经理向团队下达orders，明确任务优先级”的画面，或“客服人员与客户确认order details，安排发货”，结合“上级指令和商业订单”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "orders",
+          "coreDifference": "侧重“上级对下级的权威命令”或“商业订单”，具有强制性或商业约束力",
+          "toeicSceneFocus": "职场管理、商务订单场景"
+      },
+      {
+          "word": "commands",
+          "coreDifference": "侧重“正式的、权威性极强的命令”，多用于军事、计算机或高级管理层",
+          "toeicSceneFocus": "军事、信息技术、高层管理场景"
+      },
+      {
+          "word": "requests",
+          "coreDifference": "侧重“礼貌的请求、要求”，不具有强制性",
+          "toeicSceneFocus": "日常办公、客户服务、商务沟通场景"
+      }
+  ]
+},
+{
+  "word": "commands",
+  "phonetic": "/kəˈmɑːndz/（英式）/kəˈmændz/（美式）",
+  "phrase": "computer commands for data analysis",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "命令；指令；（具有绝对权威的）指示；（计算机）指令",
+  "toeicSceneFocus": "出现在信息技术、军事、高层管理等托业场景，阅读（技术文档、高层指令）和听力（技术讲座、管理层会议）中常考查“计算机指令、高层命令”相关表达，是正式且权威性极强的词汇",
+  "keyCollocations": [
+      "give a command（下达命令）",
+      "obey commands（服从命令）",
+      "computer commands（计算机指令）",
+      "military commands（军事命令）",
+      "issue commands（发布指令）"
+  ],
+  "toeicExampleSentences": [
+      "The general issued commands to his troops to prepare for the mission.（将军向部队下达命令，为任务做准备。）",
+      "You can use these computer commands to analyze the data quickly.（你可以使用这些计算机指令快速分析数据。）",
+      "The CEO’s commands must be implemented by all departments immediately.（首席执行官的指令必须由所有部门立即执行。）",
+      "The system responds to voice commands to simplify the operation process.（该系统响应语音指令，以简化操作流程。）"
+  ],
+  "sceneAssociation": "可以联想“IT工程师输入computer commands，运行数据分析程序”的画面，或“军事演习中，将军向部队下达commands，部署作战任务”，结合“绝对权威的指令”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "commands",
+          "coreDifference": "侧重“权威性极强的正式命令”，多用于军事、计算机或高层管理，语气比order更强烈",
+          "toeicSceneFocus": "信息技术、军事、高层管理场景"
+      },
+      {
+          "word": "orders",
+          "coreDifference": "侧重“职场或商业场景的命令、订单”，权威性稍弱于command",
+          "toeicSceneFocus": "职场管理、商务订单场景"
+      },
+      {
+          "word": "instructions",
+          "coreDifference": "侧重“具体任务的操作指引”，不强调权威性，仅提供步骤指导",
+          "toeicSceneFocus": "产品使用、任务执行场景"
+      }
+  ]
+},
+{
+  "word": "requests",
+  "phonetic": "/rɪˈkwest s/",
+  "phrase": "customer requests for refunds",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "请求；要求；（礼貌或正式的）申请",
+  "toeicSceneFocus": "超高频出现在客户服务、日常办公、商务沟通等托业场景，阅读（邮件、投诉函）和听力（职场对话、客服沟通）中几乎必考“客户请求、工作申请”相关表达，是描述“礼貌性要求”的核心词汇",
+  "keyCollocations": [
+      "make a request（提出请求）",
+      "fulfill a request（满足请求）",
+      "customer requests（客户需求）",
+      "special requests（特殊要求）",
+      "request for information（信息咨询请求）"
+  ],
+  "toeicExampleSentences": [
+      "We will do our best to fulfill all reasonable customer requests.（我们将尽力满足所有合理的客户请求。）",
+      "She made a request to work from home two days a week.（她提出了每周两天居家办公的请求。）",
+      "The request for additional funding has been approved by the management.（追加资金的申请已获得管理层批准。）",
+      "Please submit your special requests in writing at least three days in advance.（请至少提前三天以书面形式提交你的特殊要求。）"
+  ],
+  "sceneAssociation": "可以联想“客服人员耐心处理customer requests for refunds，协调解决问题”的画面，或“员工向经理提交request，申请居家办公”，结合“礼貌性的申请和要求”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "requests",
+          "coreDifference": "侧重“礼貌或正式的请求、申请”，不具有强制性，语气委婉",
+          "toeicSceneFocus": "客户服务、日常办公、商务沟通场景"
+      },
+      {
+          "word": "orders",
+          "coreDifference": "侧重“上级对下级的命令”或“商业订单”，具有强制性或商业约束力",
+          "toeicSceneFocus": "职场管理、商务订单场景"
+      },
+      {
+          "word": "demands",
+          "coreDifference": "侧重“强硬的要求、诉求”，语气比request更强烈，可能带有压力",
+          "toeicSceneFocus": "商务谈判、员工诉求场景"
+      }
+  ]
+},
+
+{
+  "word": "demands",
+  "phonetic": "/dɪˈmændz/",
+  "phrase": "customer demands",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "要求；需求（指必须满足的条件或期望）",
+  "toeicSceneFocus": "常用于客户关系、项目管理、谈判等语境，在托业阅读（合同条款）和听力（商务协商）中常见",
+  "keyCollocations": [
+      "meet demands",
+      "customer demands",
+      "high demands",
+      "demand for"
+  ],
+  "toeicExampleSentences": [
+      "The supplier must meet our quality demands.（供应商必须满足我们的质量要求。）",
+      "Rising customer demands require more staff.（日益增长的客户需求需要更多员工。）"
+  ],
+  "sceneAssociation": "想象客户投诉时说‘these are our demands’，或经理在会议中强调‘we have to meet the demands’",
+  "confusingWordsComparison": [
+      {
+          "word": "requirements",
+          "coreDifference": "demands 更强硬，requirements 更正式",
+          "toeicSceneFocus": "demands 用于谈判，requirements 用于标准"
+      },
+      {
+          "word": "needs",
+          "coreDifference": "needs 强调基本需求，demands 强调必须满足",
+          "toeicSceneFocus": "needs 用于分析，demands 用于要求"
+      }
+  ]
+},
+{
+  "word": "requirements",
+  "phonetic": "/rɪˈkwaɪəmənts/",
+  "phrase": "job requirements",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "要求；必要条件（指必须满足的标准或资格）",
+  "toeicSceneFocus": "多见于招聘广告、项目规范、产品标准等语境，在托业阅读（职位描述）和听力（工作讨论）中频繁出现",
+  "keyCollocations": [
+      "meet requirements",
+      "job requirements",
+      "technical requirements",
+      "minimum requirements"
+  ],
+  "toeicExampleSentences": [
+      "Applicants must meet the educational requirements.（申请人必须满足教育要求。）",
+      "The project has specific safety requirements.（该项目有特定的安全要求。）"
+  ],
+  "sceneAssociation": "想象招聘页面列出‘requirements: 5 years experience’，或会议中说‘we need to fulfill all requirements’",
+  "confusingWordsComparison": [
+      {
+          "word": "demands",
+          "coreDifference": "requirements 更正式客观，demands 更主观强硬",
+          "toeicSceneFocus": "requirements 用于标准规范，demands 用于谈判要求"
+      },
+      {
+          "word": "needs",
+          "coreDifference": "needs 是需求，requirements 是必须满足的条件",
+          "toeicSceneFocus": "needs 用于分析，requirements 用于制定标准"
+      }
+  ]
+},
+{
+  "word": "needs",
+  "phonetic": "/niːdz/",
+  "phrase": "business needs",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "需求；需要（指缺乏或必需的东西）",
+  "toeicSceneFocus": "常用于市场分析、业务规划、客户评估等语境，在托业阅读（商业报告）和听力（战略讨论）中常见",
+  "keyCollocations": [
+      "customer needs",
+      "business needs",
+      "meet needs",
+      "identify needs"
+  ],
+  "toeicExampleSentences": [
+      "We conducted a survey to understand customer needs.（我们进行调查以了解客户需求。）",
+      "The training program addresses our current needs.（培训项目满足我们当前的需求。）"
+  ],
+  "sceneAssociation": "想象团队会议中分析‘what are the market needs?’，或报告中写着‘based on customer needs’",
+  "confusingWordsComparison": [
+      {
+          "word": "wants",
+          "coreDifference": "needs 是必需，wants 是想要但非必需",
+          "toeicSceneFocus": "needs 用于基本需求，wants 用于偏好"
+      },
+      {
+          "word": "requirements",
+          "coreDifference": "requirements 是必须满足的条件，needs 是需求",
+          "toeicSceneFocus": "requirements 用于标准，needs 用于分析"
+      }
+  ]
+},
+{
+  "word": "wants",
+  "phonetic": "/wɒnts/",
+  "phrase": "customer wants",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "想要的东西；欲望（指渴望拥有但不一定必需的事物）",
+  "toeicSceneFocus": "多用于市场营销、产品开发、消费者行为等语境，在托业阅读（市场分析）和听力（产品讨论）中出现",
+  "keyCollocations": [
+      "customer wants",
+      "identify wants",
+      "fulfill wants",
+      "wants and needs"
+  ],
+  "toeicExampleSentences": [
+      "The product design should address both needs and wants.（产品设计应同时满足需求和欲望。）",
+      "Understanding customer wants helps improve sales.（了解客户想要什么有助于提高销售额。）"
+  ],
+  "sceneAssociation": "想象市场调研中说‘we need to separate needs from wants’，或产品经理讨论‘customer wants more features’",
+  "confusingWordsComparison": [
+      {
+          "word": "needs",
+          "coreDifference": "wants 是欲望，needs 是必需",
+          "toeicSceneFocus": "wants 用于可选需求，needs 用于基本需求"
+      },
+      {
+          "word": "desires",
+          "coreDifference": "desires 更正式强烈，wants 更日常",
+          "toeicSceneFocus": "desires 用于书面，wants 用于口语"
+      }
+  ]
+},
+{
+  "word": "desires",
+  "phonetic": "/dɪˈzaɪəz/",
+  "phrase": "personal desires",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "欲望；渴望（指强烈的愿望或向往）",
+  "toeicSceneFocus": "常用于员工发展、客户心理、职业规划等语境，在托业阅读（人物传记）和听力（职业咨询）中出现",
+  "keyCollocations": [
+      "personal desires",
+      "strong desires",
+      "fulfill desires",
+      "desire for success"
+  ],
+  "toeicExampleSentences": [
+      "The program helps employees achieve their career desires.（该项目帮助员工实现职业愿望。）",
+      "We aim to fulfill the desires of our premium clients.（我们旨在满足高端客户的愿望。）"
+  ],
+  "sceneAssociation": "想象职业咨询中说‘what are your desires for the future?’，或产品描述中‘designed for those with high desires’",
+  "confusingWordsComparison": [
+      {
+          "word": "wants",
+          "coreDifference": "desires 更强烈正式，wants 更普通日常",
+          "toeicSceneFocus": "desires 用于书面表达，wants 用于口语交流"
+      },
+      {
+          "word": "hopes",
+          "coreDifference": "hopes 更乐观，desires 更欲望化",
+          "toeicSceneFocus": "hopes 用于期望，desires 用于渴望"
+      }
+  ]
+},
+{
+  "word": "expectations",
+  "phonetic": "/ɪkˌspekˈteɪʃənz/",
+  "phrase": "customer expectations",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "期望；预期（指对某事结果的预期标准）",
+  "toeicSceneFocus": "常见于客户满意度、项目管理、绩效评估等语境，在托业阅读（服务标准）和听力（反馈讨论）中频繁考查",
+  "keyCollocations": [
+      "meet expectations",
+      "exceed expectations",
+      "customer expectations",
+      "set expectations"
+  ],
+  "toeicExampleSentences": [
+      "Our goal is to exceed customer expectations.（我们的目标是超越客户期望。）",
+      "Clear communication helps manage expectations.（清晰的沟通有助于管理期望。）"
+  ],
+  "sceneAssociation": "想象会议中说‘we need to meet the client's expectations’，或评价中‘he exceeded our expectations’",
+  "confusingWordsComparison": [
+      {
+          "word": "hopes",
+          "coreDifference": "expectations 是基于经验的预期，hopes 是愿望",
+          "toeicSceneFocus": "expectations 用于标准，hopes 用于理想"
+      },
+      {
+          "word": "requirements",
+          "coreDifference": "requirements 是必须，expectations 是预期标准",
+          "toeicSceneFocus": "requirements 用于硬性要求，expectations 用于服务质量"
+      }
+  ]
+},
+{
+  "word": "hopes",
+  "phonetic": "/hoʊps/",
+  "phrase": "hopes for promotion",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "希望；期望（指对未来的乐观期待）",
+  "toeicSceneFocus": "多用于个人发展、团队激励、未来规划等语境，在托业阅读（职业文章）和听力（面试对话）中出现",
+  "keyCollocations": [
+      "hopes for",
+      "in hopes of",
+      "realize hopes",
+      "hopes and dreams"
+  ],
+  "toeicExampleSentences": [
+      "She has high hopes for her career advancement.（她对自己的职业晋升充满希望。）",
+      "The team works hard to fulfill the manager's hopes.（团队努力实现经理的期望。）"
+  ],
+  "sceneAssociation": "想象面试中问‘what are your hopes for this role?’，或员工在评估中表达‘hopes for growth’",
+  "confusingWordsComparison": [
+      {
+          "word": "expectations",
+          "coreDifference": "hopes 更愿望化，expectations 更基于现实",
+          "toeicSceneFocus": "hopes 用于个人期望，expectations 用于专业标准"
+      },
+      {
+          "word": "wishes",
+          "coreDifference": "wishes 更虚幻，hopes 更实际",
+          "toeicSceneFocus": "wishes 用于愿望，hopes 用于可实现的目标"
+      }
+  ]
+},
+{
+  "word": "wishes",
+  "phonetic": "/ˈwɪʃɪz/",
+  "phrase": "special wishes",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "愿望；心愿（指希望实现的事，常带情感色彩）",
+  "toeicSceneFocus": "常用于客户定制、节日祝福、个人表达等语境，在托业阅读（邮件）和听力（日常对话）中出现",
+  "keyCollocations": [
+      "best wishes",
+      "wishes for",
+      "fulfill wishes",
+      "special wishes"
+  ],
+  "toeicExampleSentences": [
+      "We respect your wishes and will proceed accordingly.（我们尊重您的愿望并将据此进行。）",
+      "Send your best wishes to the team for the holiday.（向团队致以节日的美好祝愿。）"
+  ],
+  "sceneAssociation": "想象邮件结尾‘best wishes for your success’，或客户说‘I have special wishes for the order’",
+  "confusingWordsComparison": [
+      {
+          "word": "hopes",
+          "coreDifference": "wishes 更情感化，hopes 更理性",
+          "toeicSceneFocus": "wishes 用于祝福，hopes 用于目标"
+      },
+      {
+          "word": "dreams",
+          "coreDifference": "dreams 更宏大，wishes 更具体",
+          "toeicSceneFocus": "dreams 用于长期愿景，wishes 用于当前愿望"
+      }
+  ]
+},
+{
+  "word": "dreams",
+  "phonetic": "/driːmz/",
+  "phrase": "career dreams",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "梦想；理想（指远大的抱负或向往）",
+  "toeicSceneFocus": "多用于职业发展、励志演讲、个人规划等语境，在托业阅读（人物故事）和听力（职业讨论）中出现",
+  "keyCollocations": [
+      "achieve dreams",
+      "pursue dreams",
+      "career dreams",
+      "dreams come true"
+  ],
+  "toeicExampleSentences": [
+      "The program helps employees pursue their career dreams.（该项目帮助员工追求职业梦想。）",
+      "Hard work can make your dreams a reality.（努力工作可以实现你的梦想。）"
+  ],
+  "sceneAssociation": "想象培训中说‘we support your career dreams’，或面试中问‘what are your dreams?’",
+  "confusingWordsComparison": [
+      {
+          "word": "wishes",
+          "coreDifference": "dreams 更宏大长远，wishes 更具体短期",
+          "toeicSceneFocus": "dreams 用于长期目标，wishes 用于当前愿望"
+      },
+      {
+          "word": "goals",
+          "coreDifference": "goals 更实际可衡量，dreams 更理想化",
+          "toeicSceneFocus": "goals 用于计划，dreams 用于愿景"
+      }
+  ]
+},
+{
+  "word": "goals",
+  "phonetic": "/ɡoʊlz/",
+  "phrase": "team goals",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "目标；目的（指具体可衡量的成就）",
+  "toeicSceneFocus": "最常见于项目管理、绩效评估、战略规划等语境，在托业阅读（商业计划）和听力（会议讨论）中频繁出现",
+  "keyCollocations": [
+      "set goals",
+      "achieve goals",
+      "team goals",
+      "personal goals"
+  ],
+  "toeicExampleSentences": [
+      "We need to set clear goals for the next quarter.（我们需要为下季度设定明确目标。）",
+      "The team achieved all their annual goals.（团队实现了所有年度目标。）"
+  ],
+  "sceneAssociation": "想象会议中说‘let's set SMART goals’，或绩效评估中‘review your goals’",
+  "confusingWordsComparison": [
+      {
+          "word": "targets",
+          "coreDifference": "targets 更具体量化，goals 更广泛",
+          "toeicSceneFocus": "targets 用于销售指标，goals 用于发展方向"
+      },
+      {
+          "word": "objectives",
+          "coreDifference": "objectives 更正式，goals 更通用",
+          "toeicSceneFocus": "objectives 用于战略文件，goals 用于日常管理"
+      }
+  ]
+},
+{
+  "word": "targets",
+  "phonetic": "/ˈtɑːɡɪts/",
+  "phrase": "sales targets",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "目标；指标（指具体可量化的绩效指标）",
+  "toeicSceneFocus": "多用于销售、生产、财务等量化场景，在托业阅读（业绩报告）和听力（销售会议）中常见",
+  "keyCollocations": [
+      "sales targets",
+      "meet targets",
+      "set targets",
+      "exceed targets"
+  ],
+  "toeicExampleSentences": [
+      "The sales team exceeded their quarterly targets.（销售团队超过了季度目标。）",
+      "We need to set realistic targets for the new campaign.（我们需要为新活动设定现实的目标。）"
+  ],
+  "sceneAssociation": "想象销售会议上经理说‘we missed our targets’，或报告中显示‘target achievement rate’",
+  "confusingWordsComparison": [
+      {
+          "word": "goals",
+          "coreDifference": "targets 更具体量化，goals 更广泛",
+          "toeicSceneFocus": "targets 用于数字指标，goals 用于总体方向"
+      },
+      {
+          "word": "objectives",
+          "coreDifference": "objectives 包含方法，targets仅是数字",
+          "toeicSceneFocus": "objectives 用于计划，targets 用于考核"
+      }
+  ]
+},
+{
+  "word": "objectives",
+  "phonetic": "/əbˈdʒektɪvz/",
+  "phrase": "strategic objectives",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "目标；目的（指战略层面的具体目标）",
+  "toeicSceneFocus": "常用于商业战略、项目规划、组织管理等语境，在托业阅读（战略文件）和听力（高管讨论）中出现",
+  "keyCollocations": [
+      "strategic objectives",
+      "business objectives",
+      "achieve objectives",
+      "set objectives"
+  ],
+  "toeicExampleSentences": [
+      "Our main objective is to increase market share.（我们的主要目标是增加市场份额。）",
+      "The project objectives were clearly defined at the start.（项目目标在开始时已明确定义。）"
+  ],
+  "sceneAssociation": "想象战略会议中讨论‘our objectives for next year’，或文件中列出‘key objectives’",
+  "confusingWordsComparison": [
+      {
+          "word": "goals",
+          "coreDifference": "objectives 更正式战略，goals 更通用",
+          "toeicSceneFocus": "objectives 用于正式文件，goals 用于日常管理"
+      },
+      {
+          "word": "targets",
+          "coreDifference": "targets 量化，objectives 包含方法",
+          "toeicSceneFocus": "targets 用于数字，objectives 用于计划"
+      }
+  ]
+},
+{
+  "word": "aims",
+  "phonetic": "/eɪmz/",
+  "phrase": "primary aims",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "目标；目的（指意图达到的方向或结果）",
+  "toeicSceneFocus": "多用于项目介绍、教育目标、战略意图等语境，在托业阅读（计划书）和听力（会议介绍）中出现",
+  "keyCollocations": [
+      "main aims",
+      "aims to do",
+      "achieve aims",
+      "educational aims"
+  ],
+  "toeicExampleSentences": [
+      "The training aims to improve communication skills.（培训旨在提高沟通技能。）",
+      "Our primary aim is customer satisfaction.（我们的主要目标是客户满意度。）"
+  ],
+  "sceneAssociation": "想象会议开场‘the aims of this meeting are...’，或项目计划中‘aims and objectives’",
+  "confusingWordsComparison": [
+      {
+          "word": "purposes",
+          "coreDifference": "aims 更方向性，purposes 更功能性",
+          "toeicSceneFocus": "aims 用于目标设定，purposes 用于用途说明"
+      },
+      {
+          "word": "goals",
+          "coreDifference": "goals 更具体可衡量，aims 更方向性",
+          "toeicSceneFocus": "goals 用于计划，aims 用于意图"
+      }
+  ]
+},
+{
+  "word": "purposes",
+  "phonetic": "/ˈpɜːrpəsɪz/",
+  "phrase": "business purposes",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "目的；用途（指某事被做的原因或功能）",
+  "toeicSceneFocus": "常用于商务沟通、文件说明、费用报销等语境，在托业阅读（邮件）和听力（解释说明）中常见",
+  "keyCollocations": [
+      "for business purposes",
+      "for this purpose",
+      "purpose of",
+      "educational purposes"
+  ],
+  "toeicExampleSentences": [
+      "This budget is for training purposes only.（此预算仅用于培训目的。）",
+      "Please state the purpose of your visit.（请说明您的来访目的。）"
+  ],
+  "sceneAssociation": "想象报销单上写‘for business purposes only’，或邮件开头‘for the purpose of clarification’",
+  "confusingWordsComparison": [
+      {
+          "word": "aims",
+          "coreDifference": "purposes 解释为什么，aims指向什么",
+          "toeicSceneFocus": "purposes 用于说明原因，aims 用于说明目标"
+      },
+      {
+          "word": "intentions",
+          "coreDifference": "intentions 强调意图，purposes 强调功能",
+          "toeicSceneFocus": "intentions 用于计划，purposes 用于用途"
+      }
+  ]
+},
+{
+  "word": "intentions",
+  "phonetic": "/ɪnˈtenʃənz/",
+  "phrase": "good intentions",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "意图；目的（指打算做某事的想法）",
+  "toeicSceneFocus": "多用于商务沟通、承诺表达、计划说明等语境，在托业阅读（邮件）和听力（对话）中出现",
+  "keyCollocations": [
+      "good intentions",
+      "intention to do",
+      "clear intentions",
+      "with good intentions"
+  ],
+  "toeicExampleSentences": [
+      "We have no intention of changing the policy.（我们无意改变政策。）",
+      "Her intention is to improve team efficiency.（她的目的是提高团队效率。）"
+  ],
+  "sceneAssociation": "想象邮件中写‘we intend to proceed’，或对话中说‘what are your intentions?’",
+  "confusingWordsComparison": [
+      {
+          "word": "aims",
+          "coreDifference": "intentions 强调想法，aims 强调目标",
+          "toeicSceneFocus": "intentions 用于计划，aims 用于方向"
+      },
+      {
+          "word": "purposes",
+          "coreDifference": "purposes 强调功能，intentions 强调意图",
+          "toeicSceneFocus": "purposes 用于用途，intentions 用于打算"
+      }
+  ]
+},
+{
+  "word": "ambitions",
+  "phonetic": "/æmˈbɪʃənz/",
+  "phrase": "career ambitions",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "雄心；抱负（指强烈的成功愿望）",
+  "toeicSceneFocus": "常用于职业发展、人才评估、领导力等语境，在托业阅读（招聘）和听力（面试）中频繁考查",
+  "keyCollocations": [
+      "career ambitions",
+      "high ambitions",
+      "achieve ambitions",
+      "show ambition"
+  ],
+  "toeicExampleSentences": [
+      "She has strong ambitions to become a manager.（她有成为经理的强烈抱负。）",
+      "We need employees with ambition and drive.（我们需要有抱负和动力的员工。）"
+  ],
+  "sceneAssociation": "想象面试中问‘what are your career ambitions?’，或绩效评估中评价‘shows great ambition’",
+  "confusingWordsComparison": [
+      {
+          "word": "aspirations",
+          "coreDifference": "ambitions 更主动进取，aspirations 更理想化",
+          "toeicSceneFocus": "ambitions 用于职业野心，aspirations 用于人生理想"
+      },
+      {
+          "word": "goals",
+          "coreDifference": "goals 更具体，ambitions 更宏大",
+          "toeicSceneFocus": "goals 用于计划，ambitions 用于抱负"
+      }
+  ]
+},
+{
+  "word": "aspirations",
+  "phonetic": "/ˌæspəˈreɪʃənz/",
+  "phrase": "personal aspirations",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "渴望；抱负（指对未来的美好向往）",
+  "toeicSceneFocus": "多用于个人发展、职业规划、激励等语境，在托业阅读（职业文章）和听力（发展讨论）中出现",
+  "keyCollocations": [
+      "personal aspirations",
+      "career aspirations",
+      "achieve aspirations",
+      "high aspirations"
+  ],
+  "toeicExampleSentences": [
+      "The company supports employees' aspirations for growth.（公司支持员工的发展渴望。）",
+      "What are your professional aspirations?（你的职业抱负是什么？）"
+  ],
+  "sceneAssociation": "想象职业咨询中说‘share your aspirations’，或培训中‘align aspirations with company goals’",
+  "confusingWordsComparison": [
+      {
+          "word": "ambitions",
+          "coreDifference": "aspirations 更理想化，ambitions 更进取",
+          "toeicSceneFocus": "aspirations 用于人生理想，ambitions 用于职业野心"
+      },
+      {
+          "word": "hopes",
+          "coreDifference": "hopes 更普通，aspirations 更高远",
+          "toeicSceneFocus": "hopes 用于期望，aspirations 用于抱负"
+      }
+  ]
+},
+{
+  "word": "motivations",
+  "phonetic": "/ˌmoʊtɪˈveɪʃənz/",
+  "phrase": "intrinsic motivations",
+  "partOfSpeech": "n. 名词（复数）",
+  "coreMeaning": "动机；动力（指驱使人行动的内在或外在原因）",
+  "toeicSceneFocus": "常用于人力资源、管理理论、员工激励等语境，在托业阅读（心理学文章）和听力（管理讨论）中出现",
+  "keyCollocations": [
+      "motivation for",
+      "intrinsic motivation",
+      "high motivation",
+      "lack of motivation"
+  ],
+  "toeicExampleSentences": [
+      "Understanding employee motivations improves retention.（了解员工动机有助于提高留任率。）",
+      "The training program focuses on building intrinsic motivation.（培训项目注重建立内在动机。）"
+  ],
+  "sceneAssociation": "想象管理会议中讨论‘what motivates our team?’，或研究中‘extrinsic vs intrinsic motivations’",
+  "confusingWordsComparison": [
+      {
+          "word": "motivations",
+          "coreDifference": "motivations 是原因，motives 是目的",
+          "toeicSceneFocus": "motivations 用于驱动力，motives 用于意图"
+      },
+      {
+          "word": "drives",
+          "coreDifference": "drives 更生理本能，motivations 更心理",
+          "toeicSceneFocus": "drives 用于基本需求，motivations 用于复杂动机"
+      }
+  ]
+},
+
+{
+  "word": "initiative",
+  "phonetic": "/ɪˈnɪʃətɪv/",
+  "phrase": "show initiative at work",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "主动性；进取心；倡议（指在没有被告知的情况下主动采取行动、开始做某事或提出新想法的能力或行为）",
+  "toeicSceneFocus": "职场核心软技能词汇。频繁出现在员工评估、职位描述（尤其是管理或关键岗位）、公司文化描述以及关于创新和问题解决的讨论中。是描述理想员工特质的高频词。",
+  "keyCollocations": [
+      "take the initiative（采取主动）",
+      "on one's own initiative（主动地）",
+      "a new initiative（一项新倡议）",
+      "demonstrate initiative（展现主动性）",
+      "lose the initiative（丧失主动权）"
+  ],
+  "toeicExampleSentences": [
+      "We value employees who show initiative and are willing to take on new challenges.（我们看重那些表现出主动性并愿意接受新挑战的员工。）",
+      "The manager praised her for taking the initiative to solve the client's problem before it escalated.（经理表扬她主动采取行动，在客户问题升级前解决了它。）"
+  ],
+  "sceneAssociation": "联想“在没有被指派的情况下，一名员工主动发现流程问题并提出改进方案”，核心是“不待指令，先行一步”的职场优秀品质。",
+  "confusingWordsComparison": [
+      {
+          "word": "initiative",
+          "coreDifference": "指“主动行动的能力、意愿或具体行为”，强调自发性和开创性。",
+          "toeicSceneFocus": "员工自驱力、创新提议、职场主动性"
+      },
+      {
+          "word": "drive",
+          "coreDifference": "指内在的“动力、干劲”，是推动人追求目标的心理能量，更侧重持续的欲望和雄心。",
+          "toeicSceneFocus": "内在动机、野心、成功驱动力"
+      },
+      {
+          "word": "ambition",
+          "coreDifference": "指“雄心、抱负”，是对成功、权力或成就的强烈渴望，是目标本身。Initiative是实现ambition的手段之一。",
+          "toeicSceneFocus": "职业目标、晋升欲望、长远抱负"
+      }
+  ]
+},
+{
+  "word": "drive",
+  "phonetic": "/draɪv/",
+  "phrase": "strong entrepreneurial drive",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "驱动力；干劲；能动性（指实现目标的强烈内在动机、精力和决心）",
+  "coreMeaning": "驱动力；干劲；能动性（指实现目标的强烈内在动机、精力和决心）",
+  "toeicSceneFocus": "领导力、企业家精神和个人职业发展的核心词。在托业阅读的人物特写、公司成功案例分析、以及对高绩效员工的描述中常见。用于解释个人或团队取得成功的内在原因。",
+  "keyCollocations": [
+      "motivation and drive（动力与干劲）",
+      "competitive drive（竞争动力）",
+      "inner drive（内在驱动力）",
+      "drive to succeed（成功的动力）",
+      "lack drive（缺乏干劲）"
+  ],
+  "toeicExampleSentences": [
+      "Her relentless drive and commitment were key factors in the project's success.（她不懈的动力和投入是项目成功的关键因素。）",
+      "The company is looking for candidates with a strong sales drive and a proven track record.（公司正在寻找具有强大销售动力和良好业绩记录的候选人。）"
+  ],
+  "sceneAssociation": "想象“一位创业者夜以继日地工作，其背后是强烈的‘创业驱动力（entrepreneurial drive）’”，核心是“内心那台持续提供动力的引擎”。",
+  "confusingWordsComparison": [
+      {
+          "word": "drive",
+          "coreDifference": "强调“为实现目标而持续付出的内在能量和决心”，是一种强大的推动力。",
+          "toeicSceneFocus": "成功的内在引擎、个人干劲、追求目标的能量"
+      },
+      {
+          "word": "determination",
+          "coreDifference": "强调“下定决心、坚定不移”，侧重于做出决定并坚持到底的意志品质。Drive是燃料，determination是方向盘。",
+          "toeicSceneFocus": "面对困难时的坚定决心"
+      },
+      {
+          "word": "initiative",
+          "coreDifference": "强调“主动开始行动”，是drive的一种外在行为表现。有drive的人通常会show initiative。",
+          "toeicSceneFocus": "主动发起行动的行为"
+      }
+  ]
+},
+{
+  "word": "determination",
+  "phonetic": "/dɪˌtɜːrmɪˈneɪʃn/",
+  "phrase": "succeed through sheer determination",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "决心；决意；坚定（指在困难面前做出坚定决定并坚持到底的品质）",
+  "toeicSceneFocus": "描述克服挑战、达成艰难目标的关键特质。托业阅读中常出现在励志商业故事、项目复盘、或个人毅力相关的文章里。听力中可能在评估团队成员或讨论项目障碍时提及。",
+  "keyCollocations": [
+      "show great determination（表现出巨大的决心）",
+      "determination to succeed（成功的决心）",
+      "with determination（坚定地）",
+      "fierce determination（强烈的决心）",
+      "a lack of determination（缺乏决心）"
+  ],
+  "toeicExampleSentences": [
+      "Despite numerous setbacks, her unwavering determination finally led to the breakthrough.（尽管遭遇无数挫折，她坚定的决心最终带来了突破。）",
+      "The team’s success is a testament to their hard work and collective determination.（团队的成功证明了他们的努力和集体的决心。）"
+  ],
+  "sceneAssociation": "联想“运动员在最后冲刺阶段咬紧牙关、目光坚定的表情”，核心是“无论多难，都决意要达到目标的心理状态”。",
+  "confusingWordsComparison": [
+      {
+          "word": "determination",
+          "coreDifference": "强调“做出坚定决定并不动摇的意志品质”，尤其是在面对阻力时。",
+          "toeicSceneFocus": "克服困难时的坚定意志、不服输的精神"
+      },
+      {
+          "word": "persistence",
+          "coreDifference": "强调“持续不断地行动”，是determination的外在行为体现。Determination是心理状态，persistence是持续的行为。",
+          "toeicSceneFocus": "持续努力、不轻易放弃的行动"
+      },
+      {
+          "word": "resolve",
+          "coreDifference": "与determination非常接近，但更正式，强调经过深思熟虑后的坚定决心。",
+          "toeicSceneFocus": "正式、深思熟虑后的坚定决定"
+      }
+  ]
+},
+{
+  "word": "persistence",
+  "phonetic": "/pərˈsɪstəns/",
+  "phrase": "success requires persistence",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "坚持不懈；持续存在（指不顾困难、失败或反对而继续行动或存在的状态）",
+  "toeicSceneFocus": "与determination紧密相关，但更强调行为上的持续性。托业中用于赞美不轻言放弃的工作态度，常在销售、研发、客户服务等需要反复尝试的场景中被强调。",
+  "keyCollocations": [
+      "persistence pays off（坚持会有回报）",
+      "dogged persistence（顽强的坚持）",
+      "show persistence（表现出坚持）",
+      "through persistence（通过坚持）",
+      "a problem of persistence（持续存在的问题）"
+  ],
+  "toeicExampleSentences": [
+      "His persistence in following up with the client eventually resulted in a major contract.（他坚持跟进客户，最终赢得了一份重大合同。）",
+      "Innovation often requires not just creativity, but also the persistence to see an idea through to completion.（创新通常不仅需要创造力，还需要将想法贯彻到底的毅力。）"
+  ],
+  "sceneAssociation": "想象“销售员被拒绝多次后仍然面带微笑拨打下一个电话”，核心是“行为上的不中断，屡败屡战”。",
+  "confusingWordsComparison": [
+      {
+          "word": "persistence",
+          "coreDifference": "强调“行为或状态的持续性”，不顾阻碍地继续做下去。",
+          "toeicSceneFocus": "持续不断的努力行动、不放弃的行为"
+      },
+      {
+          "word": "determination",
+          "coreDifference": "强调“内心的坚定决心”，是persistence的心理基础。",
+          "toeicSceneFocus": "内心的坚定意志"
+      },
+      {
+          "word": "perseverance",
+          "coreDifference": "与persistence意思极其相近，常可互换。但perseverance有时更强调在**长期**且**特别艰巨**的困难面前的坚持，更具褒义。",
+          "toeicSceneFocus": "长期艰苦斗争中的坚持、毅力"
+      }
+  ]
+},
+{
+  "word": "perseverance",
+  "phonetic": "/ˌpɜːrsəˈvɪrəns/",
+  "phrase": "admire her perseverance",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "毅力；锲而不舍（指在面临巨大、长期的困难或挫折时，仍能保持坚定目标和努力的高尚品质）",
+  "coreMeaning": "毅力；锲而不舍（指在面临巨大、长期的困难或挫折时，仍能保持坚定目标和努力的高尚品质）",
+  "toeicSceneFocus": "语气比persistence更强、更正式，带有明确的褒义。托业阅读中常用于描述企业家精神、重大科研项目突破、或个人克服非凡逆境的成功故事，是更高层次的赞美。",
+  "keyCollocations": [
+      "with perseverance（凭着毅力）",
+      "steadfast perseverance（坚定不移的毅力）",
+      "a story of perseverance（一个关于毅力的故事）",
+      "demonstrate perseverance（展现出毅力）",
+      "perseverance in the face of adversity（面对逆境的毅力）"
+  ],
+  "toeicExampleSentences": [
+      "The success of the startup is a tribute to the founder's perseverance through years of financial hardship.（这家初创公司的成功是对创始人数年来在财务困境中坚持不懈的致敬。）",
+      "Learning a new language to fluency requires a great deal of patience and perseverance.（流利掌握一门新语言需要极大的耐心和毅力。）"
+  ],
+  "sceneAssociation": "联想“登山者历经数周极端天气，最终登上珠穆朗玛峰”，核心是“在漫长而极端的挑战中展现出的非凡坚持”。",
+  "confusingWordsComparison": [
+      {
+          "word": "perseverance",
+          "coreDifference": "强调“在长期、艰巨的困难面前所表现的坚持和耐力”，带有更强的坚韧和不屈不挠的色彩，是最高程度的赞美之一。",
+          "toeicSceneFocus": "长期艰苦斗争、非凡逆境中的坚持"
+      },
+      {
+          "word": "persistence",
+          "coreDifference": "泛指“持续的坚持”，困难可大可小，时间可长可短。是更通用、中性的词。",
+          "toeicSceneFocus": "泛指不放弃的持续行动"
+      },
+      {
+          "word": "tenacity",
+          "coreDifference": "指“固执的坚持，紧抓不放”，像咬住不放一样，强调抓住目标不放手的特性，与perseverance非常相似。",
+          "toeicSceneFocus": "紧抓目标不放的固执劲头"
+      }
+  ]
+},
+{
+  "word": "resilience",
+  "phonetic": "/rɪˈzɪliəns/",
+  "phrase": "build emotional resilience",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "恢复力；韧性；适应力（指从困难、挫折、变化或逆境中快速恢复、适应并变得更强的能力）",
+  "toeicSceneFocus": "现代职场和领导力发展中的热门概念。托业阅读中常出现在关于变革管理、压力应对、团队建设、企业可持续发展以及个人成长的文章中。强调的不是避免失败，而是从失败中反弹的能力。",
+  "keyCollocations": [
+      "show resilience（展现出韧性）",
+      "build resilience（建立韧性）",
+      "psychological resilience（心理韧性）",
+      "resilience in the face of change（面对变化的适应力）",
+      "a resilient organization（一个有韧性的组织）"
+  ],
+  "toeicExampleSentences": [
+      "The company's financial resilience was tested during the economic downturn but it managed to recover quickly.（该公司的财务韧性在经济衰退期间受到了考验，但它成功迅速复苏。）",
+      "Training programs now often include modules to help employees develop greater resilience to workplace stress.（培训课程现在通常包含帮助员工培养对工作压力更强适应力的模块。）"
+  ],
+  "sceneAssociation": "联想“竹子在大风中弯曲但不断裂，风过后又弹回原状”，或“一个人经历项目失败后，总结经验，很快以更好状态投入新项目”，核心是“受压-反弹-成长”的能力。",
+  "confusingWordsComparison": [
+      {
+          "word": "resilience",
+          "coreDifference": "强调“从挫折、压力或变化中恢复、适应并可能变得更强的能力”，侧重于反弹和适应过程。",
+          "toeicSceneFocus": "从挫折中恢复、适应变化、抗压能力"
+      },
+      {
+          "word": "perseverance",
+          "coreDifference": "强调“在困难中持续前进、不放弃”，侧重于坚持行动本身。Resilience是跌倒了爬起来的能力，perseverance是顶着压力不停步的能力。",
+          "toeicSceneFocus": "在困难中持续努力、不停止"
+      },
+      {
+          "word": "toughness",
+          "coreDifference": "指“坚韧、强硬”，强调承受力强、不易被伤害或击垮，但不一定包含“恢复和成长”的动态过程。",
+          "toeicSceneFocus": "承受力强、坚强"
+      }
+  ]
+},
+{
+  "word": "courage",
+  "phonetic": "/ˈkɜːrɪdʒ/",
+  "phrase": "have the courage to innovate",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "勇气；胆量（指在面对恐惧、危险、困难或反对时，仍然能够采取行动或坚持信念的心理力量）",
+  "toeicSceneFocus": "虽然不直接是商业术语，但在领导力、道德决策、创新和变革管理中至关重要。托业阅读中可能出现在描述企业家承担风险、员工举报不当行为、或公司进行艰难但必要的改革等语境中。",
+  "keyCollocations": [
+      "moral courage（道德勇气）",
+      "show courage（表现出勇气）",
+      "have the courage of one's convictions（有勇气坚持自己的信念）",
+      "it takes courage（这需要勇气）",
+      "a courageous decision（一个勇敢的决定）"
+  ],
+  "toeicExampleSentences": [
+      "It took great courage for the employee to speak up about the safety violations in the factory.（这位员工勇于说出工厂的安全违规行为，这需要极大的勇气。）",
+      "The CEO showed leadership courage by making the unpopular but necessary decision to restructure the company.（CEO展现了领导者的勇气，做出了重组公司这个不受欢迎但必要的决定。）"
+  ],
+  "sceneAssociation": "想象“在全员沉默的会议上，一个人站出来指出计划中的重大缺陷”，核心是“在恐惧或压力面前，依然选择做正确或困难的事”。",
+  "confusingWordsComparison": [
+      {
+          "word": "courage",
+          "coreDifference": "指“面对恐惧、危险或反对时采取行动的内心力量”，强调克服恐惧的心理过程。",
+          "toeicSceneFocus": "承担风险、道德抉择、勇于发言、领导魄力"
+      },
+      {
+          "word": "bravery",
+          "coreDifference": "与courage基本同义，但更常指面对**身体危险**时的英勇行为。Courage的应用范围更广，包括道德和心理层面。",
+          "toeicSceneFocus": "面对物理危险时的英勇"
+      },
+      {
+          "word": "confidence",
+          "coreDifference": "指“自信，相信自己能力”，不一定涉及恐惧。有confidence的人可能更容易展现出courage。",
+          "toeicSceneFocus": "对自身能力的信任"
+      }
+  ]
+},
+{
+  "word": "confidence",
+  "phonetic": "/ˈkɑːnfɪdəns/",
+  "phrase": "speak with confidence",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "信心；信任；把握（指对自己或他人的能力、品质或判断的信任感；也指对某事发生的确定性）",
+  "toeicSceneFocus": "职场基本素质词汇，影响沟通、表现和领导力。托业听力中可从说话者的语气判断其confidence；阅读中广泛用于描述成功的演讲者、可靠的公司、或对市场前景的预测。",
+  "keyCollocations": [
+      "have confidence in（对……有信心）",
+      "with confidence（充满信心地）",
+      "boost confidence（增强信心）",
+      "vote of confidence（信任票）",
+      "lack confidence（缺乏信心）"
+  ],
+  "toeicExampleSentences": [
+      "**（对自身）** Her confidence in presenting to large audiences has grown significantly with experience.（随着经验的积累，她在大型观众面前演讲的信心大大增强。）",
+      "**（对他人/事物）** The board expressed full confidence in the new management team.（董事会对新的管理团队表示完全信任。）"
+  ],
+  "sceneAssociation": "想象“一位演讲者在台上与观众自信对视、挥洒自如”，或“投资者表示‘对公司的长期发展有信心（have confidence in）’”，核心是“一种确信和信任的状态”。",
+  "confusingWordsComparison": [
+      {
+          "word": "confidence",
+          "coreDifference": "最通用，可指“对自身能力的信任”，也可指“对他人的信任”或“对某事的确信”。",
+          "toeicSceneFocus": "广泛的信任与确信（对己、对人、对事）"
+      },
+      {
+          "word": "self-confidence",
+          "coreDifference": "特指“自信心”，即对自身能力和价值的信任，是confidence的一种。",
+          "toeicSceneFocus": "个人对自身能力的信任"
+      },
+      {
+          "word": "assurance",
+          "coreDifference": "指“把握、保证”，更正式，强调基于知识或经验的确定性，或是一种正式的承诺。",
+          "toeicSceneFocus": "正式的保证、基于知识的把握"
+      }
+  ]
+},
+{
+  "word": "self-esteem",
+  "phonetic": "/ˌself ɪˈstiːm/",
+  "phrase": "affect a child's self-esteem",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "自尊（心）（指个人对自身价值、重要性和能力的整体感受和评价）",
+  "coreMeaning": "自尊（心）（指个人对自身价值、重要性和能力的整体感受和评价）",
+  "toeicSceneFocus": "更多出现在与人力资源管理、员工福祉、职场心理、团队建设相关的拓展性阅读材料中。可能讨论管理风格如何影响员工自尊，或高自尊与工作满意度、绩效的关系。",
+  "keyCollocations": [
+      "high/low self-esteem（高/低自尊）",
+      "boost self-esteem（提升自尊）",
+      "damage self-esteem（损害自尊）",
+      "healthy self-esteem（健康的自尊）",
+      "issues with self-esteem（自尊心问题）"
+  ],
+  "toeicExampleSentences": [
+      "A positive work environment that provides constructive feedback can help to build employees' self-esteem.（一个提供建设性反馈的积极工作环境有助于建立员工的自尊。）",
+      "Micromanagement can be detrimental to an employee's self-esteem and sense of autonomy.（微观管理会损害员工的自尊和自主感。）"
+  ],
+  "sceneAssociation": "联想“一个人对自己的整体看法：我是有价值的、有能力的吗？”，核心是“对自我价值的深层次、整体性评估”。",
+  "confusingWordsComparison": [
+      {
+          "word": "self-esteem",
+          "coreDifference": "指“整体性的自我价值感”，是关于“我作为一个人的价值如何”的深层感受。",
+          "toeicSceneFocus": "整体自我价值、个人尊严感"
+      },
+      {
+          "word": "self-confidence",
+          "coreDifference": "特指“对自身完成特定任务能力的信心”，更具体、更情境化。高self-esteem通常带来高self-confidence。",
+          "toeicSceneFocus": "对具体能力的信心"
+      },
+      {
+          "word": "ego",
+          "coreDifference": "常指“自我、自尊心”，但可能带贬义，指过分关注自我、骄傲自大。",
+          "toeicSceneFocus": "常指过度的、负面的自我关注"
+      }
+  ]
+},
+{
+  "word": "self-confidence",
+  "phonetic": "/ˌself ˈkɑːnfɪdəns/",
+  "phrase": "project self-confidence in an interview",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "自信（心）（指对自己能力、判断和应对情境的信任感）",
+  "coreMeaning": "自信（心）（指对自己能力、判断和应对情境的信任感）",
+  "toeicSceneFocus": "求职面试、公开演讲、销售谈判、领导岗位描述中的关键软技能。托业听力中，自信的语调是理解说话者态度的重要线索；阅读中常作为成功人士或理想候选人的必备特质被提及。",
+  "keyCollocations": [
+      "build self-confidence（建立自信）",
+      "exude self-confidence（散发出自信）",
+      "lack of self-confidence（缺乏自信）",
+      "self-confidence to do sth（做某事的自信）",
+      "quiet self-confidence（沉静的自信）"
+  ],
+  "toeicExampleSentences": [
+      "The training program is designed not only to teach skills but also to boost the participants' self-confidence.（该培训计划不仅旨在传授技能，还旨在增强参与者的自信心。）",
+      "His calm self-confidence during the client presentation helped to secure the deal.（他在客户演示中表现出的沉着自信有助于达成交易。）"
+  ],
+  "sceneAssociation": "想象“面试中候选人与面试官坚定握手、清晰阐述自己优势的画面”，核心是“在具体情境下，‘我能行’的信念外显”。",
+  "confusingWordsComparison": [
+      {
+          "word": "self-confidence",
+          "coreDifference": "confidence的特指形式，**专指“对自身能力的信心”**，是表现在外的、可观察的。",
+          "toeicSceneFocus": "具体情境下的个人能力信心、外显的把握感"
+      },
+      {
+          "word": "confidence",
+          "coreDifference": "含义更广，可指对自身、他人或事物的信任。说“self-confidence”时焦点明确在自身。",
+          "toeicSceneFocus": "广泛的信任（自身、他人、事件）"
+      },
+      {
+          "word": "self-esteem",
+          "coreDifference": "指更深层、更整体的“自我价值感”，是self-confidence的情感基础。一个人可能在某领域有self-confidence但整体self-esteem不高。",
+          "toeicSceneFocus": "整体自我价值评估、内在尊严感"
+      }
+  ]
+},
+{
+  "word": "ability",
+  "phonetic": "/əˈbɪləti/",
+  "phrase": "demonstrate technical ability",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "能力；才能（指做某事所需的身体或心智力量，可以是天生的，也可以是后天习得的）",
+  "toeicSceneFocus": "最基础、最通用的能力描述词。遍布于托业考试的各个角落：职位描述（要求abilities）、员工评估（评价abilities）、培训目标（提升abilities）、以及个人介绍中。",
+  "keyCollocations": [
+      "the ability to do sth（做某事的能力）",
+      "managerial ability（管理能力）",
+      "cognitive ability（认知能力）",
+      "within one's ability（在某人力所能及的范围内）",
+      "to the best of one's ability（竭尽所能）"
+  ],
+  "toeicExampleSentences": [
+      "The position requires strong analytical ability and attention to detail.（该职位需要强大的分析能力和对细节的关注。）",
+      "We will provide the necessary training to enhance your ability to work in a team.（我们将提供必要的培训，以增强您的团队合作能力。）"
+  ],
+  "sceneAssociation": "这是一个最广泛的概念，联想“人类拥有思考、学习、沟通、解决问题等各种各样的‘能力（abilities）’”，核心是“能够完成某事的属性”。",
+  "confusingWordsComparison": [
+      {
+          "word": "ability",
+          "coreDifference": "**最通用**，指“做某事的能力”，可以是先天或后天的，范围最广。",
+          "toeicSceneFocus": "泛指任何能力（智力、体力、学习、专业）"
+      },
+      {
+          "word": "skill",
+          "coreDifference": "特指“通过学习和练习获得的熟练技能”，是ability的一种具体表现。Ability是基础，skill是具体技术。",
+          "toeicSceneFocus": "通过训练获得的具体技能（如编程、外语）"
+      },
+      {
+          "word": "competence",
+          "coreDifference": "指“足以胜任某项工作或任务的足够能力水平”，强调“达标、称职”，是一个衡量标准。",
+          "toeicSceneFocus": "胜任力、达标的能力水平"
+      },
+      {
+          "word": "talent",
+          "coreDifference": "指“天赋、天生的才能”，强调与生俱来的卓越能力。",
+          "toeicSceneFocus": "先天禀赋、天分"
+      }
+  ]
+},
+{
+  "word": "skill",
+  "phonetic": "/skɪl/",
+  "phrase": "acquire new digital skills",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "技能；技巧；技艺（指通过训练和实践获得并发展的、能够熟练完成某项特定任务的能力）",
+  "coreMeaning": "技能；技巧；技艺（指通过训练和实践获得并发展的、能够熟练完成某项特定任务的能力）",
+  "toeicSceneFocus": "职场硬核词汇，是简历、招聘广告、培训课程和绩效评估的核心。托业中“hard skills”（硬技能，如编程、会计）和“soft skills”（软技能，如沟通、领导力）的区分是常见考点。",
+  "keyCollocations": [
+      "communication skills（沟通技巧）",
+      "technical skills（技术技能）",
+      "transferable skills（可转移技能）",
+      "skill set（技能组合）",
+      "develop a skill（培养一项技能）"
+  ],
+  "toeicExampleSentences": [
+      "The job advertisement lists proficiency in a second language as a required skill.（招聘广告将精通第二语言列为必备技能。）",
+      "Continuous learning is essential to keep your professional skills up to date in a fast-changing market.（在快速变化的市场中，持续学习对于保持专业技能不过时至关重要。）"
+  ],
+  "sceneAssociation": "联想“一个人通过上课、练习，从不会到熟练掌握一门外语或一种软件操作的过程”，核心是“后天习得的、可操作的熟练本领”。",
+  "confusingWordsComparison": [
+      {
+          "word": "skill",
+          "coreDifference": "特指“通过学习和练习获得的、可用于完成具体任务的熟练技艺或技巧”。",
+          "toeicSceneFocus": "可习得、可测量的具体工作技能（软硬技能）"
+      },
+      {
+          "word": "ability",
+          "coreDifference": "范围更广，包含先天能力和后天技能。Skill是ability中“后天获得”的那一部分。",
+          "toeicSceneFocus": "泛指能力（含先天）"
+      },
+      {
+          "word": "expertise",
+          "coreDifference": "指“高水平的专门知识或技能”，是skill的高级形式，达到专家级别。",
+          "toeicSceneFocus": "专家级的专门知识与技能"
+      }
+  ]
+},
+{
+  "word": "competence",
+  "phonetic": "/ˈkɑːmpɪtəns/",
+  "phrase": "demonstrate professional competence",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "能力；胜任力；称职（指拥有足够的知识、技能和能力来有效完成某项工作或任务的品质）",
+  "coreMeaning": "能力；胜任力；称职（指拥有足够的知识、技能和能力来有效完成某项工作或任务的品质）",
+  "toeicSceneFocus": "人力资源和绩效管理中的核心术语。托业阅读中常出现在关于员工评估标准、职位资质要求、培训效果衡量、以及专业资格认证（如“core competencies”核心胜任力）的讨论中。强调达到合格标准的、可靠的能力水平。",
+  "keyCollocations": [
+      "professional competence（专业能力）",
+      "core competence（核心能力）",
+      "linguistic competence（语言能力）",
+      "within one's competence（在某人的胜任范围内）",
+      "lack competence（缺乏能力/不称职）"
+  ],
+  "toeicExampleSentences": [
+      "All medical staff must regularly update their training to ensure continued clinical competence.（所有医务人员必须定期更新培训，以确保持续的临床胜任能力。）",
+      "The promotion was based on her demonstrated competence in managing complex projects and leading teams.（这次晋升是基于她在管理复杂项目和领导团队方面所展现出的胜任力。）"
+  ],
+  "sceneAssociation": "想象“一份正式的岗位说明书上列出的‘任职资格（competencies required）’”，或“通过考核获得一张‘胜任力证书（Certificate of Competence）’”，核心是“足以满足特定工作要求的能力门槛”。",
+  "confusingWordsComparison": [
+      {
+          "word": "competence",
+          "coreDifference": "强调“足以胜任某项工作的足够能力水平”，是一个衡量标准，指“称职、达标”。",
+          "toeicSceneFocus": "胜任标准、合格的能力水平、任职资格"
+      },
+      {
+          "word": "ability",
+          "coreDifference": "泛指“能力”本身，不预设是否足够。Competence是足够的ability。",
+          "toeicSceneFocus": "能力本身（不论水平高低）"
+      },
+      {
+          "word": "proficiency",
+          "coreDifference": "指“熟练、精通”，水平通常比competence（称职）更高。Competence是及格线，proficiency是优秀。",
+          "toeicSceneFocus": "熟练度、精通程度"
+      }
+  ]
+},
+{
+  "word": "faculty",
+  "phonetic": "/ˈfæklti/",
+  "phrase": "the mental faculty of reason",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "1. （身体、精神的）机能，能力；2. （大学的）院，系；全体教员",
+  "coreMeaning": "1. （身体、精神的）机能，能力；2. （大学的）院，系；全体教员",
+  "toeicSceneFocus": "作“能力”解时，是正式、书面用语，在托业中出现频率相对较低，可能出现在较文学化或哲学性的商业领导力文章中。作“院系/教员”解时，在涉及大学合作、校园招聘、学术研究等场景可能出现。",
+  "keyCollocations": [
+      "mental faculties（心智能力）",
+      "the faculty of speech（语言能力）",
+      "university faculty（大学教员）",
+      "join the faculty（加入教员队伍）",
+      "faculty meeting（教员会议）"
+  ],
+  "toeicExampleSentences": [
+      "**（义项1: 能力）** Even at an advanced age, he retained all his mental faculties and continued to advise the company.（即使年事已高，他仍保持着全部心智能力，并继续为公司提供建议。）",
+      "**（义项2: 教员）** She is a distinguished member of the Business School faculty.（她是商学院一位杰出的教员。）"
+  ],
+  "sceneAssociation": "**场景1（能力）：** 极正式的语境，如“人类独有的理性思维能力（the human faculty of reason）”。**场景2（教员）：** 大学校园场景，如“经济系（the Economics Faculty）的教授们”。",
+  "confusingWordsComparison": [
+      {
+          "word": "faculty",
+          "coreDifference": "作“能力”解时，是**非常正式**的用语，特指“与生俱来的身心基本机能”（如视、听、推理），通常用复数。作“教员”解是常见义。",
+          "toeicSceneFocus": "正式文本中的先天身心机能；大学教职人员"
+      },
+      {
+          "word": "ability",
+          "coreDifference": "泛指“能力”，通用且口语化，不特指先天机能。",
+          "toeicSceneFocus": "通用、广泛的能力"
+      },
+      {
+          "word": "staff",
+          "coreDifference": "泛指任何机构的“全体员工”，而faculty（教员）特指大学或学校的教学人员。",
+          "toeicSceneFocus": "泛指所有员工"
+      }
+  ]
+},
+{
+  "word": "expertise",
+  "phonetic": "/ˌekspɜːrˈtiːz/",
+  "phrase": "consult for their technical expertise",
+  "partOfSpeech": "n. 名词（不可数）",
+  "coreMeaning": "专门知识；专长；专业技能（指在特定领域内高水平的、专门的知识和技能）",
+  "coreMeaning": "专门知识；专长；专业技能（指在特定领域内高水平的、专门的知识和技能）",
+  "toeicSceneFocus": "商业世界中高度赞赏的价值。托业阅读中常出现在描述公司核心竞争力、介绍专家顾问、分析行业进入壁垒、或讨论外包决策（outsource for expertise）的文章中。是“知识经济”和“专家型人才”的直接体现。",
+  "keyCollocations": [
+      "technical expertise（技术专长）",
+      "area of expertise（专业领域）",
+      "specialized expertise（专门知识）",
+      "lack the expertise（缺乏专业知识）",
+      "draw on sb's expertise（利用某人的专业知识）"
+  ],
+  "toeicExampleSentences": [
+      "The firm hired an external consultant for her expertise in international tax law.（这家公司聘请了一位外部顾问，看中她在国际税法方面的专业知识。）",
+      "Our competitive advantage lies in the deep industry expertise of our engineering team.（我们的竞争优势在于工程团队深厚的行业专业知识。）"
+  ],
+  "sceneAssociation": "想象“一位头发花白的工程师，在复杂的设计图纸前，被人尊称为‘这个领域的专家（an expert in the field）’，其拥有的就是expertise”，核心是“在特定领域达到专家水平的、可解决复杂问题的知识与技能集合”。",
+  "confusingWordsComparison": [
+      {
+          "word": "expertise",
+          "coreDifference": "不可数名词，指“高水平的专门知识和技能”，达到专家级别，强调深度和权威性。",
+          "toeicSceneFocus": "专家级知识技能、核心专长、深度专业能力"
+      },
+      {
+          "word": "skill",
+          "coreDifference": "可数名词，指具体的“技能”，是expertise的组成部分。Expertise是多种高级skills和知识的集合。",
+          "toeicSceneFocus": "具体的、可习得的技能"
+      },
+      {
+          "word": "knowledge",
+          "coreDifference": "指“知识、知晓”，范围最广。Expertise是specialized, advanced knowledge（专门的、高级的知识）。",
+          "toeicSceneFocus": "泛指知识、信息"
+      }
+  ]
+},
+
+{
+  "word": "proficiency",
+  "phonetic": "/prəˈfɪʃnsi/",
+  "phrase": "proficiency in business English",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "熟练程度；精通；（在某一领域的）熟练技能",
+  "toeicSceneFocus": "高频出现在求职招聘、员工培训、技能评估等托业场景，阅读（招聘启事、能力测评报告）和听力（面试对话、培训通知）中常考查“语言/技能熟练度”相关表达，是托业描述“职场技能水平”的核心词汇",
+  "keyCollocations": [
+      "proficiency in English（英语熟练程度）",
+      "professional proficiency（专业技能精通度）",
+      "language proficiency（语言熟练度）",
+      "demonstrate proficiency（展示熟练技能）",
+      "proficiency test（水平测试）"
+  ],
+  "toeicExampleSentences": [
+      "The job requires a high level of proficiency in computer programming.（该职位要求具备高水平的计算机编程技能。）",
+      "She passed the English proficiency test with excellent results.（她以优异的成绩通过了英语水平测试。）",
+      "Employee training is designed to improve proficiency in customer service.（员工培训旨在提升客户服务的熟练程度。）",
+      "His proficiency in negotiation helped the company secure a profitable contract.（他的谈判技巧精通度帮助公司拿下了一份盈利的合同。）"
+  ],
+  "sceneAssociation": "可以联想“招聘启事中明确要求candidates具备proficiency in business English，或员工参加技能培训提升professional proficiency”的画面，结合“技能掌握的熟练程度”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "proficiency",
+          "coreDifference": "侧重“对某项技能的熟练掌握程度”，强调“实际应用能力”",
+          "toeicSceneFocus": "求职招聘、技能培训、能力评估场景"
+      },
+      {
+          "word": "knowledge",
+          "coreDifference": "侧重“对事实、信息或理论的知晓和掌握”，强调“认知储备”",
+          "toeicSceneFocus": "职场培训、学术交流、专业领域讨论场景"
+      },
+      {
+          "word": "competence",
+          "coreDifference": "侧重“胜任某项工作的综合能力”，范围比proficiency更广",
+          "toeicSceneFocus": "岗位胜任力评估、职场绩效评价场景"
+      }
+  ]
+},
+{
+  "word": "knowledge",
+  "phonetic": "/ˈnɒlɪdʒ/（英式）/ˈnɑːlɪdʒ/（美式）",
+  "phrase": "knowledge of international trade",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "知识；学问；知晓；（对某一学科或领域的）认知和理解",
+  "toeicSceneFocus": "通用高频词汇，出现在职场培训、商务谈判、学术交流等托业场景，阅读（专业报告、培训手册）和听力（职场讲座、客户沟通）中常考查“专业知识、行业认知”相关表达，是描述“认知储备”的基础词汇",
+  "keyCollocations": [
+      "professional knowledge（专业知识）",
+      "practical knowledge（实践知识）",
+      "acquire knowledge（获取知识）",
+      "apply knowledge（应用知识）",
+      "knowledge base（知识库）"
+  ],
+  "toeicExampleSentences": [
+      "A good manager should have extensive knowledge of market trends.（一名优秀的管理者应具备丰富的市场趋势知识。）",
+      "The training course helps new employees build a solid knowledge base of the company’s products.（该培训课程帮助新员工建立扎实的公司产品知识库。）",
+      "She used her knowledge of international trade to resolve the dispute.（她运用自己的国际贸易知识解决了这场纠纷。）",
+      "Continuous learning is essential for updating professional knowledge in a fast-changing industry.（在快速变化的行业中，持续学习对于更新专业知识至关重要。）"
+  ],
+  "sceneAssociation": "可以联想“职场讲座上，专家分享industry knowledge，或员工通过培训acquire practical knowledge”的画面，结合“对某领域的认知储备”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "knowledge",
+          "coreDifference": "侧重“对事实、理论的认知和储备”，是静态的信息积累",
+          "toeicSceneFocus": "职场培训、学术交流、专业讨论场景"
+      },
+      {
+          "word": "wisdom",
+          "coreDifference": "侧重“基于经验和判断的智慧”，强调“正确运用知识的能力”",
+          "toeicSceneFocus": "高层决策、经验分享、人生感悟场景"
+      },
+      {
+          "word": "proficiency",
+          "coreDifference": "侧重“技能的熟练应用能力”，是动态的实践能力",
+          "toeicSceneFocus": "技能评估、求职招聘场景"
+      }
+  ]
+},
+{
+  "word": "wisdom",
+  "phonetic": "/ˈwɪzdəm/",
+  "phrase": "wisdom in business decision-making",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "智慧；明智；真知灼见；（基于经验的）正确判断能力",
+  "toeicSceneFocus": "出现在高层管理、商务决策、经验分享等托业场景，阅读（领导力报告、企业传记）和听力（高管访谈、研讨会）中常考查“决策智慧、管理远见”相关表达，是描述“高阶判断力”的正式词汇",
+  "keyCollocations": [
+      "business wisdom（商业智慧）",
+      "collective wisdom（集体智慧）",
+      "wisdom of experience（经验的智慧）",
+      "show wisdom（展现智慧）",
+      "accumulate wisdom（积累智慧）"
+  ],
+  "toeicExampleSentences": [
+      "The CEO’s wisdom in crisis management saved the company from bankruptcy.（首席执行官的危机管理智慧使公司免于破产。）",
+      "Making decisions based on collective wisdom is more effective than individual judgment.（基于集体智慧做决策比个人判断更有效。）",
+      "Years of experience in the industry have given him great wisdom in market analysis.（多年的行业经验让他在市场分析方面具备了卓越的智慧。）",
+      "True wisdom lies in knowing when to listen to others’ opinions.（真正的智慧在于懂得何时听取他人的意见。）"
+  ],
+  "sceneAssociation": "可以联想“董事会会议上，高管们凭借business wisdom制定公司战略，或资深顾问分享wisdom of experience指导新人”的画面，结合“基于经验的正确判断力”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "wisdom",
+          "coreDifference": "侧重“基于经验和阅历的智慧、远见”，强调“正确运用知识和经验的能力”",
+          "toeicSceneFocus": "高层决策、经验分享、领导力场景"
+      },
+      {
+          "word": "intelligence",
+          "coreDifference": "侧重“天生的智力、理解力或情报信息”，强调“认知能力或信息获取”",
+          "toeicSceneFocus": "人才评估、市场情报、智力讨论场景"
+      },
+      {
+          "word": "knowledge",
+          "coreDifference": "侧重“对事实和理论的认知储备”，是智慧的基础",
+          "toeicSceneFocus": "职场培训、专业讨论场景"
+      }
+  ]
+},
+{
+  "word": "intelligence",
+  "phonetic": "/ɪnˈtelɪdʒəns/",
+  "phrase": "market intelligence analysis",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "智力；理解力；智商；情报；（市场、行业的）资讯和分析",
+  "toeicSceneFocus": "高频出现在人才招聘、市场调研、企业战略等托业场景，阅读（市场报告、人才测评）和听力（职场访谈、战略会议）中常考查“市场情报、智力水平”相关表达，是描述“认知能力或商业资讯”的核心词汇",
+  "keyCollocations": [
+      "market intelligence（市场情报）",
+      "business intelligence（商业智能）",
+      "artificial intelligence（人工智能）",
+      "high intelligence（高智商）",
+      "gather intelligence（收集情报）"
+  ],
+  "toeicExampleSentences": [
+      "The company uses business intelligence tools to analyze customer behavior.（该公司利用商业智能工具分析客户行为。）",
+      "High intelligence alone is not enough to ensure success in the workplace.（仅凭高智商不足以确保职场成功。）",
+      "Our team is responsible for gathering market intelligence to identify new opportunities.（我们团队负责收集市场情报，发现新的商机。）",
+      "Artificial intelligence has transformed many aspects of modern business operations.（人工智能已经改变了现代商业运营的诸多方面。）"
+  ],
+  "sceneAssociation": "可以联想“市场部门通过market intelligence分析竞争对手动态，或招聘时评估候选人的intelligence水平”的画面，结合“认知能力或商业资讯”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "intelligence",
+          "coreDifference": "侧重“天生的智力、理解力，或商业/市场的情报资讯”",
+          "toeicSceneFocus": "人才评估、市场调研、人工智能场景"
+      },
+      {
+          "word": "talent",
+          "coreDifference": "侧重“与生俱来的天赋或特殊才能”，强调“某一领域的特长”",
+          "toeicSceneFocus": "人才招聘、艺术创作、技能特长场景"
+      },
+      {
+          "word": "wisdom",
+          "coreDifference": "侧重“基于经验的智慧和判断力”，是后天积累的能力",
+          "toeicSceneFocus": "高层决策、经验分享场景"
+      }
+  ]
+},
+{
+  "word": "talent",
+  "phonetic": "/ˈtælənt/",
+  "phrase": "talent in sales and marketing",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "天赋；天资；才能；人才；（某一领域的）杰出能力",
+  "toeicSceneFocus": "超高频出现在人才招聘、团队管理、员工激励等托业场景，阅读（招聘广告、人才计划）和听力（面试对话、管理层会议）中几乎必考“人才招聘、天赋特长”相关表达，是描述“职场人才或天生特长”的核心词汇",
+  "keyCollocations": [
+      "talent management（人才管理）",
+      "recruit talent（招聘人才）",
+      "natural talent（天赋）",
+      "show talent（展现才能）",
+      "talent pool（人才库）"
+  ],
+  "toeicExampleSentences": [
+      "The company is committed to attracting and retaining top talent in the industry.（该公司致力于吸引和留住行业顶尖人才。）",
+      "She has a natural talent for building relationships with clients.（她在与客户建立关系方面有天生的天赋。）",
+      "The talent management program provides training and development opportunities for employees.（人才管理计划为员工提供培训和发展机会。）",
+      "His talent for problem-solving makes him a valuable member of the team.（他解决问题的才能使他成为团队中宝贵的一员。）"
+  ],
+  "sceneAssociation": "可以联想“招聘广告上写着‘seek top talent for marketing team’，或经理发现员工的talent in negotiation并加以培养”的画面，结合“天生特长或职场人才”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "talent",
+          "coreDifference": "侧重“与生俱来的天赋或某领域的杰出人才”，可指人也可指能力",
+          "toeicSceneFocus": "人才招聘、团队管理、技能特长场景"
+      },
+      {
+          "word": "gift",
+          "coreDifference": "侧重“天生的、无需后天努力的天赋”，语气更口语化，也可指“礼物”",
+          "toeicSceneFocus": "日常沟通、才艺展示场景"
+      },
+      {
+          "word": "aptitude",
+          "coreDifference": "侧重“学习某项技能的潜在能力”，强调“可培养的天赋倾向”",
+          "toeicSceneFocus": "人才测评、职业规划、技能培训场景"
+      }
+  ]
+},
+{
+  "word": "gift",
+  "phonetic": "/ɡɪft/",
+  "phrase": "gift for cross-cultural communication",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "天赋；天资；礼物；赠品；（免费的）馈赠",
+  "toeicSceneFocus": "出现在日常办公、商务社交、才艺描述等托业场景，阅读（邮件、邀请函）和听力（职场对话、社交场合）中常考查“天赋特长、商务礼品”相关表达，是兼具“能力”和“物品”双重含义的常用词汇",
+  "keyCollocations": [
+      "gift for languages（语言天赋）",
+      "business gift（商务礼品）",
+      "natural gift（天生的天赋）",
+      "exchange gifts（交换礼物）",
+      "gift voucher（礼品券）"
+  ],
+  "toeicExampleSentences": [
+      "He has a rare gift for understanding complex technical concepts quickly.（他有一种罕见的天赋，能快速理解复杂的技术概念。）",
+      "It is customary to exchange small business gifts at the end of the meeting.（会议结束时交换小的商务礼品是一种惯例。）",
+      "The company gave all employees a gift voucher for the holiday season.（该公司在节假日给所有员工发放了礼品券。）",
+      "Her gift for public speaking helped her become the spokesperson of the company.（她的演讲天赋帮助她成为了公司的发言人。）"
+  ],
+  "sceneAssociation": "可以联想“商务晚宴上双方exchange business gifts，或同事称赞某人有gift for negotiation”的画面，结合“天生天赋或商务礼品”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "gift",
+          "coreDifference": "侧重“天生的、无需刻意培养的天赋”，也可指“礼物”，口语化程度高",
+          "toeicSceneFocus": "日常沟通、商务社交、才艺描述场景"
+      },
+      {
+          "word": "talent",
+          "coreDifference": "侧重“某领域的杰出才能或人才”，可通过后天培养提升，更正式",
+          "toeicSceneFocus": "人才招聘、团队管理场景"
+      },
+      {
+          "word": "present",
+          "coreDifference": "侧重“礼物”，几乎不用于表示“天赋”，语气更随意",
+          "toeicSceneFocus": "日常社交、节日祝福场景"
+      }
+  ]
+},
+{
+  "word": "aptitude",
+  "phonetic": "/ˈæptɪtjuːd/（英式）/ˈæptɪtuːd/（美式）",
+  "phrase": "aptitude for logical thinking",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "天资；天赋；（学习某项技能的）潜在能力；才能倾向",
+  "toeicSceneFocus": "出现在人才测评、职业规划、员工培训等托业场景，阅读（能力测试报告、职业规划手册）和听力（面试对话、培训咨询）中常考查“技能学习倾向、天赋潜力”相关表达，是描述“可培养潜力”的专业词汇",
+  "keyCollocations": [
+      "aptitude test（能力倾向测试）",
+      "aptitude for learning（学习能力倾向）",
+      "natural aptitude（天生资质）",
+      "show aptitude for（展现……的天赋倾向）",
+      "aptitude assessment（能力倾向评估）"
+  ],
+  "toeicExampleSentences": [
+      "The aptitude test helps identify candidates’ potential for software development.（能力倾向测试有助于识别候选人在软件开发方面的潜力。）",
+      "She has a natural aptitude for numbers and excels in financial analysis.（她在数字方面有天生的资质，擅长财务分析。）",
+      "The company offers training programs to employees based on their aptitude and interests.（该公司根据员工的能力倾向和兴趣提供培训项目。）",
+      "His aptitude for problem-solving makes him suitable for the position of project manager.（他解决问题的能力倾向使他适合项目经理的职位。）"
+  ],
+  "sceneAssociation": "可以联想“求职时参加aptitude test，评估自己的职业潜力，或HR根据aptitude assessment为员工制定培训计划”的画面，结合“学习某项技能的潜在能力”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "aptitude",
+          "coreDifference": "侧重“学习某项技能的潜在能力或天赋倾向”，强调“可培养性”",
+          "toeicSceneFocus": "人才测评、职业规划、技能培训场景"
+      },
+      {
+          "word": "talent",
+          "coreDifference": "侧重“已展现的杰出才能或人才”，可指天生也可指后天培养",
+          "toeicSceneFocus": "人才招聘、团队管理场景"
+      },
+      {
+          "word": "capability",
+          "coreDifference": "侧重“实际具备的能力”，是已经发展出来的技能",
+          "toeicSceneFocus": "岗位胜任力、项目执行场景"
+      }
+  ]
+},
+{
+  "word": "capability",
+  "phonetic": "/ˌkeɪpəˈbɪləti/",
+  "phrase": "capability of crisis management",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "能力；才能；（个人或组织的）胜任能力；功能",
+  "toeicSceneFocus": "高频出现在项目管理、岗位评估、企业战略等托业场景，阅读（项目计划书、能力评估报告）和听力（管理层会议、客户沟通）中常考查“综合能力、组织功能”相关表达，是描述“实际胜任能力”的核心词汇",
+  "keyCollocations": [
+      "core capability（核心能力）",
+      "technical capability（技术能力）",
+      "improve capability（提升能力）",
+      "demonstrate capability（展示能力）",
+      "operational capability（运营能力）"
+  ],
+  "toeicExampleSentences": [
+      "The company’s core capability lies in its innovative product design.（该公司的核心能力在于其创新的产品设计。）",
+      "We need to enhance our technical capability to keep up with industry developments.（我们需要提升技术能力，以跟上行业发展的步伐。）",
+      "The project team demonstrated strong capability in handling unexpected challenges.（该项目团队在应对突发挑战方面展现了强大的能力。）",
+      "The new software has advanced capabilities for data analysis and visualization.（这款新软件具备先进的数据分析和可视化功能。）"
+  ],
+  "sceneAssociation": "可以联想“项目启动会上，团队展示operational capability，或公司通过培训提升员工的technical capability”的画面，结合“个人或组织的实际胜任能力”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "capability",
+          "coreDifference": "侧重“个人或组织实际具备的综合能力、功能”，强调“胜任力”",
+          "toeicSceneFocus": "项目管理、岗位评估、企业战略场景"
+      },
+      {
+          "word": "capacity",
+          "coreDifference": "侧重“容纳能力、生产能力或心理承受能力”，强调“容量或潜力上限”",
+          "toeicSceneFocus": "生产管理、资源规划、心理状态场景"
+      },
+      {
+          "word": "ability",
+          "coreDifference": "侧重“个人完成某项具体任务的能力”，范围比capability窄",
+          "toeicSceneFocus": "日常办公、任务执行场景"
+      }
+  ]
+},
+{
+  "word": "capacity",
+  "phonetic": "/kəˈpæsəti/",
+  "phrase": "production capacity of the factory",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "容量；容积；生产能力；（个人的）承受能力；资格",
+  "toeicSceneFocus": "高频出现在生产管理、资源规划、商务谈判等托业场景，阅读（生产报告、资源计划书）和听力（供应链会议、客户沟通）中常考查“生产能力、容量上限”相关表达，是描述“量化能力上限”的核心词汇",
+  "keyCollocations": [
+      "production capacity（生产能力）",
+      "storage capacity（存储容量）",
+      "capacity utilization（产能利用率）",
+      "maximum capacity（最大容量）",
+      "working capacity（工作能力）"
+  ],
+  "toeicExampleSentences": [
+      "The factory is operating at full capacity to meet the growing demand for products.（该工厂正满负荷运转，以满足不断增长的产品需求。）",
+      "The new warehouse has a storage capacity of 50,000 tons of goods.（这座新仓库的存储容量为5万吨货物。）",
+      "We need to expand production capacity to fulfill the large order from the client.（我们需要扩大生产能力，以完成客户的大额订单。）",
+      "Her mental capacity allows her to handle multiple tasks at the same time.（她的心智承受能力使她能够同时处理多项任务。）"
+  ],
+  "sceneAssociation": "可以联想“生产部门汇报factory’s production capacity，或物流团队评估warehouse storage capacity”的画面，结合“量化的容量或能力上限”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "capacity",
+          "coreDifference": "侧重“容纳、生产的量化能力上限，或心理承受能力”，强调“最大值”",
+          "toeicSceneFocus": "生产管理、资源规划、物流仓储场景"
+      },
+      {
+          "word": "capability",
+          "coreDifference": "侧重“个人或组织的综合胜任能力”，强调“实际操作能力”",
+          "toeicSceneFocus": "项目管理、岗位评估场景"
+      },
+      {
+          "word": "volume",
+          "coreDifference": "侧重“数量、体积”，是描述容量的具体指标，而非能力",
+          "toeicSceneFocus": "物流运输、数据统计场景"
+      }
+  ]
+},
+{
+  "word": "potential",
+  "phonetic": "/pəˈtenʃl/",
+  "phrase": "potential for business expansion",
+  "partOfSpeech": "adj. 形容词；n. 名词",
+  "coreMeaning": "adj. 潜在的；可能的；n. 潜力；潜能；可能性",
+  "toeicSceneFocus": "超高频出现在企业战略、人才评估、市场分析等托业场景，阅读（战略报告、市场分析）和听力（管理层会议、面试对话）中几乎必考“发展潜力、潜在机会”相关表达，是描述“未被发掘的可能性”的核心词汇",
+  "keyCollocations": [
+      "business potential（商业潜力）",
+      "potential customer（潜在客户）",
+      "tap into potential（挖掘潜力）",
+      "potential market（潜在市场）",
+      "growth potential（增长潜力）"
+  ],
+  "toeicExampleSentences": [
+      "The new market has great potential for future growth.（这个新市场具有巨大的未来增长潜力。）",
+      "The company is investing in training to unlock employees’ potential.（该公司正投资培训，以发掘员工的潜力。）",
+      "We need to identify potential customers to expand our sales network.（我们需要识别潜在客户，以扩大销售网络。）",
+      "The project has the potential to revolutionize the way we do business.（该项目有潜力彻底改变我们的商业模式。）"
+  ],
+  "sceneAssociation": "可以联想“市场分析师评估new region’s business potential，或经理发现员工的untapped potential并提供晋升机会”的画面，结合“未被发掘的潜力或可能性”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "potential",
+          "coreDifference": "侧重“未被发掘的潜力或潜在的可能性”，可指人或事物",
+          "toeicSceneFocus": "企业战略、人才评估、市场分析场景"
+      },
+      {
+          "word": "possibility",
+          "coreDifference": "侧重“某事发生的可能性”，范围更广，不强调“潜力”",
+          "toeicSceneFocus": "风险评估、方案讨论、未来规划场景"
+      },
+      {
+          "word": "aptitude",
+          "coreDifference": "侧重“学习某项技能的天赋倾向”，是更具体的潜在能力",
+          "toeicSceneFocus": "人才测评、职业规划场景"
+      }
+  ]
+},
+{
+  "word": "possibility",
+  "phonetic": "/ˌpɒsəˈbɪləti/（英式）/ˌpɑːsəˈbɪləti/（美式）",
+  "phrase": "possibility of a price increase",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "可能；可能性；可能的事；潜在的选择",
+  "toeicSceneFocus": "高频出现在风险评估、方案讨论、商务谈判等托业场景，阅读（风险报告、方案计划书）和听力（会议讨论、客户沟通）中常考查“事件可能性、潜在方案”相关表达，是描述“客观可能性”的基础词汇",
+  "keyCollocations": [
+      "possibility of success（成功的可能性）",
+      "explore possibilities（探索可能性）",
+      "there is a possibility that（有可能……）",
+      "remote possibility（渺茫的可能性）",
+      "various possibilities（多种可能性）"
+  ],
+  "toeicExampleSentences": [
+      "There is a strong possibility that the company will launch a new product next quarter.（该公司很有可能在下一季度推出新产品。）",
+      "We need to explore all possibilities before making a final decision.（在做出最终决定之前，我们需要探索所有可能性。）",
+      "The possibility of a merger between the two companies has been discussed recently.（两家公司合并的可能性最近被提上了讨论日程。）",
+      "A remote possibility of delay exists due to potential supply chain issues.（由于潜在的供应链问题，存在轻微的延误可能性。）"
+  ],
+  "sceneAssociation": "可以联想“会议上团队讨论project success的possibility，或分析师评估market变化的possibility”的画面，结合“某事发生的客观可能性”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "possibility",
+          "coreDifference": "侧重“某事发生的客观可能性”，范围广，不强调“潜力”",
+          "toeicSceneFocus": "风险评估、方案讨论、未来规划场景"
+      },
+      {
+          "word": "potential",
+          "coreDifference": "侧重“人或事物未被发掘的潜力”，强调“发展空间”",
+          "toeicSceneFocus": "企业战略、人才评估场景"
+      },
+      {
+          "word": "chance",
+          "coreDifference": "侧重“偶然的机会或可能性”，语气更口语化",
+          "toeicSceneFocus": "日常沟通、机会把握场景"
+      }
+  ]
+},
+{
+  "word": "opportunity",
+  "phonetic": "/ˌɒpəˈtjuːnəti/（英式）/ˌɑːpərˈtuːnəti/（美式）",
+  "phrase": "opportunity for career advancement",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "机会；时机；（有利的）境遇；职业发展机遇",
+  "toeicSceneFocus": "超高频出现在求职招聘、职业规划、商务合作等托业场景，阅读（招聘启事、职业发展手册）和听力（面试对话、商务谈判）中几乎必考“职业机遇、合作机会”相关表达，是描述“有利时机”的核心词汇",
+  "keyCollocations": [
+      "career opportunity（职业机遇）",
+      "business opportunity（商业机会）",
+      "seize an opportunity（抓住机会）",
+      "miss an opportunity（错失机会）",
+      "golden opportunity（黄金机遇）"
+  ],
+  "toeicExampleSentences": [
+      "The job offers excellent opportunities for career advancement and professional development.（该职位提供极佳的职业晋升和专业发展机会。）",
+      "We should seize this business opportunity to expand into the Asian market.（我们应该抓住这个商业机会，拓展亚洲市场。）",
+      "The conference is a great opportunity to network with industry leaders.（这次会议是与行业领袖建立人脉的绝佳时机。）",
+      "She didn’t want to miss the opportunity to work with the renowned company.（她不想错失与这家知名公司合作的机会。）"
+  ],
+  "sceneAssociation": "可以联想“招聘启事中强调‘提供career opportunity’，或商务谈判中双方抓住合作的opportunity”的画面，结合“有利的时机或境遇”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "opportunity",
+          "coreDifference": "侧重“有利的、可遇不可求的时机或机遇”，强调“正面性和价值性”",
+          "toeicSceneFocus": "求职招聘、职业规划、商务合作场景"
+      },
+      {
+          "word": "chance",
+          "coreDifference": "侧重“偶然的机会或可能性”，可指好的或坏的机会，口语化",
+          "toeicSceneFocus": "日常沟通、机会把握场景"
+      },
+      {
+          "word": "prospect",
+          "coreDifference": "侧重“未来的前景、展望”，也可指“潜在客户”",
+          "toeicSceneFocus": "市场前景、销售拓展场景"
+      }
+  ]
+},
+{
+  "word": "chance",
+  "phonetic": "/tʃɑːns/（英式）/tʃæns/（美式）",
+  "phrase": "chance to attend the seminar",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 机会；可能性；偶然的事件；v. 偶然发生；碰巧",
+  "toeicSceneFocus": "通用高频词汇，出现在日常办公、商务社交、机会讨论等托业场景，阅读（邮件、通知）和听力（职场对话、会议讨论）中常考查“偶然机会、可能性”相关表达，语气比opportunity更口语化",
+  "keyCollocations": [
+      "by chance（偶然）",
+      "have a chance to（有机会做……）",
+      "take a chance（冒险一试）",
+      "chance of success（成功的可能性）",
+      "miss a chance（错失机会）"
+  ],
+  "toeicExampleSentences": [
+      "I had a chance to meet the CEO at the company dinner last night.（昨晚我在公司晚宴上碰巧见到了首席执行官。）",
+      "There is a good chance that the project will be completed ahead of schedule.（这个项目很有可能提前完成。）",
+      "We should take a chance and invest in this promising startup.（我们应该冒险一试，投资这家前景良好的初创公司。）",
+      "She didn’t get a chance to present her ideas at the meeting.（她在会议上没有机会展示自己的想法。）"
+  ],
+  "sceneAssociation": "可以联想“员工偶然得到chance to attend an international seminar，或团队讨论项目成功的chance”的画面，结合“偶然的机会或可能性”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "chance",
+          "coreDifference": "侧重“偶然的机会或可能性”，可指好/坏机会，口语化，也可作动词",
+          "toeicSceneFocus": "日常办公、商务社交、机会讨论场景"
+      },
+      {
+          "word": "opportunity",
+          "coreDifference": "侧重“有利的、有价值的机遇”，语气正式，仅作名词",
+          "toeicSceneFocus": "求职招聘、商务合作场景"
+      },
+      {
+          "word": "occasion",
+          "coreDifference": "侧重“特定的场合、时刻”，不强调“机会”",
+          "toeicSceneFocus": "商务社交、节日庆典场景"
+      }
+  ]
+},
+{
+  "word": "prospect",
+  "phonetic": "/ˈprɒspekt/（英式）/ˈprɑːspekt/（美式）",
+  "phrase": "prospect of market growth",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 前景；展望；潜在客户；可能性；v. 勘探；寻找",
+  "toeicSceneFocus": "高频出现在市场分析、销售拓展、企业战略等托业场景，阅读（市场报告、销售计划）和听力（销售会议、战略讨论）中常考查“市场前景、潜在客户”相关表达，是描述“未来预期或潜在资源”的核心词汇",
+  "keyCollocations": [
+      "market prospect（市场前景）",
+      "sales prospect（潜在客户）",
+      "bright prospect（光明前景）",
+      "explore prospects（探索前景）",
+      "prospect for customers（寻找客户）"
+  ],
+  "toeicExampleSentences": [
+      "The prospect of economic recovery has boosted investor confidence.（经济复苏的前景提振了投资者的信心。）",
+      "The sales team is responsible for identifying new prospects in the region.（销售团队负责在该地区寻找新的潜在客户。）",
+      "The new product has excellent prospects in the global market.（这款新产品在全球市场具有极佳的前景。）",
+      "We need to evaluate the prospects of the project before making an investment.（在投资之前，我们需要评估这个项目的前景。）"
+  ],
+  "sceneAssociation": "可以联想“市场部门分析new product的market prospect，或销售团队拜访sales prospect”的画面，结合“未来发展前景或潜在客户”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "prospect",
+          "coreDifference": "侧重“未来的发展前景、展望”，也可指“销售领域的潜在客户”",
+          "toeicSceneFocus": "市场分析、销售拓展、企业战略场景"
+      },
+      {
+          "word": "outlook",
+          "coreDifference": "侧重“对未来的总体看法、展望”，可指个人态度或行业趋势",
+          "toeicSceneFocus": "行业分析、个人职业规划场景"
+      },
+      {
+          "word": "opportunity",
+          "coreDifference": "侧重“有利的时机或机遇”，不强调“未来趋势”",
+          "toeicSceneFocus": "求职招聘、商务合作场景"
+      }
+  ]
+},
+{
+  "word": "outlook",
+  "phonetic": "/ˈaʊtlʊk/",
+  "phrase": "outlook for the retail industry",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "展望；前景；观点；看法；世界观；（软件）邮箱",
+  "toeicSceneFocus": "出现在行业分析、经济报告、职业规划等托业场景，阅读（行业展望报告、经济分析）和听力（专家访谈、研讨会）中常考查“行业前景、未来趋势”相关表达，也会考查“邮箱软件”的日常办公用法",
+  "keyCollocations": [
+      "economic outlook（经济展望）",
+      "industry outlook（行业前景）",
+      "positive outlook（积极的看法）",
+      "long-term outlook（长期展望）",
+      "Outlook email（邮箱软件）"
+  ],
+  "toeicExampleSentences": [
+      "The industry outlook for the next year remains positive despite global challenges.（尽管面临全球挑战，明年的行业前景依然乐观。）",
+      "Financial analysts have a cautious outlook on the stock market.（金融分析师对股市持谨慎态度。）",
+      "A positive outlook is essential for success in a competitive workplace.（在竞争激烈的职场中，积极的心态至关重要。）",
+      "Please send the report to my Outlook email address before the deadline.（请在截止日期前将报告发送到我的邮箱地址。）"
+  ],
+  "sceneAssociation": "可以联想“专家在研讨会上分享retail industry outlook，或员工用Outlook处理工作邮件”的画面，结合“对未来的总体看法或办公软件”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "outlook",
+          "coreDifference": "侧重“对未来的总体看法、行业的整体前景”，也可指“个人世界观”",
+          "toeicSceneFocus": "行业分析、经济报告、日常办公场景"
+      },
+      {
+          "word": "prospect",
+          "coreDifference": "侧重“具体事物的发展前景”，也可指“潜在客户”",
+          "toeicSceneFocus": "市场分析、销售拓展场景"
+      },
+      {
+          "word": "perspective",
+          "coreDifference": "侧重“看待事物的视角、观点”，不强调“未来趋势”",
+          "toeicSceneFocus": "商务沟通、问题分析场景"
+      }
+  ]
+},
+{
+  "word": "future",
+  "phonetic": "/ˈfjuːtʃə/（英式）/ˈfjuːtʃər/（美式）",
+  "phrase": "future of digital commerce",
+  "partOfSpeech": "adj. 形容词；n. 名词",
+  "coreMeaning": "adj. 将来的；未来的；n. 未来；将来；前途；前景",
+  "toeicSceneFocus": "通用高频词汇，出现在企业战略、职业规划、市场预测等托业场景，阅读（战略报告、职业规划）和听力（会议讨论、面试对话）中常考查“未来发展、职业前途”相关表达，是描述“时间维度上的未来”的基础词汇",
+  "keyCollocations": [
+      "in the future（在未来）",
+      "future plans（未来计划）",
+      "career future（职业前途）",
+      "future development（未来发展）",
+      "future trends（未来趋势）"
+  ],
+  "toeicExampleSentences": [
+      "The company’s future depends on its ability to innovate and adapt to change.（该公司的未来取决于其创新和适应变化的能力。）",
+      "We need to discuss our future plans for expanding into overseas markets.（我们需要讨论拓展海外市场的未来计划。）",
+      "Investing in employee training is crucial for the future success of the business.（投资员工培训对企业未来的成功至关重要。）",
+      "She is optimistic about her career future in the rapidly growing tech industry.（她对自己在快速发展的科技行业的职业前途持乐观态度。）"
+  ],
+  "sceneAssociation": "可以联想“管理层会议上讨论company’s future development，或员工规划自己的career future”的画面，结合“时间维度上的未来或前途”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "future",
+          "coreDifference": "侧重“时间维度上的未来，或人/事物的前途”，是基础通用词汇",
+          "toeicSceneFocus": "企业战略、职业规划、市场预测场景"
+      },
+      {
+          "word": "prospect",
+          "coreDifference": "侧重“具体事物的发展前景或潜在客户”，更具针对性",
+          "toeicSceneFocus": "市场分析、销售拓展场景"
+      },
+      {
+          "word": "outlook",
+          "coreDifference": "侧重“对未来的总体看法或行业前景”，更偏向主观判断",
+          "toeicSceneFocus": "行业分析、经济报告场景"
+      }
+  ]
+},
+{
+  "word": "expectation",
+  "phonetic": "/ˌekspekˈteɪʃn/",
+  "phrase": "expectation of high performance",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "预料；预期；期待；期望；（对某人的）期望要求",
+  "toeicSceneFocus": "高频出现在职场管理、客户服务、项目执行等托业场景，阅读（绩效评估报告、客户协议）和听力（面试对话、团队会议）中常考查“绩效期望、客户预期”相关表达，是描述“主观期待或要求”的核心词汇",
+  "keyCollocations": [
+      "meet expectations（达到期望）",
+      "exceed expectations（超出期望）",
+      "customer expectations（客户期望）",
+      "performance expectations（绩效要求）",
+      "against expectations（出乎意料）"
+  ],
+  "toeicExampleSentences": [
+      "The new employee has exceeded all expectations with her hard work and dedication.（这位新员工凭借努力和敬业精神超出了所有人的期望。）",
+      "The company is committed to meeting customer expectations for quality and service.（该公司致力于满足客户对质量和服务的期望。）",
+      "Managers should communicate clear performance expectations to their teams.（管理者应向团队传达明确的绩效要求。）",
+      "Against all expectations, the small startup won the major contract.（出乎意料的是，这家小型初创公司赢得了这份重要合同。）"
+  ],
+  "sceneAssociation": "可以联想“绩效评估时经理说明对员工的performance expectations，或客服努力满足customer expectations”的画面，结合“主观的期待或要求”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "expectation",
+          "coreDifference": "侧重“主观的期待、预料或对他人的要求”",
+          "toeicSceneFocus": "职场管理、客户服务、项目执行场景"
+      },
+      {
+          "word": "anticipation",
+          "coreDifference": "侧重“对某事的期待和盼望”，带有更强烈的情感色彩",
+          "toeicSceneFocus": "商务活动、节日准备场景"
+      },
+      {
+          "word": "prediction",
+          "coreDifference": "侧重“基于分析的预测、预言”，更偏向客观判断",
+          "toeicSceneFocus": "市场预测、行业分析场景"
+      }
+  ]
+},
+
+{
+  "word": "demands",
+  "phonetic": "/dɪˈmændz/",
+  "phrase": "meet customer demands",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "要求；需求（指强制性的需要或期望）",
+  "toeicSceneFocus": "多用于客户关系、项目管理、职场沟通等语境，描述客户或上级的强制性要求，在托业阅读（合同条款）和听力（商务对话）中常见",
+  "keyCollocations": [
+      "meet demands",
+      "high demands",
+      "demand for sth.",
+      "customer demands"
+  ],
+  "toeicExampleSentences": [
+      "The supplier must meet the strict quality demands.（供应商必须满足严格的质量要求。）",
+      "High demands from clients require efficient management.（客户的高要求需要高效管理。）"
+  ],
+  "sceneAssociation": "想象客户会议上，客户提出‘these are our demands’，或经理说‘we must meet the market demands’",
+  "confusingWordsComparison": [
+      {
+          "word": "requirements",
+          "coreDifference": "demands 强制性更强，requirements 指必要条件",
+          "toeicSceneFocus": "demands 用于强硬要求，requirements 用于标准规范"
+      },
+      {
+          "word": "needs",
+          "coreDifference": "needs 强调基本需求，demands 强调期望",
+          "toeicSceneFocus": "needs 用于本质需求，demands 用于额外要求"
+      }
+  ]
+},
+{
+  "word": "requirements",
+  "phonetic": "/rɪˈkwaɪəmənts/",
+  "phrase": "job requirements list",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "要求；必要条件（指完成某事必须满足的标准）",
+  "toeicSceneFocus": "常用于招聘、产品规格、项目规范等语境，在托业阅读（招聘广告、技术文档）和听力（工作讨论）中频繁出现",
+  "keyCollocations": [
+      "meet requirements",
+      "job requirements",
+      "technical requirements",
+      "satisfy requirements"
+  ],
+  "toeicExampleSentences": [
+      "Applicants must satisfy all job requirements.（申请人必须满足所有工作要求。）",
+      "The project has specific technical requirements.（该项目有具体的技术要求。）"
+  ],
+  "sceneAssociation": "想象HR在描述‘the requirements for this position’，或项目经理列出‘project requirements’",
+  "confusingWordsComparison": [
+      {
+          "word": "demands",
+          "coreDifference": "requirements 指客观标准，demands 强调主观要求",
+          "toeicSceneFocus": "requirements 用于规范，demands 用于期望"
+      },
+      {
+          "word": "needs",
+          "coreDifference": "needs 更基础，requirements 更正式",
+          "toeicSceneFocus": "needs 用于需求分析，requirements 用于规格说明"
+      }
+  ]
+},
+{
+  "word": "needs",
+  "phonetic": "/niːdz/",
+  "phrase": "address customer needs",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "需求；需要（指缺乏或要求满足的状态）",
+  "toeicSceneFocus": "多用于市场分析、产品开发、客户服务等语境，在托业阅读（商业报告）和听力（会议讨论）中考查",
+  "keyCollocations": [
+      "customer needs",
+      "meet needs",
+      "special needs",
+      "basic needs"
+  ],
+  "toeicExampleSentences": [
+      "We must understand our customers' needs first.（我们必须首先了解客户的需求。）",
+      "The new product addresses the needs of small businesses.（新产品满足了小企业的需求。）"
+  ],
+  "sceneAssociation": "想象市场调研会议中，团队分析‘customer needs’，或产品设计时强调‘meet user needs’",
+  "confusingWordsComparison": [
+      {
+          "word": "wants",
+          "coreDifference": "needs 指必需，wants 指想要",
+          "toeicSceneFocus": "needs 用于基本需求，wants 用于欲望"
+      },
+      {
+          "word": "requirements",
+          "coreDifference": "requirements 更正式，needs 更基础",
+          "toeicSceneFocus": "requirements 用于标准，needs 用于需求分析"
+      }
+  ]
+},
+{
+  "word": "wants",
+  "phonetic": "/wɒnts/",
+  "phrase": "customer wants and preferences",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "想要；愿望（指欲望或偏好，非必需）",
+  "toeicSceneFocus": "常用于市场营销、产品设计、消费者行为等语境，在托业阅读（广告分析）和听力（销售对话）中出现",
+  "keyCollocations": [
+      "customer wants",
+      "wants and needs",
+      "fulfill wants",
+      "understand wants"
+  ],
+  "toeicExampleSentences": [
+      "Market research helps us identify customer wants.（市场调研帮助我们识别客户愿望。）",
+      "The design team focused on user wants, not just needs.（设计团队关注用户愿望，而不仅仅是需求。）"
+  ],
+  "sceneAssociation": "想象销售会议上讨论‘what are the customer wants?’，或产品经理说‘we must differentiate wants from needs’",
+  "confusingWordsComparison": [
+      {
+          "word": "needs",
+          "coreDifference": "wants 指欲望，needs 指必需",
+          "toeicSceneFocus": "wants 用于偏好，needs 用于基本需求"
+      },
+      {
+          "word": "desires",
+          "coreDifference": "desires 更正式，wants 更口语化",
+          "toeicSceneFocus": "desires 用于高端市场，wants 用于一般销售"
+      }
+  ]
+},
+{
+  "word": "desires",
+  "phonetic": "/dɪˈzaɪəz/",
+  "phrase": "fulfill employee desires",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "欲望；渴望（指强烈的愿望或向往）",
+  "toeicSceneFocus": "多用于人力资源、产品定位、品牌策略等语境，在托业阅读（员工满意度调查）和听力（高层对话）中常见",
+  "keyCollocations": [
+      "personal desires",
+      "fulfill desires",
+      "strong desires",
+      "customer desires"
+  ],
+  "toeicExampleSentences": [
+      "The company aims to fulfill employees' career desires.（公司旨在满足员工的职业愿望。）",
+      "Understanding customer desires is key to innovation.（理解客户欲望是创新的关键。）"
+  ],
+  "sceneAssociation": "想象HR讨论‘employee desires for advancement’，或品牌定位时强调‘match customer desires’",
+  "confusingWordsComparison": [
+      {
+          "word": "wants",
+          "coreDifference": "desires 强度更高，wants 更日常",
+          "toeicSceneFocus": "desires 用于强烈愿望，wants 用于一般偏好"
+      },
+      {
+          "word": "hopes",
+          "coreDifference": "hopes 更温和，desires 更强烈",
+          "toeicSceneFocus": "hopes 用于期望，desires 用于渴望"
+      }
+  ]
+},
+{
+  "word": "expectations",
+  "phonetic": "/ˌekspekˈteɪʃənz/",
+  "phrase": "manage customer expectations",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "期望；预期（指对未来的预见和要求）",
+  "toeicSceneFocus": "常用于客户管理、绩效评估、项目规划等语境，在托业阅读（服务协议）和听力（商务讨论）中频繁出现",
+  "keyCollocations": [
+      "meet expectations",
+      "exceed expectations",
+      "set expectations",
+      "customer expectations"
+  ],
+  "toeicExampleSentences": [
+      "Clear communication helps manage expectations.（清晰的沟通有助于管理期望。）",
+      "Our service must exceed customer expectations.（我们的服务必须超出客户预期。）"
+  ],
+  "sceneAssociation": "想象客户会议中讨论‘setting realistic expectations’，或绩效评估时评价‘exceeded expectations’",
+  "confusingWordsComparison": [
+      {
+          "word": "hopes",
+          "coreDifference": "expectations 更实际，hopes 更理想化",
+          "toeicSceneFocus": "expectations 用于管理，hopes 用于愿望"
+      },
+      {
+          "word": "goals",
+          "coreDifference": "goals 指目标，expectations 指预期",
+          "toeicSceneFocus": "goals 用于规划，expectations 用于评估"
+      }
+  ]
+},
+{
+  "word": "hopes",
+  "phonetic": "/hoʊps/",
+  "phrase": "hopes for promotion",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "希望；期望（指对美好未来的期盼）",
+  "toeicSceneFocus": "多用于个人发展、团队激励、职业规划等语境，在托业阅读（访谈文章）和听力（日常对话）中出现",
+  "keyCollocations": [
+      "hopes for",
+      "raise hopes",
+      "dashed hopes",
+      "high hopes"
+  ],
+  "toeicExampleSentences": [
+      "She has high hopes for her career advancement.（她对自己的职业晋升抱有很高的期望。）",
+      "The team expressed hopes for a successful project outcome.（团队表达了对项目成功的希望。）"
+  ],
+  "sceneAssociation": "想象绩效面谈中，员工表达‘hopes for more responsibilities’，或团队讨论时说‘we hope to meet the deadline’",
+  "confusingWordsComparison": [
+      {
+          "word": "expectations",
+          "coreDifference": "hopes 更主观，expectations 更客观",
+          "toeicSceneFocus": "hopes 用于个人愿望，expectations 用于标准"
+      },
+      {
+          "word": "wishes",
+          "coreDifference": "wishes 更虚拟，hopes 更现实",
+          "toeicSceneFocus": "wishes 用于祝愿，hopes 用于期盼"
+      }
+  ]
+},
+{
+  "word": "wishes",
+  "phonetic": "/ˈwɪʃɪz/",
+  "phrase": "wishes for success",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "愿望；祝愿（指希望某事发生或实现）",
+  "toeicSceneFocus": "常用于礼貌表达、节日祝福、个人偏好等语境，在托业阅读（邮件礼仪）和听力（社交对话）中常见",
+  "keyCollocations": [
+      "best wishes",
+      "express wishes",
+      "fulfill wishes",
+      "wishes and dreams"
+  ],
+  "toeicExampleSentences": [
+      "We extend our best wishes for your new venture.（我们对您的新事业表示最美好的祝愿。）",
+      "Please let us know if you have any special wishes.（如果您有任何特殊愿望，请告知我们。）"
+  ],
+  "sceneAssociation": "想象商务邮件结尾写‘best wishes for the new year’，或会议中讨论‘customer wishes for customization’",
+  "confusingWordsComparison": [
+      {
+          "word": "hopes",
+          "coreDifference": "wishes 更礼貌，hopes 更直接",
+          "toeicSceneFocus": "wishes 用于祝愿，hopes 用于期盼"
+      },
+      {
+          "word": "desires",
+          "coreDifference": "desires 更强烈，wishes 更温和",
+          "toeicSceneFocus": "desires 用于渴望，wishes 用于希望"
+      }
+  ]
+},
+{
+  "word": "dreams",
+  "phonetic": "/driːmz/",
+  "phrase": "career dreams and ambitions",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "梦想；理想（指远大的抱负或理想状态）",
+  "toeicSceneFocus": "多用于职业发展、激励演讲、品牌故事等语境，在托业阅读（人物访谈）和听力（励志对话）中出现",
+  "keyCollocations": [
+      "achieve dreams",
+      "pursue dreams",
+      "dream job",
+      "big dreams"
+  ],
+  "toeicExampleSentences": [
+      "The program helps employees achieve their career dreams.（该计划帮助员工实现职业梦想。）",
+      "She pursued her dreams of starting a successful business.（她追求创业成功的梦想。）"
+  ],
+  "sceneAssociation": "想象面试中问‘what are your career dreams?’，或公司宣传时说‘helping customers achieve their dreams’",
+  "confusingWordsComparison": [
+      {
+          "word": "goals",
+          "coreDifference": "dreams 更宏大，goals 更具体",
+          "toeicSceneFocus": "dreams 用于理想，goals 用于目标"
+      },
+      {
+          "word": "ambitions",
+          "coreDifference": "ambitions 更务实，dreams 更浪漫",
+          "toeicSceneFocus": "ambitions 用于抱负，dreams 用于愿景"
+      }
+  ]
+},
+{
+  "word": "goals",
+  "phonetic": "/ɡoʊlz/",
+  "phrase": "set clear goals",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "目标；目的（指努力实现的具体结果）",
+  "toeicSceneFocus": "常用于绩效管理、项目规划、个人发展等语境，在托业阅读（公司报告）和听力（会议讨论）中频繁出现",
+  "keyCollocations": [
+      "set goals",
+      "achieve goals",
+      "career goals",
+      "team goals"
+  ],
+  "toeicExampleSentences": [
+      "We need to set realistic goals for next quarter.（我们需要为下个季度设定现实的目标。）",
+      "Clear goals help improve team productivity.（明确的目标有助于提高团队生产力。）"
+  ],
+  "sceneAssociation": "想象绩效评估中，经理和员工讨论‘set performance goals’，或项目启动时定义‘project goals’",
+  "confusingWordsComparison": [
+      {
+          "word": "objectives",
+          "coreDifference": "goals 更宽泛，objectives 更具体",
+          "toeicSceneFocus": "goals 用于总体方向，objectives 用于具体步骤"
+      },
+      {
+          "word": "targets",
+          "coreDifference": "targets 更量化，goals 更定性",
+          "toeicSceneFocus": "targets 用于指标，goals 用于方向"
+      }
+  ]
+},
+{
+  "word": "targets",
+  "phonetic": "/ˈtɑːrɡɪts/",
+  "phrase": "sales targets for Q4",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "目标；指标（指具体可量化的绩效标准）",
+  "toeicSceneFocus": "多用于销售、财务、生产等量化管理语境，在托业阅读（业绩报告）和听力（业务会议）中常见",
+  "keyCollocations": [
+      "sales targets",
+      "meet targets",
+      "set targets",
+      "target achievement"
+  ],
+  "toeicExampleSentences": [
+      "The team exceeded their sales targets for the month.（团队超额完成了本月的销售目标。）",
+      "We need to set realistic targets for the new campaign.（我们需要为新活动设定现实的目标。）"
+  ],
+  "sceneAssociation": "想象销售会议上，经理宣布‘Q4 sales targets’，或仪表盘上显示‘target vs actual’",
+  "confusingWordsComparison": [
+      {
+          "word": "goals",
+          "coreDifference": "targets 更具体量化，goals 更宽泛",
+          "toeicSceneFocus": "targets 用于数字指标，goals 用于战略方向"
+      },
+      {
+          "word": "objectives",
+          "coreDifference": "objectives 更描述性，targets 更数值化",
+          "toeicSceneFocus": "objectives 用于计划，targets 用于考核"
+      }
+  ]
+},
+{
+  "word": "objectives",
+  "phonetic": "/əbˈdʒektɪvz/",
+  "phrase": "business objectives",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "目标；目的（指计划或行动旨在实现的具体结果）",
+  "toeicSceneFocus": "常用于战略规划、项目管理、公司报告等语境，在托业阅读（商业计划）和听力（战略会议）中频繁出现",
+  "keyCollocations": [
+      "business objectives",
+      "strategic objectives",
+      "achieve objectives",
+      "clear objectives"
+  ],
+  "toeicExampleSentences": [
+      "The company's main objective is to increase market share.（公司的主要目标是增加市场份额。）",
+      "Our project objectives must be specific and measurable.（我们的项目目标必须具体且可衡量。）"
+  ],
+  "sceneAssociation": "想象战略会议中，CEO介绍‘our business objectives’，或项目文档中列出‘project objectives’",
+  "confusingWordsComparison": [
+      {
+          "word": "goals",
+          "coreDifference": "objectives 更正式具体，goals 更宽泛",
+          "toeicSceneFocus": "objectives 用于计划，goals 用于愿景"
+      },
+      {
+          "word": "aims",
+          "coreDifference": "aims 更方向性，objectives 更结果导向",
+          "toeicSceneFocus": "aims 用于意图，objectives 用于成果"
+      }
+  ]
+},
+{
+  "word": "aims",
+  "phonetic": "/eɪmz/",
+  "phrase": "aims to improve efficiency",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "目标；目的（指行动的方向或意图）",
+  "toeicSceneFocus": "多用于政策声明、项目介绍、个人计划等语境，在托业阅读（公告）和听力（解释说明）中出现",
+  "keyCollocations": [
+      "aims to do",
+      "primary aim",
+      "achieve aims",
+      "clear aims"
+  ],
+  "toeicExampleSentences": [
+      "The training program aims to enhance employee skills.（培训计划旨在提升员工技能。）",
+      "Our primary aim is customer satisfaction.（我们的主要目标是客户满意。）"
+  ],
+  "sceneAssociation": "想象公司公告中写‘this initiative aims to...’，或会议中介绍‘the aim of this meeting is...’",
+  "confusingWordsComparison": [
+      {
+          "word": "objectives",
+          "coreDifference": "aims 更方向性，objectives 更具体",
+          "toeicSceneFocus": "aims 用于意图，objectives 用于成果"
+      },
+      {
+          "word": "purposes",
+          "coreDifference": "purposes 强调用途，aims 强调方向",
+          "toeicSceneFocus": "purposes 用于功能，aims 用于目标"
+      }
+  ]
+},
+{
+  "word": "purposes",
+  "phonetic": "/ˈpɜːrpəsɪz/",
+  "phrase": "for business purposes",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "目的；用途（指某事物的功用或意图）",
+  "toeicSceneFocus": "常用于商务沟通、文件说明、分类描述等语境，在托业阅读（合同条款）和听力（正式说明）中常见",
+  "keyCollocations": [
+      "for purposes of",
+      "business purposes",
+      "research purposes",
+      "general purposes"
+  ],
+  "toeicExampleSentences": [
+      "This data is collected for research purposes only.（此数据仅用于研究目的。）",
+      "For legal purposes, we need your written consent.（出于法律目的，我们需要您的书面同意。）"
+  ],
+  "sceneAssociation": "想象合同中写‘for the purposes of this agreement...’，或邮件中说明‘for internal purposes only’",
+  "confusingWordsComparison": [
+      {
+          "word": "aims",
+          "coreDifference": "purposes 强调用途，aims 强调目标",
+          "toeicSceneFocus": "purposes 用于功能，aims 用于方向"
+      },
+      {
+          "word": "intentions",
+          "coreDifference": "intentions 强调意图，purposes 强调用途",
+          "toeicSceneFocus": "intentions 用于计划，purposes 用于功能"
+      }
+  ]
+},
+{
+  "word": "intentions",
+  "phonetic": "/ɪnˈtenʃənz/",
+  "phrase": "good intentions",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "意图；目的（指计划做某事的想法）",
+  "toeicSceneFocus": "多用于商务沟通、谈判、个人承诺等语境，在托业阅读（邮件）和听力（对话）中出现",
+  "keyCollocations": [
+      "good intentions",
+      "express intentions",
+      "clear intentions",
+      "intention to do"
+  ],
+  "toeicExampleSentences": [
+      "We expressed our intention to expand into new markets.（我们表达了进入新市场的意图。）",
+      "Her good intentions were appreciated, even if the result wasn't perfect.（她的好意得到了赞赏，即使结果并不完美。）"
+  ],
+  "sceneAssociation": "想象商务邮件开头‘our intention is to...’，或谈判中说‘we have no intention of...’",
+  "confusingWordsComparison": [
+      {
+          "word": "aims",
+          "coreDifference": "intentions 强调意图，aims 强调目标",
+          "toeicSceneFocus": "intentions 用于计划，aims 用于方向"
+      },
+      {
+          "word": "purposes",
+          "coreDifference": "purposes 强调用途，intentions 强调意图",
+          "toeicSceneFocus": "purposes 用于功能，intentions 用于计划"
+      }
+  ]
+},
+{
+  "word": "ambitions",
+  "phonetic": "/æmˈbɪʃənz/",
+  "phrase": "career ambitions",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "雄心；抱负（指强烈的成功愿望）",
+  "toeicSceneFocus": "常用于职业发展、面试、个人介绍等语境，在托业阅读（人物访谈）和听力（职业对话）中常见",
+  "keyCollocations": [
+      "career ambitions",
+      "high ambitions",
+      "achieve ambitions",
+      "pursue ambitions"
+  ],
+  "toeicExampleSentences": [
+      "She has strong ambitions to become a senior manager.（她有成为高级经理的强烈抱负。）",
+      "The company supports employees in pursuing their ambitions.（公司支持员工追求抱负。）"
+  ],
+  "sceneAssociation": "想象面试中问‘what are your career ambitions?’，或绩效面谈中讨论‘ambitions for growth’",
+  "confusingWordsComparison": [
+      {
+          "word": "aspirations",
+          "coreDifference": "ambitions 更务实，aspirations 更理想化",
+          "toeicSceneFocus": "ambitions 用于职业抱负，aspirations 用于人生理想"
+      },
+      {
+          "word": "goals",
+          "coreDifference": "goals 更具体，ambitions 更宏大",
+          "toeicSceneFocus": "goals 用于目标，ambitions 用于抱负"
+      }
+  ]
+},
+{
+  "word": "aspirations",
+  "phonetic": "/ˌæspəˈreɪʃənz/",
+  "phrase": "professional aspirations",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "渴望；抱负（指对美好事物的向往）",
+  "toeicSceneFocus": "多用于职业咨询、教育规划、品牌定位等语境，在托业阅读（励志文章）和听力（指导对话）中出现",
+  "keyCollocations": [
+      "personal aspirations",
+      "career aspirations",
+      "fulfill aspirations",
+      "high aspirations"
+  ],
+  "toeicExampleSentences": [
+      "The mentor helped her clarify her professional aspirations.（导师帮助她明确了职业抱负。）",
+      "Our brand connects with customers' aspirations for success.（我们的品牌连接客户对成功的渴望。）"
+  ],
+  "sceneAssociation": "想象职业咨询中问‘what are your aspirations?’，或品牌广告中说‘for those with high aspirations’",
+  "confusingWordsComparison": [
+      {
+          "word": "ambitions",
+          "coreDifference": "aspirations 更理想化，ambitions 更务实",
+          "toeicSceneFocus": "aspirations 用于人生理想，ambitions 用于职业目标"
+      },
+      {
+          "word": "hopes",
+          "coreDifference": "hopes 更一般，aspirations 更强烈",
+          "toeicSceneFocus": "hopes 用于期望，aspirations 用于渴望"
+      }
+  ]
+},
+{
+  "word": "motivations",
+  "phonetic": "/ˌmoʊtɪˈveɪʃənz/",
+  "phrase": "intrinsic motivations",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "动机；动力（指驱使行动的内在或外在原因）",
+  "toeicSceneFocus": "常用于人力资源、管理理论、心理学应用等语境，在托业阅读（员工激励文章）和听力（管理讨论）中频繁出现",
+  "keyCollocations": [
+      "motivations for",
+      "employee motivations",
+      "intrinsic motivations",
+      "understand motivations"
+  ],
+  "toeicExampleSentences": [
+      "Understanding employee motivations leads to better management.（理解员工动机能带来更好的管理。）",
+      "Financial rewards are not the only motivations for performance.（经济奖励不是绩效的唯一动机。）"
+  ],
+  "sceneAssociation": "想象HR会议中讨论‘employee motivations and incentives’，或管理培训时学习‘different types of motivations’",
+  "confusingWordsComparison": [
+      {
+          "word": "motives",
+          "coreDifference": "motivations 强调原因，motives 强调目的",
+          "toeicSceneFocus": "motivations 用于驱动力，motives 用于意图"
+      },
+      {
+          "word": "drives",
+          "coreDifference": "drives 更本能，motivations 更理性",
+          "toeicSceneFocus": "drives 用于内在冲动，motivations 用于理性动机"
+      }
+  ]
+},
+{
+  "word": "try",
+  "phonetic": "/traɪ/",
+  "phrase": "try a new approach",
+  "partOfSpeech": "v. 动词",
+  "coreMeaning": "尝试；努力（指为达到目的而付出努力）",
+  "toeicSceneFocus": "多用于问题解决、创新讨论、日常工作等语境，在托业阅读（建议邮件）和听力（工作对话）中常见",
+  "keyCollocations": [
+      "try to do",
+      "try out",
+      "give it a try",
+      "try one's best"
+  ],
+  "toeicExampleSentences": [
+      "Let's try a different method to solve this issue.（让我们尝试不同的方法来解决这个问题。）",
+      "She tried her best to meet the deadline.（她尽最大努力满足截止日期。）"
+  ],
+  "sceneAssociation": "想象团队会议中说‘let's try this new software’，或同事鼓励‘give it a try’",
+  "confusingWordsComparison": [
+      {
+          "word": "attempt",
+          "coreDifference": "try 更口语化，attempt 更正式",
+          "toeicSceneFocus": "try 用于日常，attempt 用于书面"
+      },
+      {
+          "word": "experiment",
+          "coreDifference": "experiment 强调测试，try 强调努力",
+          "toeicSceneFocus": "experiment 用于实验，try 用于尝试"
+      }
+  ]
+},
+{
+  "word": "experiment",
+  "phonetic": "/ɪkˈsperɪmənt/",
+  "phrase": "conduct an experiment",
+  "partOfSpeech": "v. 动词",
+  "coreMeaning": "实验；试验（指为测试假设而进行的系统性操作）",
+  "toeicSceneFocus": "常用于研发、产品测试、创新管理等语境，在托业阅读（科技文章）和听力（研发讨论）中出现",
+  "keyCollocations": [
+      "experiment with",
+      "conduct experiment",
+      "experiment on",
+      "scientific experiment"
+  ],
+  "toeicExampleSentences": [
+      "The R&D team is experimenting with new materials.（研发团队正在试验新材料。）",
+      "We should experiment with different marketing strategies.（我们应该尝试不同的营销策略。）"
+  ],
+  "sceneAssociation": "想象实验室中说‘we need to experiment with this formula’，或产品会议上讨论‘experiment results’",
+  "confusingWordsComparison": [
+      {
+          "word": "try",
+          "coreDifference": "experiment 更系统，try 更随意",
+          "toeicSceneFocus": "experiment 用于科学，try 用于日常"
+      },
+      {
+          "word": "test",
+          "coreDifference": "test 强调验证，experiment 强调探索",
+          "toeicSceneFocus": "test 用于测试，experiment 用于研究"
+      }
+  ]
+},
+{
+  "word": "venture",
+  "phonetic": "/ˈventʃər/",
+  "phrase": "venture into new markets",
+  "partOfSpeech": "v. 动词",
+  "coreMeaning": "冒险；敢于尝试（指有风险地进入新领域）",
+  "toeicSceneFocus": "多用于商业扩张、投资决策、战略规划等语境，在托业阅读（商业新闻）和听力（高管对话）中常见",
+  "keyCollocations": [
+      "venture into",
+      "venture capital",
+      "joint venture",
+      "risky venture"
+  ],
+  "toeicExampleSentences": [
+      "The company decided to venture into the Asian market.（公司决定冒险进入亚洲市场。）",
+      "They formed a joint venture with a local partner.（他们与当地合作伙伴成立了合资企业。）"
+  ],
+  "sceneAssociation": "想象CEO说‘we will venture into new territories’，或投资会议上讨论‘venture into tech startups’",
+  "confusingWordsComparison": [
+      {
+          "word": "risk",
+          "coreDifference": "venture 强调主动冒险，risk 强调承担风险",
+          "toeicSceneFocus": "venture 用于商业扩张，risk 用于风险分析"
+      },
+      {
+          "word": "dare",
+          "coreDifference": "dare 强调勇气，venture 强调行动",
+          "toeicSceneFocus": "dare 用于挑战，venture 用于实践"
+      }
+  ]
+},
+{
+  "word": "undertaking",
+  "phonetic": "/ˌʌndərˈteɪkɪŋ/",
+  "phrase": "major undertaking",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "任务；事业（指重大或复杂的项目）",
+  "toeicSceneFocus": "常用于项目管理、公司公告、战略描述等语境，在托业阅读（项目报告）和听力（业务讨论）中出现",
+  "keyCollocations": [
+      "major undertaking",
+      "risky undertaking",
+      "start an undertaking",
+      "successful undertaking"
+  ],
+  "toeicExampleSentences": [
+      "The merger is a major undertaking for both companies.（这次合并对两家公司都是重大任务。）",
+      "Starting a new business is a challenging undertaking.（创业是一项具有挑战性的事业。）"
+  ],
+  "sceneAssociation": "想象项目启动会上说‘this is a significant undertaking’，或年度报告中描述‘our latest undertaking’",
+  "confusingWordsComparison": [
+      {
+          "word": "project",
+          "coreDifference": "undertaking 更宏大，project 更具体",
+          "toeicSceneFocus": "undertaking 用于大事业，project 用于具体项目"
+      },
+      {
+          "word": "enterprise",
+          "coreDifference": "enterprise 更商业性，undertaking 更中性",
+          "toeicSceneFocus": "enterprise 用于企业，undertaking 用于任务"
+      }
+  ]
+},
+{
+  "word": "enterprise",
+  "phonetic": "/ˈentərpraɪz/",
+  "phrase": "enterprise resource planning",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "企业；事业（指商业组织或重要事业）",
+  "toeicSceneFocus": "多用于企业管理、IT系统、商业新闻等语境，在托业阅读（公司介绍）和听力（商务对话）中频繁出现",
+  "keyCollocations": [
+      "enterprise software",
+      "small enterprise",
+      "enterprise solution",
+      "enterprise value"
+  ],
+  "toeicExampleSentences": [
+      "The enterprise adopted a new CRM system.（该企业采用了新的CRM系统。）",
+      "Small enterprises play a vital role in the economy.（小型企业在经济中发挥重要作用。）"
+  ],
+  "sceneAssociation": "想象IT会议中讨论‘enterprise software solutions’，或新闻中报道‘a successful enterprise’",
+  "confusingWordsComparison": [
+      {
+          "word": "business",
+          "coreDifference": "enterprise 更正式，business 更通用",
+          "toeicSceneFocus": "enterprise 用于大型企业，business 用于一般商业"
+      },
+      {
+          "word": "company",
+          "coreDifference": "company 指具体公司，enterprise 指整体事业",
+          "toeicSceneFocus": "company 用于组织，enterprise 用于战略"
+      }
+  ]
+},
+{
+  "word": "activity",
+  "phonetic": "/ækˈtɪvəti/",
+  "phrase": "business activities",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "活动；业务（指具体的行为或运作）",
+  "toeicSceneFocus": "常用于日常运营、市场行为、工作安排等语境，在托业阅读（报告）和听力（工作讨论）中常见",
+  "keyCollocations": [
+      "business activities",
+      "daily activities",
+      "marketing activities",
+      "illegal activity"
+  ],
+  "toeicExampleSentences": [
+      "The company engages in various business activities.（公司从事各种业务活动。）",
+      "We need to track all marketing activities.（我们需要跟踪所有营销活动。）"
+  ],
+  "sceneAssociation": "想象工作日报中写‘daily activity report’，或会议中讨论‘marketing activities for next month’",
+  "confusingWordsComparison": [
+      {
+          "word": "action",
+          "coreDifference": "activity 强调过程，action 强调行为",
+          "toeicSceneFocus": "activity 用于运作，action 用于执行"
+      },
+      {
+          "word": "operation",
+          "coreDifference": "operation 更系统，activity 更日常",
+          "toeicSceneFocus": "operation 用于运营，activity 用于活动"
+      }
+  ]
+},
+{
+  "word": "action",
+  "phonetic": "/ˈækʃən/",
+  "phrase": "take immediate action",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "行动；措施（指为达目的而采取的具体步骤）",
+  "toeicSceneFocus": "多用于问题解决、管理决策、紧急响应等语境，在托业阅读（行动计划）和听力（工作指令）中频繁出现",
+  "keyCollocations": [
+      "take action",
+      "corrective action",
+      "immediate action",
+      "action plan"
+  ],
+  "toeicExampleSentences": [
+      "Management must take immediate action to resolve the issue.（管理层必须立即采取行动解决问题。）",
+      "We developed an action plan to improve efficiency.（我们制定了提高效率的行动计划。）"
+  ],
+  "sceneAssociation": "想象紧急会议中说‘we need to take immediate action’，或邮件中要求‘please take corrective action’",
+  "confusingWordsComparison": [
+      {
+          "word": "activity",
+          "coreDifference": "action 强调执行，activity 强调过程",
+          "toeicSceneFocus": "action 用于措施，activity 用于运作"
+      },
+      {
+          "word": "step",
+          "coreDifference": "step 强调步骤，action 强调行动",
+          "toeicSceneFocus": "step 用于流程，action 用于执行"
+      }
+  ]
+},
+
+{
+  "word": "way",
+  "phonetic": "/weɪ/",
+  "phrase": "way of problem-solving",
+  "partOfSpeech": "n. 名词；adv. 副词",
+  "coreMeaning": "n. 方式；方法；道路；途径；adv. 远远地；大大地",
+  "toeicSceneFocus": "超高频通用词汇，出现在所有托业相关场景，阅读（邮件、报告、广告）和听力（对话、讲座、通知）中常考查“做事的方式、方法”相关表达，是最基础的描述“途径”的词汇",
+  "keyCollocations": [
+      "in this way（用这种方式）",
+      "way of doing sth（做某事的方法）",
+      "find a way（找到方法）",
+      "by the way（顺便说一下）",
+      "on the way（在路上）"
+  ],
+  "toeicExampleSentences": [
+      "This is the most efficient way to handle customer complaints.（这是处理客户投诉最高效的方式。）",
+      "By the way, could you send me the meeting agenda before tomorrow?（顺便说一下，你能在明天之前把会议议程发给我吗？）",
+      "We need to find a way to reduce production costs without sacrificing quality.（我们需要找到一种在不牺牲质量的前提下降低生产成本的方法。）",
+      "The new office is still on the way to completion.（新办公室还在建设中。）"
+  ],
+  "sceneAssociation": "可以联想“团队讨论way of improving efficiency，或员工向同事请教解决问题的way”的画面，结合“做事的途径、方法”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "way",
+          "coreDifference": "含义最宽泛，泛指“方式、方法、道路”，口语和书面语通用",
+          "toeicSceneFocus": "所有日常办公、商务沟通场景"
+      },
+      {
+          "word": "means",
+          "coreDifference": "侧重“达成目的的手段、工具”，更正式，常与by搭配",
+          "toeicSceneFocus": "商务策略、正式报告场景"
+      },
+      {
+          "word": "method",
+          "coreDifference": "侧重“系统、科学的方法”，强调步骤性",
+          "toeicSceneFocus": "学术研究、流程管理场景"
+      }
+  ]
+},
+{
+  "word": "means",
+  "phonetic": "/miːnz/",
+  "phrase": "means of communication",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "手段；方法；工具；财力；收入",
+  "toeicSceneFocus": "高频正式词汇，出现在商务报告、战略规划、正式文书等托业场景，阅读（合同、白皮书、行业分析）和听力（高管演讲、正式会议）中常考查“达成目标的手段、工具”相关表达，语气比way更正式",
+  "keyCollocations": [
+      "by means of（通过……手段）",
+      "means of transportation（交通工具）",
+      "means of production（生产资料）",
+      "within one’s means（量力而行）",
+      "a means to an end（达到目的的手段）"
+  ],
+  "toeicExampleSentences": [
+      "The company uses various means of marketing to promote its new products.（该公司采用多种营销手段推广其新产品。）",
+      "We can solve this problem by means of negotiation rather than confrontation.（我们可以通过谈判而非对抗的方式解决这个问题。）",
+      "Email has become the primary means of communication in modern workplaces.（电子邮件已成为现代职场的主要沟通工具。）",
+      "It is important to live within your means to avoid financial problems.（量力而行以避免财务问题是很重要的。）"
+  ],
+  "sceneAssociation": "可以联想“商务报告中提及means of expanding market share，或高管讨论means of improving profitability”的画面，结合“达成目的的正式手段、工具”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "means",
+          "coreDifference": "侧重“达成目标的手段、工具”，正式用语，常与by搭配，还可指“财力”",
+          "toeicSceneFocus": "商务策略、正式报告、财务相关场景"
+      },
+      {
+          "word": "way",
+          "coreDifference": "含义宽泛，泛指方式方法，口语书面语通用",
+          "toeicSceneFocus": "所有日常商务场景"
+      },
+      {
+          "word": "technique",
+          "coreDifference": "侧重“具体的技术、技巧”，强调专业性",
+          "toeicSceneFocus": "技术操作、技能培训场景"
+      }
+  ]
+},
+{
+  "word": "technique",
+  "phonetic": "/tekˈniːk/",
+  "phrase": "sales technique for client retention",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "技术；技巧；工艺；手法；（某一领域的）专业方法",
+  "toeicSceneFocus": "高频专业词汇，出现在技能培训、技术操作、行业报告等托业场景，阅读（操作手册、培训教材、技术白皮书）和听力（技能讲座、职场培训）中常考查“专业技能、技术方法”相关表达，是描述“具体操作技巧”的核心词汇",
+  "keyCollocations": [
+      "advanced technique（先进技术）",
+      "communication technique（沟通技巧）",
+      "problem-solving technique（解决问题的技巧）",
+      "adopt a technique（采用一种技术）",
+      "master a technique（掌握一项技巧）"
+  ],
+  "toeicExampleSentences": [
+      "This advanced manufacturing technique can significantly improve product quality.（这种先进的制造技术能显著提升产品质量。）",
+      "The training course focuses on practical sales techniques for new employees.（该培训课程专注于为新员工提供实用的销售技巧。）",
+      "Effective communication techniques are essential for building good client relationships.（有效的沟通技巧对于建立良好的客户关系至关重要。）",
+      "She has mastered the technique of negotiating favorable terms with suppliers.（她掌握了与供应商谈判优惠条款的技巧。）"
+  ],
+  "sceneAssociation": "可以联想“技能培训课上讲师讲解sales techniques，或技术人员讨论manufacturing techniques”的画面，结合“专业领域的具体技术、技巧”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "technique",
+          "coreDifference": "侧重“具体的专业技术、操作技巧”，强调实践性和专业性",
+          "toeicSceneFocus": "技能培训、技术操作、行业专业场景"
+      },
+      {
+          "word": "strategy",
+          "coreDifference": "侧重“长期的、宏观的战略规划”，强调全局性",
+          "toeicSceneFocus": "企业战略、市场布局、长期规划场景"
+      },
+      {
+          "word": "tactic",
+          "coreDifference": "侧重“短期的、具体的策略、战术”，是战略的执行手段",
+          "toeicSceneFocus": "营销战术、项目执行、短期行动场景"
+      }
+  ]
+},
+{
+  "word": "strategy",
+  "phonetic": "/ˈstrætədʒi/",
+  "phrase": "long-term business strategy",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "战略；策略；规划；（实现长期目标的）全局性方案",
+  "toeicSceneFocus": "超高频核心词汇，出现在企业战略、市场规划、项目管理等托业场景，阅读（战略报告、商业计划书、高管演讲）和听力（战略会议、行业研讨会）中几乎必考“企业战略、市场策略”相关表达，是描述“长期宏观规划”的核心词汇",
+  "keyCollocations": [
+      "business strategy（商业战略）",
+      "marketing strategy（营销策略）",
+      "long-term strategy（长期战略）",
+      "develop a strategy（制定战略）",
+      "implement a strategy（执行战略）"
+  ],
+  "toeicExampleSentences": [
+      "The company’s core business strategy is to focus on innovation and customer satisfaction.（该公司的核心商业战略是专注于创新和客户满意度。）",
+      "We need to develop a new marketing strategy to target young consumers.（我们需要制定新的营销策略来瞄准年轻消费者。）",
+      "The implementation of the cost-cutting strategy helped the company improve profitability.（成本削减战略的实施帮助公司提升了盈利能力。）",
+      "A clear long-term strategy is essential for the sustainable development of the business.（清晰的长期战略对于企业的可持续发展至关重要。）"
+  ],
+  "sceneAssociation": "可以联想“董事会会议上制定long-term business strategy，或市场部门讨论marketing strategy”的画面，结合“实现长期目标的全局性规划”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "strategy",
+          "coreDifference": "侧重“长期的、宏观的、全局性的战略规划”，决定整体方向",
+          "toeicSceneFocus": "企业战略、市场布局、长期发展规划场景"
+      },
+      {
+          "word": "tactic",
+          "coreDifference": "侧重“短期的、具体的、执行层面的战术”，是战略的具体实施方法",
+          "toeicSceneFocus": "营销战术、项目执行、短期行动场景"
+      },
+      {
+          "word": "plan",
+          "coreDifference": "侧重“具体的行动计划、方案”，范围可大可小，更强调步骤性",
+          "toeicSceneFocus": "日常办公、项目执行、活动安排场景"
+      }
+  ]
+},
+{
+  "word": "tactic",
+  "phonetic": "/ˈtæktɪk/",
+  "phrase": "promotional tactic for seasonal sales",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "战术；策略；手段；（为达成短期目标的）具体行动方案",
+  "toeicSceneFocus": "高频词汇，出现在营销推广、项目执行、竞争应对等托业场景，阅读（营销方案、项目执行计划）和听力（团队会议、营销讨论）中常考查“短期执行策略、战术手段”相关表达，是战略的具体落地方法",
+  "keyCollocations": [
+      "marketing tactic（营销策略/战术）",
+      "promotional tactic（促销手段）",
+      "competitive tactic（竞争策略）",
+      "adopt a tactic（采用一种战术）",
+      "tactics for success（成功的策略）"
+  ],
+  "toeicExampleSentences": [
+      "The limited-time discount is a common promotional tactic to boost short-term sales.（限时折扣是提升短期销量的常用促销手段。）",
+      "Our team used a new negotiation tactic to reach an agreement with the client quickly.（我们团队采用了新的谈判策略，快速与客户达成了协议。）",
+      "This competitive tactic helps the company gain an advantage in the crowded market.（这种竞争策略帮助公司在拥挤的市场中获得优势。）",
+      "The PR team developed several crisis management tactics to handle negative publicity.（公关团队制定了多种危机管理策略来应对负面舆情。）"
+  ],
+  "sceneAssociation": "可以联想“营销部门讨论seasonal sales promotional tactics，或谈判团队制定negotiation tactics”的画面，结合“达成短期目标的具体行动方案”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "tactic",
+          "coreDifference": "侧重“短期的、具体的、执行层面的战术”，服务于战略目标",
+          "toeicSceneFocus": "营销推广、项目执行、竞争应对场景"
+      },
+      {
+          "word": "strategy",
+          "coreDifference": "侧重“长期的、宏观的、全局性的战略”，决定整体方向",
+          "toeicSceneFocus": "企业战略、长期发展规划场景"
+      },
+      {
+          "word": "method",
+          "coreDifference": "侧重“科学系统的方法”，强调规律性和重复性",
+          "toeicSceneFocus": "流程管理、技能操作场景"
+      }
+  ]
+},
+{
+  "word": "plan",
+  "phonetic": "/plæn/",
+  "phrase": "project plan for product launch",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 计划；方案；规划；平面图；v. 计划；打算；设计",
+  "toeicSceneFocus": "超高频通用词汇，出现在所有托业相关场景，阅读（项目计划书、日程表、活动方案）和听力（会议讨论、任务安排）中常考查“具体的行动计划、方案”相关表达，是最基础的描述“规划”的词汇",
+  "keyCollocations": [
+      "make a plan（制定计划）",
+      "project plan（项目计划）",
+      "business plan（商业计划书）",
+      "plan to do sth（计划做某事）",
+      "according to plan（按计划）"
+  ],
+  "toeicExampleSentences": [
+      "We need to make a detailed plan for the upcoming product launch.（我们需要为即将到来的产品发布制定详细计划。）",
+      "The project plan includes timelines, resource allocation and risk management.（该项目计划包含时间表、资源分配和风险管理。）",
+      "She plans to attend the international trade fair next month.（她计划下个月参加国际贸易博览会。）",
+      "Everything went according to plan, and the event was a great success.（一切按计划进行，活动取得了圆满成功。）"
+  ],
+  "sceneAssociation": "可以联想“项目团队制定product launch plan，或员工plan a business trip”的画面，结合“具体的行动方案、规划”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "plan",
+          "coreDifference": "含义宽泛，泛指“具体的行动计划、方案”，可用于短期或长期，强调步骤和安排",
+          "toeicSceneFocus": "所有日常办公、项目执行、活动安排场景"
+      },
+      {
+          "word": "scheme",
+          "coreDifference": "侧重“系统性的方案、计划”，可指官方计划，也可含贬义指“阴谋”",
+          "toeicSceneFocus": "官方项目、政策规划场景，贬义场景需慎用"
+      },
+      {
+          "word": "program",
+          "coreDifference": "侧重“正式的、大型的项目计划或程序”，如培训项目、计算机程序",
+          "toeicSceneFocus": "培训项目、大型活动、信息技术场景"
+      }
+  ]
+},
+{
+  "word": "scheme",
+  "phonetic": "/skiːm/",
+  "phrase": "employee incentive scheme",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 方案；计划；体系；阴谋；诡计；v. 密谋；策划",
+  "toeicSceneFocus": "高频词汇，出现在人力资源、政策规划、官方项目等托业场景，阅读（员工手册、政策文件、项目方案）和听力（管理层会议、政策解读）中常考查“系统性的官方方案”相关表达，注意中性和贬义的区分",
+  "keyCollocations": [
+      "incentive scheme（激励方案）",
+      "pension scheme（养老金计划）",
+      "training scheme（培训计划）",
+      "scheme for sth（某事的方案）",
+      "scheme to do sth（密谋做某事）"
+  ],
+  "toeicExampleSentences": [
+      "The company introduced a new employee incentive scheme to boost productivity.（该公司推出了新的员工激励方案来提高生产力。）",
+      "The government launched a training scheme to help unemployed people find jobs.（政府推出了一项培训计划，帮助失业人员找到工作。）",
+      "This pension scheme provides financial security for employees after retirement.（这项养老金计划为员工退休后的生活提供经济保障。）",
+      "They were accused of scheming to manipulate the stock market.（他们被指控密谋操纵股市。）"
+  ],
+  "sceneAssociation": "可以联想“人力资源部门制定employee incentive scheme，或政府发布training scheme”的画面，结合“系统性的官方方案”核心场景快速记忆，注意区分贬义用法",
+  "confusingWordsComparison": [
+      {
+          "word": "scheme",
+          "coreDifference": "中性义侧重“系统性的官方方案、计划”；贬义指“阴谋、诡计”，语气比plan更正式",
+          "toeicSceneFocus": "人力资源、政策规划、官方项目场景，贬义场景需谨慎使用"
+      },
+      {
+          "word": "plan",
+          "coreDifference": "通用词汇，泛指各种计划、方案，无明显褒贬色彩",
+          "toeicSceneFocus": "所有日常商务场景"
+      },
+      {
+          "word": "project",
+          "coreDifference": "侧重“具体的、有明确目标和期限的项目”，强调实践性",
+          "toeicSceneFocus": "项目管理、工程建设、研发场景"
+      }
+  ]
+},
+{
+  "word": "process",
+  "phonetic": "/ˈprəʊses/（英式）/ˈprɑːses/（美式）",
+  "phrase": "approval process for expense claims",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 过程；进程；流程；工序；v. 加工；处理；审核",
+  "toeicSceneFocus": "超高频核心词汇，出现在流程管理、生产运营、日常办公等托业场景，阅读（操作手册、流程说明、审核文件）和听力（团队会议、培训讲座）中几乎必考“工作流程、生产工序”相关表达，是描述“步骤化过程”的核心词汇",
+  "keyCollocations": [
+      "business process（业务流程）",
+      "approval process（审批流程）",
+      "production process（生产工序）",
+      "process data（处理数据）",
+      "in the process of（在……的过程中）"
+  ],
+  "toeicExampleSentences": [
+      "We need to streamline the approval process to save time and improve efficiency.（我们需要简化审批流程，以节省时间并提高效率。）",
+      "The production process of this product involves five main stages.（该产品的生产工序包含五个主要阶段。）",
+      "The IT department is responsible for processing customer data securely.（信息技术部门负责安全地处理客户数据。）",
+      "We are still in the process of finalizing the contract details.（我们仍在敲定合同细节的过程中。）"
+  ],
+  "sceneAssociation": "可以联想“行政部门优化expense claim approval process，或生产部门讲解production process”的画面，结合“步骤化的工作流程、进程”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "process",
+          "coreDifference": "侧重“连续的、有步骤的过程、流程”，可指自然过程或人为流程，还可作动词表“处理、审核”",
+          "toeicSceneFocus": "流程管理、生产运营、数据处理场景"
+      },
+      {
+          "word": "procedure",
+          "coreDifference": "侧重“标准化的、正式的操作程序、手续”，强调规范性",
+          "toeicSceneFocus": "员工操作、应急处理、官方手续场景"
+      },
+      {
+          "word": "operation",
+          "coreDifference": "侧重“组织的日常运营、运作”，强调整体性和持续性",
+          "toeicSceneFocus": "企业运营、公司管理、业务运作场景"
+      }
+  ]
+},
+{
+  "word": "operation",
+  "phonetic": "/ˌɒpəˈreɪʃn/（英式）/ˌɑːpəˈreɪʃn/（美式）",
+  "phrase": "daily operation of the company",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "运营；运作；操作；手术；（企业的）业务活动",
+  "toeicSceneFocus": "高频核心词汇，出现在企业管理、业务运营、设备操作等托业场景，阅读（运营报告、业务计划书）和听力（管理层会议、运营讨论）中常考查“企业日常运营、业务运作”相关表达，是描述“组织运作”的核心词汇",
+  "keyCollocations": [
+      "business operation（业务运营）",
+      "daily operation（日常运作）",
+      "operation manager（运营经理）",
+      "in operation（在运营中）",
+      "come into operation（开始实施）"
+  ],
+  "toeicExampleSentences": [
+      "The new manager is responsible for the daily operation of the sales department.（新经理负责销售部门的日常运作。）",
+      "The company’s overseas operations have achieved significant growth this year.（该公司的海外业务今年取得了显著增长。）",
+      "The machine is easy to use, and its operation manual is available online.（这台机器操作简便，其操作手册可在网上获取。）",
+      "The new policy will come into operation next month.（新政策将于下个月开始实施。）"
+  ],
+  "sceneAssociation": "可以联想“运营经理汇报company daily operation情况，或技术人员讲解machine operation方法”的画面，结合“企业业务运作、设备操作”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "operation",
+          "coreDifference": "侧重“企业的日常运营、业务运作，或设备的操作”，强调整体性和持续性",
+          "toeicSceneFocus": "企业管理、业务运营、设备操作场景"
+      },
+      {
+          "word": "function",
+          "coreDifference": "侧重“事物的功能、作用，或人的职责”，强调目的性",
+          "toeicSceneFocus": "产品设计、岗位职责、功能说明场景"
+      },
+      {
+          "word": "process",
+          "coreDifference": "侧重“有步骤的流程、过程”，强调阶段性",
+          "toeicSceneFocus": "流程管理、生产工序场景"
+      }
+  ]
+},
+{
+  "word": "function",
+  "phonetic": "/ˈfʌŋkʃn/",
+  "phrase": "function of the marketing department",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 功能；作用；职责；函数；盛大的集会；v. 起作用；正常工作；运转",
+  "toeicSceneFocus": "高频词汇，出现在产品设计、岗位职责、技术说明等托业场景，阅读（产品说明书、岗位手册、技术文档）和听力（面试对话、团队会议）中常考查“岗位职责、产品功能”相关表达，是描述“作用、职责”的核心词汇",
+  "keyCollocations": [
+      "core function（核心功能）",
+      "function of sth（某物的功能/职责）",
+      "perform a function（履行职责）",
+      "function well（运转良好）",
+      "function as（充当；起……作用）"
+  ],
+  "toeicExampleSentences": [
+      "The core function of the marketing department is to promote the company’s products.（营销部门的核心职责是推广公司的产品。）",
+      "This new software has a range of functions to simplify data analysis.（这款新软件有多种功能，可简化数据分析工作。）",
+      "The machine is not functioning well, and we need to call a technician to repair it.（这台机器运转不正常，我们需要叫技术人员来修理。）",
+      "In this project, she will function as the team coordinator.（在这个项目中，她将担任团队协调员。）"
+  ],
+  "sceneAssociation": "可以联想“面试中面试官讲解岗位function，或产品经理介绍new software functions”的画面，结合“事物的功能、人的岗位职责”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "function",
+          "coreDifference": "侧重“事物的功能、作用，或岗位的职责”，强调目的性和实用性",
+          "toeicSceneFocus": "产品设计、岗位职责、技术说明场景"
+      },
+      {
+          "word": "role",
+          "coreDifference": "侧重“人在团队或组织中的角色、作用”，强调人际关系和定位",
+          "toeicSceneFocus": "团队管理、项目协作、职场定位场景"
+      },
+      {
+          "word": "duty",
+          "coreDifference": "侧重“法律或道德上的责任、义务”，强调强制性",
+          "toeicSceneFocus": "岗位职责、法律合规、道德规范场景"
+      }
+  ]
+},
+{
+  "word": "role",
+  "phonetic": "/rəʊl/（英式）/roʊl/（美式）",
+  "phrase": "role of a project coordinator",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "角色；作用；职责；（戏剧的）角色",
+  "toeicSceneFocus": "超高频核心词汇，出现在团队管理、项目协作、职场定位等托业场景，阅读（项目计划书、团队分工表）和听力（面试对话、团队会议）中几乎必考“团队角色、岗位职责”相关表达，是描述“职场定位”的核心词汇",
+  "keyCollocations": [
+      "play a role（发挥作用）",
+      "key role（关键作用）",
+      "role in sth（在某事中的角色/作用）",
+      "team role（团队角色）",
+      "define a role（明确角色）"
+  ],
+  "toeicExampleSentences": [
+      "She plays a key role in coordinating communication between different departments.（她在协调不同部门之间的沟通方面发挥着关键作用。）",
+      "The role of a project coordinator is to ensure that the project runs smoothly.（项目协调员的职责是确保项目顺利进行。）",
+      "Each team member has a clearly defined role in this project.（在这个项目中，每个团队成员都有明确的角色定位。）",
+      "Effective teamwork requires everyone to understand their roles and responsibilities.（有效的团队合作需要每个人都清楚自己的角色和职责。）"
+  ],
+  "sceneAssociation": "可以联想“项目启动会上明确team members’ roles，或面试中求职者询问岗位role”的画面，结合“人在团队中的角色、作用”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "role",
+          "coreDifference": "侧重“人在团队、组织或项目中的角色、定位和作用”，强调人际关系和协作",
+          "toeicSceneFocus": "团队管理、项目协作、职场定位场景"
+      },
+      {
+          "word": "function",
+          "coreDifference": "侧重“事物的功能或岗位的职责”，强调客观作用和目的性",
+          "toeicSceneFocus": "产品设计、岗位职责场景"
+      },
+      {
+          "word": "task",
+          "coreDifference": "侧重“具体的、需要完成的任务”，强调行动和执行",
+          "toeicSceneFocus": "任务分配、日常办公、项目执行场景"
+      }
+  ]
+},
+{
+  "word": "task",
+  "phonetic": "/tɑːsk/（英式）/tæsk/（美式）",
+  "phrase": "daily task for administrative staff",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 任务；工作；作业；v. 交给某人任务；使负重担",
+  "toeicSceneFocus": "超高频通用词汇，出现在所有托业相关场景，阅读（任务清单、工作计划）和听力（会议安排、上级指令）中常考查“具体的工作任务”相关表达，是描述“待办事项”的基础词汇",
+  "keyCollocations": [
+      "daily task（日常任务）",
+      "assign a task（分配任务）",
+      "complete a task（完成任务）",
+      "task force（特别工作组）",
+      "be tasked with（负责；承担）"
+  ],
+  "toeicExampleSentences": [
+      "My main daily task is to prepare meeting minutes and distribute them to the team.（我的主要日常任务是准备会议纪要并分发给团队成员。）",
+      "The manager assigned each team member a specific task for the project.（经理为每个团队成员分配了该项目的具体任务。）",
+      "We need to complete this urgent task before the end of the day.（我们需要在今天结束前完成这项紧急任务。）",
+      "She was tasked with organizing the company’s annual conference.（她负责组织公司的年度会议。）"
+  ],
+  "sceneAssociation": "可以联想“主管给员工assign daily tasks，或员工列task list安排工作”的画面，结合“具体的、需要执行的工作任务”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "task",
+          "coreDifference": "侧重“具体的、单一的、需要完成的工作任务”，强调执行和完成",
+          "toeicSceneFocus": "任务分配、日常办公、项目执行场景"
+      },
+      {
+          "word": "duty",
+          "coreDifference": "侧重“法律、道德或岗位规定的责任、义务”，强调强制性",
+          "toeicSceneFocus": "岗位职责、法律合规、道德规范场景"
+      },
+      {
+          "word": "assignment",
+          "coreDifference": "侧重“上级分配的、有明确要求的任务或作业”，更正式",
+          "toeicSceneFocus": "职场任务分配、学术作业场景"
+      }
+  ]
+},
+{
+  "word": "duty",
+  "phonetic": "/ˈdjuːti/（英式）/ˈduːti/（美式）",
+  "phrase": "duty of a customer service representative",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "责任；义务；职责；关税；值班",
+  "toeicSceneFocus": "高频正式词汇，出现在岗位职责、法律合规、海关贸易等托业场景，阅读（岗位手册、法律文件、海关规定）和听力（职场培训、合规讲座）中常考查“岗位责任、法律义务”相关表达，语气比task更正式",
+  "keyCollocations": [
+      "duty of care（注意义务）",
+      "customs duty（关税）",
+      "on duty（值班；当班）",
+      "fulfill one’s duty（履行职责）",
+      "moral duty（道德义务）"
+  ],
+  "toeicExampleSentences": [
+      "It is the duty of a customer service representative to resolve customer complaints promptly.（及时解决客户投诉是客户服务代表的职责。）",
+      "The company has a legal duty to provide a safe working environment for employees.（该公司有法律义务为员工提供安全的工作环境。）",
+      "Customs duties on imported electronics vary from country to country.（进口电子产品的关税因国家而异。）",
+      "Two security guards are on duty at the entrance of the building 24 hours a day.（两名保安24小时在大楼门口值班。）"
+  ],
+  "sceneAssociation": "可以联想“职场培训中讲解岗位duty，或海关工作人员检查customs duty缴纳情况”的画面，结合“法律、道德或岗位规定的责任、义务”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "duty",
+          "coreDifference": "侧重“法律、道德或岗位规定的责任、义务”，具有强制性，还可指“关税、值班”",
+          "toeicSceneFocus": "岗位职责、法律合规、海关贸易、值班场景"
+      },
+      {
+          "word": "obligation",
+          "coreDifference": "侧重“法律或合同规定的、必须履行的义务”，比duty更正式，强调约束力",
+          "toeicSceneFocus": "法律合同、正式协议、社会责任场景"
+      },
+      {
+          "word": "task",
+          "coreDifference": "侧重“具体的工作任务”，强调执行和完成，无强制性色彩",
+          "toeicSceneFocus": "日常办公、任务分配场景"
+      }
+  ]
+},
+{
+  "word": "obligation",
+  "phonetic": "/ˌɒblɪˈɡeɪʃn/（英式）/ˌɑːblɪˈɡeɪʃn/（美式）",
+  "phrase": "legal obligation of the contract",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "义务；责任；（法律或合同规定的）强制性责任",
+  "toeicSceneFocus": "高频正式词汇，出现在法律合同、商务协议、社会责任等托业场景，阅读（合同条款、法律文书、社会责任报告）和听力（法务讲座、合同谈判）中常考查“法律或合同义务”相关表达，是描述“强制责任”的核心词汇",
+  "keyCollocations": [
+      "legal obligation（法律义务）",
+      "contractual obligation（合同义务）",
+      "moral obligation（道德义务）",
+      "fulfill an obligation（履行义务）",
+      "have an obligation to do sth（有义务做某事）"
+  ],
+  "toeicExampleSentences": [
+      "Both parties have a contractual obligation to abide by the terms of the agreement.（双方都有合同义务遵守协议条款。）",
+      "The company has a moral obligation to contribute to the sustainable development of the community.（该公司有道德义务为社区的可持续发展做出贡献。）",
+      "We have a legal obligation to protect the personal data of our customers.（我们有法律义务保护客户的个人数据。）",
+      "Failure to fulfill this obligation may result in legal action.（不履行这项义务可能会导致法律诉讼。）"
+  ],
+  "sceneAssociation": "可以联想“法务人员讲解合同中的legal obligation，或企业发布社会责任报告提及moral obligation”的画面，结合“法律或合同规定的强制性责任”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "obligation",
+          "coreDifference": "侧重“法律、合同或道德上的强制性义务”，比duty更正式，强调约束力",
+          "toeicSceneFocus": "法律合同、商务协议、社会责任场景"
+      },
+      {
+          "word": "duty",
+          "coreDifference": "侧重“岗位、法律或道德的责任、义务”，范围更广，还可指关税、值班",
+          "toeicSceneFocus": "岗位职责、海关贸易、值班场景"
+      },
+      {
+          "word": "responsibility",
+          "coreDifference": "侧重“对某事或某人的责任”，强调承担后果，语气较中性",
+          "toeicSceneFocus": "日常办公、团队管理场景"
+      }
+  ]
+},
+{
+  "word": "assignment",
+  "phonetic": "/əˈsaɪnmənt/",
+  "phrase": "sales assignment for the new quarter",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "任务；作业；分配；委派；（工作的）外派",
+  "toeicSceneFocus": "高频词汇，出现在职场任务分配、项目执行、学术培训等托业场景，阅读（任务通知书、项目分配表）和听力（上级指令、团队会议）中常考查“上级分配的具体任务”相关表达，比task更正式",
+  "keyCollocations": [
+      "work assignment（工作任务）",
+      "sales assignment（销售任务）",
+      "complete an assignment（完成任务）",
+      "assignment abroad（海外外派任务）",
+      "give an assignment（分配任务）"
+  ],
+  "toeicExampleSentences": [
+      "The sales manager gave each representative a new sales assignment for the third quarter.（销售经理给每位代表分配了第三季度的新销售任务。）",
+      "She accepted an assignment abroad to manage the company’s branch office in Singapore.（她接受了一项海外外派任务，管理公司在新加坡的分公司。）",
+      "All employees must submit a report on their assignment progress by the end of the month.（所有员工必须在月底前提交任务进展报告。）",
+      "The training course includes several practical assignments to test the participants’ skills.（该培训课程包含多项实操任务，以测试参与者的技能。）"
+  ],
+  "sceneAssociation": "可以联想“销售经理给员工分配quarterly sales assignment，或员工接受overseas assignment”的画面，结合“上级分配的正式任务、外派工作”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "assignment",
+          "coreDifference": "侧重“上级正式分配的任务、作业，或海外外派工作”，比task更正式，强调委派性",
+          "toeicSceneFocus": "职场任务分配、项目执行、海外外派场景"
+      },
+      {
+          "word": "task",
+          "coreDifference": "侧重“具体的、日常的工作任务”，通用词汇，强调执行",
+          "toeicSceneFocus": "日常办公、任务完成场景"
+      },
+      {
+          "word": "project",
+          "coreDifference": "侧重“有明确目标、期限和资源的大型项目”，强调复杂性和系统性",
+          "toeicSceneFocus": "项目管理、工程建设、研发场景"
+      }
+  ]
+},
+{
+  "word": "project",
+  "phonetic": "/ˈprɒdʒekt/（英式）/ˈprɑːdʒekt/（美式）",
+  "phrase": "research project on market trends",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 项目；工程；计划；科研项目；v. 预计；投射；放映；表达",
+  "toeicSceneFocus": "超高频核心词汇，出现在项目管理、研发创新、市场调研等托业场景，阅读（项目计划书、调研报告）和听力（项目会议、进度汇报）中几乎必考“项目计划、科研项目”相关表达，是描述“系统性工作”的核心词汇",
+  "keyCollocations": [
+      "research project（科研项目）",
+      "project manager（项目经理）",
+      "project plan（项目计划）",
+      "project progress（项目进度）",
+      "project a forecast（预测）"
+  ],
+  "toeicExampleSentences": [
+      "Our team is working on a research project to analyze consumer behavior in the digital market.（我们团队正在开展一个研究项目，分析数字市场的消费者行为。）",
+      "The project manager presented the project progress to the stakeholders yesterday.（项目经理昨天向利益相关者汇报了项目进度。）",
+      "The construction project is expected to be completed by the end of next year.（该建设工程预计明年年底完工。）",
+      "The company projects a 10% increase in sales for the next fiscal year.（该公司预计下一个财年的销售额将增长10%。）"
+  ],
+  "sceneAssociation": "可以联想“项目团队讨论research project进展，或项目经理制定project plan”的画面，结合“有明确目标、期限和资源的系统性项目”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "project",
+          "coreDifference": "侧重“有明确目标、期限、资源和团队的系统性项目”，强调复杂性和整体性",
+          "toeicSceneFocus": "项目管理、研发创新、市场调研、工程建设场景"
+      },
+      {
+          "word": "assignment",
+          "coreDifference": "侧重“上级分配的具体任务或外派工作”，强调委派性和单一性",
+          "toeicSceneFocus": "职场任务分配、海外外派场景"
+      },
+      {
+          "word": "task",
+          "coreDifference": "侧重“具体的、日常的工作任务”，强调执行和完成",
+          "toeicSceneFocus": "日常办公、任务完成场景"
+      }
+  ]
+},
+{
+  "word": "mission",
+  "phonetic": "/ˈmɪʃn/",
+  "phrase": "mission of the company",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 使命；任务；天职；使团；代表团；v. 派遣；特派",
+  "toeicSceneFocus": "高频正式词汇，出现在企业愿景、组织目标、特派任务等托业场景，阅读（企业官网、使命宣言、任务指令）和听力（高管演讲、团队培训）中常考查“企业使命、特派任务”相关表达，语气庄重，强调使命感",
+  "keyCollocations": [
+      "company mission（企业使命）",
+      "mission statement（使命宣言）",
+      "mission impossible（不可能的任务）",
+      "on a mission（执行任务）",
+      "mission to do sth（执行某事的任务）"
+  ],
+  "toeicExampleSentences": [
+      "The company’s mission is to provide high-quality products at affordable prices for consumers.（该公司的使命是为消费者提供物美价廉的优质产品。）",
+      "The CEO outlined the company’s mission and vision at the annual general meeting.（首席执行官在年度股东大会上阐述了公司的使命和愿景。）",
+      "He was sent on a mission to negotiate a partnership with the overseas supplier.（他被派去执行一项任务，与海外供应商洽谈合作事宜。）",
+      "The diplomatic mission will arrive in the country next week to discuss trade issues.（外交代表团将于下周抵达该国，讨论贸易问题。）"
+  ],
+  "sceneAssociation": "可以联想“企业官网展示company mission，或员工被派去执行special mission”的画面，结合“组织的核心使命、带有使命感的特派任务”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "mission",
+          "coreDifference": "侧重“组织的核心使命、愿景，或带有使命感的重要特派任务”，语气庄重，强调目的性和意义",
+          "toeicSceneFocus": "企业愿景、组织目标、特派任务、外交使团场景"
+      },
+      {
+          "word": "project",
+          "coreDifference": "侧重“有明确目标和期限的系统性项目”，强调执行和完成",
+          "toeicSceneFocus": "项目管理、研发创新场景"
+      },
+      {
+          "word": "campaign",
+          "coreDifference": "侧重“有计划的、大规模的宣传或活动攻势”，强调推广性",
+          "toeicSceneFocus": "营销推广、公益活动场景"
+      }
+  ]
+},
+{
+  "word": "campaign",
+  "phonetic": "/kæmˈpeɪn/",
+  "phrase": "marketing campaign for new products",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 运动；活动；战役；（营销）推广活动；v. 发起运动；开展活动",
+  "toeicSceneFocus": "高频核心词汇，出现在营销推广、公益活动、公关宣传等托业场景，阅读（营销方案、活动策划书）和听力（营销会议、活动宣传）中几乎必考“营销推广活动、公益活动”相关表达，是描述“有计划的大规模活动”的核心词汇",
+  "keyCollocations": [
+      "marketing campaign（营销推广活动）",
+      "advertising campaign（广告宣传活动）",
+      "public awareness campaign（公众意识宣传活动）",
+      "launch a campaign（发起活动）",
+      "campaign for sth（为某事发起运动）"
+  ],
+  "toeicExampleSentences": [
+      "The company launched a nationwide marketing campaign to promote its new smartphone.（该公司发起了一项全国性的营销推广活动，宣传其新款智能手机。）",
+      "This advertising campaign has significantly increased brand awareness among young people.（这项广告宣传活动显著提升了品牌在年轻人中的知名度。）",
+      "The environmental organization is campaigning for the protection of endangered species.（该环保组织正在发起一项保护濒危物种的运动。）",
+      "The campaign will run for two months, from June to July.（这项活动将持续两个月，从六月到七月。）"
+  ],
+  "sceneAssociation": "可以联想“营销部门launch new product marketing campaign，或环保组织开展public awareness campaign”的画面，结合“有计划的大规模推广或公益活动”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "campaign",
+          "coreDifference": "侧重“有计划、有目标、大规模的营销推广或公益宣传活动”，强调推广性和持续性",
+          "toeicSceneFocus": "营销推广、广告宣传、公益活动场景"
+      },
+      {
+          "word": "project",
+          "coreDifference": "侧重“有明确目标、团队和期限的系统性项目”，强调执行和完成",
+          "toeicSceneFocus": "项目管理、研发创新场景"
+      },
+      {
+          "word": "event",
+          "coreDifference": "侧重“具体的、一次性的活动”，如会议、展会、庆典",
+          "toeicSceneFocus": "活动策划、会议组织场景"
+      }
+  ]
+},
+{
+  "word": "effort",
+  "phonetic": "/ˈefət/",
+  "phrase": "team effort for project success",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "努力；尽力；尝试；成就；（为某目标的）有组织的行动",
+  "toeicSceneFocus": "超高频通用词汇，出现在所有托业相关场景，阅读（绩效报告、感谢信）和听力（团队会议、表扬激励）中常考查“努力、付出”相关表达，是描述“付出程度”的基础词汇",
+  "keyCollocations": [
+      "team effort（团队努力）",
+      "make an effort（努力；尽力）",
+      "spare no effort（不遗余力）",
+      "in an effort to（为了；力图）",
+      "joint effort（共同努力）"
+  ],
+  "toeicExampleSentences": [
+      "The success of the project is the result of the joint effort of all team members.（这个项目的成功是所有团队成员共同努力的结果。）",
+      "She made a great effort to learn the new software in a short time.（她付出了很大努力，在短时间内学会了这款新软件。）",
+      "The company is sparing no effort to improve its customer service.（该公司正不遗余力地提升客户服务质量。）",
+      "In an effort to reduce costs, we decided to switch to a more affordable supplier.（为了降低成本，我们决定更换为更实惠的供应商。）"
+  ],
+  "sceneAssociation": "可以联想“经理表扬团队的joint effort，或员工make effort完成困难任务”的画面，结合“为达成目标的付出、努力”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "effort",
+          "coreDifference": "侧重“为达成目标所付出的努力、精力”，强调过程中的付出",
+          "toeicSceneFocus": "所有日常办公、团队协作、目标达成场景"
+      },
+      {
+          "word": "endeavor",
+          "coreDifference": "侧重“认真的、坚持不懈的努力，尤指艰巨的任务”，比effort更正式、更书面化",
+          "toeicSceneFocus": "正式报告、书面文书、艰巨任务场景"
+      },
+      {
+          "word": "attempt",
+          "coreDifference": "侧重“尝试做某事”，强调行动的开始，不一定成功",
+          "toeicSceneFocus": "尝试新方法、攻克难题场景"
+      }
+  ]
+},
+{
+  "word": "endeavor",
+  "phonetic": "/ɪnˈdevə/（英式）/ɪnˈdevər/（美式）",
+  "phrase": "endeavor to improve service quality",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 努力；尽力；尝试；（尤指艰巨的）事业；v. 努力；尽力；尝试",
+  "toeicSceneFocus": "高频正式词汇，出现在正式报告、书面文书、艰巨任务等托业场景，阅读（年度报告、公司宣言、正式信函）和听力（高管演讲、正式会议）中常考查“坚持不懈的努力、艰巨的事业”相关表达，比effort更正式、更具书面色彩",
+  "keyCollocations": [
+      "make every endeavor（尽一切努力）",
+      "endeavor to do sth（努力做某事）",
+      "pursue an endeavor（追求一项事业）",
+      "collective endeavor（集体努力）",
+      "bold endeavor（大胆的尝试）"
+  ],
+  "toeicExampleSentences": [
+      "The company will make every endeavor to meet the needs of its customers.（该公司将尽一切努力满足客户的需求。）",
+      "We endeavor to provide a safe and inclusive working environment for all employees.（我们努力为所有员工提供一个安全、包容的工作环境。）",
+      "This research is a collective endeavor involving scientists from five different countries.（这项研究是一项集体努力，涉及来自五个不同国家的科学家。）",
+      "His lifelong endeavor is to promote sustainable development in rural areas.（他毕生的事业是促进农村地区的可持续发展。）"
+  ],
+  "sceneAssociation": "可以联想“公司年度报告中提及endeavor to improve sustainability，或科学家pursue research endeavor”的画面，结合“认真的、坚持不懈的努力或艰巨的事业”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "endeavor",
+          "coreDifference": "侧重“认真的、坚持不懈的努力，尤指艰巨的事业或目标”，正式书面用语，语气庄重",
+          "toeicSceneFocus": "正式报告、书面文书、艰巨事业场景"
+      },
+      {
+          "word": "effort",
+          "coreDifference": "通用词汇，泛指“努力、付出”，可用于口语和书面语，语气中性",
+          "toeicSceneFocus": "所有日常商务场景"
+      },
+      {
+          "word": "attempt",
+          "coreDifference": "侧重“尝试做某事”，强调行动的开始，不强调结果",
+          "toeicSceneFocus": "尝试新方法、攻克难题场景"
+      }
+  ]
+},
+
+{
+  "word": "opinion",
+  "phonetic": "/əˈpɪnjən/",
+  "phrase": "opinion on the new policy",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "意见；看法；主张；（专家的）见解",
+  "toeicSceneFocus": "超高频通用词汇，出现在所有托业相关场景，阅读（邮件、调查报告、评论文章）和听力（会议讨论、访谈对话）中常考查“对某事的主观看法”相关表达，语气中性，可用于正式或非正式场合",
+  "keyCollocations": [
+      "in one’s opinion（在某人看来）",
+      "express an opinion（表达意见）",
+      "public opinion（公众意见）",
+      "expert opinion（专家见解）",
+      "different opinions（不同看法）"
+  ],
+  "toeicExampleSentences": [
+      "In my opinion, the new policy will have a positive impact on our business.（在我看来，这项新政策将对我们的业务产生积极影响。）",
+      "Employees are encouraged to express their opinions freely during the weekly meeting.（员工被鼓励在周会上自由表达自己的意见。）",
+      "The company conducted a survey to collect public opinion on its new product.（该公司进行了一项调查，收集公众对其新产品的看法。）",
+      "We need to seek expert opinion before making a final decision on the project.（在对这个项目做出最终决定之前，我们需要征求专家的见解。）"
+  ],
+  "sceneAssociation": "可以联想“会议上同事们交换different opinions on the plan，或市场部门收集customer opinion”的画面，结合“对某事的主观看法、主张”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "opinion",
+          "coreDifference": "侧重“个人对某事的主观看法、主张”，可基于事实或个人感受，语气中性",
+          "toeicSceneFocus": "所有日常办公、商务讨论、调查访谈场景"
+      },
+      {
+          "word": "view",
+          "coreDifference": "侧重“较系统、稳定的观点或见解”，比opinion更正式，也可指“视野、风景”",
+          "toeicSceneFocus": "正式讨论、学术交流、观点阐述场景"
+      },
+      {
+          "word": "perspective",
+          "coreDifference": "侧重“从特定角度看待事物的视角、观点”，强调立场和角度",
+          "toeicSceneFocus": "问题分析、跨文化沟通、战略思考场景"
+      }
+  ]
+},
+{
+  "word": "view",
+  "phonetic": "/vjuː/",
+  "phrase": "view on market competition",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 观点；见解；视野；风景；看法；v. 看待；考虑；观看；查看",
+  "toeicSceneFocus": "高频通用词汇，出现在商务讨论、学术交流、日常办公等托业场景，阅读（报告、文章、邮件）和听力（会议发言、访谈）中常考查“较系统的观点”相关表达，语气比opinion正式，也可用于描述“查看、观看”的动作",
+  "keyCollocations": [
+      "point of view（观点；看法）",
+      "in view of（考虑到；鉴于）",
+      "take the view that（认为）",
+      "view sth as（把某物看作）",
+      "view the data（查看数据）"
+  ],
+  "toeicExampleSentences": [
+      "The manager takes the view that we should invest more in research and development.（经理认为我们应该在研发方面投入更多资金。）",
+      "In view of the current market situation, we decided to postpone the product launch.（考虑到当前的市场形势，我们决定推迟产品发布。）",
+      "Many experts share the same view on the future of the industry.（许多专家对该行业的未来持相同的观点。）",
+      "You can view the detailed sales report on the company’s internal website.（你可以在公司内部网站上查看详细的销售报告。）"
+  ],
+  "sceneAssociation": "可以联想“高管在会议上阐述view on company development，或员工view the project data”的画面，结合“系统的观点、见解或查看的动作”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "view",
+          "coreDifference": "侧重“较系统、稳定的观点或见解”，比opinion正式；也可指“视野、观看、查看”，词性更丰富",
+          "toeicSceneFocus": "正式讨论、学术交流、数据查看场景"
+      },
+      {
+          "word": "opinion",
+          "coreDifference": "侧重“个人主观的、零散的看法或主张”，语气更随意",
+          "toeicSceneFocus": "日常沟通、调查访谈场景"
+      },
+      {
+          "word": "perspective",
+          "coreDifference": "侧重“从特定立场或角度看待事物的视角”，强调角度的独特性",
+          "toeicSceneFocus": "跨文化沟通、问题分析场景"
+      }
+  ]
+},
+{
+  "word": "perspective",
+  "phonetic": "/pəˈspektɪv/",
+  "phrase": "perspective from the customer side",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "（观察问题的）视角；观点；态度；透视画法；（几何）透视关系",
+  "toeicSceneFocus": "高频核心词汇，出现在问题分析、跨文化沟通、战略规划等托业场景，阅读（分析报告、商务文章）和听力（研讨会、访谈）中常考查“从特定角度看待问题的观点”相关表达，强调立场和角度的差异性",
+  "keyCollocations": [
+      "from a different perspective（从不同的角度）",
+      "put sth into perspective（正确看待某事）",
+      "gain a new perspective（获得新的视角）",
+      "customer’s perspective（客户视角）",
+      "long-term perspective（长期视角）"
+  ],
+  "toeicExampleSentences": [
+      "We need to consider the problem from the customer’s perspective to improve our service.（我们需要从客户的视角考虑这个问题，以提升我们的服务质量。）",
+      "This failure helped us gain a new perspective on risk management.（这次失败让我们对风险管理有了新的认识。）",
+      "Putting the sales figures into perspective, we can see that the company is still growing steadily.（正确看待销售数据，我们会发现公司仍在稳步增长。）",
+      "From a long-term perspective, investing in employee training is a wise choice.（从长期的角度来看，投资员工培训是一个明智的选择。）"
+  ],
+  "sceneAssociation": "可以联想“市场分析师从different perspectives分析竞品，或团队讨论问题时gain a new perspective”的画面，结合“特定立场或角度的观点、视角”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "perspective",
+          "coreDifference": "侧重“从特定立场、角度看待事物的视角或观点”，强调角度的独特性和相对性",
+          "toeicSceneFocus": "问题分析、跨文化沟通、战略规划场景"
+      },
+      {
+          "word": "view",
+          "coreDifference": "侧重“较系统、稳定的见解或观点”，不强调角度差异",
+          "toeicSceneFocus": "正式讨论、学术交流场景"
+      },
+      {
+          "word": "attitude",
+          "coreDifference": "侧重“对人或事的态度、心态”，强调情感倾向",
+          "toeicSceneFocus": "职场沟通、团队管理场景"
+      }
+  ]
+},
+{
+  "word": "attitude",
+  "phonetic": "/ˈætɪtjuːd/（英式）/ˈætɪtuːd/（美式）",
+  "phrase": "attitude towards work",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "态度；看法；心态；姿势",
+  "toeicSceneFocus": "超高频核心词汇，出现在职场管理、团队沟通、面试等托业场景，阅读（绩效评估报告、面试评价）和听力（团队会议、面试对话）中常考查“对人、事或工作的态度、心态”相关表达，强调情感倾向和行为倾向",
+  "keyCollocations": [
+      "attitude towards（对……的态度）",
+      "positive attitude（积极态度）",
+      "negative attitude（消极态度）",
+      "change one’s attitude（改变态度）",
+      "professional attitude（专业态度）"
+  ],
+  "toeicExampleSentences": [
+      "A positive attitude towards work is essential for career success.（积极的工作态度对于职业成功至关重要。）",
+      "The employee was praised for his professional attitude and strong sense of responsibility.（这位员工因其专业的态度和强烈的责任感而受到表扬。）",
+      "We need to change our negative attitude and focus on finding solutions to the problem.（我们需要改变消极的态度，专注于寻找问题的解决方案。）",
+      "Her attitude towards teamwork has a great influence on the whole group.（她对团队合作的态度对整个团队有很大影响。）"
+  ],
+  "sceneAssociation": "可以联想“面试中面试官询问求职者的attitude towards challenges，或经理强调positive attitude的重要性”的画面，结合“对人或事的态度、心态”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "attitude",
+          "coreDifference": "侧重“对人、事、物的态度、心态”，强调情感倾向和行为倾向，带有主观情绪色彩",
+          "toeicSceneFocus": "职场管理、团队沟通、面试场景"
+      },
+      {
+          "word": "mindset",
+          "coreDifference": "侧重“长期形成的思维模式、心智模式”，强调思维方式的稳定性",
+          "toeicSceneFocus": "个人成长、职业规划、战略思维场景"
+      },
+      {
+          "word": "perspective",
+          "coreDifference": "侧重“看待事物的视角、角度”，强调立场而非情感",
+          "toeicSceneFocus": "问题分析、跨文化沟通场景"
+      }
+  ]
+},
+{
+  "word": "mindset",
+  "phonetic": "/ˈmaɪndset/",
+  "phrase": "growth mindset in the workplace",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "思维模式；心智模式；心态",
+  "toeicSceneFocus": "高频词汇，出现在个人成长、职业规划、团队管理等托业场景，阅读（职场励志文章、培训手册）和听力（领导力讲座、培训课程）中常考查“长期形成的思维方式”相关表达，强调思维模式的稳定性和可塑性",
+  "keyCollocations": [
+      "growth mindset（成长型思维）",
+      "fixed mindset（固定型思维）",
+      "change one’s mindset（改变思维模式）",
+      "entrepreneurial mindset（创业思维）",
+      "strategic mindset（战略思维）"
+  ],
+  "toeicExampleSentences": [
+      "Developing a growth mindset is crucial for adapting to the rapidly changing workplace.（培养成长型思维对于适应快速变化的职场至关重要。）",
+      "Leaders should have a strategic mindset to make decisions that benefit the company’s long-term development.（领导者应该具备战略思维，做出有利于公司长期发展的决策。）",
+      "The training course aims to help employees change their fixed mindset and embrace new challenges.（该培训课程旨在帮助员工改变固定型思维，接受新的挑战。）",
+      "An entrepreneurial mindset encourages innovation and risk-taking in the team.（创业思维鼓励团队创新和承担风险。）"
+  ],
+  "sceneAssociation": "可以联想“培训课上讲师讲解growth mindset的重要性，或管理者培养团队的strategic mindset”的画面，结合“长期形成的思维模式、心智模式”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "mindset",
+          "coreDifference": "侧重“长期形成的、稳定的思维模式或心智模式”，强调思维方式的底层逻辑，可塑性较弱",
+          "toeicSceneFocus": "个人成长、职业规划、领导力培养场景"
+      },
+      {
+          "word": "mentality",
+          "coreDifference": "侧重“群体或个人的心态、心性”，可指普遍的心理倾向，语气较正式",
+          "toeicSceneFocus": "社会分析、团队文化、群体心理场景"
+      },
+      {
+          "word": "attitude",
+          "coreDifference": "侧重“对具体人或事的态度、看法”，情感色彩更浓，可塑性较强",
+          "toeicSceneFocus": "职场沟通、面试场景"
+      }
+  ]
+},
+{
+  "word": "mentality",
+  "phonetic": "/menˈtæləti/",
+  "phrase": "customer-centric mentality",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "心态；心性；思维方式；（群体的）心理倾向",
+  "toeicSceneFocus": "高频正式词汇，出现在团队文化建设、企业管理、社会分析等托业场景，阅读（企业管理报告、文化手册）和听力（高管演讲、研讨会）中常考查“群体或个人的心理倾向、思维方式”相关表达，语气比mindset正式，可指群体共性",
+  "keyCollocations": [
+      "customer-centric mentality（以客户为中心的心态）",
+      "winning mentality（求胜心态）",
+      "team mentality（团队意识）",
+      "change the mentality（转变心态）",
+      "traditional mentality（传统思维方式）"
+  ],
+  "toeicExampleSentences": [
+      "The company is trying to cultivate a customer-centric mentality among all employees.（该公司正努力在所有员工中培养以客户为中心的心态。）",
+      "A winning mentality is essential for a team to succeed in a competitive market.（求胜心态对于一个团队在竞争激烈的市场中取得成功至关重要。）",
+      "We need to break away from the traditional mentality and adopt more flexible working methods.（我们需要摆脱传统的思维方式，采用更灵活的工作方法。）",
+      "Good team mentality can improve cooperation and efficiency in the workplace.（良好的团队意识可以提升职场中的协作能力和效率。）"
+  ],
+  "sceneAssociation": "可以联想“企业培训中强调customer-centric mentality，或团队建设活动培养team mentality”的画面，结合“群体或个人的心理倾向、思维方式”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "mentality",
+          "coreDifference": "侧重“群体或个人的心理倾向、心性”，可指普遍的思维特征，语气较正式，常用于组织或群体层面",
+          "toeicSceneFocus": "团队文化、企业管理、群体心理场景"
+      },
+      {
+          "word": "mindset",
+          "coreDifference": "侧重“个人长期形成的思维模式”，更偏向个体层面，语气较中性",
+          "toeicSceneFocus": "个人成长、职业规划场景"
+      },
+      {
+          "word": "attitude",
+          "coreDifference": "侧重“对具体事物的态度、看法”，更具体、更具情感色彩",
+          "toeicSceneFocus": "日常职场沟通场景"
+      }
+  ]
+},
+{
+  "word": "approach",
+  "phonetic": "/əˈprəʊtʃ/（英式）/əˈproʊtʃ/（美式）",
+  "phrase": "approach to problem-solving",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "n. 方法；方式；途径；接近；靠近；v. 接近；靠近；处理；探讨",
+  "toeicSceneFocus": "超高频核心词汇，出现在问题解决、项目管理、商务沟通等托业场景，阅读（方案报告、操作手册）和听力（会议讨论、培训课程）中常考查“处理问题的方法、方式”相关表达，强调针对性和实用性",
+  "keyCollocations": [
+      "approach to sth（处理某事的方法）",
+      "new approach（新方法）",
+      "practical approach（实用方法）",
+      "approach a problem（处理一个问题）",
+      "approach the deadline（临近截止日期）"
+  ],
+  "toeicExampleSentences": [
+      "We need to adopt a practical approach to solve the supply chain problem.（我们需要采用一种实用的方法来解决供应链问题。）",
+      "The new approach to employee training has significantly improved learning efficiency.（这种新的员工培训方法显著提升了学习效率。）",
+      "As we approach the project deadline, we need to speed up the progress.（随着项目截止日期的临近，我们需要加快进度。）",
+      "The manager decided to approach the issue from a different angle.（经理决定从不同的角度处理这个问题。）"
+  ],
+  "sceneAssociation": "可以联想“团队讨论new approach to customer service，或员工approach a difficult task systematically”的画面，结合“处理问题的方法、方式或接近的动作”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "approach",
+          "coreDifference": "侧重“处理问题的针对性方法、方式或途径”，强调解决问题的思路；也可作动词表“接近、处理”，词性灵活",
+          "toeicSceneFocus": "问题解决、项目管理、商务沟通场景"
+      },
+      {
+          "word": "method",
+          "coreDifference": "侧重“系统的、科学的、有固定步骤的方法”，强调步骤性和规律性",
+          "toeicSceneFocus": "流程管理、科学研究、技能培训场景"
+      },
+      {
+          "word": "way",
+          "coreDifference": "含义最宽泛，泛指各种方式、方法，口语和书面语通用",
+          "toeicSceneFocus": "所有日常商务场景"
+      }
+  ]
+},
+{
+  "word": "method",
+  "phonetic": "/ˈmeθəd/",
+  "phrase": "method of data analysis",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "方法；办法；（科学、系统的）研究方法；教学法",
+  "toeicSceneFocus": "高频核心词汇，出现在科学研究、流程管理、技能培训等托业场景，阅读（技术报告、操作规范、培训教材）和听力（学术讲座、技能培训）中常考查“系统的、有步骤的方法”相关表达，强调步骤性、科学性和可重复性",
+  "keyCollocations": [
+      "scientific method（科学方法）",
+      "teaching method（教学方法）",
+      "method of operation（操作方法）",
+      "effective method（有效方法）",
+      "adopt a method（采用一种方法）"
+  ],
+  "toeicExampleSentences": [
+      "The scientific method is widely used in market research to ensure accurate results.（科学方法被广泛应用于市场调研，以确保结果的准确性。）",
+      "This effective method of data analysis helps us identify market trends quickly.（这种有效的数据分析方法帮助我们快速识别市场趋势。）",
+      "The company has standardized the method of operation to improve product quality.（该公司已将操作方法标准化，以提升产品质量。）",
+      "Teachers are encouraged to use various teaching methods to meet the needs of different students.（教师被鼓励采用多种教学方法，以满足不同学生的需求。）"
+  ],
+  "sceneAssociation": "可以联想“技术人员讲解method of data processing，或培训师介绍effective teaching methods”的画面，结合“系统的、有步骤的科学方法”核心场景快速记忆",
+  "confusingWordsComparison": [
+      {
+          "word": "method",
+          "coreDifference": "侧重“系统的、科学的、有固定步骤的方法”，强调步骤性、规律性和可重复性，多用于正式、专业的场景",
+          "toeicSceneFocus": "科学研究、流程管理、技能培训场景"
+      },
+      {
+          "word": "approach",
+          "coreDifference": "侧重“处理问题的思路、途径或针对性方法”，不强调固定步骤，更灵活",
+          "toeicSceneFocus": "问题解决、项目管理场景"
+      },
+      {
+          "word": "technique",
+          "coreDifference": "侧重“具体的操作技巧、技术手法”，强调实践性和专业性",
+          "toeicSceneFocus": "技术操作、技能培训场景"
+      }
+  ]
+}
+,
+{
+  "word": "anticipation",
+  "phonetic": "/ænˌtɪs.ɪˈpeɪ.ʃən/",
+  "phrase": "eager anticipation of the new product launch",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "预期，预料，期待（对即将发生的事情的预想和等待，常带有积极情绪）",
+  "toeicSceneFocus": "多用于描述对商业活动、市场趋势、项目成果或公司公告的预先感知和期待。常见于市场报告、项目规划、内部通知及描述消费者或员工心态的语境中，是听力（对话预测未来事件）和阅读（市场分析）的关键词。",
+  "keyCollocations": [
+    "in anticipation of（预期……，期待……）",
+    "with great anticipation（满怀期待地）",
+    "market anticipation（市场预期）",
+    "build anticipation（营造期待）"
+  ],
+  "toeicExampleSentences": [
+    "There is considerable market anticipation surrounding the tech giant's upcoming quarterly earnings report.（市场对这家科技巨头即将发布的季度财报抱有相当大的预期。）",
+    "The project team worked with great anticipation, hoping their proposal would be approved by the board.（项目团队满怀期待地工作，希望他们的提案能得到董事会批准。）",
+    "The early advertising campaign succeeded in building strong consumer anticipation for the new model.（早期的广告活动成功地让消费者对新机型产生了强烈的期待。）"
+  ],
+  "sceneAssociation": "联想“公司发布新品前，市场分析师撰写报告，表达对销售数据的**预期（anticipation）**”，或“员工收到CEO邮件，**期待地（with anticipation）** 等待年度战略发布”，抓住“对未来事件的积极预判”这一核心意象。",
+  "confusingWordsComparison": [
+    {
+      "word": "anticipation",
+      "coreDifference": "侧重于“基于预测的、积极的期待”，是一种主动的心理状态。",
+      "toeicSceneFocus": "商务活动中对结果的积极等待和预测。"
+    },
+    {
+      "word": "expectation",
+      "coreDifference": "更中性，指“认为某事会发生”的信念，可好可坏，也可能是标准或要求。",
+      "toeicSceneFocus": "对绩效、交付成果或事件发生的普遍看法或要求。"
+    },
+    {
+      "word": "prediction",
+      "coreDifference": "强调“对未来的明确断言或预报”，是一个具体的结论。",
+      "toeicSceneFocus": "市场预测、经济或销售数据预报。"
+    }
+  ]
+},
+{
+  "word": "hope",
+  "phonetic": "/hoʊp/",
+  "phrase": "hold onto hope for a positive outcome",
+  "partOfSpeech": "n. 名词；v. 动词",
+  "coreMeaning": "希望，盼望（对某事发生或情况好转的愿望，带有情感寄托，但不确定性能实现）",
+  "toeicSceneFocus": "用于表达商业谈判、问题解决、市场复苏或个人职业发展中的愿望。语气不如`optimism`肯定，更主观。常见于内部邮件鼓励、会议讨论不确定事项、或客户服务中安抚对方的语境。",
+  "keyCollocations": [
+    "hope for (希望得到…)",
+    "in the hope that (怀着…的希望)",
+    "lose hope (失去希望)",
+    "faint hope (渺茫的希望)"
+  ],
+  "toeicExampleSentences": [
+    "We hope to finalize the contract by the end of this month, pending the legal team's review.（我们希望在本月底前最终敲定合同，这取决于法律团队的审查。）",
+    "The manager sent an email to the team, expressing hope that the project delays would be resolved soon.（经理给团队发了封邮件，表达了对项目延误能尽快解决的希望。）",
+    "Despite the recent sales slump, the marketing director hasn't lost hope for a rebound in the next quarter.（尽管最近销售额下滑，市场总监仍未对下一季度的反弹失去希望。）"
+  ],
+  "sceneAssociation": "联想“项目遇到挫折，团队领导在会议中说‘我**希望（hope）** 我们能找到解决方案’”的画面，或“客服代表对投诉客户说‘我们**希望（hope）** 这次补偿能让您满意’”，抓住“在不确定性中表达愿望”的场景。",
+  "confusingWordsComparison": [
+    {
+      "word": "hope",
+      "coreDifference": "表达“主观的愿望”，不涉及可能性判断，更情感化。",
+      "toeicSceneFocus": "表达个人或团队在不确定中的愿望和期待。"
+    },
+    {
+      "word": "optimism",
+      "coreDifference": "表达“基于某种理由的、积极的信念或态度”，更理性、更确信。",
+      "toeicSceneFocus": "基于数据分析或趋势判断的积极商业展望。"
+    },
+    {
+      "word": "wish",
+      "coreDifference": "常指“不太可能或与事实相反的愿望”，或用于礼貌性表达。",
+      "toeicSceneFocus": "商务信函结尾（如 We wish you success.）或表达难以实现的愿望。"
+    }
+  ]
+},
+{
+  "word": "optimism",
+  "phonetic": "/ˈɑːp.tə.mɪ.zəm/",
+  "phrase": "cautious optimism about market growth",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "乐观，乐观主义（相信未来会发生好事或事情会向好的方向发展的一种态度和信念）",
+  "toeicSceneFocus": "核心商务与金融情绪词汇。频繁出现在经济预测、公司财报、市场分析、战略会议及投资者报告中，用于描述管理层、分析师或市场对未来业绩、经济环境或行业趋势的积极看法。是托业阅读（财经文章）和听力（高层对话）的高频词。",
+  "keyCollocations": [
+    "express optimism about（对…表示乐观）",
+    "cautious optimism（审慎乐观）",
+    "market optimism（市场乐观情绪）",
+    "grounds/reason for optimism（乐观的理由）"
+  ],
+  "toeicExampleSentences": [
+    "The CEO expressed optimism about the company's expansion into the Asian market during the annual shareholders' meeting.（在年度股东大会上，CEO对公司拓展亚洲市场表达了乐观态度。）",
+    "Financial analysts are showing cautious optimism regarding the upcoming quarter, despite global economic headwinds.（尽管面临全球经济逆风，金融分析师对下一季度仍持审慎乐观态度。）",
+    "The recent surge in orders has given the management team grounds for optimism about meeting the annual revenue target.（最近的订单激增让管理层有理由对达成年度收入目标感到乐观。）"
+  ],
+  "sceneAssociation": "联想“公司发布亮眼财报后，新闻标题写着‘**市场乐观情绪（Market Optimism）** 推动股价上涨’”，或“投资会议上，分析师面带微笑阐述**乐观的（optimistic）** 理由”，形成“积极预期驱动决策”的画面。",
+  "confusingWordsComparison": [
+    {
+      "word": "optimism",
+      "coreDifference": "指一种“相信结果会好”的总体态度或信念体系。",
+      "toeicSceneFocus": "描述对商业前景、经济趋势的积极信念。"
+    },
+    {
+      "word": "hope",
+      "coreDifference": "更偏向个人“愿望”，情感色彩浓，理性依据可强可弱。",
+      "toeicSceneFocus": "表达在不确定中个人的或初步的积极愿望。"
+    },
+    {
+      "word": "confidence",
+      "coreDifference": "强调“对自身能力或某事确定性的强烈信任”，更有把握。",
+      "toeicSceneFocus": "描述对团队、产品或计划的信任和把握。"
+    }
+  ]
+},
+{
+  "word": "pessimism",
+  "phonetic": "/ˈpes.ə.mɪ.zəm/",
+  "phrase": "growing pessimism over the trade talks",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "悲观，悲观主义（认为未来会发生坏事或情况会恶化的态度和信念）",
+  "toeicSceneFocus": "与`optimism`相对的关键商业情绪词。用于描述对经济衰退、项目失败、谈判破裂、市场萎缩等的负面预期。常见于风险预警、危机分析、负面新闻报道及讨论挑战的会议语境中。",
+  "keyCollocations": [
+    "widespread pessimism（普遍的悲观情绪）",
+    "voice pessimism about（对…表示悲观）",
+    "economic pessimism（经济悲观主义）",
+    "a mood of pessimism（悲观氛围）"
+  ],
+  "toeicExampleSentences": [
+    "The prolonged contract dispute has led to growing pessimism among investors about the joint venture's future.（长期的合同纠纷导致投资者对该合资企业的未来越来越悲观。）",
+    "Some industry experts voice pessimism about the retail sector's recovery in the short term.（一些行业专家对零售业的短期复苏表示悲观。）",
+    "The management memo aimed to address the staff's pessimism by outlining a clear turnaround strategy.（管理层备忘录通过概述清晰的转型战略，旨在解决员工的悲观情绪。）"
+  ],
+  "sceneAssociation": "联想“经济数据不佳，财经新闻主播以严肃口吻报道‘**普遍的悲观情绪（Widespread Pessimism）** 笼罩市场’”，或“项目进展会上，有人摇头提出**悲观的（pessimistic）** 预测”，形成“负面预期带来压力”的画面。",
+  "confusingWordsComparison": [
+    {
+      "word": "pessimism",
+      "coreDifference": "指一种“相信结果会糟”的总体态度或信念。",
+      "toeicSceneFocus": "描述对商业前景、经济趋势的消极信念。"
+    },
+    {
+      "word": "concern",
+      "coreDifference": "指“担忧、关切”，程度较轻，是具体的“顾虑”而非整体态度。",
+      "toeicSceneFocus": "表达对某个具体问题或风险的担心。"
+    },
+    {
+      "word": "cynicism",
+      "coreDifference": "指“愤世嫉俗、怀疑动机”，认为人们是自私的，程度更深且更具批判性。",
+      "toeicSceneFocus": "较少作为核心词考查，多出现在对商业道德讨论的上下文中。"
+    }
+  ]
+},
+{
+  "word": "realism",
+  "phonetic": "/ˈriː.ə.lɪ.zəm/",
+  "phrase": "a sense of realism in budgeting",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "现实主义，务实态度（基于事实和实际情况而非理想或幻想来理解和处理事情的态度）",
+  "toeicSceneFocus": "职场中的关键心智模式。强调在制定预算、设定目标、评估风险、规划项目时，采取客观、实际、可行的态度。是商业计划、绩效评估、项目管理讨论中的核心概念，与`idealism`常形成对比。",
+  "keyCollocations": [
+    "pragmatic realism（务实的现实主义）",
+    "a dose of realism（一点现实考量）",
+    "with realism（现实地）",
+    "lack of realism（缺乏现实性）"
+  ],
+  "toeicExampleSentences": [
+    "The new manager brought a much-needed sense of realism to the team's overly ambitious product launch timeline.（新经理为团队过于雄心勃勃的产品上市时间表带来了亟需的现实感。）",
+    "The consultant advised the company to approach the market entry with realism, considering the strong local competition.（顾问建议公司以现实主义的态度进入市场，要充分考虑当地激烈的竞争。）",
+    "While the vision is inspiring, the board asked for a more detailed plan grounded in financial realism.（虽然愿景令人振奋，但董事会要求提交一份基于财务现实、更详细的计划。）"
+  ],
+  "sceneAssociation": "联想“讨论年度目标时，CFO敲着财务报表说‘我们需要更**现实一点（with more realism）**’”，或“商业计划书上，风险评估章节的标题是‘**现实考量（A Dose of Realism）**’”，抓住“基于事实和限制条件思考”的会议场景。",
+  "confusingWordsComparison": [
+    {
+      "word": "realism",
+      "coreDifference": "强调“承认并接受现实（尤其是限制条件）的态度”，是看待世界的方式。",
+      "toeicSceneFocus": "在规划、评估中强调客观实际。"
+    },
+    {
+      "word": "pragmatism",
+      "coreDifference": "强调“注重实际效果和解决问题的方法”，是行动导向的。",
+      "toeicSceneFocus": "决策时注重实用性和结果。"
+    },
+    {
+      "word": "idealism",
+      "coreDifference": "强调“追求理想或完美标准的态度”，常与现实对立。",
+      "toeicSceneFocus": "描述愿景、价值观或初创企业精神。"
+    }
+  ]
+},
+{
+  "word": "idealism",
+  "phonetic": "/aɪˈdiː.ə.lɪ.zəm/",
+  "phrase": "the idealism of a startup founder",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "理想主义（追求高标准、完美或崇高原则的态度，有时可能忽略现实约束）",
+  "toeicSceneFocus": "常用于描述企业文化、创始人愿景、企业社会责任（CSR）倡议或新项目的初始热情。在托业中，可能作为与`realism`或`pragmatism`对比的对象出现，讨论愿景与执行的平衡。",
+  "keyCollocations": [
+    "youthful idealism（年轻的理想主义）",
+    "driven by idealism（受理想主义驱动）",
+    "a clash between idealism and reality（理想与现实的冲突）"
+  ],
+  "toeicExampleSentences": [
+    "The company's founding story is one of youthful idealism, aiming to solve social problems through technology.（公司的创立故事充满了年轻的理想主义，旨在通过技术解决社会问题。）",
+    "While her idealism about creating a perfectly eco-friendly supply chain is admirable, the logistics team had to introduce more pragmatic solutions.（虽然她创建完全环保供应链的理想主义令人钦佩，但物流团队不得不引入更务实的解决方案。）",
+    "The corporate social responsibility program was launched not just for PR, but from a genuine sense of idealism.（企业社会责任项目的启动不仅是为了公关，更是出于一种真正的理想主义。）"
+  ],
+  "sceneAssociation": "联想“一位初创公司创始人在路演中，充满激情地描述改变世界的**理想主义（idealism）**愿景”，或“老员工对新员工的**理想化（idealistic）**方案报以理解的微笑”，抓住“心怀美好愿景但可能脱离实际”的典型场景。",
+  "confusingWordsComparison": [
+    {
+      "word": "idealism",
+      "coreDifference": "核心是“追求理想、完美或原则”，可能忽视现实障碍。",
+      "toeicSceneFocus": "描述愿景、使命、初创精神或价值观驱动型决策。"
+    },
+    {
+      "word": "optimism",
+      "coreDifference": "核心是“相信未来会有好结果”，是一种积极的预期。",
+      "toeicSceneFocus": "对商业前景和结果的积极信念。"
+    },
+    {
+      "word": "naivety",
+      "coreDifference": "指“天真、缺乏经验”，是贬义的，暗示因无知而犯错。",
+      "toeicSceneFocus": "描述因经验不足导致的判断失误（较少作为核心词）。"
+    }
+  ]
+},
+{
+  "word": "pragmatism",
+  "phonetic": "/ˈpræɡ.mə.tɪ.zəm/",
+  "phrase": "a pragmatic approach to problem-solving",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "实用主义，务实作风（注重实际效果和解决问题的实际方法，而非理论或教条）",
+  "toeicSceneFocus": "**托业高频核心商务思维词汇**。高度赞扬在管理、决策、谈判和危机处理中灵活、注重结果、以解决问题为导向的态度。是描述有效领导者、成功项目或明智策略时的常用褒义词。",
+  "keyCollocations": [
+    "political pragmatism（政治务实主义/在商言商）",
+    "pragmatism over ideology（实用主义高于意识形态）",
+    "a hallmark of pragmatism（务实作风的标志）"
+  ],
+  "toeicExampleSentences": [
+    "The success of the merger was largely due to the pragmatic leadership that focused on integrating the two companies' operational strengths.（合并的成功很大程度上归功于专注于整合两家公司运营优势的务实领导力。）",
+    "In business negotiations, a sense of pragmatism often leads to more sustainable agreements than rigid adherence to initial demands.（在商业谈判中，务实感往往比僵化坚持最初要求更能达成可持续的协议。）",
+    "The consultant recommended a pragmatic solution: outsourcing the non-core IT functions to reduce costs.（顾问推荐了一个务实的解决方案：将非核心IT职能外包以降低成本。）"
+  ],
+  "sceneAssociation": "联想“面对计划外问题，项目经理说‘我们需要**务实一点（be pragmatic）**，先解决最关键的部分’”，或“公司简介中写道‘我们的文化推崇**实用主义（Pragmatism）**和创新’”，形成“以结果和可行性为导向”的决策画面。",
+  "confusingWordsComparison": [
+    {
+      "word": "pragmatism",
+      "coreDifference": "强调“以实际效果和解决问题为导向的思维和行动方式”，是方法论。",
+      "toeicSceneFocus": "决策、谈判、管理中注重实效和灵活性的最高频褒义词。"
+    },
+    {
+      "word": "realism",
+      "coreDifference": "强调“对现实情况的客观认知和接受”，是一种认知状态。",
+      "toeicSceneFocus": "制定计划和目标时基于现实条件。"
+    },
+    {
+      "word": "practicality",
+      "coreDifference": "更具体，指“实用性、可行的事实或特质”，是`pragmatism`的具体体现。",
+      "toeicSceneFocus": "形容某个方案、工具或功能本身是否实用。"
+    }
+  ]
+},
+{
+  "word": "philosophy",
+  "phonetic": "/fəˈlɑː.sə.fi/",
+  "phrase": "the company's customer service philosophy",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "（此处主要指）理念，宗旨，指导思想（一个组织或个人在行事、经营或思考问题时所依据的根本原则或信念体系）",
+  "toeicSceneFocus": "在企业文化、品牌管理、战略规划、人力资源管理等领域高频出现。指代公司的经营理念、管理哲学、服务宗旨或核心价值观。常见于公司介绍手册、CEO公开信、员工培训材料及品牌宣传文案中。",
+  "keyCollocations": [
+    "business philosophy（经营哲学）",
+    "management philosophy（管理理念）",
+    "design philosophy（设计理念）",
+    "underlying philosophy（根本理念）"
+  ],
+  "toeicExampleSentences": [
+    "The company's philosophy of 'putting employees first' has resulted in exceptionally high staff retention rates.（公司“员工至上”的理念带来了极高的员工留任率。）",
+    "In his presentation, the founder explained the design philosophy behind their minimalist product line.（在演讲中，创始人解释了其极简主义产品线背后的设计理念。）",
+    "Our management philosophy encourages open communication and decentralized decision-making.（我们的管理理念鼓励开放沟通和分权决策。）"
+  ],
+  "sceneAssociation": "联想“新员工入职手册的第一章标题是‘我们的企业**理念（Philosophy）**’”，或“广告语‘源自我们简单的**生活哲学（Life Philosophy）**’”，将其与“指导行为的核心原则”这一概念绑定。",
+  "confusingWordsComparison": [
+    {
+      "word": "philosophy (business context)",
+      "coreDifference": "在商务语境中指指导行为的“核心原则、理念体系”。",
+      "toeicSceneFocus": "公司文化、经营理念、品牌价值。"
+    },
+    {
+      "word": "policy",
+      "coreDifference": "指具体的“规定、政策、条款”，是必须遵守的规则。",
+      "toeicSceneFocus": "公司的具体规章制度（如休假政策、报销政策）。"
+    },
+    {
+      "word": "strategy",
+      "coreDifference": "指为实现目标而制定的“长期计划、策略”，是具体的行动路线。",
+      "toeicSceneFocus": "市场策略、竞争策略、发展战略。"
+    }
+  ]
+},
+{
+  "word": "belief",
+  "phonetic": "/bɪˈliːf/",
+  "phrase": "a strong belief in quality",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "信念，相信（认为某事是真实或正确的想法，可以是基于证据、信任或信仰）",
+  "toeicSceneFocus": "用于表达企业文化、个人职业信条、品牌承诺或对市场趋势的判断。比`opinion`更坚定，但弱于基于证据的`conviction`。常见于描述公司价值观、领导力原则及团队共享理念的语境。",
+  "keyCollocations": [
+    "core belief（核心理念）",
+    "hold the belief that（持有…的信念）",
+    "contrary to popular belief（与普遍看法相反）",
+    "shared belief（共同的信念）"
+  ],
+  "toeicExampleSentences": [
+    "The company operates on the core belief that ethical business practices lead to long-term success.（公司的运营基于一个核心理念：商业道德行为能带来长期成功。）",
+    "Her strong belief in the potential of the new market convinced the board to approve the initial investment.（她对新市场潜力的坚定信念说服了董事会批准了初期投资。）",
+    "Contrary to popular belief, investing in employee training often reduces costs by lowering turnover.（与普遍看法相反，投资员工培训通常能通过降低离职率来减少成本。）"
+  ],
+  "sceneAssociation": "联想“公司官网的‘关于我们’页面写着‘我们的**信念（Belief）** 是创新驱动未来’”，或“一位资深工程师在评审会上说‘我**相信（believe）** 这个技术方案更可靠’”，抓住“内心认为正确或真实的想法”这一核心。",
+  "confusingWordsComparison": [
+    {
+      "word": "belief",
+      "coreDifference": "指“认为是真的”这种心理状态，基于信任、经验或价值观，是较宽泛的“信”。",
+      "toeicSceneFocus": "价值观、理念、对事物的一般性看法。"
+    },
+    {
+      "word": "conviction",
+      "coreDifference": "指“非常坚定、不容置疑的信念”，确信程度最高，常基于强烈证据或情感。",
+      "toeicSceneFocus": "在争论、推销或表达强烈立场时使用。"
+    },
+    {
+      "word": "opinion",
+      "coreDifference": "指“个人看法、观点”，可能不坚定，也无需强证据，是主观的“认为”。",
+      "toeicSceneFocus": "表达个人评价、建议或观点。"
+    }
+  ]
+},
+{
+  "word": "conviction",
+  "phonetic": "/kənˈvɪk.ʃən/",
+  "phrase": "speak with conviction about the project",
+  "partOfSpeech": "n. 名词",
+  "coreMeaning": "坚定的信念，深信（一种非常强烈、不容置疑的信念或确信感）",
+  "toeicSceneFocus": "描述在商业演讲、销售提案、内部倡议或领导决策中表现出的高度自信和说服力。强调表达者的**确信无疑**，能够感染和说服听众。常见于评价领导力、营销效果或谈判立场的语境。",
+  "keyCollocations": [
+    "deep/strong conviction（深刻的/坚定的信念）",
+    "speak with conviction（充满信心地说）",
+    "hold a conviction that（坚信…）",
+    "lack of conviction（缺乏说服力）"
+  ],
+  "toeicExampleSentences": [
+    "The sales director presented the new strategy with such conviction that the entire team felt motivated and confident.（销售总监以如此坚定的信念介绍了新策略，以至于整个团队都感到备受鼓舞和充满信心。）",
+    "Her personal conviction in the product's benefits was the key factor in securing the major client account.（她对产品优势的个人坚定信念是赢得这个大客户账户的关键因素。）",
+    "A leader must have the courage of their convictions to make difficult but necessary decisions.（领导者必须有坚持自己信念的勇气，以做出艰难但必要的决定。）"
+  ],
+  "sceneAssociation": "联想“一位CEO在发布会上，目光坚定、语气有力地向投资者阐述其**深信不疑的（with deep conviction）** 增长战略”，或“提案评审中，评价是‘内容不错，但陈述者**缺乏说服力（lacked conviction）**’”，抓住“强烈信念带来强大说服力”的场景。",
+  "confusingWordsComparison": [
+    {
+      "word": "conviction",
+      "coreDifference": "强调“强烈、深刻、确信无疑的信念”，带有情感力量和确定性。",
+      "toeicSceneFocus": "表达强烈个人信念、领导力说服力的核心词。"
+    },
+    {
+      "word": "belief",
+      "coreDifference": "范围更广，指一般的“相信、信念”，强度可大可小。",
+      "toeicSceneFocus": "泛指观点、看法、价值观。"
+    },
+    {
+      "word": "certainty",
+      "coreDifference": "强调“客观上的确定性、无疑的事实”，而非主观信念。",
+      "toeicSceneFocus": "描述事实、数据或结果的确定无疑。"
+    }
+  ]
+}
+
+
+
+
+
+
+
+]
 };

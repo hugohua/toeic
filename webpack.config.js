@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
@@ -28,12 +29,27 @@ module.exports = (env, argv) => {
           test: /\.css$/,
           use: ['style-loader', 'css-loader'],
         },
+        {
+          test: /\.(svg|ico|png|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
+          generator: {
+            filename: '[name][ext]',
+          },
+        },
       ],
     },
     plugins: [
       new HtmlWebpackPlugin({
         template: './public/index.html',
         filename: 'index.html',
+      }),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: 'public/favicon.svg',
+            to: 'favicon.svg',
+          },
+        ],
       }),
     ],
     resolve: {
