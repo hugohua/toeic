@@ -57,6 +57,65 @@ function WordBrowsePage() {
     }
   }, [currentWord, category]);
 
+  // 键盘事件处理
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      // 如果用户正在输入框中输入，不处理快捷键
+      const target = event.target;
+      if (
+        target.tagName === 'INPUT' ||
+        target.tagName === 'TEXTAREA' ||
+        target.isContentEditable
+      ) {
+        return;
+      }
+
+      switch (event.key) {
+        case 'ArrowLeft':
+          event.preventDefault();
+          if (currentIndex > 0) {
+            const prevIndex = currentIndex - 1;
+            setCurrentIndex(prevIndex);
+            window.scrollTo(0, 0);
+          } else {
+            if (window.confirm('已经是第一个单词了，是否跳转到最后一个？')) {
+              const lastIndex = words.length - 1;
+              setCurrentIndex(lastIndex);
+              window.scrollTo(0, 0);
+            }
+          }
+          break;
+        case 'ArrowRight':
+          event.preventDefault();
+          if (currentIndex < words.length - 1) {
+            const nextIndex = currentIndex + 1;
+            setCurrentIndex(nextIndex);
+            window.scrollTo(0, 0);
+          } else {
+            if (window.confirm('已经是最后一个单词了，是否从头开始？')) {
+              setCurrentIndex(0);
+              window.scrollTo(0, 0);
+            }
+          }
+          break;
+        case ' ':
+          event.preventDefault();
+          if (currentWord?.word) {
+            start();
+          }
+          break;
+        default:
+          break;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [currentIndex, words, currentWord, start]);
+
   const handleToggleFavorite = () => {
     if (!currentWord || !category) return;
     const favorite = storage.toggleFavoriteWord(currentWord.word, category);
@@ -252,10 +311,10 @@ function WordBrowsePage() {
 
       <footer className="browse-footer">
         <button className="btn btn-secondary" onClick={prevWord}>
-          上一个
+          (←) 上一个
         </button>
         <button className="btn btn-primary" onClick={nextWord}>
-          下一个
+          下一个 (→)
         </button>
       </footer>
     </div>
