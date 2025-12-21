@@ -47,3 +47,19 @@
     }
     ]
 },
+
+
+=====
+
+
+托业单词，给出与托业阅读有关的托业短语，方便记忆。如：单词headquarters，给出短语：move the headquarters to Boston，短语不用太长，可以是短语或者句子，每个短语2-10个单词内即可。
+如单词：ship，短语：We are ready to ship your order.
+如单词：commercial，短语：commercial buildings
+如单词：device，短语：a medical device
+
+输出JSON格式数据，用代码块包住即可：
+
+{
+  word: 'headquarters',
+  phrase: 'move the headquarters to Boston'
+}

@@ -3716,6 +3716,1753 @@ export const wordData = {
   ],
   recruitment: [
     {
+      word: 'multiple',
+      phonetic: '/ˈmʌltɪpl/',
+      phrase: 'multiple business partners',
+      partOfSpeech: 'adj. 形容词；n. 名词',
+      coreMeaning:
+        'adj. 数量多的；多种多样的；多重的；n. 倍数（托业中以形容词用法为主）',
+      toeicSceneFocus:
+        '多出现于商务报告、市场分析、项目管理等语境，是描述“数量或类型多样性”的高频词汇，托业阅读（数据报告、方案说明）和听力（会议讨论、业务介绍）中常考查“multiple options、multiple channels”等搭配',
+      keyCollocations: [
+        'multiple choices（多种选择）',
+        'multiple channels（多个渠道）',
+        'multiple tasks（多项任务）',
+        'multiple partners（多个合作伙伴）',
+        'multiple factors（多种因素）',
+      ],
+      toeicExampleSentences: [
+        "The company provides multiple flexible working plans to meet different employees' needs.（该公司提供多种灵活工作方案，满足不同员工的需求。）",
+        'Our product has gained popularity through multiple marketing channels this quarter.（本季度我们的产品通过多个营销渠道获得了关注。）',
+        'The project manager needs to handle multiple tasks simultaneously to ensure timely completion.（项目经理需要同时处理多项任务，确保按时完成。）',
+        'Multiple vendors submitted bids for the procurement project, and we will select the best one.（多个供应商为该采购项目提交了标书，我们将择优选择。）',
+      ],
+      sceneAssociation:
+        '可以联想“商务会议上，团队成员讨论multiple（多种）解决方案”的画面，或“市场报告中列出multiple（多个）增长因素”，结合“数量多、类型杂”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'multiple',
+          coreDifference:
+            '侧重“数量上的多个、种类上的多样”，强调“多”的属性，书面性较强',
+          toeicSceneFocus: '商务数据、方案规划、渠道拓展场景',
+        },
+        {
+          word: 'many',
+          coreDifference: '泛指“许多”，侧重数量多，口语化，修饰可数名词',
+          toeicSceneFocus: '日常商务沟通、非正式报告场景',
+        },
+        {
+          word: 'various',
+          coreDifference: '侧重“种类上的多样、不同”，强调差异性',
+          toeicSceneFocus: '产品类型、方案种类、客户群体场景',
+        },
+        {
+          word: 'numerous',
+          coreDifference: '侧重“数量极多”，语气比multiple强，书面性更强',
+          toeicSceneFocus: '正式商务报告、数据统计场景',
+        },
+      ],
+    },
+    {
+      word: 'consult',
+      phonetic: '/kənˈsʌlt/',
+      phrase: 'consult professional advisors',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '咨询，请教；查阅，查看；商议（托业中侧重“专业咨询、业务商议”）',
+      toeicSceneFocus:
+        '多出现于商务谈判、职场决策、专业服务等语境，是描述“获取专业意见或商议事务”的核心词汇，托业阅读（商务函件、咨询协议）和听力（职场沟通、客户服务）中高频考查“consult experts、consult the contract”等搭配',
+      keyCollocations: [
+        'consult a specialist（咨询专家）',
+        'consult the manual（查阅手册）',
+        'consult with colleagues（与同事商议）',
+        'consult the terms（查阅条款）',
+        'consult a lawyer（咨询律师）',
+      ],
+      toeicExampleSentences: [
+        'Before making the decision, we need to consult with the managerial team about the project budget.（做决定前，我们需要与管理团队商议项目预算。）',
+        'If you have any questions about the contract, please consult our legal advisor in a timely manner.（如果您对合同有疑问，请及时咨询我们的法律顾问。）',
+        "The clerk was required to consult the company's policy before replying to the customer's inquiry.（文员被要求先查阅公司政策，再回复客户的咨询。）",
+        'Many enterprises consult professional firms to enhance their corporate management efficiency.（许多企业咨询专业事务所，以提升企业管理效率。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业管理者consult（咨询）财务专家关于投资组合的问题”的画面，或“员工consult（商议）同事如何处理工作难题”，结合“获取专业意见或共同商议”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'consult',
+          coreDifference:
+            '侧重“向专业人士请教、查阅正式文件，或与他人商议”，正式且专业',
+          toeicSceneFocus: '商务决策、专业咨询、文件查阅场景',
+        },
+        {
+          word: 'ask',
+          coreDifference: '泛指“询问”，口语化，适用所有场景，无专业性要求',
+          toeicSceneFocus: '日常职场沟通、非正式问询场景',
+        },
+        {
+          word: 'inquire',
+          coreDifference: '侧重“正式询问信息、情况”，书面性强，常与about搭配',
+          toeicSceneFocus: '商务函件、信息核实、正式问询场景',
+        },
+        {
+          word: 'discuss',
+          coreDifference: '侧重“与他人交换意见、讨论问题”，强调双向交流',
+          toeicSceneFocus: '团队会议、项目讨论、商务谈判场景',
+        },
+      ],
+    },
+    {
+      word: 'profile',
+      phonetic: '/ˈprəʊfaɪl/',
+      phrase: 'create a client profile',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        'n. 个人简介；概况；轮廓；形象；v. 概述；描轮廓（托业中以名词用法为主）',
+      toeicSceneFocus:
+        '多出现于招聘求职、客户管理、企业宣传等语境，是描述“个人或企业信息概况”的高频词汇，托业阅读（简历、客户档案、企业报告）和听力（面试对话、业务介绍）中常考查“employee profile、company profile”等搭配',
+      keyCollocations: [
+        'company profile（公司简介）',
+        'customer profile（客户档案）',
+        'employee profile（员工档案）',
+        'job profile（岗位说明）',
+        'profile a candidate（概述候选人情况）',
+      ],
+      toeicExampleSentences: [
+        "The HR department will review each candidate's profile before arranging the interview.（人力资源部门会先查阅每位候选人的个人简介，再安排面试。）",
+        'This report includes a detailed profile of our target market and potential customers.（这份报告包含了我们目标市场和潜在客户的详细概况。）',
+        'You need to update your employee profile with your latest contact information.（你需要更新员工档案，填写最新的联系方式。）',
+        "The company's profile on the official website highlights its core values and business scope.（公司官网的简介突出了其核心价值观和业务范围。）",
+      ],
+      sceneAssociation:
+        '可以联想“面试官查看候选人的profile（个人简介）”的画面，或“市场人员整理客户的profile（客户档案）”，结合“个人或企业的信息概况”的核心概念快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'profile',
+          coreDifference:
+            '侧重“个人或组织的综合信息概况、形象”，可用于正式或非正式场景',
+          toeicSceneFocus: '招聘求职、客户管理、企业宣传场景',
+        },
+        {
+          word: 'resume',
+          coreDifference:
+            '侧重“个人求职的简历”，包含教育、工作经历等，针对性强',
+          toeicSceneFocus: '招聘面试、求职申请场景',
+        },
+        {
+          word: 'biography',
+          coreDifference: '侧重“个人的传记”，详细记录人生经历，篇幅较长',
+          toeicSceneFocus: '人物介绍、正式传记撰写场景',
+        },
+        {
+          word: 'introduction',
+          coreDifference: '侧重“对人或事物的简单介绍”，通用性强，篇幅较短',
+          toeicSceneFocus: '商务会议开场、产品介绍、新人介绍场景',
+        },
+      ],
+    },
+    {
+      word: 'vacancy',
+      phonetic: '/ˈveɪkənsi/',
+      phrase: 'advertise a job vacancy',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '空缺职位；空位；空房（托业中侧重“职场空缺岗位”）',
+      toeicSceneFocus:
+        '多出现于招聘广告、人事通知、职场沟通等语境，是描述“岗位空缺”的核心词汇，托业阅读（招聘启事、人事邮件）和听力（面试对话、HR沟通）中高频考查“job vacancy、fill a vacancy”等搭配',
+      keyCollocations: [
+        'job vacancy（空缺职位）',
+        'fill a vacancy（填补空缺）',
+        'advertise vacancies（刊登招聘职位）',
+        'vacancy for a clerk（文员空缺岗位）',
+        'current vacancies（现有空缺职位）',
+      ],
+      toeicExampleSentences: [
+        'The company posted a job vacancy for a managerial position on its official website yesterday.（公司昨天在官网发布了一个管理岗位的招聘信息。）',
+        'We are looking for an aspiring candidate to fill the vacancy in the marketing division.（我们正在寻找一位有抱负的候选人，填补市场部的空缺岗位。）',
+        'The HR clerk received dozens of applications for the vacancy within three days.（人力资源文员在三天内收到了数十份针对该空缺岗位的申请。）',
+        'There is currently no vacancy in the IT department, but we will keep your resume on file.（目前IT部门没有空缺职位，但我们会存档你的简历。）',
+      ],
+      sceneAssociation:
+        '可以联想“招聘网站上标注着vacancy（空缺职位）的招聘启事”的画面，或“HR告知求职者当前的vacancy（岗位空缺）情况”，结合“职场中待填补的岗位”的核心场景快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'vacancy',
+          coreDifference: '侧重“职场的空缺职位，或场所的空位/空房”，正式且明确',
+          toeicSceneFocus: '招聘求职、人事管理场景',
+        },
+        {
+          word: 'opening',
+          coreDifference:
+            '泛指“空缺岗位、机会”，口语化，与vacancy含义相近，更常用在日常职场沟通',
+          toeicSceneFocus: '日常职场招聘、机会描述场景',
+        },
+        {
+          word: 'position',
+          coreDifference: '侧重“具体的职位、岗位”，不强调是否空缺',
+          toeicSceneFocus: '职场岗位描述、招聘需求场景',
+        },
+        {
+          word: 'post',
+          coreDifference: '侧重“正式的职位、岗位”，书面性强，多见于英式英语',
+          toeicSceneFocus: '正式招聘启事、人事文件场景',
+        },
+      ],
+    },
+    {
+      word: 'supportive',
+      phonetic: '/səˈpɔːtɪv/',
+      phrase: 'a supportive work environment',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '给予支持的；鼓励的；拥护的（托业中侧重“职场中的支持与鼓励”）',
+      toeicSceneFocus:
+        '多出现于职场管理、团队建设、员工评价等语境，是描述“氛围或态度支持性”的高频词汇，托业阅读（员工反馈、企业文化文件）和听力（职场对话、面试沟通）中常考查“supportive team、supportive manager”等搭配',
+      keyCollocations: [
+        'supportive leadership（支持型领导）',
+        'supportive team（互助团队）',
+        'supportive environment（支持性环境）',
+        'supportive feedback（建设性反馈）',
+        'be supportive of sb.（支持某人）',
+      ],
+      toeicExampleSentences: [
+        'The company has built a supportive culture that encourages employees to share innovative ideas.（该公司营造了鼓励员工分享创新想法的支持性文化。）',
+        'My manager is very supportive, and she always helps me solve work-related problems.（我的经理非常支持我，她总是帮我解决工作上的问题。）',
+        "A supportive team can enhance employees' work efficiency and job satisfaction significantly.（一个互助的团队能显著提升员工的工作效率和满意度。）",
+        'The HR department provides supportive services to help new employees adapt to the corporate environment.（人力资源部门提供支持性服务，帮助新员工适应企业环境。）',
+      ],
+      sceneAssociation:
+        '可以联想“团队成员之间互相supportive（支持），共同完成项目”的画面，或“经理对员工提出supportive（鼓励性）的反馈”，结合“给予帮助和鼓励”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'supportive',
+          coreDifference:
+            '侧重“态度或环境上给予支持、鼓励”，指向抽象的支持属性',
+          toeicSceneFocus: '职场文化、团队协作、领导风格场景',
+        },
+        {
+          word: 'helpful',
+          coreDifference: '侧重“实际行动上有帮助的”，指向具体的帮助行为',
+          toeicSceneFocus: '日常职场沟通、同事互助场景',
+        },
+        {
+          word: 'encouraging',
+          coreDifference: '侧重“给予精神上的鼓励、激励”，强调激发积极性',
+          toeicSceneFocus: '员工激励、反馈沟通、团队建设场景',
+        },
+        {
+          word: 'assisting',
+          coreDifference: '侧重“正在提供协助、帮助”，指向具体的动作过程',
+          toeicSceneFocus: '项目协助、工作支持、现场帮扶场景',
+        },
+      ],
+    },
+    {
+      word: 'mutual',
+      phonetic: '/ˈmjuːtʃuəl/',
+      phrase: 'mutual trust and respect',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '相互的；彼此的；共同的（托业中侧重“商务合作中的双向关系”）',
+      toeicSceneFocus:
+        '多出现于商务合作、人际关系、合同条款等语境，是描述“双向、共同”的核心词汇，托业阅读（商务合同、合作协议）和听力（谈判对话、职场沟通）中高频考查“mutual benefit、mutual understanding”等搭配',
+      keyCollocations: [
+        'mutual benefit（互利共赢）',
+        'mutual trust（相互信任）',
+        'mutual understanding（相互理解）',
+        'mutual agreement（共同协议）',
+        'mutual cooperation（相互合作）',
+      ],
+      toeicExampleSentences: [
+        'The two companies established a partnership based on mutual trust and common interests.（两家公司基于相互信任和共同利益建立了合作关系。）',
+        'Mutual respect among team members is essential for a harmonious work environment.（团队成员之间的相互尊重，对于营造和谐的工作环境至关重要。）',
+        'The contract emphasizes that the cooperation should be based on mutual benefit for both parties.（合同强调合作应基于双方的互利共赢。）',
+        'We reached a mutual agreement to extend the project deadline by two weeks.（我们达成共同协议，将项目截止日期延长两周。）',
+      ],
+      sceneAssociation:
+        '可以联想“商务谈判双方达成mutual（共同）协议”的画面，或“团队成员之间建立mutual（相互）信任”，结合“双向、共同的关系或利益”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'mutual',
+          coreDifference:
+            '侧重“双方或多方之间相互的、共同的”，强调双向性，正式且书面',
+          toeicSceneFocus: '商务合作、合同条款、人际关系场景',
+        },
+        {
+          word: 'reciprocal',
+          coreDifference: '侧重“互惠的、对等的”，强调双方利益对等，书面性更强',
+          toeicSceneFocus: '国际商务、互惠协议、外交关系场景',
+        },
+        {
+          word: 'common',
+          coreDifference: '侧重“共同的、共有的”，强调共性，通用性强',
+          toeicSceneFocus: '共同目标、共同利益、日常场景',
+        },
+        {
+          word: 'joint',
+          coreDifference: '侧重“联合的、共同参与的”，强调合作行动',
+          toeicSceneFocus: '联合项目、合资企业、共同决策场景',
+        },
+      ],
+    },
+    {
+      word: 'inspired',
+      phonetic: '/ɪnˈspaɪəd/',
+      phrase: 'be inspired by successful cases',
+      partOfSpeech: 'adj. 形容词；v. 动词（inspire的过去式/过去分词）',
+      coreMeaning:
+        'adj. 受启发的；有灵感的；卓越的；v. 激励；启发；赋予灵感（托业中以形容词用法为主）',
+      toeicSceneFocus:
+        '多出现于职场激励、创新研发、企业文化等语境，是描述“受启发或具有灵感”的高频词汇，托业阅读（员工感言、创新报告）和听力（会议发言、职场沟通）中常考查“inspired ideas、be inspired by”等搭配',
+      keyCollocations: [
+        'inspired idea（有创意的想法）',
+        'be inspired by（受到……启发）',
+        'inspired design（富有灵感的设计）',
+        'inspired performance（出色的表现）',
+        'feel inspired（感到备受鼓舞）',
+      ],
+      toeicExampleSentences: [
+        'The marketing team came up with an inspired plan to promote the new product.（市场团队想出了一个富有创意的方案来推广新产品。）',
+        "Many employees were inspired by the CEO's speech about corporate development.（许多员工受到了CEO关于企业发展演讲的鼓舞。）",
+        'She was inspired by the successful case to launch her own business project.（她受到这个成功案例的启发，启动了自己的商业项目。）',
+        'An inspired work environment can encourage employees to put forward more innovative suggestions.（一个鼓舞人心的工作环境，能鼓励员工提出更多创新建议。）',
+      ],
+      sceneAssociation:
+        '可以联想“员工受到成功案例inspired（启发），提出创新方案”的画面，或“团队在inspired（鼓舞人心的）氛围中高效工作”，结合“受启发、有创意”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'inspired',
+          coreDifference:
+            '侧重“受外界启发而产生灵感，或本身富有灵感”，可形容人或事物',
+          toeicSceneFocus: '职场创新、员工激励、创意方案场景',
+        },
+        {
+          word: 'inspiring',
+          coreDifference:
+            '侧重“能激励他人、鼓舞人心的”，主要形容事物（演讲、故事等）',
+          toeicSceneFocus: '激励演讲、成功故事、企业文化场景',
+        },
+        {
+          word: 'motivated',
+          coreDifference:
+            '侧重“有动力的、积极性高的”，主要形容人，强调内在动力',
+          toeicSceneFocus: '员工激励、工作积极性、职业发展场景',
+        },
+        {
+          word: 'creative',
+          coreDifference: '侧重“富有创造力的”，强调产生新事物的能力',
+          toeicSceneFocus: '产品设计、方案策划、创新研发场景',
+        },
+      ],
+    },
+    {
+      word: 'separately',
+      phonetic: '/ˈseprətli/',
+      phrase: 'handle tasks separately',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '分别地；单独地；各自地',
+      toeicSceneFocus:
+        '多出现于项目管理、工作安排、商务流程等语境，是描述“分开处理或进行”的高频词汇，托业阅读（工作方案、流程说明）和听力（会议安排、职场沟通）中常考查“discuss separately、pay separately”等搭配',
+      keyCollocations: [
+        'discuss separately（分开讨论）',
+        'deal with separately（单独处理）',
+        'pay separately（分开付款）',
+        'submit separately（分别提交）',
+        'work separately（各自工作）',
+      ],
+      toeicExampleSentences: [
+        'The two issues are independent, so we need to discuss them separately in the meeting.（这两个问题相互独立，我们需要在会议中分开讨论。）',
+        'Each department should submit their assessment reports separately by the end of the week.（各部门需在本周末前分别提交评估报告。）',
+        'Customers can choose to pay for the service separately or as part of a package.（客户可以选择单独支付这项服务费用，或购买套餐。）',
+        'The team members worked separately on different parts of the project and then integrated the results.（团队成员各自负责项目的不同部分，之后整合成果。）',
+      ],
+      sceneAssociation:
+        '可以联想“会议上，主持人安排两个议题separately（分别）讨论”的画面，或“员工separately（各自）完成分工任务”，结合“分开、各自进行”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'separately',
+          coreDifference:
+            '侧重“动作或事物分开、各自进行，强调独立性”，修饰动词或整个句子',
+          toeicSceneFocus: '项目分工、流程处理、商务安排场景',
+        },
+        {
+          word: 'individually',
+          coreDifference: '侧重“以个体为单位、逐个地”，强调个体性',
+          toeicSceneFocus: '员工考核、产品检查、逐个处理场景',
+        },
+        {
+          word: 'respectively',
+          coreDifference: '侧重“分别地、各自地”，强调与前面列举的事物一一对应',
+          toeicSceneFocus: '数据统计、名单列举、对应说明场景',
+        },
+        {
+          word: 'apart',
+          coreDifference:
+            '侧重“分开、分离的状态”，可作副词或形容词，强调空间或时间上的分离',
+          toeicSceneFocus: '位置分离、时间间隔、状态分开场景',
+        },
+      ],
+    },
+    {
+      word: 'authorized',
+      phonetic: '/ˈɔːθəraɪzd/',
+      phrase: 'authorized personnel only',
+      partOfSpeech: 'adj. 形容词；v. 动词（authorize的过去式/过去分词）',
+      coreMeaning:
+        'adj. 经授权的；经批准的；v. 授权；批准（托业中以形容词用法为主）',
+      toeicSceneFocus:
+        '多出现于企业管理、合规操作、文件审批等语境，是描述“经过官方授权或批准”的核心词汇，托业阅读（规章制度、授权文件、合同条款）和听力（职场沟通、安全培训）中高频考查“authorized personnel、authorized dealer”等搭配',
+      keyCollocations: [
+        'authorized personnel（授权人员）',
+        'authorized dealer（授权经销商）',
+        'authorized access（授权访问）',
+        'authorized by（经……批准）',
+        'authorized representative（授权代表）',
+      ],
+      toeicExampleSentences: [
+        'Only authorized personnel are allowed to enter the confidential data room.（只有经授权的人员才可进入涉密数据室。）',
+        'The contract is valid only if it is signed by an authorized representative of the company.（只有经公司授权代表签字，这份合同才有效。）',
+        'The vendor is an authorized distributor of our products in the Asian market.（该供应商是我们产品在亚洲市场的授权经销商。）',
+        'You need to get the form authorized by your manager before submitting it to the HR division.（你需要先让经理批准这份表格，再提交给人力资源部。）',
+      ],
+      sceneAssociation:
+        '可以联想“公司门口张贴着‘authorized personnel only（仅限授权人员）’的标识”的画面，或“员工拿着authorized（经批准的）文件办理业务”，结合“经过正式授权或批准”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'authorized',
+          coreDifference:
+            '侧重“经过正式授权、批准，具有合法性”，指向官方或上级的许可',
+          toeicSceneFocus: '合规操作、文件审批、人员授权场景',
+        },
+        {
+          word: 'approved',
+          coreDifference: '侧重“经过审核后被批准、认可”，指向对事物的认可',
+          toeicSceneFocus: '方案审批、项目核准、文件认可场景',
+        },
+        {
+          word: 'permitted',
+          coreDifference: '侧重“被允许做某事”，语气较委婉，适用范围广',
+          toeicSceneFocus: '规章制度、日常许可、行为规范场景',
+        },
+        {
+          word: 'entitled',
+          coreDifference: '侧重“有权利做某事或享有某物”，基于法律、合同或资格',
+          toeicSceneFocus: '权益说明、合同条款、资格享有场景',
+        },
+      ],
+    },
+    {
+      word: 'operator',
+      phonetic: '/ˈɒpəreɪtə(r)/',
+      phrase: 'a skilled machine operator',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '操作员；话务员；运营商；经营者（托业中侧重“职场操作员或商业运营商”）',
+      toeicSceneFocus:
+        '多出现于制造业、服务业、通信行业等语境，是描述“操作设备或运营业务的人/机构”的高频词汇，托业阅读（岗位说明、业务合作协议）和听力（职场对话、服务沟通）中常考查“machine operator、telecom operator”等搭配',
+      keyCollocations: [
+        'machine operator（机器操作员）',
+        'call center operator（呼叫中心话务员）',
+        'telecom operator（电信运营商）',
+        'operator of a business（企业经营者）',
+        'skilled operator（熟练操作员）',
+      ],
+      toeicExampleSentences: [
+        'The factory is looking for an experienced machine operator to work in the production line.（该工厂正在寻找一名经验丰富的机器操作员，负责生产线工作。）',
+        "The call center operator handled the customer's inquiry in a professional and timely manner.（呼叫中心话务员专业且及时地处理了客户的咨询。）",
+        'Our company has established a long-term partnership with a leading telecom operator in the country.（我司与该国一家领先的电信运营商建立了长期合作关系。）',
+        'The operator of the store implemented a new sales strategy to enhance customer flow.（该门店经营者实施了新的销售策略，以提升客流量。）',
+      ],
+      sceneAssociation:
+        '可以联想“工厂里machine operator（机器操作员）熟练操作设备”的画面，或“call center operator（话务员）耐心解答客户问题”，结合“操作设备或运营业务的主体”的核心概念快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'operator',
+          coreDifference:
+            '侧重“操作设备的人员，或运营业务的机构/个人”，专业性较强',
+          toeicSceneFocus: '制造业、通信业、服务业场景',
+        },
+        {
+          word: 'worker',
+          coreDifference: '泛指“工人、劳动者”，通用性强，无特定技能指向',
+          toeicSceneFocus: '各类生产、服务场景',
+        },
+        {
+          word: 'technician',
+          coreDifference:
+            '侧重“技术人员”，具备专业技术，负责设备维护、技术支持等',
+          toeicSceneFocus: '技术维修、设备调试、专业服务场景',
+        },
+        {
+          word: 'manager',
+          coreDifference:
+            '侧重“管理者”，负责统筹规划、人员管理等，层级高于operator',
+          toeicSceneFocus: '企业管理、团队统筹、项目管理场景',
+        },
+      ],
+    },
+    {
+      word: 'implementation',
+      phonetic: '/ˌɪmplɪmenˈteɪʃn/',
+      phrase: 'ensure smooth implementation',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '实施；执行；落实（托业中侧重“商务方案或计划的执行”）',
+      toeicSceneFocus:
+        '多出现于项目管理、企业战略、政策执行等语境，是描述“将计划转化为行动”的核心词汇，托业阅读（项目报告、方案文件）和听力（会议讨论、职场沟通）中高频考查“implementation plan、project implementation”等搭配',
+      keyCollocations: [
+        'implementation plan（实施方案）',
+        'project implementation（项目实施）',
+        'strategy implementation（战略执行）',
+        'ensure implementation（确保落实）',
+        'monitor the implementation（监督实施过程）',
+      ],
+      toeicExampleSentences: [
+        'The managerial team will hold a meeting to discuss the implementation of the new policy.（管理团队将召开会议，讨论新政策的执行方案。）',
+        'The success of the project depends on the careful planning and effective implementation.（项目的成功取决于周密的规划和高效的执行。）',
+        'We need to assign a dedicated team to be responsible for the implementation of the marketing plan.（我们需要指派专门的团队，负责市场营销方案的落实。）',
+        'The manager required the clerk to submit a report on the implementation progress every week.（经理要求文员每周提交一份实施进度报告。）',
+      ],
+      sceneAssociation:
+        '可以联想“项目团队讨论implementation（实施方案）的细节”的画面，或“管理者监督计划的implementation（执行）进度”，结合“将计划转化为实际行动”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'implementation',
+          coreDifference:
+            '侧重“计划、方案、政策的具体执行和落实过程”，正式且专业',
+          toeicSceneFocus: '项目管理、战略执行、政策落实场景',
+        },
+        {
+          word: 'execution',
+          coreDifference:
+            '侧重“计划的执行、完成”，强调执行的结果和效率，书面性强',
+          toeicSceneFocus: '项目执行、计划完成、法律执行场景',
+        },
+        {
+          word: 'carrying out',
+          coreDifference: '泛指“执行、实施”，口语化，是动词短语的名词化用法',
+          toeicSceneFocus: '日常工作安排、计划执行的非正式描述场景',
+        },
+        {
+          word: 'performance',
+          coreDifference: '侧重“人或事物的表现、业绩”，不强调执行过程',
+          toeicSceneFocus: '员工绩效、产品表现、项目成果场景',
+        },
+      ],
+    },
+    {
+      word: 'timely',
+      phonetic: '/ˈtaɪmli/',
+      phrase: 'provide timely feedback',
+      partOfSpeech: 'adj. 形容词；adv. 副词',
+      coreMeaning: 'adj. 及时的；适时的；adv. 及时地（托业中以形容词用法为主）',
+      toeicSceneFocus:
+        '多出现于商务沟通、客户服务、项目管理等语境，是描述“时间及时”的高频词汇，托业阅读（商务函件、项目报告）和听力（职场对话、客户沟通）中常考查“timely response、timely completion”等搭配',
+      keyCollocations: [
+        'timely response（及时回复）',
+        'timely feedback（及时反馈）',
+        'timely completion（按时完成）',
+        'timely intervention（及时干预）',
+        'handle in a timely manner（及时处理）',
+      ],
+      toeicExampleSentences: [
+        'A timely response to customer inquiries can significantly improve customer satisfaction.（及时回复客户咨询，能显著提升客户满意度。）',
+        "The team's timely intervention prevented the project from falling behind schedule.（团队的及时干预，避免了项目进度落后。）",
+        'Please submit the report in a timely manner to ensure the smooth implementation of the plan.（请及时提交报告，确保计划顺利执行。）',
+        'The manager praised the clerk for his timely handling of the emergency situation.（经理表扬了文员及时处理紧急情况的行为。）',
+      ],
+      sceneAssociation:
+        '可以联想“客服人员timely（及时）回复客户投诉”的画面，或“员工timely（按时）完成项目任务”，结合“在合适时间完成，不拖延”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'timely',
+          coreDifference:
+            '侧重“时间上及时、适时，强调不早不晚刚好合适”，正式且书面',
+          toeicSceneFocus: '商务沟通、项目管理、客户服务场景',
+        },
+        {
+          word: 'punctual',
+          coreDifference:
+            '侧重“守时的、准时的”，主要形容人或行为，强调遵守时间约定',
+          toeicSceneFocus: '会议出席、工作打卡、商务约会场景',
+        },
+        {
+          word: 'prompt',
+          coreDifference: '侧重“迅速的、立刻的”，强调动作的快速性',
+          toeicSceneFocus: '快速响应、立即处理、高效服务场景',
+        },
+        {
+          word: 'on time',
+          coreDifference: '泛指“按时、准时”，是短语，口语化，适用范围广',
+          toeicSceneFocus: '日常工作安排、项目交付、出行安排场景',
+        },
+      ],
+    },
+    {
+      word: 'passionate',
+      phonetic: '/ˈpæʃənət/',
+      phrase: 'a passionate team leader',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '热情的；热诚的；酷爱……的（托业中侧重“职场中的工作热情”）',
+      toeicSceneFocus:
+        '多出现于职场招聘、员工评价、团队建设等语境，是描述“人对工作或事物充满热情”的高频词汇，托业阅读（简历、员工评语）和听力（面试对话、职场发言）中常考查“passionate about work、passionate team”等搭配',
+      keyCollocations: [
+        'passionate about（对……充满热情）',
+        'passionate team（热情的团队）',
+        'passionate leader（富有激情的领导者）',
+        'passionate work attitude（热情的工作态度）',
+        'passionate discussion（热烈的讨论）',
+      ],
+      toeicExampleSentences: [
+        'The company is looking for passionate candidates who are interested in the marketing industry.（该公司正在寻找对营销行业充满热情的候选人。）',
+        'She is a passionate manager who always encourages her team to pursue innovation.（她是一位富有激情的经理，总是鼓励团队追求创新。）',
+        'A passionate work attitude can help you overcome difficulties and achieve better results.（热情的工作态度能帮助你克服困难，取得更好的成绩。）',
+        'The team had a passionate discussion about the implementation of the new project plan.（团队就新项目方案的实施展开了热烈讨论。）',
+      ],
+      sceneAssociation:
+        '可以联想“面试中，候选人表达自己passionate（热情）对待工作的态度”的画面，或“passionate（热情的）团队成员热烈讨论方案”，结合“对事物充满热忱”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'passionate',
+          coreDifference:
+            '侧重“对人或事物有强烈的感情、充满热情”，可形容人或态度',
+          toeicSceneFocus: '职场招聘、团队建设、工作态度场景',
+        },
+        {
+          word: 'enthusiastic',
+          coreDifference:
+            '侧重“对事物充满兴趣和热情”，语气较passionate轻，通用性强',
+          toeicSceneFocus: '日常职场沟通、兴趣爱好、团队氛围场景',
+        },
+        {
+          word: 'zealous',
+          coreDifference:
+            '侧重“对事业或目标狂热的、积极的”，语气较强，书面性强',
+          toeicSceneFocus: '事业追求、目标达成、正式评价场景',
+        },
+        {
+          word: 'ardent',
+          coreDifference: '侧重“热情的、炽热的”，书面性极强，多用于正式文体',
+          toeicSceneFocus: '文学描述、正式评语、高端商务场景',
+        },
+      ],
+    },
+    {
+      word: 'credentials',
+      phonetic: '/krəˈdenʃlz/',
+      phrase: 'present professional credentials',
+      partOfSpeech: 'n. 名词（复数）',
+      coreMeaning:
+        '资历；资格证书；凭证；信任状（托业中侧重“职场的资历和资格证明”）',
+      toeicSceneFocus:
+        '多出现于招聘求职、职业认证、商务合作等语境，是描述“个人资质或证明”的核心词汇，托业阅读（简历、招聘启事、资质文件）和听力（面试对话、商务谈判）中高频考查“professional credentials、academic credentials”等搭配',
+      keyCollocations: [
+        'professional credentials（专业资质）',
+        'academic credentials（学历证书）',
+        'present credentials（出示凭证）',
+        'verify credentials（核实资质）',
+        'credentials for a job（求职资质）',
+      ],
+      toeicExampleSentences: [
+        "The candidate's professional credentials and work experience make her suitable for the managerial position.（该候选人的专业资质和工作经验，使她适合这个管理岗位。）",
+        'You need to provide copies of your academic credentials when applying for the job.（申请该职位时，你需要提供学历证书的复印件。）',
+        'The company will verify the credentials of all new vendors before signing the contract.（签订合同前，公司将核实所有新供应商的资质。）',
+        'His credentials as a financial expert are widely recognized in the industry.（他作为金融专家的资历，在行业内得到广泛认可。）',
+      ],
+      sceneAssociation:
+        '可以联想“面试中，候选人向面试官展示credentials（资格证书）”的画面，或“企业核实供应商的credentials（资质）”，结合“证明个人或机构资质的文件或资历”的核心概念快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'credentials',
+          coreDifference:
+            '侧重“个人的资历、资格证书，或机构的资质凭证”，复数形式，正式且专业',
+          toeicSceneFocus: '招聘求职、资质认证、商务合作场景',
+        },
+        {
+          word: 'certificate',
+          coreDifference:
+            '侧重“具体的证书、证明文件”，单数形式，指向具体的凭证',
+          toeicSceneFocus: '资格认证、学历证明、获奖证书场景',
+        },
+        {
+          word: 'qualification',
+          coreDifference: '侧重“个人的资格、能力”，可指学历、技能等，范围较广',
+          toeicSceneFocus: '招聘求职、岗位要求、能力认证场景',
+        },
+        {
+          word: 'diploma',
+          coreDifference: '侧重“毕业文凭、学位证书”，指向教育领域的证书',
+          toeicSceneFocus: '学历证明、毕业求职场景',
+        },
+      ],
+    },
+    {
+      word: 'mutually',
+      phonetic: '/ˈmjuːtʃuəli/',
+      phrase: 'benefit mutually from cooperation',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '相互地；彼此地；共同地',
+      toeicSceneFocus:
+        '多出现于商务合作、谈判协商、人际关系等语境，是描述“双向互动”的高频词汇，托业阅读（商务合同、合作协议）和听力（谈判对话、职场沟通）中常考查“mutually beneficial、mutually agreed”等搭配',
+      keyCollocations: [
+        'mutually beneficial（互利共赢的）',
+        'mutually agreed（双方同意的）',
+        'mutually understand（相互理解）',
+        'mutually cooperate（相互合作）',
+        'mutually respect（相互尊重）',
+      ],
+      toeicExampleSentences: [
+        'The two companies reached a mutually beneficial agreement after several rounds of negotiations.（经过几轮谈判，两家公司达成了互利共赢的协议。）',
+        "It is important for team members to mutually respect each other's opinions.（团队成员相互尊重彼此的意见，这一点至关重要。）",
+        'The project will be completed on the mutually agreed date.（该项目将在双方商定的日期完成。）',
+        'Mutually effective communication is the key to successful business cooperation.（高效的相互沟通是商务合作成功的关键。）',
+      ],
+      sceneAssociation:
+        '可以联想“商务谈判双方达成mutually beneficial（互利共赢的）合作”的画面，或“团队成员mutually（相互）协作完成任务”，结合“双向、共同的互动”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'mutually',
+          coreDifference:
+            '侧重“双方或多方之间相互地、彼此地”，是mutual的副词形式，修饰动词或形容词',
+          toeicSceneFocus: '商务合作、谈判协商、团队协作场景',
+        },
+        {
+          word: 'reciprocally',
+          coreDifference:
+            '侧重“互惠地、对等地”，强调利益或行为的对等性，书面性更强',
+          toeicSceneFocus: '国际商务、互惠协议、外交关系场景',
+        },
+        {
+          word: 'jointly',
+          coreDifference: '侧重“联合地、共同地”，强调共同参与行动',
+          toeicSceneFocus: '联合项目、共同决策、合作执行场景',
+        },
+        {
+          word: 'collectively',
+          coreDifference: '侧重“集体地、共同地”，强调集体性',
+          toeicSceneFocus: '团队决策、集体行动、共同责任场景',
+        },
+      ],
+    },
+    {
+      word: 'aspiring',
+      phonetic: '/əˈspaɪərɪŋ/',
+      phrase: 'an aspiring young professional',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '有抱负的；有志气的；渴望成功的（托业中侧重“职场中渴望进步的人”）',
+      toeicSceneFocus:
+        '多出现于招聘求职、职业发展、员工评价等语境，是描述“人有志向、追求进步”的高频词汇，托业阅读（简历、招聘启事）和听力（面试对话、职场沟通）中常考查“aspiring candidate、aspiring manager”等搭配',
+      keyCollocations: [
+        'aspiring professional（有抱负的专业人士）',
+        'aspiring manager（有志成为经理的人）',
+        'aspiring entrepreneur（有抱负的创业者）',
+        'aspiring to succeed（渴望成功）',
+        'aspiring young talent（有抱负的青年才俊）',
+      ],
+      toeicExampleSentences: [
+        'The company provides training programs for aspiring employees who want to take on managerial roles.（该公司为渴望担任管理岗位的有抱负员工提供培训项目。）',
+        'As an aspiring marketing specialist, she spends her spare time learning professional knowledge.（作为一名有抱负的营销专员，她利用业余时间学习专业知识。）',
+        'The HR department is looking for aspiring candidates with a passion for the retail industry.（人力资源部门正在寻找对零售行业充满热情的有抱负候选人。）',
+        'Many aspiring young people apply for this position because of its good career development prospects.（许多有抱负的年轻人申请这个职位，因为它有良好的职业发展前景。）',
+      ],
+      sceneAssociation:
+        '可以联想“面试中，aspiring（有抱负的）候选人阐述职业规划”的画面，或“aspiring（有志气的）员工努力提升自己的技能”，结合“渴望成功、追求进步”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'aspiring',
+          coreDifference:
+            '侧重“有志向、渴望获得某种职位或成就”，形容人，强调目标性',
+          toeicSceneFocus: '招聘求职、职业发展、员工成长场景',
+        },
+        {
+          word: 'ambitious',
+          coreDifference:
+            '侧重“有雄心的、野心勃勃的”，可形容人或计划，语气比aspiring强',
+          toeicSceneFocus: '职业追求、项目规划、个人目标场景',
+        },
+        {
+          word: 'enterprising',
+          coreDifference: '侧重“有事业心的、有进取心的”，强调勇于开拓的精神',
+          toeicSceneFocus: '创业创新、业务拓展、职场开拓场景',
+        },
+        {
+          word: 'motivated',
+          coreDifference: '侧重“有动力的、积极性高的”，强调内在驱动力',
+          toeicSceneFocus: '员工激励、工作积极性、目标达成场景',
+        },
+      ],
+    },
+    {
+      word: 'managerial',
+      phonetic: '/ˌmænəˈdʒɪəriəl/',
+      phrase: 'possess managerial skills',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '管理的；经理的；经营上的（托业中侧重“职场管理相关的技能或岗位”）',
+      toeicSceneFocus:
+        '多出现于职场招聘、企业管理、职业发展等语境，是描述“管理层面”的核心词汇，托业阅读（岗位说明、管理文件）和听力（面试对话、会议讨论）中高频考查“managerial position、managerial skills”等搭配',
+      keyCollocations: [
+        'managerial position（管理岗位）',
+        'managerial skills（管理技能）',
+        'managerial experience（管理经验）',
+        'managerial decision（管理决策）',
+        'managerial responsibility（管理职责）',
+      ],
+      toeicExampleSentences: [
+        'To apply for this managerial position, you need to have at least five years of relevant work experience.（申请这个管理岗位，你需要有至少五年的相关工作经验。）',
+        'The company offers a series of courses to help employees improve their managerial skills.（该公司提供一系列课程，帮助员工提升管理技能。）',
+        "Managerial decisions should be based on the company's long-term development strategy.（管理决策应基于公司的长远发展战略。）",
+        'She was promoted to a managerial role because of her excellent performance and leadership ability.（由于出色的表现和领导能力，她被提拔到管理岗位。）',
+      ],
+      sceneAssociation:
+        '可以联想“招聘启事中标注managerial（管理）岗位的要求”的画面，或“员工参加managerial（管理）技能培训”，结合“与管理相关的技能、岗位或决策”的核心概念快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'managerial',
+          coreDifference:
+            '侧重“与管理相关的、属于经理层面的”，形容岗位、技能、决策等',
+          toeicSceneFocus: '企业管理、岗位招聘、职业发展场景',
+        },
+        {
+          word: 'administrative',
+          coreDifference:
+            '侧重“与行政相关的、日常管理的”，形容事务、岗位等，层级低于managerial',
+          toeicSceneFocus: '行政管理、日常办公、行政岗位场景',
+        },
+        {
+          word: 'supervisory',
+          coreDifference:
+            '侧重“与监督、监管相关的”，形容岗位或职责，强调监督职能',
+          toeicSceneFocus: '现场管理、员工监督、流程监管场景',
+        },
+        {
+          word: 'executive',
+          coreDifference:
+            '侧重“与高管相关的、执行层面的”，形容岗位或决策，层级高于managerial',
+          toeicSceneFocus: '企业高管、战略决策、高级管理场景',
+        },
+      ],
+    },
+    {
+      word: 'diligent',
+      phonetic: '/ˈdɪlɪdʒənt/',
+      phrase: 'a diligent office worker',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '勤奋的；用功的；认真的（托业中侧重“职场中的工作态度”）',
+      toeicSceneFocus:
+        '多出现于招聘求职、员工评价、职场管理等语境，是描述“人工作勤奋认真”的高频词汇，托业阅读（简历、员工评语）和听力（面试对话、职场沟通）中常考查“diligent employee、diligent in work”等搭配',
+      keyCollocations: [
+        'diligent employee（勤奋的员工）',
+        'diligent in work（工作勤奋）',
+        'diligent study（勤奋学习）',
+        'diligent effort（勤奋努力）',
+        'diligent worker（勤恳的工作者）',
+      ],
+      toeicExampleSentences: [
+        'The diligent clerk finished the payroll processing task ahead of schedule.（这位勤奋的文员提前完成了薪资发放的工作。）',
+        'Employers prefer to hire diligent candidates who are willing to take on challenges.（雇主更倾向于招聘愿意接受挑战的勤奋候选人。）',
+        'Her diligent attitude and excellent work performance won her the recognition of the managerial team.（她勤奋的态度和出色的工作表现，赢得了管理团队的认可。）',
+        'Diligent employees are the most valuable assets of a company.（勤奋的员工是企业最宝贵的财富。）',
+      ],
+      sceneAssociation:
+        '可以联想“办公室里diligent（勤奋的）员工认真处理文件”的画面，或“经理表扬diligent（勤恳的）员工的工作态度”，结合“工作认真、努力付出”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'diligent',
+          coreDifference:
+            '侧重“工作或学习上勤奋、认真，强调持续性的努力”，正式且书面',
+          toeicSceneFocus: '职场评价、招聘求职、学习工作场景',
+        },
+        {
+          word: 'hardworking',
+          coreDifference:
+            '泛指“努力工作的”，口语化，与diligent含义相近，更常用在日常沟通',
+          toeicSceneFocus: '日常职场评价、非正式描述场景',
+        },
+        {
+          word: 'industrious',
+          coreDifference: '侧重“勤劳的、勤奋的”，书面性强，可形容人或民族',
+          toeicSceneFocus: '正式评价、文学描述、职场书面评语场景',
+        },
+        {
+          word: 'assiduous',
+          coreDifference:
+            '侧重“专注的、持之以恒的勤奋”，书面性极强，多用于正式文体',
+          toeicSceneFocus: '学术研究、专业工作、正式评价场景',
+        },
+      ],
+    },
+
+    {
+      word: 'foster',
+      phonetic: '/ˈfɒstə(r)/',
+      phrase: 'foster team cooperation',
+      partOfSpeech: 'v. 动词；adj. 形容词',
+      coreMeaning:
+        'v. 培养，促进；抚育，收养；adj. 收养的，寄养的（托业中侧重“促进、培养”商务场景含义）',
+      toeicSceneFocus:
+        '多出现于团队建设、企业文化、职业发展、商务合作等语境，是描述“推动正向发展”的高频商务用词，托业阅读（企业管理文件、培训材料）和听力（职场沟通、会议讨论）中常考查其“培养、促进”的核心含义',
+      keyCollocations: [
+        'foster cooperation（促进合作）',
+        'foster innovation（培养创新）',
+        'foster relationships（维系关系）',
+        'foster growth（推动增长）',
+        'foster a culture（培育文化）',
+      ],
+      toeicExampleSentences: [
+        'Effective communication can foster trust among team members in a corporate environment.（有效的沟通能促进企业环境中团队成员间的信任。）',
+        'The company launched a training program to foster leadership skills among young employees.（公司推出培训项目，培养年轻员工的领导能力。）',
+        'Regular meetings foster better understanding between different departments of the firm.（定期会议促进了公司不同部门间的更好理解。）',
+        'We aim to foster long-term partnerships with our key vendors in the market.（我们旨在与市场上的核心供应商建立长期合作关系。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业培训现场，讲师讲解如何foster（培养）员工的协作能力”的画面，或“商务会议中高管提出要foster（促进）与客户的合作关系”，结合“推动商务场景中正向发展”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'foster',
+          coreDifference:
+            '侧重“通过持续努力培养、促进抽象事物（合作、文化、技能等）”，强调过程性',
+          toeicSceneFocus: '团队建设、企业管理、合作发展场景',
+        },
+        {
+          word: 'cultivate',
+          coreDifference:
+            '侧重“刻意培养、培植（兴趣、关系、技能）”，语气更正式，书面性强',
+          toeicSceneFocus: '高端商务谈判、企业战略规划场景',
+        },
+        {
+          word: 'promote',
+          coreDifference:
+            '侧重“推广、晋升，推动事物发展或人员晋升”，结果导向更明显',
+          toeicSceneFocus: '产品推广、员工晋升、业务拓展场景',
+        },
+        {
+          word: 'develop',
+          coreDifference: '泛指“发展、开发”，适用范围极广，可指具体或抽象事物',
+          toeicSceneFocus: '产品研发、职业发展、业务拓展等通用场景',
+        },
+      ],
+    },
+    {
+      word: 'assessment',
+      phonetic: '/əˈsesmənt/',
+      phrase: 'performance assessment report',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '评估，评价；评定，核定（指对人、事物、情况的全面分析和判断，托业中侧重职场绩效、业务、风险等方面的评估）',
+      toeicSceneFocus:
+        '多出现于绩效评估、业务分析、风险评估、招聘考核等语境，是托业阅读（绩效报告、评估文件）和听力（职场沟通、会议讨论）中的核心商务词汇，高频考查“绩效评估（performance assessment）”等搭配',
+      keyCollocations: [
+        'performance assessment（绩效评估）',
+        'risk assessment（风险评估）',
+        'needs assessment（需求评估）',
+        'assessment report（评估报告）',
+        'conduct an assessment（进行评估）',
+      ],
+      toeicExampleSentences: [
+        'The HR department will complete the annual performance assessment for all employees next week.（人力资源部门下周将完成所有员工的年度绩效评估。）',
+        'Before launching the new product, we need to do a comprehensive market assessment.（推出新产品前，我们需要做全面的市场评估。）',
+        "The assessment of the vendor's ability shows they can meet our production requirements.（对供应商能力的评估显示他们能满足我们的生产要求。）",
+        "Your assessment of the project's progress will be presented at the management meeting.（你对项目进度的评估将在管理层会议上展示。）",
+      ],
+      sceneAssociation:
+        '可以联想“职场中HR拿着assessment（评估）报告与员工沟通绩效”的画面，或“商务会议上团队成员讨论项目风险assessment（评估）结果”，结合“职场中对人/事的分析判断”的核心场景快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'assessment',
+          coreDifference:
+            '侧重“全面、系统的评估，强调分析判断的过程和结果”，正式且专业',
+          toeicSceneFocus: '绩效、风险、业务等专业评估场景',
+        },
+        {
+          word: 'evaluation',
+          coreDifference: '侧重“基于一定标准的评价、打分”，结果性更强',
+          toeicSceneFocus: '员工考核、产品测评、项目验收场景',
+        },
+        {
+          word: 'appraisal',
+          coreDifference:
+            '侧重“对价值、业绩的正式鉴定、估价”，多指向财务、绩效领域',
+          toeicSceneFocus: '财务估值、绩效鉴定场景',
+        },
+        {
+          word: 'review',
+          coreDifference: '泛指“回顾、审查、评论”，形式较灵活，可正式可非正式',
+          toeicSceneFocus: '文件审查、工作复盘、产品评论等通用场景',
+        },
+      ],
+    },
+    {
+      word: 'corporate',
+      phonetic: '/ˈkɔːpərət/',
+      phrase: 'corporate social responsibility',
+      partOfSpeech: 'adj. 形容词；n. 名词（复数corporates）',
+      coreMeaning:
+        'adj. 公司的，企业的；法人的；团体的；n. （复数）公司，企业（托业中以形容词用法为主）',
+      toeicSceneFocus:
+        '多出现于企业介绍、商务合同、职场沟通、公司政策等语境，是描述“企业层面”的核心商务用词，托业阅读（公司文件、商务广告）和听力（职场对话、企业宣传）中高频考查，常与“culture、policy、responsibility”等词搭配',
+      keyCollocations: [
+        'corporate culture（企业文化）',
+        'corporate policy（公司政策）',
+        'corporate office（公司总部）',
+        'corporate strategy（企业战略）',
+        'corporate client（企业客户）',
+      ],
+      toeicExampleSentences: [
+        'All employees must comply with the corporate policies regarding data security.（所有员工必须遵守公司关于数据安全的政策。）',
+        'The corporate headquarters is located in the central business district of the city.（公司总部位于该市的中央商务区。）',
+        'Our company values corporate social responsibility and actively participates in public welfare activities.（我司重视企业社会责任，积极参与公益活动。）',
+        'The corporate team will hold a meeting to discuss the new market expansion plan.（公司团队将召开会议讨论新的市场拓展计划。）',
+      ],
+      sceneAssociation:
+        '可以联想“商务人士在corporate（公司）会议室讨论战略”的画面，或“招聘启事中标注corporate（企业）岗位要求”，结合“企业层面的各类商务场景”快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'corporate',
+          coreDifference: '侧重“公司的、企业的（正式且规模化）”，指向法人实体',
+          toeicSceneFocus: '大型企业、公司整体层面的商务场景',
+        },
+        {
+          word: 'company',
+          coreDifference: '泛指“公司、企业”，适用范围广，可大可小，最常用',
+          toeicSceneFocus: '各类企业相关的通用商务场景',
+        },
+        {
+          word: 'firm',
+          coreDifference: '侧重“专业的事务所、商行”，如律师、会计、咨询公司',
+          toeicSceneFocus: '专业服务类企业、商务合作场景',
+        },
+        {
+          word: 'enterprise',
+          coreDifference: '侧重“具有创新精神的企业、事业”，书面性强',
+          toeicSceneFocus: '企业发展、创业、战略规划场景',
+        },
+      ],
+    },
+    {
+      word: 'crew',
+      phonetic: '/kruː/',
+      phrase: 'airline crew on duty',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        'n. 全体船员，全体机组人员；全体工作人员（指一起工作的团队）；v. 当船员/机组人员；合作（托业中以名词用法为主，侧重“工作团队”）',
+      toeicSceneFocus:
+        '多出现于航空、航运、酒店、零售等服务行业的职场语境，是描述“一线工作团队”的高频词汇，托业阅读（服务行业通知、岗位说明）和听力（职场对话、服务场景沟通）中常考查“全体工作人员”的核心含义',
+      keyCollocations: [
+        'flight crew（机组人员）',
+        'ground crew（地勤人员）',
+        'hotel crew（酒店工作人员）',
+        'crew member（团队成员）',
+        'work as a crew（当工作人员）',
+      ],
+      toeicExampleSentences: [
+        'The airline crew must attend a safety training session before each flight.（机组人员每次飞行前必须参加安全培训。）',
+        'Our store crew works efficiently to meet the high demand during peak hours.（我们门店的工作人员高效工作，以满足高峰期的高需求。）',
+        "The ship's crew completed the cargo loading work ahead of schedule.（船员提前完成了货物装载工作。）",
+        'All crew members are required to wear protective equipment at work.（所有工作人员上班时必须穿戴防护装备。）',
+      ],
+      sceneAssociation:
+        '可以联想“机场里flight crew（机组人员）准备登机”的画面，或“商场里retail crew（零售工作人员）为顾客服务”，结合“服务行业一线工作团队”的核心场景快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'crew',
+          coreDifference:
+            '侧重“一起执行特定任务的全体工作人员/团队”，强调整体性',
+          toeicSceneFocus: '航空、航运、服务行业的工作团队场景',
+        },
+        {
+          word: 'staff',
+          coreDifference:
+            '泛指“全体员工、职员”，适用所有行业，侧重机构的工作人员',
+          toeicSceneFocus: '各类企业、机构的员工相关通用场景',
+        },
+        {
+          word: 'team',
+          coreDifference: '侧重“为特定目标组成的团队”，可大可小，强调协作性',
+          toeicSceneFocus: '企业内部项目团队、协作场景',
+        },
+        {
+          word: 'personnel',
+          coreMeaning: '侧重“人事、人员（正式）”，常指全体员工的统称（不可数）',
+          toeicSceneFocus: '人力资源、企业人员管理场景',
+        },
+      ],
+    },
+    {
+      word: 'demand',
+      phonetic: '/dɪˈmɑːnd/',
+      phrase: 'meet market demand timely',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        'n. 需求，需要；要求；v. 要求，强令；需要；询问（托业中侧重“市场/客户需求”的名词含义）',
+      toeicSceneFocus:
+        '多出现于市场营销、供应链管理、客户服务等语境，是描述“供需关系”的核心商务词汇，托业阅读（市场报告、商务合同）和听力（商务谈判、销售沟通）中高频考查“meet demand、high demand”等搭配',
+      keyCollocations: [
+        'market demand（市场需求）',
+        'meet the demand（满足需求）',
+        'high demand（高需求）',
+        'demand for goods（商品需求）',
+        'demand a refund（要求退款）',
+      ],
+      toeicExampleSentences: [
+        'The demand for flexible working arrangements is increasing among young employees.（年轻员工对灵活工作安排的需求正在增加。）',
+        'Our factory increased production to meet the high demand for the new product.（我厂提高产量以满足对新产品的高需求。）',
+        'The customer demanded a full refund due to the defective product received.（顾客因收到有缺陷的产品要求全额退款。）',
+        'The report shows that the demand for eco-friendly products has risen by 30% this year.（报告显示，环保产品的需求今年增长了30%。）',
+      ],
+      sceneAssociation:
+        '可以联想“销售向经理汇报market demand（市场需求）数据”的画面，或“工厂因high demand（高需求）加班生产”，结合“商务场景中的供需关系”快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'demand',
+          coreDifference:
+            '侧重“有支付能力的需求、强硬的要求”，语气较强，可指需求或要求',
+          toeicSceneFocus: '市场需求、商务谈判、客户投诉场景',
+        },
+        {
+          word: 'need',
+          coreDifference:
+            '泛指“需要、需求”，语气中性，可指生理、心理、物质等各类需求',
+          toeicSceneFocus: '员工需求、客户需求、日常商务沟通等通用场景',
+        },
+        {
+          word: 'requirement',
+          coreDifference: '侧重“规定的、必须满足的要求、条件”，正式且具体',
+          toeicSceneFocus: '岗位要求、合同条款、产品规格场景',
+        },
+        {
+          word: 'request',
+          coreDifference: '侧重“礼貌的请求、要求”，语气委婉，多为名词用法',
+          toeicSceneFocus: '客户请求、职场沟通、商务函件场景',
+        },
+      ],
+    },
+    {
+      word: 'flexible',
+      phonetic: '/ˈfleksəbl/',
+      phrase: 'flexible working hours',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '灵活的，可变动的；柔韧的，易弯曲的（托业中侧重“职场/商务场景中的灵活性”）',
+      toeicSceneFocus:
+        '多出现于人力资源管理、工作安排、商务合作、合同条款等语境，是描述“可调整性”的高频商务词汇，托业阅读（招聘启事、劳动合同）和听力（职场沟通、面试对话）中常考查“flexible hours、flexible arrangement”等搭配',
+      keyCollocations: [
+        'flexible hours（灵活时间）',
+        'flexible working（灵活工作）',
+        'flexible plan（灵活计划）',
+        'flexible payment（灵活付款）',
+        'flexible strategy（灵活策略）',
+      ],
+      toeicExampleSentences: [
+        'Many companies now offer flexible working hours to improve employee satisfaction.（许多公司现在提供灵活的工作时间以提高员工满意度。）',
+        "We can make a flexible payment plan to meet the vendor's financial needs.（我们可以制定灵活的付款计划，以满足供应商的财务需求。）",
+        'The manager has a flexible approach to solving team work problems.（经理采用灵活的方式解决团队工作问题。）',
+        'Flexible scheduling helps the crew balance work and personal life better.（灵活的排班有助于工作人员更好地平衡工作和生活。）',
+      ],
+      sceneAssociation:
+        '可以联想“面试中HR介绍公司flexible（灵活的）工作制度”的画面，或“商务谈判中双方商定flexible（灵活的）付款方式”，结合“职场/商务中可调整、不刻板”的核心特点快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'flexible',
+          coreDifference:
+            '侧重“可灵活调整、适应不同情况”，指向制度、安排、策略等',
+          toeicSceneFocus: '工作安排、商务合作、策略制定场景',
+        },
+        {
+          word: 'adaptable',
+          coreDifference:
+            '侧重“人/事物能适应新环境/新情况”，指向主体的适应能力',
+          toeicSceneFocus: '员工能力、产品适配、环境适应场景',
+        },
+        {
+          word: 'versatile',
+          coreDifference: '侧重“人/事物多才多艺、用途广泛”，指向多功能性',
+          toeicSceneFocus: '员工技能、产品功能、工具使用场景',
+        },
+        {
+          word: 'adjustable',
+          coreDifference: '侧重“可通过调整达到合适状态”，指向具体物品、参数',
+          toeicSceneFocus: '设备参数、产品规格、办公设施场景',
+        },
+      ],
+    },
+    {
+      word: 'enhance',
+      phonetic: '/ɪnˈhɑːns/',
+      phrase: 'enhance customer satisfaction',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '提高，增强，改善（指提升事物的质量、价值、效果等抽象属性）',
+      toeicSceneFocus:
+        '多出现于市场营销、产品研发、客户服务、职业发展等语境，是描述“提升价值/效果”的核心商务词汇，托业阅读（产品介绍、商务报告）和听力（会议讨论、销售沟通）中高频考查，常与“performance、satisfaction、image”等词搭配',
+      keyCollocations: [
+        'enhance performance（提升绩效）',
+        'enhance efficiency（提高效率）',
+        'enhance competitiveness（增强竞争力）',
+        'enhance brand image（提升品牌形象）',
+        'enhance skills（提升技能）',
+      ],
+      toeicExampleSentences: [
+        'The new software will enhance the efficiency of the payroll processing system.（新软件将提高薪资发放系统的效率。）',
+        'Providing after-sales service can enhance customer loyalty to our brand.（提供售后服务能增强客户对我们品牌的忠诚度。）',
+        'Training courses help employees enhance their professional skills for the new role.（培训课程帮助员工提升适应新岗位的专业技能。）',
+        'We plan to launch a marketing campaign to enhance our market share in Asia.（我们计划推出营销活动，提升在亚洲的市场份额。）',
+      ],
+      sceneAssociation:
+        '可以联想“产品经理讨论如何enhance（提升）产品用户体验”的画面，或“员工参加培训enhance（提升）职场技能”，结合“商务场景中提升事物抽象价值”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'enhance',
+          coreDifference:
+            '侧重“提升事物的质量、价值、效果等抽象属性”，正式且书面',
+          toeicSceneFocus: '产品优化、品牌建设、绩效提升场景',
+        },
+        {
+          word: 'improve',
+          coreDifference: '泛指“改进、改善”，可指具体或抽象事物，适用范围最广',
+          toeicSceneFocus: '工作、产品、流程等各类改进场景',
+        },
+        {
+          word: 'boost',
+          coreDifference: '侧重“快速提升、推动增长”，强调短期效果和力度',
+          toeicSceneFocus: '销量增长、士气提升、业绩推动场景',
+        },
+        {
+          word: 'upgrade',
+          coreDifference:
+            '侧重“升级、更新（设备、系统、服务）”，指向具体事物的升级',
+          toeicSceneFocus: '系统升级、产品更新、服务升级场景',
+        },
+      ],
+    },
+    {
+      word: 'portfolio',
+      phonetic: '/pɔːtˈfəʊliəʊ/',
+      phrase: 'manage investment portfolio well',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '投资组合；作品集；公文包；职责范围（托业中侧重“投资组合”和“职业作品集”）',
+      toeicSceneFocus:
+        '多出现于金融、投资、职场招聘、市场营销等语境，是金融和职场场景的核心词汇，托业阅读（金融报告、简历/作品集要求）和听力（金融沟通、面试对话）中常考查“investment portfolio、product portfolio”等搭配',
+      keyCollocations: [
+        'investment portfolio（投资组合）',
+        'product portfolio（产品组合）',
+        'portfolio manager（投资组合经理）',
+        'career portfolio（职业作品集）',
+        'expand portfolio（拓展业务组合）',
+      ],
+      toeicExampleSentences: [
+        'The financial clerk helps clients manage their investment portfolio effectively.（财务文员帮助客户有效管理他们的投资组合。）',
+        'You should prepare a professional portfolio for the marketing position interview.（你应该为市场营销岗位的面试准备一份专业的作品集。）',
+        'The company plans to expand its product portfolio to cover more market segments.（公司计划拓展产品组合，覆盖更多细分市场。）',
+        'The portfolio manager will present the investment assessment report next week.（投资组合经理下周将展示投资评估报告。）',
+      ],
+      sceneAssociation:
+        '可以联想“金融从业者向客户展示investment portfolio（投资组合）报告”的画面，或“求职者向面试官提交career portfolio（职业作品集）”，结合“金融投资/职业成果的组合集合”的核心概念快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'portfolio',
+          coreDifference:
+            '侧重“相关事物的组合集合（投资、产品、作品）”，专业性强',
+          toeicSceneFocus: '金融投资、产品管理、职场求职场景',
+        },
+        {
+          word: 'collection',
+          coreDifference: '泛指“收集、集合”，可指任何事物的汇集，通用性强',
+          toeicSceneFocus: '文件收集、产品陈列、资料整理等通用场景',
+        },
+        {
+          word: 'set',
+          coreDifference: '侧重“成套的、配套的事物集合”，指向具体物品',
+          toeicSceneFocus: '办公设备、产品套装、文件套件场景',
+        },
+        {
+          word: 'bundle',
+          coreDifference:
+            '侧重“捆绑在一起的事物（服务、产品）”，指向组合销售/提供',
+          toeicSceneFocus: '产品套餐、服务捆绑、销售组合场景',
+        },
+      ],
+    },
+    {
+      word: 'defective',
+      phonetic: '/dɪˈfektɪv/',
+      phrase: 'return defective goods promptly',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '有缺陷的，有瑕疵的；故障的，失灵的（指产品、设备等存在质量问题）',
+      toeicSceneFocus:
+        '多出现于客户服务、供应链管理、产品质量检测、售后处理等语境，是描述“产品质量问题”的核心商务词汇，托业阅读（售后政策、质量报告）和听力（客户投诉、职场沟通）中高频考查，常与“product、goods、equipment”等词搭配',
+      keyCollocations: [
+        'defective product（有缺陷的产品）',
+        'defective goods（瑕疵商品）',
+        'defective equipment（故障设备）',
+        'detect defective items（检测瑕疵品）',
+        'replace defective parts（更换故障部件）',
+      ],
+      toeicExampleSentences: [
+        'Customers can return defective products within 14 days for a full refund.（顾客可在14天内退回有缺陷的产品并获得全额退款。）',
+        "The quality control team found several defective items in the vendor's delivery.（质量控制团队在供应商的交货中发现了几件瑕疵品。）",
+        'The defective machine was replaced by the supplier as per the contract agreement.（供应商按照合同约定更换了故障机器。）',
+        'Please report any defective equipment to the maintenance division immediately.（如发现任何故障设备，请立即向维修部门报告。）',
+      ],
+      sceneAssociation:
+        '可以联想“客户向客服投诉收到defective（有缺陷的）产品”的画面，或“质检员检查出defective（瑕疵的）商品并标注退回”，结合“产品/设备存在质量问题”的核心场景快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'defective',
+          coreDifference: '侧重“产品/设备存在制造缺陷、质量问题”，指向质量层面',
+          toeicSceneFocus: '产品质量、售后投诉、质检场景',
+        },
+        {
+          word: 'faulty',
+          coreDifference: '侧重“因故障、错误导致无法正常使用”，指向功能层面',
+          toeicSceneFocus: '设备故障、系统错误、操作失误场景',
+        },
+        {
+          word: 'imperfect',
+          coreDifference:
+            '泛指“不完美的、有缺点的”，可指人、事物、情况，语气温和',
+          toeicSceneFocus: '通用描述，非专业质量问题场景',
+        },
+        {
+          word: 'flawed',
+          coreDifference: '侧重“存在漏洞、缺陷（计划、论证、产品）”，书面性强',
+          toeicSceneFocus: '商业计划、论证报告、高端产品质检场景',
+        },
+      ],
+    },
+    {
+      word: 'vendor',
+      phonetic: '/ˈvendə(r)/',
+      phrase: 'negotiate with key vendors',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '供应商，销售商；小贩，摊贩（托业中侧重“企业级供应商、销售商”）',
+      toeicSceneFocus:
+        '多出现于供应链管理、采购、商务谈判、合同签订等语境，是描述“商务合作供方”的核心词汇，托业阅读（采购合同、供应商评估报告）和听力（商务谈判、采购沟通）中高频考查，常与“supplier、contract、negotiate”等词关联',
+      keyCollocations: [
+        'key vendor（核心供应商）',
+        'vendor contract（供应商合同）',
+        'vendor assessment（供应商评估）',
+        'select a vendor（选择供应商）',
+        'vendor relationship（供应商关系）',
+      ],
+      toeicExampleSentences: [
+        "The purchasing division will assess each vendor's price and quality before making a decision.（采购部门将在做决定前评估每位供应商的价格和质量。）",
+        'Our company has signed a long-term contract with the vendor for raw material supply.（我司已与该供应商签订了原材料供应的长期合同。）',
+        'The vendor promised to replace all defective goods within three working days.（供应商承诺在三个工作日内更换所有瑕疵商品。）',
+        'We need to maintain good communication with vendors to ensure on-time delivery.（我们需要与供应商保持良好沟通，确保按时交货。）',
+      ],
+      sceneAssociation:
+        '可以联想“采购人员与vendor（供应商）谈判价格和交货期”的画面，或“企业评估vendor（供应商）的资质和服务”，结合“商务采购/供应链中的供方”的核心场景快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'vendor',
+          coreDifference:
+            '侧重“向企业/个人销售产品/服务的供应商、销售商”，可指B2B/B2C模式',
+          toeicSceneFocus: '采购、供应链、商务谈判场景',
+        },
+        {
+          word: 'supplier',
+          coreDifference:
+            '侧重“为企业提供原材料、零部件的供应商”，主要指向B2B模式',
+          toeicSceneFocus: '原材料采购、生产供应链场景',
+        },
+        {
+          word: 'seller',
+          coreDifference: '泛指“销售者”，可指任何卖东西的人/企业，通用性最强',
+          toeicSceneFocus: '通用销售场景，非专业采购语境',
+        },
+        {
+          word: 'distributor',
+          coreDifference: '侧重“分销商、经销商”，负责产品的分销和渠道管理',
+          toeicSceneFocus: '渠道管理、产品分销、市场拓展场景',
+        },
+      ],
+    },
+    {
+      word: 'payroll',
+      phonetic: '/ˈpeɪrəʊl/',
+      phrase: 'process payroll on time',
+      partOfSpeech: 'n. 名词；adj. 形容词',
+      coreMeaning:
+        'n. 工资单；薪资发放；在册员工名单；adj. 与工资相关的（托业中以名词用法为主）',
+      toeicSceneFocus:
+        '多出现于人力资源、财务、职场管理等语境，是描述“薪资管理”的核心商务词汇，托业阅读（财务报告、薪资政策）和听力（职场沟通、财务对话）中常考查“payroll processing、on the payroll”等搭配',
+      keyCollocations: [
+        'payroll system（薪资系统）',
+        'payroll processing（薪资发放）',
+        'on the payroll（在册领薪）',
+        'payroll clerk（薪资文员）',
+        'monthly payroll（月度工资单）',
+      ],
+      toeicExampleSentences: [
+        "The HR clerk is responsible for processing the company's monthly payroll accurately.（人力资源文员负责准确处理公司的月度薪资发放。）",
+        'Overtime hours must be recorded in the system to ensure accurate payroll calculation.（加班时长必须录入系统，以确保薪资计算准确。）',
+        'The new payroll system will enhance the efficiency of salary payment for all employees.（新的薪资系统将提升全体员工薪资发放的效率。）',
+        'Any changes to employee information must be reported to the payroll division promptly.（员工信息的任何变更都必须及时上报给薪资部门。）',
+      ],
+      sceneAssociation:
+        '可以联想“财务人员在每月固定时间process payroll（处理薪资发放）”的画面，或“HR向员工解释payroll（工资单）上的扣款明细”，结合“职场薪资管理”的核心场景快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'payroll',
+          coreDifference: '侧重“工资单、薪资发放流程/系统”，指向薪资管理层面',
+          toeicSceneFocus: '财务薪资管理、人力资源薪资处理场景',
+        },
+        {
+          word: 'salary',
+          coreDifference:
+            '侧重“按月发放的薪水、薪金”，指向薪资本身（针对固定岗位）',
+          toeicSceneFocus: '职场薪资谈判、招聘薪资标注场景',
+        },
+        {
+          word: 'wage',
+          coreDifference:
+            '侧重“按小时/按周发放的工资”，指向体力/蓝领工作者薪资',
+          toeicSceneFocus: '制造业、服务业基层员工薪资场景',
+        },
+        {
+          word: 'remuneration',
+          coreDifference: '侧重“报酬、薪酬（正式）”，包含薪资、福利等所有报酬',
+          toeicSceneFocus: '高端商务谈判、合同薪酬条款场景',
+        },
+      ],
+    },
+    {
+      word: 'inquiry',
+      phonetic: '/ɪnˈkwaɪəri/',
+      phrase: 'reply to customer inquiry',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '询问，打听；调查，查究（托业中侧重“商务场景中的咨询、询问”）',
+      toeicSceneFocus:
+        '多出现于客户服务、商务沟通、市场调研、职场问询等语境，是描述“信息咨询/调查”的高频词汇，托业阅读（商务函件、咨询邮件）和听力（客户服务、职场沟通）中常考查“make an inquiry、respond to inquiry”等搭配',
+      keyCollocations: [
+        'customer inquiry（客户咨询）',
+        'make an inquiry（进行咨询）',
+        'respond to inquiry（回复咨询）',
+        'inquiry about price（价格咨询）',
+        'official inquiry（正式调查）',
+      ],
+      toeicExampleSentences: [
+        'The customer service clerk should reply to each inquiry within 24 hours.（客服文员应在24小时内回复每一条客户咨询。）',
+        'We received an inquiry from a new vendor about our procurement requirements.（我们收到了一位新供应商关于我方采购需求的咨询。）',
+        'The manager launched an inquiry into the cause of the defective product issue.（经理针对瑕疵产品问题的原因展开了调查。）',
+        "Please send a detailed email to answer the client's inquiry about the portfolio service.（请发送详细邮件回复客户关于作品集服务的咨询。）",
+      ],
+      sceneAssociation:
+        '可以联想“客服人员回复customer inquiry（客户咨询）邮件”的画面，或“商务人员向合作方make an inquiry（进行咨询）了解价格”，结合“商务场景中获取信息的咨询/调查”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'inquiry',
+          coreDifference:
+            '侧重“正式的询问、咨询或调查”，书面性强，美式拼写也作enquiry',
+          toeicSceneFocus: '商务函件、客户咨询、正式调查场景',
+        },
+        {
+          word: 'question',
+          coreDifference:
+            '泛指“问题、疑问”，可指口头或书面的任何问题，通用性最强',
+          toeicSceneFocus: '通用沟通、会议讨论、日常问询场景',
+        },
+        {
+          word: 'query',
+          coreDifference:
+            '侧重“针对具体信息的疑问、质询”，指向具体且明确的问题',
+          toeicSceneFocus: '数据核对、信息确认、系统查询场景',
+        },
+        {
+          word: 'investigation',
+          coreDifference: '侧重“深入、系统的调查、侦查”，指向严肃的问题调查',
+          toeicSceneFocus: '事故调查、违规调查、深度问题排查场景',
+        },
+      ],
+    },
+    {
+      word: 'overtime',
+      phonetic: '/ˈəʊvətaɪm/',
+      phrase: 'work overtime to meet deadline',
+      partOfSpeech: 'n. 名词；adv. 副词；adj. 形容词',
+      coreMeaning:
+        'n. 加班，加班时间；加班费；adv. 加班地；adj. 加班的（托业中侧重“职场加班”的名词/副词用法）',
+      toeicSceneFocus:
+        '多出现于职场管理、人力资源、工作安排、薪资计算等语境，是描述“职场加班”的核心词汇，托业阅读（劳动合同、工作安排通知）和听力（职场对话、面试沟通）中高频考查“work overtime、overtime pay”等搭配',
+      keyCollocations: [
+        'work overtime（加班）',
+        'overtime pay（加班费）',
+        'overtime hours（加班时长）',
+        'approve overtime（批准加班）',
+        'overtime work（加班工作）',
+      ],
+      toeicExampleSentences: [
+        'Employees who work overtime will receive extra pay in the monthly payroll.（加班的员工将在月度工资单中获得加班费。）',
+        'The crew had to work overtime to meet the high demand during the holiday season.（节假日期间，工作人员不得不加班以满足高需求。）',
+        'The manager approved my request to work overtime to finish the assessment report.（经理批准了我加班完成评估报告的请求。）',
+        'The company has a clear policy on overtime compensation for all division employees.（公司针对所有部门员工有明确的加班补偿政策。）',
+      ],
+      sceneAssociation:
+        '可以联想“办公室员工因项目截止日期work overtime（加班）”的画面，或“HR向新员工解释overtime pay（加班费）计算规则”，结合“职场中超出正常工作时间的工作”的核心场景快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'overtime',
+          coreDifference:
+            '侧重“职场中超出正常工作时间的工作/时间/费用”，指向工作时长',
+          toeicSceneFocus: '职场工作安排、薪资计算、劳动合规场景',
+        },
+        {
+          word: 'extra hours',
+          coreDifference: '泛指“额外的时间”，可指工作或非工作场景，口语化',
+          toeicSceneFocus: '日常职场沟通、非正式工作安排场景',
+        },
+        {
+          word: 'extended hours',
+          coreDifference: '侧重“延长的营业时间/工作时间”，指向时间段的延长',
+          toeicSceneFocus: '门店营业、项目工期延长场景',
+        },
+        {
+          word: 'late shift',
+          coreDifference: '侧重“晚班、夜班”，指向固定的晚时段工作安排',
+          toeicSceneFocus: '轮班制工作、服务业排班场景',
+        },
+      ],
+    },
+    {
+      word: 'clerk',
+      phonetic: '/klɑːk/',
+      phrase: 'a diligent office clerk',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        'n. 文员，办事员；店员；书记员；v. 当文员/店员（托业中以名词用法为主，侧重“职场文员”）',
+      toeicSceneFocus:
+        '多出现于职场岗位描述、招聘启事、工作安排、商务沟通等语境，是描述“基层办公/服务人员”的高频词汇，托业阅读（招聘广告、岗位说明）和听力（职场对话、工作安排）中常考查“office clerk、payroll clerk”等具体岗位搭配',
+      keyCollocations: [
+        'office clerk（办公室文员）',
+        'payroll clerk（薪资文员）',
+        'sales clerk（店员）',
+        'bank clerk（银行职员）',
+        'administrative clerk（行政文员）',
+      ],
+      toeicExampleSentences: [
+        'The administrative clerk is responsible for handling all incoming customer inquiries.（行政文员负责处理所有客户来电咨询。）',
+        "We are hiring a payroll clerk to manage the company's monthly salary processing.（我们正在招聘一名薪资文员，负责管理公司的月度薪资发放。）",
+        'The clerk in the sales division helped the customer check the product portfolio details.（销售部门的文员帮助客户核对了产品组合的详细信息。）',
+        'As an office clerk, you need to be flexible in handling various daily tasks.（作为一名办公室文员，你需要灵活处理各类日常事务。）',
+      ],
+      sceneAssociation:
+        '可以联想“office clerk（办公室文员）整理文件、回复邮件”的画面，或“招聘启事中标注clerk（文员）岗位的职责要求”，结合“职场基层办公/服务人员”的核心身份快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'clerk',
+          coreDifference:
+            '侧重“基层办公/服务岗位的人员”，指向具体岗位，层级较低',
+          toeicSceneFocus: '通用办公、零售、金融基层岗位场景',
+        },
+        {
+          word: 'secretary',
+          coreDifference: '侧重“秘书”，主要为特定人员（如经理）提供行政支持',
+          toeicSceneFocus: '高管助理、行政支持、商务接待场景',
+        },
+        {
+          word: 'administrator',
+          coreDifference: '侧重“行政管理人员”，层级高于clerk，负责管理工作',
+          toeicSceneFocus: '行政管理、系统管理、部门管理场景',
+        },
+        {
+          word: 'staff',
+          coreDifference: '泛指“全体员工”，是集合名词，不指向具体岗位',
+          toeicSceneFocus: '企业人员整体描述、人力资源管理场景',
+        },
+      ],
+    },
+    {
+      word: 'division',
+      phonetic: '/dɪˈvɪʒn/',
+      phrase: 'sales division of the company',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '部门，处，科；分割，划分；除法；分歧（托业中侧重“企业部门”）',
+      toeicSceneFocus:
+        '多出现于企业组织架构、工作安排、商务沟通等语境，是描述“企业内部部门”的核心商务词汇，托业阅读（企业介绍、岗位说明）和听力（职场对话、会议讨论）中高频考查“sales division、HR division”等具体部门搭配',
+      keyCollocations: [
+        'sales division（销售部门）',
+        'HR division（人力资源部）',
+        'procurement division（采购部）',
+        'division manager（部门经理）',
+        'regional division（区域分部）',
+      ],
+      toeicExampleSentences: [
+        'The marketing division will work with the sales division to enhance brand awareness.（市场部将与销售部合作提升品牌知名度。）',
+        'Each division of the company has its own performance assessment standards.（公司的每个部门都有自己的绩效评估标准。）',
+        'The procurement division is responsible for negotiating contracts with key vendors.（采购部负责与核心供应商谈判合同。）',
+        'He was transferred from the administrative division to the financial division last month.（他上个月从行政部调到了财务部。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业组织架构图中各division（部门）的职能划分”的画面，或“部门经理在division（部门）会议上布置工作”，结合“企业内部职能划分的部门”的核心概念快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'division',
+          coreDifference:
+            '侧重“大型企业/机构中按职能/区域划分的部门、分部”，规模较大',
+          toeicSceneFocus: '大型企业组织架构、跨部门协作场景',
+        },
+        {
+          word: 'department',
+          coreDifference: '泛指“企业/机构的部门”，适用范围广，最常用',
+          toeicSceneFocus: '各类企业、机构的部门相关通用场景',
+        },
+        {
+          word: 'section',
+          coreDifference: '侧重“部门内部的科室、小组”，规模较小，更细分',
+          toeicSceneFocus: '部门内部细分团队、具体业务组场景',
+        },
+        {
+          word: 'branch',
+          coreDifference: '侧重“企业的分支机构、分公司”，指向地域划分',
+          toeicSceneFocus: '企业分公司、分支机构、区域业务场景',
+        },
+      ],
+    },
+    {
+      word: 'obtain',
+      phonetic: '/əbˈteɪn/',
+      phrase: 'obtain approval from manager',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '获得，得到；存在，流行（托业中侧重“通过努力/正式流程获得某物”）',
+      toeicSceneFocus:
+        '多出现于商务流程、职场管理、合规操作、申请审批等语境，是描述“获取/得到”的正式商务词汇，托业阅读（商务函件、申请报告）和听力（职场沟通、审批对话）中常考查“obtain approval、obtain information”等搭配',
+      keyCollocations: [
+        'obtain approval（获得批准）',
+        'obtain a license（获得许可证）',
+        'obtain information（获取信息）',
+        'obtain data（获取数据）',
+        'obtain permission（获得许可）',
+      ],
+      toeicExampleSentences: [
+        "You need to obtain the manager's approval before working overtime on weekends.（你需要获得经理批准才能在周末加班。）",
+        'The company worked hard to obtain the certification to enhance its competitiveness.（公司努力获得了该认证，以提升竞争力。）',
+        'The clerk helped the client obtain the detailed portfolio information from the finance division.（文员帮助客户从财务部获取了详细的投资组合信息。）',
+        'It is not easy to obtain accurate market demand data in a short time.（在短时间内获取准确的市场需求数据并不容易。）',
+      ],
+      sceneAssociation:
+        '可以联想“员工向经理申请obtain（获得）加班批准”的画面，或“企业通过正式流程obtain（获得）行业认证”，结合“通过努力/正式流程获取某物”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'obtain',
+          coreDifference: '侧重“通过努力、正式流程或一定手段获得”，正式且书面',
+          toeicSceneFocus: '商务审批、合规申请、正式获取场景',
+        },
+        {
+          word: 'get',
+          coreDifference: '泛指“得到、获取”，口语化，适用范围最广',
+          toeicSceneFocus: '日常商务沟通、非正式获取场景',
+        },
+        {
+          word: 'acquire',
+          coreDifference: '侧重“逐步获取、习得（知识、技能、企业）”，强调过程',
+          toeicSceneFocus: '技能学习、企业并购、知识积累场景',
+        },
+        {
+          word: 'gain',
+          coreDifference: '侧重“获得（利益、优势、经验）”，强调收获的价值',
+          toeicSceneFocus: '利益获取、优势积累、经验增长场景',
+        },
+      ],
+    },
+    {
+      word: 'on-site',
+      phonetic: '/ˌɒn ˈsaɪt/',
+      phrase: 'provide on-site technical support',
+      partOfSpeech: 'adj. 形容词；adv. 副词',
+      coreMeaning:
+        'adj. 现场的，就地的；adv. 现场地，就地（托业中侧重“商务/职场中的现场服务、工作”）',
+      toeicSceneFocus:
+        '多出现于工程、技术服务、职场工作安排、客户服务等语境，是描述“现场场景”的高频商务词汇，托业阅读（服务协议、工作安排通知）和听力（职场沟通、服务对接）中常考查“on-site service、on-site work”等搭配',
+      keyCollocations: [
+        'on-site service（现场服务）',
+        'on-site training（现场培训）',
+        'on-site work（现场工作）',
+        'on-site inspection（现场检查）',
+        'on-site support（现场支持）',
+      ],
+      toeicExampleSentences: [
+        'The vendor will send technicians to provide on-site support for the defective equipment.（供应商将派遣技术人员为故障设备提供现场支持。）',
+        'Employees in the maintenance division need to wear protective gear during on-site work.（维修部门的员工在现场工作时需要穿戴防护装备。）',
+        'We offer on-site training to help new clerks adapt to their work quickly.（我们提供现场培训，帮助新文员快速适应工作。）',
+        'The manager conducted an on-site assessment of the project progress yesterday.（经理昨天对项目进度进行了现场评估。）',
+      ],
+      sceneAssociation:
+        '可以联想“技术人员到客户公司提供on-site（现场）技术支持”的画面，或“质检员进行on-site（现场）产品检查”，结合“商务/职场中在现场而非远程的工作/服务”的核心场景快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'on-site',
+          coreDifference: '侧重“在现场（工作、服务、检查）”，指向地点属性',
+          toeicSceneFocus: '现场服务、现场工作、现场检查场景',
+        },
+        {
+          word: 'in-person',
+          coreDifference: '侧重“亲自、当面（沟通、参会）”，指向人的参与方式',
+          toeicSceneFocus: '当面沟通、现场参会、亲自拜访场景',
+        },
+        {
+          word: 'at the scene',
+          coreDifference: '侧重“在事发/工作现场”，指向具体事件/工作的现场',
+          toeicSceneFocus: '事故处理、项目现场、紧急工作场景',
+        },
+        {
+          word: 'on location',
+          coreDifference: '侧重“在拍摄/作业现场（影视、勘探等）”，专业性较强',
+          toeicSceneFocus: '专业作业现场、影视拍摄等特定场景',
+        },
+      ],
+    },
+    {
+      word: 'protective',
+      phonetic: '/prəˈtektɪv/',
+      phrase: 'wear protective safety gear',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '保护的，防护的；有保护欲的（托业中侧重“职场/工作中的防护性”）',
+      toeicSceneFocus:
+        '多出现于安全生产、职场操作规范、设备使用、现场工作等语境，是描述“防护相关”的核心词汇，托业阅读（安全手册、操作规范）和听力（职场安全培训、工作沟通）中常考查“protective equipment、protective gear”等搭配',
+      keyCollocations: [
+        'protective equipment（防护装备）',
+        'protective gear（防护用具）',
+        'protective clothing（防护服）',
+        'protective measures（防护措施）',
+        'protective cover（防护罩）',
+      ],
+      toeicExampleSentences: [
+        'All employees must wear protective equipment when working with heavy machinery.（所有员工操作重型机械时必须穿戴防护装备。）',
+        'The company provides free protective gear for staff who work on-site at construction sites.（公司为在建筑工地现场工作的员工提供免费防护用具。）',
+        'The safety division issued new protective measures to reduce workplace accidents.（安全部门出台了新的防护措施，以减少职场事故。）',
+        'It is mandatory to use a protective cover for the defective equipment during maintenance.（维修故障设备时，必须为其安装防护罩。）',
+      ],
+      sceneAssociation:
+        '可以联想“现场工作人员穿戴protective（防护的）装备进行作业”的画面，或“安全培训中讲解protective（防护的）措施的重要性”，结合“职场/工作中用于保护人身/设备安全”的核心特点快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'protective',
+          coreDifference: '侧重“具有保护作用的、用于防护的”，指向事物的属性',
+          toeicSceneFocus: '安全生产、设备防护、职场安全场景',
+        },
+        {
+          word: 'safe',
+          coreDifference: '侧重“安全的、无危险的”，指向状态或环境',
+          toeicSceneFocus: '工作环境、操作流程、产品安全场景',
+        },
+        {
+          word: 'secure',
+          coreDifference:
+            '侧重“安全的、受保护的（数据、财产、环境）”，指向安全性和保密性',
+          toeicSceneFocus: '数据安全、财产保护、办公环境安全场景',
+        },
+        {
+          word: 'guarding',
+          coreDifference: '侧重“守护、保卫（人/物）”，指向动作或行为',
+          toeicSceneFocus: '安保工作、人员守护、财产保卫场景',
+        },
+      ],
+    },
+    {
       word: 'candidate',
       partOfSpeech: 'n. 名词',
       coreMeaning:
@@ -11190,6 +12937,1431 @@ export const wordData = {
   ],
   business_communication: [
     {
+      word: 'establish',
+      phonetic: '/ɪˈstæblɪʃ/',
+      phrase: 'establish a business partnership',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '建立，设立；确立；证实；使立足（托业中侧重“商务关系、企业机构的建立”）',
+      toeicSceneFocus:
+        '多出现于商务合作、企业创办、制度建设等语境，是描述“从无到有构建事物”的核心词汇，托业阅读（商务合同、企业介绍）和听力（谈判对话、职场规划）中高频考查“establish partnership、establish a company”等搭配',
+      keyCollocations: [
+        'establish a company（创办公司）',
+        'establish a partnership（建立合作关系）',
+        'establish a reputation（树立声誉）',
+        'establish rules（制定规则）',
+        'establish contact（建立联系）',
+      ],
+      toeicExampleSentences: [
+        'The two firms plan to establish a long-term partnership to explore the Asian market.（两家公司计划建立长期合作关系，开拓亚洲市场。）',
+        'It took the entrepreneur five years to establish his brand in the competitive industry.（这位企业家花了五年时间，在竞争激烈的行业中树立起自己的品牌。）',
+        "The company needs to establish clear rules to standardize employees' on-site work behavior.（公司需要制定明确规则，规范员工的现场工作行为。）",
+        'We successfully established contact with the key vendor to negotiate the procurement price.（我们成功与核心供应商建立联系，洽谈采购价格。）',
+      ],
+      sceneAssociation:
+        '可以联想“商务人士握手签约，establish（建立）合作关系”的画面，或“创业者奔波筹备，establish（创办）新公司”，结合“商务场景中构建新事物、新关系”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'establish',
+          coreDifference:
+            '侧重“正式建立、设立（机构、关系、制度等），强调过程和结果的稳定性”，正式且书面',
+          toeicSceneFocus: '企业创办、合作建立、制度制定场景',
+        },
+        {
+          word: 'found',
+          coreDifference:
+            '侧重“创办、创立（机构、组织）”，特指从无到有的创建，书面性强',
+          toeicSceneFocus: '公司创办、组织成立场景',
+        },
+        {
+          word: 'build',
+          coreDifference:
+            '泛指“建立、构建”，可指具体或抽象事物，适用范围广，口语化',
+          toeicSceneFocus: '关系构建、品牌打造、团队建设等通用场景',
+        },
+        {
+          word: 'set up',
+          coreDifference:
+            '侧重“搭建、设立（临时或具体的事物）”，是短语动词，口语化',
+          toeicSceneFocus: '搭建系统、设立临时办公室、组建团队场景',
+        },
+      ],
+    },
+    {
+      word: 'related',
+      phonetic: '/rɪˈleɪtɪd/',
+      phrase: 'business-related matters',
+      partOfSpeech: 'adj. 形容词；v. 动词（relate的过去式/过去分词）',
+      coreMeaning:
+        'adj. 相关的；有联系的；同族的；v. 关联；讲述（托业中以形容词用法为主）',
+      toeicSceneFocus:
+        '多出现于商务报告、职场沟通、文件分类等语境，是描述“事物关联性”的高频词汇，托业阅读（数据分析报告、岗位职责说明）和听力（会议讨论、工作安排）中常考查“related to、business-related”等搭配',
+      keyCollocations: [
+        'related to（与……相关）',
+        'business-related（与业务相关的）',
+        'job-related（与工作相关的）',
+        'related fields（相关领域）',
+        'related documents（相关文件）',
+      ],
+      toeicExampleSentences: [
+        'All job-related expenses will be reimbursed by the company according to the policy.（所有与工作相关的费用，公司将按政策报销。）',
+        'The report focuses on the issues related to the implementation of the new marketing strategy.（这份报告聚焦于与新营销策略执行相关的问题。）',
+        'Please collect all the related documents and submit them to the administrative division before Friday.（请收集所有相关文件，于周五前提交给行政部门。）',
+        'His work experience is mainly in fields related to finance and investment.（他的工作经验主要集中在与金融和投资相关的领域。）',
+      ],
+      sceneAssociation:
+        '可以联想“员工整理related（相关的）项目文件”的画面，或“会议上讨论与业务related（相关的）问题”，结合“事物之间存在关联”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'related',
+          coreDifference:
+            '侧重“事物之间存在联系或关联”，通用性强，可用于各种语境',
+          toeicSceneFocus: '商务报告、文件分类、职场沟通通用场景',
+        },
+        {
+          word: 'relevant',
+          coreDifference:
+            '侧重“与当前主题、目的相关且有意义的”，强调针对性和实用性',
+          toeicSceneFocus: '信息筛选、报告撰写、问题讨论场景',
+        },
+        {
+          word: 'associated',
+          coreDifference:
+            '侧重“与某事物或人有密切联系、关联”，常与with搭配，书面性较强',
+          toeicSceneFocus: '品牌关联、企业合作、学术研究场景',
+        },
+        {
+          word: 'connected',
+          coreDifference:
+            '侧重“事物之间有物理或逻辑上的连接”，口语化，适用范围广',
+          toeicSceneFocus: '设备连接、信息关联、人际关系场景',
+        },
+      ],
+    },
+    {
+      word: 'reputation',
+      phonetic: '/ˌrepjuˈteɪʃn/',
+      phrase: 'build a good corporate reputation',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '名誉，声誉；名声（托业中侧重“企业或个人的商务声誉”）',
+      toeicSceneFocus:
+        '多出现于企业宣传、客户评价、商务合作等语境，是描述“口碑和形象”的核心词汇，托业阅读（企业简介、客户反馈）和听力（商务谈判、职场评价）中高频考查“good reputation、damage reputation”等搭配',
+      keyCollocations: [
+        'good reputation（良好声誉）',
+        'corporate reputation（企业声誉）',
+        'reputation for quality（质量口碑）',
+        'build a reputation（树立声誉）',
+        "damage one's reputation（损害声誉）",
+      ],
+      toeicExampleSentences: [
+        'The company has earned a good reputation for its timely after-sales service.（该公司因其及时的售后服务赢得了良好声誉。）',
+        'A positive corporate reputation can help attract more customers and talented employees.（良好的企业声誉有助于吸引更多客户和优秀人才。）',
+        "The vendor's reputation for reliability made it our first choice for the procurement project.（这家供应商可靠的口碑，使其成为我们采购项目的首选。）",
+        'It takes years to build a good reputation, but only a moment to destroy it.（树立良好声誉需要数年时间，而毁掉它只需要一瞬间。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业凭借优质产品build a good reputation（树立良好声誉）”的画面，或“商务谈判中，双方提及彼此的reputation（声誉）”，结合“企业或个人的口碑形象”的核心概念快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'reputation',
+          coreDifference: '侧重“公众对企业或个人的总体评价和口碑”，正式且书面',
+          toeicSceneFocus: '企业宣传、商务合作、客户评价场景',
+        },
+        {
+          word: 'fame',
+          coreDifference: '侧重“广泛的名声、知名度”，可指正面或负面，口语化',
+          toeicSceneFocus: '知名企业、公众人物相关场景',
+        },
+        {
+          word: 'prestige',
+          coreDifference:
+            '侧重“因地位、成就而获得的威望、声望”，语气褒义，书面性强',
+          toeicSceneFocus: '高端企业、知名机构、权威人士场景',
+        },
+        {
+          word: 'image',
+          coreDifference: '侧重“企业或个人在公众心中的形象”，可通过宣传塑造',
+          toeicSceneFocus: '品牌形象、企业公关、个人职场形象场景',
+        },
+      ],
+    },
+    {
+      word: 'significant',
+      phonetic: '/sɪɡˈnɪfɪkənt/',
+      phrase: 'a significant business achievement',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '重要的；显著的；有意义的；相当数量的（托业中侧重“商务场景中重要或明显的变化、成就”）',
+      toeicSceneFocus:
+        '多出现于商务报告、市场分析、项目总结等语境，是描述“重要性或显著性”的核心词汇，托业阅读（数据分析报告、项目成果总结）和听力（会议发言、业绩汇报）中高频考查“significant increase、significant progress”等搭配',
+      keyCollocations: [
+        'significant increase（显著增长）',
+        'significant progress（显著进展）',
+        'significant change（重大变化）',
+        'significant impact（重大影响）',
+        'significant achievement（重要成就）',
+      ],
+      toeicExampleSentences: [
+        'The company has made significant progress in the development of new products this quarter.（本季度，公司在新产品研发方面取得了显著进展。）',
+        "The new policy will have a significant impact on the company's overseas business.（这项新政策将对公司的海外业务产生重大影响。）",
+        'There has been a significant increase in market demand for eco-friendly products since last year.（自去年以来，环保产品的市场需求出现了显著增长。）',
+        'Her contribution to the project was significant, so she was promoted to a managerial position.（她对项目的贡献非常重要，因此被提拔到了管理岗位。）',
+      ],
+      sceneAssociation:
+        '可以联想“商务会议上，经理汇报significant（显著的）业绩增长”的画面，或“分析师指出市场的significant（重大的）变化”，结合“重要、明显”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'significant',
+          coreDifference:
+            '侧重“事物重要、影响大，或变化、数量明显”，正式且书面',
+          toeicSceneFocus: '商务报告、市场分析、项目总结场景',
+        },
+        {
+          word: 'important',
+          coreDifference: '泛指“重要的”，通用性强，口语化，适用所有语境',
+          toeicSceneFocus: '日常职场沟通、工作安排、通用评价场景',
+        },
+        {
+          word: 'considerable',
+          coreDifference: '侧重“数量、程度相当大的”，强调规模或程度',
+          toeicSceneFocus: '数据统计、成本分析、时间投入场景',
+        },
+        {
+          word: 'notable',
+          coreDifference: '侧重“值得注意的、显著的”，强调与众不同',
+          toeicSceneFocus: '业绩亮点、人物成就、事件报道场景',
+        },
+      ],
+    },
+    {
+      word: 'occasion',
+      phonetic: '/əˈkeɪʒn/',
+      phrase: 'on a formal business occasion',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        'n. 场合；时机；机会；重大活动；v. 引起；导致（托业中以名词用法为主）',
+      toeicSceneFocus:
+        '多出现于商务礼仪、职场活动、正式沟通等语境，是描述“特定场合或时机”的高频词汇，托业阅读（邀请函、活动通知）和听力（职场对话、礼仪培训）中常考查“on occasion、formal occasion”等搭配',
+      keyCollocations: [
+        'formal occasion（正式场合）',
+        'on occasion（偶尔；有时）',
+        'special occasion（特殊场合）',
+        'business occasion（商务场合）',
+        'rise to the occasion（应付自如；挺身而出）',
+      ],
+      toeicExampleSentences: [
+        'It is appropriate to wear formal attire on a business occasion such as a corporate dinner.（在公司晚宴这类商务场合，穿正装是得体的。）',
+        'On occasion, we need to work overtime to meet the urgent demand of customers.（我们偶尔需要加班，以满足客户的紧急需求。）',
+        'The annual meeting is an important occasion for all employees to communicate and celebrate.（年会是全体员工沟通和庆祝的重要场合。）',
+        'She always rises to the occasion when the company faces difficult challenges.（当公司面临艰难挑战时，她总是能挺身而出、应付自如。）',
+      ],
+      sceneAssociation:
+        '可以联想“员工穿着正装参加formal occasion（正式场合）的商务晚宴”的画面，或“抓住occasion（机会）与客户洽谈合作”，结合“特定的时间、场合或机会”的核心概念快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'occasion',
+          coreDifference: '侧重“特定的场合、时机或重大活动”，正式且书面',
+          toeicSceneFocus: '商务礼仪、职场活动、正式沟通场景',
+        },
+        {
+          word: 'opportunity',
+          coreDifference: '侧重“有利的机会、机遇”，强调可以利用的条件',
+          toeicSceneFocus: '职业发展、商务合作、项目机会场景',
+        },
+        {
+          word: 'event',
+          coreDifference: '侧重“有组织的重大事件、活动”，指向具体的事情',
+          toeicSceneFocus: '企业活动、会议展览、重大事件场景',
+        },
+        {
+          word: 'situation',
+          coreDifference: '侧重“所处的情况、形势”，指向整体的状态',
+          toeicSceneFocus: '职场形势、市场情况、应急场景',
+        },
+      ],
+    },
+    {
+      word: 'brief',
+      phonetic: '/briːf/',
+      phrase: 'give a brief work summary',
+      partOfSpeech: 'adj. 形容词；v. 动词；n. 名词',
+      coreMeaning:
+        'adj. 简短的；简洁的；短暂的；v. 向……简要介绍；给……下达简令；n. 简报；概要（托业中以形容词和动词用法为主）',
+      toeicSceneFocus:
+        '多出现于商务会议、职场沟通、文件汇报等语境，是描述“简洁性”的高频词汇，托业阅读（会议纪要、工作简报）和听力（会议发言、工作安排）中高频考查“brief summary、brief meeting”等搭配',
+      keyCollocations: [
+        'brief summary（简要总结）',
+        'brief meeting（简短会议）',
+        'brief report（简明报告）',
+        'brief sb. on sth.（向某人简要介绍某事）',
+        'in brief（简言之；总之）',
+      ],
+      toeicExampleSentences: [
+        'The manager will give a brief introduction to the new project at the morning meeting.（经理将在晨会中简要介绍这个新项目。）',
+        'Please write a brief report on the implementation progress of the plan and submit it by noon.（请撰写一份关于计划执行进度的简明报告，于中午前提交。）',
+        "The HR clerk briefed the new employees on the company's rules and regulations.（人力资源文员向新员工简要介绍了公司的规章制度。）",
+        'In brief, the project has achieved the expected goals despite some minor problems.（简言之，尽管存在一些小问题，该项目仍达到了预期目标。）',
+      ],
+      sceneAssociation:
+        '可以联想“会议上，员工做brief（简短的）工作汇报”的画面，或“经理brief（简要介绍）新员工了解工作内容”，结合“简洁、简短”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'brief',
+          coreDifference:
+            '侧重“内容简短、时间短暂，或动作上的简要介绍”，正式且书面',
+          toeicSceneFocus: '商务会议、工作汇报、职场沟通场景',
+        },
+        {
+          word: 'short',
+          coreDifference:
+            '泛指“短的”，可指时间、长度、内容等，口语化，适用范围广',
+          toeicSceneFocus: '日常职场沟通、通用描述场景',
+        },
+        {
+          word: 'concise',
+          coreDifference: '侧重“内容简明扼要、不冗余”，强调表达的精炼性',
+          toeicSceneFocus: '报告撰写、文件起草、语言表达场景',
+        },
+        {
+          word: 'succinct',
+          coreDifference:
+            '侧重“表达简洁准确、一针见血”，书面性强，语气比concise更强',
+          toeicSceneFocus: '正式报告、学术写作、专业表述场景',
+        },
+      ],
+    },
+    {
+      word: 'complex',
+      phonetic: '/ˈkɒmpleks/',
+      phrase: 'solve complex business problems',
+      partOfSpeech: 'adj. 形容词；n. 名词',
+      coreMeaning:
+        'adj. 复杂的；难懂的；复合的；n. 综合体；建筑群；情结（托业中以形容词用法为主）',
+      toeicSceneFocus:
+        '多出现于项目管理、技术研发、商务决策等语境，是描述“事物复杂性”的核心词汇，托业阅读（技术文档、项目方案）和听力（会议讨论、问题分析）中高频考查“complex problem、complex system”等搭配',
+      keyCollocations: [
+        'complex problem（复杂问题）',
+        'complex system（复杂系统）',
+        'complex process（复杂流程）',
+        'complex structure（复杂结构）',
+        'complex project（复杂项目）',
+      ],
+      toeicExampleSentences: [
+        "The IT department is responsible for developing a complex system to manage the company's payroll.（IT部门负责开发一个复杂系统，管理公司的薪资发放。）",
+        'Solving complex business problems requires the cooperation of multiple departments.（解决复杂的商务问题需要多个部门的协作。）',
+        'The implementation of the new policy involves a complex process that needs careful planning.（新政策的实施涉及一个复杂流程，需要周密规划。）',
+        'This complex project requires a team of professionals with diverse skills and experience.（这个复杂项目需要一支拥有多元技能和经验的专业团队。）',
+      ],
+      sceneAssociation:
+        '可以联想“技术团队讨论如何解决complex（复杂的）系统故障”的画面，或“管理层分析complex（复杂的）市场形势”，结合“结构、流程或问题难以理解和处理”的核心特征快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'complex',
+          coreDifference:
+            '侧重“事物结构、关系或流程复杂，需要深入分析才能理解”，正式且书面',
+          toeicSceneFocus: '项目管理、技术研发、商务决策场景',
+        },
+        {
+          word: 'complicated',
+          coreDifference:
+            '侧重“事物因细节多、头绪乱而难以处理”，口语化，与complex含义相近',
+          toeicSceneFocus: '日常工作问题、流程处理、通用描述场景',
+        },
+        {
+          word: 'sophisticated',
+          coreDifference: '侧重“事物精密、复杂且高级”，强调技术含量和先进性',
+          toeicSceneFocus: '高端技术、精密设备、复杂方案场景',
+        },
+        {
+          word: 'intricate',
+          coreDifference: '侧重“事物细节繁多、结构精巧复杂”，书面性强',
+          toeicSceneFocus: '精密工艺、复杂设计、细节分析场景',
+        },
+      ],
+    },
+    {
+      word: 'properly',
+      phonetic: '/ˈprɒpəli/',
+      phrase: 'handle the issue properly',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning:
+        '适当地；正确地；恰当地；妥善地（托业中侧重“职场中正确妥善处理事务”）',
+      toeicSceneFocus:
+        '多出现于职场管理、客户服务、流程操作等语境，是描述“处理方式恰当性”的高频词汇，托业阅读（操作手册、规章制度）和听力（职场沟通、培训指导）中常考查“handle properly、operate properly”等搭配',
+      keyCollocations: [
+        'handle properly（妥善处理）',
+        'operate properly（正常运行）',
+        'communicate properly（恰当沟通）',
+        'prepare properly（充分准备）',
+        'function properly（正常发挥作用）',
+      ],
+      toeicExampleSentences: [
+        'It is crucial to communicate properly with customers to resolve their complaints effectively.（与客户恰当沟通，对于有效解决他们的投诉至关重要。）',
+        'The equipment can only function properly if it is maintained and checked regularly.（只有定期维护和检查，设备才能正常发挥作用。）',
+        'Please make sure that all the documents are properly sorted before submitting them to the manager.（请确保所有文件在提交给经理前都已妥善整理。）',
+        'New employees need to learn how to operate the system properly through professional training.（新员工需要通过专业培训，学习如何正确操作该系统。）',
+      ],
+      sceneAssociation:
+        '可以联想“客服人员properly（妥善地）处理客户投诉”的画面，或“技术人员确保设备properly（正常）运行”，结合“以正确、恰当的方式做事”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'properly',
+          coreDifference:
+            '侧重“做事的方式正确、恰当、妥善”，通用性强，正式且书面',
+          toeicSceneFocus: '职场管理、客户服务、流程操作场景',
+        },
+        {
+          word: 'correctly',
+          coreDifference: '侧重“做事的结果正确，没有错误”，强调准确性',
+          toeicSceneFocus: '数据录入、操作执行、答案判断场景',
+        },
+        {
+          word: 'appropriately',
+          coreDifference: '侧重“做事的方式符合场合、身份或要求”，强调得体性',
+          toeicSceneFocus: '商务礼仪、沟通表达、行为规范场景',
+        },
+        {
+          word: 'adequately',
+          coreDifference: '侧重“做事的程度足够、充分”，强调满足需求',
+          toeicSceneFocus: '准备工作、资源配置、能力匹配场景',
+        },
+      ],
+    },
+    {
+      word: 'particularly',
+      phonetic: '/pəˈtɪkjələrli/',
+      phrase: 'particularly important for business',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '特别地；尤其；格外（托业中侧重“强调某一事物的特殊性”）',
+      toeicSceneFocus:
+        '多出现于商务报告、市场分析、职场评价等语境，是用于“强调重点”的高频词汇，托业阅读（数据分析报告、产品介绍）和听力（会议发言、业绩点评）中常考查“particularly important、particularly useful”等搭配',
+      keyCollocations: [
+        'particularly important（特别重要）',
+        'particularly useful（尤其有用）',
+        'particularly relevant（尤其相关）',
+        'particularly challenging（特别具有挑战性）',
+        'particularly effective（格外有效）',
+      ],
+      toeicExampleSentences: [
+        'Customer feedback is particularly important for the improvement of our products and services.（客户反馈对于我们产品和服务的改进特别重要。）',
+        'This new software is particularly useful for the payroll division to improve work efficiency.（这款新软件对薪资部门提升工作效率尤其有用。）',
+        'The fourth quarter is particularly challenging for the sales team due to the fierce market competition.（由于市场竞争激烈，第四季度对销售团队特别具有挑战性。）',
+        'The marketing strategy is particularly effective in attracting young customers to our brand.（该营销策略在吸引年轻客户关注我们品牌方面格外有效。）',
+      ],
+      sceneAssociation:
+        '可以联想“分析师指出某数据particularly（特别）关键”的画面，或“经理强调某环节particularly（尤其）重要”，结合“突出强调事物的特殊性”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'particularly',
+          coreDifference: '侧重“强调程度上的特别、尤其”，通用性强，正式且书面',
+          toeicSceneFocus: '商务报告、市场分析、职场评价场景',
+        },
+        {
+          word: 'especially',
+          coreDifference:
+            '与particularly含义相近，口语化更强，更常用在日常沟通',
+          toeicSceneFocus: '日常职场对话、非正式报告、通用强调场景',
+        },
+        {
+          word: 'specifically',
+          coreDifference: '侧重“强调具体性、针对性”，指向特定的事物或方面',
+          toeicSceneFocus: '具体问题、特定要求、明确说明场景',
+        },
+        {
+          word: 'notably',
+          coreDifference: '侧重“值得注意地、显著地”，强调事物的突出性',
+          toeicSceneFocus: '业绩亮点、重要成就、显著变化场景',
+        },
+      ],
+    },
+    {
+      word: 'emphasize',
+      phonetic: '/ˈemfəsaɪz/',
+      phrase: 'emphasize the importance of teamwork',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '强调；着重；使突出（托业中侧重“商务沟通中突出重点内容”）',
+      toeicSceneFocus:
+        '多出现于商务会议、职场培训、文件撰写等语境，是用于“突出核心信息”的核心词汇，托业阅读（工作报告、规章制度）和听力（会议发言、培训讲座）中高频考查“emphasize the importance、emphasize that...”等搭配',
+      keyCollocations: [
+        'emphasize the importance of（强调……的重要性）',
+        'emphasize a point（强调一个观点）',
+        'emphasize quality（强调质量）',
+        'emphasize safety（强调安全）',
+        'emphasize that clause（强调……）',
+      ],
+      toeicExampleSentences: [
+        "The CEO emphasized the importance of innovation in the company's annual meeting.（CEO在公司年会上强调了创新的重要性。）",
+        'The training instructor emphasized that all employees must wear protective equipment on-site.（培训讲师强调，所有员工在现场工作时必须穿戴防护装备。）',
+        'The contract emphasizes that both parties should abide by the mutually agreed terms.（合同着重指出，双方应遵守共同商定的条款。）',
+        'We need to emphasize the unique features of our product in the marketing campaign.（我们需要在营销活动中突出我们产品的独特优势。）',
+      ],
+      sceneAssociation:
+        '可以联想“经理在会议上emphasize（强调）团队合作的重要性”的画面，或“培训讲师emphasize（着重）说明操作规范”，结合“突出核心信息、引起重视”的核心逻辑快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'emphasize',
+          coreDifference:
+            '侧重“通过言语、文字突出重点，引起他人重视”，正式且书面',
+          toeicSceneFocus: '商务会议、职场培训、文件撰写场景',
+        },
+        {
+          word: 'stress',
+          coreDifference: '与emphasize含义相近，口语化更强，可指“强调”或“压力”',
+          toeicSceneFocus: '日常职场沟通、非正式报告、强调重点场景',
+        },
+        {
+          word: 'highlight',
+          coreDifference:
+            '侧重“通过标记、列举等方式突出亮点或重要信息”，强调视觉或内容上的突出',
+          toeicSceneFocus: '报告撰写、PPT制作、亮点总结场景',
+        },
+        {
+          word: 'underline',
+          coreDifference:
+            '侧重“通过言语或文字强调某一观点的重要性”，书面性强，语气较正式',
+          toeicSceneFocus: '正式报告、学术写作、观点表达场景',
+        },
+      ],
+    },
+
+    {
+      word: 'praise',
+      phonetic: '/preɪz/',
+      phrase: "praise an employee's initiative",
+      partOfSpeech: 'v. 动词 / n. 名词',
+      coreMeaning:
+        'v. 表扬，赞扬 n. 称赞，赞美（表达对某人成就、品质或工作的认可和钦佩）',
+      toeicSceneFocus:
+        '职场沟通、绩效管理、团队激励和客户关系中的关键正向反馈行为。托业听力中出现在上司肯定下属、同事互相称赞或客户满意评价的对话里；阅读中在员工评估、企业文化（如“a culture of praise”）或服务反馈中常见。',
+      keyCollocations: [
+        'praise sb for sth（因某事表扬某人）',
+        'receive praise（获得表扬）',
+        'high praise（高度赞扬）',
+        'sing the praises of（歌颂，盛赞）',
+        'full of praise for（对……赞不绝口）',
+      ],
+      toeicExampleSentences: [
+        '**（v.）** The manager praised the team for completing the project ahead of schedule and under budget.（经理表扬了团队提前完成项目且未超出预算。）',
+        '**（n.）** The positive customer feedback is high praise for our new customer service initiative.（客户的积极反馈是对我们新客服举措的高度赞扬。）',
+      ],
+      sceneAssociation:
+        '想象“在团队会议中，经理公开‘表扬（praise）’一位表现出色的成员”，或“绩效评估表上有一栏是‘值得表扬之处（Areas of Praise）’”，核心是“表达认可以鼓励积极行为”。',
+      confusingWordsComparison: [
+        {
+          word: 'praise',
+          coreDifference: '指“公开或私下表达认可和钦佩”，是积极的强化。',
+          toeicSceneFocus: '正面认可、激励、绩效反馈',
+        },
+        {
+          word: 'compliment',
+          coreDifference:
+            '指“称赞、恭维”，通常更侧重于礼貌或个人品质（如外表），不如praise正式或与工作成就强相关。',
+          toeicSceneFocus: '礼貌性称赞、个人品质',
+        },
+        {
+          word: 'commend',
+          coreDifference: '与praise同义，但更正式、书面，尤用于官方场合。',
+          toeicSceneFocus: '正式表彰、官方嘉奖',
+        },
+      ],
+    },
+    {
+      word: 'explore',
+      phonetic: '/ɪkˈsplɔːr/',
+      phrase: 'explore new market opportunities',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '探索；探究；考察（指为了发现新信息、可能性或理解某事而进行系统的调查、研究或尝试）',
+      toeicSceneFocus:
+        '商业拓展、研发、战略规划和问题解决的核心动词。托业阅读中高频出现在关于市场调研、业务多元化、新技术评估、合作可能性的文章中。听力中常用于讨论下一步行动计划或研究议题。',
+      keyCollocations: [
+        'explore the possibility of（探索……的可能性）',
+        'explore options（探讨各种选择）',
+        'explore avenues（探索途径）',
+        'explore in depth（深入探究）',
+        'explore a topic（探讨一个话题）',
+      ],
+      toeicExampleSentences: [
+        'The company is exploring partnerships with local firms to facilitate its entry into the Asian market.（公司正在探索与当地企业合作，以方便其进入亚洲市场。）',
+        'Before making a final decision, we need to explore all feasible alternatives.（在做出最终决定前，我们需要探讨所有可行的替代方案。）',
+      ],
+      sceneAssociation:
+        '联想“战略部门会议上，白板上写着‘探索新增长领域（Explore new growth areas）’”，或“研发团队正在‘探索（explore）’几种不同的材料解决方案”，核心是“主动调查未知以获取信息或选项”。',
+      confusingWordsComparison: [
+        {
+          word: 'explore',
+          coreDifference:
+            '指“为发现或了解而进行的系统性调查、研究或尝试”，强调过程。',
+          toeicSceneFocus: '市场调研、可能性研究、方案探讨',
+        },
+        {
+          word: 'investigate',
+          coreDifference:
+            '指“深入细致地调查，尤指为了查明原因、真相或问题”，更侧重于查明事实。',
+          toeicSceneFocus: '问题根因调查、事故检查、事实核查',
+        },
+        {
+          word: 'research',
+          coreDifference:
+            '指“通过系统方法（如实验、查阅资料）进行的学术性或科学性研究”，更正式、更结构化。',
+          toeicSceneFocus: '学术研究、市场调研（更正式）',
+        },
+      ],
+    },
+    {
+      word: 'eager',
+      phonetic: '/ˈiːɡər/',
+      phrase: 'eager to learn new skills',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '热切的，渴望的（指对即将发生或可能获得的事物表现出强烈的兴趣、热情和期盼）',
+      toeicSceneFocus:
+        '描述员工态度、学习意愿和团队动力的积极词汇。在托业听力中，可通过说话者兴奋的语气判断；阅读中用于描述理想员工的特质、对新项目的积极反应，或市场的强烈需求。',
+      keyCollocations: [
+        'eager to do sth（渴望做某事）',
+        'eager for（渴望得到）',
+        'eagerly await（热切期待）',
+        'an eager participant（积极的参与者）',
+        'show eager interest（表现出浓厚的兴趣）',
+      ],
+      toeicExampleSentences: [
+        'The new graduates were eager to apply the theoretical knowledge they gained in university to real-world projects.（新毕业生渴望将大学里学到的理论知识应用到实际项目中。）',
+        'There is an eager market for sustainable and eco-friendly products among younger consumers.（在年轻消费者中，对可持续和环保产品存在着一个渴望的市场。）',
+      ],
+      sceneAssociation:
+        '想象“新员工第一天上班，眼神发光，对每项任务都‘跃跃欲试（eager to get started）’”，核心是“充满热情和期待的积极状态”。',
+      confusingWordsComparison: [
+        {
+          word: 'eager',
+          coreDifference:
+            '强调“以热情和兴奋的心情热切期盼”，是积极的、充满活力的渴望。',
+          toeicSceneFocus: '积极热情、学习意愿、市场期盼',
+        },
+        {
+          word: 'anxious',
+          coreDifference:
+            '可指“焦急的、焦虑的”，带有担心和不安的情绪。只有在“anxious to do”（急于做）的搭配中，才与eager意思接近，但仍隐含一丝紧张。',
+          toeicSceneFocus: '焦虑不安、急切（带忧虑）',
+        },
+        {
+          word: 'enthusiastic',
+          coreDifference:
+            '指“热情的、热心的”，强调对某事有强烈的好感和兴趣，与eager非常接近，但eager更侧重“期盼得到”，enthusiastic更侧重“对事物本身的喜爱”。',
+          toeicSceneFocus: '对事物本身的热情、热心',
+        },
+      ],
+    },
+    {
+      word: 'fairly',
+      phonetic: '/ˈferli/',
+      phrase: 'treat all employees fairly',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '1. 公正地，公平地；2. 相当，还算（表示程度，但弱于“very”）',
+      toeicSceneFocus:
+        '多义词，需根据上下文判断。义项1是职场道德、管理政策和法律合规的核心概念。义项2是描述程度或数量的常见副词。托业听力中需注意语调，阅读中需结合语境。',
+      keyCollocations: [
+        'fairly compensated（得到公平补偿）',
+        'distribute fairly（公平分配）',
+        'fairly common（相当常见）',
+        'fairly well（相当好）',
+        'judge fairly（公正评判）',
+      ],
+      toeicExampleSentences: [
+        '**（义项1: 公平地）** The company has a policy to ensure that all job applicants are evaluated fairly based on their merits.（公司有一项政策，确保所有求职者都能根据其优点得到公平评估。）',
+        '**（义项2: 相当）** The new software is fairly easy to use, so minimal training should be required.（新软件相当容易使用，因此只需最少的培训。）',
+      ],
+      sceneAssociation:
+        '**场景1（公平）：** 联想“员工手册中写着‘我们承诺公平对待（treat fairly）每一位员工’”。**场景2（相当）：** 在商业报告或邮件中，“这个结果‘相当（fairly）’令人满意”。',
+      confusingWordsComparison: [
+        {
+          word: 'fairly',
+          coreDifference:
+            '作“公平”解时，是基本副词。作“相当”解时，表示中等偏上程度，语气比“very”弱，比“quite”强。',
+          toeicSceneFocus: '公平公正；中等偏上程度',
+        },
+        {
+          word: 'justly',
+          coreDifference:
+            '与“fairly”（公平义）同义，但更正式，强调基于正义或应得权益。',
+          toeicSceneFocus: '基于正义的公平、应得的',
+        },
+        {
+          word: 'rather',
+          coreDifference:
+            '作程度副词时，语气比“fairly”强，常暗示比预期更甚，或用于表达轻微的不赞同。',
+          toeicSceneFocus: '相当（程度更强，常带情感色彩）',
+        },
+      ],
+    },
+    {
+      word: 'occasionally',
+      phonetic: '/əˈkeɪʒnəli/',
+      phrase: 'meet with clients occasionally',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '偶尔，间或（指不经常地、不定期地发生）',
+      toeicSceneFocus:
+        '描述工作频率、事件发生规律性的基础副词。托业听力中在安排日程、描述工作惯例时出现；阅读中用于说明非规律性的商业活动、问题发生频率或市场现象。',
+      keyCollocations: [
+        'happen occasionally（偶尔发生）',
+        'visit occasionally（偶尔拜访）',
+        'on occasion（偶尔，有时）',
+        'only occasionally（只是偶尔）',
+        'very occasionally（极偶尔地）',
+      ],
+      toeicExampleSentences: [
+        'While most of our communication is via email, we do meet in person occasionally to discuss complex issues.（虽然我们的大部分沟通是通过电子邮件，但我们确实会偶尔见面讨论复杂问题。）',
+        'The system experiences minor glitches occasionally, but they are usually resolved quickly by the IT team.（该系统偶尔会出现小故障，但通常能很快被IT团队解决。）',
+      ],
+      sceneAssociation:
+        '想象“工作日程表上，某些任务（如团队建设、深度客户回访）不是每周都有，只是‘偶尔（occasionally）’安排一次”，核心是“频率低且不规律”。',
+      confusingWordsComparison: [
+        {
+          word: 'occasionally',
+          coreDifference:
+            '指“不经常但有时”，频率低于“sometimes”（有时），高于“rarely”（很少）。',
+          toeicSceneFocus: '低频、非规律性发生',
+        },
+        {
+          word: 'sometimes',
+          coreDifference:
+            '指“有时”，频率高于occasionally，是较为常见的发生频率。',
+          toeicSceneFocus: '有时、时不时',
+        },
+        {
+          word: 'seldom',
+          coreDifference:
+            '指“很少、不常”，频率低于occasionally，接近“rarely”。',
+          toeicSceneFocus: '很少、几乎不',
+        },
+      ],
+    },
+    {
+      word: 'practical',
+      phonetic: '/ˈpræktɪkl/',
+      phrase: 'a practical solution to the problem',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '实际的；实用的；可行的（指侧重于实际行动和可行结果，而非理论或想法；也指人注重实效）',
+      toeicSceneFocus:
+        '商业决策、问题解决、产品设计和方案评估中的核心标准。托业中广泛用于描述有效的建议、可落地的计划、有用的技能，或形容务实的员工和管理者。与“theoretical”（理论的）常形成对比。',
+      keyCollocations: [
+        'practical experience（实践经验）',
+        'practical application（实际应用）',
+        'practical advice（实用的建议）',
+        'practical considerations（实际考虑）',
+        'a practical person（注重实效的人）',
+      ],
+      toeicExampleSentences: [
+        'The training course focuses on providing practical skills that employees can use immediately in their daily work.（培训课程侧重于提供员工可以在日常工作中立即使用的实用技能。）',
+        'While the idea is creative, we need to assess whether it is practical given our current budget and timeline.（虽然这个想法很有创意，但我们需要根据当前的预算和时间表来评估其是否可行。）',
+      ],
+      sceneAssociation:
+        '想象“在讨论一个天马行空的营销方案后，有人提醒‘我们需要一个更实际的（more practical）方案，考虑到有限的预算’”，核心是“能解决现实问题、可操作的”。',
+      confusingWordsComparison: [
+        {
+          word: 'practical',
+          coreDifference: '指“注重实际应用和可行性的”，强调有用和有效。',
+          toeicSceneFocus: '解决方案、技能、建议的实用性、可行性',
+        },
+        {
+          word: 'practicable',
+          coreDifference:
+            '指“可实施的、行得通的”，与feasible同义，但更正式，用于方案、计划等。Practical包含practicable，但还包含“有用的、经验丰富的”等意。',
+          toeicSceneFocus: '计划、方法的可实施性',
+        },
+        {
+          word: 'realistic',
+          coreDifference:
+            '指“现实的、切合实际的”，强调符合客观条件和可能性。一个practical的方案通常是realistic的。',
+          toeicSceneFocus: '目标、期望的合理性、符合现实',
+        },
+      ],
+    },
+    {
+      word: 'equally',
+      phonetic: '/ˈiːkwəli/',
+      phrase: 'share responsibilities equally',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning:
+        '相等地，同样地；此外，也（表示在程度、数量或价值上相同；或用于补充一个同等重要的观点）',
+      toeicSceneFocus:
+        '用于比较、分配资源和列举要点的关键副词。托业阅读中在分析数据（如“equally important factors”）、阐述并列观点或描述公平分配时出现。听力中用于强调两个或多个事项具有相同分量。',
+      keyCollocations: [
+        'equally important（同样重要的）',
+        'divide equally（平均分配）',
+        'equally likely（可能性相同）',
+        'equally true（同样正确）',
+        'treat equally（平等对待）',
+      ],
+      toeicExampleSentences: [
+        'When evaluating candidates, we consider both their technical skills and, equally important, their cultural fit.（在评估候选人时，我们既考虑他们的技术技能，也同样考虑他们的文化适应性。）',
+        'The budget was divided equally among the four departments to ensure fair resource allocation.（预算在四个部门之间平均分配，以确保资源的公平分配。）',
+      ],
+      sceneAssociation:
+        '联想“饼状图上几个部分大小相同，表示‘平均分配（divided equally）’”，或“在列举项目优势时，说‘A点很重要，B点也同样重要（B is equally important）’”，核心是“在比较中强调相同性或并列性”。',
+      confusingWordsComparison: [
+        {
+          word: 'equally',
+          coreDifference:
+            '指“在程度、数量、重要性上相同”，或用于连接并列的同等重要事项。',
+          toeicSceneFocus: '同等重要性、平均分配、并列补充观点',
+        },
+        {
+          word: 'evenly',
+          coreDifference:
+            '常指“均匀地、平坦地”，用于分布、间隔或表面。在“分配”意上可与equally互换，但equally更抽象（如 equally responsible）。',
+          toeicSceneFocus: '均匀分布、间隔相等',
+        },
+        {
+          word: 'similarly',
+          coreDifference:
+            '指“相似地、类似地”，表示方式或情况的相似，而非程度或数量的相等。',
+          toeicSceneFocus: '情况类似、以相似的方式',
+        },
+      ],
+    },
+    {
+      word: 'informal',
+      phonetic: '/ɪnˈfɔːrml/',
+      phrase: 'an informal discussion',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '非正式的；不拘礼节的；口语化的（指不遵循严格规则、程序或礼仪的；也指语言风格随意）',
+      toeicSceneFocus:
+        '描述沟通风格、会议形式、工作环境和公司文化的重要维度。托业听力中可通过对话者的用词和语气判断正式与否；阅读中用于对比不同沟通方式（如“informal feedback” vs. “formal review”）或描述团队氛围。',
+      keyCollocations: [
+        'informal meeting（非正式会议）',
+        'informal dress code（便装规定）',
+        'informal communication（非正式沟通）',
+        'informal atmosphere（轻松的氛围）',
+        'on an informal basis（以非正式的方式）',
+      ],
+      toeicExampleSentences: [
+        'The manager suggested having an informal chat over coffee to discuss the project ideas in a more relaxed setting.（经理建议一起喝杯咖啡，在更轻松的环境中进行非正式交谈，讨论项目想法。）',
+        'The company has an informal culture where employees are encouraged to share ideas openly, even with senior management.（公司文化比较宽松，鼓励员工公开分享想法，即使是与高级管理层。）',
+      ],
+      sceneAssociation:
+        '想象“办公室茶水间里同事间的随意交谈（informal chat）”，或“周五可以穿牛仔裤的‘便装日（casual Friday/informal dress）’”，核心是“没有严格礼节和形式约束的”。',
+      confusingWordsComparison: [
+        {
+          word: 'informal',
+          coreDifference:
+            '是“formal”（正式的）的反义词，指“不正式、随意、不拘礼节”。',
+          toeicSceneFocus: '沟通方式、会议形式、着装、氛围的随意性',
+        },
+        {
+          word: 'casual',
+          coreDifference:
+            '与informal非常接近，常可互换。但casual更强调“休闲、不经意的”，尤其用于着装（casual clothes）；informal更侧重“不遵循正式程序”。',
+          toeicSceneFocus: '休闲着装、随意态度',
+        },
+        {
+          word: 'unofficial',
+          coreDifference:
+            '指“非官方的、未经正式认可的”，强调缺乏权威性。Informal的不一定是unofficial（如非正式会议可能是官方认可的）。',
+          toeicSceneFocus: '缺乏官方认可、非权威来源',
+        },
+      ],
+    },
+    {
+      word: 'greet',
+      phonetic: '/ɡriːt/',
+      phrase: 'greet a visitor at reception',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '问候，迎接；对……作出反应（指向某人表示欢迎或致意；也指以某种方式对某事作出初步反应）',
+      toeicSceneFocus:
+        '前台接待、客户服务、商务会面和职场礼仪的基础场景动词。托业听力中大量出现在访客到达、电话接听、会议开始的对话中。阅读中可能出现在描述公司接待流程或服务标准的文章里。',
+      keyCollocations: [
+        'greet sb warmly（热情问候某人）',
+        'greet a customer（迎接顾客）',
+        'greet the news with（对这一消息报以……反应）',
+        'exchange greetings（互致问候）',
+        'be greeted by（受到……的迎接/面临）',
+      ],
+      toeicExampleSentences: [
+        'All reception staff are trained to greet every visitor with a smile and offer assistance.（所有前台人员都经过培训，要微笑迎接每一位访客并提供帮助。）',
+        'The announcement of the merger was greeted with enthusiasm by investors.（合并的宣布受到了投资者的热烈欢迎。）',
+      ],
+      sceneAssociation:
+        '想象“前台人员站起身，微笑着对走进来的客人说‘您好，欢迎光临’”，核心是“见面时的第一句礼貌性言行”。',
+      confusingWordsComparison: [
+        {
+          word: 'greet',
+          coreDifference:
+            '指“见面时的问候、打招呼”，或“对消息/事物的初步反应”。',
+          toeicSceneFocus: '见面问候、接待、对消息的反应',
+        },
+        {
+          word: 'welcome',
+          coreDifference:
+            '指“欢迎”，比greet更正式、更热烈，常包含使对方感到舒适、被接受的用意。Greet是动作，welcome是态度和氛围。',
+          toeicSceneFocus: '热烈欢迎、使感到宾至如归',
+        },
+        {
+          word: 'salute',
+          coreDifference: '指“敬礼、致敬”，非常正式，用于军队或特定仪式。',
+          toeicSceneFocus: '军事或正式致敬',
+        },
+      ],
+    },
+    {
+      word: 'reflect',
+      phonetic: '/rɪˈflekt/',
+      phrase: 'reflect on past performance',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '1. 反映，显示；2. 认真思考，反思；3. 反射（光、热、声等）',
+      toeicSceneFocus:
+        '多义词。义项1是商业报告和数据解读中的核心，如业绩反映市场状况。义项2是个人和团队学习、绩效评估的关键环节。托业中需根据上下文判断，常见于分析原因、总结经验或描述镜像关系。',
+      keyCollocations: [
+        'reflect on（反思）',
+        'reflect changes in（反映……的变化）',
+        'accurately reflect（准确反映）',
+        'reflect the views of（反映……的观点）',
+        'time to reflect（反思的时间）',
+      ],
+      toeicExampleSentences: [
+        "**（义项1: 反映）** The company's rising stock price reflects investor confidence in its new management team.（公司股价上涨反映了投资者对其新管理团队的信心。）",
+        '**（义项2: 反思）** After completing the project, the team took time to reflect on what went well and what could be improved for next time.（项目完成后，团队花时间反思了哪些做得好，哪些下次可以改进。）',
+      ],
+      sceneAssociation:
+        '**场景1（反映）：** 联想“财报说明会：‘本季度销售额下滑反映了（reflects）市场需求疲软’”。**场景2（反思）：** “在年度评估中，员工被要求‘反思（reflect on）’自己一年的工作”。',
+      confusingWordsComparison: [
+        {
+          word: 'reflect',
+          coreDifference:
+            '作“反映”解时，指“作为……的迹象或体现”。作“反思”解时，指“深入、认真地思考”。',
+          toeicSceneFocus: '数据/结果的体现；总结经验教训的思考',
+        },
+        {
+          word: 'indicate',
+          coreDifference:
+            '指“显示、表明”，强调作为某种迹象，与reflect（反映）义接近，但更直接。',
+          toeicSceneFocus: '显示、指明、作为迹象',
+        },
+        {
+          word: 'ponder',
+          coreDifference:
+            '指“仔细思考、沉思”，与reflect（反思）义接近，但更侧重于长时间的、深入的思考。',
+          toeicSceneFocus: '深思、仔细考虑',
+        },
+      ],
+    },
+    {
+      word: 'liaison',
+      phonetic: '/liˈeɪzɑːn/',
+      phrase: 'serve as a liaison between departments',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '联络；联系人；联络员（指个人或团体之间为沟通与合作而建立的连接或进行联系的人）',
+      toeicSceneFocus:
+        '项目管理、跨部门合作、客户关系与公共关系中的正式角色。托业阅读中出现在描述组织架构、项目团队组成、或公司与外部机构（如政府、媒体）接口的语境中。',
+      keyCollocations: [
+        'liaison officer（联络官）',
+        'act as a liaison（担任联络人）',
+        'liaison between A and B（A与B之间的联络）',
+        'public liaison（公共联络）',
+        'in liaison with（与……联络）',
+      ],
+      toeicExampleSentences: [
+        'Her role in the project is to be the liaison between the marketing team and the software development team.（她在项目中的角色是担任营销团队和软件开发团队之间的联络人。）',
+        'The company has established a close liaison with local universities to recruit fresh talent.（公司与当地大学建立了密切的联系，以招募新人才。）',
+      ],
+      sceneAssociation:
+        '想象“一个组织结构图上，在两个部门之间有一个标着‘联络员（Liaison）’的虚线框”，核心是“沟通的桥梁和协调的枢纽”。',
+      confusingWordsComparison: [
+        {
+          word: 'liaison',
+          coreDifference:
+            '指“为促进合作而进行的联系或担任此职责的人”，是正式的角色或活动。',
+          toeicSceneFocus: '正式联络角色、联系人、协调职能',
+        },
+        {
+          word: 'coordinator',
+          coreDifference:
+            '指“协调员”，负责组织、安排和整合多方工作，职责比liaison（侧重沟通）更广。Liaison常是coordinator工作的一部分。',
+          toeicSceneFocus: '工作统筹、项目协调',
+        },
+        {
+          word: 'intermediary',
+          coreDifference:
+            '指“中间人、调解人”，常指在双方之间传递信息或进行谈判的第三方。Liaison不一定涉及第三方，可以是内部部门间的直接联系人。',
+          toeicSceneFocus: '谈判中间人、第三方调解',
+        },
+      ],
+    },
+    {
+      word: 'prior',
+      phonetic: '/ˈpraɪər/',
+      phrase: 'submit the report prior to the meeting',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '在先的，在前的；优先的（指时间上更早发生的，或顺序上更重要的）',
+      toeicSceneFocus:
+        '安排日程、设定截止日期、说明条件和程序时的关键时间副词/形容词。托业听力中大量出现在关于会议准备、旅行安排、任务顺序的对话里；阅读中在合同条款、通知、操作指南中常见。',
+      keyCollocations: [
+        'prior to（在……之前）',
+        'prior experience（先前经验）',
+        'prior approval（事先批准）',
+        'prior commitment（先前的承诺）',
+        'without prior notice（未经事先通知）',
+      ],
+      toeicExampleSentences: [
+        'All participants are requested to read the briefing materials prior to the conference call.（要求所有参与者在电话会议之前阅读简报材料。）',
+        'Candidates with prior experience in the financial industry will be given preference.（具有金融行业先前经验的候选人将获得优先考虑。）',
+      ],
+      sceneAssociation:
+        '想象“邮件末尾写着‘请在会议之前（prior to the meeting）将演示稿发给我’”，或“申请表上要求填写‘先前工作经验（prior work experience）’”，核心是“在某个时间点或顺序之前”。',
+      confusingWordsComparison: [
+        {
+          word: 'prior',
+          coreDifference:
+            '正式用语，指“在前的”，常用于“prior to”（在…之前）短语中，与“before”同义但更正式。',
+          toeicSceneFocus: '正式场合表示“在…之前”、先前经验',
+        },
+        {
+          word: 'previous',
+          coreDifference:
+            '也指“先前的”，可作定语（previous job）或与“to”连用（previous to），与prior常互换，但prior更显正式和商务化。',
+          toeicSceneFocus: '上一个、先前的（通用）',
+        },
+        {
+          word: 'former',
+          coreDifference:
+            '指“前者的”（与“latter”后者相对），或“以前的”（尤指不再担任的职务，如 former CEO）。',
+          toeicSceneFocus: '前者、前任的',
+        },
+      ],
+    },
+    {
+      word: 'motivate',
+      phonetic: '/ˈmoʊtɪveɪt/',
+      phrase: 'motivate the sales team',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '激发，激励；成为……的动机（指提供动力、理由或热情，促使某人做某事或更努力地工作）',
+      coreMeaning:
+        '激发，激励；成为……的动机（指提供动力、理由或热情，促使某人做某事或更努力地工作）',
+      toeicSceneFocus:
+        '领导力、人力资源管理和团队绩效的核心动词。托业阅读中出现在讨论激励理论、奖励制度、管理技巧、或员工敬业度的文章里。听力中常是管理者讨论如何提升团队士气的主题。',
+      keyCollocations: [
+        'motivate sb to do sth（激励某人做某事）',
+        'highly motivated（积极性很高的）',
+        'self-motivated（自我激励的）',
+        'motivate staff（激励员工）',
+        'a motivating factor（激励因素）',
+      ],
+      toeicExampleSentences: [
+        'A good leader knows how to motivate team members by recognizing their achievements and providing growth opportunities.（优秀的领导者懂得如何通过认可团队成员的成就和提供成长机会来激励他们。）',
+        'The chance to work on innovative projects is what motivates many engineers to join our company.（从事创新项目的机会是激励许多工程师加入我们公司的原因。）',
+      ],
+      sceneAssociation:
+        '想象“团队经理在季度冲刺前召开动员会，用鼓舞人心的话语和奖励承诺来‘激励（motivate）’团队”，核心是“提供内在或外在驱动力以提升绩效和投入度”。',
+      confusingWordsComparison: [
+        {
+          word: 'motivate',
+          coreDifference:
+            '指“提供做某事的动力或理由”，可以是内在的（兴趣）或外在的（奖励）。',
+          toeicSceneFocus: '提供动力、激励员工、激发行动',
+        },
+        {
+          word: 'inspire',
+          coreDifference:
+            '指“鼓舞、启发”，通常通过榜样、愿景或情感来激发热情、创造力或钦佩，层次可能更高。',
+          toeicSceneFocus: '鼓舞人心、激发灵感、精神引领',
+        },
+        {
+          word: 'stimulate',
+          coreDifference:
+            '指“刺激、促进”，侧重于激发活动、增长或反应，可用于经济、思维等更广泛的领域。',
+          toeicSceneFocus: '刺激（经济、需求、思考）',
+        },
+      ],
+    },
+    {
+      word: 'agency',
+      phonetic: '/ˈeɪdʒənsi/',
+      phrase: 'a government regulatory agency',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '1. 代理机构；中介机构；2. （政府的）专门机构，署，局',
+      toeicSceneFocus:
+        '高频商务与公共事务词汇。在托业阅读和听力中，可能出现在讨论外包服务（如travel agency旅行社，advertising agency广告公司）、政府监管、公共服务或商业合作模式等场景中。',
+      keyCollocations: [
+        'advertising agency（广告公司）',
+        'employment agency（职业介绍所）',
+        'news agency（通讯社）',
+        'government agency（政府机构）',
+        'act as an agent for（作为……的代理）',
+      ],
+      toeicExampleSentences: [
+        '**（代理机构）** Our company has hired a marketing agency to handle the new product launch campaign.（我们公司聘请了一家营销机构来处理新产品发布活动。）',
+        '**（政府机构）** All pharmaceutical products must be approved by the relevant health and safety agency before they can be sold.（所有药品在销售前必须获得相关健康安全机构的批准。）',
+      ],
+      sceneAssociation:
+        '联想“企业将广告业务外包给‘广告代理（advertising agency）’”，或“新闻中提到的‘环境保护局（Environmental Protection Agency）’”，核心是“代表他人行事或提供特定服务的组织”。',
+      confusingWordsComparison: [
+        {
+          word: 'agency',
+          coreDifference:
+            '指“代理机构”或“政府专门机构”，强调其代理功能或特定职责。',
+          toeicSceneFocus: '商业中介服务、政府职能部门',
+        },
+        {
+          word: 'company/firm',
+          coreDifference: '泛指“公司、企业”，不一定具有代理性质。',
+          toeicSceneFocus: '泛指各类商业企业',
+        },
+        {
+          word: 'organization',
+          coreDifference: '泛指“组织、机构”，范围最广，可包含agency。',
+          toeicSceneFocus: '任何类型的组织',
+        },
+      ],
+    },
+    {
+      word: 'committee',
+      phonetic: '/kəˈmɪti/',
+      phrase: 'serve on the budget committee',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '委员会（指为处理特定事务而由一群人正式组成的团体）',
+      toeicSceneFocus:
+        '公司治理、项目管理和组织决策的核心词。托业中常见于描述公司内部各类委员会（如executive committee执行委员会，safety committee安全委员会）的活动、会议、报告或决策过程。',
+      keyCollocations: [
+        'executive committee（执行委员会）',
+        'advisory committee（咨询委员会）',
+        'committee meeting（委员会会议）',
+        'chair a committee（担任委员会主席）',
+        'committee member（委员会成员）',
+      ],
+      toeicExampleSentences: [
+        'The proposal will be reviewed by the ethics committee before any decision is made.（在做出任何决定之前，该提案将由道德委员会审查。）',
+        'She was appointed to head the newly formed committee on workplace diversity.（她被任命领导新成立的工作场所多元化委员会。）',
+      ],
+      sceneAssociation:
+        '想象“公司董事会下设的‘薪酬委员会（compensation committee）’正在开会讨论高管薪酬方案”，核心是“为专项任务而设立的正式决策或咨询小组”。',
+      confusingWordsComparison: [
+        {
+          word: 'committee',
+          coreDifference:
+            '指正式成立的“委员会”，通常有特定任务，决策更具正式性。',
+          toeicSceneFocus: '公司内部正式决策/咨询团体',
+        },
+        {
+          word: 'team',
+          coreDifference:
+            '指为完成项目或任务而组建的“团队”，结构可能更灵活，不一定有正式决策权。',
+          toeicSceneFocus: '项目执行团队、工作组',
+        },
+        {
+          word: 'board',
+          coreDifference:
+            '通常指“董事会（board of directors）”，是公司的最高决策机构，级别高于一般committee。',
+          toeicSceneFocus: '公司董事会、理事会',
+        },
+      ],
+    },
+    {
+      word: 'consider',
+      phonetic: '/kənˈsɪdər/',
+      phrase: 'consider all available options',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '考虑；认为；细想（指认真思考某事或将某人/某物视为具有某种特质）',
+      toeicSceneFocus:
+        '商务沟通、决策和评估中的核心动词。在托业听力中，常见于讨论方案、评估候选人、权衡利弊的对话；在阅读中，出现在建议、报告或会议纪要中，表示对某事的思考或看法。',
+      keyCollocations: [
+        'consider doing sth（考虑做某事）',
+        'be considered to be（被认为是）',
+        'under consideration（在考虑中）',
+        'consider it done（包在我身上）',
+        'all things considered（通盘考虑后）',
+      ],
+      toeicExampleSentences: [
+        '**（思考）** The management will consider your proposal and give you feedback by next week.（管理层将考虑你的提案，并在下周前给你反馈。）',
+        '**（认为）** She is widely considered to be one of the top experts in her field.（她被广泛认为是其领域的顶级专家之一。）',
+      ],
+      sceneAssociation:
+        '想象“在决策会议上，大家正在‘仔细考虑（carefully consider）’不同方案的优缺点”，或“一封邮件中写道‘我们‘认为（consider）’您的建议很有价值’”，核心是“进行审慎思考或形成某种判断”。',
+      confusingWordsComparison: [
+        {
+          word: 'consider',
+          coreDifference:
+            '指“认真思考”或“将……视为”，既可表思考过程，也可表判断结果。',
+          toeicSceneFocus: '思考方案、评估意见、形成看法',
+        },
+        {
+          word: 'think',
+          coreDifference:
+            '更通用、口语化的“想、认为”。Consider更正式、更侧重深思熟虑。',
+          toeicSceneFocus: '一般性的想法、观点',
+        },
+        {
+          word: 'ponder/deliberate',
+          coreDifference:
+            '指“仔细思考、深思”，比consider更正式，强调思考的深度和耗时。',
+          toeicSceneFocus: '深度思考、慎重权衡（更书面化）',
+        },
+      ],
+    },
+    {
+      word: 'reference',
+      phonetic: '/ˈrefrəns/',
+      phrase: 'check professional references',
+      partOfSpeech: 'n. 名词 / v. 动词',
+      coreMeaning:
+        'n. 1. 参考；提及；2. 推荐信；证明人；3. 参考书目 v. 参考；引用',
+      toeicSceneFocus:
+        '职场与学术双场景高频词。在托业商务场景中，主要指“推荐信/证明人”（求职流程）和“参考、查阅”（文件、数据）。也常见于报告或邮件中，表示“参照某附件/文件”。',
+      keyCollocations: [
+        'for your reference（供您参考）',
+        'reference number（参考编号）',
+        'letter of reference（推荐信）',
+        'with reference to（关于，参照）',
+        'make reference to（提及，参考）',
+      ],
+      toeicExampleSentences: [
+        '**（n. 推荐信）** Please provide at least two professional references with your job application.（请在求职申请时提供至少两份专业推荐信。）',
+        '**（n. 参考）** For more details, see the attached document for reference.（更多细节，请参考所附文件。）',
+        '**（v. 引用）** The report references several recent studies on consumer behavior.（该报告引用了最近几项关于消费者行为的研究。）',
+      ],
+      sceneAssociation:
+        '**场景1（求职）：** “HR要求提供前雇主的‘推荐信（reference）’”。**场景2（文件）：** 邮件正文写“Please find the data **for your reference**.”。**场景3（查阅）：** “在手册中‘查阅（reference）’技术规格”。',
+      confusingWordsComparison: [
+        {
+          word: 'reference',
+          coreDifference:
+            '名词含义丰富，核心是“用以参照或证明的信息、人或文件”。动词意为“参照”。',
+          toeicSceneFocus: '推荐信、证明人、文件参照、引用',
+        },
+        {
+          word: 'recommendation',
+          coreDifference:
+            '主要指“推荐、建议”的行为或内容，特指“推荐信”时与reference letter同义。',
+          toeicSceneFocus: '一般性推荐、建议信',
+        },
+        {
+          word: 'citation',
+          coreDifference:
+            '特指学术上“引用、引文”，格式要求严格，比reference（泛指参考）更具体。',
+          toeicSceneFocus: '学术引用、引文格式',
+        },
+      ],
+    },
+    {
+      word: 'determine',
+      phonetic: '/dɪˈtɜːrmɪn/',
+      phrase: 'determine the root cause',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '确定；查明；决定；决心（指通过调查或分析得出确切结论，或下定决心做某事）',
+      coreMeaning:
+        '确定；查明；决定；决心（指通过调查或分析得出确切结论，或下定决心做某事）',
+      toeicSceneFocus:
+        '问题解决、调查分析和战略决策中的核心动词。托业中常见于质量检查、事故调查、市场研究、合同谈判等需要查明事实、做出关键决定的场景。',
+      keyCollocations: [
+        'determine the cause（查明原因）',
+        'determine the price（确定价格）',
+        'determined to do sth（决心做某事）',
+        'be determined by（由……决定）',
+        'final determination（最终决定）',
+      ],
+      toeicExampleSentences: [
+        '**（查明）** An investigation is underway to determine the factors that led to the system failure.（一项调查正在进行中，以查明导致系统故障的因素。）',
+        '**（决心）** Despite the challenges, the team is determined to meet the project deadline.（尽管面临挑战，团队仍决心按时完成项目。）',
+      ],
+      sceneAssociation:
+        '联想“工程师正在分析数据，以‘确定（determine）’设备故障的根本原因”，或“创业者‘下定决心（be determined）’要克服所有困难”，核心是“通过努力得出明确结论或树立坚定意向”。',
+      confusingWordsComparison: [
+        {
+          word: 'determine',
+          coreDifference:
+            '强调“通过调查、分析或计算来明确地决定或查明”，或表示“坚定的决心”。',
+          toeicSceneFocus: '调查分析后确定、坚定的决策或决心',
+        },
+        {
+          word: 'decide',
+          coreDifference:
+            '更通用的“决定”，强调在多个选项中做出选择，不一定涉及深入调查。',
+          toeicSceneFocus: '一般性选择、做出决定',
+        },
+        {
+          word: 'ascertain',
+          coreDifference:
+            '非常正式，意为“查明、弄清楚”，强调通过努力发现事实真相，与determine（查明义）近义但更书面。',
+          toeicSceneFocus: '正式地查明、弄清事实',
+        },
+      ],
+    },
+    {
+      word: 'appear',
+      phonetic: '/əˈpɪr/',
+      phrase: 'appear to be a viable solution',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '1. 出现，显现；2. 似乎，看来',
+      coreMeaning: '1. 出现，显现；2. 似乎，看来',
+      toeicSceneFocus:
+        '多功能常用动词。第一义“出现”可用于描述数据、趋势或人物的出现（如“The error appears on the screen.”）。第二义“似乎”在商业分析、报告和沟通中极其高频，用于表达基于迹象的初步判断，常体现谨慎语气。',
+      keyCollocations: [
+        'appear to be（似乎是）',
+        'it appears that（看来……）',
+        'first appear（首次出现）',
+        'appear in public（公开露面）',
+        'appear on the market（上市）',
+      ],
+      toeicExampleSentences: [
+        '**（似乎）** The new marketing strategy appears to be effective, based on the initial sales figures.（根据初步销售数据，新的营销策略似乎是有效的。）',
+        '**（出现）** Several new competitors have appeared in the market over the past year.（过去一年中，市场上出现了几家新的竞争对手。）',
+      ],
+      sceneAssociation:
+        '**场景1（似乎）：** “报告结论：‘数据‘显示（appear to show）’客户满意度有所提升’”（谨慎表述）。**场景2（出现）：** “新闻：‘新产品‘亮相（appear）’于国际展会’”。',
+      confusingWordsComparison: [
+        {
+          word: 'appear',
+          coreDifference:
+            '作“似乎”解时，强调从外部迹象得出的印象，可能并非完全确定。是seem的常用同义词。',
+          toeicSceneFocus: '基于观察的初步判断、谨慎表述',
+        },
+        {
+          word: 'seem',
+          coreDifference: '与appear（似乎义）基本同义，可互换，更口语化。',
+          toeicSceneFocus: '通用表达“似乎”',
+        },
+        {
+          word: 'look',
+          coreDifference:
+            '也表“看起来”，但更侧重于视觉印象。Appear和seem可基于任何迹象（数据、感觉等）。',
+          toeicSceneFocus: '视觉上的看起来',
+        },
+      ],
+    },
+    {
+      word: 'expand',
+      phonetic: '/ɪkˈspænd/',
+      phrase: 'expand into new markets',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '扩大；扩张；扩展（指在规模、范围、体积或业务上的增长）',
+      coreMeaning: '扩大；扩张；扩展（指在规模、范围、体积或业务上的增长）',
+      toeicSceneFocus:
+        '企业发展战略核心动词。托业中高频出现在描述公司增长、市场拓展（geographic expansion）、产品线延伸、团队规模增加或业务范围拓宽等语境。',
+      keyCollocations: [
+        'expand the business（拓展业务）',
+        "expand one's horizons（开阔眼界）",
+        'overseas expansion（海外扩张）',
+        'expand production capacity（扩大产能）',
+        'opportunity for expansion（扩张机会）',
+      ],
+      toeicExampleSentences: [
+        'The company plans to expand its operations into Southeast Asia next year.（公司计划明年将业务扩展到东南亚。）',
+        'To meet growing demand, we need to expand our manufacturing facilities.（为了满足不断增长的需求，我们需要扩大生产设施。）',
+      ],
+      sceneAssociation:
+        '想象“公司全球战略地图上，箭头从本土指向多个海外国家，象征着‘市场扩张（market expansion）’”，核心是“在空间、规模或范围上变得更大”。',
+      confusingWordsComparison: [
+        {
+          word: 'expand',
+          coreDifference:
+            '指“从内部或中心向外扩大”，强调规模、范围、体积或业务的增长。',
+          toeicSceneFocus: '业务增长、市场拓展、规模扩大',
+        },
+        {
+          word: 'extend',
+          coreDifference:
+            '指“在长度、时间或范围上延长”，强调线性或时间上的拉长（如extend a deadline延长截止日期）。',
+          toeicSceneFocus: '延长（时间、期限）、伸展（范围）',
+        },
+        {
+          word: 'grow',
+          coreDifference:
+            '泛指“生长、增长”，可以是规模、数量、价值的自然或有机增加，比expand更通用。',
+          toeicSceneFocus: '泛指增长、发展',
+        },
+      ],
+    },
+    {
+      word: 'launch',
+      phonetic: '/lɔːntʃ/',
+      phrase: 'launch a new advertising campaign',
+      partOfSpeech: 'v. 动词 / n. 名词',
+      coreMeaning: 'v. 发起；推出；发射 n. 发起；发行；发射',
+      coreMeaning: 'v. 发起；推出；发射 n. 发起；发行；发射',
+      toeicSceneFocus:
+        '产品生命周期和市场营销活动的关键动词。托业中几乎必然出现在描述新产品/服务上市、新项目启动、新倡议开始或新宣传活动展开的场景。',
+      keyCollocations: [
+        'launch a product（推出产品）',
+        'launch date（发布日期）',
+        'successful launch（成功推出）',
+        'official launch（正式发布）',
+        'launch an investigation（展开调查）',
+      ],
+      toeicExampleSentences: [
+        '**（v. 推出）** The company will launch its latest smartphone model at the international tech expo.（公司将在国际科技博览会上推出其最新的智能手机型号。）',
+        '**（n. 发布）** The product launch was accompanied by a major social media promotion.（产品发布伴随着一场大型的社交媒体推广。）',
+      ],
+      sceneAssociation:
+        '想象“一场盛大的新闻发布会，聚光灯下，CEO揭幕新产品，标志着‘产品发布（product launch）’”，核心是“一项新事物正式开始的激动人心时刻”。',
+      confusingWordsComparison: [
+        {
+          word: 'launch',
+          coreDifference:
+            '特指“正式、公开地开始或推出”新事物（产品、活动、项目），强调起始点和公开性。',
+          toeicSceneFocus: '新产品/项目/活动的正式推出',
+        },
+        {
+          word: 'start/begin',
+          coreDifference: '泛指“开始”，更通用，不强调公开或正式性。',
+          toeicSceneFocus: '一般性的开始',
+        },
+        {
+          word: 'release',
+          coreDifference:
+            '指“发布、发行”，常与产品、软件、信息搭配，强调使其可用或公开。Launch更侧重于整个上市活动。',
+          toeicSceneFocus: '软件/信息/产品的发布',
+        },
+      ],
+    },
+    {
+      word: 'seek',
+      phonetic: '/siːk/',
+      phrase: 'seek expert advice',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '寻找；寻求；追求（正式用语，指努力寻找或试图获得某物）',
+      coreMeaning: '寻找；寻求；追求（正式用语，指努力寻找或试图获得某物）',
+      toeicSceneFocus:
+        '正式商务沟通中的高频动词。用于表达公司或个人的目标、需求或行动，如“寻求投资（seek investment）”、“寻求合作伙伴（seek partners）”、“征求意见（seek advice）”或“寻求解决方案（seek solutions）”。',
+      keyCollocations: [
+        'seek approval（寻求批准）',
+        'seek employment（求职）',
+        'seek to do sth（力图做某事）',
+        'seek refuge（寻求庇护）',
+        'actively seeking（积极寻找）',
+      ],
+      toeicExampleSentences: [
+        'The startup is actively seeking venture capital to fund its next phase of growth.（这家初创公司正在积极寻求风险投资，为其下一阶段的增长提供资金。）',
+        'We encourage employees to seek feedback from their colleagues to foster continuous improvement.（我们鼓励员工向同事寻求反馈，以促进持续改进。）',
+      ],
+      sceneAssociation:
+        '想象“公司官网‘联系我们’页面上的标题：‘寻求业务合作（Seeking Business Cooperation）’”，或“招聘广告开头：‘诚聘（Seeking）……’”，核心是“正式、主动地尝试获得所需”。',
+      confusingWordsComparison: [
+        {
+          word: 'seek',
+          coreDifference:
+            '正式用语，意为“努力寻找或试图获得”，强调目的性和努力的过程。',
+          toeicSceneFocus: '正式寻求（建议、批准、投资、合作等）',
+        },
+        {
+          word: 'look for',
+          coreDifference: '通用口语表达“寻找”，可互换但不如seek正式。',
+          toeicSceneFocus: '日常寻找',
+        },
+        {
+          word: 'search for',
+          coreDifference:
+            '指“仔细搜寻、搜查”，通常付出更多努力，范围可能更不确定。',
+          toeicSceneFocus: '仔细搜寻、检索',
+        },
+      ],
+    },
+    {
       word: 'convention',
       phonetic: '/kənˈvenʃn/（音标）',
       partOfSpeech: 'n. 名词',
@@ -16746,6 +19918,1327 @@ export const wordData = {
   ],
   business_transaction: [
     {
+      word: 'comparison',
+      phonetic: '/kəmˈpærɪsn/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '比较；对照；对比；类似；相似性（托业中侧重商务场景的“数据、产品、方案对比”含义）',
+      toeicSceneFocus:
+        '多出现于市场分析、产品评估、商务报告等语境，是托业高频名词，阅读（数据分析报告、竞品分析文档）和听力（商务会议、方案汇报）中常考查“in comparison with、make a comparison、comparison table”等搭配',
+      keyCollocations: [
+        'in comparison with（与……相比）',
+        'make a comparison（进行比较）',
+        'comparison table（对比表）',
+        'price comparison（价格对比）',
+        'product comparison（产品对比）',
+      ],
+      toeicExampleSentences: [
+        'In comparison with the previous quarter, our sales volume has increased by 20%.（与上季度相比，我们的销售额增长了20%。）',
+        'The marketing department needs to make a detailed comparison of the two product promotion plans.（市场部需要对这两个产品推广方案做详细对比。）',
+        'This comparison table clearly shows the differences between our products and those of competitors.（这份对比表清晰展示了我们产品与竞品的差异。）',
+        'Many consumers tend to do price comparison before making a purchase decision.（许多消费者在做出购买决定前，都会进行价格对比。）',
+      ],
+      sceneAssociation:
+        '可以联想“分析师制作product comparison（产品对比）报告”的画面，或“采购人员做price comparison（价格对比）筛选供应商”，结合“商务场景中的对比分析”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'comparison',
+          coreDifference:
+            '侧重“将两个或多个事物放在一起对比，找出异同的行为或结果”，名词词性，强调对比的过程或结论',
+          toeicSceneFocus: '数据对比、竞品分析、方案评估场景',
+        },
+        {
+          word: 'contrast',
+          coreDifference:
+            '侧重“强调两个事物之间的明显差异，形成鲜明对照”，可作名词或动词，语气更强烈',
+          toeicSceneFocus: '差异对比、优劣对照、鲜明反差场景',
+        },
+        {
+          word: 'similarity',
+          coreDifference:
+            '侧重“两个或多个事物之间的相似之处”，名词词性，与comparison的“全面对比”不同，只聚焦相似点',
+          toeicSceneFocus: '事物相似性分析、同类产品共性总结场景',
+        },
+      ],
+    },
+    {
+      word: 'component',
+      phonetic: '/kəmˈpəʊnənt/',
+      partOfSpeech: 'n. 名词；adj. 形容词',
+      coreMeaning:
+        'n. 组成部分；成分；部件；组件；adj. 组成的；构成的（托业中侧重商务场景的“设备部件、系统组件”含义）',
+      toeicSceneFocus:
+        '多出现于供应链管理、设备生产、系统研发等语境，是托业高频名词，阅读（产品说明书、采购清单、技术文档）和听力（生产沟通、设备维护）中常考查“key component、component parts、electronic component”等搭配',
+      keyCollocations: [
+        'key component（核心组件）',
+        'component parts（零部件）',
+        'electronic component（电子元件）',
+        'system component（系统组件）',
+        'essential component（必要组成部分）',
+      ],
+      toeicExampleSentences: [
+        'The shortage of key components has led to the delay of the production schedule.（核心组件短缺导致生产进度延误。）',
+        'This machine is made up of more than 200 component parts from different suppliers.（这台机器由来自不同供应商的200多个零部件组成。）',
+        'Our company imports high-quality electronic components to ensure the stability of our products.（我司进口高质量电子元件，确保产品的稳定性。）',
+        'Teamwork is an essential component of a successful business project.（团队合作是商业项目成功的必要组成部分。）',
+      ],
+      sceneAssociation:
+        '可以联想“技术人员检查设备的key component（核心组件）”的画面，或“采购人员核对component parts（零部件）采购清单”，结合“商务场景中的组成部件”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'component',
+          coreDifference:
+            '侧重“构成某个整体的独立部件、组件或要素，可指物理零件或抽象要素”，名词词性为主',
+          toeicSceneFocus: '设备零部件、系统组件、项目要素场景',
+        },
+        {
+          word: 'part',
+          coreDifference:
+            '泛指“整体的一部分”，含义宽泛，口语化强，可指任何类型的部分，适用范围更广',
+          toeicSceneFocus: '日常物品部件、项目环节、整体局部场景',
+        },
+        {
+          word: 'element',
+          coreDifference:
+            '侧重“构成整体的基本、基础要素或元素”，可指抽象概念（如文化元素）或具体物质',
+          toeicSceneFocus: '基础要素、文化元素、化学元素场景',
+        },
+      ],
+    },
+    {
+      word: 'existing',
+      phonetic: '/ɪɡˈzɪstɪŋ/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '现存的；现有的；已存在的（托业中侧重商务场景的“现有制度、现有客户、现有资源”含义）',
+      toeicSceneFocus:
+        '多出现于企业管理、资源调配、客户维护等语境，是托业高频形容词，阅读（规章制度、客户名单、资源报告）和听力（商务会议、方案讨论）中常考查“existing customers、existing system、existing policy”等搭配',
+      keyCollocations: [
+        'existing customers（现有客户）',
+        'existing system（现有系统）',
+        'existing policy（现有政策）',
+        'existing resources（现有资源）',
+        'existing market（现有市场）',
+      ],
+      toeicExampleSentences: [
+        'We should focus on serving existing customers instead of only attracting new ones.（我们应该专注服务现有客户，而不是只吸引新客户。）',
+        'The existing system is outdated and needs to be upgraded to improve work efficiency.（现有系统已经过时，需要升级以提升工作效率。）',
+        'The new regulation will not affect the rights and interests of existing employees.（新规定不会影响现有员工的权益。）',
+        'We need to make full use of existing resources to reduce the cost of the new project.（我们需要充分利用现有资源，降低新项目的成本。）',
+      ],
+      sceneAssociation:
+        '可以联想“销售团队维护existing customers（现有客户）”的画面，或“技术人员评估existing system（现有系统）的升级需求”，结合“商务场景中的现有事物”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'existing',
+          coreDifference:
+            '侧重“当前已经存在、正在使用或生效的事物”，形容词词性，强调“当前存在的状态”',
+          toeicSceneFocus: '现有客户、现有系统、现有政策场景',
+        },
+        {
+          word: 'current',
+          coreDifference:
+            '侧重“当下正在发生、进行或适用的事物”，形容词词性，强调“时效性”，可与existing互换，但current更侧重“当前的”',
+          toeicSceneFocus: '当前市场、当前政策、当前趋势场景',
+        },
+        {
+          word: 'present',
+          coreDifference:
+            '侧重“目前存在的、在场的”，形容词词性，语气更正式，可用于抽象或具体事物',
+          toeicSceneFocus: '当前情况、在场人员、现存问题场景',
+        },
+      ],
+    },
+    {
+      word: 'proceed',
+      phonetic: '/prəˈsiːd/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '继续进行；着手；开展；行进；前进（托业中侧重商务场景的“项目推进、流程开展”含义）',
+      toeicSceneFocus:
+        '多出现于项目管理、流程执行、商务谈判等语境，是托业高频动词，阅读（项目方案、流程说明、合同条款）和听力（会议安排、工作指示）中常考查“proceed with、proceed to do sth.、proceed according to plan”等搭配',
+      keyCollocations: [
+        'proceed with（继续推进；着手进行）',
+        'proceed to do sth.（接着做某事）',
+        'proceed according to plan（按计划进行）',
+        'proceed to the next step（进入下一步）',
+        'proceed cautiously（谨慎行事）',
+      ],
+      toeicExampleSentences: [
+        'We can proceed with the project only after receiving the approval from the board of directors.（只有获得董事会批准后，我们才能推进这个项目。）',
+        'After finishing the market research, we will proceed to develop the new product.（完成市场调研后，我们将着手研发新产品。）',
+        'The meeting will proceed according to the agenda distributed yesterday.（会议将按照昨天分发的议程进行。）',
+        'Before signing the contract, we need to proceed cautiously to avoid potential risks.（签订合同前，我们需要谨慎行事，规避潜在风险。）',
+      ],
+      sceneAssociation:
+        '可以联想“项目组获得批准后proceed with the project（推进项目）”的画面，或“会议主持人宣布proceed to the next step（进入下一步）”，结合“商务场景中的继续推进”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'proceed',
+          coreDifference:
+            '侧重“在获得许可、完成前期步骤后，继续开展某项工作或流程”，不及物动词，常与介词搭配使用',
+          toeicSceneFocus: '项目推进、流程执行、会议进展场景',
+        },
+        {
+          word: 'continue',
+          coreDifference:
+            '泛指“不间断地继续做某事”，可作及物或不及物动词，口语化强，适用范围更广，无需强调前期条件',
+          toeicSceneFocus: '日常工作、持续任务、活动延续场景',
+        },
+        {
+          word: 'advance',
+          coreDifference:
+            '侧重“向前推进、促进事物发展”，可作多种词性，强调“推动事物进步”的动作',
+          toeicSceneFocus: '项目进展、技术进步、业务拓展场景',
+        },
+      ],
+    },
+    {
+      word: 'prevent',
+      phonetic: '/prɪˈvent/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '预防；防止；阻止；阻碍（托业中侧重商务场景的“风险预防、问题阻止”含义）',
+      toeicSceneFocus:
+        '多出现于风险管理、质量控制、安全管理等语境，是托业高频动词，阅读（风险报告、安全手册、质量标准）和听力（会议讨论、安全培训）中常考查“prevent...from doing sth.、prevent risks、prevent accidents”等搭配',
+      keyCollocations: [
+        'prevent...from doing sth.（阻止……做某事；防止……发生）',
+        'prevent risks（预防风险）',
+        'prevent accidents（防止事故）',
+        'prevent errors（避免错误）',
+        'prevent the spread（防止扩散）',
+      ],
+      toeicExampleSentences: [
+        'We need to take effective measures to prevent the spread of false information about the company.（我们需要采取有效措施，防止关于公司的虚假信息扩散。）',
+        'Regular equipment maintenance can prevent potential failures and reduce production losses.（定期设备维护可以预防潜在故障，减少生产损失。）',
+        'The new security system is designed to prevent unauthorized personnel from entering the office.（这套新安保系统旨在阻止未经授权的人员进入办公室。）',
+        'Strict quality checks can prevent defective products from being delivered to customers.（严格的质量检测可以避免次品流向客户。）',
+      ],
+      sceneAssociation:
+        '可以联想“技术人员维护设备prevent potential failures（预防潜在故障）”的画面，或“安保人员执行制度prevent unauthorized entry（阻止未经授权进入）”，结合“商务场景中的预防阻止”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'prevent',
+          coreDifference:
+            '侧重“采取措施提前阻止某事发生或某物发展”，及物动词，常与from搭配，强调“事前预防”',
+          toeicSceneFocus: '风险预防、事故防止、错误规避场景',
+        },
+        {
+          word: 'avoid',
+          coreDifference:
+            '侧重“主动避开不愉快、危险或不必要的事物”，及物动词，强调“主动规避”',
+          toeicSceneFocus: '避免冲突、规避风险、避开问题场景',
+        },
+        {
+          word: 'stop',
+          coreDifference:
+            '泛指“阻止正在发生的动作或过程”，及物或不及物动词，口语化强，强调“事中制止”',
+          toeicSceneFocus: '制止错误、停止流程、阻止行为场景',
+        },
+      ],
+    },
+    {
+      word: 'exclusive',
+      phonetic: '/ɪkˈskluːsɪv/',
+      partOfSpeech: 'adj. 形容词；n. 名词',
+      coreMeaning:
+        'adj. 独有的；排他的；专属的；高档的；n. 独家新闻；独家报道（托业中侧重商务场景的“专属权利、独家合作”含义）',
+      toeicSceneFocus:
+        '多出现于商务合作、品牌营销、合同条款等语境，是托业高频形容词，阅读（合作协议、品牌宣传、合同条款）和听力（商务谈判、营销推广）中常考查“exclusive right、exclusive agent、exclusive cooperation”等搭配',
+      keyCollocations: [
+        'exclusive right（专属权；独占权）',
+        'exclusive agent（独家代理商）',
+        'exclusive cooperation（独家合作）',
+        'exclusive contract（独家合同）',
+        'exclusive product（专属产品）',
+      ],
+      toeicExampleSentences: [
+        "Our company has obtained the exclusive right to sell this brand's products in the Asian market.（我司获得了该品牌产品在亚洲市场的独家销售权。）",
+        'We signed an exclusive contract with a local firm to promote our new service.（我们与一家本地公司签订了独家合同，推广我们的新服务。）',
+        'This shopping mall is home to many exclusive brands that are not available elsewhere.（这家购物中心汇集了许多别处买不到的高档品牌。）',
+        'As the exclusive agent of the manufacturer, we are responsible for all sales in this region.（作为制造商的独家代理商，我们负责该地区的全部销售业务。）',
+      ],
+      sceneAssociation:
+        '可以联想“商务团队签订exclusive cooperation（独家合作）协议”的画面，或“品牌方授予企业exclusive right（专属权）”，结合“商务场景中的专属排他”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'exclusive',
+          coreDifference:
+            '侧重“独有的、排他的，仅限特定对象享有”，形容词词性为主，强调“专属排他性”',
+          toeicSceneFocus: '独家合作、专属权利、高档品牌场景',
+        },
+        {
+          word: 'sole',
+          coreDifference:
+            '侧重“唯一的、单独的”，形容词词性，强调“数量上的唯一性”，可与exclusive互换，但sole更侧重“唯一”',
+          toeicSceneFocus: '唯一代理商、唯一责任人、单独所有权场景',
+        },
+        {
+          word: 'unique',
+          coreDifference:
+            '侧重“独一无二的、独特的”，形容词词性，强调“事物本身的独特性”，而非排他的权利',
+          toeicSceneFocus: '独特产品、独一无二的设计、独特优势场景',
+        },
+      ],
+    },
+    {
+      word: 'equip',
+      phonetic: '/ɪˈkwɪp/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '装备；配备；使具备；使有能力（托业中侧重商务场景的“设备配备、人员技能培养”含义）',
+      toeicSceneFocus:
+        '多出现于企业管理、设备采购、员工培训等语境，是托业高频动词，阅读（设备清单、培训计划、企业手册）和听力（工作安排、培训指导）中常考查“equip...with...、be equipped with、equip sb. with skills”等搭配',
+      keyCollocations: [
+        'equip...with...（用……装备；为……配备）',
+        'be equipped with（配备有；装有）',
+        'equip sb. with skills（使某人具备技能）',
+        'equip the office（为办公室配备设备）',
+        'well-equipped（装备精良的）',
+      ],
+      toeicExampleSentences: [
+        'The company plans to equip all offices with high-speed internet and new computers.（公司计划为所有办公室配备高速网络和新电脑。）',
+        'This factory is well-equipped with advanced production lines imported from Germany.（这家工厂装备精良，拥有从德国进口的先进生产线。）',
+        'The training program is designed to equip employees with the skills needed for the new project.（该培训项目旨在让员工具备新项目所需的技能。）',
+        'We need to equip the sales team with professional knowledge about the new product.（我们需要让销售团队掌握新产品的专业知识。）',
+      ],
+      sceneAssociation:
+        '可以联想“行政人员为办公室equip new computers（配备新电脑）”的画面，或“企业通过培训equip employees with skills（让员工具备技能）”，结合“商务场景中的装备配备”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'equip',
+          coreDifference:
+            '侧重“为场所配备设备，或为人员培养技能，使其具备相应能力”，及物动词，常与with搭配',
+          toeicSceneFocus: '设备配备、技能培养、场所装备场景',
+        },
+        {
+          word: 'furnish',
+          coreDifference:
+            '侧重“为房间配备家具、陈设”，及物动词，适用范围较窄，主要针对室内物品',
+          toeicSceneFocus: '办公室 Furnish、家居布置、场所陈设场景',
+        },
+        {
+          word: 'provide',
+          coreDifference:
+            '泛指“提供某物或服务”，及物动词，适用范围极广，无需强调“配备”的针对性',
+          toeicSceneFocus: '提供设备、提供服务、提供资源场景',
+        },
+      ],
+    },
+    {
+      word: 'expire',
+      phonetic: '/ɪkˈspaɪə(r)/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '（合同、协议等）到期；届满；（食品、药品等）过期；失效（托业中侧重商务场景的“合同到期、证件失效”含义）',
+      toeicSceneFocus:
+        '多出现于合同管理、证件办理、库存管理等语境，是托业高频动词，阅读（合同条款、证件有效期、库存清单）和听力（商务沟通、工作提醒）中常考查“expire on、expire date、expire automatically”等搭配',
+      keyCollocations: [
+        'expire on（于……到期）',
+        'expiration date（有效期；到期日）',
+        'expire automatically（自动失效）',
+        'contract expires（合同到期）',
+        'passport expires（护照过期）',
+      ],
+      toeicExampleSentences: [
+        'Our cooperation contract will expire on December 31st, so we need to discuss the renewal in advance.（我们的合作合同将于12月31日到期，因此需要提前讨论续约事宜。）',
+        'Please check the expiration date of the products before putting them on the shelf.（上架前请检查产品的有效期。）',
+        'If you do not renew your membership within one month, it will expire automatically.（如果一个月内不续费，你的会员资格将自动失效。）',
+        "His business license expired last month, so he can't operate the company legally now.（他的营业执照上个月到期了，现在无法合法经营公司。）",
+      ],
+      sceneAssociation:
+        '可以联想“法务人员提醒contract expires（合同到期）需续约”的画面，或“仓库管理员检查产品expiration date（有效期）”，结合“商务场景中的到期失效”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'expire',
+          coreDifference:
+            '侧重“合同、证件、食品等的有效期结束，失去效力”，不及物动词，强调“自然到期”',
+          toeicSceneFocus: '合同到期、证件失效、食品过期场景',
+        },
+        {
+          word: 'terminate',
+          coreDifference:
+            '侧重“人为地终止合同、协议或关系”，及物动词，强调“主动结束”',
+          toeicSceneFocus: '终止合同、解除协议、结束合作场景',
+        },
+        {
+          word: 'end',
+          coreDifference:
+            '泛指“事物的结束”，可作动词或名词，口语化强，适用范围极广，可指任何事物的终止',
+          toeicSceneFocus: '项目结束、会议结束、合同终止场景',
+        },
+      ],
+    },
+    {
+      word: 'vendor',
+      phonetic: '/ˈvendə(r)/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '供应商；销售商；小贩；卖主（托业中侧重商务场景的“企业供应商、产品销售商”含义）',
+      toeicSceneFocus:
+        '多出现于供应链管理、采购合作、商务谈判等语境，是托业高频名词，阅读（供应商名单、采购合同、合作协议）和听力（采购沟通、商务会议）中常考查“authorized vendor、vendor management、select a vendor”等搭配',
+      keyCollocations: [
+        'authorized vendor（授权供应商）',
+        'vendor management（供应商管理）',
+        'select a vendor（选择供应商）',
+        'vendor contract（供应商合同）',
+        'raw material vendor（原材料供应商）',
+      ],
+      toeicExampleSentences: [
+        'We need to select a reliable vendor to provide us with high-quality raw materials.（我们需要选择一家可靠的供应商，为我们提供高质量的原材料。）',
+        'The company has established a strict vendor management system to ensure product quality.（该公司建立了严格的供应商管理制度，确保产品质量。）',
+        'This authorized vendor is responsible for the after-sales service of all our products in this region.（这家授权供应商负责我们产品在该地区的全部售后服务。）',
+        'We will sign a one-year contract with the vendor to lock in the price of components.（我们将与供应商签订一年期合同，锁定零部件价格。）',
+      ],
+      sceneAssociation:
+        '可以联想“采购团队select a vendor（选择供应商）”的画面，或“企业执行vendor management（供应商管理）制度”，结合“商务场景中的供应销售主体”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'vendor',
+          coreDifference:
+            '侧重“向企业供应产品、原材料或服务的商家，或从事零售的小商贩”，名词词性，适用范围较广',
+          toeicSceneFocus: '原材料供应商、授权销售商、零售小贩场景',
+        },
+        {
+          word: 'supplier',
+          coreDifference:
+            '与vendor含义相近，更侧重“为企业提供原材料、零部件等生产资料的供应商”，商务场景中更常用',
+          toeicSceneFocus: '供应链供应商、原材料供应方、零部件提供商场景',
+        },
+        {
+          word: 'seller',
+          coreDifference:
+            '泛指“任何出售商品的人或企业”，口语化强，可指个人卖家或企业卖家',
+          toeicSceneFocus: '电商卖家、线下卖家、商品销售方场景',
+        },
+      ],
+    },
+    {
+      word: 'directory',
+      phonetic: '/dəˈrektəri/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '名录；目录；电话簿；企业黄页；（计算机）目录（托业中侧重商务场景的“企业名录、供应商目录”含义）',
+      toeicSceneFocus:
+        '多出现于企业管理、客户开发、信息查询等语境，是托业高频名词，阅读（企业黄页、供应商目录、文件清单）和听力（工作沟通、信息查询）中常考查“company directory、vendor directory、telephone directory”等搭配',
+      keyCollocations: [
+        'company directory（企业名录；公司通讯录）',
+        'vendor directory（供应商目录）',
+        'telephone directory（电话簿）',
+        'directory service（目录服务）',
+        'product directory（产品目录）',
+      ],
+      toeicExampleSentences: [
+        'You can find the contact information of all employees in the company directory.（你可以在公司通讯录中找到所有员工的联系方式。）',
+        'The marketing department compiled a vendor directory to facilitate the selection of cooperative partners.（市场部编制了一份供应商目录，方便选择合作伙伴。）',
+        'This product directory includes detailed information about all our products and their prices.（这份产品目录包含了我们所有产品的详细信息及价格。）',
+        "The IT department is responsible for managing the directory service of the company's internal system.（IT部门负责管理公司内部系统的目录服务。）",
+      ],
+      sceneAssociation:
+        '可以联想“行政人员整理company directory（公司通讯录）”的画面，或“采购人员查阅vendor directory（供应商目录）”，结合“商务场景中的信息名录”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'directory',
+          coreDifference:
+            '侧重“按一定顺序编排的人名、企业名、产品名等的名录或目录，可指纸质或电子形式”，名词词性',
+          toeicSceneFocus: '企业名录、供应商目录、产品目录场景',
+        },
+        {
+          word: 'catalog',
+          coreDifference:
+            '与directory含义相近，更侧重“产品的目录手册，带有图片和详细介绍”，美式英语中更常用',
+          toeicSceneFocus: '产品目录、商品手册、图书目录场景',
+        },
+        {
+          word: 'list',
+          coreDifference:
+            '泛指“简单的名单、清单”，含义宽泛，口语化强，无固定编排格式要求',
+          toeicSceneFocus: '员工名单、采购清单、任务列表场景',
+        },
+      ],
+    },
+
+    {
+      word: 'portfolio',
+      phonetic: '/pɔːrtˈfoʊ.li.oʊ/',
+      phrase: 'a diverse investment portfolio',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '公文包；作品集；投资组合（指个人或企业的投资集合或项目展示）',
+      toeicSceneFocus:
+        '多出现于商务演示、投资管理、职场文档等语境，托业阅读（公司报告）和听力（商务对话）中常见，涉及资产配置或项目展示内容',
+      keyCollocations: [
+        'investment portfolio',
+        'product portfolio',
+        'portfolio management',
+        'design portfolio',
+      ],
+      toeicExampleSentences: [
+        'The manager reviewed the investment portfolio during the meeting.',
+        'She presented her design portfolio to the potential clients.',
+        'A balanced portfolio reduces financial risks.',
+        "The company's product portfolio includes software and hardware solutions.",
+      ],
+      sceneAssociation:
+        "联想'投资者查看投资组合表现'或'设计师展示作品集'的场景，结合职场中文档整理与展示的日常情景",
+      confusingWordsComparison: [
+        {
+          word: 'portfolio',
+          coreDifference: '侧重集合或组合，尤指投资或作品领域',
+          toeicSceneFocus: '商务和投资场景',
+        },
+        {
+          word: 'folder',
+          coreDifference: '指物理文件夹，用于存放文件',
+          toeicSceneFocus: '办公文档管理',
+        },
+        {
+          word: 'collection',
+          coreDifference: '泛指任何类型的收集物，范围更广',
+          toeicSceneFocus: '通用场景',
+        },
+      ],
+    },
+    {
+      word: 'defective',
+      phonetic: '/dɪˈfektɪv/',
+      phrase: 'a defective product component',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '有缺陷的，有瑕疵的（指产品、设备或系统存在质量问题或故障）',
+      toeicSceneFocus:
+        '多出现于质量控制、客户投诉、产品退货等语境，托业听力（客户服务对话）和阅读（保修政策）中高频考查',
+      keyCollocations: [
+        'defective product',
+        'defective equipment',
+        'defective part',
+        'return defective goods',
+      ],
+      toeicExampleSentences: [
+        'The customer returned the defective product for a full refund.',
+        'The manufacturer recalled the defective batch due to safety concerns.',
+        'Defective items must be reported within 30 days of purchase.',
+        'The warranty covers replacement of defective components.',
+      ],
+      sceneAssociation:
+        "联想'客户服务部门处理瑕疵产品退货'的场景，或'质检报告标识缺陷项目'的画面",
+      confusingWordsComparison: [
+        {
+          word: 'defective',
+          coreDifference: '强调功能或质量上的缺陷',
+          toeicSceneFocus: '产品质量控制',
+        },
+        {
+          word: 'faulty',
+          coreDifference: '常指机械或电气故障',
+          toeicSceneFocus: '设备维修场景',
+        },
+        {
+          word: 'imperfect',
+          coreDifference: '泛指不完美，不一定影响功能',
+          toeicSceneFocus: '一般描述',
+        },
+      ],
+    },
+    {
+      word: 'shipment',
+      phonetic: '/ˈʃɪpmənt/',
+      phrase: 'the scheduled shipment arrival',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '一批货物；装运；运输（指商品或物资从一地到另一地的运送过程或批次）',
+      toeicSceneFocus:
+        '多出现于物流、供应链、进出口贸易等语境，托业阅读（发货通知）和听力（仓库对话）中常见，涉及交货时间、运输方式等细节',
+      keyCollocations: [
+        'shipment date',
+        'air shipment',
+        'shipment tracking',
+        'delay in shipment',
+      ],
+      toeicExampleSentences: [
+        'The shipment of goods will arrive at the port tomorrow.',
+        'Please confirm the shipment details with the logistics department.',
+        'Due to bad weather, the shipment has been delayed by two days.',
+        'The company handles international shipments for major retailers.',
+      ],
+      sceneAssociation:
+        "联想'物流跟踪系统显示货物运输状态'或'仓库管理员核对发货清单'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'shipment',
+          coreDifference: '侧重运输过程或批次',
+          toeicSceneFocus: '物流和贸易',
+        },
+        {
+          word: 'cargo',
+          coreDifference: '常指船或飞机运载的货物',
+          toeicSceneFocus: '运输业',
+        },
+        {
+          word: 'delivery',
+          coreDifference: '强调送达的动作或结果',
+          toeicSceneFocus: '客户服务',
+        },
+      ],
+    },
+    {
+      word: 'payroll',
+      phonetic: '/ˈpeɪroʊl/',
+      phrase: 'the company payroll system',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '工资表；薪资系统（指记录员工工资、薪水及相关信息的清单或管理系统）',
+      toeicSceneFocus:
+        '多出现于人力资源、财务管理、企业运营等语境，托业阅读（公司政策）和听力（同事讨论）中涉及薪资发放、员工福利等内容',
+      keyCollocations: [
+        'payroll department',
+        'payroll taxes',
+        'payroll processing',
+        'on the payroll',
+      ],
+      toeicExampleSentences: [
+        'The payroll department processes salaries every two weeks.',
+        'New employees will be added to the payroll starting next month.',
+        'The company uses software to manage its payroll system efficiently.',
+        'Payroll errors should be reported immediately to HR.',
+      ],
+      sceneAssociation:
+        "联想'人力资源专员核算月度工资'或'员工查看薪资条'的场景，结合企业日常管理流程",
+      confusingWordsComparison: [
+        {
+          word: 'payroll',
+          coreDifference: '侧重工资管理系统或名单',
+          toeicSceneFocus: '人力资源和财务',
+        },
+        {
+          word: 'salary',
+          coreDifference: '指个人薪水数额',
+          toeicSceneFocus: '个人薪酬',
+        },
+        {
+          word: 'wage',
+          coreDifference: '常指按小时或周计算的工资',
+          toeicSceneFocus: '劳动密集型行业',
+        },
+      ],
+    },
+    {
+      word: 'merger',
+      phonetic: '/ˈmɜːrdʒər/',
+      phrase: 'the corporate merger agreement',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '合并；兼并（指两个或多个公司结合成一个实体，通常为了扩大规模或资源整合）',
+      toeicSceneFocus:
+        '多出现于商业新闻、企业战略、金融市场等语境，托业阅读（财经报道）和听力（高管演讲）中高频考查，涉及公司结构变化、市场影响等',
+      keyCollocations: [
+        'company merger',
+        'merger agreement',
+        'merge with another company',
+        'post-merger integration',
+      ],
+      toeicExampleSentences: [
+        'The merger between the two tech firms will create a market leader.',
+        'Shareholders approved the merger agreement last week.',
+        'After the merger, the company expanded its global presence.',
+        'The merger resulted in significant cost savings.',
+      ],
+      sceneAssociation:
+        "联想'董事会讨论合并方案'或'新闻公告宣布企业兼并'的场景，结合商业扩张的典型情境",
+      confusingWordsComparison: [
+        {
+          word: 'merger',
+          coreDifference: '指双方相对平等的结合',
+          toeicSceneFocus: '企业战略',
+        },
+        {
+          word: 'acquisition',
+          coreDifference: '侧重一方收购另一方',
+          toeicSceneFocus: '投资与并购',
+        },
+        {
+          word: 'alliance',
+          coreDifference: '常指合作而非合并',
+          toeicSceneFocus: '商务合作',
+        },
+      ],
+    },
+    {
+      word: 'retail',
+      phonetic: '/ˈriːteɪl/',
+      phrase: 'the retail store chain',
+      partOfSpeech: 'n. 名词/adj. 形容词',
+      coreMeaning: '零售；零卖（指将商品直接销售给最终消费者的行为或相关业态）',
+      toeicSceneFocus:
+        '多出现于销售、市场营销、消费者行为等语境，托业阅读（促销广告）和听力（店铺对话）中常见，涉及价格、客户服务、库存管理等',
+      keyCollocations: [
+        'retail price',
+        'retail industry',
+        'retail sales',
+        'retail outlet',
+      ],
+      toeicExampleSentences: [
+        'The retail price of the product is $50.',
+        'She works in the retail industry as a store manager.',
+        'Retail sales increased during the holiday season.',
+        'The company plans to open new retail outlets in urban areas.',
+      ],
+      sceneAssociation:
+        "联想'消费者在零售店选购商品'或'经理分析零售销售数据'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'retail',
+          coreDifference: '侧重直接销售给消费者',
+          toeicSceneFocus: '销售和营销',
+        },
+        {
+          word: 'wholesale',
+          coreDifference: '指批量销售给商家',
+          toeicSceneFocus: '供应链管理',
+        },
+        {
+          word: 'commerce',
+          coreDifference: '泛指所有商业活动',
+          toeicSceneFocus: '通用商务',
+        },
+      ],
+    },
+    {
+      word: 'extensive',
+      phonetic: '/ɪkˈstensɪv/',
+      phrase: 'an extensive experience record',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '广泛的；全面的（指范围广、覆盖面积大或内容详尽）',
+      toeicSceneFocus:
+        '多出现于项目描述、简历评估、市场分析等语境，托业阅读（公司介绍）和听力（面试对话）中用于强调经验、资源或调查的广度',
+      keyCollocations: [
+        'extensive experience',
+        'extensive research',
+        'extensive network',
+        'extensive collection',
+      ],
+      toeicExampleSentences: [
+        'The candidate has extensive experience in international business.',
+        'The report was based on extensive market research.',
+        'The museum has an extensive collection of modern art.',
+        'Through extensive training, employees improved their skills.',
+      ],
+      sceneAssociation:
+        "联想'专家展示广泛知识'或'报告总结全面研究'的场景，结合职场中深度讨论的情境",
+      confusingWordsComparison: [
+        {
+          word: 'extensive',
+          coreDifference: '强调范围或程度的广泛',
+          toeicSceneFocus: '商务描述',
+        },
+        {
+          word: 'comprehensive',
+          coreDifference: '侧重全面性，无遗漏',
+          toeicSceneFocus: '详细报告',
+        },
+        {
+          word: 'broad',
+          coreDifference: '泛指宽广，不如extensive详细',
+          toeicSceneFocus: '一般描述',
+        },
+      ],
+    },
+    {
+      word: 'promotional',
+      phonetic: '/prəˈmoʊʃənl/',
+      phrase: 'a promotional discount offer',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '促销的；推广的（旨在增加销量或知名度的活动或材料）',
+      toeicSceneFocus:
+        '多出现于市场营销、广告活动、销售策略等语境，托业阅读（促销邮件）和听力（客户咨询）中涉及特价、广告活动等内容',
+      keyCollocations: [
+        'promotional campaign',
+        'promotional material',
+        'promotional event',
+        'promotional pricing',
+      ],
+      toeicExampleSentences: [
+        'The company launched a promotional campaign to attract new customers.',
+        'Promotional materials will be distributed at the event.',
+        'The promotional discount is valid until the end of the month.',
+        'We saw a sales boost after the promotional activity.',
+      ],
+      sceneAssociation: "联想'商场促销活动吸引顾客'或'团队设计推广材料'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'promotional',
+          coreDifference: '直接关联销售或品牌推广',
+          toeicSceneFocus: '市场营销',
+        },
+        {
+          word: 'advertising',
+          coreDifference: '常指付费广告宣传',
+          toeicSceneFocus: '媒体广告',
+        },
+        {
+          word: 'discount',
+          coreDifference: '侧重价格优惠',
+          toeicSceneFocus: '销售促销',
+        },
+      ],
+    },
+    {
+      word: 'assign',
+      phonetic: '/əˈsaɪn/',
+      phrase: 'assign tasks to team members',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '分配；指派（给予任务、职责或资源）',
+      toeicSceneFocus:
+        '多出现于项目管理、工作分配、团队协作等语境，托业阅读（工作邮件）和听力（团队会议）中涉及任务分发、责任归属等',
+      keyCollocations: [
+        'assign a task',
+        'assign responsibility',
+        'assign to a project',
+        'newly assigned',
+      ],
+      toeicExampleSentences: [
+        "The manager will assign tasks based on each member's expertise.",
+        'She was assigned to the new project starting next week.',
+        'Please complete the assigned work by Friday.',
+        'The team leader assigns roles clearly for efficiency.',
+      ],
+      sceneAssociation: "联想'项目经理分配工作任务'或'清单列出指派事项'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'assign',
+          coreDifference: '侧重正式分配任务或职责',
+          toeicSceneFocus: '职场管理',
+        },
+        {
+          word: 'allocate',
+          coreDifference: '常指资源分配',
+          toeicSceneFocus: '资源规划',
+        },
+        {
+          word: 'distribute',
+          coreDifference: '强调分发给多方',
+          toeicSceneFocus: '物流或分发',
+        },
+      ],
+    },
+    {
+      word: 'imply',
+      phonetic: '/ɪmˈplaɪ/',
+      phrase: 'the report results imply',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '暗示；意味着（间接表达或指示某种含义）',
+      toeicSceneFocus:
+        '多出现于分析报告、商务沟通、推理判断等语境，托业阅读（数据解读）和听力（对话推理）中考查言外之意或逻辑结论',
+      keyCollocations: [
+        'imply that',
+        'as the data implies',
+        'imply a need for',
+        'strongly imply',
+      ],
+      toeicExampleSentences: [
+        'The results imply a need for strategy adjustment.',
+        'He implied that the deadline might be extended.',
+        'The survey data implies customer preference changes.',
+        'Are you implying that the project is delayed?',
+      ],
+      sceneAssociation:
+        "联想'分析师根据数据暗示趋势'或'对话中委婉暗示观点'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'imply',
+          coreDifference: '说话者间接表达',
+          toeicSceneFocus: '沟通与分析',
+        },
+        {
+          word: 'infer',
+          coreDifference: '听者推断含义',
+          toeicSceneFocus: '理解过程',
+        },
+        {
+          word: 'suggest',
+          coreDifference: '更直接提出建议或可能',
+          toeicSceneFocus: '通用商务',
+        },
+      ],
+    },
+    {
+      word: 'innovative',
+      phonetic: '/ˈɪnəveɪtɪv/',
+      phrase: 'an innovative solution approach',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '创新的；革新的（引入新思想、方法或技术的）',
+      toeicSceneFocus:
+        '多出现于产品开发、技术讨论、企业战略等语境，托业阅读（创新案例）和听力（项目提案）中强调新颖性和创造性',
+      keyCollocations: [
+        'innovative technology',
+        'innovative approach',
+        'innovative product',
+        'highly innovative',
+      ],
+      toeicExampleSentences: [
+        'The company is known for its innovative products.',
+        'We need an innovative approach to solve this problem.',
+        'The team developed an innovative software solution.',
+        'Innovative ideas are encouraged in the workplace.',
+      ],
+      sceneAssociation: "联想'团队讨论创新方案'或'展览展示革新技术'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'innovative',
+          coreDifference: '侧重新颖和创造性',
+          toeicSceneFocus: '技术与开发',
+        },
+        {
+          word: 'creative',
+          coreDifference: '强调想象力或原创性',
+          toeicSceneFocus: '设计与创意',
+        },
+        {
+          word: 'original',
+          coreDifference: '指首创或独特',
+          toeicSceneFocus: '专利或发明',
+        },
+      ],
+    },
+    {
+      word: 'advance',
+      phonetic: '/ədˈvɑːns/',
+      partOfSpeech: 'v. 动词；n. 名词；adj. 形容词；adv. 副词',
+      coreMeaning:
+        'v. 推进；促进；提前；预付；n. 进展；预付款；提前；adj. 预先的；提前的；adv. 提前（托业中侧重商务场景的“推进、预付、进展”含义）',
+      toeicSceneFocus:
+        '多出现于商务谈判、项目管理、财务往来等语境，是托业高频多义词，阅读（合同条款、项目报告）和听力（商务沟通、工作安排）中常考查“in advance、advance payment、advance the project”等搭配',
+      keyCollocations: [
+        'in advance（提前；预先）',
+        'advance payment（预付款）',
+        'advance the project（推进项目）',
+        'make advances（取得进展；主动示好）',
+        'advance notice（预先通知）',
+      ],
+      toeicExampleSentences: [
+        'You are required to pay a 30% advance payment before the order is confirmed.（订单确认前，你需要支付30%的预付款。）',
+        "We need to advance the project schedule by two weeks to meet the client's deadline.（我们需要将项目进度提前两周，以满足客户的截止日期要求。）",
+        'Please inform us of any changes in advance so that we can make proper arrangements.（如有变动，请提前通知我们，以便做出妥善安排。）',
+        'The team has made significant advances in the development of the new product.（该团队在新产品研发方面取得了显著进展。）',
+      ],
+      sceneAssociation:
+        '可以联想“商务人员洽谈advance payment（预付款）条款”的画面，或“项目组开会讨论如何advance the project（推进项目）”，结合“商务场景中的推进、预付、提前”等核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'advance',
+          coreDifference:
+            '侧重“向前推进、预先支付或提前安排”，可作多种词性，适用商务正式场景',
+          toeicSceneFocus: '项目推进、财务预付、时间提前场景',
+        },
+        {
+          word: 'promote',
+          coreDifference:
+            '侧重“推广产品、提拔人员或促进发展”，动词词性，强调“推广、晋升”的动作',
+          toeicSceneFocus: '产品推广、员工晋升、业务拓展场景',
+        },
+        {
+          word: 'progress',
+          coreDifference:
+            '侧重“事物发展的进度或进程”，多作名词或不及物动词，强调“进展状态”',
+          toeicSceneFocus: '项目进度、工作进展、业务发展场景',
+        },
+      ],
+    },
+    {
+      word: 'supply',
+      phonetic: '/səˈplaɪ/',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning:
+        'v. 供应；提供；补给；n. 供应；供应量；储备；供应品（托业中侧重商务场景的“物资供应、货源提供”含义）',
+      toeicSceneFocus:
+        '多出现于供应链管理、采购洽谈、市场分析等语境，是托业商务场景高频词，阅读（采购合同、市场报告）和听力（供应商沟通、库存管理）中常考查“supply and demand、supply goods、in short supply”等搭配',
+      keyCollocations: [
+        'supply and demand（供需）',
+        'supply goods to sb.（向某人供应货物）',
+        'in short supply（供应短缺）',
+        'a steady supply of（稳定的……供应）',
+        'meet the supply needs（满足供应需求）',
+      ],
+      toeicExampleSentences: [
+        'The manufacturer promises to supply high-quality raw materials to our company on time.（该制造商承诺按时向我司供应高质量的原材料。）',
+        'The relationship between supply and demand directly affects the market price of commodities.（供需关系直接影响商品的市场价格。）',
+        'Due to the bad weather, vegetables are in short supply in the local market this week.（受恶劣天气影响，本周当地市场的蔬菜供应短缺。）',
+        'We need to ensure a steady supply of components to avoid delaying the production schedule.（我们需要确保零部件的稳定供应，避免延误生产进度。）',
+      ],
+      sceneAssociation:
+        '可以联想“供应商与采购方洽谈supply goods（供应货物）的细节”的画面，或“市场分析师分析supply and demand（供需）关系”，结合“商务场景中的物资供应”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'supply',
+          coreDifference:
+            '侧重“批量供应物资、货源”，可作动词和名词，强调“持续性的供给”',
+          toeicSceneFocus: '供应链管理、采购供应、市场供需场景',
+        },
+        {
+          word: 'provide',
+          coreDifference:
+            '侧重“提供服务、信息或物品”，动词词性，适用范围更广，可用于非商务场景',
+          toeicSceneFocus: '提供服务、提供信息、日常供给场景',
+        },
+        {
+          word: 'offer',
+          coreDifference:
+            '侧重“主动提出提供某物或服务”，动词词性，强调“主动性”',
+          toeicSceneFocus: '商务报价、主动提供帮助、职位邀约场景',
+        },
+      ],
+    },
+    {
+      word: 'paid',
+      phonetic: '/peɪd/',
+      partOfSpeech: 'adj. 形容词；v. 动词（pay的过去式和过去分词）',
+      coreMeaning:
+        'adj. 有偿的；付费的；已支付的；v. 支付；付款；偿还（托业中侧重商务场景的“已支付、有偿服务”含义）',
+      toeicSceneFocus:
+        '多出现于财务结算、合同条款、职场薪酬等语境，是托业财务场景高频词，阅读（发票、工资单、合同）和听力（财务沟通、薪酬洽谈）中常考查“paid leave、paid in full、get paid”等搭配',
+      keyCollocations: [
+        'paid leave（带薪休假）',
+        'paid in full（全额支付）',
+        'paid service（有偿服务）',
+        'get paid（领工资；获得报酬）',
+        'paid by credit card（信用卡支付）',
+      ],
+      toeicExampleSentences: [
+        'All employees are entitled to 15 days of paid leave every year according to the company policy.（根据公司政策，所有员工每年享有15天带薪休假。）',
+        'Please confirm whether the invoice has been paid in full before the end of the month.（月底前请确认该发票是否已全额支付。）',
+        'The company provides paid training courses to help employees improve their professional skills.（公司提供有偿培训课程，帮助员工提升专业技能。）',
+        'We will get paid on the 25th of every month without any delay.（我们每月25号按时领工资，从不拖延。）',
+      ],
+      sceneAssociation:
+        '可以联想“财务人员核对账单是否paid in full（全额支付）”的画面，或“员工咨询paid leave（带薪休假）的相关政策”，结合“商务财务场景中的支付状态、有偿属性”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'paid',
+          coreDifference:
+            '侧重“支付动作完成后的状态（已支付），或事物的有偿属性”，可作形容词和动词',
+          toeicSceneFocus: '财务结算、薪酬福利、有偿服务场景',
+        },
+        {
+          word: 'payable',
+          coreDifference:
+            '侧重“应支付的、到期应付的”，形容词词性，强调“支付义务”',
+          toeicSceneFocus: '应付账款、到期账单、财务报表场景',
+        },
+        {
+          word: 'payment',
+          coreDifference:
+            '侧重“支付的款项或支付行为”，名词词性，强调“款项或动作本身”',
+          toeicSceneFocus: '支付方式、付款金额、财务交易场景',
+        },
+      ],
+    },
+    {
+      word: 'release',
+      phonetic: '/rɪˈliːs/',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning:
+        'v. 发布；发行；释放；解除；发放；n. 发布；发行；释放；版本（托业中侧重商务场景的“发布信息、发行产品、发放款项”含义）',
+      toeicSceneFocus:
+        '多出现于产品运营、信息发布、财务发放等语境，是托业商务场景高频词，阅读（产品公告、财务文件、新闻稿）和听力（商务会议、产品发布会）中常考查“release a new product、press release、release payment”等搭配',
+      keyCollocations: [
+        'release a new product（发布新产品）',
+        'press release（新闻稿；官方声明）',
+        'release payment（发放款项）',
+        'product release（产品发布）',
+        'release from the contract（解除合同）',
+      ],
+      toeicExampleSentences: [
+        'The company plans to release a new smartphone model in the global market next quarter.（该公司计划下季度在全球市场发布新款智能手机。）',
+        'The marketing department issued a press release to announce the cooperation with the new partner.（市场部发布新闻稿，宣布与新合作伙伴的合作事宜。）',
+        'The finance department will release payment to the vendor after receiving the goods.（财务部将在收到货物后向供应商发放款项。）',
+        'Both parties agreed to release each other from the contract due to unforeseen circumstances.（由于不可抗力因素，双方同意解除彼此的合同义务。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业召开发布会release a new product（发布新产品）”的画面，或“财务部审核后release payment（发放款项）”，结合“商务场景中的发布、发放、解除”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'release',
+          coreDifference:
+            '侧重“正式发布产品/信息、发放款项或解除合同义务”，可作动词和名词，适用商务正式场景',
+          toeicSceneFocus: '产品发布、信息公告、财务发放、合同解除场景',
+        },
+        {
+          word: 'publish',
+          coreDifference:
+            '侧重“出版书籍、发布文章或官方信息”，动词词性，强调“公开传播的正式性”',
+          toeicSceneFocus: '出版发行、文章发布、官方公告场景',
+        },
+        {
+          word: 'issue',
+          coreDifference:
+            '侧重“发布官方文件、指令或发行有价证券”，动词词性，强调“权威性和严肃性”',
+          toeicSceneFocus: '发布指令、发行债券、官方通知场景',
+        },
+      ],
+    },
+    {
+      word: 'effective',
+      phonetic: '/ɪˈfektɪv/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '有效的；生效的；实际的；给人深刻印象的（托业中侧重商务场景的“政策生效、措施有效”含义）',
+      toeicSceneFocus:
+        '多出现于政策执行、方案实施、商务管理等语境，是托业高频形容词，阅读（合同条款、规章制度、方案报告）和听力（会议讨论、政策解读）中常考查“effective date、effective measure、become effective”等搭配',
+      keyCollocations: [
+        'effective date（生效日期）',
+        'effective measure（有效措施）',
+        'become effective（生效；开始实施）',
+        'effective management（有效管理）',
+        'cost-effective（性价比高的）',
+      ],
+      toeicExampleSentences: [
+        'The new company policy will become effective on January 1st next year.（公司新政策将于明年1月1日正式生效。）',
+        "The manager proposed several effective measures to reduce the company's operating costs.（经理提出了几项有效措施，以降低公司的运营成本。）",
+        'Effective communication is the key to resolving conflicts between team members.（有效的沟通是解决团队成员之间矛盾的关键。）',
+        'This new software is highly cost-effective and can greatly improve our work efficiency.（这款新软件性价比很高，能极大提升我们的工作效率。）',
+      ],
+      sceneAssociation:
+        '可以联想“行政人员公示政策的effective date（生效日期）”的画面，或“团队讨论effective measure（有效措施）解决问题”，结合“商务场景中的有效性、生效状态”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'effective',
+          coreDifference:
+            '侧重“措施、政策等产生预期效果的‘有效性’，或事物正式生效的状态”',
+          toeicSceneFocus: '政策生效、措施有效、管理高效场景',
+        },
+        {
+          word: 'efficient',
+          coreDifference:
+            '侧重“人或设备在工作中‘高效的’，强调投入产出比高”，后续会详细解析',
+          toeicSceneFocus: '工作高效、设备高效、流程高效场景',
+        },
+        {
+          word: 'valid',
+          coreDifference:
+            '侧重“证件、合同等具有法律效力的‘有效’，强调合法性和时效性”',
+          toeicSceneFocus: '有效证件、有效合同、有效凭证场景',
+        },
+      ],
+    },
+    {
+      word: 'efficient',
+      phonetic: '/ɪˈfɪʃnt/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '高效的；效率高的；有能力的（托业中侧重商务场景的“工作高效、流程高效”含义）',
+      toeicSceneFocus:
+        '多出现于职场管理、流程优化、设备评估等语境，是托业高频形容词，阅读（工作评估报告、流程优化方案）和听力（职场沟通、绩效评价）中常考查“efficient worker、efficient process、energy-efficient”等搭配',
+      keyCollocations: [
+        'efficient worker（高效员工）',
+        'efficient process（高效流程）',
+        'energy-efficient（节能的）',
+        'work efficiently（高效工作）',
+        'efficient use of resources（资源的高效利用）',
+      ],
+      toeicExampleSentences: [
+        'She is known as one of the most efficient workers in the department because she always finishes tasks ahead of schedule.（她是部门里公认的最高效员工之一，因为她总是提前完成任务。）',
+        'The company has optimized the production process to make it more efficient and reduce waste.（公司优化了生产流程，使其更加高效，减少浪费。）',
+        'We should make efficient use of resources to avoid unnecessary costs.（我们应该高效利用资源，避免不必要的开支。）',
+        'This energy-efficient machine can help the factory save a lot of electricity every month.（这款节能型机器每月能帮工厂节省大量电费。）',
+      ],
+      sceneAssociation:
+        '可以联想“efficient worker（高效员工）专注处理工作任务”的画面，或“工程师优化efficient process（高效流程）提升产能”，结合“商务场景中的高效率、高产能”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'efficient',
+          coreDifference:
+            '侧重“人、设备或流程在单位时间内完成更多任务的‘高效性’，强调投入产出比”',
+          toeicSceneFocus: '员工绩效、流程优化、设备能效场景',
+        },
+        {
+          word: 'effective',
+          coreDifference:
+            '侧重“措施、方法等达到预期目标的‘有效性’，强调结果是否达标”',
+          toeicSceneFocus: '措施有效、政策生效、方法管用场景',
+        },
+        {
+          word: 'productive',
+          coreDifference: '侧重“人或团队产出成果多的‘多产性’，强调成果数量”',
+          toeicSceneFocus: '团队产出、个人工作成果、生产效率场景',
+        },
+      ],
+    },
+    {
+      word: 'manufacturer',
+      phonetic: '/ˌmænjuˈfæktʃərə(r)/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '制造商；生产商；制造厂（托业中侧重商务场景的“产品制造商、生产合作方”含义）',
+      toeicSceneFocus:
+        '多出现于供应链管理、采购合作、产品溯源等语境，是托业商务场景高频名词，阅读（采购合同、产品说明书、供应商名单）和听力（商务谈判、采购沟通）中常考查“original equipment manufacturer (OEM)、authorized manufacturer、cooperate with the manufacturer”等搭配',
+      keyCollocations: [
+        'original equipment manufacturer (OEM)（原始设备制造商）',
+        'authorized manufacturer（授权制造商）',
+        'cooperate with the manufacturer（与制造商合作）',
+        'a leading manufacturer（领先制造商）',
+        "manufacturer's warranty（制造商保修）",
+      ],
+      toeicExampleSentences: [
+        'We have signed a long-term contract with a leading manufacturer to ensure the stable supply of components.（我们与一家领先制造商签订了长期合同，确保零部件的稳定供应。）',
+        'This product is produced by an authorized manufacturer, so its quality is guaranteed.（该产品由授权制造商生产，质量有保障。）',
+        'The manufacturer provides a one-year warranty for all products sold in the market.（该制造商为市场上销售的所有产品提供一年保修期。）',
+        'Our company acts as an OEM manufacturer for several well-known international brands.（我司是多家国际知名品牌的原始设备制造商。）',
+      ],
+      sceneAssociation:
+        "可以联想“采购方与manufacturer（制造商）洽谈合作订单”的画面，或“产品说明书标注manufacturer's warranty（制造商保修）信息”，结合“商务供应链中的生产制造主体”核心语义快速记忆",
+      confusingWordsComparison: [
+        {
+          word: 'manufacturer',
+          coreDifference:
+            '侧重“专业生产产品的企业或工厂，是供应链中的生产主体”',
+          toeicSceneFocus: '供应链生产、采购合作、产品制造场景',
+        },
+        {
+          word: 'producer',
+          coreDifference:
+            '侧重“生产某种物品或提供服务的个人或企业，适用范围更广，可用于非工业场景”',
+          toeicSceneFocus: '农产品生产、影视制作、服务提供场景',
+        },
+        {
+          word: 'supplier',
+          coreDifference:
+            '侧重“向企业供应原材料、零部件或产品的商家，是供应链中的供应主体”',
+          toeicSceneFocus: '原材料供应、零部件采购、货源供应场景',
+        },
+      ],
+    },
+    {
+      word: 'demand',
+      phonetic: '/dɪˈmɑːnd/',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        'n. 需求；需要；要求；v. 要求；需要；询问（托业中侧重商务场景的“市场需求、客户要求”含义）',
+      toeicSceneFocus:
+        '多出现于市场分析、客户服务、商务谈判等语境，是托业高频多义词，阅读（市场报告、合同条款、客户反馈）和听力（商务沟通、需求调研）中常考查“supply and demand、meet the demand、demand a refund”等搭配',
+      keyCollocations: [
+        'supply and demand（供需）',
+        'meet the demand（满足需求）',
+        'demand a refund（要求退款）',
+        'market demand（市场需求）',
+        'in great demand（需求量大；备受青睐）',
+      ],
+      toeicExampleSentences: [
+        'The market demand for smart home devices has increased significantly in recent years.（近年来，智能家居设备的市场需求大幅增长。）',
+        'Our factory is working overtime to meet the growing demand from overseas customers.（我们工厂正在加班加点，以满足海外客户日益增长的需求。）',
+        'The customer demanded a full refund because the product was damaged during transportation.（由于产品在运输过程中受损，客户要求全额退款。）',
+        'This type of eco-friendly packaging is in great demand among environmentally conscious consumers.（这款环保包装在环保意识较强的消费者中备受青睐。）',
+      ],
+      sceneAssociation:
+        '可以联想“市场分析师调研market demand（市场需求）变化趋势”的画面，或“客户向客服demand a refund（要求退款）”，结合“商务场景中的需求、要求”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'demand',
+          coreDifference:
+            '侧重“市场的客观需求，或客户提出的强硬要求”，可作名词和动词，语气较正式',
+          toeicSceneFocus: '市场需求、客户强硬要求、商务谈判场景',
+        },
+        {
+          word: 'request',
+          coreDifference:
+            '侧重“礼貌地提出请求或要求”，可作名词和动词，语气较委婉',
+          toeicSceneFocus: '客户礼貌请求、职场申请、日常沟通场景',
+        },
+        {
+          word: 'need',
+          coreDifference:
+            '侧重“个人或企业的主观需求或必需品”，可作名词和动词，口语化强，适用范围广',
+          toeicSceneFocus: '日常需求、工作所需、基础保障场景',
+        },
+      ],
+    },
+    {
+      word: 'grant',
+      phonetic: '/ɡrɑːnt/',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning:
+        'v. 授予；给予；承认；允许；n. 补助金；拨款；授予物（托业中侧重商务场景的“授予权限、发放拨款”含义）',
+      toeicSceneFocus:
+        '多出现于政府补贴、企业授权、项目资助等语境，是托业商务场景高频词，阅读（资助文件、授权协议、合同条款）和听力（商务会议、政策解读）中常考查“grant permission、research grant、grant a loan”等搭配',
+      keyCollocations: [
+        'grant permission（授予权限）',
+        'research grant（研究拨款）',
+        'grant a loan（发放贷款）',
+        'government grant（政府补助金）',
+        'take...for granted（认为……理所当然）',
+      ],
+      toeicExampleSentences: [
+        "The company's board of directors will grant permission to the marketing department to launch the new campaign.（公司董事会将授予市场部权限，启动新的营销活动。）",
+        'The research team received a government grant to carry out the project on renewable energy.（该研究团队获得了政府拨款，用于开展可再生能源项目。）',
+        'The bank agreed to grant a loan to the small business to help it expand its operations.（银行同意向这家小企业发放贷款，帮助其扩大经营规模。）',
+        'We should not take the support of our colleagues for granted in the workplace.（在职场中，我们不应把同事的支持视为理所当然。）',
+      ],
+      sceneAssociation:
+        '可以联想“董事会grant permission（授予权限）批准新项目”的画面，或“企业申请government grant（政府补助金）开展研发”，结合“商务场景中的授予、拨款”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'grant',
+          coreDifference:
+            '侧重“官方或上级正式授予权限、发放拨款或承认事实”，可作动词和名词，语气正式',
+          toeicSceneFocus: '权限授予、政府拨款、项目资助场景',
+        },
+        {
+          word: 'award',
+          coreDifference:
+            '侧重“因成绩或贡献而授予奖项、荣誉或奖金”，可作动词和名词，强调“奖励属性”',
+          toeicSceneFocus: '颁发奖项、授予荣誉、奖励奖金场景',
+        },
+        {
+          word: 'give',
+          coreDifference:
+            '侧重“一般性的给予某物或帮助”，动词词性，口语化强，适用范围极广',
+          toeicSceneFocus: '日常给予、提供帮助、赠送物品场景',
+        },
+      ],
+    },
+    {
+      word: 'compete',
+      phonetic: '/kəmˈpiːt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '竞争；竞赛；比得上（托业中侧重商务场景的“市场竞争、行业角逐”含义）',
+      toeicSceneFocus:
+        '多出现于市场分析、商务战略、行业报告等语境，是托业高频动词，阅读（行业报告、战略方案）和听力（商务会议、市场调研）中常考查“compete with/against、compete for、compete in the market”等搭配',
+      keyCollocations: [
+        'compete with/against sb.（与某人竞争）',
+        'compete for sth.（争夺某物）',
+        'compete in the market（参与市场竞争）',
+        'compete on price（打价格战；以价格竞争）',
+        'compete for market share（争夺市场份额）',
+      ],
+      toeicExampleSentences: [
+        'Our company needs to improve product quality to compete with other brands in the global market.（我司需要提升产品质量，以在全球市场与其他品牌竞争。）',
+        'Several large companies are competing for the contract to build the new shopping mall.（多家大型企业正在争夺这座新购物中心的建造合同。）',
+        "Small businesses can't compete on price with large corporations, so they need to focus on niche markets.（小企业无法与大公司打价格战，因此需要专注于小众市场。）",
+        'To compete successfully in the market, we must keep up with the latest technological developments.（为了在市场竞争中取得成功，我们必须跟上最新的技术发展步伐。）',
+      ],
+      sceneAssociation:
+        '可以联想“多家企业compete for market share（争夺市场份额）”的画面，或“品牌优化产品compete with rivals（与竞争对手抗衡）”，结合“商务场景中的市场竞争、资源争夺”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'compete',
+          coreDifference:
+            '侧重“在市场、竞赛中与他人争夺资源、份额或名次”，不及物动词，常与介词搭配使用',
+          toeicSceneFocus: '市场竞争、合同争夺、行业角逐场景',
+        },
+        {
+          word: 'contend',
+          coreDifference:
+            '侧重“在竞争中奋力争取，或主张某个观点”，不及物动词，语气较正式，书面性强',
+          toeicSceneFocus: '奋力竞争、观点主张、学术辩论场景',
+        },
+        {
+          word: 'rival',
+          coreDifference:
+            '侧重“与某人或某物相匹敌，可作动词、名词或形容词”，强调“匹敌关系”',
+          toeicSceneFocus: '实力匹敌、竞争对手、相媲美的事物场景',
+        },
+      ],
+    },
+    {
       word: 'contract',
       phonetic:
         '/ˈkɒntrækt/（n.） /kənˈtrækt/（v.）（英）；/ˈkɑːntrækt/（n.） /kənˈtrækt/（v.）（美）',
@@ -20810,6 +25303,1479 @@ export const wordData = {
     },
   ],
   marketing: [
+    {
+      word: 'exceed',
+      phonetic: '/ɪkˈsiːd/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '超过；超出；超越（数量、限度、预期等）（托业中侧重商务场景的“超预算、超指标、超预期”含义）',
+      toeicSceneFocus:
+        '多出现于项目管理、财务核算、业绩评估等语境，是托业高频动词，阅读（项目报告、财务报表、业绩总结）和听力（商务会议、工作汇报）中常考查“exceed the budget、exceed expectations、exceed the target”等搭配',
+      keyCollocations: [
+        'exceed the budget（超出预算）',
+        'exceed expectations（超出预期）',
+        'exceed the sales target（超额完成销售目标）',
+        'exceed the limit（超过限度）',
+        'exceed the deadline（超过截止日期）',
+      ],
+      toeicExampleSentences: [
+        'The cost of the new project has exceeded the initial budget by 15%, so we need to adjust the expenditure.（新项目的成本已经超出初始预算15%，我们需要调整开支。）',
+        "Our company's sales volume exceeded expectations in the first quarter, thanks to the successful marketing campaign.（得益于成功的营销活动，我司一季度销售额超出预期。）",
+        'All employees are required to finish the task on time and not exceed the given deadline.（要求所有员工按时完成任务，不得超过规定的截止日期。）',
+      ],
+      sceneAssociation:
+        '可以联想“财务人员汇报项目exceed the budget（超出预算）”的画面，或“销售团队exceed the sales target（超额完成销售目标）”，结合“商务场景中的超出限度”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'exceed',
+          coreDifference:
+            '侧重“超过预先设定的数量、预算、目标、限度等，强调超出的客观事实”，及物动词，直接接宾语',
+          toeicSceneFocus: '预算管控、业绩考核、指标达成场景',
+        },
+        {
+          word: 'surpass',
+          coreDifference:
+            '侧重“超越同类事物的水平、品质或前人的成就，带有比较和赶超的意味”，语气更正式',
+          toeicSceneFocus: '品质超越、成就赶超、行业领先场景',
+        },
+        {
+          word: 'overtake',
+          coreDifference:
+            '侧重“在速度、数量或发展进程上追上并超过竞争对手”，常与in搭配',
+          toeicSceneFocus: '市场份额赶超、发展速度超越场景',
+        },
+      ],
+    },
+    {
+      word: 'specify',
+      phonetic: '/ˈspesɪfaɪ/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '明确说明；具体指定；详细列明（托业中侧重商务场景的“明确要求、指定规格”含义）',
+      toeicSceneFocus:
+        '多出现于合同撰写、订单处理、需求沟通等语境，是托业高频动词，阅读（合同条款、采购订单、需求说明书）和听力（商务谈判、订单确认）中常考查“specify the requirements、specify the details、specify the delivery time”等搭配',
+      keyCollocations: [
+        'specify the requirements（明确要求）',
+        'specify the details（详细列明细节）',
+        'specify the delivery time（指定交货时间）',
+        'specify the product specifications（指定产品规格）',
+        'as specified（按照规定）',
+      ],
+      toeicExampleSentences: [
+        'The client specified in the contract that the products must be delivered before the end of June.（客户在合同中明确规定，产品必须在六月底前交货。）',
+        'Please specify your requirements for the product in the application form so that we can provide customized service.（请在申请表中列明你对产品的要求，以便我们提供定制化服务。）',
+        'All the products must be produced strictly as specified in the technical document.（所有产品必须严格按照技术文件的规定生产。）',
+      ],
+      sceneAssociation:
+        '可以联想“法务人员在合同中specify the requirements（明确要求）”的画面，或“客户向供应商specify the delivery time（指定交货时间）”，结合“商务场景中的明确指定”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'specify',
+          coreDifference:
+            '侧重“将模糊的需求、要求等具体化、明确化，详细列明细节或标准”，及物动词，强调“明确性”',
+          toeicSceneFocus: '合同条款、订单要求、产品规格场景',
+        },
+        {
+          word: 'state',
+          coreDifference:
+            '侧重“正式、清楚地陈述事实或观点”，语气较正式，适用范围更广',
+          toeicSceneFocus: '正式声明、观点陈述、事实说明场景',
+        },
+        {
+          word: 'define',
+          coreDifference: '侧重“给事物下定义，明确其内涵或界限”，强调“界定性”',
+          toeicSceneFocus: '概念定义、职责界定、范围划分场景',
+        },
+      ],
+    },
+    {
+      word: 'completion',
+      phonetic: '/kəmˈpliːʃn/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '完成；结束；竣工；完工（托业中侧重商务场景的“项目完工、任务完成”含义）',
+      toeicSceneFocus:
+        '多出现于项目管理、工程建设、任务执行等语境，是托业高频名词，阅读（项目报告、工程验收单、任务清单）和听力（项目汇报、工作进度沟通）中常考查“on completion of、upon completion、completion date”等搭配',
+      keyCollocations: [
+        'completion date（完工日期；完成日期）',
+        'on completion of（在……完成时）',
+        'upon completion of the project（项目竣工后）',
+        'successful completion（顺利完成）',
+        'completion rate（完成率）',
+      ],
+      toeicExampleSentences: [
+        'The completion date of the office building construction project has been postponed by one month due to bad weather.（受恶劣天气影响，办公楼建设项目的完工日期推迟了一个月。）',
+        'On completion of the training, all participants will receive a certificate of attendance.（培训结束后，所有参与者都将获得结业证书。）',
+        'The manager is satisfied with the successful completion of the task ahead of schedule.（经理对任务提前顺利完成表示满意。）',
+      ],
+      sceneAssociation:
+        '可以联想“项目组庆祝project completion（项目竣工）”的画面，或“行政人员统计task completion rate（任务完成率）”，结合“商务场景中的完成状态”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'completion',
+          coreDifference:
+            '侧重“任务、项目、工程等从开始到结束的最终完成状态或完工的动作”，名词词性，强调“终结性”',
+          toeicSceneFocus: '项目竣工、任务完成、工程完工场景',
+        },
+        {
+          word: 'accomplishment',
+          coreDifference:
+            '侧重“通过努力取得的成就、业绩，带有褒义色彩”，强调“成就感”',
+          toeicSceneFocus: '个人成就、团队业绩、重大成果场景',
+        },
+        {
+          word: 'fulfillment',
+          coreDifference: '侧重“义务、责任、订单等的履行或实现”，强调“履约性”',
+          toeicSceneFocus: '订单履行、责任承担、需求满足场景',
+        },
+      ],
+    },
+    {
+      word: 'relevant',
+      phonetic: '/ˈreləvənt/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '相关的；切题的；有意义的；适用的（托业中侧重商务场景的“与工作、项目相关”含义）',
+      toeicSceneFocus:
+        '多出现于信息筛选、报告撰写、商务沟通等语境，是托业高频形容词，阅读（工作报告、调研数据、会议纪要）和听力（商务会议、信息咨询）中常考查“relevant to、relevant information、relevant experience”等搭配',
+      keyCollocations: [
+        'be relevant to（与……相关）',
+        'relevant information（相关信息）',
+        'relevant experience（相关经验）',
+        'relevant data（相关数据）',
+        'relevant documents（相关文件）',
+      ],
+      toeicExampleSentences: [
+        'Please provide all relevant information about the project to help us make a correct decision.（请提供该项目的所有相关信息，帮助我们做出正确决策。）',
+        'Candidates with relevant work experience in international trade will be given priority.（具有国际贸易相关工作经验的候选人将优先考虑。）',
+        'The speaker only talked about the points relevant to the current business situation in the meeting.（演讲者在会议中只谈论了与当前业务状况相关的要点。）',
+      ],
+      sceneAssociation:
+        '可以联想“分析师筛选relevant data（相关数据）撰写报告”的画面，或“HR筛选简历时关注relevant experience（相关经验）”，结合“商务场景中的相关性”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'relevant',
+          coreDifference:
+            '侧重“与当前讨论的主题、目标、工作等紧密相关且有实际意义的”，强调“针对性和实用性”',
+          toeicSceneFocus: '信息筛选、简历筛选、报告撰写场景',
+        },
+        {
+          word: 'related',
+          coreDifference:
+            '侧重“事物之间存在某种联系或关联，关联性可强可弱，适用范围更广”',
+          toeicSceneFocus: '领域关联、事物联系、文件分类场景',
+        },
+        {
+          word: 'pertinent',
+          coreDifference:
+            '侧重“与讨论的问题或目的直接相关，切中要害”，语气更正式，书面性强',
+          toeicSceneFocus: '正式讨论、问题分析、报告撰写场景',
+        },
+      ],
+    },
+    {
+      word: 'thorough',
+      phonetic: '/ˈθʌrə/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '彻底的；全面的；详尽的；缜密的（托业中侧重商务场景的“全面调研、彻底检查”含义）',
+      toeicSceneFocus:
+        '多出现于市场调研、质量检测、工作复盘等语境，是托业高频形容词，阅读（调研报告、检测报告、复盘总结）和听力（工作汇报、质量检查沟通）中常考查“thorough investigation、thorough analysis、thorough check”等搭配',
+      keyCollocations: [
+        'thorough investigation（彻底调查）',
+        'thorough analysis（全面分析）',
+        'thorough check（全面检查）',
+        'thorough understanding（深入理解）',
+        'thorough preparation（充分准备）',
+      ],
+      toeicExampleSentences: [
+        'The quality control team conducted a thorough check of all the products before they were shipped out.（质检团队在产品发货前对所有货品进行了全面检查。）',
+        'We need to do a thorough investigation of the market before launching the new product.（推出新产品前，我们需要对市场进行彻底调研。）',
+        "The manager gave a thorough analysis of the company's current financial situation in the meeting.（经理在会议中对公司当前的财务状况进行了全面分析。）",
+      ],
+      sceneAssociation:
+        '可以联想“质检人员进行thorough check（全面检查）”的画面，或“市场团队开展thorough investigation（彻底调研）”，结合“商务场景中的全面缜密”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'thorough',
+          coreDifference:
+            '侧重“做事全面、细致，不留死角，涵盖所有细节或方面”，强调“完整性和细致性”',
+          toeicSceneFocus: '质量检查、市场调研、数据分析场景',
+        },
+        {
+          word: 'comprehensive',
+          coreDifference:
+            '侧重“内容广泛、涵盖面广，包含相关的各个方面”，语气更正式',
+          toeicSceneFocus: '综合报告、全面方案、广泛调研场景',
+        },
+        {
+          word: 'detailed',
+          coreDifference: '侧重“关注细节，内容详细具体”，强调“细节的丰富性”',
+          toeicSceneFocus: '详细报告、具体方案、细节描述场景',
+        },
+      ],
+    },
+    {
+      word: 'via',
+      phonetic: '/ˈvaɪə/',
+      partOfSpeech: 'prep. 介词',
+      coreMeaning:
+        '通过；经由；经过（某种方式、途径或地点）（托业中侧重商务场景的“通过某种渠道、方式沟通或传递”含义）',
+      toeicSceneFocus:
+        '多出现于商务沟通、物流运输、信息传递等语境，是托业高频介词，阅读（邮件、物流单据、通知）和听力（电话沟通、会议安排）中常考查“via email、via phone、via a third party”等搭配',
+      keyCollocations: [
+        'via email（通过电子邮件）',
+        'via phone call（通过电话）',
+        'via a third party（通过第三方）',
+        'via airmail（通过航空邮件）',
+        'via the Internet（通过互联网）',
+      ],
+      toeicExampleSentences: [
+        'Please send the signed contract to us via email before the end of this week.（请在本周末前将签好字的合同通过电子邮件发送给我们。）',
+        'The goods will be transported to the destination via sea instead of air to reduce costs.（为降低成本，这批货物将通过海运而非空运运往目的地。）',
+        'We can communicate with the overseas partner via a video conference next Monday.（下周一我们可以通过视频会议与海外合作伙伴沟通。）',
+      ],
+      sceneAssociation:
+        '可以联想“员工via email（通过邮件）发送文件”的画面，或“企业via a third party（通过第三方）进行合作洽谈”，结合“商务场景中的途径方式”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'via',
+          coreDifference:
+            '侧重“借助某种媒介、渠道、方式或途经某个地点来完成某事”，介词词性，用法较正式',
+          toeicSceneFocus: '商务沟通、物流运输、信息传递场景',
+        },
+        {
+          word: 'through',
+          coreDifference:
+            '含义与via相近，更口语化，适用范围更广，还可作副词或形容词',
+          toeicSceneFocus: '日常沟通、方式途径、穿过空间场景',
+        },
+        {
+          word: 'by means of',
+          coreDifference: '侧重“通过某种手段、方法”，语气更正式，书面性强',
+          toeicSceneFocus: '正式报告、方法说明、学术写作场景',
+        },
+      ],
+    },
+    {
+      word: 'substantial',
+      phonetic: '/səbˈstænʃl/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '大量的；可观的；实质的；坚固的；重大的（托业中侧重商务场景的“大量资金、重大变化”含义）',
+      toeicSceneFocus:
+        '多出现于财务分析、市场报告、业务评估等语境，是托业高频形容词，阅读（财务报表、市场分析报告、业务计划书）和听力（业绩汇报、商务谈判）中常考查“substantial profit、substantial change、substantial investment”等搭配',
+      keyCollocations: [
+        'substantial profit（可观利润）',
+        'substantial investment（大额投资）',
+        'substantial change（重大变化）',
+        'substantial progress（显著进展）',
+        'substantial amount of money（一大笔钱）',
+      ],
+      toeicExampleSentences: [
+        'The company has made a substantial profit this year due to the successful launch of several new products.（得益于多款新产品的成功推出，该公司今年获得了可观利润。）',
+        'The government has promised to make a substantial investment in the local infrastructure construction.（政府承诺对当地基础设施建设进行大额投资。）',
+        'There has been a substantial change in the market demand since the new policy was implemented.（新政策实施以来，市场需求发生了重大变化。）',
+      ],
+      sceneAssociation:
+        '可以联想“财务总监汇报substantial profit（可观利润）”的画面，或“分析师指出市场的substantial change（重大变化）”，结合“商务场景中的大量重大”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'substantial',
+          coreDifference:
+            '侧重“数量上大量可观，或程度上重大显著，也可指事物具有实质内容”，强调“规模和重要性”',
+          toeicSceneFocus: '财务收益、投资规模、市场变化场景',
+        },
+        {
+          word: 'considerable',
+          coreDifference:
+            '侧重“数量、程度或范围相当大的”，与substantial含义相近，可互换，语气稍弱',
+          toeicSceneFocus: '时间投入、成本消耗、数量规模场景',
+        },
+        {
+          word: 'significant',
+          coreDifference:
+            '侧重“事物重要、影响大，或变化明显”，更强调“重要性和显著性”',
+          toeicSceneFocus: '业绩变化、影响程度、重要成果场景',
+        },
+      ],
+    },
+    {
+      word: 'impact',
+      phonetic: '/ˈɪmpækt/（n.）；/ɪmˈpækt/（v.）',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        'n. 影响；作用；冲击力；碰撞；v. 影响；撞击；冲击（托业中侧重商务场景的“市场影响、政策作用”含义）',
+      toeicSceneFocus:
+        '多出现于市场分析、政策解读、业务评估等语境，是托业高频词，阅读（市场报告、政策分析、业务评估）和听力（商务会议、业绩汇报）中常考查“have an impact on、impact on、economic impact”等搭配',
+      keyCollocations: [
+        'have a significant impact on（对……产生重大影响）',
+        'economic impact（经济影响）',
+        'environmental impact（环境影响）',
+        'impact assessment（影响评估）',
+        'impact the market（影响市场）',
+      ],
+      toeicExampleSentences: [
+        'The new environmental policy will have a significant impact on the manufacturing industry.（新环保政策将对制造业产生重大影响。）',
+        "The global economic downturn has impacted the company's export business seriously.（全球经济下行严重影响了该公司的出口业务。）",
+        'We need to conduct an impact assessment before launching the new policy to avoid potential risks.（推出新政策前，我们需要进行影响评估，规避潜在风险。）',
+      ],
+      sceneAssociation:
+        '可以联想“分析师评估政策的economic impact（经济影响）”的画面，或“市场变化impact the sales（影响销量）”，结合“商务场景中的影响作用”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'impact',
+          coreDifference:
+            '侧重“事物对另一事物产生的强烈影响或冲击，可作名词或动词，动词为及物动词，语气较强烈”',
+          toeicSceneFocus: '政策影响、市场冲击、经济作用场景',
+        },
+        {
+          word: 'influence',
+          coreDifference:
+            '侧重“通过间接方式对人或事物产生潜移默化的影响”，可作名词或动词，语气较温和',
+          toeicSceneFocus: '品牌影响、个人影响力、趋势引导场景',
+        },
+        {
+          word: 'effect',
+          coreDifference:
+            '多作名词，侧重“事物产生的结果或效果”，常用搭配have an effect on',
+          toeicSceneFocus: '政策效果、药物作用、措施结果场景',
+        },
+      ],
+    },
+    {
+      word: 'recognition',
+      phonetic: '/ˌrekəɡˈnɪʃn/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '认可；承认；赏识；表彰；认出（托业中侧重商务场景的“品牌认可、业绩表彰”含义）',
+      toeicSceneFocus:
+        '多出现于品牌建设、员工激励、商务合作等语境，是托业高频名词，阅读（企业年报、表彰通知、合作协议）和听力（员工大会、商务谈判）中常考查“in recognition of、gain recognition、brand recognition”等搭配',
+      keyCollocations: [
+        'brand recognition（品牌认知度；品牌认可度）',
+        'gain recognition（获得认可）',
+        'in recognition of（表彰；为酬谢）',
+        'international recognition（国际认可）',
+        'employee recognition（员工表彰）',
+      ],
+      toeicExampleSentences: [
+        'The company has worked hard to improve its brand recognition in the global market over the past five years.（过去五年，该公司努力提升其在全球市场的品牌认可度。）',
+        'In recognition of his outstanding contribution to the project, the company awarded him a bonus.（为表彰他对项目的突出贡献，公司奖励了他一笔奖金。）',
+        'The new product has gained wide recognition from consumers since it was launched last month.（这款新产品自上月推出以来，获得了消费者的广泛认可。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业通过营销提升brand recognition（品牌认可度）”的画面，或“公司in recognition of（表彰）优秀员工”，结合“商务场景中的认可表彰”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'recognition',
+          coreDifference:
+            '侧重“对人或事物的价值、成就的认可、赏识或正式承认，也可指认出某人或某物”，名词词性',
+          toeicSceneFocus: '品牌认可、员工表彰、国际承认场景',
+        },
+        {
+          word: 'acknowledgment',
+          coreDifference:
+            '侧重“对收到某物或某事的确认，或对他人帮助的感谢，语气更正式”',
+          toeicSceneFocus: '邮件确认、收到通知、致谢场景',
+        },
+        {
+          word: 'appreciation',
+          coreDifference:
+            '侧重“对他人的工作、帮助等的感激或欣赏”，强调“感激之情”',
+          toeicSceneFocus: '员工感激、客户感谢、作品欣赏场景',
+        },
+      ],
+    },
+    {
+      word: 'secure',
+      phonetic: '/sɪˈkjʊə/',
+      partOfSpeech: 'adj. 形容词；v. 动词',
+      coreMeaning:
+        'adj. 安全的；可靠的；牢固的；有保障的；v. 获得；得到；确保；使安全（托业中侧重商务场景的“获得订单、确保安全”含义）',
+      toeicSceneFocus:
+        '多出现于商务谈判、风险管理、职场求职等语境，是托业高频词，阅读（合同、简历、风险报告）和听力（商务谈判、工作安排）中常考查“secure a contract、secure a job、secure the data”等搭配',
+      keyCollocations: [
+        'secure a contract（获得合同）',
+        'secure a deal（达成交易）',
+        'secure a job（获得工作）',
+        'secure the safety（确保安全）',
+        'secure payment（安全支付）',
+      ],
+      toeicExampleSentences: [
+        'Our sales team worked hard to secure a big contract with a multinational company last week.（上周，我们的销售团队努力争取到了与一家跨国公司的大额合同。）',
+        "The IT department has taken measures to secure the company's confidential data from being leaked.（IT部门已采取措施，确保公司机密数据不被泄露。）",
+        'After several rounds of interviews, she finally secured a position in the marketing department.（经过几轮面试，她最终获得了市场部的一个职位。）',
+      ],
+      sceneAssociation:
+        '可以联想“销售团队secure a contract（获得合同）”的画面，或“技术人员secure the data（确保数据安全）”，结合“商务场景中的获得与确保”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'secure',
+          coreDifference:
+            '作动词时侧重“通过努力获得稀缺的东西（如合同、工作），或采取措施确保安全”；作形容词时侧重“安全可靠、有保障”',
+          toeicSceneFocus: '商务谈判、数据安全、求职就业场景',
+        },
+        {
+          word: 'obtain',
+          coreDifference:
+            '侧重“通过努力或某种方式获得某物”，语气较正式，适用范围更广，不强调“稀缺性”',
+          toeicSceneFocus: '获得信息、取得资格、获取资源场景',
+        },
+        {
+          word: 'ensure',
+          coreDifference:
+            '侧重“采取措施确保某事发生或不发生”，动词词性，与secure作动词时的“确保”义相近，可互换',
+          toeicSceneFocus: '确保质量、保证安全、保障进度场景',
+        },
+      ],
+    },
+    {
+      word: 'accessible',
+      phonetic: '/əkˈsesəbl/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '可到达的；可接近的；可使用的；易理解的；平易近人的（托业中侧重商务场景的“信息可获取、场所可进入”含义）',
+      toeicSceneFocus:
+        '多出现于产品设计、信息管理、客户服务等语境，是托业高频形容词，阅读（产品说明书、信息手册、客户服务指南）和听力（产品介绍、服务咨询）中常考查“accessible to、easily accessible、accessible information”等搭配',
+      keyCollocations: [
+        'be accessible to（可被……获取；对……开放）',
+        'easily accessible（易于获取的；交通便利的）',
+        'accessible information（可获取的信息）',
+        'accessible design（无障碍设计）',
+        'accessible location（交通便利的位置）',
+      ],
+      toeicExampleSentences: [
+        "The company's customer service hotline is easily accessible 24 hours a day.（该公司的客户服务热线24小时畅通，易于拨打。）",
+        'All the relevant documents are stored in the cloud and accessible to all employees.（所有相关文件都存储在云端，可供所有员工查阅。）',
+        'The new office is located in an accessible location with convenient transportation.（新办公室位于交通便利的地段，出行方便。）',
+      ],
+      sceneAssociation:
+        '可以联想“员工通过云端获取accessible information（可获取的信息）”的画面，或“客户拨打easily accessible hotline（易于拨打的热线）”，结合“商务场景中的可获取性”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'accessible',
+          coreDifference:
+            '侧重“事物（信息、场所、产品等）易于获取、到达或使用，也可指人平易近人”，强调“易用性和可达性”',
+          toeicSceneFocus: '信息管理、场所选址、产品设计场景',
+        },
+        {
+          word: 'available',
+          coreDifference:
+            '侧重“某物可用、可获得，或某人有空”，强调“可用性和空闲性”',
+          toeicSceneFocus: '资源可用、人员空闲、产品可购场景',
+        },
+        {
+          word: 'reachable',
+          coreDifference: '侧重“地点可到达，或人可联系到”，适用范围较窄',
+          toeicSceneFocus: '地点可达、人员可联系场景',
+        },
+      ],
+    },
+    {
+      word: 'situation',
+      phonetic: '/ˌsɪtʃuˈeɪʃn/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '情况；状况；形势；局面；位置（托业中侧重商务场景的“市场形势、公司状况”含义）',
+      toeicSceneFocus:
+        '多出现于市场分析、企业管理、商务决策等语境，是托业高频名词，阅读（市场报告、公司年报、决策方案）和听力（商务会议、形势分析）中常考查“current situation、difficult situation、improve the situation”等搭配',
+      keyCollocations: [
+        'current situation（当前形势；现状）',
+        'market situation（市场形势）',
+        'difficult situation（困境）',
+        'improve the situation（改善局面）',
+        'analyze the situation（分析形势）',
+      ],
+      toeicExampleSentences: [
+        'The manager called a meeting to analyze the current market situation and discuss the next step.（经理召开会议，分析当前市场形势，讨论下一步计划。）',
+        'The company is facing a difficult situation due to the decline in sales volume.（由于销量下滑，该公司正面临困境。）',
+        'We need to take immediate measures to improve the current situation.（我们需要立即采取措施，改善当前局面。）',
+      ],
+      sceneAssociation:
+        '可以联想“管理层analyze the market situation（分析市场形势）”的画面，或“企业采取措施improve the situation（改善局面）”，结合“商务场景中的形势状况”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'situation',
+          coreDifference:
+            '侧重“某一特定时间内的整体情况、形势或局面，常与形容词搭配描述其性质”，强调“整体性和特定性”',
+          toeicSceneFocus: '市场形势、企业状况、困境应对场景',
+        },
+        {
+          word: 'condition',
+          coreDifference:
+            '侧重“事物的状态、条件，或影响事物发展的环境因素”，强调“条件性和状态性”',
+          toeicSceneFocus: '产品状态、合同条件、环境因素场景',
+        },
+        {
+          word: 'circumstance',
+          coreDifference:
+            '侧重“影响事物发展的外部环境、情况或境遇”，常用复数形式，强调“外部性”',
+          toeicSceneFocus: '外部环境、客观情况、特殊境遇场景',
+        },
+      ],
+    },
+    {
+      word: 'incorporate',
+      phonetic: '/ɪnˈkɔːpəreɪt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '包含；并入；吸收；使并入；注册成立（公司）（托业中侧重商务场景的“将意见纳入方案、将功能融入产品”含义）',
+      toeicSceneFocus:
+        '多出现于方案设计、产品研发、企业注册等语境，是托业高频动词，阅读（方案文档、产品研发报告、企业注册文件）和听力（方案讨论、产品介绍）中常考查“incorporate into、incorporate sth. in/into sth.”等搭配',
+      keyCollocations: [
+        'incorporate into（将……并入；把……融入）',
+        "incorporate sb.'s suggestions（采纳某人的建议）",
+        'incorporate new technology（融入新技术）',
+        'incorporate a company（注册成立公司）',
+        'incorporate environmental factors（纳入环境因素）',
+      ],
+      toeicExampleSentences: [
+        'We will incorporate your valuable suggestions into the new project plan.（我们将把你宝贵的建议纳入新的项目方案中。）',
+        'The new smartphone incorporates many advanced features that meet the needs of consumers.（这款新智能手机融入了许多先进功能，满足了消费者的需求。）',
+        'The entrepreneurs decided to incorporate a new company to expand their business.（这些企业家决定注册成立一家新公司，以拓展业务。）',
+      ],
+      sceneAssociation:
+        '可以联想“设计师incorporate new technology（融入新技术）到产品中”的画面，或“团队incorporate suggestions（采纳建议）优化方案”，结合“商务场景中的融入与纳入”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'incorporate',
+          coreDifference:
+            '侧重“将一个事物融入或并入另一个事物，使其成为整体的一部分，也可指注册公司”，强调“融合性和整体性”',
+          toeicSceneFocus: '方案设计、产品研发、企业注册场景',
+        },
+        {
+          word: 'integrate',
+          coreDifference:
+            '侧重“将不同的事物整合为一个协调运作的整体”，强调“协调性和统一性”',
+          toeicSceneFocus: '系统整合、团队融合、资源调配场景',
+        },
+        {
+          word: 'include',
+          coreDifference:
+            '侧重“将某物作为整体的一部分包含在内”，语气较口语化，适用范围更广',
+          toeicSceneFocus: '内容包含、名单列入、要素涵盖场景',
+        },
+      ],
+    },
+    {
+      word: 'exhibit',
+      phonetic: '/ɪɡˈzɪbɪt/',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning:
+        'v. 展示；陈列；表现；显露；n. 展览品；展品；展览；展出（托业中侧重商务场景的“产品展示、展会陈列”含义）',
+      toeicSceneFocus:
+        '多出现于展会策划、产品推广、商务展示等语境，是托业高频词，阅读（展会邀请函、产品手册）和听力（展会沟通、商务汇报）中常考查“exhibit products、art exhibit、on exhibit”等搭配',
+      keyCollocations: [
+        'exhibit products（展示产品）',
+        'trade exhibit（贸易展览）',
+        'on exhibit（展出中）',
+        'exhibit a feature（呈现某种特点）',
+        'exhibition hall（展厅）',
+      ],
+      toeicExampleSentences: [
+        'Our company will exhibit new electronic products at the international trade fair next month.（我司将于下月在国际贸易博览会上展示新款电子产品。）',
+        'The latest model of the smartphone is on exhibit in the central hall of the exhibition center.（这款最新款智能手机正在会展中心的中央展厅展出。）',
+        'The product exhibits excellent performance in terms of battery life and charging speed.（该产品在续航和充电速度方面表现出优异的性能。）',
+      ],
+      sceneAssociation:
+        '可以联想“参展人员在展厅exhibit products（展示产品）”的画面，或“新款设备在展会上on exhibit（展出中）吸引客户”，结合“商务场景中的展示陈列”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'exhibit',
+          coreDifference:
+            '侧重“在展会、展厅等场合正式展示产品或艺术品，可作动词或名词，强调公开陈列的动作或物品”',
+          toeicSceneFocus: '产品展会、商务陈列、特点展示场景',
+        },
+        {
+          word: 'display',
+          coreDifference:
+            '泛指“展示、陈列任何物品”，可作动词或名词，适用范围更广，既可以是正式展会，也可以是日常摆放',
+          toeicSceneFocus: '橱窗展示、屏幕显示、日常陈列场景',
+        },
+        {
+          word: 'demonstrate',
+          coreDifference:
+            '侧重“通过实际操作、演示来展示产品的功能或用法”，动词词性，强调“动态演示”',
+          toeicSceneFocus: '产品功能演示、技术操作展示场景',
+        },
+      ],
+    },
+    {
+      word: 'distribute',
+      phonetic: '/dɪˈstrɪbjuːt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '分发；分配；分销；散布；分布（托业中侧重商务场景的“产品分销、物资分配”含义）',
+      toeicSceneFocus:
+        '多出现于供应链管理、产品销售、企业行政等语境，是托业高频动词，阅读（分销合同、物流方案）和听力（销售会议、工作安排）中常考查“distribute products、distribute leaflets、distribute profits”等搭配',
+      keyCollocations: [
+        'distribute products（分销产品）',
+        'distribute leaflets（分发传单）',
+        'distribute profits（分配利润）',
+        'distribute goods（配送货物）',
+        'distribution channel（分销渠道）',
+      ],
+      toeicExampleSentences: [
+        'The company has signed a contract with a local firm to distribute its products across the country.（该公司与一家本地企业签订合同，在全国范围内分销其产品。）',
+        'We will distribute promotional leaflets at the entrance of the shopping mall this weekend.（本周末我们将在商场入口处分发促销传单。）',
+        'The board of directors decided to distribute 30% of the annual profits to the shareholders.（董事会决定将30%的年利润分配给股东。）',
+      ],
+      sceneAssociation:
+        '可以联想“物流公司为品牌distribute goods（配送货物）”的画面，或“员工在商圈distribute leaflets（分发传单）”，结合“商务场景中的分配分销”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'distribute',
+          coreDifference:
+            '侧重“将产品、物资、资料等分配、分发给多个对象或在多个区域分销”，强调“分散传递”的动作',
+          toeicSceneFocus: '产品分销、物资分配、传单分发场景',
+        },
+        {
+          word: 'allocate',
+          coreDifference:
+            '侧重“为特定目的或对象分配资源、资金、时间等”，强调“有计划的分配”',
+          toeicSceneFocus: '预算分配、资源调配、时间安排场景',
+        },
+        {
+          word: 'assign',
+          coreDifference:
+            '侧重“将任务、工作、职责等分配给具体的人”，强调“任务的指派”',
+          toeicSceneFocus: '工作分配、任务指派、职责分配场景',
+        },
+      ],
+    },
+    {
+      word: 'commercial',
+      phonetic: '/kəˈmɜːʃl/',
+      partOfSpeech: 'adj. 形容词；n. 名词',
+      coreMeaning:
+        'adj. 商业的；商务的；商用的；营利的；n. 商业广告（托业中侧重商务场景的“商业活动、商务属性”含义）',
+      toeicSceneFocus:
+        '多出现于商业活动、企业运营、广告营销等语境，是托业高频词，阅读（商业合同、营销方案）和听力（商务会议、广告投放）中常考查“commercial activity、commercial property、TV commercial”等搭配',
+      keyCollocations: [
+        'commercial activity（商业活动）',
+        'commercial property（商业地产）',
+        'TV commercial（电视商业广告）',
+        'commercial use（商业用途）',
+        'commercial value（商业价值）',
+      ],
+      toeicExampleSentences: [
+        'The government has introduced a series of policies to promote commercial cooperation between domestic and foreign enterprises.（政府出台了一系列政策，促进国内外企业的商业合作。）',
+        'This building is used for commercial purposes, so it is not suitable for residential living.（该建筑用于商业用途，不适合居住。）',
+        'We plan to air a 30-second commercial on the local TV station during the prime time.（我们计划在本地电视台的黄金时段播放一则30秒的商业广告。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业洽谈commercial cooperation（商业合作）”的画面，或“营销团队投放TV commercial（电视商业广告）”，结合“商务场景中的商业属性”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'commercial',
+          coreDifference:
+            '侧重“与商业、贸易、营利相关的属性或活动，可作形容词或名词（指广告）”',
+          toeicSceneFocus: '商业活动、商用场地、商业广告场景',
+        },
+        {
+          word: 'business',
+          coreDifference:
+            '泛指“与商业、生意相关的事物”，可作名词或形容词，适用范围更广，更口语化',
+          toeicSceneFocus: '商业往来、生意洽谈、商务办公场景',
+        },
+        {
+          word: 'trade',
+          coreDifference:
+            '侧重“行业、贸易活动”，可作名词或动词，强调“买卖交易”的属性',
+          toeicSceneFocus: '国际贸易、行业惯例、交易活动场景',
+        },
+      ],
+    },
+    {
+      word: 'impress',
+      phonetic: '/ɪmˈpres/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '给……留下深刻印象；使钦佩；使铭记；印；压印（托业中侧重商务场景的“给客户、合作伙伴留下印象”含义）',
+      toeicSceneFocus:
+        '多出现于商务洽谈、客户接待、职场面试等语境，是托业高频动词，阅读（商务礼仪指南、面试技巧）和听力（客户沟通、职场反馈）中常考查“impress sb. with sth.、be impressed by、impress a logo”等搭配',
+      keyCollocations: [
+        'impress sb. with sth.（用某物给某人留下深刻印象）',
+        'be impressed by/with（对……印象深刻）',
+        'impress a logo（压印商标）',
+        'impress the client（打动客户）',
+        'leave a good impression（留下好印象）',
+      ],
+      toeicExampleSentences: [
+        'The sales manager impressed the client with his professional knowledge and excellent communication skills.（销售经理凭借专业的知识和出色的沟通能力打动了客户。）',
+        "We were deeply impressed by the manufacturer's strict quality control system during the visit.（参观期间，我们对该制造商严格的质量管控体系印象深刻。）",
+        'The factory can impress the company logo on the surface of the product according to the requirements.（工厂可以根据要求在产品表面压印公司商标。）',
+      ],
+      sceneAssociation:
+        '可以联想“销售顾问用专业方案impress the client（打动客户）”的画面，或“面试者凭借能力给面试官留下深刻印象”，结合“商务场景中的印象塑造”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'impress',
+          coreDifference:
+            '侧重“通过自身的能力、行为或某物的特点，给他人留下深刻的正面或负面印象”，动词词性，常与介词with/by搭配',
+          toeicSceneFocus: '商务洽谈、客户接待、面试表现场景',
+        },
+        {
+          word: 'impression',
+          coreDifference: '是impress的名词形式，侧重“他人对人或事物形成的印象”',
+          toeicSceneFocus: '印象评价、形象塑造场景',
+        },
+        {
+          word: 'strike',
+          coreDifference:
+            '侧重“突然给人留下某种印象”，常用搭配strike sb. as，语气更口语化',
+          toeicSceneFocus: '日常交流、初次见面场景',
+        },
+      ],
+    },
+    {
+      word: 'property',
+      phonetic: '/ˈprɒpəti/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '财产；资产；所有物；地产；物业；特性；性质（托业中侧重商务场景的“地产物业、资产特性”含义）',
+      toeicSceneFocus:
+        '多出现于房地产交易、企业资产管理、产品研发等语境，是托业高频名词，阅读（房产合同、资产清单）和听力（商务会议、产品介绍）中常考查“commercial property、intellectual property、property right”等搭配',
+      keyCollocations: [
+        'commercial property（商业地产）',
+        'intellectual property (IP)（知识产权）',
+        'property right（产权）',
+        'residential property（住宅地产）',
+        'physical property（物理特性）',
+      ],
+      toeicExampleSentences: [
+        'The company invested a large sum of money in commercial property in the central business district last year.（该公司去年在中央商务区投资了大量资金用于商业地产。）',
+        'It is important for enterprises to protect their intellectual property to avoid infringement.（企业保护自身的知识产权以避免侵权至关重要。）',
+        'The new material has special physical properties that make it resistant to high temperatures and corrosion.（这种新材料具有特殊的物理特性，耐高温且耐腐蚀。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业购置commercial property（商业地产）用于办公”的画面，或“法务人员处理property right（产权）相关事宜”，结合“商务场景中的资产特性”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'property',
+          coreDifference:
+            '侧重“个人或企业拥有的财产、资产（包括地产、知识产权等），也可指事物的特性”，名词词性，含义较丰富',
+          toeicSceneFocus: '地产投资、资产管理、产品特性场景',
+        },
+        {
+          word: 'asset',
+          coreDifference:
+            '侧重“对个人或企业有价值的资产、财产，尤指用于经营的资产”，强调“价值属性”',
+          toeicSceneFocus: '企业资产、固定资产、无形资产场景',
+        },
+        {
+          word: 'estate',
+          coreDifference: '侧重“大片土地、庄园，或个人的全部财产（尤指遗产）”',
+          toeicSceneFocus: '房地产、遗产继承场景',
+        },
+      ],
+    },
+    {
+      word: 'sponsor',
+      phonetic: '/ˈspɒnsə(r)/',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning:
+        'v. 赞助；资助；主办；支持；n. 赞助商；资助者；主办单位（托业中侧重商务场景的“活动赞助、项目资助”含义）',
+      toeicSceneFocus:
+        '多出现于活动策划、赛事组织、项目运营等语境，是托业高频词，阅读（赞助协议、活动方案）和听力（商务谈判、活动宣传）中常考查“sponsor an event、main sponsor、sponsor a project”等搭配',
+      keyCollocations: [
+        'sponsor an event（赞助一项活动）',
+        'main sponsor（主赞助商）',
+        'sponsor a project（资助一个项目）',
+        'sponsorship deal（赞助协议）',
+        'official sponsor（官方赞助商）',
+      ],
+      toeicExampleSentences: [
+        'A well-known beverage company will sponsor the international sports competition to enhance its brand awareness.（一家知名饮料公司将赞助这场国际体育赛事，以提升品牌知名度。）',
+        'Our company is proud to be the main sponsor of the annual charity gala this year.（我司很荣幸成为今年年度慈善晚宴的主赞助商。）',
+        'The local government decided to sponsor the environmental protection project to improve the ecological environment.（当地政府决定资助这个环保项目，以改善生态环境。）',
+      ],
+      sceneAssociation:
+        '可以联想“品牌方sponsor an event（赞助活动）提升曝光”的画面，或“企业作为main sponsor（主赞助商）参与慈善晚宴”，结合“商务场景中的赞助资助”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'sponsor',
+          coreDifference:
+            '侧重“企业或机构为活动、赛事、项目提供资金或物资支持，以获得宣传或其他利益，可作动词或名词”',
+          toeicSceneFocus: '活动赞助、赛事资助、项目支持场景',
+        },
+        {
+          word: 'fund',
+          coreDifference:
+            '侧重“为项目、组织提供资金支持”，可作动词或名词，强调“资金层面的资助”',
+          toeicSceneFocus: '项目融资、资金支持、基金设立场景',
+        },
+        {
+          word: 'support',
+          coreDifference:
+            '泛指“从资金、物资、精神等方面支持某人或某事”，适用范围更广，口语化强',
+          toeicSceneFocus: '企业扶持、项目支持、团队协助场景',
+        },
+      ],
+    },
+    {
+      word: 'organize',
+      phonetic: '/ˈɔːɡənaɪz/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '组织；筹备；安排；整理；规划（托业中侧重商务场景的“活动组织、工作安排”含义）',
+      toeicSceneFocus:
+        '多出现于活动策划、企业管理、职场工作等语境，是托业高频动词，阅读（活动方案、工作计划）和听力（会议安排、任务分配）中常考查“organize an event、organize data、organize a meeting”等搭配',
+      keyCollocations: [
+        'organize an event（组织一场活动）',
+        'organize a meeting（组织一次会议）',
+        'organize data（整理数据）',
+        'organize the workflow（规划工作流程）',
+        'organized（有条理的）',
+      ],
+      toeicExampleSentences: [
+        'The marketing department is responsible for organizing the annual customer appreciation event.（市场部负责组织一年一度的客户答谢活动。）',
+        'Please organize the sales data of the past quarter into a report and submit it by Friday.（请将上季度的销售数据整理成报告，周五前提交。）',
+        'We need to organize a meeting with the supplier to discuss the problem of delayed delivery.（我们需要组织一场与供应商的会议，讨论交货延迟的问题。）',
+      ],
+      sceneAssociation:
+        '可以联想“行政人员organize a meeting（组织会议）协调工作”的画面，或“分析师organize data（整理数据）撰写报告”，结合“商务场景中的组织筹备”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'organize',
+          coreDifference:
+            '侧重“为实现某个目标，对人员、活动、数据等进行系统的安排、整理或筹备”，动词词性',
+          toeicSceneFocus: '活动组织、会议筹备、数据整理场景',
+        },
+        {
+          word: 'arrange',
+          coreDifference:
+            '侧重“对具体的事务（如时间、地点、行程等）进行安排、协调”，强调“具体细节的落实”',
+          toeicSceneFocus: '行程安排、会议预约、场地布置场景',
+        },
+        {
+          word: 'coordinate',
+          coreDifference:
+            '侧重“协调多个部门、人员或事项，使其协同运作”，强调“协同性”',
+          toeicSceneFocus: '跨部门协调、项目协作、活动统筹场景',
+        },
+      ],
+    },
+    {
+      word: 'competition',
+      phonetic: '/ˌkɒmpəˈtɪʃn/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '竞争；角逐；比赛；竞赛（托业中侧重商务场景的“市场竞争、行业竞赛”含义）',
+      toeicSceneFocus:
+        '多出现于市场分析、企业战略、活动策划等语境，是托业高频名词，阅读（行业报告、竞赛方案）和听力（商务会议、活动宣传）中常考查“market competition、fair competition、enter a competition”等搭配',
+      keyCollocations: [
+        'market competition（市场竞争）',
+        'fair competition（公平竞争）',
+        'enter a competition（参加比赛）',
+        'face fierce competition（面临激烈竞争）',
+        'competition advantage（竞争优势）',
+      ],
+      toeicExampleSentences: [
+        'Small and medium-sized enterprises need to improve their core competitiveness to survive in the fierce market competition.（中小企业需要提升核心竞争力，才能在激烈的市场竞争中生存。）',
+        'Our company will enter the innovation competition held by the industry association next month.（我司将于下月参加行业协会举办的创新大赛。）',
+        'The company has a clear competition advantage due to its advanced technology and high-quality service.（该公司凭借先进的技术和优质的服务，拥有明显的竞争优势。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业在market competition（市场竞争）中提升优势”的画面，或“团队报名enter a competition（参加比赛）展示创新成果”，结合“商务场景中的竞争竞赛”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'competition',
+          coreDifference:
+            '侧重“个人或企业之间为了争夺资源、市场、名次等而进行的竞争或比赛”，名词词性，适用范围较广',
+          toeicSceneFocus: '市场竞争、行业竞赛、技能比赛场景',
+        },
+        {
+          word: 'rivalry',
+          coreDifference:
+            '侧重“两个对手之间长期的、激烈的竞争关系”，强调“对抗性和长期性”',
+          toeicSceneFocus: '企业竞争关系、品牌对抗场景',
+        },
+        {
+          word: 'contest',
+          coreDifference:
+            '侧重“为了选拔优胜者而举办的比赛、竞赛”，通常有明确的评判标准和奖项',
+          toeicSceneFocus: '技能竞赛、演讲比赛、选秀活动场景',
+        },
+      ],
+    },
+    {
+      word: 'feature',
+      phonetic: '/ˈfiːtʃə(r)/',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        'n. 特点；特征；特色；特写；专题节目；v. 以……为特色；是……的特征；特写（托业中侧重商务场景的“产品特色、活动亮点”含义）',
+      toeicSceneFocus:
+        '多出现于产品推广、活动宣传、内容创作等语境，是托业高频词，阅读（产品手册、活动海报）和听力（产品介绍、活动讲解）中常考查“key feature、main feature、feature a product”等搭配',
+      keyCollocations: [
+        'key feature（核心特点）',
+        'main feature（主要特色）',
+        'feature a product（主推一款产品）',
+        'special feature（特别报道；特殊功能）',
+        'feature article（专题文章）',
+      ],
+      toeicExampleSentences: [
+        'One of the key features of this new software is its high efficiency and user-friendly interface.（这款新软件的核心特点之一是高效性和人性化的界面。）',
+        'The trade fair will feature the latest technologies and products in the field of artificial intelligence.（本次交易会将主推人工智能领域的最新技术和产品。）',
+        "The company's new product was the main feature of the business magazine's latest issue.（该公司的新产品是这本商业杂志最新一期的主打内容。）",
+      ],
+      sceneAssociation:
+        '可以联想“产品经理介绍产品的key feature（核心特点）”的画面，或“展会主推新款设备feature a product（主推一款产品）”，结合“商务场景中的特色亮点”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'feature',
+          coreDifference:
+            '侧重“事物本身具有的、显著的特点或特色，可作名词或动词，动词义为‘以……为特色’”',
+          toeicSceneFocus: '产品特色、活动亮点、内容特写场景',
+        },
+        {
+          word: 'characteristic',
+          coreDifference:
+            '侧重“人或事物所具有的、区别于其他的本质特征”，名词词性，更偏向书面化',
+          toeicSceneFocus: '事物本质特征、人物性格特点场景',
+        },
+        {
+          word: 'trait',
+          coreDifference:
+            '侧重“人的性格、品质方面的特点或特征”，也可指动植物的特性',
+          toeicSceneFocus: '人物性格特质、生物特性场景',
+        },
+      ],
+    },
+    {
+      word: 'attractive',
+      phonetic: '/əˈtræktɪv/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '有吸引力的；诱人的；迷人的；引起兴趣的（托业中侧重商务场景的“产品诱人、条件吸引人”含义）',
+      toeicSceneFocus:
+        '多出现于产品推广、招聘求职、商务合作等语境，是托业高频形容词，阅读（招聘广告、产品宣传）和听力（商务谈判、招聘宣讲）中常考查“attractive price、attractive offer、attractive package”等搭配',
+      keyCollocations: [
+        'attractive price（诱人的价格）',
+        'attractive offer（诱人的提议）',
+        'attractive salary package（优厚的薪资待遇）',
+        'attractive design（吸引人的设计）',
+        'attractive opportunity（诱人的机会）',
+      ],
+      toeicExampleSentences: [
+        'The company offers an attractive salary package to attract talented professionals in the industry.（该公司提供优厚的薪资待遇，以吸引行业内的优秀人才。）',
+        'This product has an attractive design and a reasonable price, so it is very popular among consumers.（这款产品设计吸引人且价格合理，因此深受消费者欢迎。）',
+        'The supplier gave us an attractive offer of a 10% discount for large-quantity purchases.（供应商为我们提供了诱人的优惠，大批量采购可享受九折折扣。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业用attractive salary package（优厚的薪资待遇）招聘人才”的画面，或“产品以attractive price（诱人的价格）打开市场”，结合“商务场景中的吸引力属性”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'attractive',
+          coreDifference:
+            '侧重“事物具有吸引力，能够引起他人的兴趣或好感，可形容价格、设计、待遇等多种事物”',
+          toeicSceneFocus: '薪资待遇、产品设计、合作提议场景',
+        },
+        {
+          word: 'appealing',
+          coreDifference:
+            '侧重“事物具有感染力，能够打动人心，引起情感上的共鸣”，语气更委婉',
+          toeicSceneFocus: '产品卖点、宣传文案、活动方案场景',
+        },
+        {
+          word: 'alluring',
+          coreDifference:
+            '侧重“事物具有强烈的诱惑力，吸引人去追求”，语气较强烈，略带贬义',
+          toeicSceneFocus: '利益诱惑、产品诱惑场景',
+        },
+      ],
+    },
+    {
+      word: 'extend',
+      phonetic: '/ɪkˈstend/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '延长；延伸；扩展；扩大；提供；给予（托业中侧重商务场景的“合同延期、业务扩展”含义）',
+      toeicSceneFocus:
+        '多出现于合同管理、业务运营、商务接待等语境，是托业高频动词，阅读（合同条款、业务方案）和听力（商务谈判、工作安排）中常考查“extend a contract、extend business、extend an invitation”等搭配',
+      keyCollocations: [
+        'extend a contract（延长合同期限）',
+        'extend business（拓展业务）',
+        'extend an invitation（发出邀请）',
+        'extend the deadline（延长截止日期）',
+        'extend a warm welcome（表示热烈欢迎）',
+      ],
+      toeicExampleSentences: [
+        'Both parties agreed to extend the cooperation contract for another two years due to the pleasant cooperation.（由于合作愉快，双方同意将合作合同再延长两年。）',
+        'The company plans to extend its business to the Southeast Asian market next year.（该公司计划明年将业务拓展到东南亚市场。）',
+        'We would like to extend an invitation to you to attend our new product launch event next week.（我们想邀请你参加下周的新产品发布会。）',
+      ],
+      sceneAssociation:
+        '可以联想“商务双方洽谈extend a contract（延长合同期限）”的画面，或“企业拓展团队extend business（拓展业务）到海外”，结合“商务场景中的延长扩展”核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'extend',
+          coreDifference:
+            '侧重“将事物的时间、空间、范围等延长或扩展，也可指主动提供帮助、邀请等”，动词词性，适用范围较广',
+          toeicSceneFocus: '合同延期、业务拓展、发出邀请场景',
+        },
+        {
+          word: 'prolong',
+          coreDifference:
+            '侧重“将时间延长，通常是超出原定的时间长度”，强调“时间上的延长”',
+          toeicSceneFocus: '延长时间、拖延进程场景',
+        },
+        {
+          word: 'expand',
+          coreDifference:
+            '侧重“将事物的规模、范围、体积等扩大”，强调“规模上的扩张”',
+          toeicSceneFocus: '扩大规模、拓展市场、扩充团队场景',
+        },
+      ],
+    },
+
+    {
+      word: 'automatically',
+      phonetic: '/ˌɔːtəˈmætɪkli/',
+      phrase: 'the system updates automatically',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '自动地；无需人工干预地（指系统、设备或过程自行运行或触发）',
+      toeicSceneFocus:
+        '多出现于技术说明、操作流程、系统功能等语境，托业阅读（软件指南）和听力（设备报修）中常见，强调自动化操作或默认设置',
+      keyCollocations: [
+        'update automatically',
+        'run automatically',
+        'adjust automatically',
+        'trigger automatically',
+      ],
+      toeicExampleSentences: [
+        'The software will automatically save your work every 10 minutes.',
+        'Payments are deducted automatically from your account on the due date.',
+        'The thermostat adjusts the temperature automatically based on the room conditions.',
+        'Upon completion, the report will be sent to the manager automatically.',
+      ],
+      sceneAssociation:
+        "联想'办公软件自动保存文档'或'支付系统自动扣款'的场景，结合现代职场中自动化流程的日常应用",
+      confusingWordsComparison: [
+        {
+          word: 'automatically',
+          coreDifference: '强调系统或设备自行运作，无需人工干预',
+          toeicSceneFocus: '技术操作与流程自动化',
+        },
+        {
+          word: 'instantly',
+          coreDifference: '侧重立即发生，但可能仍需人工触发',
+          toeicSceneFocus: '响应速度描述',
+        },
+        {
+          word: 'manually',
+          coreDifference: '指手工操作，与automatically相反',
+          toeicSceneFocus: '操作方式对比',
+        },
+      ],
+    },
+    {
+      word: 'achieve',
+      phonetic: '/əˈtʃiːv/',
+      phrase: 'achieve the sales target',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '实现；达到；获得（通过努力达成目标、获得成果或完成某事）',
+      toeicSceneFocus:
+        '多出现于目标设定、绩效评估、项目总结等语境，托业阅读（公司报告）和听力（工作汇报）中高频考查，强调结果导向',
+      keyCollocations: [
+        'achieve a goal',
+        'achieve success',
+        'achieve results',
+        'achieve objectives',
+      ],
+      toeicExampleSentences: [
+        'The team worked hard to achieve the quarterly targets ahead of schedule.',
+        'With proper planning, you can achieve a better work-life balance.',
+        'The company aims to achieve a 20% market share by the end of the year.',
+        'Her dedication helped her achieve rapid promotion within the organization.',
+      ],
+      sceneAssociation:
+        "联想'员工庆祝达成销售目标'或'年度报告展示业绩成就'的场景，结合职场中目标管理的核心情境",
+      confusingWordsComparison: [
+        {
+          word: 'achieve',
+          coreDifference: '侧重通过努力达成具体目标或结果',
+          toeicSceneFocus: '目标管理与绩效评估',
+        },
+        {
+          word: 'accomplish',
+          coreDifference: '常指完成任务或使命，强调过程完成',
+          toeicSceneFocus: '任务完成度描述',
+        },
+        {
+          word: 'attain',
+          coreDifference: '较正式，多指达到某种水平或状态',
+          toeicSceneFocus: '标准或水平达成',
+        },
+        {
+          word: 'complete',
+          coreDifference: '强调事情做完，不侧重努力程度',
+          toeicSceneFocus: '任务完成状态',
+        },
+      ],
+    },
+    {
+      word: 'suitable',
+      phonetic: '/ˈsuːtəbl/',
+      phrase: 'a suitable candidate for the role',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '合适的；适宜的（符合要求、条件或场合的）',
+      toeicSceneFocus:
+        '多出现于人员选拔、产品推荐、方案评估等语境，托业阅读（招聘广告）和听力（客户咨询）中涉及匹配度判断',
+      keyCollocations: [
+        'suitable for',
+        'suitable candidate',
+        'suitable time',
+        'suitable solution',
+      ],
+      toeicExampleSentences: [
+        'We need to find a suitable venue for the annual conference.',
+        'This software is suitable for both beginners and advanced users.',
+        'Please suggest a suitable time for our next meeting.',
+        "The candidate's qualifications are highly suitable for this position.",
+      ],
+      sceneAssociation:
+        "联想'HR评估候选人适配度'或'客户选择合适产品'的场景，结合职场中决策匹配的典型情境",
+      confusingWordsComparison: [
+        {
+          word: 'suitable',
+          coreDifference: '泛指符合条件或要求，用途广泛',
+          toeicSceneFocus: '通用匹配度描述',
+        },
+        {
+          word: 'appropriate',
+          coreDifference: '强调恰当性或得体性，含社会规范意味',
+          toeicSceneFocus: '行为或场合得体性',
+        },
+        {
+          word: 'fitting',
+          coreDifference: '侧重与特定情境或风格相配',
+          toeicSceneFocus: '风格或情境匹配',
+        },
+        {
+          word: 'eligible',
+          coreDifference: '特指符合资格或条件，多用于正式选拔',
+          toeicSceneFocus: '资格符合性判断',
+        },
+      ],
+    },
+    {
+      word: 'appropriate',
+      phonetic: '/əˈprəʊpriət/',
+      phrase: 'take appropriate action',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '适当的；恰当的；合适的（指在特定情境下得体、符合规范或正合时宜的）',
+      toeicSceneFocus:
+        '多出现于政策说明、行为准则、决策评估等语境，托业阅读（公司规定）和听力（建议反馈）中强调行为或方案的得体性',
+      keyCollocations: [
+        'appropriate action',
+        'appropriate behavior',
+        'appropriate for',
+        'consider it appropriate',
+      ],
+      toeicExampleSentences: [
+        'Managers are expected to take appropriate action in emergency situations.',
+        'The dress code requires employees to wear appropriate attire to work.',
+        'The training program is appropriate for all experience levels.',
+        'Please use appropriate language in all professional communications.',
+      ],
+      sceneAssociation:
+        "联想'管理层根据情况采取恰当措施'或'员工遵守得体着装规范'的场景，结合职场礼仪与规范的情境",
+      confusingWordsComparison: [
+        {
+          word: 'appropriate',
+          coreDifference: '强调符合规范、场合或道德的恰当性',
+          toeicSceneFocus: '行为规范与决策判断',
+        },
+        {
+          word: 'suitable',
+          coreDifference: '侧重符合条件或需求，实用性更强',
+          toeicSceneFocus: '实用性匹配',
+        },
+        {
+          word: 'proper',
+          coreDifference: '强调正确性或标准性，有时带传统意味',
+          toeicSceneFocus: '标准符合性',
+        },
+        {
+          word: 'fitting',
+          coreDifference: '侧重与特定时刻或氛围相配',
+          toeicSceneFocus: '情境契合度',
+        },
+      ],
+    },
+    {
+      word: 'numerous',
+      phonetic: '/ˈnjuːmərəs/',
+      phrase: 'numerous attempts to resolve',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '众多的；许多的；大量的（指数目或数量很多）',
+      toeicSceneFocus:
+        '多出现于数据报告、问题描述、项目总结等语境，托业阅读（市场分析）和听力（问题讨论）中用于强调数量或频率',
+      keyCollocations: [
+        'numerous times',
+        'numerous opportunities',
+        'numerous studies',
+        'numerous challenges',
+      ],
+      toeicExampleSentences: [
+        'The company received numerous applications for the internship program.',
+        'We have made numerous attempts to contact the supplier without success.',
+        'Numerous studies have confirmed the effectiveness of this approach.',
+        'The project faced numerous challenges during the implementation phase.',
+      ],
+      sceneAssociation:
+        "联想'简历库中大量申请'或'项目面临众多困难'的场景，结合商务环境中数量描述的常见情境",
+      confusingWordsComparison: [
+        {
+          word: 'numerous',
+          coreDifference: '强调可数事物的数量多，较正式',
+          toeicSceneFocus: '可数事物数量描述',
+        },
+        {
+          word: 'many',
+          coreDifference: '通用词，适用所有语境，更口语化',
+          toeicSceneFocus: '通用数量描述',
+        },
+        {
+          word: 'abundant',
+          coreDifference: '常指资源丰富或供应充足',
+          toeicSceneFocus: '资源丰富度',
+        },
+        {
+          word: 'countless',
+          coreDifference: '强调多到难以计数，语气更强',
+          toeicSceneFocus: '极端数量强调',
+        },
+      ],
+    },
+    {
+      word: 'competitive',
+      phonetic: '/kəmˈpetɪtɪv/',
+      phrase: 'a competitive market environment',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '竞争的；有竞争力的；好竞争的（指涉及竞争或具有优势的）',
+      toeicSceneFocus:
+        '多出现于市场分析、产品定位、招聘评估等语境，托业阅读（商业新闻）和听力（销售对话）中涉及竞争优势或竞争态势',
+      keyCollocations: [
+        'competitive price',
+        'competitive advantage',
+        'competitive market',
+        'highly competitive',
+      ],
+      toeicExampleSentences: [
+        'Our products need to maintain a competitive price in the global market.',
+        "The company's innovative culture gives it a competitive advantage.",
+        'She has a competitive spirit that drives her to excel in every project.',
+        'The job market is highly competitive, especially in the technology sector.',
+      ],
+      sceneAssociation:
+        "联想'产品在市场竞争中保持优势'或'求职者在激烈竞争中脱颖而出'的场景，结合商业竞争的核心情境",
+      confusingWordsComparison: [
+        {
+          word: 'competitive',
+          coreDifference: '既可描述竞争环境，也可指具有竞争力',
+          toeicSceneFocus: '市场竞争与个人特质',
+        },
+        {
+          word: 'aggressive',
+          coreDifference: '常指强势或激进的竞争方式，可能含贬义',
+          toeicSceneFocus: '竞争策略风格',
+        },
+        {
+          word: 'competing',
+          coreDifference: '侧重相互竞争的状态或关系',
+          toeicSceneFocus: '竞争关系描述',
+        },
+        {
+          word: 'rival',
+          coreDifference: '多作名词指竞争对手，或作形容词指竞争的',
+          toeicSceneFocus: '竞争对手关系',
+        },
+      ],
+    },
+    {
+      word: 'specialize',
+      phonetic: '/ˈspeʃəlaɪz/',
+      phrase: 'specialize in digital marketing',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '专门研究；专攻；专业化（指专注于特定领域或技能）',
+      toeicSceneFocus:
+        '多出现于公司介绍、服务描述、个人简历等语境，托业阅读（企业宣传）和听力（业务咨询）中涉及专业领域或核心业务',
+      keyCollocations: [
+        'specialize in',
+        'specialize in providing',
+        'highly specialize',
+        'area of specialization',
+      ],
+      toeicExampleSentences: [
+        'Our firm specializes in providing tax consulting services for small businesses.',
+        'He decided to specialize in international trade law after graduation.',
+        'The company has specialized in software development for over a decade.',
+        'We need to hire an agency that specializes in social media marketing.',
+      ],
+      sceneAssociation:
+        "联想'咨询公司介绍其专业领域'或'求职者强调其专业方向'的场景，结合职场中专业分工的典型情境",
+      confusingWordsComparison: [
+        {
+          word: 'specialize',
+          coreDifference: '侧重专注于特定领域或技能',
+          toeicSceneFocus: '专业领域描述',
+        },
+        {
+          word: 'focus',
+          coreDifference: '泛指集中注意力，不一定是长期专业方向',
+          toeicSceneFocus: '注意力集中',
+        },
+        {
+          word: 'concentrate',
+          coreDifference: '强调集中精力或资源于某点',
+          toeicSceneFocus: '资源集中度',
+        },
+        {
+          word: 'major',
+          coreDifference: '特指大学主修专业，用法较窄',
+          toeicSceneFocus: '学术专业方向',
+        },
+      ],
+    },
+    {
+      word: 'contribute',
+      phonetic: '/kənˈtrɪbjuːt/',
+      phrase: 'contribute to team success',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '贡献；捐助；促成；投稿（指为某事物增添价值、资源或影响其发展）',
+      toeicSceneFocus:
+        '多出现于团队协作、项目汇报、社会责任等语境，托业阅读（年度报告）和听力（小组讨论）中强调个人或集体的投入与影响',
+      keyCollocations: [
+        'contribute to',
+        'contribute significantly',
+        'make a contribution',
+        'contribute ideas',
+      ],
+      toeicExampleSentences: [
+        'Each team member is expected to contribute ideas during the brainstorming session.',
+        'The new policy will contribute to reducing operational costs in the long term.',
+        'She contributes regularly to industry publications on leadership topics.',
+        'Employee volunteering programs contribute positively to community development.',
+      ],
+      sceneAssociation:
+        "联想'团队成员为项目成功贡献力量'或'企业发布社会责任贡献报告'的场景，结合协作与发展的核心商务情境",
+      confusingWordsComparison: [
+        {
+          word: 'contribute',
+          coreDifference: '强调为整体做出贡献或促成某结果，用途广泛',
+          toeicSceneFocus: '团队协作与成果促成',
+        },
+        {
+          word: 'donate',
+          coreDifference: '特指捐赠财物，通常用于慈善语境',
+          toeicSceneFocus: '慈善捐赠',
+        },
+        {
+          word: 'attribute',
+          coreDifference: '指将结果归因于某因素，易混淆但含义不同',
+          toeicSceneFocus: '因果关系归因',
+        },
+        {
+          word: 'provide',
+          coreDifference: '泛指提供，不强调对结果的促成作用',
+          toeicSceneFocus: '资源或服务提供',
+        },
+      ],
+    },
+    {
+      word: 'productivity',
+      phonetic: '/ˌprɒdʌkˈtɪvəti/',
+      phrase: 'improve workplace productivity',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '生产率；生产力；工作效率（指单位时间内产出或工作的效率）',
+      toeicSceneFocus:
+        '多出现于绩效评估、运营管理、技术应用等语境，托业阅读（管理报告）和听力（工作优化）中涉及效率提升或资源利用',
+      keyCollocations: [
+        'increase productivity',
+        'productivity improvement',
+        'productivity tools',
+        'high productivity',
+      ],
+      toeicExampleSentences: [
+        "The new software has significantly increased our team's productivity.",
+        'Management is focused on measures to enhance productivity across all departments.',
+        'Flexible working hours can sometimes lead to higher employee productivity.',
+        'The report analyzes productivity trends in the manufacturing sector over the past five years.',
+      ],
+      sceneAssociation:
+        "联想'公司引入新系统提升效率'或'经理分析团队生产力数据'的场景，结合职场效率管理的核心情境",
+      confusingWordsComparison: [
+        {
+          word: 'productivity',
+          coreDifference: '侧重投入产出的效率比率',
+          toeicSceneFocus: '工作效率评估',
+        },
+        {
+          word: 'production',
+          coreDifference: '指生产活动或产量，不直接体现效率',
+          toeicSceneFocus: '生产过程与产出量',
+        },
+        {
+          word: 'efficiency',
+          coreDifference: '强调资源利用的最优化，减少浪费',
+          toeicSceneFocus: '资源利用优化',
+        },
+        {
+          word: 'output',
+          coreDifference: '仅指产出量，不涉及效率概念',
+          toeicSceneFocus: '产出数量衡量',
+        },
+      ],
+    },
+    {
+      word: 'promptly',
+      phonetic: '/ˈprɒmptli/',
+      phrase: 'respond promptly to inquiries',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '及时地；迅速地；准时地（指在适当或规定的时间内快速行动）',
+      toeicSceneFocus:
+        '多出现于客户服务、工作流程、时间管理等语境，托业阅读（服务承诺）和听力（任务安排）中强调响应速度或守时性',
+      keyCollocations: [
+        'respond promptly',
+        'act promptly',
+        'promptly at',
+        'deliver promptly',
+      ],
+      toeicExampleSentences: [
+        'Customer inquiries must be responded to promptly within 24 hours.',
+        'Please submit your reports promptly by 5 PM on Friday.',
+        'The supplier delivered the goods promptly as promised.',
+        'She arrived promptly at 9:00 AM for the scheduled meeting.',
+      ],
+      sceneAssociation:
+        "联想'客服代表及时回复客户查询'或'员工准时提交工作报告'的场景，结合职场中时间管理与响应效率的情境",
+      confusingWordsComparison: [
+        {
+          word: 'promptly',
+          coreDifference: '强调及时性，常在规定或预期时间内',
+          toeicSceneFocus: '时间管理与服务响应',
+        },
+        {
+          word: 'quickly',
+          coreDifference: '泛指速度快，但不一定涉及时间限制',
+          toeicSceneFocus: '一般速度描述',
+        },
+        {
+          word: 'immediately',
+          coreDifference: '指立刻、马上，反应时间更短',
+          toeicSceneFocus: '即时响应',
+        },
+        {
+          word: 'punctually',
+          coreDifference: '特指严格守时，准时到达',
+          toeicSceneFocus: '赴约或会议守时',
+        },
+      ],
+    },
     {
       word: 'merchandise',
       phonetic: '/ˈmɜːrtʃəndaɪz/',
@@ -33779,6 +39745,911 @@ export const wordData = {
   ],
   finance: [
     {
+      word: 'paid',
+      phonetic: '/peɪd/',
+      phrase: 'paid vacation days',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '已支付的；带薪的（指款项已付或工作获得报酬的）',
+      toeicSceneFocus:
+        '多出现于薪资福利、费用报销、交易记录等语境，托业阅读（雇佣合同）和听力（费用讨论）中涉及支付状态或带薪权益',
+      keyCollocations: [
+        'paid leave',
+        'paid in full',
+        'paid subscription',
+        'well-paid job',
+      ],
+      toeicExampleSentences: [
+        'Employees are entitled to 15 days of paid vacation per year.',
+        'The invoice must be paid within 30 days of receipt.',
+        'She has a well-paid position in the finance department.',
+        'All outstanding balances have been paid as of yesterday.',
+      ],
+      sceneAssociation:
+        "联想'员工查看带薪休假权益'或'会计确认款项支付状态'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'paid',
+          coreDifference: '强调支付完成或获得报酬的状态',
+          toeicSceneFocus: '支付状态与薪酬福利',
+        },
+        {
+          word: 'payable',
+          coreDifference: '指应付但尚未支付的',
+          toeicSceneFocus: '应付账款管理',
+        },
+        {
+          word: 'compensated',
+          coreDifference: '更正式，常指补偿或报酬',
+          toeicSceneFocus: '正式补偿场景',
+        },
+      ],
+    },
+    {
+      word: 'chart',
+      phonetic: '/tʃɑːrt/',
+      phrase: 'the sales growth chart',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '图表；曲线图（用图形方式展示数据或信息的工具）',
+      toeicSceneFocus:
+        '多出现于数据报告、财务分析、业绩展示等语境，托业阅读（年度报告）和听力（演示汇报）中涉及数据可视化呈现',
+      keyCollocations: [
+        'flow chart',
+        'bar chart',
+        'organizational chart',
+        'chart analysis',
+      ],
+      toeicExampleSentences: [
+        'Please refer to the chart on page 5 for revenue breakdown.',
+        'The bar chart clearly shows quarterly sales performance.',
+        'We need to create a new organizational chart after the restructuring.',
+        'The presentation included several charts to illustrate market trends.',
+      ],
+      sceneAssociation:
+        "联想'分析师用图表展示数据趋势'或'会议中讨论图表信息'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'chart',
+          coreDifference: '泛指各种数据图表，用途广泛',
+          toeicSceneFocus: '数据可视化',
+        },
+        {
+          word: 'graph',
+          coreDifference: '特指数学关系图表，如曲线图',
+          toeicSceneFocus: '数学关系展示',
+        },
+        {
+          word: 'diagram',
+          coreDifference: '侧重示意图或结构图',
+          toeicSceneFocus: '流程或结构说明',
+        },
+      ],
+    },
+    {
+      word: 'payroll',
+      phonetic: '/ˈpeɪroʊl/',
+      phrase: 'the monthly payroll processing',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '工资表；发薪名单；薪资总额（指公司员工的工资记录或总支出）',
+      toeicSceneFocus:
+        '多出现于人力资源、财务管理、成本控制等语境，托业阅读（预算报告）和听力（薪资讨论）中涉及工资管理和相关税费',
+      keyCollocations: [
+        'payroll taxes',
+        'payroll department',
+        'payroll system',
+        'on the payroll',
+      ],
+      toeicExampleSentences: [
+        'The payroll must be processed by the 25th of each month.',
+        'Payroll taxes account for a significant portion of labor costs.',
+        'We have 50 employees on the payroll currently.',
+        'The new payroll system has reduced processing errors significantly.',
+      ],
+      sceneAssociation:
+        "联想'人力资源专员核算工资'或'财务经理审查薪资总额'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'payroll',
+          coreDifference: '侧重工资管理系统或总额',
+          toeicSceneFocus: '薪资管理',
+        },
+        {
+          word: 'salary',
+          coreDifference: '指个人固定薪资',
+          toeicSceneFocus: '个人薪酬',
+        },
+        {
+          word: 'wages',
+          coreDifference: '常指按小时计算的工资',
+          toeicSceneFocus: '小时工资',
+        },
+      ],
+    },
+    {
+      word: 'grant',
+      phonetic: '/ɡrænt/',
+      phrase: 'research grant application',
+      partOfSpeech: 'n. 名词/v. 动词',
+      coreMeaning: '拨款；补助金；授予（指资金支持或权利给予）',
+      toeicSceneFocus:
+        '多出现于项目资助、研究经费、权限审批等语境，托业阅读（资助公告）和听力（资金申请）中涉及财务支持或正式批准',
+      keyCollocations: [
+        'government grant',
+        'grant permission',
+        'research grant',
+        'grant application',
+      ],
+      toeicExampleSentences: [
+        'The university received a large grant for scientific research.',
+        'The manager granted approval for the budget increase.',
+        'We need to submit the grant proposal by the end of the month.',
+        'The foundation offers grants to support community projects.',
+      ],
+      sceneAssociation:
+        "联想'研究人员申请项目经费'或'管理层批准预算请求'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'grant',
+          coreDifference: '强调正式批准或资金授予',
+          toeicSceneFocus: '资金批准与支持',
+        },
+        {
+          word: 'funding',
+          coreDifference: '泛指各种资金来源',
+          toeicSceneFocus: '资金筹集',
+        },
+        {
+          word: 'subsidy',
+          coreDifference: '特指政府或机构的补贴',
+          toeicSceneFocus: '政府补贴',
+        },
+      ],
+    },
+    {
+      word: 'scholarship',
+      phonetic: '/ˈskɑːlərʃɪp/',
+      phrase: 'academic scholarship program',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '奖学金；学识（指基于成绩或需要提供的教育资助，或指学术成就）',
+      toeicSceneFocus:
+        '多出现于教育资助、人才发展、企业社会责任等语境，托业阅读（教育政策）和听力（资助讨论）中涉及教育支持项目',
+      keyCollocations: [
+        'full scholarship',
+        'scholarship program',
+        'merit-based scholarship',
+        'apply for scholarship',
+      ],
+      toeicExampleSentences: [
+        'She received a full scholarship to attend the university.',
+        "The company offers scholarships to employees' children.",
+        'The scholarship covers tuition and living expenses.',
+        'Applications for the scholarship are due next Friday.',
+      ],
+      sceneAssociation: "联想'学生获得奖学金资助'或'企业发布奖学金计划'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'scholarship',
+          coreDifference: '侧重教育领域的资金资助',
+          toeicSceneFocus: '教育资助',
+        },
+        {
+          word: 'fellowship',
+          coreDifference: '常指研究生或研究员的资助',
+          toeicSceneFocus: '高级研究资助',
+        },
+        {
+          word: 'bursary',
+          coreDifference: '特指基于经济需要的助学金',
+          toeicSceneFocus: '需求基础资助',
+        },
+      ],
+    },
+    {
+      word: 'donation',
+      phonetic: '/doʊˈneɪʃən/',
+      phrase: 'charitable donation receipt',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '捐赠；捐款（指无偿给予的资金或物资）',
+      toeicSceneFocus:
+        '多出现于慈善活动、企业社会责任、税务减免等语境，托业阅读（年度报告）和听力（募捐活动）中涉及公益贡献',
+      keyCollocations: [
+        'make a donation',
+        'charitable donation',
+        'donation receipt',
+        'blood donation',
+      ],
+      toeicExampleSentences: [
+        'The company made a substantial donation to the local hospital.',
+        'All donations are tax-deductible.',
+        'We appreciate your generous donation to our cause.',
+        'The charity event raised over $50,000 in donations.',
+      ],
+      sceneAssociation: "联想'企业发布慈善捐赠报告'或'个人获得捐款收据'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'donation',
+          coreDifference: '泛指各种无偿给予',
+          toeicSceneFocus: '慈善捐赠',
+        },
+        {
+          word: 'contribution',
+          coreDifference: '可指资金或非资金形式的贡献',
+          toeicSceneFocus: '广义贡献',
+        },
+        {
+          word: 'endowment',
+          coreDifference: '指长期或永久性的捐赠基金',
+          toeicSceneFocus: '基金捐赠',
+        },
+      ],
+    },
+    {
+      word: 'calculate',
+      phonetic: '/ˈkælkjuleɪt/',
+      phrase: 'calculate the total cost',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '计算；核算（通过数学方法确定数值或结果）',
+      toeicSceneFocus:
+        '多出现于财务分析、成本核算、数据统计等语境，托业阅读（财务报告）和听力（预算讨论）中涉及数字运算',
+      keyCollocations: [
+        'calculate costs',
+        'calculate percentage',
+        'calculated risk',
+        'automatically calculate',
+      ],
+      toeicExampleSentences: [
+        'Please calculate the total expenses for the project.',
+        'The software automatically calculates tax deductions.',
+        'We need to calculate the return on investment before proceeding.',
+        'The accountant is calculating the quarterly profits.',
+      ],
+      sceneAssociation: "联想'会计师核算财务报表'或'分析师计算投资回报'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'calculate',
+          coreDifference: '强调精确的数学计算',
+          toeicSceneFocus: '财务计算',
+        },
+        {
+          word: 'estimate',
+          coreDifference: '指基于信息的估算',
+          toeicSceneFocus: '预算估算',
+        },
+        {
+          word: 'compute',
+          coreDifference: '更正式，常指复杂计算',
+          toeicSceneFocus: '复杂运算',
+        },
+      ],
+    },
+    {
+      word: 'statistics',
+      phonetic: '/stəˈtɪstɪks/',
+      phrase: 'sales statistics analysis',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '统计；统计数据；统计学（指收集、分析和解释数值数据的方法或结果）',
+      toeicSceneFocus:
+        '多出现于市场研究、业绩分析、趋势预测等语境，托业阅读（研究报告）和听力（数据讨论）中涉及数字分析和解读',
+      keyCollocations: [
+        'sales statistics',
+        'government statistics',
+        'statistical analysis',
+        'according to statistics',
+      ],
+      toeicExampleSentences: [
+        'The latest statistics show a 15% increase in online sales.',
+        'We need to analyze the market statistics before launching the product.',
+        'According to government statistics, unemployment has decreased.',
+        'The report includes detailed statistics on customer demographics.',
+      ],
+      sceneAssociation: "联想'市场部分析销售数据'或'研究员解读统计报告'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'statistics',
+          coreDifference: '指统计数据或统计学学科',
+          toeicSceneFocus: '数据分析',
+        },
+        {
+          word: 'data',
+          coreDifference: '泛指所有原始数据',
+          toeicSceneFocus: '信息管理',
+        },
+        {
+          word: 'figures',
+          coreDifference: '特指数字形式的数据',
+          toeicSceneFocus: '数字信息',
+        },
+      ],
+    },
+    {
+      word: 'quota',
+      phonetic: '/ˈkwoʊtə/',
+      phrase: 'monthly sales quota',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '配额；定额；指标（指分配的数量目标或限制）',
+      toeicSceneFocus:
+        '多出现于销售目标、生产计划、进口限制等语境，托业阅读（业绩要求）和听力（目标讨论）中涉及定量指标',
+      keyCollocations: [
+        'sales quota',
+        'production quota',
+        'import quota',
+        'meet quota',
+      ],
+      toeicExampleSentences: [
+        'The sales team exceeded their quarterly quota by 20%.',
+        'Each region has a different production quota to meet.',
+        'The government has imposed quotas on certain imported goods.',
+        'Failure to meet the quota may affect your bonus.',
+      ],
+      sceneAssociation:
+        "联想'销售团队讨论业绩指标'或'生产经理设定产量定额'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'quota',
+          coreDifference: '强调分配的数量目标或限制',
+          toeicSceneFocus: '定量指标管理',
+        },
+        {
+          word: 'target',
+          coreDifference: '指努力达成的目标，不一定有分配性质',
+          toeicSceneFocus: '目标设定',
+        },
+        {
+          word: 'allocation',
+          coreDifference: '侧重资源分配的过程',
+          toeicSceneFocus: '资源分配',
+        },
+      ],
+    },
+    {
+      word: 'majority',
+      phonetic: '/məˈdʒɔːrəti/',
+      phrase: 'majority shareholder vote',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '多数；大多数；过半数（指超过一半的数量或比例）',
+      toeicSceneFocus:
+        '多出现于股权结构、投票结果、市场占有率等语境，托业阅读（股东会议）和听力（决策讨论）中涉及比例关系',
+      keyCollocations: [
+        'majority share',
+        'majority vote',
+        'vast majority',
+        'majority owner',
+      ],
+      toeicExampleSentences: [
+        'The proposal was approved by a majority of shareholders.',
+        'Our company holds the majority share in the joint venture.',
+        'The vast majority of employees support the new policy.',
+        'A majority vote is required to pass the resolution.',
+      ],
+      sceneAssociation: "联想'股东大会进行多数表决'或'市场份额占据多数'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'majority',
+          coreDifference: '指超过半数的数量',
+          toeicSceneFocus: '比例关系',
+        },
+        {
+          word: 'plurality',
+          coreDifference: '指相对多数但不一定过半数',
+          toeicSceneFocus: '相对多数',
+        },
+        {
+          word: 'most',
+          coreDifference: '泛指大部分，不强调精确比例',
+          toeicSceneFocus: '通用描述',
+        },
+      ],
+    },
+    {
+      word: 'surplus',
+      phonetic: '/ˈsɜːrpləs/',
+      phrase: 'budget surplus situation',
+      partOfSpeech: 'n. 名词/adj. 形容词',
+      coreMeaning: '盈余；过剩；剩余的（指收入超过支出或供应超过需求）',
+      toeicSceneFocus:
+        '多出现于预算管理、库存控制、贸易平衡等语境，托业阅读（财务报告）和听力（库存讨论）中涉及余额管理',
+      keyCollocations: [
+        'budget surplus',
+        'trade surplus',
+        'surplus inventory',
+        'surplus funds',
+      ],
+      toeicExampleSentences: [
+        'The company reported a budget surplus for the third consecutive year.',
+        'We need to reduce the surplus inventory to free up warehouse space.',
+        'The country has maintained a trade surplus with its neighbors.',
+        'Surplus funds will be reinvested in research and development.',
+      ],
+      sceneAssociation: "联想'财务总监报告预算盈余'或'仓库管理过剩库存'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'surplus',
+          coreDifference: '强调超过需要的剩余',
+          toeicSceneFocus: '余额管理',
+        },
+        {
+          word: 'deficit',
+          coreDifference: '指不足或赤字，与surplus相反',
+          toeicSceneFocus: '赤字管理',
+        },
+        {
+          word: 'excess',
+          coreDifference: '常指不合理的过多',
+          toeicSceneFocus: '过度剩余',
+        },
+      ],
+    },
+    {
+      word: 'balance',
+      phonetic: '/ˈbæləns/',
+      phrase: 'check the account balance',
+      partOfSpeech: 'n. 名词/v. 动词',
+      coreMeaning: '余额；平衡；结余（指账户剩余金额或均衡状态）',
+      toeicSceneFocus:
+        '多出现于账户管理、财务对账、工作生活平衡等语境，托业阅读（银行对账单）和听力（账户查询）中涉及金额核对',
+      keyCollocations: [
+        'account balance',
+        'balance sheet',
+        'work-life balance',
+        'remaining balance',
+      ],
+      toeicExampleSentences: [
+        'Please check your account balance before making large purchases.',
+        "The balance sheet shows the company's financial position.",
+        'Maintaining a good work-life balance is important for productivity.',
+        'Your remaining balance is $250 after this transaction.',
+      ],
+      sceneAssociation: "联想'客户查询账户余额'或'会计准备资产负债表'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'balance',
+          coreDifference: '侧重剩余金额或均衡状态',
+          toeicSceneFocus: '财务余额管理',
+        },
+        {
+          word: 'remainder',
+          coreDifference: '指数学计算后的余数',
+          toeicSceneFocus: '数学计算',
+        },
+        {
+          word: 'equilibrium',
+          coreDifference: '更正式，指物理或经济平衡',
+          toeicSceneFocus: '理论平衡',
+        },
+      ],
+    },
+    {
+      word: 'merger',
+      phonetic: '/ˈmɜːrdʒər/',
+      phrase: 'corporate merger agreement',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '合并；兼并（指两个或多个公司结合成一个实体）',
+      toeicSceneFocus:
+        '多出现于企业战略、投资分析、市场整合等语境，托业阅读（商业新闻）和听力（战略讨论）中涉及公司重组',
+      keyCollocations: [
+        'company merger',
+        'merger deal',
+        'post-merger integration',
+        'approve the merger',
+      ],
+      toeicExampleSentences: [
+        'The merger between the two banks will create the largest financial institution in the region.',
+        'Shareholders will vote on the proposed merger next month.',
+        'The merger is expected to result in significant cost savings.',
+        'Post-merger integration will be challenging but beneficial.',
+      ],
+      sceneAssociation: "联想'董事会讨论合并方案'或'新闻发布合并消息'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'merger',
+          coreDifference: '指相对平等的公司合并',
+          toeicSceneFocus: '企业合并',
+        },
+        {
+          word: 'acquisition',
+          coreDifference: '指一方收购另一方的控制权',
+          toeicSceneFocus: '企业收购',
+        },
+        {
+          word: 'takeover',
+          coreDifference: '常指敌意收购',
+          toeicSceneFocus: '企业接管',
+        },
+      ],
+    },
+    {
+      word: 'dividend',
+      phonetic: '/ˈdɪvɪdend/',
+      phrase: 'quarterly dividend payment',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '股息；红利（指公司向股东分配的利润份额）',
+      toeicSceneFocus:
+        '多出现于投资分析、股东回报、公司财务等语境，托业阅读（年度报告）和听力（投资讨论）中涉及收益分配',
+      keyCollocations: [
+        'pay dividends',
+        'dividend yield',
+        'dividend policy',
+        'stock dividend',
+      ],
+      toeicExampleSentences: [
+        'The company announced a 5% increase in its quarterly dividend.',
+        'Long-term investments often pay good dividends.',
+        'The dividend yield is attractive to income-focused investors.',
+        'Dividend payments will be made to shareholders of record as of June 30.',
+      ],
+      sceneAssociation: "联想'股东收到股息通知'或'财务报告显示分红政策'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'dividend',
+          coreDifference: '特指公司向股东分配的利润',
+          toeicSceneFocus: '股东回报',
+        },
+        {
+          word: 'interest',
+          coreDifference: '指借贷产生的利息',
+          toeicSceneFocus: '借贷利息',
+        },
+        {
+          word: 'profit',
+          coreDifference: '泛指所有利润',
+          toeicSceneFocus: '利润概念',
+        },
+      ],
+    },
+    {
+      word: 'interest',
+      phonetic: '/ˈɪntrəst/',
+      phrase: 'annual interest rate',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '利息；利益；权益（指借贷成本或所有权份额）',
+      toeicSceneFocus:
+        '多出现于银行服务、投资理财、股权关系等语境，托业阅读（贷款协议）和听力（利率讨论）中涉及资金成本',
+      keyCollocations: [
+        'interest rate',
+        'accrued interest',
+        'conflict of interest',
+        'ownership interest',
+      ],
+      toeicExampleSentences: [
+        'The bank offers competitive interest rates on savings accounts.',
+        'Interest on the loan is tax-deductible.',
+        'She has a significant interest in the family business.',
+        'The annual interest rate is fixed at 3.5% for five years.',
+      ],
+      sceneAssociation: "联想'客户比较银行存款利率'或'股东讨论公司权益'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'interest',
+          coreDifference: '可指利息或权益，根据语境变化',
+          toeicSceneFocus: '金融与权益',
+        },
+        {
+          word: 'dividend',
+          coreDifference: '特指股东分红',
+          toeicSceneFocus: '股东回报',
+        },
+        {
+          word: 'return',
+          coreDifference: '泛指投资回报',
+          toeicSceneFocus: '投资回报',
+        },
+      ],
+    },
+    {
+      word: 'principal',
+      phonetic: '/ˈprɪnsəpl/',
+      phrase: 'loan principal amount',
+      partOfSpeech: 'n. 名词/adj. 形容词',
+      coreMeaning: '本金；主要的；负责人（指借款原始金额或最重要的人/事）',
+      toeicSceneFocus:
+        '多出现于贷款管理、投资分析、组织结构等语境，托业阅读（贷款文件）和听力（财务咨询）中涉及资金基础',
+      keyCollocations: [
+        'loan principal',
+        'principal amount',
+        'principal investor',
+        'school principal',
+      ],
+      toeicExampleSentences: [
+        'The monthly payment includes both principal and interest.',
+        'She is the principal shareholder of the company.',
+        'The principal amount of the loan is $100,000.',
+        'Principal payments reduce the outstanding debt.',
+      ],
+      sceneAssociation: "联想'银行计算贷款本金'或'公司主要股东参与决策'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'principal',
+          coreDifference: '指本金或主要的人事物',
+          toeicSceneFocus: '财务与领导力',
+        },
+        {
+          word: 'principle',
+          coreDifference: '指原则或准则，发音相同但含义不同',
+          toeicSceneFocus: '道德准则',
+        },
+        {
+          word: 'primary',
+          coreDifference: '强调首要或基本性质',
+          toeicSceneFocus: '重要性描述',
+        },
+      ],
+    },
+    {
+      word: 'amortization',
+      phonetic: '/əˌmɔːrtɪˈzeɪʃən/',
+      phrase: 'loan amortization schedule',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '摊销；分期偿还（指按计划逐步减少债务或资产价值的过程）',
+      toeicSceneFocus:
+        '多出现于贷款管理、资产折旧、财务规划等语境，托业阅读（贷款协议）和听力（还款讨论）中涉及债务偿还计划',
+      keyCollocations: [
+        'amortization schedule',
+        'loan amortization',
+        'amortization period',
+        'amortization expense',
+      ],
+      toeicExampleSentences: [
+        "The amortization schedule shows each payment's principal and interest components.",
+        'The loan has a 25-year amortization period.',
+        'Amortization expenses are recorded in the income statement.',
+        'We need to review the amortization of intangible assets.',
+      ],
+      sceneAssociation: "联想'财务人员准备摊销计划'或'客户查看还款进度'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'amortization',
+          coreDifference: '特指债务或无形资产的逐步减少',
+          toeicSceneFocus: '债务摊销',
+        },
+        {
+          word: 'depreciation',
+          coreDifference: '指有形资产的价值减少',
+          toeicSceneFocus: '资产折旧',
+        },
+        {
+          word: 'depletion',
+          coreDifference: '指自然资源的消耗',
+          toeicSceneFocus: '资源消耗',
+        },
+      ],
+    },
+    {
+      word: 'depreciation',
+      phonetic: '/dɪˌpriːʃiˈeɪʃən/',
+      phrase: 'asset depreciation calculation',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '折旧；贬值（指资产因使用或时间推移导致的价值减少）',
+      toeicSceneFocus:
+        '多出现于资产管理、成本核算、税务规划等语境，托业阅读（财务报告）和听力（资产评估）中涉及价值变化',
+      keyCollocations: [
+        'accumulated depreciation',
+        'depreciation expense',
+        'straight-line depreciation',
+        'asset depreciation',
+      ],
+      toeicExampleSentences: [
+        'The company uses straight-line depreciation for all equipment.',
+        'Annual depreciation expense is recorded in the financial statements.',
+        'Accumulated depreciation reduces the book value of assets.',
+        'We need to calculate the depreciation of the new machinery.',
+      ],
+      sceneAssociation:
+        "联想'会计师计算资产折旧'或'财务报告显示价值减少'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'depreciation',
+          coreDifference: '指资产价值的有计划减少',
+          toeicSceneFocus: '资产价值管理',
+        },
+        {
+          word: 'amortization',
+          coreDifference: '特指无形资产或债务的摊销',
+          toeicSceneFocus: '无形资产处理',
+        },
+        {
+          word: 'devaluation',
+          coreDifference: '指货币的官方贬值',
+          toeicSceneFocus: '货币价值',
+        },
+      ],
+    },
+    {
+      word: 'audit',
+      phonetic: '/ˈɔːdɪt/',
+      phrase: 'internal audit report',
+      partOfSpeech: 'n. 名词/v. 动词',
+      coreMeaning: '审计；稽核；检查（指对财务记录或程序的正式检查）',
+      toeicSceneFocus:
+        '多出现于财务控制、合规检查、质量保证等语境，托业阅读（年度审计）和听力（检查讨论）中涉及合规性验证',
+      keyCollocations: [
+        'internal audit',
+        'tax audit',
+        'audit report',
+        'audit committee',
+      ],
+      toeicExampleSentences: [
+        'The external audit will take place next week.',
+        'All departments must cooperate with the internal audit process.',
+        'The audit revealed several areas needing improvement.',
+        'The company has a dedicated audit committee overseeing financial controls.',
+      ],
+      sceneAssociation: "联想'审计师检查财务记录'或'公司准备年度审计'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'audit',
+          coreDifference: '特指财务或合规性检查',
+          toeicSceneFocus: '财务审计',
+        },
+        {
+          word: 'inspection',
+          coreDifference: '泛指各种检查，如质量检查',
+          toeicSceneFocus: '质量检查',
+        },
+        {
+          word: 'review',
+          coreDifference: '指评估性检查，不如audit正式',
+          toeicSceneFocus: '评估检查',
+        },
+      ],
+    },
+    {
+      word: 'tariff',
+      phonetic: '/ˈtærɪf/',
+      phrase: 'import tariff rates',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '关税；费率表（指政府对进口商品征收的税款或服务收费标准）',
+      toeicSceneFocus:
+        '多出现于国际贸易、海关政策、成本计算等语境，托业阅读（贸易协议）和听力（成本讨论）中涉及跨境费用',
+      keyCollocations: [
+        'import tariff',
+        'tariff rate',
+        'customs tariff',
+        'tariff barrier',
+      ],
+      toeicExampleSentences: [
+        'The new tariff on imported steel will affect manufacturing costs.',
+        'We need to check the tariff rates before shipping the goods.',
+        'The trade agreement reduces tariffs between the two countries.',
+        'Tariff costs must be included in the total price calculation.',
+      ],
+      sceneAssociation: "联想'进出口商计算关税成本'或'海关执行关税政策'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'tariff',
+          coreDifference: '特指关税或官方费率',
+          toeicSceneFocus: '国际贸易税费',
+        },
+        {
+          word: 'tax',
+          coreDifference: '泛指各种税款',
+          toeicSceneFocus: '税务管理',
+        },
+        {
+          word: 'duty',
+          coreDifference: '常与tariff互换，但更侧重责任义务',
+          toeicSceneFocus: '海关职责',
+        },
+      ],
+    },
+    {
+      word: 'discount',
+      phonetic: '/ˈdɪskaʊnt/',
+      phrase: 'volume discount offer',
+      partOfSpeech: 'n. 名词/v. 动词',
+      coreMeaning: '折扣；贴现；减价（指价格减免或未来现金流的现值计算）',
+      toeicSceneFocus:
+        '多出现于销售促销、价格谈判、投资分析等语境，托业阅读（价格表）和听力（销售对话）中涉及价格优惠',
+      keyCollocations: [
+        'volume discount',
+        'discount rate',
+        'special discount',
+        'cash discount',
+      ],
+      toeicExampleSentences: [
+        'We offer a 10% discount for orders over 100 units.',
+        'The discount rate used in the NPV calculation is 8%.',
+        'Early payment qualifies for a cash discount.',
+        'The store is having a seasonal discount on winter clothing.',
+      ],
+      sceneAssociation: "联想'客户争取批量折扣'或'财务计算贴现价值'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'discount',
+          coreDifference: '可指价格折扣或金融贴现',
+          toeicSceneFocus: '价格与金融',
+        },
+        {
+          word: 'rebate',
+          coreDifference: '指事后退还部分款项',
+          toeicSceneFocus: '退款促销',
+        },
+        {
+          word: 'deduction',
+          coreDifference: '指从总额中扣除',
+          toeicSceneFocus: '金额扣除',
+        },
+      ],
+    },
+    {
+      word: 'premium',
+      phonetic: '/ˈpriːmiəm/',
+      phrase: 'insurance premium payment',
+      partOfSpeech: 'n. 名词/adj. 形容词',
+      coreMeaning: '保险费；溢价；优质的（指保险费用或高于正常价值的部分）',
+      toeicSceneFocus:
+        '多出现于保险服务、投资评估、高端产品等语境，托业阅读（保险政策）和听力（产品讨论）中涉及额外价值',
+      keyCollocations: [
+        'insurance premium',
+        'premium quality',
+        'risk premium',
+        'pay premium',
+      ],
+      toeicExampleSentences: [
+        'The annual insurance premium is due at the end of the month.',
+        'Investors demand a risk premium for uncertain investments.',
+        'This product commands a premium price due to its superior quality.',
+        'Premium customers receive priority service and additional benefits.',
+      ],
+      sceneAssociation: "联想'客户支付保险费'或'高端产品获得溢价'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'premium',
+          coreDifference: '指保险费或质量溢价',
+          toeicSceneFocus: '保险与价值评估',
+        },
+        {
+          word: 'fee',
+          coreDifference: '泛指服务费用',
+          toeicSceneFocus: '服务收费',
+        },
+        {
+          word: 'surcharge',
+          coreDifference: '指额外附加费',
+          toeicSceneFocus: '附加费用',
+        },
+      ],
+    },
+    {
+      word: 'deficit',
+      phonetic: '/ˈdefɪsɪt/',
+      phrase: 'budget deficit reduction',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '赤字；逆差；不足（指支出超过收入或供应不足需求）',
+      toeicSceneFocus:
+        '多出现于预算管理、贸易平衡、资源分配等语境，托业阅读（财政报告）和听力（资源讨论）中涉及短缺问题',
+      keyCollocations: [
+        'budget deficit',
+        'trade deficit',
+        'reduce deficit',
+        'deficit spending',
+      ],
+      toeicExampleSentences: [
+        'The government is taking measures to reduce the budget deficit.',
+        'The country has been running a trade deficit for several years.',
+        'Deficit spending may be necessary during economic downturns.',
+        'The projected deficit requires immediate cost-cutting actions.',
+      ],
+      sceneAssociation: "联想'财政部报告预算赤字'或'企业应对资金不足'的场景",
+      confusingWordsComparison: [
+        {
+          word: 'deficit',
+          coreDifference: '强调不足或逆差状态',
+          toeicSceneFocus: '财政与贸易平衡',
+        },
+        {
+          word: 'shortage',
+          coreDifference: '指数量不足',
+          toeicSceneFocus: '供应短缺',
+        },
+        {
+          word: 'deficiency',
+          coreDifference: '指质量或标准不足',
+          toeicSceneFocus: '质量标准',
+        },
+      ],
+    },
+    {
       word: 'revenue',
       phonetic: '/ˈrevənjuː/',
       partOfSpeech: 'n. 名词',
@@ -35167,6 +42038,1034 @@ export const wordData = {
     },
   ],
   office_administration: [
+    {
+      word: 'comprehensive',
+      phonetic: '/ˌkɒmprɪˈhensɪv/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '综合的；全面的；详尽的；包罗万象的（英文释义：including everything that is necessary）',
+      toeicSceneFocus:
+        '多出现于方案制定、报告撰写、评估分析等商务语境，是托业高频形容词，阅读（综合报告、全面方案）和听力（项目评估、商务汇报）中常考查“comprehensive analysis、comprehensive solution”等搭配',
+      keyCollocations: [
+        'comprehensive analysis（综合分析）',
+        'comprehensive solution（全面解决方案）',
+        'comprehensive report（详尽报告）',
+        'comprehensive insurance（综合保险）',
+        'comprehensive review（全面审查）',
+      ],
+      toeicExampleSentences: [
+        'The team conducted a comprehensive analysis of the market before making the investment decision.（团队在做投资决策前，对市场进行了一次综合分析。）',
+        'We provide our clients with comprehensive solutions to solve their business problems.（我们为客户提供全面解决方案，以解决其商务难题。）',
+      ],
+      sceneAssociation:
+        '可以联想“分析师撰写comprehensive report（详尽报告）覆盖市场、竞品、成本等所有维度”的画面，结合“商务场景中涵盖多方面内容”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'comprehensive',
+          coreDifference:
+            '侧重“内容涵盖所有相关方面，全面且系统”，强调广度和完整性',
+        },
+        {
+          word: 'thorough',
+          coreDifference: '侧重“做事细致深入，不留死角”，强调深度和细致度',
+        },
+      ],
+    },
+    {
+      word: 'stack',
+      phonetic: '/stæk/',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        'n. 堆；摞；叠；（计算机）栈；v. 堆放；摞起；叠放（英文释义：a pile of things; to put things one on top of another）',
+      toeicSceneFocus:
+        '多出现于仓储管理、文件整理、物流搬运等商务语境，托业阅读（仓储单据、工作指示）和听力（仓库沟通、工作安排）中常考查“stack of documents、stack goods”等搭配',
+      keyCollocations: [
+        'a stack of documents（一摞文件）',
+        'stack goods（堆放货物）',
+        'stack up（堆积；累积）',
+        'warehouse stack（仓库货堆）',
+      ],
+      toeicExampleSentences: [
+        "There is a stack of contracts on the manager's desk waiting to be signed.（经理桌上有一摞合同等待签署。）",
+        'Workers are required to stack the goods neatly in the warehouse to save space.（工人需要将货物整齐堆放在仓库中，以节省空间。）',
+      ],
+      sceneAssociation:
+        '可以联想“仓库员工stack goods（堆放货物），将纸箱整齐摞在托盘上”的画面，结合“商务场景中物品堆叠存放”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'stack',
+          coreDifference: '侧重“将相同物品整齐地叠放成堆”，动作较规整',
+        },
+        {
+          word: 'pile',
+          coreDifference: '侧重“随意地将物品堆放在一起”，动作较随意',
+        },
+      ],
+    },
+    {
+      word: 'corporate',
+      phonetic: '/ˈkɔːpərət/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '公司的；企业的；法人的；团体的（英文释义：relating to a large company or group）',
+      toeicSceneFocus:
+        '多出现于企业管理、商务活动、品牌建设等语境，是托业高频形容词，阅读（公司章程、企业公告）和听力（商务会议、品牌宣传）中常考查“corporate culture、corporate strategy”等搭配',
+      keyCollocations: [
+        'corporate culture（企业文化）',
+        'corporate strategy（企业战略）',
+        'corporate image（企业形象）',
+        'corporate meeting（公司会议）',
+        'corporate responsibility（企业责任）',
+      ],
+      toeicExampleSentences: [
+        'Our company attaches great importance to building a positive corporate culture.（我司高度重视建设积极向上的企业文化。）',
+        'The board of directors will discuss the new corporate strategy at the annual meeting.（董事会将在年会上讨论新的企业战略。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业高管在corporate meeting（公司会议）上宣讲corporate strategy（企业战略）”的画面，结合“与公司或企业相关”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'corporate',
+          coreDifference: '侧重“与大型公司、企业相关的属性”，正式用语',
+        },
+        {
+          word: 'company',
+          coreDifference:
+            '多作名词表示“公司”，作形容词时语气较口语化，适用范围较窄',
+        },
+      ],
+    },
+    {
+      word: 'consider',
+      phonetic: '/kənˈsɪdə(r)/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '考虑；认为；把……看作；体谅（英文释义：to think about something carefully before making a decision; to regard someone or something as）',
+      toeicSceneFocus:
+        '多出现于商务决策、方案评估、求职面试等语境，是托业高频动词，阅读（邮件往来、决策文件）和听力（商务谈判、面试沟通）中常考查“consider carefully、consider as”等搭配',
+      keyCollocations: [
+        'consider carefully（仔细考虑）',
+        'consider...as...（把……看作……）',
+        'consider a proposal（考虑一项提议）',
+        'consider the cost（考虑成本）',
+      ],
+      toeicExampleSentences: [
+        'We need to consider all the risks before launching the new product.（推出新产品前，我们需要考虑所有风险。）',
+        'The interviewer considers her as one of the most suitable candidates for the position.（面试官把她看作该职位最合适的候选人之一。）',
+      ],
+      sceneAssociation:
+        '可以联想“商务团队开会consider a proposal（考虑一项提议），权衡利弊”的画面，结合“商务场景中审慎思考决策”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'consider',
+          coreDifference: '侧重“在做决定前全面、审慎地思考”',
+        },
+        {
+          word: 'regard',
+          coreDifference:
+            '侧重“从某种角度看待某人或某物”，常用搭配regard...as...',
+        },
+      ],
+    },
+    {
+      word: 'reference',
+      phonetic: '/ˈrefrəns/',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        'n. 参考；参照；提及；推荐信；v. 引用；参照（英文释义：the act of looking at something for information; to mention or refer to something）',
+      toeicSceneFocus:
+        '多出现于报告撰写、文件查阅、求职申请等商务语境，托业阅读（学术报告、简历）和听力（工作沟通、文件说明）中常考查“for reference、reference book”等搭配',
+      keyCollocations: [
+        'for reference（仅供参考）',
+        'reference book（参考书）',
+        'reference letter（推荐信）',
+        'reference to（提及；涉及）',
+        'reference number（参考编号）',
+      ],
+      toeicExampleSentences: [
+        'The data in this report is for reference only and should not be used for official purposes.（本报告中的数据仅供参考，不应用于正式用途。）',
+        'She asked her former manager to write a reference letter for her job application.（她请前经理为自己的求职申请写一封推荐信。）',
+      ],
+      sceneAssociation:
+        '可以联想“员工在报告末尾标注‘for reference only（仅供参考）’”的画面，结合“商务场景中查阅资料或提供证明”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'reference',
+          coreDifference: '侧重“作为参考的资料或提及某事”，适用范围广',
+        },
+        {
+          word: 'citation',
+          coreDifference: '侧重“正式引用文献、资料的出处”，学术性更强',
+        },
+      ],
+    },
+    {
+      word: 'determine',
+      phonetic: '/dɪˈtɜːmɪn/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '确定；决定；查明；测定（英文释义：to find out the facts about something; to decide something definitely）',
+      toeicSceneFocus:
+        '多出现于商务决策、数据检测、项目规划等语境，是托业高频动词，阅读（项目计划书、检测报告）和听力（商务会议、工作安排）中常考查“determine the price、determine the cause”等搭配',
+      keyCollocations: [
+        'determine the price（确定价格）',
+        'determine the cause（查明原因）',
+        'determine the schedule（制定日程）',
+        'be determined by（由……决定）',
+      ],
+      toeicExampleSentences: [
+        'The market demand will determine the production volume of our new products.（市场需求将决定我们新产品的产量。）',
+        'Engineers are working to determine the cause of the machine breakdown.（工程师们正在努力查明机器故障的原因。）',
+      ],
+      sceneAssociation:
+        '可以联想“定价团队开会determine the price（确定价格），结合成本和竞品定价”的画面，结合“商务场景中明确事实或做出决策”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'determine',
+          coreDifference: '侧重“通过调查、分析后明确地确定或决定”，语气较正式',
+        },
+        {
+          word: 'decide',
+          coreDifference: '侧重“经过思考后做出选择或决定”，口语化更强',
+        },
+      ],
+    },
+    {
+      word: 'appear',
+      phonetic: '/əˈpɪə(r)/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '出现；显现；看起来；似乎（英文释义：to become visible; to seem to be something）',
+      toeicSceneFocus:
+        '多出现于商务报告、市场分析、产品展示等语境，是托业高频动词，阅读（市场报告、新闻稿）和听力（产品发布会、商务汇报）中常考查“appear to be、appear on the market”等搭配',
+      keyCollocations: [
+        'appear to be（似乎是；看起来是）',
+        'appear on the market（上市；面市）',
+        'appear in the report（出现在报告中）',
+        'appear at the meeting（出席会议）',
+      ],
+      toeicExampleSentences: [
+        'The new product will appear on the market next month.（这款新产品将于下月上市。）',
+        'The data appears to be accurate, but we still need to verify it.（这些数据看起来准确，但我们仍需核实。）',
+      ],
+      sceneAssociation:
+        '可以联想“新款产品appear on the market（上市），在各大商超上架销售”的画面，结合“商务场景中事物显现或看起来的状态”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'appear',
+          coreDifference: '侧重“事物从无到有地出现，或给人某种表面印象”',
+        },
+        {
+          word: 'emerge',
+          coreDifference: '侧重“从隐藏状态中浮现，或新事物的兴起”，更强调过程',
+        },
+      ],
+    },
+    {
+      word: 'expand',
+      phonetic: '/ɪkˈspænd/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '扩大；扩张；扩展；膨胀（英文释义：to become larger in size, number, or amount; to make something larger）',
+      toeicSceneFocus:
+        '多出现于业务拓展、市场扩张、企业发展等语境，是托业高频动词，阅读（企业年报、业务计划书）和听力（商务会议、战略宣讲）中常考查“expand business、expand the market”等搭配',
+      keyCollocations: [
+        'expand business（拓展业务）',
+        'expand the market（扩张市场）',
+        'expand the team（扩充团队）',
+        'expand internationally（向国际扩张）',
+      ],
+      toeicExampleSentences: [
+        'The company plans to expand its business into the European market next year.（该公司计划明年将业务拓展到欧洲市场。）',
+        'We need to expand our customer base to increase sales volume.（我们需要扩充客户群以提高销量。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业高管宣布expand internationally（向国际扩张），在海外设立分公司”的画面，结合“商务场景中规模或范围扩大”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'expand',
+          coreDifference: '侧重“扩大事物的规模、范围或数量”，适用范围广',
+        },
+        {
+          word: 'extend',
+          coreDifference: '侧重“延长时间、空间或扩展某物的长度”',
+        },
+      ],
+    },
+    {
+      word: 'launch',
+      phonetic: '/lɔːntʃ/',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning:
+        'v. 发射；推出（产品）；发起；启动；n. 产品发布会；发射；启动（英文释义：to introduce a new product to the market; to start an activity）',
+      toeicSceneFocus:
+        '多出现于产品推广、项目启动、活动策划等商务语境，是托业高频词，阅读（产品宣传册、项目方案）和听力（产品发布会、项目启动会）中常考查“launch a product、launch a campaign”等搭配',
+      keyCollocations: [
+        'launch a product（推出产品）',
+        'launch a campaign（发起活动）',
+        'launch a project（启动项目）',
+        'product launch（产品发布会）',
+      ],
+      toeicExampleSentences: [
+        'The company will launch a new smartphone at the tech conference next week.（该公司将在下周的科技展上推出新款智能手机。）',
+        'We are going to launch a marketing campaign to promote our new service.（我们将发起一场营销活动来推广新服务。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业举办product launch（产品发布会），向媒体和客户展示新品”的画面，结合“商务场景中推出新产品或启动新项目”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'launch',
+          coreDifference:
+            '侧重“正式推出新产品、发起活动或启动项目”，强调仪式感和正式性',
+        },
+        {
+          word: 'introduce',
+          coreDifference: '侧重“将某物或某人介绍给他人，适用范围更广”',
+        },
+      ],
+    },
+    {
+      word: 'seek',
+      phonetic: '/siːk/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '寻找；寻求；谋求；征求（英文释义：to try to get or achieve something; to look for someone or something）',
+      toeicSceneFocus:
+        '多出现于商务合作、求职招聘、资源获取等语境，是托业高频动词，阅读（合作提案、求职简历）和听力（商务谈判、面试沟通）中常考查“seek cooperation、seek advice”等搭配',
+      keyCollocations: [
+        'seek cooperation（寻求合作）',
+        'seek advice（征求建议）',
+        'seek employment（求职）',
+        'seek to do sth.（试图做某事）',
+      ],
+      toeicExampleSentences: [
+        'Our company is seeking cooperation with local suppliers to reduce costs.（我司正在寻求与本地供应商合作以降低成本。）',
+        'You should seek professional advice before making the investment decision.（做投资决策前，你应该征求专业建议。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业代表与合作方洽谈，seek cooperation（寻求合作）”的画面，结合“商务场景中主动寻求某物或机会”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'seek',
+          coreDifference: '侧重“主动、努力地寻找或谋求某物”，正式用语',
+        },
+        {
+          word: 'look for',
+          coreDifference: '侧重“日常寻找某物”，口语化更强',
+        },
+      ],
+    },
+    {
+      word: 'claim',
+      phonetic: '/kleɪm/',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning:
+        'v. 声称；断言；要求；索赔；n. 索赔；声称；主张（英文释义：to say that something is true without proof; to ask for something that you believe you have a right to）',
+      toeicSceneFocus:
+        '多出现于商务谈判、保险理赔、产品宣传等语境，是托业高频词，阅读（保险单据、产品广告）和听力（商务会议、理赔沟通）中常考查“claim compensation、claim to be”等搭配',
+      keyCollocations: [
+        'claim compensation（索赔）',
+        'claim to be（声称是）',
+        'make a claim（提出索赔；声称）',
+        'insurance claim（保险索赔）',
+      ],
+      toeicExampleSentences: [
+        'The customer filed a claim for compensation because the product was damaged.（由于产品受损，客户提出了索赔要求。）',
+        'The company claims to have the most advanced technology in the industry.（该公司声称拥有行业内最先进的技术。）',
+      ],
+      sceneAssociation:
+        '可以联想“客户向保险公司make a claim（提出索赔），提交受损证明”的画面，结合“商务场景中提出主张或索赔”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'claim',
+          coreDifference: '侧重“声称某事为真或要求应得的权益”，可能缺乏证据',
+        },
+        {
+          word: 'assert',
+          coreDifference: '侧重“坚定地断言某事，语气更强烈”',
+        },
+      ],
+    },
+    {
+      word: 'establish',
+      phonetic: '/ɪˈstæblɪʃ/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '建立；设立；确立；创办（英文释义：to start a company, organization, etc.; to make something exist）',
+      toeicSceneFocus:
+        '多出现于企业创办、合作建立、品牌建设等语境，是托业高频动词，阅读（企业章程、合作协议）和听力（商务会议、企业宣讲）中常考查“establish a company、establish a relationship”等搭配',
+      keyCollocations: [
+        'establish a company（创办公司）',
+        'establish a relationship（建立关系）',
+        'establish a brand（树立品牌）',
+        'establish the rules（制定规则）',
+      ],
+      toeicExampleSentences: [
+        'The entrepreneur established his first company when he was 25 years old.（这位企业家25岁时创办了自己的第一家公司。）',
+        'We need to establish long-term cooperative relationships with our suppliers.（我们需要与供应商建立长期合作关系。）',
+      ],
+      sceneAssociation:
+        '可以联想“创业者establish a company（创办公司），办理注册手续”的画面，结合“商务场景中创建或确立某物”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'establish',
+          coreDifference: '侧重“长期、稳定地建立公司、关系或制度”，强调稳固性',
+        },
+        {
+          word: 'found',
+          coreDifference: '侧重“创办机构、组织或公司”，书面性更强',
+        },
+      ],
+    },
+    {
+      word: 'related',
+      phonetic: '/rɪˈleɪtɪd/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '相关的；有联系的；亲属的（英文释义：connected with something or someone）',
+      toeicSceneFocus:
+        '多出现于信息筛选、业务分类、报告撰写等商务语境，是托业高频形容词，阅读（工作报告、分类清单）和听力（商务会议、信息咨询）中常考查“related to、related field”等搭配',
+      keyCollocations: [
+        'related to（与……相关）',
+        'related field（相关领域）',
+        'related products（相关产品）',
+        'related information（相关信息）',
+      ],
+      toeicExampleSentences: [
+        'This article provides some useful information related to international trade.（这篇文章提供了一些与国际贸易相关的有用信息。）',
+        'We also sell products related to office supplies in our store.（我们店里也售卖与办公用品相关的产品。）',
+      ],
+      sceneAssociation:
+        '可以联想“员工整理related products（相关产品）清单，方便客户选购”的画面，结合“商务场景中事物之间存在联系”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'related',
+          coreDifference:
+            '侧重“事物之间存在某种联系，关联性可强可弱”，适用范围广',
+        },
+        {
+          word: 'relevant',
+          coreDifference: '侧重“与当前主题或目的紧密相关且有实际意义”',
+        },
+      ],
+    },
+    {
+      word: 'reputation',
+      phonetic: '/ˌrepjuˈteɪʃn/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '名誉；名声；声誉（英文释义：the opinion that people have about someone or something because of what has happened in the past）',
+      toeicSceneFocus:
+        '多出现于品牌建设、企业管理、客户评价等语境，是托业高频名词，阅读（企业年报、品牌评价）和听力（商务会议、客户反馈）中常考查“good reputation、damage reputation”等搭配',
+      keyCollocations: [
+        'good reputation（良好声誉）',
+        'damage reputation（损害声誉）',
+        'build a reputation（树立声誉）',
+        'reputation for quality（质量口碑）',
+      ],
+      toeicExampleSentences: [
+        'Our company has a good reputation for providing high-quality products and services.（我司因提供高质量的产品和服务而享有良好声誉。）',
+        "A single mistake can damage the company's reputation in the market.（一次失误就可能损害公司在市场上的声誉。）",
+      ],
+      sceneAssociation:
+        '可以联想“企业凭借优质服务build a reputation（树立声誉），吸引更多客户”的画面，结合“商务场景中企业或品牌的公众评价”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'reputation',
+          coreDifference: '侧重“公众对某人或某物的长期评价”，可褒可贬',
+        },
+        {
+          word: 'fame',
+          coreDifference: '侧重“因成就而获得的广泛知名度”，多为褒义',
+        },
+      ],
+    },
+    {
+      word: 'significant',
+      phonetic: '/sɪɡˈnɪfɪkənt/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '重要的；显著的；重大的；有意义的（英文释义：important or noticeable）',
+      toeicSceneFocus:
+        '多出现于商务报告、业绩分析、政策解读等语境，是托业高频形容词，阅读（市场报告、财务报表）和听力（商务汇报、会议讨论）中常考查“significant change、significant improvement”等搭配',
+      keyCollocations: [
+        'significant change（重大变化）',
+        'significant improvement（显著改善）',
+        'significant difference（明显差异）',
+        'significant impact（重大影响）',
+      ],
+      toeicExampleSentences: [
+        'There has been a significant increase in sales since we launched the new marketing campaign.（自从发起新的营销活动以来，销量有了显著增长。）',
+        'The new policy will have a significant impact on the local economy.（这项新政策将对当地经济产生重大影响。）',
+      ],
+      sceneAssociation:
+        '可以联想“分析师在报告中指出significant increase（显著增长），用数据支撑结论”的画面，结合“商务场景中事物的重要性或明显程度”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'significant',
+          coreDifference: '侧重“事物重要、影响大或变化明显”，适用范围广',
+        },
+        {
+          word: 'important',
+          coreDifference: '侧重“事物的重要性”，口语化更强',
+        },
+      ],
+    },
+
+    {
+      word: 'occasion',
+      phonetic: '/əˈkeɪʒən/',
+      phrase: 'a formal business occasion',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '场合；时机；特殊事件（指特定的时间点或事件）',
+      toeicSceneFocus:
+        '多出现于商务活动、公司庆典、会议安排等语境，托业阅读（活动邀请）和听力（事件计划）中涉及场合描述',
+      keyCollocations: [
+        'special occasion',
+        'on occasion',
+        'formal occasion',
+        'occasion for celebration',
+      ],
+      toeicExampleSentences: [
+        'The conference provides an excellent occasion for networking with industry leaders.（这次会议为与行业领袖建立联系提供了绝佳场合。）',
+        'On occasion, employees may be required to attend weekend training sessions.（偶尔员工可能需要参加周末培训课程。）',
+        'The company dinner was a joyous occasion to recognize employee achievements.（公司晚宴是表彰员工成就的欢乐场合。）',
+        "This is not the occasion to discuss budget cuts; let's focus on the positive results.（现在不是讨论预算削减的时机；我们先关注积极成果。）",
+      ],
+      sceneAssociation:
+        '联想“商务晚宴等正式场合”或“公司纪念日等特殊事件”的场景，结合职场中重要时刻的典型情境',
+      confusingWordsComparison: [
+        {
+          word: 'occasion',
+          coreDifference: '侧重特定事件或时机，常指有意义的时刻',
+          toeicSceneFocus: '商务活动与特殊时刻',
+        },
+        {
+          word: 'event',
+          coreDifference: '泛指任何事件，范围更广，不强调特殊性',
+          toeicSceneFocus: '通用事件描述',
+        },
+        {
+          word: 'opportunity',
+          coreDifference: '指机会或有利时机，侧重可能性',
+          toeicSceneFocus: '商业机遇',
+        },
+      ],
+    },
+    {
+      word: 'brief',
+      phonetic: '/briːf/',
+      phrase: 'a brief meeting summary',
+      partOfSpeech: 'adj. 形容词/n. 名词',
+      coreMeaning: '简短的；简洁的；简报（指时间短或内容简明扼要）',
+      toeicSceneFocus:
+        '多出现于会议记录、报告摘要、邮件沟通等语境，托业阅读（执行摘要）和听力（快速汇报）中强调简洁性',
+      keyCollocations: [
+        'brief meeting',
+        'brief report',
+        'in brief',
+        'legal brief',
+      ],
+      toeicExampleSentences: [
+        'Please keep your presentation brief and focused on key points.（请保持演示简洁，聚焦关键点。）',
+        'The manager gave a brief overview of the quarterly results.（经理简要概述了季度结果。）',
+        "I'll be brief so we can move on to the next agenda item.（我会长话短说，以便我们进入下一议程。）",
+        'The attorney prepared a brief for the upcoming court case.（律师为即将到来的案件准备了简报。）',
+      ],
+      sceneAssociation:
+        '联想“职场中简短高效的会议”或“经理要求汇报简洁明了”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'brief',
+          coreDifference: '侧重时间短或内容简明',
+          toeicSceneFocus: '简洁沟通',
+        },
+        {
+          word: 'short',
+          coreDifference: '泛指长度或时间短，更通用',
+          toeicSceneFocus: '一般描述',
+        },
+        {
+          word: 'concise',
+          coreDifference: '强调表达精炼，无冗余',
+          toeicSceneFocus: '精炼表达',
+        },
+      ],
+    },
+    {
+      word: 'complex',
+      phonetic: '/kəmˈpleks/',
+      phrase: 'a complex business problem',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '复杂的；复合的；难懂的（由多个相互关联部分组成的）',
+      toeicSceneFocus:
+        '多出现于项目分析、技术说明、问题解决等语境，托业阅读（技术文档）和听力（问题讨论）中涉及复杂性描述',
+      keyCollocations: [
+        'complex issue',
+        'complex system',
+        'highly complex',
+        'complex process',
+      ],
+      toeicExampleSentences: [
+        'The new software involves a complex installation process.（新软件涉及复杂的安装过程。）',
+        'We need to break down this complex problem into manageable parts.（我们需要将这个复杂问题分解为可管理的部分。）',
+        'The merger created a complex organizational structure.（合并后形成了复杂的组织结构。）',
+        'His explanation was too complex for most attendees to understand.（他的解释太复杂，大多数与会者无法理解。）',
+      ],
+      sceneAssociation:
+        '联想“技术人员解释复杂系统”或“团队讨论复杂项目挑战”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'complex',
+          coreDifference: '强调多部分相互关联的复杂性',
+          toeicSceneFocus: '系统与问题复杂性',
+        },
+        {
+          word: 'complicated',
+          coreDifference: '常指难以理解或处理的复杂',
+          toeicSceneFocus: '难处理的情况',
+        },
+        {
+          word: 'sophisticated',
+          coreDifference: '指精密、高级的复杂，多含褒义',
+          toeicSceneFocus: '高级技术或系统',
+        },
+      ],
+    },
+    {
+      word: 'properly',
+      phonetic: '/ˈprɑːpərli/',
+      phrase: 'install the software properly',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '适当地；正确地；合适地（以正确或恰当的方式）',
+      toeicSceneFocus:
+        '多出现于操作指南、质量控制、程序执行等语境，托业阅读（使用说明）和听力（指导对话）中强调正确操作',
+      keyCollocations: [
+        'properly installed',
+        'properly trained',
+        'function properly',
+        'handle properly',
+      ],
+      toeicExampleSentences: [
+        'Please ensure the equipment is properly maintained according to the manual.（请确保设备按照手册正确维护。）',
+        'Employees must be properly trained before operating the machinery.（员工在操作机械前必须经过适当培训。）',
+        'The system will not function properly if the settings are incorrect.（如果设置不正确，系统将无法正常运行。）',
+        'We need to address this issue properly to avoid future problems.（我们需要妥善处理这个问题以避免未来麻烦。）',
+      ],
+      sceneAssociation: '联想“技术人员正确安装设备”或“员工接受适当培训”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'properly',
+          coreDifference: '强调以正确或合适的方式',
+          toeicSceneFocus: '正确操作与处理',
+        },
+        {
+          word: 'correctly',
+          coreDifference: '侧重准确无误，符合标准',
+          toeicSceneFocus: '准确性要求',
+        },
+        {
+          word: 'appropriately',
+          coreDifference: '强调符合场合或规范的恰当',
+          toeicSceneFocus: '场合得体性',
+        },
+      ],
+    },
+    {
+      word: 'particularly',
+      phonetic: '/pərˈtɪkjələrli/',
+      phrase: 'particularly important point',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '特别地；尤其；格外（用于强调特定事物或程度）',
+      toeicSceneFocus:
+        '多出现于重点强调、细节说明、优先级排序等语境，托业阅读（报告强调）和听力（重点指出）中用于突出关键点',
+      keyCollocations: [
+        'particularly important',
+        'particularly difficult',
+        'not particularly',
+        'focus particularly',
+      ],
+      toeicExampleSentences: [
+        'This issue is particularly important for our long-term strategy.（这个问题对我们的长期战略尤为重要。）',
+        'The new regulations will particularly affect small businesses.（新法规将特别影响小企业。）',
+        "I'm not particularly interested in attending the seminar.（我不是特别有兴趣参加这个研讨会。）",
+        'The report focuses particularly on market trends in Asia.（报告特别关注亚洲市场趋势。）',
+      ],
+      sceneAssociation:
+        '联想“演示中强调特别重要的数据”或“会议中格外关注特定问题”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'particularly',
+          coreDifference: '用于强调特定事物或程度',
+          toeicSceneFocus: '重点强调',
+        },
+        {
+          word: 'especially',
+          coreDifference: '常可互换，但especially更正式',
+          toeicSceneFocus: '正式强调',
+        },
+        {
+          word: 'specifically',
+          coreDifference: '侧重具体指明，不泛指程度',
+          toeicSceneFocus: '具体说明',
+        },
+      ],
+    },
+    {
+      word: 'emphasize',
+      phonetic: '/ˈemfəsaɪz/',
+      phrase: 'emphasize the key points',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '强调；着重；突出（使某些内容更突出或重要）',
+      toeicSceneFocus:
+        '多出现于演示汇报、重点说明、战略沟通等语境，托业阅读（重点标注）和听力（强调重申）中用于突出核心信息',
+      keyCollocations: [
+        'emphasize the importance',
+        'emphasize that',
+        'strongly emphasize',
+        'need to emphasize',
+      ],
+      toeicExampleSentences: [
+        'The manager emphasized the need for better time management.（经理强调需要更好的时间管理。）',
+        'I want to emphasize that quality is our top priority.（我想强调质量是我们的首要任务。）',
+        'The training program emphasizes practical skills over theoretical knowledge.（培训项目强调实践技能胜过理论知识。）',
+        'She emphasized the point by repeating it several times.（她通过多次重复来强调这一点。）',
+      ],
+      sceneAssociation:
+        '联想“演讲者用手势强调关键点”或“邮件中用粗体强调重要信息”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'emphasize',
+          coreDifference: '侧重使内容更突出或重要',
+          toeicSceneFocus: '重点强调',
+        },
+        {
+          word: 'stress',
+          coreDifference: '常指施加压力或迫切强调',
+          toeicSceneFocus: '紧迫性强调',
+        },
+        {
+          word: 'highlight',
+          coreDifference: '指突出显示，如用颜色标记',
+          toeicSceneFocus: '视觉突出',
+        },
+      ],
+    },
+    {
+      word: 'praise',
+      phonetic: '/preɪz/',
+      phrase: 'praise employee performance',
+      partOfSpeech: 'v. 动词/n. 名词',
+      coreMeaning: '赞扬；表扬；称赞（表达对某人或某事的积极评价）',
+      toeicSceneFocus:
+        '多出现于绩效评估、团队激励、客户反馈等语境，托业阅读（表扬信）和听力（赞赏对话）中涉及积极反馈',
+      keyCollocations: [
+        'praise for',
+        'receive praise',
+        'high praise',
+        'praise the efforts',
+      ],
+      toeicExampleSentences: [
+        'The CEO praised the team for completing the project ahead of schedule.（CEO表扬团队提前完成项目。）',
+        'The product has received high praise from customers.（该产品获得了客户的高度赞扬。）',
+        'She deserves praise for her innovative approach to problem-solving.（她解决问题的创新方法值得表扬。）',
+        "The manager's praise motivated the entire department.（经理的表扬激励了整个部门。）",
+      ],
+      sceneAssociation: '联想“年度评优中获得表扬”或“客户来信称赞服务”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'praise',
+          coreDifference: '侧重积极评价和认可',
+          toeicSceneFocus: '积极反馈',
+        },
+        {
+          word: 'compliment',
+          coreDifference: '常指礼貌性或社交性称赞',
+          toeicSceneFocus: '社交称赞',
+        },
+        {
+          word: 'commend',
+          coreDifference: '更正式，指正式推荐或表扬',
+          toeicSceneFocus: '正式表彰',
+        },
+      ],
+    },
+    {
+      word: 'explore',
+      phonetic: '/ɪkˈsplɔːr/',
+      phrase: 'explore new market opportunities',
+      partOfSpeech: 'v. 动词',
+      coreMeaning: '探索；探究；考察（调查或研究新领域）',
+      toeicSceneFocus:
+        '多出现于市场调研、业务拓展、方案评估等语境，托业阅读（调研报告）和听力（探索讨论）中涉及新机会调查',
+      keyCollocations: [
+        'explore options',
+        'explore possibilities',
+        'explore opportunities',
+        'further explore',
+      ],
+      toeicExampleSentences: [
+        'The company is exploring opportunities for expansion in Southeast Asia.（公司正在探索东南亚的扩张机会。）',
+        'We need to explore all options before making a decision.（在做决定前我们需要探索所有选项。）',
+        'The team will explore the feasibility of the proposed project.（团队将探讨拟议项目的可行性。）',
+        "Let's explore this idea further in our next meeting.（让我们在下次会议上进一步探讨这个想法。）",
+      ],
+      sceneAssociation:
+        '联想“业务团队研究新市场”或“会议中探讨各种可能性”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'explore',
+          coreDifference: '侧重调查或研究未知领域',
+          toeicSceneFocus: '调研与探索',
+        },
+        {
+          word: 'investigate',
+          coreDifference: '常指正式或深入的调查',
+          toeicSceneFocus: '正式调查',
+        },
+        {
+          word: 'research',
+          coreDifference: '指系统性的学术或市场研究',
+          toeicSceneFocus: '系统研究',
+        },
+      ],
+    },
+    {
+      word: 'eager',
+      phonetic: '/ˈiːɡər/',
+      phrase: 'eager to learn new skills',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '渴望的；热切的；急切的（表现出强烈的兴趣或愿望）',
+      toeicSceneFocus:
+        '多出现于员工发展、学习态度、项目参与等语境，托业阅读（动机描述）和听力（意愿表达）中涉及积极态度',
+      keyCollocations: [
+        'eager to',
+        'eager beaver',
+        'eager anticipation',
+        'eager response',
+      ],
+      toeicExampleSentences: [
+        'New employees are often eager to prove their capabilities.（新员工通常渴望证明自己的能力。）',
+        'She was eager to take on additional responsibilities.（她渴望承担额外责任。）',
+        'The team is eager to start the new project.（团队急切想开始新项目。）',
+        'We are eager to hear your feedback on the proposal.（我们渴望听到您对提案的反馈。）',
+      ],
+      sceneAssociation: '联想“新员工热切学习”或“团队迫切期待新项目”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'eager',
+          coreDifference: '侧重热切期待或积极渴望',
+          toeicSceneFocus: '积极意愿',
+        },
+        {
+          word: 'anxious',
+          coreDifference: '常含担忧或焦虑成分',
+          toeicSceneFocus: '担忧性期待',
+        },
+        {
+          word: 'enthusiastic',
+          coreDifference: '强调热情和兴奋',
+          toeicSceneFocus: '热情态度',
+        },
+      ],
+    },
+    {
+      word: 'fairly',
+      phonetic: '/ˈferli/',
+      phrase: 'treat all employees fairly',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '公平地；相当地；适度地（以公正的方式或达到一定程度）',
+      toeicSceneFocus:
+        '多出现于人力资源管理、绩效评估、价格谈判等语境，托业阅读（政策说明）和听力（公平讨论）中涉及公正性',
+      keyCollocations: [
+        'fairly distributed',
+        'fairly priced',
+        'fairly well',
+        'treat fairly',
+      ],
+      toeicExampleSentences: [
+        'All applications will be evaluated fairly based on the same criteria.（所有申请将根据相同标准公平评估。）',
+        'The products are fairly priced compared to competitors.（与竞争对手相比，这些产品定价相当合理。）',
+        'She speaks English fairly well after six months of intensive study.（经过六个月强化学习，她英语说得相当好。）',
+        'The manager is known for treating all team members fairly.（经理以公平对待所有团队成员而闻名。）',
+      ],
+      sceneAssociation: '联想“HR公平处理员工投诉”或“价格谈判中公平定价”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'fairly',
+          coreDifference: '可指公平性或中等程度',
+          toeicSceneFocus: '公正性与程度描述',
+        },
+        {
+          word: 'justly',
+          coreDifference: '强调道德或法律上的公正',
+          toeicSceneFocus: '道德公正',
+        },
+        {
+          word: 'reasonably',
+          coreDifference: '侧重合理或适度，不强调公平',
+          toeicSceneFocus: '合理性',
+        },
+      ],
+    },
+    {
+      word: 'occasionally',
+      phonetic: '/əˈkeɪʒənəli/',
+      phrase: 'work overtime occasionally',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '偶尔；间或；有时候（不经常地发生）',
+      toeicSceneFocus:
+        '多出现于工作安排、频率描述、例外情况等语境，托业阅读（政策例外）和听力（频率讨论）中涉及非规律性事件',
+      keyCollocations: [
+        'occasionally need',
+        'occasionally occur',
+        'only occasionally',
+        'happen occasionally',
+      ],
+      toeicExampleSentences: [
+        'We may need to work overtime occasionally during busy periods.（在繁忙期间，我们可能偶尔需要加班。）',
+        'The software crashes occasionally, but usually restarts without problems.（软件偶尔崩溃，但通常能无问题重启。）',
+        'She occasionally travels to branch offices for meetings.（她偶尔去分公司出差开会。）',
+        'While generally reliable, the system fails occasionally under heavy load.（虽然通常可靠，但系统在重负载下偶尔会故障。）',
+      ],
+      sceneAssociation: '联想“项目繁忙时偶尔加班”或“系统间或出现小问题”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'occasionally',
+          coreDifference: '指不经常但有时发生',
+          toeicSceneFocus: '非规律频率',
+        },
+        {
+          word: 'sometimes',
+          coreDifference: '频率略高于occasionally，更常用',
+          toeicSceneFocus: '一般有时',
+        },
+        {
+          word: 'rarely',
+          coreDifference: '频率更低，几乎不',
+          toeicSceneFocus: '罕见频率',
+        },
+      ],
+    },
+    {
+      word: 'practical',
+      phonetic: '/ˈpræktɪkl/',
+      phrase: 'practical work experience',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '实际的；实用的；可行的（基于实践而非理论）',
+      toeicSceneFocus:
+        '多出现于技能要求、方案评估、问题解决等语境，托业阅读（职位描述）和听力（实用建议）中强调实际应用',
+      keyCollocations: [
+        'practical experience',
+        'practical solution',
+        'practical advice',
+        'practical application',
+      ],
+      toeicExampleSentences: [
+        'The training provides practical skills that can be immediately applied.（培训提供可立即应用的实用技能。）',
+        'We need a practical solution to this problem, not just theoretical ideas.（我们需要这个问题的实用解决方案，不只是理论想法。）',
+        'His practical approach to management has improved team efficiency.（他实用的管理方法提高了团队效率。）',
+        'The course focuses on the practical aspects of business communication.（课程专注于商务沟通的实际方面。）',
+      ],
+      sceneAssociation:
+        '联想“职场培训强调实用技能”或“经理提供实际解决方案”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'practical',
+          coreDifference: '侧重实际应用和可行性',
+          toeicSceneFocus: '实际应用',
+        },
+        {
+          word: 'practicable',
+          coreDifference: '更正式，指可实施的',
+          toeicSceneFocus: '正式可行性',
+        },
+        {
+          word: 'functional',
+          coreDifference: '强调功能性的实用',
+          toeicSceneFocus: '功能性',
+        },
+      ],
+    },
+    {
+      word: 'equally',
+      phonetic: '/ˈiːkwəli/',
+      phrase: 'equally important factors',
+      partOfSpeech: 'adv. 副词',
+      coreMeaning: '平等地；同样地；公平地（以相同程度或方式）',
+      toeicSceneFocus:
+        '多出现于比较分析、资源分配、优先级评估等语境，托业阅读（平等原则）和听力（同等重要性）中强调平衡性',
+      keyCollocations: [
+        'equally important',
+        'equally distributed',
+        'treat equally',
+        'equally effective',
+      ],
+      toeicExampleSentences: [
+        'Both quality and cost are equally important considerations.（质量和成本是同等重要的考虑因素。）',
+        'Resources should be allocated equally among all departments.（资源应在所有部门间平等分配。）',
+        'The two proposals are equally viable, making the decision difficult.（两个提案同样可行，使决策困难。）',
+        'All team members must be treated equally regardless of position.（所有团队成员无论职位都必须平等对待。）',
+      ],
+      sceneAssociation:
+        '联想“经理平等分配任务”或“评估中强调因素同等重要”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'equally',
+          coreDifference: '强调相同程度或平等性',
+          toeicSceneFocus: '平等与同等',
+        },
+        {
+          word: 'evenly',
+          coreDifference: '常指均匀分布',
+          toeicSceneFocus: '均匀分布',
+        },
+        {
+          word: 'similarly',
+          coreDifference: '指相似而非相同',
+          toeicSceneFocus: '相似性',
+        },
+      ],
+    },
+    {
+      word: 'informal',
+      phonetic: '/ɪnˈfɔːrml/',
+      phrase: 'an informal team meeting',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '非正式的；随便的；非正规的（不遵循严格形式或礼仪的）',
+      toeicSceneFocus:
+        '多出现于沟通风格、会议形式、职场文化等语境，托业阅读（企业文化）和听力（轻松对话）中涉及非正式互动',
+      keyCollocations: [
+        'informal meeting',
+        'informal discussion',
+        'informal dress',
+        'informal atmosphere',
+      ],
+      toeicExampleSentences: [
+        "We'll have an informal discussion about the project over lunch.（我们将在午餐时非正式讨论这个项目。）",
+        'The company has an informal dress code on Fridays.（公司周五有着装便服的规定。）',
+        'The manager prefers informal communication with team members.（经理更喜欢与团队成员进行非正式沟通。）',
+        'The informal setting made everyone feel more comfortable sharing ideas.（非正式的环境让每个人更自在地分享想法。）',
+      ],
+      sceneAssociation: '联想“周五便服日轻松氛围”或“午餐间非正式交流”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'informal',
+          coreDifference: '指不正式、随意的方式',
+          toeicSceneFocus: '非正式沟通',
+        },
+        {
+          word: 'casual',
+          coreDifference: '常指着装或态度的随意',
+          toeicSceneFocus: '随意风格',
+        },
+        {
+          word: 'unofficial',
+          coreDifference: '强调非官方的性质',
+          toeicSceneFocus: '官方性质',
+        },
+      ],
+    },
     {
       word: 'stationery',
       phonetic: '/ˈsteɪʃənri/',
@@ -43382,6 +51281,1379 @@ export const wordData = {
     },
   ],
   product_tech: [
+    {
+      word: 'feature',
+      phonetic: '/ˈfiːtʃə(r)/',
+      partOfSpeech: 'n. 名词；v. 动词',
+      coreMeaning:
+        'n. 特点；特征；特色；（报纸、电视的）特写；v. 以……为特色；是……的特征；主推（英文释义：n. a typical quality or an important part of something; v. to include someone or something as a special or important part）',
+      toeicSceneFocus:
+        '多出现于产品推广、技术文档、营销宣传等商务语境，是托业高频词，阅读（产品手册、广告文案）和听力（产品介绍、展会讲解）中常考查相关搭配',
+      keyCollocations: [
+        'key feature（核心特点）',
+        'main feature（主要特色）',
+        'feature a new product（主推一款新产品）',
+        'special feature（特殊功能；专题报道）',
+      ],
+      toeicExampleSentences: [
+        'One key feature of this software is its user-friendly interface.（这款软件的一个核心特点是其人性化的界面。）',
+        'The trade fair will feature the latest innovations in the tech industry.（本次交易会将主推科技行业的最新创新成果。）',
+      ],
+      sceneAssociation:
+        '可以联想“产品经理在发布会介绍新款手机的核心feature（特点），比如超长续航、高清摄像”的画面，结合“商务场景中产品特色或主推动作”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'feature',
+          coreDifference:
+            '侧重“事物本身具备的显著特质，或主动将某物作为重点推出”',
+        },
+        {
+          word: 'characteristic',
+          coreDifference:
+            '侧重“人或事物区别于其他对象的本质特征，更偏向书面化”',
+        },
+      ],
+    },
+    {
+      word: 'test',
+      phonetic: '/test/',
+      partOfSpeech: 'v. 动词；n. 名词',
+      coreMeaning:
+        'v. 测试；试验；检验；考核；n. 测试；测验；试验；检验（英文释义：v. to examine something to find out how well it works, if it is safe, etc.; n. a process for checking the quality, performance, or reliability of something）',
+      toeicSceneFocus:
+        '多出现于产品研发、质量管控、员工考核等商务语境，是托业高频词，阅读（质检报告、测试方案）和听力（研发沟通、工作安排）中常考查相关搭配',
+      keyCollocations: [
+        'test the product（测试产品）',
+        'quality test（质量检测）',
+        'performance test（性能测试）',
+        'conduct a test（进行测试）',
+      ],
+      toeicExampleSentences: [
+        'The R&D team needs to test the new device before mass production.（研发团队需要在批量生产前测试这款新设备。）',
+        'All employees must take a safety test before working in the workshop.（所有员工在进入车间工作前都必须参加安全考核。）',
+      ],
+      sceneAssociation:
+        '可以联想“质检人员使用专业仪器test（检测）产品性能，记录各项数据”的画面，结合“商务场景中验证质量、性能的动作或过程”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'test',
+          coreDifference:
+            '侧重“通过具体操作验证产品性能、质量，或考核人员能力”，适用范围广',
+        },
+        {
+          word: 'experiment',
+          coreDifference:
+            '侧重“为探索未知规律而进行的科学实验，强调创新性和探索性”',
+        },
+      ],
+    },
+    {
+      word: 'inspect',
+      phonetic: '/ɪnˈspekt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '检查；视察；审视；核查（英文释义：to look at something carefully to check for problems, damage, etc.）',
+      toeicSceneFocus:
+        '多出现于质量管控、海关查验、设备维护等商务语境，是托业高频动词，阅读（验货报告、海关文件）和听力（工作巡检、商务对接）中常考查相关搭配',
+      keyCollocations: [
+        'inspect goods（检验货物）',
+        'inspect the equipment（检查设备）',
+        'inspect the site（视察现场）',
+        'routine inspection（例行检查）',
+      ],
+      toeicExampleSentences: [
+        'The customs officer will inspect the imported goods tomorrow morning.（海关官员将于明天上午查验这批进口货物。）',
+        'The manager inspects the production line every week to ensure quality standards.（经理每周都巡检生产线，确保质量达标。）',
+      ],
+      sceneAssociation:
+        '可以联想“质检员仔细inspect（检查）每一批出厂产品，排查外观和功能瑕疵”的画面，结合“商务场景中细致核查、排查问题的动作”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'inspect',
+          coreDifference:
+            '侧重“为排查问题、确认合规性而进行的细致检查，常带有官方或专业属性”',
+        },
+        {
+          word: 'examine',
+          coreDifference:
+            '侧重“通过观察、分析进行深入检查，可用于实物、文件或抽象事物”',
+        },
+      ],
+    },
+    {
+      word: 'improve',
+      phonetic: '/ɪmˈpruːv/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '改进；改善；提高；变得更好（英文释义：to make something better; to become better）',
+      toeicSceneFocus:
+        '多出现于业务优化、产品升级、能力提升等商务语境，是托业高频动词，阅读（改进方案、业绩报告）和听力（会议讨论、工作汇报）中常考查相关搭配',
+      keyCollocations: [
+        'improve efficiency（提高效率）',
+        'improve quality（改善质量）',
+        'improve service（提升服务）',
+        'improve on（在……基础上改进）',
+      ],
+      toeicExampleSentences: [
+        'We need to improve our customer service to increase customer satisfaction.（我们需要提升客户服务，以提高客户满意度。）',
+        'The new process has greatly improved the production efficiency of the factory.（新流程大幅提高了工厂的生产效率。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业通过优化流程improve（提升）工作效率，缩短产品交付周期”的画面，结合“商务场景中让事物变得更好的动作”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'improve',
+          coreDifference:
+            '侧重“通过调整、优化使事物在原有基础上变得更好，适用范围极广”',
+        },
+        {
+          word: 'enhance',
+          coreDifference:
+            '侧重“增强事物的价值、效果或吸引力，更强调提升品质感”',
+        },
+      ],
+    },
+    {
+      word: 'enhance',
+      phonetic: '/ɪnˈhɑːns/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '增强；提高；美化；提升……的品质（英文释义：to increase the quality, value, or attractiveness of something）',
+      toeicSceneFocus:
+        '多出现于品牌建设、产品升级、营销推广等商务语境，是托业高频动词，阅读（营销方案、产品升级报告）和听力（品牌宣讲、商务提案）中常考查相关搭配',
+      keyCollocations: [
+        'enhance brand image（提升品牌形象）',
+        'enhance user experience（增强用户体验）',
+        'enhance competitiveness（提高竞争力）',
+        'enhance the value（提升价值）',
+      ],
+      toeicExampleSentences: [
+        'The company launched a series of ads to enhance its brand image.（该公司投放了一系列广告，以提升品牌形象。）',
+        'Adding new functions can enhance the user experience of this app.（增加新功能可以增强这款应用的用户体验。）',
+      ],
+      sceneAssociation:
+        '可以联想“品牌通过联名合作enhance（提升）自身的时尚感和市场竞争力”的画面，结合“商务场景中提升事物品质或价值的动作”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'enhance',
+          coreDifference:
+            '侧重“提升事物的附加值、吸引力或体验感，更偏向品质层面的优化”',
+        },
+        {
+          word: 'improve',
+          coreDifference:
+            '侧重“解决问题、弥补不足，使事物在功能、效率等方面变得更好”',
+        },
+      ],
+    },
+    {
+      word: 'optimize',
+      phonetic: '/ˈɒptɪmaɪz/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '优化；使最优化；充分利用（英文释义：to make something as good, effective, or efficient as possible）',
+      toeicSceneFocus:
+        '多出现于流程管理、系统开发、资源调配等商务语境，是托业高频动词，阅读（优化方案、技术文档）和听力（项目会议、技术研讨）中常考查相关搭配',
+      keyCollocations: [
+        'optimize the process（优化流程）',
+        'optimize resources（优化资源配置）',
+        'optimize the system（优化系统）',
+        'optimize performance（优化性能）',
+      ],
+      toeicExampleSentences: [
+        'The IT department is trying to optimize the system to reduce response time.（IT部门正努力优化系统，以缩短响应时间。）',
+        'We should optimize our resource allocation to cut unnecessary costs.（我们应该优化资源配置，削减不必要的开支。）',
+      ],
+      sceneAssociation:
+        '可以联想“技术人员通过调整代码optimize（优化）软件运行速度，提升用户使用流畅度”的画面，结合“商务场景中让事物达到最优状态的动作”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'optimize',
+          coreDifference:
+            '侧重“通过科学调整使事物在效率、性能、资源利用等方面达到最优水平，技术性较强”',
+        },
+        {
+          word: 'improve',
+          coreDifference: '侧重“泛化的‘变好’，不强调达到最优状态”',
+        },
+      ],
+    },
+    {
+      word: 'streamline',
+      phonetic: '/ˈstriːmlaɪn/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '精简；简化；使……更高效；使流线型（英文释义：to make a process, system, etc. more simple and effective by removing unnecessary parts）',
+      toeicSceneFocus:
+        '多出现于企业管理、流程优化、组织架构调整等商务语境，是托业高频动词，阅读（管理方案、流程说明）和听力（管理层会议、工作部署）中常考查相关搭配',
+      keyCollocations: [
+        'streamline the workflow（精简工作流程）',
+        'streamline procedures（简化手续）',
+        'streamline the organization（精简组织架构）',
+        'streamline operations（优化运营流程）',
+      ],
+      toeicExampleSentences: [
+        'The company decided to streamline its management structure to improve efficiency.（该公司决定精简管理架构，以提高效率。）',
+        'We need to streamline the approval process to shorten the project cycle.（我们需要简化审批流程，缩短项目周期。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业通过合并部门streamline（精简）组织架构，减少沟通层级”的画面，结合“商务场景中去除冗余、提升效率的动作”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'streamline',
+          coreDifference:
+            '侧重“通过去除冗余环节、简化流程来提升效率，常用于组织、流程等宏观层面”',
+        },
+        {
+          word: 'simplify',
+          coreDifference:
+            '侧重“使复杂的事物变得简单易懂，可用于具体事物或抽象概念”',
+        },
+      ],
+    },
+    {
+      word: 'automate',
+      phonetic: '/ˈɔːtəmeɪt/',
+      partOfSpeech: 'v. 动词',
+      coreMeaning:
+        '使自动化；自动操作；用自动化设备替代（英文释义：to make a process or system operate by machines or computers without human control）',
+      toeicSceneFocus:
+        '多出现于智能制造、流程管理、技术升级等商务语境，是托业高频动词，阅读（技术升级方案、生产报告）和听力（工业展会、技术分享）中常考查相关搭配',
+      keyCollocations: [
+        'automate production（实现生产自动化）',
+        'automate the process（使流程自动化）',
+        'automate data entry（自动化数据录入）',
+        'fully automated（全自动化的）',
+      ],
+      toeicExampleSentences: [
+        'The factory plans to automate its assembly line to reduce labor costs.（该工厂计划将装配线自动化，以降低人力成本。）',
+        'We can automate the invoice processing to save time and avoid errors.（我们可以将发票处理流程自动化，以节省时间并避免错误。）',
+      ],
+      sceneAssociation:
+        '可以联想“工厂引入机器人automate（实现）生产流程，24小时不间断作业”的画面，结合“商务场景中用技术手段减少人工干预的动作”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'automate',
+          coreDifference:
+            '侧重“通过机器、计算机技术使流程、生产等自动运行，技术性强”',
+        },
+        {
+          word: 'mechanize',
+          coreDifference: '侧重“用机械设备替代手工劳动，更偏向传统工业领域”',
+        },
+      ],
+    },
+    {
+      word: 'electronic',
+      phonetic: '/ɪˌlekˈtrɒnɪk/',
+      partOfSpeech: 'adj. 形容词；n. 名词（复数electronics）',
+      coreMeaning:
+        'adj. 电子的；电子器件的；电子设备的；n. 电子学；电子设备（英文释义：adj. relating to electronics or using electronic technology; n. the study and use of electronic devices）',
+      toeicSceneFocus:
+        '多出现于电子制造、科技产品、商务办公等语境，是托业高频词，阅读（产品说明书、采购清单）和听力（产品介绍、办公设备沟通）中常考查相关搭配',
+      keyCollocations: [
+        'electronic devices（电子设备）',
+        'electronic payment（电子支付）',
+        'electronic signature（电子签名）',
+        'electronic products（电子产品）',
+      ],
+      toeicExampleSentences: [
+        'The store sells a variety of electronic devices, including smartphones and laptops.（这家店售卖各类电子设备，包括手机和笔记本电脑。）',
+        'Electronic payment has become increasingly popular in daily life.（电子支付在日常生活中变得越来越普及。）',
+      ],
+      sceneAssociation:
+        '可以联想“商务人士使用electronic payment（电子支付）完成跨境交易，便捷高效”的画面，结合“与电子技术、设备相关”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'electronic',
+          coreDifference:
+            '侧重“与电子技术、电子元器件相关的事物，如电子设备、电子信号”',
+        },
+        {
+          word: 'electrical',
+          coreDifference: '侧重“与电、电力相关的事物，如电路、电器维修”',
+        },
+      ],
+    },
+    {
+      word: 'mechanical',
+      phonetic: '/məˈkænɪkl/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '机械的；力学的；机械制造的；呆板的（英文释义：relating to machines or machinery; operated by machines）',
+      toeicSceneFocus:
+        '多出现于机械制造、设备维护、工业生产等商务语境，是托业高频形容词，阅读（设备手册、维修报告）和听力（工业对接、技术沟通）中常考查相关搭配',
+      keyCollocations: [
+        'mechanical equipment（机械设备）',
+        'mechanical failure（机械故障）',
+        'mechanical engineering（机械工程）',
+        'mechanical parts（机械零件）',
+      ],
+      toeicExampleSentences: [
+        'The factory needs to replace some worn-out mechanical parts.（这家工厂需要更换一些磨损的机械零件。）',
+        'The delay was caused by a mechanical failure of the production line.（这次延误是由生产线的机械故障导致的。）',
+      ],
+      sceneAssociation:
+        '可以联想“维修人员排查机械设备的mechanical failure（机械故障），更换损坏零件”的画面，结合“与机械、机械设备相关”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'mechanical',
+          coreDifference:
+            '侧重“与机械结构、机械运动相关的属性，如机械零件、机械故障”',
+        },
+        {
+          word: 'manual',
+          coreDifference: '侧重“手工的、人工操作的，与机械自动化相对”',
+        },
+      ],
+    },
+    {
+      word: 'technical',
+      phonetic: '/ˈteknɪkl/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '技术的；工艺的；专业的；技术性的（英文释义：relating to the practical use of knowledge especially in industrial or scientific work）',
+      toeicSceneFocus:
+        '多出现于技术文档、专业服务、项目对接等商务语境，是托业高频形容词，阅读（技术报告、合同条款）和听力（技术研讨、商务谈判）中常考查相关搭配',
+      keyCollocations: [
+        'technical support（技术支持）',
+        'technical skills（技术技能）',
+        'technical documentation（技术文档）',
+        'technical issues（技术问题）',
+      ],
+      toeicExampleSentences: [
+        'If you encounter any technical issues, please contact our support team.（如果您遇到任何技术问题，请联系我们的支持团队。）',
+        'The job requires strong technical skills in computer programming.（这份工作要求具备扎实的计算机编程技术能力。）',
+      ],
+      sceneAssociation:
+        '可以联想“客户遇到产品故障，联系企业technical support（技术支持）部门寻求帮助”的画面，结合“与专业技术、技能相关”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'technical',
+          coreDifference:
+            '侧重“与具体技术、技能、工艺相关的属性，强调实用性和专业性”',
+        },
+        {
+          word: 'technological',
+          coreDifference: '侧重“与科技发展、技术革新相关的宏观属性”',
+        },
+      ],
+    },
+    {
+      word: 'technological',
+      phonetic: '/ˌteknəˈlɒdʒɪkl/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '技术的；科技的；技术发展的（英文释义：relating to technology or technological developments）',
+      toeicSceneFocus:
+        '多出现于科技发展、产业升级、宏观政策等商务语境，是托业高频形容词，阅读（行业报告、政策文件）和听力（科技论坛、商务演讲）中常考查相关搭配',
+      keyCollocations: [
+        'technological progress（技术进步）',
+        'technological innovation（科技创新）',
+        'technological development（技术发展）',
+        'technological revolution（科技革命）',
+      ],
+      toeicExampleSentences: [
+        "Technological innovation is the key to the company's long-term development.（科技创新是该公司长期发展的关键。）",
+        'The country has made great achievements in technological progress in recent years.（该国近年来在技术进步方面取得了巨大成就。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业投入巨资推动technological innovation（科技创新），研发颠覆性产品”的画面，结合“与宏观技术发展、科技革新相关”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'technological',
+          coreDifference:
+            '侧重“描述宏观的技术发展、科技变革相关的事物，如技术进步、科技创新”',
+        },
+        {
+          word: 'technical',
+          coreDifference:
+            '侧重“描述具体的技术细节、技能、问题等微观层面的事物”',
+        },
+      ],
+    },
+    {
+      word: 'modern',
+      phonetic: '/ˈmɒdn/',
+      partOfSpeech: 'adj. 形容词；n. 名词',
+      coreMeaning:
+        'adj. 现代的；当代的；新式的；现代化的；n. 现代人；现代派（英文释义：adj. relating to the present time or recent times; using the most recent methods or ideas）',
+      toeicSceneFocus:
+        '多出现于产品设计、企业管理、建筑设计等商务语境，是托业高频词，阅读（产品宣传、管理方案）和听力（商务介绍、设计研讨）中常考查相关搭配',
+      keyCollocations: [
+        'modern technology（现代技术）',
+        'modern management（现代化管理）',
+        'modern design（现代设计）',
+        'modern equipment（现代化设备）',
+      ],
+      toeicExampleSentences: [
+        'The office is equipped with modern equipment to improve work efficiency.（这间办公室配备了现代化设备，以提高工作效率。）',
+        'Modern technology has changed the way people communicate with each other.（现代技术改变了人们相互沟通的方式。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业采用modern management（现代化管理）模式，实现扁平化组织架构”的画面，结合“与当代、新式、现代化相关”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'modern',
+          coreDifference: '侧重“与当前时代相符的、新式的，区别于传统的”',
+        },
+        {
+          word: 'contemporary',
+          coreDifference:
+            '侧重“同一时代的、当代的，可用于人或事物，更偏向书面化”',
+        },
+      ],
+    },
+
+    {
+      word: 'cargo',
+      phonetic: '/ˈkɑːrɡoʊ/',
+      phrase: 'ship the cargo container',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '货物；船货（指船、飞机或车辆运输的货物）',
+      toeicSceneFocus:
+        '多出现于物流运输、进出口贸易、海关申报等语境，托业阅读（货运单据）和听力（运输安排）中涉及货物描述',
+      keyCollocations: [
+        'cargo ship',
+        'air cargo',
+        'cargo hold',
+        'cargo handling',
+      ],
+      toeicExampleSentences: [
+        'The cargo was delayed due to bad weather at the port.（由于港口恶劣天气，货物被延误。）',
+        'We need to book air cargo space for these urgent shipments.（我们需要为这些紧急货物预订空运舱位。）',
+        'The cargo hold of the vessel can accommodate 500 containers.（该船的货舱可容纳500个集装箱。）',
+        'Proper cargo handling requires specialized equipment and training.（正确的货物装卸需要专业设备和培训。）',
+      ],
+      sceneAssociation:
+        '联想“码头装卸集装箱货物”或“货机装载航空货物”的场景，结合国际贸易物流的核心情境',
+      confusingWordsComparison: [
+        {
+          word: 'cargo',
+          coreDifference: '特指船、飞机、车辆运输的货物',
+          toeicSceneFocus: '运输业与物流',
+        },
+        {
+          word: 'shipment',
+          coreDifference: '侧重运输过程或批次，不强调运输工具',
+          toeicSceneFocus: '物流过程管理',
+        },
+        {
+          word: 'freight',
+          coreDifference: '常指陆运或铁路运输的货物，也指运费',
+          toeicSceneFocus: '陆路运输与费用',
+        },
+      ],
+    },
+    {
+      word: 'component',
+      phonetic: '/kəmˈpoʊnənt/',
+      phrase: 'electronic component supplier',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '组成部分；组件；元件（指构成整体的部分或零件）',
+      toeicSceneFocus:
+        '多出现于产品制造、设备维修、供应链管理等语境，托业阅读（产品说明书）和听力（采购对话）中涉及零部件描述',
+      keyCollocations: [
+        'key component',
+        'component part',
+        'electronic component',
+        'spare component',
+      ],
+      toeicExampleSentences: [
+        'The battery is a crucial component of the portable device.（电池是该便携设备的关键组件。）',
+        'We source high-quality components from several international suppliers.（我们从几家国际供应商采购高质量组件。）',
+        'The machine consists of over 100 different components.（这台机器由100多个不同部件组成。）',
+        'Please check the inventory for spare components.（请检查库存中是否有备用零件。）',
+      ],
+      sceneAssociation:
+        '联想“工程师组装设备组件”或“采购经理订购电子元件”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'component',
+          coreDifference: '侧重作为整体一部分的组件，可独立存在',
+          toeicSceneFocus: '制造业与产品构成',
+        },
+        {
+          word: 'part',
+          coreDifference: '泛指任何部分或零件，更通用',
+          toeicSceneFocus: '通用零件描述',
+        },
+        {
+          word: 'element',
+          coreDifference: '常指基本元素或要素，不一定是物理部件',
+          toeicSceneFocus: '要素与基本构成',
+        },
+      ],
+    },
+    {
+      word: 'material',
+      phonetic: '/məˈtɪriəl/',
+      phrase: 'raw material shortage',
+      partOfSpeech: 'n. 名词/adj. 形容词',
+      coreMeaning: '材料；原料；物质的（指用于制造或建造的物理物质）',
+      toeicSceneFocus:
+        '多出现于生产制造、采购管理、质量控制等语境，托业阅读（材料清单）和听力（供应商谈判）中涉及原料描述',
+      keyCollocations: [
+        'raw material',
+        'building material',
+        'material cost',
+        'recycled material',
+      ],
+      toeicExampleSentences: [
+        'The price of raw materials has increased by 20% this quarter.（本季度原材料价格上涨了20%。）',
+        'We need to find alternative materials to reduce production costs.（我们需要寻找替代材料以降低生产成本。）',
+        'The new building uses environmentally friendly materials.（新建筑使用了环保材料。）',
+        'Please submit the material requirements for the next production run.（请提交下一批次生产的材料需求。）',
+      ],
+      sceneAssociation: '联想“工厂采购生产原料”或“建筑师选择建筑材料”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'material',
+          coreDifference: '指物理材料或原料，用途广泛',
+          toeicSceneFocus: '制造业与建筑业',
+        },
+        {
+          word: 'substance',
+          coreDifference: '常指特定化学物质或材质',
+          toeicSceneFocus: '化学与物质科学',
+        },
+        {
+          word: 'fabric',
+          coreDifference: '特指织物或布料',
+          toeicSceneFocus: '纺织业',
+        },
+      ],
+    },
+    {
+      word: 'supply',
+      phonetic: '/səˈplaɪ/',
+      phrase: 'office supply catalog',
+      partOfSpeech: 'n. 名词/v. 动词',
+      coreMeaning: '供应；供给；补给（提供所需物品或资源的过程或数量）',
+      toeicSceneFocus:
+        '多出现于库存管理、采购流程、资源分配等语境，托业阅读（供应链报告）和听力（订货对话）中涉及资源供应',
+      keyCollocations: [
+        'supply chain',
+        'office supplies',
+        'supply and demand',
+        'in short supply',
+      ],
+      toeicExampleSentences: [
+        'We need to order office supplies before we run out.（我们需要在耗尽前订购办公用品。）',
+        'The company has a reliable supply chain spanning three continents.（该公司拥有横跨三大洲的可靠供应链。）',
+        'The product is currently in short supply due to high demand.（由于需求旺盛，该产品目前供应短缺。）',
+        'Please ensure that all departments are adequately supplied with necessary equipment.（请确保所有部门都配备充足的必要设备。）',
+      ],
+      sceneAssociation: '联想“仓库管理物资供应”或“采购部门更新库存”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'supply',
+          coreDifference: '侧重提供或供应的过程与数量',
+          toeicSceneFocus: '供应链与资源管理',
+        },
+        {
+          word: 'provide',
+          coreDifference: '泛指提供任何东西，不特指物资',
+          toeicSceneFocus: '通用提供',
+        },
+        {
+          word: 'furnish',
+          coreDifference: '常指提供家具或装备，较正式',
+          toeicSceneFocus: '装备提供',
+        },
+      ],
+    },
+    {
+      word: 'manufacture',
+      phonetic: '/ˌmænjuˈfæktʃər/',
+      phrase: 'manufacture electronic devices',
+      partOfSpeech: 'v. 动词/n. 名词',
+      coreMeaning: '制造；生产；加工（通过机器或人工将原材料转化为产品的过程）',
+      toeicSceneFocus:
+        '多出现于工厂运营、生产流程、工业管理等语境，托业阅读（生产报告）和听力（工厂参观）中涉及制造活动',
+      keyCollocations: [
+        'manufacture products',
+        'manufacturing process',
+        'domestic manufacture',
+        'manufacture date',
+      ],
+      toeicExampleSentences: [
+        'The company manufactures automotive parts for several major brands.（该公司为多个主要品牌制造汽车零部件。）',
+        'The manufacturing process has been streamlined to improve efficiency.（制造流程已简化以提高效率。）',
+        'We need to check the manufacture date before purchasing.（购买前我们需要检查生产日期。）',
+        'The factory manufactures over 10,000 units per day.（该工厂每天生产超过10,000台产品。）',
+      ],
+      sceneAssociation:
+        '联想“工厂流水线生产产品”或“生产经理监督制造流程”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'manufacture',
+          coreDifference: '特指工业规模的生产制造',
+          toeicSceneFocus: '工业生产',
+        },
+        {
+          word: 'produce',
+          coreDifference: '泛指生产任何东西，包括农产品',
+          toeicSceneFocus: '通用生产',
+        },
+        {
+          word: 'fabricate',
+          coreDifference: '常指组装或建造，有时含虚构意味',
+          toeicSceneFocus: '组装与构造',
+        },
+      ],
+    },
+    {
+      word: 'production',
+      phonetic: '/prəˈdʌkʃən/',
+      phrase: 'increase production capacity',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '生产；产量；制作（指制造产品或创造事物的过程或结果）',
+      toeicSceneFocus:
+        '多出现于产能规划、业绩报告、工厂管理等语境，托业阅读（生产数据）和听力（产量讨论）中涉及生产活动',
+      keyCollocations: [
+        'production line',
+        'mass production',
+        'production cost',
+        'in production',
+      ],
+      toeicExampleSentences: [
+        'The factory will increase production to meet rising demand.（工厂将增加产量以满足不断增长的需求。）',
+        'We need to reduce production costs without compromising quality.（我们需要在不影响质量的情况下降低生产成本。）',
+        'The new model is currently in production and will be available next month.（新款目前正在生产中，下月即可上市。）',
+        'The production line was temporarily halted for maintenance.（生产线因维护而暂时停止。）',
+      ],
+      sceneAssociation: '联想“工厂提高产量目标”或“生产线上组装产品”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'production',
+          coreDifference: '侧重生产过程或总产量',
+          toeicSceneFocus: '生产管理与产能',
+        },
+        {
+          word: 'productivity',
+          coreDifference: '指生产效率或生产率',
+          toeicSceneFocus: '效率评估',
+        },
+        {
+          word: 'output',
+          coreDifference: '特指产出数量，不涉及过程',
+          toeicSceneFocus: '产出数量',
+        },
+      ],
+    },
+    {
+      word: 'assembly',
+      phonetic: '/əˈsembli/',
+      phrase: 'final assembly stage',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '组装；装配；集会（将零件组合成完整产品的过程，或指人群集合）',
+      toeicSceneFocus:
+        '多出现于制造流程、工厂运营、会议组织等语境，托业阅读（组装说明）和听力（生产会议）中涉及组装环节',
+      keyCollocations: [
+        'assembly line',
+        'assembly plant',
+        'final assembly',
+        'assembly instructions',
+      ],
+      toeicExampleSentences: [
+        'The assembly line operates 24 hours a day during peak season.（旺季期间组装线每天运行24小时。）',
+        'Workers at the assembly plant are highly skilled.（组装厂的工人技术娴熟。）',
+        'Please follow the assembly instructions carefully.（请仔细遵循组装说明。）',
+        'The product requires only minimal assembly before use.（该产品使用前只需简单组装。）',
+      ],
+      sceneAssociation: '联想“工人按步骤组装产品”或“生产线上的装配环节”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'assembly',
+          coreDifference: '特指将零件组装成整体的过程',
+          toeicSceneFocus: '制造业组装环节',
+        },
+        {
+          word: 'installation',
+          coreDifference: '侧重安装到位使其可运行',
+          toeicSceneFocus: '设备安装',
+        },
+        {
+          word: 'gathering',
+          coreDifference: '指人群聚集，不涉及制造',
+          toeicSceneFocus: '会议与集会',
+        },
+      ],
+    },
+    {
+      word: 'installation',
+      phonetic: '/ˌɪnstəˈleɪʃən/',
+      phrase: 'software installation process',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '安装；设置；装置（将设备或软件设置到可运行状态的过程）',
+      toeicSceneFocus:
+        '多出现于设备配置、软件部署、系统设置等语境，托业阅读（安装指南）和听力（技术支持）中涉及安装步骤',
+      keyCollocations: [
+        'installation manual',
+        'system installation',
+        'installation fee',
+        'complete installation',
+      ],
+      toeicExampleSentences: [
+        'The installation of the new software should take about 30 minutes.（新软件的安装大约需要30分钟。）',
+        'Please read the installation manual before attempting to set up the equipment.（在尝试设置设备前请阅读安装手册。）',
+        'The company charges a separate installation fee for their security systems.（该公司对其安全系统收取单独的安装费。）',
+        'The technician will complete the installation by Friday.（技术员将在周五前完成安装。）',
+      ],
+      sceneAssociation: '联想“技术人员安装设备”或“用户按照指南安装软件”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'installation',
+          coreDifference: '侧重使设备或软件可运行的安装过程',
+          toeicSceneFocus: '设备与软件安装',
+        },
+        {
+          word: 'assembly',
+          coreDifference: '指物理零件的组装，不一定是使其运行',
+          toeicSceneFocus: '物理组装',
+        },
+        {
+          word: 'setup',
+          coreDifference: '泛指设置过程，更口语化',
+          toeicSceneFocus: '通用设置',
+        },
+      ],
+    },
+    {
+      word: 'maintenance',
+      phonetic: '/ˈmeɪntənəns/',
+      phrase: 'regular equipment maintenance',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '维护；保养；维修（保持设备或系统正常运行的定期工作）',
+      toeicSceneFocus:
+        '多出现于设备管理、设施运营、成本控制等语境，托业阅读（维护计划）和听力（服务安排）中涉及保养活动',
+      keyCollocations: [
+        'preventive maintenance',
+        'maintenance cost',
+        'maintenance schedule',
+        'maintenance crew',
+      ],
+      toeicExampleSentences: [
+        'Regular maintenance can extend the lifespan of machinery.（定期维护可以延长机器的使用寿命。）',
+        'The annual maintenance cost for the building is approximately $50,000.（该建筑的年度维护成本约为5万美元。）',
+        'Please adhere to the maintenance schedule to avoid unexpected breakdowns.（请遵守维护计划以避免意外故障。）',
+        'The maintenance crew is available 24/7 for emergency repairs.（维护团队全天候提供紧急维修服务。）',
+      ],
+      sceneAssociation: '联想“工程师定期保养机器”或“物业安排设施维护”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'maintenance',
+          coreDifference: '侧重保持正常状态的定期维护',
+          toeicSceneFocus: '设备保养与维护',
+        },
+        {
+          word: 'repair',
+          coreDifference: '指损坏后的修理',
+          toeicSceneFocus: '故障修理',
+        },
+        {
+          word: 'servicing',
+          coreDifference: '常指专业检查与调整',
+          toeicSceneFocus: '专业服务',
+        },
+      ],
+    },
+    {
+      word: 'repair',
+      phonetic: '/rɪˈper/',
+      phrase: 'urgent computer repair',
+      partOfSpeech: 'v. 动词/n. 名词',
+      coreMeaning: '修理；修复；修补（使损坏的物品恢复正常功能）',
+      toeicSceneFocus:
+        '多出现于设备故障、售后服务、成本管理等语境，托业阅读（维修政策）和听力（报修对话）中涉及修理工作',
+      keyCollocations: [
+        'repair service',
+        'under repair',
+        'repair cost',
+        'emergency repair',
+      ],
+      toeicExampleSentences: [
+        'The elevator is out of order and awaiting repair.（电梯故障，正在等待维修。）',
+        'Our warranty covers all repairs within the first year.（我们的保修涵盖第一年内的所有维修。）',
+        'The repair cost exceeded the original purchase price.（维修费用超过了原始购买价格。）',
+        'Please contact our repair service if the equipment malfunctions.（如果设备发生故障，请联系我们的维修服务。）',
+      ],
+      sceneAssociation:
+        '联想“技术人员修理故障机器”或“客户服务中心处理维修请求”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'repair',
+          coreDifference: '特指修复损坏的物品',
+          toeicSceneFocus: '损坏修复',
+        },
+        {
+          word: 'maintenance',
+          coreDifference: '指预防性的保养，而非修复损坏',
+          toeicSceneFocus: '预防性保养',
+        },
+        {
+          word: 'fix',
+          coreDifference: '更口语化，可指修理或解决',
+          toeicSceneFocus: '口语化修理',
+        },
+      ],
+    },
+    {
+      word: 'replacement',
+      phonetic: '/rɪˈpleɪsmənt/',
+      phrase: 'order a replacement part',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '更换；替换品；替代（用新的事物替代旧的或损坏的事物）',
+      toeicSceneFocus:
+        '多出现于零件采购、设备更新、人员变动等语境，托业阅读（更换通知）和听力（订货对话）中涉及替代物品',
+      keyCollocations: [
+        'replacement part',
+        'temporary replacement',
+        'replacement cost',
+        'in need of replacement',
+      ],
+      toeicExampleSentences: [
+        'We need to order a replacement for the damaged component.（我们需要订购损坏部件的替换件。）',
+        'The company is seeking a replacement for the retiring manager.（公司正在寻找退休经理的接替者。）',
+        'Please keep spare parts on hand for quick replacement.（请备有备件以便快速更换。）',
+        'The replacement cost of the equipment is higher than expected.（设备的更换成本高于预期。）',
+      ],
+      sceneAssociation:
+        '联想“仓库管理员发放替换零件”或“人事部门招聘替代人员”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'replacement',
+          coreDifference: '侧重替代或更换的行为或物品',
+          toeicSceneFocus: '替代与更换管理',
+        },
+        {
+          word: 'substitute',
+          coreDifference: '常指临时或功能替代品',
+          toeicSceneFocus: '临时替代',
+        },
+        {
+          word: 'alternate',
+          coreDifference: '指轮换或可选择的选项',
+          toeicSceneFocus: '轮换与选项',
+        },
+      ],
+    },
+    {
+      word: 'patent',
+      phonetic: '/ˈpætnt/',
+      phrase: 'file a patent application',
+      partOfSpeech: 'n. 名词/v. 动词',
+      coreMeaning: '专利；专利权；获得专利（政府授予发明者的独占权利）',
+      toeicSceneFocus:
+        '多出现于产品研发、知识产权、法律保护等语境，托业阅读（专利文件）和听力（研发讨论）中涉及专利保护',
+      keyCollocations: [
+        'patent office',
+        'patent protection',
+        'patent pending',
+        'patent holder',
+      ],
+      toeicExampleSentences: [
+        'The company holds several patents for its innovative technology.（该公司拥有多项创新技术专利。）',
+        'We need to file a patent application before disclosing the invention.（在公开发明前我们需要提交专利申请。）',
+        "The product is marked 'patent pending' while the application is reviewed.（该产品在申请审查期间标有'专利待批'。）",
+        'Patent protection lasts for 20 years from the filing date.（专利保护期从申请日起为期20年。）',
+      ],
+      sceneAssociation: '联想“研发部门申请技术专利”或“律师处理专利文件”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'patent',
+          coreDifference: '特指发明创造的独占权利',
+          toeicSceneFocus: '发明专利保护',
+        },
+        {
+          word: 'copyright',
+          coreDifference: '指文学艺术作品的版权',
+          toeicSceneFocus: '著作权保护',
+        },
+        {
+          word: 'trademark',
+          coreDifference: '指品牌标识的商标权',
+          toeicSceneFocus: '商标保护',
+        },
+      ],
+    },
+    {
+      word: 'copyright',
+      phonetic: '/ˈkɑːpiraɪt/',
+      phrase: 'copyright infringement notice',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '版权；著作权（保护原创作品不被未经授权复制或使用的法律权利）',
+      toeicSceneFocus:
+        '多出现于出版、媒体、软件等行业的法律合规语境，托业阅读（版权声明）和听力（授权讨论）中涉及版权保护',
+      keyCollocations: [
+        'copyright law',
+        'copyright owner',
+        'copyright protection',
+        'copyright notice',
+      ],
+      toeicExampleSentences: [
+        'The material is protected by copyright and cannot be reproduced without permission.（该材料受版权保护，未经许可不得复制。）',
+        "Please ensure that you have the copyright owner's permission to use these images.（请确保您有版权所有者的许可才能使用这些图像。）",
+        'Copyright protection extends to both published and unpublished works.（版权保护涵盖已发表和未发表的作品。）',
+        'The company issued a copyright infringement notice to the unauthorized distributor.（公司向未经授权的分销商发出了版权侵权通知。）',
+      ],
+      sceneAssociation:
+        '联想“出版社处理版权授权”或“软件公司保护代码版权”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'copyright',
+          coreDifference: '侧重文学、艺术、软件等作品的复制权',
+          toeicSceneFocus: '著作权与内容保护',
+        },
+        {
+          word: 'patent',
+          coreDifference: '保护发明创造的技术方案',
+          toeicSceneFocus: '技术发明保护',
+        },
+        {
+          word: 'trademark',
+          coreDifference: '保护品牌名称、标志等商业标识',
+          toeicSceneFocus: '商业标识保护',
+        },
+      ],
+    },
+    {
+      word: 'prototype',
+      phonetic: '/ˈproʊtətaɪp/',
+      phrase: 'test the product prototype',
+      partOfSpeech: 'n. 名词',
+      coreMeaning: '原型；样品；雏形（新产品的初始模型，用于测试和改进）',
+      toeicSceneFocus:
+        '多出现于产品开发、设计测试、研发流程等语境，托业阅读（研发报告）和听力（测试讨论）中涉及原型开发',
+      keyCollocations: [
+        'build a prototype',
+        'prototype testing',
+        'working prototype',
+        'prototype stage',
+      ],
+      toeicExampleSentences: [
+        'The engineering team built a prototype to demonstrate the concept.（工程团队制作了一个原型来演示该概念。）',
+        'We need to test the prototype before moving to mass production.（在进入大规模生产前，我们需要测试原型。）',
+        'The working prototype successfully met all performance criteria.（该工作原型成功满足了所有性能标准。）',
+        'The product is still in the prototype stage and not yet available for sale.（该产品仍处于原型阶段，尚未上市销售。）',
+      ],
+      sceneAssociation:
+        '联想“设计师展示新产品原型”或“测试团队评估原型性能”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'prototype',
+          coreDifference: '特指用于测试的初始模型',
+          toeicSceneFocus: '产品开发与测试',
+        },
+        {
+          word: 'model',
+          coreDifference: '泛指任何模型，不一定用于测试',
+          toeicSceneFocus: '通用模型',
+        },
+        {
+          word: 'sample',
+          coreDifference: '指样品或标本，用于展示或检验',
+          toeicSceneFocus: '样品展示',
+        },
+      ],
+    },
+
+    {
+      word: 'innovative',
+      phonetic: '/ˈɪnəveɪtɪv/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '创新的；革新的；新颖的（英文释义：using new methods or ideas）',
+      toeicSceneFocus:
+        '多出现于产品研发、技术升级、营销方案等商务语境，是托业高频形容词，阅读（产品宣传册、创新报告）和听力（新品发布会、商务提案）中高频出现',
+      keyCollocations: [
+        'innovative design（创新设计）',
+        'innovative technology（创新技术）',
+        'innovative solution（创新解决方案）',
+        'innovative product（创新型产品）',
+      ],
+      toeicExampleSentences: [
+        "The company's innovative design of the smart watch has won many industry awards.（该公司这款智能手表的创新设计斩获了多项行业大奖。）",
+        'We need to come up with an innovative solution to solve this tricky business problem.（我们需要想出一个创新的解决方案来应对这个棘手的商务难题。）',
+      ],
+      sceneAssociation:
+        '可以联想“研发团队展示innovative product（创新型产品），颠覆传统行业模式”的画面，结合“商务场景中具有新颖性和创造性”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'innovative',
+          coreDifference: '侧重“采用全新方法或理念，强调创造性和新颖性”',
+        },
+        {
+          word: 'creative',
+          coreDifference:
+            '侧重“富有创造力，可用于艺术、想法等多个领域，适用范围更宽泛”',
+        },
+      ],
+    },
+    {
+      word: 'sophisticated',
+      phonetic: '/səˈfɪstɪkeɪtɪd/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '精密的；复杂的；老练的；尖端的（英文释义：complicated and advanced in design or technology; having a lot of experience of the world）',
+      toeicSceneFocus:
+        '多出现于高端产品、精密技术、商务谈判等语境，是托业高频形容词，阅读（技术手册、高端产品介绍）和听力（技术研讨会、商务洽谈）中常考查',
+      keyCollocations: [
+        'sophisticated technology（尖端技术）',
+        'sophisticated equipment（精密设备）',
+        'sophisticated system（复杂系统）',
+        'sophisticated customer（老练的客户）',
+      ],
+      toeicExampleSentences: [
+        'This laboratory is equipped with sophisticated equipment imported from Germany.（这间实验室配备了从德国进口的精密设备。）',
+        'The sophisticated AI system can analyze large amounts of data in a very short time.（这套复杂的人工智能系统能在极短时间内分析海量数据。）',
+      ],
+      sceneAssociation:
+        '可以联想“工程师操作sophisticated equipment（精密设备）进行高精度实验”的画面，结合“商务和技术场景中精密复杂或经验老练”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'sophisticated',
+          coreDifference:
+            '侧重“技术或设备的精密复杂、高端先进，也可形容人老练世故”',
+        },
+        {
+          word: 'complex',
+          coreDifference:
+            '侧重“事物结构复杂、难以理解，仅描述客观复杂性，无‘高端’含义”',
+        },
+      ],
+    },
+    {
+      word: 'specification',
+      phonetic: '/ˌspesɪfɪˈkeɪʃn/',
+      partOfSpeech: 'n. 名词',
+      coreMeaning:
+        '规格；规范；说明书；详述（英文释义：a detailed description of how something should be designed or made）',
+      toeicSceneFocus:
+        '多出现于产品生产、订单采购、工程建设等商务语境，是托业高频名词，阅读（采购合同、产品规格书）和听力（生产对接、订单确认）中高频出现，常用复数形式specifications',
+      keyCollocations: [
+        'product specification（产品规格）',
+        'technical specification（技术规范）',
+        'meet the specifications（符合规格要求）',
+        'draw up specifications（拟定规格说明书）',
+      ],
+      toeicExampleSentences: [
+        'All products must be manufactured strictly according to the technical specifications.（所有产品都必须严格按照技术规范进行生产。）',
+        'Please check the product specifications carefully before placing an order.（下单前请仔细核对产品规格。）',
+      ],
+      sceneAssociation:
+        '可以联想“采购人员对照specification（规格说明书）验收货物，确保符合订单要求”的画面，结合“商务场景中对产品或工程的详细技术要求”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'specification',
+          coreDifference:
+            '侧重“针对产品、工程的具体技术参数和标准要求，是正式的书面文件”',
+        },
+        {
+          word: 'requirement',
+          coreDifference:
+            '侧重“宽泛的需求或要求，可用于技术、人员、流程等多个方面”',
+        },
+      ],
+    },
+    {
+      word: 'durable',
+      phonetic: '/ˈdjʊərəbl/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '耐用的；持久的；经久耐用的（英文释义：able to last for a long time without becoming damaged）',
+      toeicSceneFocus:
+        '多出现于产品质量评价、采购选型、消费品宣传等商务语境，是托业高频形容词，阅读（产品评测报告、采购指南）和听力（产品介绍、质量沟通）中常考查',
+      keyCollocations: [
+        'durable material（耐用材料）',
+        'durable product（耐用产品）',
+        'durable goods（耐用品，如家电、家具等）',
+        'durable performance（持久性能）',
+      ],
+      toeicExampleSentences: [
+        'This kind of fabric is not only soft but also durable, so it is very popular among consumers.（这种面料既柔软又耐用，因此深受消费者青睐。）',
+        'The company focuses on producing durable goods that can be used for more than 10 years.（该公司专注于生产使用寿命超过10年的耐用品。）',
+      ],
+      sceneAssociation:
+        '可以联想“销售人员向客户介绍durable product（耐用产品），强调其超长使用寿命”的画面，结合“商务场景中产品经久耐用的属性”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'durable',
+          coreDifference: '侧重“产品物理性能上的耐用性，能长时间使用不易损坏”',
+        },
+        {
+          word: 'long-lasting',
+          coreDifference:
+            '侧重“状态或效果的持久性，可用于产品、气味、影响等多种对象”',
+        },
+      ],
+    },
+    {
+      word: 'efficient',
+      phonetic: '/ɪˈfɪʃnt/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '高效的；有效率的；能胜任的（英文释义：working well without wasting time, money, or energy）',
+      toeicSceneFocus:
+        '多出现于流程管理、人员评价、设备性能等商务语境，是托业高频形容词，阅读（效率报告、岗位描述）和听力（工作汇报、设备介绍）中高频出现',
+      keyCollocations: [
+        'efficient operation（高效运营）',
+        'energy-efficient（节能的）',
+        'efficient worker（高效员工）',
+        'improve efficient（提升效率）',
+      ],
+      toeicExampleSentences: [
+        'The new production line is much more efficient than the old one, doubling the output.（新生产线比旧生产线效率高得多，产量翻了一番。）',
+        'We should adopt a more efficient way to handle customer complaints.（我们应该采用更高效的方式处理客户投诉。）',
+      ],
+      sceneAssociation:
+        '可以联想“企业通过优化流程实现efficient operation（高效运营），降低成本提升产能”的画面，结合“商务场景中节约时间、资源的高效属性”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'efficient',
+          coreDifference:
+            '侧重“投入产出比高，不浪费时间、金钱或精力，强调效率”',
+        },
+        {
+          word: 'effective',
+          coreDifference: '侧重“能达到预期目的，强调效果”',
+        },
+      ],
+    },
+    {
+      word: 'effective',
+      phonetic: '/ɪˈfektɪv/',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning:
+        '有效的；产生预期效果的；实际的（英文释义：successful in producing the intended result）',
+      toeicSceneFocus:
+        '多出现于方案评估、营销策略、政策执行等商务语境，是托业高频形容词，阅读（效果评估报告、营销方案）和听力（会议讨论、方案汇报）中常考查',
+      keyCollocations: [
+        'effective measure（有效措施）',
+        'effective strategy（有效策略）',
+        'effective from（自……起生效）',
+        'cost-effective（性价比高的）',
+      ],
+      toeicExampleSentences: [
+        'This marketing campaign is very effective and has increased our sales by 30%.（这场营销活动十分有效，让我们的销量提升了30%。）',
+        'The new policy will become effective on the first day of next month.（新政策将于下月1日起生效。）',
+      ],
+      sceneAssociation:
+        '可以联想“团队通过执行effective strategy（有效策略），成功攻克市场难题”的画面，结合“商务场景中达到预期目标的有效属性”的核心语义快速记忆',
+      confusingWordsComparison: [
+        {
+          word: 'effective',
+          coreDifference: '侧重“策略、措施等能成功达到预期效果，强调结果”',
+        },
+        {
+          word: 'efficient',
+          coreDifference: '侧重“做事或运行时节约资源、效率高，强调过程”',
+        },
+      ],
+    },
+
+    {
+      word: 'safe',
+      phonetic: '/seɪf/',
+      phrase: 'safe working environment',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '安全的；保险的；无风险的（不受伤害或危险的状态）',
+      toeicSceneFocus:
+        '多出现于工作场所安全、产品说明、操作规范等语境，托业阅读（安全指南）和听力（风险讨论）中涉及安全保障',
+      keyCollocations: [
+        'safe environment',
+        'safe operation',
+        'keep safe',
+        'safe and sound',
+      ],
+      toeicExampleSentences: [
+        'The company prioritizes providing a safe working environment for all employees.（公司优先为所有员工提供安全的工作环境。）',
+        'Please ensure all equipment is used in a safe manner.（请确保所有设备都以安全的方式使用。）',
+        'The new safety protocols will keep workers safe from potential hazards.（新的安全协议将保护工人免受潜在危险。）',
+        'All confidential documents are stored in a safe location.（所有机密文件都存储在安全的地方。）',
+      ],
+      sceneAssociation:
+        '联想”工厂执行安全操作规程”或”办公室确保数据安全存储”的场景',
+      confusingWordsComparison: [
+        {
+          word: 'safe',
+          coreDifference: '侧重无危险、不受伤害的状态',
+          toeicSceneFocus: '工作安全与风险防范',
+        },
+        {
+          word: 'secure',
+          coreDifference: '强调有保护、不易被攻击或破坏',
+          toeicSceneFocus: '安全防护与保密',
+        },
+        {
+          word: 'protected',
+          coreDifference: '指受到保护的状态，有被动含义',
+          toeicSceneFocus: '受保护状态',
+        },
+      ],
+    },
+    {
+      word: 'secure',
+      phonetic: '/sɪˈkjʊr/',
+      phrase: 'secure online transaction',
+      partOfSpeech: 'adj. 形容词/v. 动词',
+      coreMeaning: '安全的；牢固的；可靠的（有充分保护、不易受攻击的状态）',
+      toeicSceneFocus:
+        '多出现于网络安全、数据保护、金融交易等语境，托业阅读（安全政策）和听力（技术讨论）中涉及安全保障',
+      keyCollocations: [
+        'secure connection',
+        'secure payment',
+        'secure position',
+        'highly secure',
+      ],
+      toeicExampleSentences: [
+        'Our website uses secure encryption to protect customer data.（我们的网站使用安全加密来保护客户数据。）',
+        'Please make sure you have a secure internet connection before accessing sensitive information.（在访问敏感信息前，请确保您有安全的网络连接。）',
+        'The company has secured a major contract with an international client.（公司已获得与国际客户的重要合同。）',
+        'All financial transactions are processed through a secure server.（所有金融交易都通过安全服务器处理。）',
+      ],
+      sceneAssociation: '联想“在线支付时的安全验证“或“企业数据加密保护“的场景',
+      confusingWordsComparison: [
+        {
+          word: 'secure',
+          coreDifference: '强调有保护措施、不易受威胁',
+          toeicSceneFocus: '技术安全与防护',
+        },
+        {
+          word: 'safe',
+          coreDifference: '侧重无风险、不会造成伤害',
+          toeicSceneFocus: '物理安全与风险',
+        },
+        {
+          word: 'protected',
+          coreDifference: '指处于被保护状态，强调外部防护',
+          toeicSceneFocus: '受保护状态',
+        },
+      ],
+    },
+    {
+      word: 'user-friendly',
+      phonetic: '/ˌjuːzər ˈfrendli/',
+      phrase: 'user-friendly software interface',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '用户友好的；易于使用的（设计简单直观，方便用户操作）',
+      toeicSceneFocus:
+        '多出现于产品设计、软件说明、客户体验等语境，托业阅读（产品介绍）和听力（技术支持）中涉及易用性',
+      keyCollocations: [
+        'user-friendly design',
+        'user-friendly interface',
+        'highly user-friendly',
+        'user-friendly features',
+      ],
+      toeicExampleSentences: [
+        'The new software has a user-friendly interface that requires minimal training.（新软件具有用户友好的界面，需要最少的培训。）',
+        'We aim to create user-friendly products that appeal to a wide audience.（我们的目标是创建吸引广泛用户的用户友好型产品。）',
+        "The device's user-friendly design makes it popular among older customers.（该设备的用户友好设计使其在老年客户中很受欢迎。）",
+        'Our customer service platform is designed to be user-friendly and efficient.（我们的客户服务平台设计得用户友好且高效。）',
+      ],
+      sceneAssociation:
+        '联想“新手轻松操作直观软件“或“产品设计注重用户体验“的场景',
+      confusingWordsComparison: [
+        {
+          word: 'user-friendly',
+          coreDifference: '特指对用户友好、易于使用',
+          toeicSceneFocus: '产品易用性与用户体验',
+        },
+        {
+          word: 'intuitive',
+          coreDifference: '强调凭直觉就能理解使用',
+          toeicSceneFocus: '直观操作设计',
+        },
+        {
+          word: 'accessible',
+          coreDifference: '指易于接触或使用，包括残障人士',
+          toeicSceneFocus: '通用可达性',
+        },
+      ],
+    },
+    {
+      word: 'compatible',
+      phonetic: '/kəmˈpætəbl/',
+      phrase: 'compatible with all devices',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '兼容的；能共存的；协调的（能够一起工作或共存的状态）',
+      toeicSceneFocus:
+        '多出现于技术规格、系统集成、设备配对等语境，托业阅读（产品说明）和听力（技术支持）中涉及兼容性',
+      keyCollocations: [
+        'compatible with',
+        'backward compatible',
+        'fully compatible',
+        'compatible systems',
+      ],
+      toeicExampleSentences: [
+        'The software is compatible with both Windows and Mac operating systems.（该软件与Windows和Mac操作系统都兼容。）',
+        'Make sure the new components are compatible with your existing equipment.（确保新组件与您现有设备兼容。）',
+        'The updated version is backward compatible with previous file formats.（更新版本向后兼容以前的文件格式。）',
+        'Our product is designed to be compatible with industry standards.（我们的产品设计为与行业标准兼容。）',
+      ],
+      sceneAssociation:
+        '联想“技术人员检查设备兼容性“或“用户确认软件与系统匹配“的场景',
+      confusingWordsComparison: [
+        {
+          word: 'compatible',
+          coreDifference: '强调能够协调工作或匹配',
+          toeicSceneFocus: '技术兼容性与系统集成',
+        },
+        {
+          word: 'consistent',
+          coreDifference: '指保持一致、不矛盾',
+          toeicSceneFocus: '一致性与连贯性',
+        },
+        {
+          word: 'adaptable',
+          coreDifference: '强调能够适应变化',
+          toeicSceneFocus: '适应能力',
+        },
+      ],
+    },
+    {
+      word: 'versatile',
+      phonetic: '/ˈvɜːrsətl/',
+      phrase: 'versatile multi-functional tool',
+      partOfSpeech: 'adj. 形容词',
+      coreMeaning: '多功能的；多才多艺的；通用的（具有多种用途或能力）',
+      toeicSceneFocus:
+        '多出现于产品特性、人才描述、设备功能等语境，托业阅读（产品宣传）和听力（能力评估）中涉及多功能性',
+      keyCollocations: [
+        'versatile tool',
+        'versatile performer',
+        'highly versatile',
+        'versatile application',
+      ],
+      toeicExampleSentences: [
+        'This versatile device can function as a printer, scanner, and copier.（这个多功能设备可以作为打印机、扫描仪和复印机使用。）',
+        "We're looking for a versatile employee who can handle multiple responsibilities.（我们正在寻找能够处理多项职责的多才多艺的员工。）",
+        'The material has versatile applications in various industries.（这种材料在各个行业都有多种应用。）',
+        'Her versatile skills make her an asset to any project team.（她多才多艺的技能使她成为任何项目团队的宝贵资产。）',
+      ],
+      sceneAssociation:
+        '联想“多功能设备提高工作效率“或“多面手员工应对各种任务“的场景',
+      confusingWordsComparison: [
+        {
+          word: 'versatile',
+          coreDifference: '强调具有多种功能或才能',
+          toeicSceneFocus: '多功能性与多才多艺',
+        },
+        {
+          word: 'flexible',
+          coreDifference: '侧重能够适应变化或调整',
+          toeicSceneFocus: '灵活性与适应性',
+        },
+        {
+          word: 'adaptable',
+          coreDifference: '强调能够适应新环境或要求',
+          toeicSceneFocus: '适应能力',
+        },
+      ],
+    },
     {
       word: 'merchandise',
       phonetic: '/ˈmɜːrtʃəndaɪs/',
