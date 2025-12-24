@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSpeech } from 'react-text-to-speech';
-import { wordData } from '../data';
+import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
 import { getCategoryName } from '../utils/app';
@@ -24,16 +24,35 @@ function WordBrowsePage() {
   });
 
   useEffect(() => {
-    const categoryWords = wordData[category] || [];
-    setWords(categoryWords);
+    let isMounted = true;
 
-    const savedIndex = sessionStorage.getItem(`browseIndex_${category}`);
-    const initialIndex = savedIndex !== null ? parseInt(savedIndex) : 0;
-    setCurrentIndex(initialIndex);
+    async function loadWords() {
+      try {
+        const categoryWords = await getWordsByCategory(category);
+        if (isMounted) {
+          setWords(categoryWords);
 
-    if (categoryWords.length > 0) {
-      setCurrentWord(categoryWords[initialIndex]);
+          const savedIndex = sessionStorage.getItem(`browseIndex_${category}`);
+          const initialIndex = savedIndex !== null ? parseInt(savedIndex) : 0;
+          setCurrentIndex(initialIndex);
+
+          if (categoryWords.length > 0) {
+            setCurrentWord(categoryWords[initialIndex]);
+          }
+        }
+      } catch (error) {
+        console.error('加载单词列表失败:', error);
+        if (isMounted) {
+          setWords([]);
+        }
+      }
     }
+
+    loadWords();
+
+    return () => {
+      isMounted = false;
+    };
   }, [category]);
 
   useEffect(() => {
@@ -149,8 +168,26 @@ function WordBrowsePage() {
     }
   };
 
+  if (!currentWord && words.length === 0) {
+    return (
+      <div className="container">
+        <Header title={`${getCategoryName(category)} - 快速浏览`} showBack />
+        <main className="detail-content">
+          <div style={{ padding: '20px', textAlign: 'center' }}>加载中...</div>
+        </main>
+      </div>
+    );
+  }
+
   if (!currentWord) {
-    return <div>加载中...</div>;
+    return (
+      <div className="container">
+        <Header title={`${getCategoryName(category)} - 快速浏览`} showBack />
+        <main className="detail-content">
+          <div style={{ padding: '20px', textAlign: 'center' }}>暂无数据</div>
+        </main>
+      </div>
+    );
   }
 
   const coreMeaning =

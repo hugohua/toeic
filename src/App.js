@@ -8,6 +8,8 @@ import WordListPage from './pages/WordListPage';
 import ProfilePage from './pages/ProfilePage';
 import TestSpeechPage from './pages/TestSpeechPage';
 import FavoriteWordListPage from './pages/FavoriteWordListPage';
+import WordImportPage from './pages/WordImportPage';
+import CategoryAddPage from './pages/CategoryAddPage';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="/test-speech" element={<TestSpeechPage />} />
       <Route path="/favorites" element={<FavoriteWordListPage />} />
+      <Route path="/import" element={<WordImportPage />} />
+      <Route path="/category/add" element={<CategoryAddPage />} />
     </Routes>
   );
 }

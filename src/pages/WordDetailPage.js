@@ -6,7 +6,7 @@ import {
   useLocation,
 } from 'react-router-dom';
 import { useSpeech } from 'react-text-to-speech';
-import { wordData } from '../data';
+import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
 import { getCategoryName } from '../utils/app';
@@ -102,15 +102,34 @@ function WordDetailPage() {
   });
 
   useEffect(() => {
-    const categoryWords = wordData[category] || [];
-    setWords(categoryWords);
-    const wordIndex = parseInt(index);
-    setCurrentIndex(wordIndex);
-    if (categoryWords[wordIndex]) {
-      setWord(categoryWords[wordIndex]);
-      // 滚动到顶部
-      window.scrollTo(0, 0);
+    let isMounted = true;
+
+    async function loadWords() {
+      try {
+        const categoryWords = await getWordsByCategory(category);
+        if (isMounted) {
+          setWords(categoryWords);
+          const wordIndex = parseInt(index);
+          setCurrentIndex(wordIndex);
+          if (categoryWords[wordIndex]) {
+            setWord(categoryWords[wordIndex]);
+            // 滚动到顶部
+            window.scrollTo(0, 0);
+          }
+        }
+      } catch (error) {
+        console.error('加载单词列表失败:', error);
+        if (isMounted) {
+          setWords([]);
+        }
+      }
     }
+
+    loadWords();
+
+    return () => {
+      isMounted = false;
+    };
   }, [category, index]);
 
   // 根据当前单词更新收藏状态

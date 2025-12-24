@@ -8,7 +8,7 @@ import {
   clearTodayData,
   clearAllData,
 } from '../utils/storage';
-import { wordData } from '../data';
+import { getCategories, getWordsByCategory } from '../utils/api';
 import { getWordReviewStats } from '../utils/ebbinghaus';
 
 function ProfilePage() {
@@ -55,26 +55,38 @@ function ProfilePage() {
     loadWordList();
   };
 
-  const loadWordList = () => {
-    const allWords = [];
-    for (const category in wordData) {
-      if (wordData.hasOwnProperty(category)) {
-        wordData[category].forEach((word) => {
-          const stats = getWordReviewStats(word.word, category);
-          if (stats.reviewCount > 0) {
-            allWords.push({
-              word: word.word,
-              category: category,
-              ...stats,
-            });
-          }
-        });
+  const loadWordList = async () => {
+    try {
+      const categories = await getCategories();
+      const allWords = [];
+
+      // 遍历所有分类，获取单词列表
+      for (const category of categories) {
+        try {
+          const words = await getWordsByCategory(category.name);
+          words.forEach((word) => {
+            const stats = getWordReviewStats(word.word, category.name);
+            if (stats.reviewCount > 0) {
+              allWords.push({
+                word: word.word,
+                category: category.name,
+                ...stats,
+              });
+            }
+          });
+        } catch (error) {
+          console.error(`加载分类 ${category.name} 失败:`, error);
+        }
       }
+
+      allWords.sort(
+        (a, b) => new Date(b.lastReviewDate) - new Date(a.lastReviewDate)
+      );
+      setWordList(allWords.slice(0, 50)); // 只显示最近50个
+    } catch (error) {
+      console.error('加载单词列表失败:', error);
+      setWordList([]);
     }
-    allWords.sort(
-      (a, b) => new Date(b.lastReviewDate) - new Date(a.lastReviewDate)
-    );
-    setWordList(allWords.slice(0, 50)); // 只显示最近50个
   };
 
   const handleClearToday = () => {
@@ -186,6 +198,28 @@ function ProfilePage() {
           >
             <span className="favorite-entry-icon">★</span>
             <span>查看收藏单词</span>
+          </button>
+        </div>
+
+        <div className="favorite-entry" style={{ marginTop: '15px' }}>
+          <button
+            className="btn-primary btn-favorite-entry"
+            onClick={() => navigate('/import')}
+            style={{ backgroundColor: '#28a745' }}
+          >
+            <span className="favorite-entry-icon">📥</span>
+            <span>批量导入单词</span>
+          </button>
+        </div>
+
+        <div className="favorite-entry" style={{ marginTop: '15px' }}>
+          <button
+            className="btn-primary btn-favorite-entry"
+            onClick={() => navigate('/category/add')}
+            style={{ backgroundColor: '#17a2b8' }}
+          >
+            <span className="favorite-entry-icon">➕</span>
+            <span>新增分类</span>
           </button>
         </div>
 

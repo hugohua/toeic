@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { wordData } from '../data';
+import {
+  searchWords as searchWordsAPI,
+  getWordsByCategory,
+} from '../utils/api';
 import './Header.css';
 
 function Header({
@@ -19,78 +22,26 @@ function Header({
   const searchInputRef = useRef(null);
   const searchContainerRef = useRef(null);
 
-  // 搜索功能
-  const searchWords = (query, maxResults = 10) => {
+  // 搜索功能（使用 API）
+  const searchWords = async (query, maxResults = 10) => {
     if (!query || query.trim().length === 0) {
       return [];
     }
 
-    const allWords = [];
-    for (const category in wordData) {
-      if (wordData.hasOwnProperty(category)) {
-        const words = wordData[category];
-        if (Array.isArray(words)) {
-          words.forEach((word) => {
-            if (word && typeof word === 'object') {
-              allWords.push({ ...word, category });
-            }
-          });
-        }
-      }
+    try {
+      const results = await searchWordsAPI(query, maxResults);
+      // API 返回的结果已经包含 category_name，需要转换为 category
+      return results.map((word) => ({
+        ...word,
+        category: word.category_name || word.category,
+      }));
+    } catch (error) {
+      console.error('搜索失败:', error);
+      return [];
     }
-
-    const results = [];
-    const queryLower = query.toLowerCase().trim();
-
-    for (const word of allWords) {
-      // 安全检查：确保word对象和word.word属性存在
-      if (!word || !word.word) {
-        continue;
-      }
-
-      let score = 0;
-      let matched = false;
-
-      const wordText = String(word.word).toLowerCase();
-      if (wordText.includes(queryLower)) {
-        score += 100;
-        matched = true;
-        if (wordText.startsWith(queryLower)) {
-          score += 50;
-        }
-      }
-
-      if (word.coreMeaning && typeof word.coreMeaning === 'string') {
-        if (word.coreMeaning.toLowerCase().includes(queryLower)) {
-          score += 30;
-          matched = true;
-        }
-      }
-
-      if (word.toeicSceneFocus && typeof word.toeicSceneFocus === 'string') {
-        if (word.toeicSceneFocus.toLowerCase().includes(queryLower)) {
-          score += 20;
-          matched = true;
-        }
-      }
-
-      if (word.sceneFocus && typeof word.sceneFocus === 'string') {
-        if (word.sceneFocus.toLowerCase().includes(queryLower)) {
-          score += 20;
-          matched = true;
-        }
-      }
-
-      if (matched) {
-        results.push({ word, score });
-      }
-    }
-
-    results.sort((a, b) => b.score - a.score);
-    return results.slice(0, maxResults).map((item) => item.word);
   };
 
-  const handleSearchChange = (e) => {
+  const handleSearchChange = async (e) => {
     const query = e.target.value;
     setSearchQuery(query);
 
@@ -100,16 +51,8 @@ function Header({
       return;
     }
 
-    // 检查wordData是否可用
-    if (!wordData || typeof wordData !== 'object') {
-      console.error('wordData is not available');
-      setSearchResults([]);
-      setShowDropdown(false);
-      return;
-    }
-
     try {
-      const results = searchWords(query, 10);
+      const results = await searchWords(query, 10);
       setSearchResults(results);
       setShowDropdown(results.length > 0);
     } catch (error) {
@@ -135,21 +78,26 @@ function Header({
     }, 200);
   };
 
-  const handleResultClick = (word) => {
+  const handleResultClick = async (word) => {
     if (!word || !word.word || !word.category) {
       return;
     }
-    const category = word.category;
-    const categoryWords = wordData[category];
-    if (!categoryWords || !Array.isArray(categoryWords)) {
-      return;
-    }
-    const wordIndex = categoryWords.findIndex((w) => w && w.word === word.word);
-    if (wordIndex !== -1) {
-      navigate(`/detail/${category}/${wordIndex}`);
-      setIsSearchExpanded(false);
-      setSearchQuery('');
-      setShowDropdown(false);
+    const category = word.category_name || word.category;
+
+    try {
+      // 通过 API 获取分类下的单词列表来找到索引
+      const categoryWords = await getWordsByCategory(category);
+      const wordIndex = categoryWords.findIndex(
+        (w) => w && w.word === word.word
+      );
+      if (wordIndex !== -1) {
+        navigate(`/detail/${category}/${wordIndex}`);
+        setIsSearchExpanded(false);
+        setSearchQuery('');
+        setShowDropdown(false);
+      }
+    } catch (error) {
+      console.error('获取单词列表失败:', error);
     }
   };
 

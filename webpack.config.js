@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -51,6 +52,11 @@ module.exports = (env, argv) => {
           },
         ],
       }),
+      new webpack.DefinePlugin({
+        'process.env.REACT_APP_API_URL': JSON.stringify(
+          process.env.REACT_APP_API_URL || (isProduction ? 'http://localhost:3000/api' : '/api')
+        ),
+      }),
     ],
     resolve: {
       extensions: ['.js', '.jsx'],
@@ -63,6 +69,14 @@ module.exports = (env, argv) => {
       port: 3000,
       historyApiFallback: true,
       hot: true,
+      // 代理 API 请求到后端服务器
+      proxy: {
+        '/api': {
+          target: 'http://localhost:3001',
+          changeOrigin: true,
+          secure: false,
+        },
+      },
     },
   };
 };

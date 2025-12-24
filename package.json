@@ -5,12 +5,15 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "webpack serve --mode development --open",
-    "build": "npm run format && webpack --mode production",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cross-env NODE_ENV=development node server.js",
+    "dev:client": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "serve": "npm run build && npm start",
     "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
-    "format:check": "prettier --check \"src/**/*.{js,jsx,css,json}\""
+    "format:check": "prettier --check \"src/**/*.{js,jsx,css,json}\"",
+    "import-data": "node scripts/import-data.js"
   },
   "keywords": [
     "word-learning",
@@ -21,6 +24,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "better-sqlite3": "^12.5.0",
     "express": "^4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -32,7 +36,9 @@
     "@babel/preset-env": "^7.23.5",
     "@babel/preset-react": "^7.23.0",
     "babel-loader": "^9.1.3",
+    "concurrently": "^9.2.1",
     "copy-webpack-plugin": "^13.0.1",
+    "cross-env": "^10.1.0",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
     "prettier": "^3.7.4",

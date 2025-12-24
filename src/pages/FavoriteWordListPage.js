@@ -1,9 +1,9 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSpeech } from 'react-text-to-speech';
 import Header from '../components/Header';
 import { getFavoriteWords } from '../utils/storage';
-import { wordData } from '../data';
+import { getWordsByCategory } from '../utils/api';
 import { getCategoryName, getFirstSlashContent } from '../utils/app';
 import '../index.css';
 import './WordListPage.css';
@@ -81,23 +81,68 @@ function FavoriteWordListPage() {
     return saved ? JSON.parse(saved) : {};
   });
 
-  const favoriteWords = useMemo(() => {
-    const list = getFavoriteWords();
-    // 过滤掉在当前词库中已经不存在的单词
-    return list
-      .map((item) => {
-        const categoryWords = wordData[item.category];
-        if (!categoryWords || !Array.isArray(categoryWords)) return null;
-        const index = categoryWords.findIndex((w) => w.word === item.word);
-        if (index === -1) return null;
-        const word = categoryWords[index];
-        return {
-          ...item,
-          index,
-          data: word,
-        };
-      })
-      .filter(Boolean);
+  const [favoriteWords, setFavoriteWords] = useState([]);
+
+  // 加载收藏单词列表
+  useEffect(() => {
+    let isMounted = true;
+
+    async function loadFavoriteWords() {
+      const list = getFavoriteWords();
+      if (list.length === 0) {
+        setFavoriteWords([]);
+        return;
+      }
+
+      try {
+        // 按分类分组
+        const categoryMap = new Map();
+        list.forEach((item) => {
+          if (!categoryMap.has(item.category)) {
+            categoryMap.set(item.category, []);
+          }
+          categoryMap.get(item.category).push(item);
+        });
+
+        // 为每个分类获取单词列表
+        const results = [];
+        for (const [category, items] of categoryMap.entries()) {
+          try {
+            const categoryWords = await getWordsByCategory(category);
+            items.forEach((item) => {
+              const index = categoryWords.findIndex(
+                (w) => w.word === item.word
+              );
+              if (index !== -1) {
+                const word = categoryWords[index];
+                results.push({
+                  ...item,
+                  index,
+                  data: word,
+                });
+              }
+            });
+          } catch (error) {
+            console.error(`加载分类 ${category} 失败:`, error);
+          }
+        }
+
+        if (isMounted) {
+          setFavoriteWords(results);
+        }
+      } catch (error) {
+        console.error('加载收藏单词失败:', error);
+        if (isMounted) {
+          setFavoriteWords([]);
+        }
+      }
+    }
+
+    loadFavoriteWords();
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   // 保存释义显示状态到 sessionStorage

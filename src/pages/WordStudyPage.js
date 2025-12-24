@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useSpeech } from 'react-text-to-speech';
-import { wordData } from '../data';
+import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
 import { getCategoryName } from '../utils/app';
@@ -27,43 +27,64 @@ function WordStudyPage() {
 
   // 初始化学习
   useEffect(() => {
-    const categoryWords = wordData[category] || [];
-    if (categoryWords.length === 0) {
-      setIsLoading(false);
-      return;
+    let isMounted = true;
+
+    async function loadWords() {
+      try {
+        const categoryWords = await getWordsByCategory(category);
+
+        if (!isMounted) return;
+
+        if (categoryWords.length === 0) {
+          setIsLoading(false);
+          return;
+        }
+
+        setWords(categoryWords);
+
+        // 恢复保存的进度
+        const savedIndex = localStorage.getItem(`studyIndex_${category}`);
+        const indexParam = searchParams.get('index');
+
+        let initialIndex = 0;
+        if (indexParam !== null) {
+          initialIndex = parseInt(indexParam);
+          if (initialIndex >= 0 && initialIndex < categoryWords.length) {
+            setCurrentIndex(initialIndex);
+            setCurrentWord(categoryWords[initialIndex]);
+          } else {
+            setCurrentIndex(0);
+            setCurrentWord(categoryWords[0]);
+          }
+        } else if (savedIndex !== null) {
+          initialIndex = parseInt(savedIndex);
+          if (initialIndex >= 0 && initialIndex < categoryWords.length) {
+            setCurrentIndex(initialIndex);
+            setCurrentWord(categoryWords[initialIndex]);
+          } else {
+            setCurrentIndex(0);
+            setCurrentWord(categoryWords[0]);
+          }
+        } else {
+          setCurrentIndex(0);
+          setCurrentWord(categoryWords[0]);
+        }
+
+        setIsLoading(false);
+      } catch (error) {
+        console.error('加载单词列表失败:', error);
+        if (isMounted) {
+          setIsLoading(false);
+          setWords([]);
+        }
+      }
     }
 
-    setWords(categoryWords);
+    loadWords();
 
-    // 恢复保存的进度
-    const savedIndex = localStorage.getItem(`studyIndex_${category}`);
-    const indexParam = searchParams.get('index');
-
-    let initialIndex = 0;
-    if (indexParam !== null) {
-      initialIndex = parseInt(indexParam);
-      if (initialIndex >= 0 && initialIndex < categoryWords.length) {
-        setCurrentIndex(initialIndex);
-        setCurrentWord(categoryWords[initialIndex]);
-      } else {
-        setCurrentIndex(0);
-        setCurrentWord(categoryWords[0]);
-      }
-    } else if (savedIndex !== null) {
-      initialIndex = parseInt(savedIndex);
-      if (initialIndex >= 0 && initialIndex < categoryWords.length) {
-        setCurrentIndex(initialIndex);
-        setCurrentWord(categoryWords[initialIndex]);
-      } else {
-        setCurrentIndex(0);
-        setCurrentWord(categoryWords[0]);
-      }
-    } else {
-      setCurrentIndex(0);
-      setCurrentWord(categoryWords[0]);
-    }
-
-    setIsLoading(false);
+    return () => {
+      isMounted = false;
+    };
   }, [category, searchParams]);
 
   useEffect(() => {

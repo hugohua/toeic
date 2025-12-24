@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSpeech } from 'react-text-to-speech';
-import { wordData } from '../data';
+import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import { getCategoryName, getFirstSlashContent } from '../utils/app';
 import * as storage from '../utils/storage';
@@ -116,8 +116,27 @@ function WordListPage() {
 
   // 加载单词列表
   useEffect(() => {
-    const categoryWords = wordData[category] || [];
-    setWords(categoryWords);
+    let isMounted = true;
+
+    async function loadWords() {
+      try {
+        const categoryWords = await getWordsByCategory(category);
+        if (isMounted) {
+          setWords(categoryWords);
+        }
+      } catch (error) {
+        console.error('加载单词列表失败:', error);
+        if (isMounted) {
+          setWords([]);
+        }
+      }
+    }
+
+    loadWords();
+
+    return () => {
+      isMounted = false;
+    };
   }, [category]);
 
   // 保存释义显示状态到 sessionStorage
