@@ -235,3 +235,16 @@
   font-weight: 400;
   display: block;
 }
+
+/* 可点击元素样式 */
+.word-list-clickable {
+  cursor: pointer;
+}
+
+.word-list-meaning-clickable {
+  cursor: pointer;
+}
+
+.word-list-footer-btn {
+  margin-top: 10px;
+}

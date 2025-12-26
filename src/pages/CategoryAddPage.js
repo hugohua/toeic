@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import { createCategory } from '../utils/api';
 import '../index.css';
+import './CategoryAddPage.css';
 
 function CategoryAddPage() {
   const navigate = useNavigate();
@@ -71,19 +72,14 @@ function CategoryAddPage() {
   return (
     <div className="container">
       <Header title="新增分类" showBack />
-      <main style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+      <main className="category-add-content">
         <form onSubmit={handleSubmit}>
-          <div style={{ marginBottom: '20px' }}>
+          <div className="category-add-form-group">
             <label
               htmlFor="category-key"
-              style={{
-                display: 'block',
-                marginBottom: '8px',
-                fontWeight: 'bold',
-                fontSize: '16px',
-              }}
+              className="category-add-label"
             >
-              分类标识（key）<span style={{ color: 'red' }}>*</span>
+              分类标识（key）<span className="category-add-label-required">*</span>
             </label>
             <input
               id="category-key"
@@ -91,37 +87,20 @@ function CategoryAddPage() {
               value={categoryKey}
               onChange={(e) => setCategoryKey(e.target.value)}
               placeholder="例如: new_category"
-              style={{
-                width: '100%',
-                padding: '10px',
-                fontSize: '16px',
-                border: '1px solid #ddd',
-                borderRadius: '4px',
-              }}
+              className="category-add-input"
               disabled={isLoading}
             />
-            <div
-              style={{
-                marginTop: '5px',
-                fontSize: '14px',
-                color: '#666',
-              }}
-            >
+            <div className="category-add-hint">
               只能包含字母、数字和下划线，用于系统内部标识
             </div>
           </div>
 
-          <div style={{ marginBottom: '20px' }}>
+          <div className="category-add-form-group">
             <label
               htmlFor="display-name"
-              style={{
-                display: 'block',
-                marginBottom: '8px',
-                fontWeight: 'bold',
-                fontSize: '16px',
-              }}
+              className="category-add-label"
             >
-              中文名称<span style={{ color: 'red' }}>*</span>
+              中文名称<span className="category-add-label-required">*</span>
             </label>
             <input
               id="display-name"
@@ -129,92 +108,49 @@ function CategoryAddPage() {
               value={displayName}
               onChange={(e) => setDisplayName(e.target.value)}
               placeholder="例如: 新分类名称"
-              style={{
-                width: '100%',
-                padding: '10px',
-                fontSize: '16px',
-                border: '1px solid #ddd',
-                borderRadius: '4px',
-              }}
+              className="category-add-input"
               disabled={isLoading}
             />
-            <div
-              style={{
-                marginTop: '5px',
-                fontSize: '14px',
-                color: '#666',
-              }}
-            >
+            <div className="category-add-hint">
               用于在界面上显示的中文名称
             </div>
           </div>
 
           {message.text && (
             <div
-              style={{
-                padding: '12px',
-                marginBottom: '20px',
-                borderRadius: '4px',
-                backgroundColor:
-                  message.type === 'success' ? '#d4edda' : '#f8d7da',
-                color: message.type === 'success' ? '#155724' : '#721c24',
-                border: `1px solid ${
-                  message.type === 'success' ? '#c3e6cb' : '#f5c6cb'
-                }`,
-              }}
+              className={`category-add-message ${
+                message.type === 'success'
+                  ? 'category-add-message-success'
+                  : 'category-add-message-error'
+              }`}
             >
               {message.text}
             </div>
           )}
 
-          <div style={{ display: 'flex', gap: '10px' }}>
+          <div className="category-add-actions">
             <button
               type="submit"
               disabled={isLoading}
-              style={{
-                padding: '12px 24px',
-                fontSize: '16px',
-                backgroundColor: isLoading ? '#ccc' : '#007bff',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: isLoading ? 'not-allowed' : 'pointer',
-                fontWeight: 'bold',
-              }}
+              className="category-add-submit-btn"
             >
               {isLoading ? '创建中...' : '创建分类'}
             </button>
             <button
               type="button"
               onClick={() => navigate(-1)}
-              style={{
-                padding: '12px 24px',
-                fontSize: '16px',
-                backgroundColor: '#6c757d',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer',
-              }}
+              className="category-add-cancel-btn"
             >
               取消
             </button>
           </div>
         </form>
 
-        <div
-          style={{
-            marginTop: '30px',
-            padding: '15px',
-            backgroundColor: '#f8f9fa',
-            borderRadius: '4px',
-            fontSize: '14px',
-          }}
-        >
-          <div style={{ fontWeight: 'bold', marginBottom: '10px' }}>
+        <div className="category-add-info">
+          <div className="category-add-info-title">
             说明：
           </div>
-          <ul style={{ margin: 0, paddingLeft: '20px' }}>
+          <ul className="category-add-info-list">
             <li>
               <strong>分类标识（key）</strong>：用于系统内部标识，一旦创建不能修改
             </li>

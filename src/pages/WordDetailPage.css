@@ -1,0 +1,18 @@
+/* 可点击元素样式 */
+.word-detail-clickable {
+  cursor: pointer;
+}
+
+.word-detail-example-sentence {
+  cursor: pointer;
+}
+
+.word-detail-title-clickable {
+  cursor: pointer;
+}
+
+/* 空状态文本 */
+.word-detail-empty-text {
+  color: #999;
+}
+

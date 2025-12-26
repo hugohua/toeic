@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import { getCategories, importWords } from '../utils/api';
 import { getCategoryName } from '../utils/app';
 import '../index.css';
+import './WordImportPage.css';
 
 function WordImportPage() {
   const navigate = useNavigate();
@@ -227,16 +228,11 @@ function WordImportPage() {
   return (
     <div className="container">
       <Header title="批量导入单词" showBack />
-      <main style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ marginBottom: '20px' }}>
+      <main className="word-import-content">
+        <div className="word-import-form-group">
           <label
             htmlFor="category-select"
-            style={{
-              display: 'block',
-              marginBottom: '8px',
-              fontWeight: 'bold',
-              fontSize: '16px',
-            }}
+            className="word-import-label"
           >
             选择分类：
           </label>
@@ -244,13 +240,7 @@ function WordImportPage() {
             id="category-select"
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
-            style={{
-              width: '100%',
-              padding: '10px',
-              fontSize: '16px',
-              border: '1px solid #ddd',
-              borderRadius: '4px',
-            }}
+            className="word-import-select"
           >
             {categories.map((cat) => (
               <option key={cat.id} value={cat.key || cat.name}>
@@ -260,34 +250,17 @@ function WordImportPage() {
           </select>
         </div>
 
-        <div style={{ marginBottom: '20px' }}>
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              marginBottom: '8px',
-            }}
-          >
+        <div className="word-import-form-group">
+          <div className="word-import-input-header">
             <label
               htmlFor="json-input"
-              style={{
-                fontWeight: 'bold',
-                fontSize: '16px',
-              }}
+              className="word-import-label"
             >
               JSON 数据：
             </label>
             <button
               onClick={handleFormatJson}
-              style={{
-                padding: '6px 12px',
-                fontSize: '14px',
-                backgroundColor: '#f0f0f0',
-                border: '1px solid #ddd',
-                borderRadius: '4px',
-                cursor: 'pointer',
-              }}
+              className="word-import-format-btn"
             >
               格式化 JSON
             </button>
@@ -297,55 +270,30 @@ function WordImportPage() {
             value={jsonInput}
             onChange={(e) => setJsonInput(e.target.value)}
             placeholder="请输入 JSON 数组，例如：[{ word: 'feature', phonetic: '/ˈfiːtʃə(r)/', ... }]"
-            style={{
-              width: '100%',
-              minHeight: '400px',
-              padding: '12px',
-              fontSize: '14px',
-              fontFamily: 'monospace',
-              border: '1px solid #ddd',
-              borderRadius: '4px',
-              resize: 'vertical',
-            }}
+            className="word-import-textarea"
           />
         </div>
 
         {message.text && (
           <div
-            style={{
-              padding: '12px',
-              marginBottom: '20px',
-              borderRadius: '4px',
-              backgroundColor:
-                message.type === 'success' ? '#d4edda' : '#f8d7da',
-              color: message.type === 'success' ? '#155724' : '#721c24',
-              border: `1px solid ${
-                message.type === 'success' ? '#c3e6cb' : '#f5c6cb'
-              }`,
-            }}
+            className={`word-import-message ${
+              message.type === 'success'
+                ? 'word-import-message-success'
+                : 'word-import-message-error'
+            }`}
           >
             {message.text}
           </div>
         )}
 
         {validationErrors.length > 0 && (
-          <div
-            style={{
-              padding: '12px',
-              marginBottom: '20px',
-              borderRadius: '4px',
-              backgroundColor: '#fff3cd',
-              border: '1px solid #ffeaa7',
-              maxHeight: '300px',
-              overflowY: 'auto',
-            }}
-          >
-            <div style={{ fontWeight: 'bold', marginBottom: '8px' }}>
+          <div className="word-import-errors">
+            <div className="word-import-errors-title">
               验证错误详情：
             </div>
-            <ul style={{ margin: 0, paddingLeft: '20px' }}>
+            <ul className="word-import-errors-list">
               {validationErrors.map((error, index) => (
-                <li key={index} style={{ marginBottom: '4px', fontSize: '14px' }}>
+                <li key={index} className="word-import-errors-item">
                   {error}
                 </li>
               ))}
@@ -353,20 +301,11 @@ function WordImportPage() {
           </div>
         )}
 
-        <div style={{ display: 'flex', gap: '10px' }}>
+        <div className="word-import-actions">
           <button
             onClick={handleImport}
             disabled={isLoading}
-            style={{
-              padding: '12px 24px',
-              fontSize: '16px',
-              backgroundColor: isLoading ? '#ccc' : '#007bff',
-              color: 'white',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: isLoading ? 'not-allowed' : 'pointer',
-              fontWeight: 'bold',
-            }}
+            className="word-import-submit-btn"
           >
             {isLoading ? '导入中...' : '导入单词'}
           </button>
@@ -376,40 +315,17 @@ function WordImportPage() {
               setMessage({ type: '', text: '' });
               setValidationErrors([]);
             }}
-            style={{
-              padding: '12px 24px',
-              fontSize: '16px',
-              backgroundColor: '#6c757d',
-              color: 'white',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer',
-            }}
+            className="word-import-clear-btn"
           >
             清空
           </button>
         </div>
 
-        <div
-          style={{
-            marginTop: '30px',
-            padding: '15px',
-            backgroundColor: '#f8f9fa',
-            borderRadius: '4px',
-            fontSize: '14px',
-          }}
-        >
-          <div style={{ fontWeight: 'bold', marginBottom: '10px' }}>
+        <div className="word-import-info">
+          <div className="word-import-info-title">
             JSON 数据格式说明：
           </div>
-          <pre
-            style={{
-              margin: 0,
-              whiteSpace: 'pre-wrap',
-              wordBreak: 'break-word',
-              fontSize: '12px',
-            }}
-          >
+          <pre className="word-import-info-pre">
 {`[
   {
     word: 'feature',                    // 必需：单词

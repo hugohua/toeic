@@ -1,0 +1,16 @@
+/* 可点击元素样式 */
+.word-browse-clickable {
+  cursor: pointer;
+}
+
+/* 空状态文本 */
+.word-browse-empty-text {
+  color: #999;
+}
+
+/* 加载和空状态容器 */
+.word-browse-status {
+  padding: 20px;
+  text-align: center;
+}
+

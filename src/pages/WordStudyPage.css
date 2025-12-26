@@ -1,0 +1,12 @@
+/* 可点击元素样式 */
+.word-study-clickable {
+  cursor: pointer;
+}
+
+/* 单词短语样式 */
+.word-study-phrase {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #666;
+}
+

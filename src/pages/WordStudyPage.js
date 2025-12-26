@@ -7,6 +7,8 @@ import PhraseCell from '../components/PhraseCell';
 import { getCategoryName } from '../utils/app';
 import { startStudy, saveWordStatus } from '../utils/storage';
 import { scheduleReview } from '../utils/ebbinghaus';
+import '../index.css';
+import './WordStudyPage.css';
 
 function WordStudyPage() {
   const { category } = useParams();
@@ -263,21 +265,17 @@ function WordStudyPage() {
         <div className="word-display">
           <div className="word-card">
             <div
-              className="word-text"
+              className="word-text word-study-clickable"
               onClick={() => {
                 start();
               }}
-              style={{ cursor: 'pointer' }}
               title="点击播放发音"
             >
               {currentWord.word}
             </div>
             <div className="phonetic">{currentWord.phonetic || '/ˈwɜːrd/'}</div>
             {currentWord.phrase && (
-              <div
-                className="word-phrase"
-                style={{ marginTop: '12px', fontSize: '14px', color: '#666' }}
-              >
+              <div className="word-phrase word-study-phrase">
                 <PhraseCell phraseText={currentWord.phrase} />
               </div>
             )}

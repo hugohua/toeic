@@ -35,7 +35,7 @@ function ExampleSentence({ sentence }) {
         onClick={() => {
           start();
         }}
-        style={{ cursor: 'pointer' }}
+        className="word-article-example-sentence"
         title="点击播放发音"
       >
         {englishText}
@@ -56,9 +56,8 @@ function WordTitle({ word }) {
 
   return (
     <div
-      className="word-detail-title"
+      className="word-detail-title word-article-title-clickable"
       onClick={() => start()}
-      style={{ cursor: 'pointer' }}
       title="点击播放发音"
     >
       {word}
@@ -239,7 +238,7 @@ function ArticleDetailPage() {
           </ol>
         );
       } else {
-        return <p style={{ color: '#999' }}>暂无例句</p>;
+        return <p className="word-article-empty-text">暂无例句</p>;
       }
     };
 

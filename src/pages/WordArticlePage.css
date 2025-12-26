@@ -306,6 +306,81 @@
   font-size: 13px;
 }
 
+/* 可点击元素样式 */
+.word-article-clickable {
+  cursor: pointer;
+}
+
+.word-article-example-sentence {
+  cursor: pointer;
+}
+
+.word-article-title-clickable {
+  cursor: pointer;
+}
+
+/* 文章操作区域 */
+.word-article-actions {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.word-article-view-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid #667eea;
+  background: transparent;
+  color: #667eea;
+  cursor: pointer;
+}
+
+.word-article-view-btn:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+/* 文章标题区域 */
+.word-article-title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.word-article-title-section .section-title {
+  margin-bottom: 0;
+}
+
+.word-article-save-btn {
+  flex: none;
+  width: 100px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.word-article-save-btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.word-article-save-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* 空状态文本 */
+.word-article-empty-text {
+  color: #999;
+}
+
 /* 响应式设计 */
 @media (max-width: 480px) {
   .word-detail-modal {

@@ -35,7 +35,7 @@ function ExampleSentence({ sentence }) {
         onClick={() => {
           start();
         }}
-        style={{ cursor: 'pointer' }}
+        className="word-article-example-sentence"
         title="点击播放发音"
       >
         {englishText}
@@ -56,9 +56,8 @@ function WordTitle({ word }) {
 
   return (
     <div
-      className="word-detail-title"
+      className="word-detail-title word-article-title-clickable"
       onClick={() => start()}
-      style={{ cursor: 'pointer' }}
       title="点击播放发音"
     >
       {word}
@@ -301,7 +300,7 @@ function WordArticlePage() {
           </ol>
         );
       } else {
-        return <p style={{ color: '#999' }}>暂无例句</p>;
+        return <p className="word-article-empty-text">暂无例句</p>;
       }
     };
 
@@ -420,21 +419,11 @@ function WordArticlePage() {
       <Header title="单词文章背诵" showBack />
       <main className="article-content">
         {/* 查看已保存文章链接 */}
-        <div style={{ textAlign: 'right', marginBottom: '20px' }}>
+        <div className="word-article-actions">
           <button
             type="button"
-            className="btn btn-secondary"
+            className="btn btn-secondary word-article-view-btn"
             onClick={() => navigate('/articles')}
-            style={{
-              padding: '8px 16px',
-              fontSize: '14px',
-              fontWeight: '500',
-              borderRadius: '6px',
-              border: '1px solid #667eea',
-              background: 'transparent',
-              color: '#667eea',
-              cursor: 'pointer',
-            }}
           >
             查看已保存文章
           </button>
@@ -490,24 +479,13 @@ function WordArticlePage() {
         {/* 文章显示区域 */}
         {article && (
           <div className="article-display">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
-              <h3 className="section-title" style={{ marginBottom: 0 }}>生成的文章</h3>
+            <div className="word-article-title-section">
+              <h3 className="section-title">生成的文章</h3>
               <button
                 type="button"
-                className="btn btn-primary"
+                className="btn btn-primary word-article-save-btn"
                 onClick={handleSaveArticle}
                 disabled={isSaving}
-                style={{
-                  padding: '10px 20px',
-                  fontSize: '14px',
-                  fontWeight: '500',
-                  borderRadius: '6px',
-                  border: 'none',
-                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                  color: 'white',
-                  cursor: isSaving ? 'not-allowed' : 'pointer',
-                  opacity: isSaving ? 0.6 : 1,
-                }}
               >
                 {isSaving ? '保存中...' : '保存文章'}
               </button>

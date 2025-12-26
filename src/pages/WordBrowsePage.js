@@ -6,6 +6,8 @@ import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
 import { getCategoryName } from '../utils/app';
 import * as storage from '../utils/storage';
+import '../index.css';
+import './WordBrowsePage.css';
 
 function WordBrowsePage() {
   const { category } = useParams();
@@ -173,7 +175,7 @@ function WordBrowsePage() {
       <div className="container">
         <Header title={`${getCategoryName(category)} - 快速浏览`} showBack />
         <main className="detail-content">
-          <div style={{ padding: '20px', textAlign: 'center' }}>加载中...</div>
+          <div className="word-browse-status">加载中...</div>
         </main>
       </div>
     );
@@ -184,7 +186,7 @@ function WordBrowsePage() {
       <div className="container">
         <Header title={`${getCategoryName(category)} - 快速浏览`} showBack />
         <main className="detail-content">
-          <div style={{ padding: '20px', textAlign: 'center' }}>暂无数据</div>
+          <div className="word-browse-status">暂无数据</div>
         </main>
       </div>
     );
@@ -226,7 +228,7 @@ function WordBrowsePage() {
         .join('') +
       '</ol>';
   } else {
-    exampleSentencesHtml = '<p style="color: #999;">暂无例句</p>';
+    exampleSentencesHtml = '<p class="word-browse-empty-text">暂无例句</p>';
   }
 
   let confusingWordsHtml = '';
@@ -260,11 +262,10 @@ function WordBrowsePage() {
           <div className="detail-header">
             <div className="detail-header-main">
               <div
-                className="word-title"
+                className="word-title word-browse-clickable"
                 onClick={() => {
                   start();
                 }}
-                style={{ cursor: 'pointer' }}
                 title="点击播放发音"
               >
                 {currentWord.word}
@@ -297,7 +298,7 @@ function WordBrowsePage() {
               {currentWord.phrase ? (
                 <PhraseCell phraseText={currentWord.phrase} />
               ) : (
-                <p style={{ color: '#999' }}>暂无</p>
+                <p className="word-browse-empty-text">暂无</p>
               )}
             </div>
           </div>

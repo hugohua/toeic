@@ -44,9 +44,8 @@ function WordRow({
     <tr className="word-list-row" onClick={() => onRowClick(index)}>
       <td className="col-word">
         <span
-          className={`word-list-text ${isFavorite ? 'word-favorite' : ''}`}
+          className={`word-list-text ${isFavorite ? 'word-favorite' : ''} word-list-clickable`}
           onClick={handleWordClick}
-          style={{ cursor: 'pointer' }}
           title="点击播放发音"
         >
           {word.word}
@@ -56,9 +55,8 @@ function WordRow({
         </span>
       </td>
       <td
-        className="col-meaning"
+        className="col-meaning word-list-meaning-clickable"
         onClick={handleMeaningCellClick}
-        style={{ cursor: 'pointer' }}
       >
         <span className="meaning-text">
           {isMeaningVisible ? getShortMeaning(word) : '点击显示释义'}
@@ -340,9 +338,8 @@ function WordListPage() {
         <div className="word-list-footer">
           <div className="word-count">共 {words.length} 个单词</div>
           <button
-            className="btn btn-primary"
+            className="btn btn-primary word-list-footer-btn"
             onClick={handleStartStudy}
-            style={{ marginTop: '10px' }}
           >
             开始背单词
           </button>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useSpeech } from 'react-text-to-speech';
 import Header from '../components/Header';
+import '../index.css';
+import './TestSpeechPage.css';
 
 export default function TestSpeechPage() {
   const {
@@ -15,16 +17,9 @@ export default function TestSpeechPage() {
   return (
     <div className="container">
       <Header title="语音测试页面" showBack />
-      <main
-        style={{
-          padding: '20px',
-          display: 'flex',
-          flexDirection: 'column',
-          rowGap: '1rem',
-        }}
-      >
+      <main className="test-speech-content">
         <Text />
-        <div style={{ display: 'flex', columnGap: '0.5rem' }}>
+        <div className="test-speech-buttons">
           {speechStatus !== 'started' ? (
             <button onClick={start}>Start</button>
           ) : (

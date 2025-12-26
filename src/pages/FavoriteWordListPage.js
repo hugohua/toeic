@@ -41,9 +41,8 @@ function FavoriteWordRow({
     <tr className="word-list-row" onClick={() => onRowClick(index)}>
       <td className="col-word">
         <span
-          className="word-list-text word-favorite"
+          className="word-list-text word-favorite word-list-clickable"
           onClick={handleWordClick}
-          style={{ cursor: 'pointer' }}
           title="点击播放发音"
         >
           {item.word}
@@ -53,9 +52,8 @@ function FavoriteWordRow({
         </span>
       </td>
       <td
-        className="col-meaning"
+        className="col-meaning word-list-meaning-clickable"
         onClick={handleMeaningCellClick}
-        style={{ cursor: 'pointer' }}
       >
         <span className="meaning-text">
           {isMeaningVisible ? getShortMeaning(item.data || {}) : '点击显示释义'}

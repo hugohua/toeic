@@ -11,6 +11,8 @@ import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
 import { getCategoryName } from '../utils/app';
 import * as storage from '../utils/storage';
+import '../index.css';
+import './WordDetailPage.css';
 
 // 易混淆单词单元格组件，支持发音功能
 function ConfusingWordCell({ wordText }) {
@@ -26,7 +28,7 @@ function ConfusingWordCell({ wordText }) {
       onClick={() => {
         start();
       }}
-      style={{ cursor: 'pointer' }}
+      className="word-detail-clickable"
       title="点击播放发音"
     >
       {wordText}
@@ -65,7 +67,7 @@ function ExampleSentence({ sentence }) {
         onClick={() => {
           start();
         }}
-        style={{ cursor: 'pointer' }}
+        className="word-detail-example-sentence"
         title="点击播放发音"
       >
         {englishText}
@@ -262,7 +264,7 @@ function WordDetailPage() {
         </ol>
       );
     } else {
-      return <p style={{ color: '#999' }}>暂无例句</p>;
+      return <p className="word-detail-empty-text">暂无例句</p>;
     }
   };
 
@@ -319,11 +321,10 @@ function WordDetailPage() {
           <div className="detail-header">
             <div className="detail-header-main">
               <div
-                className="word-title"
+                className="word-title word-detail-title-clickable"
                 onClick={() => {
                   start();
                 }}
-                style={{ cursor: 'pointer' }}
                 title="点击播放发音"
               >
                 {word.word}
@@ -357,7 +358,7 @@ function WordDetailPage() {
               {word.phrase ? (
                 <PhraseCell phraseText={word.phrase} />
               ) : (
-                <p style={{ color: '#999' }}>暂无</p>
+                <p className="word-detail-empty-text">暂无</p>
               )}
             </div>
           </div>

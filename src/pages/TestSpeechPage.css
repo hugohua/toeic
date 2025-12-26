@@ -1,0 +1,12 @@
+.test-speech-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.test-speech-buttons {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
