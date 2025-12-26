@@ -1,10 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import { categories } from '../utils/app';
+import { getCategories } from '../utils/api';
 
 function HomePage() {
   const navigate = useNavigate();
+  const [categories, setCategories] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    async function loadCategories() {
+      try {
+        const cats = await getCategories();
+        // 转换为前端需要的格式
+        const formattedCategories = cats.map((cat) => ({
+          key: cat.name,
+          icon: cat.icon || '📚',
+          name: cat.display_name || cat.name,
+          desc: cat.desc || '',
+        }));
+        setCategories(formattedCategories);
+      } catch (error) {
+        console.error('加载分类列表失败:', error);
+        setCategories([]);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    loadCategories();
+  }, []);
 
   const startStudy = (category) => {
     navigate(`/study/${category}`);
@@ -17,6 +41,28 @@ function HomePage() {
   const viewWordList = (category) => {
     navigate(`/list/${category}`);
   };
+
+  if (isLoading) {
+    return (
+      <div className="container">
+        <Header title="选择学习场景" subtitle="选择一个场景开始背单词" />
+        <main className="main-content">
+          <div className="empty-message">加载中...</div>
+        </main>
+      </div>
+    );
+  }
+
+  if (categories.length === 0) {
+    return (
+      <div className="container">
+        <Header title="选择学习场景" subtitle="选择一个场景开始背单词" />
+        <main className="main-content">
+          <div className="empty-message">暂无分类数据</div>
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="container">

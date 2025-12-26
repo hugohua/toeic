@@ -111,6 +111,40 @@ function ProfilePage() {
     <div className="container">
       <Header title="个人中心" showBack />
       <main className="profile-content">
+        {/* 操作按钮区域 - 放在顶部 */}
+        <div className="profile-actions">
+          <div className="action-buttons-grid">
+            <button
+              className="profile-action-btn btn-favorite"
+              onClick={() => navigate('/favorites')}
+              title="查看收藏单词"
+            >
+              <span className="action-btn-text">收藏单词</span>
+            </button>
+            <button
+              className="profile-action-btn btn-import"
+              onClick={() => navigate('/import')}
+              title="批量导入单词"
+            >
+              <span className="action-btn-text">导入单词</span>
+            </button>
+            <button
+              className="profile-action-btn btn-category"
+              onClick={() => navigate('/category/add')}
+              title="新增分类"
+            >
+              <span className="action-btn-text">新增分类</span>
+            </button>
+            <button
+              className="profile-action-btn btn-article"
+              onClick={() => navigate('/article')}
+              title="单词文章背诵"
+            >
+              <span className="action-btn-text">文章背诵</span>
+            </button>
+          </div>
+        </div>
+
         <div className="stats-card today-stats">
           <h2 className="stats-title">📊 今日学习</h2>
           <div className="stats-grid">
@@ -190,38 +224,6 @@ function ProfilePage() {
             </div>
           </div>
         )}
-
-        <div className="favorite-entry">
-          <button
-            className="btn-primary btn-favorite-entry"
-            onClick={() => navigate('/favorites')}
-          >
-            <span className="favorite-entry-icon">★</span>
-            <span>查看收藏单词</span>
-          </button>
-        </div>
-
-        <div className="favorite-entry" style={{ marginTop: '15px' }}>
-          <button
-            className="btn-primary btn-favorite-entry"
-            onClick={() => navigate('/import')}
-            style={{ backgroundColor: '#28a745' }}
-          >
-            <span className="favorite-entry-icon">📥</span>
-            <span>批量导入单词</span>
-          </button>
-        </div>
-
-        <div className="favorite-entry" style={{ marginTop: '15px' }}>
-          <button
-            className="btn-primary btn-favorite-entry"
-            onClick={() => navigate('/category/add')}
-            style={{ backgroundColor: '#17a2b8' }}
-          >
-            <span className="favorite-entry-icon">➕</span>
-            <span>新增分类</span>
-          </button>
-        </div>
 
         <div className="action-buttons">
           <button className="btn-secondary" onClick={handleClearToday}>

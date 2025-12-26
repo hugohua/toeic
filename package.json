@@ -13,7 +13,8 @@
     "serve": "npm run build && npm start",
     "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
     "format:check": "prettier --check \"src/**/*.{js,jsx,css,json}\"",
-    "import-data": "node scripts/import-data.js"
+    "import-data": "node scripts/import-data.js",
+    "import-categories": "node scripts/import-categories.js"
   },
   "keywords": [
     "word-learning",
@@ -26,6 +27,7 @@
   "dependencies": {
     "better-sqlite3": "^12.5.0",
     "express": "^4.18.2",
+    "openai": "^6.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",

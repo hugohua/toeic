@@ -103,6 +103,26 @@ export async function getWordById(wordId) {
 }
 
 /**
+ * 根据单词获取单词详情（不依赖分类）
+ * @param {string} word - 单词文本
+ */
+export async function getWordByWord(word) {
+  const wordData = await apiRequest(`/word/${word}`);
+
+  // 转换数据格式
+  return {
+    ...wordData,
+    partOfSpeech: wordData.part_of_speech,
+    coreMeaning: wordData.core_meaning,
+    toeicSceneFocus: wordData.toeic_scene_focus,
+    sceneAssociation: wordData.scene_association,
+    keyCollocations: wordData.keyCollocations || [],
+    toeicExampleSentences: wordData.toeicExampleSentences || [],
+    confusingWordsComparison: wordData.confusingWordsComparison || [],
+  };
+}
+
+/**
  * 根据单词和分类获取单词详情
  * @param {string} word - 单词文本
  * @param {string} category - 分类名称
@@ -176,4 +196,126 @@ export async function createCategory(categoryKey, displayName) {
     }),
   });
   return result;
+}
+
+/**
+ * 保存文章
+ * @param {string} title - 文章标题
+ * @param {string} content - 文章内容
+ * @param {Array<string>} categories - 分类数组
+ */
+export async function saveArticle(title, content, categories) {
+  return apiRequest('/articles', {
+    method: 'POST',
+    body: JSON.stringify({
+      title,
+      content,
+      categories,
+    }),
+  });
+}
+
+/**
+ * 获取所有文章列表
+ */
+export async function getAllArticles() {
+  return apiRequest('/articles');
+}
+
+/**
+ * 根据ID获取文章详情
+ * @param {number} articleId - 文章ID
+ */
+export async function getArticleById(articleId) {
+  return apiRequest(`/articles/${articleId}`);
+}
+
+/**
+ * 删除文章
+ * @param {number} articleId - 文章ID
+ */
+export async function deleteArticle(articleId) {
+  return apiRequest(`/articles/${articleId}`, {
+    method: 'DELETE',
+  });
+}
+
+/**
+ * 生成文章（流式输出）
+ * @param {Array<string>} categories - 分类数组
+ * @param {Function} onChunk - 接收每个内容块的回调函数 (chunk: string) => void
+ * @param {Function} onError - 错误回调函数 (error: Error) => void
+ * @param {Function} onComplete - 完成回调函数 () => void
+ */
+export async function generateArticle(categories, onChunk, onError, onComplete) {
+  const url = `${API_BASE_URL}/generate-article`;
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        categories,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(
+        `API 请求失败: ${response.status} ${response.statusText}`
+      );
+    }
+
+    // 读取流式响应
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+
+    while (true) {
+      const { done, value } = await reader.read();
+      
+      if (done) {
+        if (onComplete) onComplete();
+        break;
+      }
+
+      // 解码数据
+      buffer += decoder.decode(value, { stream: true });
+      
+      // 处理完整的 SSE 消息
+      const lines = buffer.split('\n\n');
+      buffer = lines.pop() || ''; // 保留最后一个不完整的消息
+
+      for (const line of lines) {
+        if (line.startsWith('data: ')) {
+          try {
+            const data = JSON.parse(line.slice(6));
+            
+            if (data.type === 'content' && data.data) {
+              if (onChunk) onChunk(data.data);
+            } else if (data.type === 'error') {
+              const error = new Error(data.error || '生成文章失败');
+              if (onError) {
+                onError(error);
+              } else {
+                throw error;
+              }
+            } else if (data.type === 'done') {
+              if (onComplete) onComplete();
+            }
+          } catch (parseError) {
+            console.error('解析 SSE 数据错误:', parseError);
+          }
+        }
+      }
+    }
+  } catch (error) {
+    console.error('生成文章错误:', error);
+    if (onError) {
+      onError(error);
+    } else {
+      throw error;
+    }
+  }
 }

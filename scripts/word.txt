@@ -1,0 +1,29 @@
+分类：11
+tourist, traveler, passenger, flight, train, bus, ship, boat, cruise, journey, trip, tour, excursion, voyage, travel, commute, transfer, pickup, drop-off, airport, station, terminal, port, dock, pier, platform, gate, lobby, reception, concierge, bellhop, housekeeping, catering, banquet, refreshment, beverage, menu, reservation, booking, confirm, cancel, reschedule, delay
+
+分类：12
+faculty, apprentice, scholarship, education, training, teach, learn, study, student, teacher, professor, instructor, tutor, mentor, coaching, course, program, curriculum, syllabus, lesson, lecture, seminar, workshop, conference, session, class, classroom, campus, school, college, university, institute, academy, degree, diploma, certificate, qualification, credential, skill, knowledge, expertise, proficiency, competence, ability, aptitude, talent, learn, master, acquire, gain, obtain, develop, improve, enhance, refine, polish, practice, drill, exercise, assignment, homework, project, thesis, dissertation
+
+分类：13
+health, medical, medicine, medication, pharmacy, pharmacist, doctor, nurse, physician, surgeon, dentist, hospital, clinic, healthcare, treatment, therapy, diagnosis, symptom, illness, disease, injury, wound, pain, relief, cure, remedy, vaccine, injection, pill, tablet, capsule, syrup, ointment, cream, bandage, brace, cast, surgery, operation, checkup, examination, test, scan, x-ray, laboratory, lab, result, report
+
+分类：14
+railing, facility, property, building, structure, architecture, architect, construction, build, construct, erect, demolish, renovate, remodel, repair, maintain, facility, equipment, tool, material, brick, steel, concrete, wood, lumber, glass, pane, window, door, hallway, staircase, elevator, escalator, room, office, cubicle, desk, chair, stool, table, shelf, cabinet, cupboard, closet, storage, warehouse, garage, workshop, factory, plant, mill, refinery, power plant, station, terminal, airport, port, dock, pier, platform, road, highway, street, lane, sidewalk, curb
+
+分类：15
+ingredient, cuisine, food, beverage, menu, recipe, cook, chef, kitchen, restaurant, café, bistro, diner, cafeteria, bakery, pastry, grocery, market, store, shop, vendor, supplier, distributor, producer, manufacturer, farm, agriculture, agricultural, crop, harvest, fruit, vegetable, meat, fish, dairy, egg, bread, cereal, rice, pasta, sauce, seasoning
+
+分类：16
+art, artist, painting, drawing, sculpture, statue, portrait, mural, gallery, museum, exhibition, exhibit, performance, concert, theater, opera, ballet, dance, music, song, instrument, pianist, musician, writer, author, poet, novelist, literature, book, novel, story, poem, play, script, manuscript, edition, publisher, editor, printing, illustration, design, fashion, clothing, attire, jewelry
+
+分类：17
+wildlife, ecology, environment, environmental, nature, natural, landscape, gardening, plant, tree, flower, grass, lawn, garden, park, forest, woods, jungle, mountain, hill, valley, river, lake, ocean, sea, beach, shore, coast, island, desert, plain, field, meadow, pasture, wildlife, animal, bird, fish, insect, butterfly, bee, ant, worm, spider, snake, lizard, frog, toad
+
+分类：18
+resident, council, government, state, nation, country, city, town, village, community, society, social, public, private, individual, group, organization, association, institution, agency, department, ministry, official, politician, leader, mayor, governor, president, prime minister, senator, representative, congress, parliament, assembly, vote, election, campaign, policy, regulation, law, legal, justice, court, police, army, military, defense, security, safety, order, peace, conflict, war, crisis
+
+分类：19
+pleased, appreciate, regret, eager, passionate, motivated, inspired, ambitious, diligent, reliable, loyal, faithful, honest, integrity, sincere, genuine, kind, considerate, thoughtful, caring, compassionate, empathetic, sympathetic, emotional, feeling, mood, attitude, perception, perspective, insight, understanding, knowledge, wisdom, intelligence, creativity, ingenuity, talent, skill, ability, aptitude, competence, proficiency, expertise
+
+分类：21
+upcoming, subsequent, initial, decade, annual, monthly, weekly, daily, hourly, minute, second, time, hour, day, week, month, year, decade, century, millennium, date, calendar, schedule, timetable, deadline, due, punctual, timely, early, late, on time, in time, delay, postpone, reschedule, extend, prolong, shorten

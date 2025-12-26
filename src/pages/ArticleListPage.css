@@ -1,0 +1,170 @@
+.article-list-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f8f9fa;
+}
+
+.article-list-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.article-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.article-list-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.article-list-table th {
+  padding: 15px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+
+.article-list-table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.article-list-table tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.article-list-table tbody tr:hover {
+  background: #f8f9fa;
+  transform: translateX(2px);
+}
+
+.article-list-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.article-list-table td {
+  padding: 15px 12px;
+  vertical-align: middle;
+}
+
+.col-title {
+  width: 40%;
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.col-categories {
+  width: 25%;
+  color: #666;
+  font-size: 13px;
+}
+
+.col-date {
+  width: 25%;
+  color: #999;
+  font-size: 13px;
+}
+
+.col-actions {
+  width: 10%;
+  text-align: center;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover:not(:disabled) {
+  background: #cc0000;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(255, 68, 68, 0.3);
+}
+
+.delete-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 60px 20px;
+  font-size: 16px;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.error-message {
+  padding: 12px 16px;
+  background: #fee;
+  border: 1px solid #fcc;
+  border-radius: 8px;
+  color: #c33;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 移动端响应式 */
+@media (max-width: 480px) {
+  .article-list-content {
+    padding: 15px;
+  }
+
+  .article-list-table {
+    font-size: 12px;
+  }
+
+  .article-list-table th,
+  .article-list-table td {
+    padding: 12px 8px;
+  }
+
+  .col-title {
+    width: 35%;
+    font-size: 13px;
+  }
+
+  .col-categories {
+    width: 20%;
+    font-size: 11px;
+  }
+
+  .col-date {
+    width: 25%;
+    font-size: 11px;
+  }
+
+  .col-actions {
+    width: 20%;
+  }
+
+  .delete-btn {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+}
+

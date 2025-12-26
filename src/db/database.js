@@ -11,18 +11,32 @@ const db = new Database(dbPath);
 db.pragma('foreign_keys = ON');
 
 /**
- * 数据库迁移：添加 display_name 字段
+ * 数据库迁移：添加 display_name、icon、desc 字段
  */
 function migrateDatabase() {
   try {
-    // 检查是否存在 display_name 字段
     const tableInfo = db.pragma('table_info(categories)');
-    const hasDisplayName = tableInfo.some((col) => col.name === 'display_name');
+    const columnNames = tableInfo.map((col) => col.name);
 
-    if (!hasDisplayName) {
+    // 检查并添加 display_name 字段
+    if (!columnNames.includes('display_name')) {
       console.log('正在迁移数据库：添加 display_name 字段...');
       db.exec('ALTER TABLE categories ADD COLUMN display_name TEXT');
       console.log('数据库迁移完成：display_name 字段已添加');
+    }
+
+    // 检查并添加 icon 字段
+    if (!columnNames.includes('icon')) {
+      console.log('正在迁移数据库：添加 icon 字段...');
+      db.exec('ALTER TABLE categories ADD COLUMN icon TEXT');
+      console.log('数据库迁移完成：icon 字段已添加');
+    }
+
+    // 检查并添加 desc 字段
+    if (!columnNames.includes('desc')) {
+      console.log('正在迁移数据库：添加 desc 字段...');
+      db.exec('ALTER TABLE categories ADD COLUMN desc TEXT');
+      console.log('数据库迁移完成：desc 字段已添加');
     }
   } catch (error) {
     console.error('数据库迁移失败:', error);
@@ -39,6 +53,8 @@ function initDatabase() {
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT UNIQUE NOT NULL,
       display_name TEXT,
+      icon TEXT,
+      desc TEXT,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     );
   `);
@@ -99,6 +115,17 @@ function initDatabase() {
     );
   `);
 
+  // 创建文章表
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS articles (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      title TEXT NOT NULL,
+      content TEXT NOT NULL,
+      categories TEXT NOT NULL,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+  `);
+
   // 创建索引
   db.exec(`
     CREATE INDEX IF NOT EXISTS idx_words_category ON words(category_id);
@@ -106,22 +133,23 @@ function initDatabase() {
     CREATE INDEX IF NOT EXISTS idx_collocations_word ON key_collocations(word_id);
     CREATE INDEX IF NOT EXISTS idx_sentences_word ON example_sentences(word_id);
     CREATE INDEX IF NOT EXISTS idx_confusing_word ON confusing_words(word_id);
+    CREATE INDEX IF NOT EXISTS idx_articles_created_at ON articles(created_at);
   `);
 }
 
 /**
  * 获取或创建分类
  */
-function getOrCreateCategory(categoryName, displayName = null) {
+function getOrCreateCategory(categoryName, displayName = null, icon = null, desc = null) {
   let category = db
     .prepare('SELECT id FROM categories WHERE name = ?')
     .get(categoryName);
 
   if (!category) {
     const insert = db.prepare(
-      'INSERT INTO categories (name, display_name) VALUES (?, ?)'
+      'INSERT INTO categories (name, display_name, icon, desc) VALUES (?, ?, ?, ?)'
     );
-    const result = insert.run(categoryName, displayName);
+    const result = insert.run(categoryName, displayName, icon, desc);
     return { id: result.lastInsertRowid };
   }
 
@@ -131,7 +159,7 @@ function getOrCreateCategory(categoryName, displayName = null) {
 /**
  * 创建分类
  */
-function createCategory(categoryName, displayName) {
+function createCategory(categoryName, displayName, icon = null, desc = null) {
   if (!categoryName || typeof categoryName !== 'string' || categoryName.trim() === '') {
     throw new Error('分类名称（key）是必需的');
   }
@@ -146,14 +174,16 @@ function createCategory(categoryName, displayName) {
   }
 
   const insert = db.prepare(
-    'INSERT INTO categories (name, display_name) VALUES (?, ?)'
+    'INSERT INTO categories (name, display_name, icon, desc) VALUES (?, ?, ?, ?)'
   );
-  const result = insert.run(categoryName.trim(), displayName || null);
+  const result = insert.run(categoryName.trim(), displayName || null, icon || null, desc || null);
   
   return {
     id: result.lastInsertRowid,
     name: categoryName.trim(),
     display_name: displayName || null,
+    icon: icon || null,
+    desc: desc || null,
   };
 }
 
@@ -273,7 +303,7 @@ function insertConfusingWords(wordId, confusingWords) {
  */
 function getAllCategories() {
   return db
-    .prepare('SELECT id, name, display_name, created_at FROM categories ORDER BY name')
+    .prepare('SELECT id, name, display_name, icon, desc, created_at FROM categories ORDER BY id ASC')
     .all();
 }
 
@@ -405,6 +435,29 @@ function getWordByWordAndCategory(wordText, categoryName) {
 }
 
 /**
+ * 根据单词文本获取单词详情（不依赖分类）
+ * 如果存在多个相同单词，返回第一个匹配的
+ */
+function getWordByWord(wordText) {
+  const word = db
+    .prepare(
+      `
+    SELECT w.*
+    FROM words w
+    WHERE LOWER(w.word) = LOWER(?)
+    LIMIT 1
+  `
+    )
+    .get(wordText);
+
+  if (!word) {
+    return null;
+  }
+
+  return getWordDetail(word.id);
+}
+
+/**
  * 搜索单词
  */
 function searchWords(query, limit = 50) {
@@ -510,6 +563,106 @@ function batchImportWords(categoryName, wordsData) {
   return result;
 }
 
+/**
+ * 根据多个分类获取单词列表
+ * @param {Array<string>} categoryNames - 分类名称数组
+ */
+function getWordsByCategories(categoryNames) {
+  if (!Array.isArray(categoryNames) || categoryNames.length === 0) {
+    return [];
+  }
+
+  // 构建查询，使用 IN 子句
+  const placeholders = categoryNames.map(() => '?').join(',');
+  const query = `
+    SELECT 
+      w.*,
+      c.name as category_name
+    FROM words w
+    JOIN categories c ON w.category_id = c.id
+    WHERE c.name IN (${placeholders})
+    ORDER BY w.id
+  `;
+
+  return db.prepare(query).all(...categoryNames);
+}
+
+/**
+ * 保存文章
+ * @param {string} title - 文章标题
+ * @param {string} content - 文章内容
+ * @param {Array<string>} categories - 分类数组
+ */
+function saveArticle(title, content, categories) {
+  if (!title || typeof title !== 'string' || title.trim() === '') {
+    throw new Error('文章标题是必需的');
+  }
+  if (!content || typeof content !== 'string' || content.trim() === '') {
+    throw new Error('文章内容是必需的');
+  }
+  if (!Array.isArray(categories) || categories.length === 0) {
+    throw new Error('分类数组是必需的且不能为空');
+  }
+
+  const insert = db.prepare(
+    'INSERT INTO articles (title, content, categories) VALUES (?, ?, ?)'
+  );
+  const result = insert.run(title.trim(), content.trim(), JSON.stringify(categories));
+  
+  return {
+    id: result.lastInsertRowid,
+    title: title.trim(),
+    content: content.trim(),
+    categories,
+    created_at: new Date().toISOString(),
+  };
+}
+
+/**
+ * 获取所有文章列表
+ */
+function getAllArticles() {
+  const articles = db
+    .prepare('SELECT id, title, categories, created_at FROM articles ORDER BY created_at DESC')
+    .all();
+  
+  return articles.map(article => ({
+    ...article,
+    categories: JSON.parse(article.categories),
+  }));
+}
+
+/**
+ * 根据ID获取文章详情
+ * @param {number} articleId - 文章ID
+ */
+function getArticleById(articleId) {
+  const article = db
+    .prepare('SELECT * FROM articles WHERE id = ?')
+    .get(articleId);
+  
+  if (!article) {
+    return null;
+  }
+
+  return {
+    ...article,
+    categories: JSON.parse(article.categories),
+  };
+}
+
+/**
+ * 删除文章
+ * @param {number} articleId - 文章ID
+ */
+function deleteArticle(articleId) {
+  const result = db
+    .prepare('DELETE FROM articles WHERE id = ?')
+    .run(articleId);
+  
+  return result.changes > 0;
+}
+
 // 初始化数据库
 initDatabase();
 
@@ -525,9 +678,15 @@ module.exports = {
   insertConfusingWords,
   getAllCategories,
   getWordsByCategory,
+  getWordsByCategories,
   getWordCountByCategory,
   getWordDetail,
   getWordByWordAndCategory,
+  getWordByWord,
   searchWords,
   batchImportWords,
+  saveArticle,
+  getAllArticles,
+  getArticleById,
+  deleteArticle,
 };

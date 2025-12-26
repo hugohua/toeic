@@ -1076,6 +1076,73 @@ body {
   margin-bottom: 20px;
 }
 
+/* 操作按钮区域 - 顶部 */
+.profile-actions {
+  margin-bottom: 20px;
+}
+
+.action-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.profile-action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 8px;
+  border: none;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 50px;
+}
+
+.profile-action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-action-btn:active {
+  transform: translateY(0);
+}
+
+.action-btn-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.action-btn-text {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+/* 不同按钮的颜色 */
+.profile-action-btn.btn-favorite {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.profile-action-btn.btn-import {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+}
+
+.profile-action-btn.btn-category {
+  background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+  color: white;
+}
+
+.profile-action-btn.btn-article {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+}
+
 .favorite-entry {
   margin-top: 20px;
 }
@@ -1197,6 +1264,21 @@ body {
 
   .action-buttons {
     flex-direction: column;
+  }
+
+  .action-buttons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .profile-action-btn {
+    padding: 10px 6px;
+    min-height: 45px;
+    font-size: 11px;
+  }
+
+  .action-btn-text {
+    font-size: 11px;
   }
 
   .user-word-text {

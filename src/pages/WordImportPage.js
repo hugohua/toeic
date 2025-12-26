@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import { getCategories, importWords } from '../utils/api';
-import { categories as categoryList, getCategoryName } from '../utils/app';
+import { getCategoryName } from '../utils/app';
 import '../index.css';
 
 function WordImportPage() {
@@ -19,20 +19,12 @@ function WordImportPage() {
     async function loadCategories() {
       try {
         const cats = await getCategories();
-        // 将数据库返回的分类与前端分类列表匹配，添加中文名称
-        const categoriesWithNames = cats.map((cat) => {
-          // 优先使用数据库中的 display_name，如果没有则从前端分类列表查找
-          let displayName = cat.display_name;
-          if (!displayName) {
-            const categoryInfo = categoryList.find((c) => c.key === cat.name);
-            displayName = categoryInfo ? categoryInfo.name : cat.name;
-          }
-          return {
-            ...cat,
-            displayName: displayName,
-            key: cat.name, // 保存 key 值用于提交
-          };
-        });
+        // 使用数据库中的 display_name，如果没有则使用 name
+        const categoriesWithNames = cats.map((cat) => ({
+          ...cat,
+          displayName: cat.display_name || cat.name,
+          key: cat.name, // 保存 key 值用于提交
+        }));
         setCategories(categoriesWithNames);
         if (categoriesWithNames.length > 0 && !selectedCategory) {
           setSelectedCategory(categoriesWithNames[0].key);
