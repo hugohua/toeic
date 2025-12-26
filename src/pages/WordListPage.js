@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useSpeech } from 'react-text-to-speech';
+import { useSpeechConfig } from '../utils/hooks';
 import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import { getCategoryName, getFirstSlashContent } from '../utils/app';
@@ -20,12 +20,7 @@ function WordRow({
   onToggleFavorite,
   getShortMeaning,
 }) {
-  const { start } = useSpeech({
-    text: word.word || '',
-    pitch: 1,
-    rate: 1,
-    volume: 1,
-  });
+  const { start } = useSpeechConfig(word.word || '');
 
   const handleWordClick = (e) => {
     e.stopPropagation();

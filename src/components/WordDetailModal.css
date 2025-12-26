@@ -1,0 +1,5 @@
+/* WordDetailModal 样式继承自 WordArticlePage.css，这里只添加必要的样式 */
+.word-detail-empty-text {
+  color: #999;
+}
+

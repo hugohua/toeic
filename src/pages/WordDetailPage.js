@@ -5,77 +5,17 @@ import {
   useSearchParams,
   useLocation,
 } from 'react-router-dom';
-import { useSpeech } from 'react-text-to-speech';
+import { useSpeechConfig } from '../utils/hooks';
 import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
+import ExampleSentence from '../components/ExampleSentence';
+import ConfusingWordCell from '../components/ConfusingWordCell';
 import { getCategoryName } from '../utils/app';
+import { formatKeyCollocations } from '../utils/text';
 import * as storage from '../utils/storage';
 import '../index.css';
 import './WordDetailPage.css';
-
-// 易混淆单词单元格组件，支持发音功能
-function ConfusingWordCell({ wordText }) {
-  const { start } = useSpeech({
-    text: wordText || '',
-    pitch: 1,
-    rate: 1,
-    volume: 1,
-  });
-
-  return (
-    <strong
-      onClick={() => {
-        start();
-      }}
-      className="word-detail-clickable"
-      title="点击播放发音"
-    >
-      {wordText}
-    </strong>
-  );
-}
-
-// 例句组件，支持提取英文部分并发音
-function ExampleSentence({ sentence }) {
-  // 提取英文句子（括号前的部分）
-  const extractEnglishText = (text) => {
-    if (!text) return { english: '', remaining: '' };
-    // 查找第一个中文括号（或英文括号）之前的所有内容作为英文部分
-    const match = text.match(/^([^(（]+)([（(].*)?$/);
-    if (match) {
-      return {
-        english: match[1].trim(),
-        remaining: match[2] || '',
-      };
-    }
-    return { english: text, remaining: '' };
-  };
-
-  const { english: englishText, remaining: remainingText } =
-    extractEnglishText(sentence);
-  const { start } = useSpeech({
-    text: englishText || '',
-    pitch: 1,
-    rate: 1,
-    volume: 1,
-  });
-
-  return (
-    <span>
-      <span
-        onClick={() => {
-          start();
-        }}
-        className="word-detail-example-sentence"
-        title="点击播放发音"
-      >
-        {englishText}
-      </span>
-      {remainingText}
-    </span>
-  );
-}
 
 function WordDetailPage() {
   const { category, index } = useParams();
@@ -96,12 +36,7 @@ function WordDetailPage() {
   const favoriteIndex = isFromFavorites ? favoritesState.favoriteIndex || 0 : 0;
 
   // 使用 useSpeech，传入当前单词作为 text
-  const { start } = useSpeech({
-    text: word?.word || '',
-    pitch: 1,
-    rate: 1,
-    volume: 1,
-  });
+  const { start } = useSpeechConfig(word?.word || '');
 
   useEffect(() => {
     let isMounted = true;
@@ -235,17 +170,7 @@ function WordDetailPage() {
     : currentIndex + 1;
   const progressTotal = isFromFavorites ? favoriteList.length : words.length;
 
-  let keyCollocationsHtml = '';
-  if (word.keyCollocations && Array.isArray(word.keyCollocations)) {
-    keyCollocationsHtml =
-      '<ul>' +
-      word.keyCollocations.map((coll) => `<li>${coll}</li>`).join('') +
-      '</ul>';
-  } else if (word.usageCollocation) {
-    keyCollocationsHtml = word.usageCollocation;
-  } else {
-    keyCollocationsHtml = '暂无';
-  }
+  const keyCollocationsHtml = formatKeyCollocations(word.keyCollocations || word.usageCollocation);
 
   // 渲染TOEIC例句组件
   const renderExampleSentences = () => {
@@ -257,9 +182,9 @@ function WordDetailPage() {
       return (
         <ol>
           {word.toeicExampleSentences.map((sent, index) => (
-            <li key={index}>
-              <ExampleSentence sentence={sent} />
-            </li>
+              <li key={index}>
+                <ExampleSentence sentence={sent} className="word-detail-example-sentence" />
+              </li>
           ))}
         </ol>
       );
@@ -288,7 +213,7 @@ function WordDetailPage() {
             {word.confusingWordsComparison.map((item, index) => (
               <tr key={index}>
                 <td>
-                  <ConfusingWordCell wordText={item.word} />
+                  <ConfusingWordCell wordText={item.word} className="word-detail-clickable" />
                 </td>
                 <td>{item.coreDifference}</td>
                 <td>{item.toeicSceneFocus}</td>

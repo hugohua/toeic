@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
-import { useSpeech } from 'react-text-to-speech';
+import { useSpeechConfig } from '../utils/hooks';
 import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
@@ -20,12 +20,7 @@ function WordStudyPage() {
   const [isLoading, setIsLoading] = useState(true);
 
   // 使用 useSpeech，传入当前单词作为 text
-  const { start } = useSpeech({
-    text: currentWord?.word || '',
-    pitch: 1,
-    rate: 1,
-    volume: 1,
-  });
+  const { start } = useSpeechConfig(currentWord?.word || '');
 
   // 初始化学习
   useEffect(() => {

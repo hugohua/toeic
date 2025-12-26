@@ -1,69 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useSpeech } from 'react-text-to-speech';
 import Header from '../components/Header';
 import { getCategories, generateArticle, getWordByWord, saveArticle } from '../utils/api';
-import PhraseCell from '../components/PhraseCell';
+import WordDetailModal from '../components/WordDetailModal';
+import { formatArticle, extractTitle, cleanWordText } from '../utils/text';
 import '../index.css';
 import './WordArticlePage.css';
-
-// 例句组件，支持提取英文部分并发音
-function ExampleSentence({ sentence }) {
-  const extractEnglishText = (text) => {
-    if (!text) return { english: '', remaining: '' };
-    const match = text.match(/^([^(（]+)([（(].*)?$/);
-    if (match) {
-      return {
-        english: match[1].trim(),
-        remaining: match[2] || '',
-      };
-    }
-    return { english: text, remaining: '' };
-  };
-
-  const { english: englishText, remaining: remainingText } = extractEnglishText(sentence);
-  const { start } = useSpeech({
-    text: englishText || '',
-    pitch: 1,
-    rate: 1,
-    volume: 1,
-  });
-
-  return (
-    <span>
-      <span
-        onClick={() => {
-          start();
-        }}
-        className="word-article-example-sentence"
-        title="点击播放发音"
-      >
-        {englishText}
-      </span>
-      {remainingText}
-    </span>
-  );
-}
-
-// 单词标题组件，支持发音
-function WordTitle({ word }) {
-  const { start } = useSpeech({
-    text: word || '',
-    pitch: 1,
-    rate: 1,
-    volume: 1,
-  });
-
-  return (
-    <div
-      className="word-detail-title word-article-title-clickable"
-      onClick={() => start()}
-      title="点击播放发音"
-    >
-      {word}
-    </div>
-  );
-}
 
 function WordArticlePage() {
   const navigate = useNavigate();
@@ -160,7 +102,7 @@ function WordArticlePage() {
     if (!wordText) return;
     
     // 清理单词文本（移除可能的标点符号）
-    const cleanWord = wordText.trim().toLowerCase().replace(/[.,!?;:()\[\]{}'"]/g, '');
+    const cleanWord = cleanWordText(wordText);
     if (!cleanWord) return;
 
     setSelectedWord(cleanWord);
@@ -184,20 +126,6 @@ function WordArticlePage() {
     }
   };
 
-  // 格式化文章内容（处理加粗标记并添加点击事件）
-  const formatArticle = (content) => {
-    if (!content) return '';
-    
-    // 将 **word** 转换为可点击的 <strong>word</strong>
-    let formatted = content.replace(/\*\*(.*?)\*\*/g, (match, wordText) => {
-      return `<strong class="word-highlight" data-word="${wordText.trim()}">${wordText}</strong>`;
-    });
-    
-    // 将换行符转换为 <br>
-    formatted = formatted.replace(/\n/g, '<br>');
-    
-    return formatted;
-  };
 
   // 添加点击事件监听
   useEffect(() => {
@@ -229,19 +157,6 @@ function WordArticlePage() {
     setError('');
   };
 
-  // 提取标题（第一句话）
-  const extractTitle = (content) => {
-    if (!content) return '';
-    // 移除markdown加粗标记，然后取第一句话
-    const cleanContent = content.replace(/\*\*/g, '').trim();
-    // 找到第一个句子结束符（句号、问号、感叹号）
-    const match = cleanContent.match(/^([^。！？\n]+[。！？]?)/);
-    if (match) {
-      return match[1].trim();
-    }
-    // 如果没有标点，取前50个字符
-    return cleanContent.substring(0, 50).trim();
-  };
 
   // 保存文章
   const handleSaveArticle = async () => {
@@ -267,141 +182,6 @@ function WordArticlePage() {
     }
   };
 
-  // 渲染单词详情内容
-  const renderWordDetail = () => {
-    if (!wordDetail) return null;
-
-    const coreMeaning = wordDetail.coreMeaning || '暂无';
-    const toeicSceneFocus = wordDetail.toeicSceneFocus || wordDetail.sceneFocus || '暂无';
-    
-    let keyCollocationsHtml = '';
-    if (wordDetail.keyCollocations && Array.isArray(wordDetail.keyCollocations)) {
-      keyCollocationsHtml =
-        '<ul>' +
-        wordDetail.keyCollocations.map((coll) => `<li>${coll}</li>`).join('') +
-        '</ul>';
-    } else {
-      keyCollocationsHtml = '暂无';
-    }
-
-    const renderExampleSentences = () => {
-      if (
-        wordDetail.toeicExampleSentences &&
-        Array.isArray(wordDetail.toeicExampleSentences) &&
-        wordDetail.toeicExampleSentences.length > 0
-      ) {
-        return (
-          <ol>
-            {wordDetail.toeicExampleSentences.map((sent, index) => (
-              <li key={index}>
-                <ExampleSentence sentence={sent} />
-              </li>
-            ))}
-          </ol>
-        );
-      } else {
-        return <p className="word-article-empty-text">暂无例句</p>;
-      }
-    };
-
-    const renderConfusingWords = () => {
-      if (
-        wordDetail.confusingWordsComparison &&
-        Array.isArray(wordDetail.confusingWordsComparison) &&
-        wordDetail.confusingWordsComparison.length > 0
-      ) {
-        return (
-          <table className="confusing-words-table">
-            <thead>
-              <tr>
-                <th>单词</th>
-                <th>核心区别</th>
-                <th>TOEIC场景重点</th>
-              </tr>
-            </thead>
-            <tbody>
-              {wordDetail.confusingWordsComparison.map((item, index) => (
-                <tr key={index}>
-                  <td>{item.word}</td>
-                  <td>{item.coreDifference}</td>
-                  <td>{item.toeicSceneFocus}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        );
-      } else {
-        return <div>暂无</div>;
-      }
-    };
-
-    return (
-      <div className="word-detail-modal-content">
-        <div className="word-detail-header">
-          <div className="word-detail-title-wrapper">
-            <WordTitle word={wordDetail.word} />
-            <div className="word-detail-phonetic">{wordDetail.phonetic || '/ˈwɜːrd/'}</div>
-          </div>
-          <button className="word-detail-close" onClick={handleCloseModal}>×</button>
-        </div>
-
-        <div className="word-detail-body">
-          <div className="word-detail-section">
-            <h3 className="word-detail-section-title">核心释义</h3>
-            <div
-              className="word-detail-section-content"
-              dangerouslySetInnerHTML={{ __html: coreMeaning }}
-            />
-          </div>
-
-          {wordDetail.phrase && (
-            <div className="word-detail-section">
-              <h3 className="word-detail-section-title">短语短句</h3>
-              <div className="word-detail-section-content">
-                <PhraseCell phraseText={wordDetail.phrase} />
-              </div>
-            </div>
-          )}
-
-          <div className="word-detail-section">
-            <h3 className="word-detail-section-title">TOEIC场景重点</h3>
-            <div
-              className="word-detail-section-content"
-              dangerouslySetInnerHTML={{ __html: toeicSceneFocus }}
-            />
-          </div>
-
-          <div className="word-detail-section">
-            <h3 className="word-detail-section-title">关键搭配</h3>
-            <div
-              className="word-detail-section-content"
-              dangerouslySetInnerHTML={{ __html: keyCollocationsHtml }}
-            />
-          </div>
-
-          <div className="word-detail-section">
-            <h3 className="word-detail-section-title">TOEIC例句</h3>
-            <div className="word-detail-section-content">{renderExampleSentences()}</div>
-          </div>
-
-          {wordDetail.sceneAssociation && (
-            <div className="word-detail-section">
-              <h3 className="word-detail-section-title">场景联想</h3>
-              <div
-                className="word-detail-section-content"
-                dangerouslySetInnerHTML={{ __html: wordDetail.sceneAssociation }}
-              />
-            </div>
-          )}
-
-          <div className="word-detail-section">
-            <h3 className="word-detail-section-title">易混淆词区分</h3>
-            <div className="word-detail-section-content">{renderConfusingWords()}</div>
-          </div>
-        </div>
-      </div>
-    );
-  };
 
   if (isLoadingCategories) {
     return (
@@ -505,7 +285,7 @@ function WordArticlePage() {
               {isLoadingWordDetail ? (
                 <div className="word-detail-loading">加载中...</div>
               ) : wordDetail ? (
-                renderWordDetail()
+                <WordDetailModal wordDetail={wordDetail} onClose={handleCloseModal} />
               ) : (
                 <div className="word-detail-loading">未找到单词详情</div>
               )}

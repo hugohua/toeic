@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useSpeech } from 'react-text-to-speech';
+import { useSpeechConfig } from '../utils/hooks';
 import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
 import { getCategoryName } from '../utils/app';
+import { formatKeyCollocations } from '../utils/text';
 import * as storage from '../utils/storage';
 import '../index.css';
 import './WordBrowsePage.css';
@@ -18,12 +19,7 @@ function WordBrowsePage() {
   const browseContentRef = useRef(null);
 
   // 使用 useSpeech，传入当前单词作为 text
-  const { start } = useSpeech({
-    text: currentWord?.word || '',
-    pitch: 1,
-    rate: 1,
-    volume: 1,
-  });
+  const { start } = useSpeechConfig(currentWord?.word || '');
 
   useEffect(() => {
     let isMounted = true;
@@ -200,20 +196,9 @@ function WordBrowsePage() {
   const toeicSceneFocus =
     currentWord.toeicSceneFocus || currentWord.sceneFocus || '暂无';
 
-  let keyCollocationsHtml = '';
-  if (
-    currentWord.keyCollocations &&
-    Array.isArray(currentWord.keyCollocations)
-  ) {
-    keyCollocationsHtml =
-      '<ul>' +
-      currentWord.keyCollocations.map((coll) => `<li>${coll}</li>`).join('') +
-      '</ul>';
-  } else if (currentWord.usageCollocation) {
-    keyCollocationsHtml = currentWord.usageCollocation;
-  } else {
-    keyCollocationsHtml = '暂无';
-  }
+  const keyCollocationsHtml = formatKeyCollocations(
+    currentWord.keyCollocations || currentWord.usageCollocation
+  );
 
   let exampleSentencesHtml = '';
   if (
