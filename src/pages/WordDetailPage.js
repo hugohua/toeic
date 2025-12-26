@@ -170,6 +170,7 @@ function WordDetailPage() {
     : currentIndex + 1;
   const progressTotal = isFromFavorites ? favoriteList.length : words.length;
 
+  console.log(word.keyCollocations,'keyCollocations',word);
   const keyCollocationsHtml = formatKeyCollocations(word.keyCollocations || word.usageCollocation);
 
   // 渲染TOEIC例句组件

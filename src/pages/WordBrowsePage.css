@@ -3,6 +3,11 @@
   cursor: pointer;
 }
 
+/* 例句样式 */
+.word-browse-example-sentence {
+  cursor: pointer;
+}
+
 /* 空状态文本 */
 .word-browse-empty-text {
   color: #999;
@@ -12,5 +17,29 @@
 .word-browse-status {
   padding: 20px;
   text-align: center;
+}
+
+/* 易混淆词表格样式 */
+.confusing-words-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.confusing-words-table th,
+.confusing-words-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.confusing-words-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.confusing-words-table td {
+  font-size: 13px;
 }
 

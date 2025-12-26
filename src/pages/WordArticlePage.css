@@ -3,13 +3,6 @@
   max-width: 100%;
 }
 
-.section-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 15px;
-}
-
 /* 分类选择区域 */
 .category-selection {
   margin-bottom: 30px;

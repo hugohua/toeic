@@ -4,6 +4,8 @@ import { useSpeechConfig } from '../utils/hooks';
 import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
+import ExampleSentence from '../components/ExampleSentence';
+import ConfusingWordCell from '../components/ConfusingWordCell';
 import { getCategoryName } from '../utils/app';
 import { formatKeyCollocations } from '../utils/text';
 import * as storage from '../utils/storage';
@@ -200,38 +202,65 @@ function WordBrowsePage() {
     currentWord.keyCollocations || currentWord.usageCollocation
   );
 
-  let exampleSentencesHtml = '';
-  if (
-    currentWord.toeicExampleSentences &&
-    Array.isArray(currentWord.toeicExampleSentences) &&
-    currentWord.toeicExampleSentences.length > 0
-  ) {
-    exampleSentencesHtml =
-      '<ol>' +
-      currentWord.toeicExampleSentences
-        .map((sent) => `<li>${sent}</li>`)
-        .join('') +
-      '</ol>';
-  } else {
-    exampleSentencesHtml = '<p class="word-browse-empty-text">暂无例句</p>';
-  }
+  // 渲染TOEIC例句组件
+  const renderExampleSentences = () => {
+    if (
+      currentWord.toeicExampleSentences &&
+      Array.isArray(currentWord.toeicExampleSentences) &&
+      currentWord.toeicExampleSentences.length > 0
+    ) {
+      return (
+        <ol>
+          {currentWord.toeicExampleSentences.map((sent, index) => (
+            <li key={index}>
+              <ExampleSentence sentence={sent} className="word-browse-example-sentence" />
+            </li>
+          ))}
+        </ol>
+      );
+    } else {
+      return <p className="word-browse-empty-text">暂无例句</p>;
+    }
+  };
 
-  let confusingWordsHtml = '';
-  if (
-    currentWord.confusingWordsComparison &&
-    Array.isArray(currentWord.confusingWordsComparison)
-  ) {
-    confusingWordsHtml =
-      '<table class="confusing-words-table"><thead><tr><th>单词</th><th>核心区别</th><th>TOEIC场景重点</th></tr></thead><tbody>';
-    currentWord.confusingWordsComparison.forEach((item) => {
-      confusingWordsHtml += `<tr><td><strong>${item.word}</strong></td><td>${item.coreDifference}</td><td>${item.toeicSceneFocus}</td></tr>`;
-    });
-    confusingWordsHtml += '</tbody></table>';
-  } else if (currentWord.confusionDistinction) {
-    confusingWordsHtml = currentWord.confusionDistinction;
-  } else {
-    confusingWordsHtml = '暂无';
-  }
+  // 渲染易混淆词区分组件
+  const renderConfusingWords = () => {
+    if (
+      currentWord.confusingWordsComparison &&
+      Array.isArray(currentWord.confusingWordsComparison) &&
+      currentWord.confusingWordsComparison.length > 0
+    ) {
+      return (
+        <table className="confusing-words-table">
+          <thead>
+            <tr>
+              <th>单词</th>
+              <th>核心区别</th>
+              <th>TOEIC场景重点</th>
+            </tr>
+          </thead>
+          <tbody>
+            {currentWord.confusingWordsComparison.map((item, index) => (
+              <tr key={index}>
+                <td>
+                  <ConfusingWordCell wordText={item.word} className="word-browse-clickable" />
+                </td>
+                <td>{item.coreDifference}</td>
+                <td>{item.toeicSceneFocus}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      );
+    } else if (currentWord.confusionDistinction) {
+      // 如果存在 confusionDistinction 字符串，使用 dangerouslySetInnerHTML 作为后备
+      return (
+        <div dangerouslySetInnerHTML={{ __html: currentWord.confusionDistinction }} />
+      );
+    } else {
+      return <div>暂无</div>;
+    }
+  };
 
   return (
     <div className="container">
@@ -306,10 +335,7 @@ function WordBrowsePage() {
 
           <div className="detail-section">
             <h3 className="section-title">TOEIC例句</h3>
-            <div
-              className="section-content"
-              dangerouslySetInnerHTML={{ __html: exampleSentencesHtml }}
-            />
+            <div className="section-content">{renderExampleSentences()}</div>
           </div>
 
           <div className="detail-section">
@@ -324,10 +350,7 @@ function WordBrowsePage() {
 
           <div className="detail-section">
             <h3 className="section-title">易混淆词区分</h3>
-            <div
-              className="section-content"
-              dangerouslySetInnerHTML={{ __html: confusingWordsHtml }}
-            />
+            <div className="section-content">{renderConfusingWords()}</div>
           </div>
         </div>
       </main>

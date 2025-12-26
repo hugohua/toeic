@@ -308,7 +308,7 @@ function getAllCategories() {
 }
 
 /**
- * 根据分类获取单词列表
+ * 根据分类获取单词列表（包含所有关联数据）
  */
 function getWordsByCategory(categoryName, limit = null, offset = 0) {
   const query = `
@@ -322,7 +322,87 @@ function getWordsByCategory(categoryName, limit = null, offset = 0) {
     ${limit ? `LIMIT ${limit} OFFSET ${offset}` : ''}
   `;
 
-  return db.prepare(query).all(categoryName);
+  const words = db.prepare(query).all(categoryName);
+
+  if (words.length === 0) {
+    return [];
+  }
+
+  // 获取所有单词ID
+  const wordIds = words.map((w) => w.id);
+
+  // 批量获取关键搭配
+  const collocationsMap = new Map();
+  const collocationsPlaceholders = wordIds.map(() => '?').join(',');
+  const collocations = db
+    .prepare(
+      `
+      SELECT word_id, collocation
+      FROM key_collocations
+      WHERE word_id IN (${collocationsPlaceholders})
+      ORDER BY word_id, position
+    `
+    )
+    .all(...wordIds);
+
+  collocations.forEach((c) => {
+    if (!collocationsMap.has(c.word_id)) {
+      collocationsMap.set(c.word_id, []);
+    }
+    collocationsMap.get(c.word_id).push(c.collocation);
+  });
+
+  // 批量获取例句
+  const sentencesMap = new Map();
+  const sentences = db
+    .prepare(
+      `
+      SELECT word_id, sentence
+      FROM example_sentences
+      WHERE word_id IN (${collocationsPlaceholders})
+      ORDER BY word_id, position
+    `
+    )
+    .all(...wordIds);
+
+  sentences.forEach((s) => {
+    if (!sentencesMap.has(s.word_id)) {
+      sentencesMap.set(s.word_id, []);
+    }
+    sentencesMap.get(s.word_id).push(s.sentence);
+  });
+
+  // 批量获取易混淆词
+  const confusingWordsMap = new Map();
+  const confusingWords = db
+    .prepare(
+      `
+      SELECT word_id, confusing_word, core_difference, toeic_scene_focus
+      FROM confusing_words
+      WHERE word_id IN (${collocationsPlaceholders})
+      ORDER BY word_id, position
+    `
+    )
+    .all(...wordIds);
+
+  confusingWords.forEach((cw) => {
+    if (!confusingWordsMap.has(cw.word_id)) {
+      confusingWordsMap.set(cw.word_id, []);
+    }
+    confusingWordsMap.get(cw.word_id).push({
+      word: cw.confusing_word,
+      coreDifference: cw.core_difference,
+      toeicSceneFocus: cw.toeic_scene_focus,
+    });
+  });
+
+  // 组装数据
+  return words.map((word) => ({
+    ...word,
+    keyCollocations: collocationsMap.get(word.id) || [],
+    toeicExampleSentences: sentencesMap.get(word.id) || [],
+    confusingWordsComparison: confusingWordsMap.get(word.id) || [],
+  }));
 }
 
 /**
