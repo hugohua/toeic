@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import { getCategories, generateArticle, getWordByWord, saveArticle } from '../utils/api';
 import WordDetailModal from '../components/WordDetailModal';
 import { formatArticle, extractTitle, cleanWordText } from '../utils/text';
+import { useDisableScroll } from '../utils/hooks';
 import '../index.css';
 import './WordArticlePage.css';
 
@@ -156,6 +157,10 @@ function WordArticlePage() {
     setWordDetail(null);
     setError('');
   };
+
+  // 当浮层打开/关闭时，禁用/启用原页面滚动
+  const isModalOpen = selectedWord || wordDetail;
+  useDisableScroll(isModalOpen);
 
 
   // 保存文章

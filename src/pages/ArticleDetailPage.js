@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import { getArticleById, getWordByWordAndCategory, searchWords } from '../utils/api';
 import WordDetailModal from '../components/WordDetailModal';
 import { formatArticle, cleanWordText } from '../utils/text';
+import { useDisableScroll } from '../utils/hooks';
 import '../index.css';
 import './WordArticlePage.css';
 
@@ -132,6 +133,10 @@ function ArticleDetailPage() {
     setWordDetail(null);
     setError('');
   };
+
+  // 当浮层打开/关闭时，禁用/启用原页面滚动
+  const isModalOpen = selectedWord || wordDetail;
+  useDisableScroll(isModalOpen);
 
 
   if (isLoading) {
