@@ -1,8 +1,5 @@
 services:
   tuoye:
-    build:
-      context: .
-      dockerfile: Dockerfile
     image: baofen14787/tuoye-word-learning:latest
     container_name: tuoye-word-learning
     ports:
@@ -10,9 +7,7 @@ services:
     environment:
       - NODE_ENV=production
       - PORT=3000
-      - OPENAI_API_KEY=${OPENAI_API_KEY:-sk-27bc50f0b4f646b98e3862c81a49101e}
-      - OPENAI_BASE_URL=${OPENAI_BASE_URL:-https://dashscope.aliyuncs.com/compatible-mode/v1}
-      - OPENAI_MODEL=${OPENAI_MODEL:-qwen3-max}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-your_api_key_here}
     volumes:
       # 挂载数据库目录，确保数据持久化
       - ./data:/app/data

@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 const OpenAI = require('openai');
-const config = require('./config');
 const {
   getAllCategories,
   getWordsByCategory,
@@ -18,6 +18,23 @@ const {
   getArticleById,
   deleteArticle,
 } = require('./src/db/database');
+
+// 加载配置：优先使用 config.js，如果不存在则从环境变量读取
+let config;
+const configPath = path.join(__dirname, 'config.js');
+if (fs.existsSync(configPath)) {
+  // 本地开发：使用 config.js
+  config = require('./config');
+} else {
+  // Docker/生产环境：从环境变量读取
+  config = {
+    openai: {
+      apiKey: process.env.OPENAI_API_KEY || '',
+      baseURL: process.env.OPENAI_BASE_URL || 'https://dashscope.aliyuncs.com/compatible-mode/v1',
+      model: process.env.OPENAI_MODEL || 'qwen3-max',
+    },
+  };
+}
 
 // 初始化 OpenAI 客户端
 const openai = new OpenAI({
