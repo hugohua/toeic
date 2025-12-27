@@ -39,13 +39,20 @@ export function formatArticle(content) {
 }
 
 /**
- * 提取文章标题（第一句话）
+ * 提取文章标题
  * @param {string} content - 文章内容
  * @returns {string} 标题
  */
 export function extractTitle(content) {
   if (!content) return '';
-  // 移除markdown加粗标记，然后取第一句话
+  
+  // 优先提取 "Title: xxx" 格式的标题
+  const titleMatch = content.match(/Title:\s*([^\n]+)/i);
+  if (titleMatch && titleMatch[1]) {
+    return titleMatch[1].trim();
+  }
+  
+  // 如果没有找到 Title: 格式，移除markdown加粗标记，然后取第一句话
   const cleanContent = content.replace(/\*\*/g, '').trim();
   // 找到第一个句子结束符（句号、问号、感叹号）
   const match = cleanContent.match(/^([^。！？\n]+[。！？]?)/);

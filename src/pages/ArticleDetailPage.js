@@ -173,7 +173,7 @@ function ArticleDetailPage() {
       <main className="article-content">
         {/* 文章标题 */}
         <div className="article-display">
-          <h3 className="section-title">{article.title}</h3>
+          {/*<h3 className="section-title">{article.title}</h3>*/}
           <div
             ref={articleRef}
             className="article-text"

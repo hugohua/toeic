@@ -160,7 +160,7 @@
   justify-content: center;
   z-index: 1000;
   padding: 20px;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .word-detail-modal {
@@ -169,13 +169,17 @@
   max-width: 600px;
   width: 100%;
   max-height: 90vh;
-  overflow-y: auto;
+  overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .word-detail-modal-content {
   padding: 20px;
+  overflow-y: auto;
+  flex: 1;
 }
 
 .word-detail-header {
