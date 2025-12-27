@@ -303,14 +303,19 @@ app.post('/api/generate-article', async (req, res) => {
       return;
     }
 
+    // 打乱单词列表以避免缓存（Fisher-Yates洗牌算法）
+    const shuffledWords = [...words];
+    for (let i = shuffledWords.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledWords[i], shuffledWords[j]] = [shuffledWords[j], shuffledWords[i]];
+    }
+
     // 构建单词列表字符串
-    const wordList = words.map((w) => w.word).join(', ');
+    const wordList = shuffledWords.map((w) => w.word).join(', ');
 
     // 构建 prompt
-    const prompt = `你是一位专业的托业（TOEIC）英语教师。
-以下是一组职场英语词汇：
-${wordList}
-
+    const prompt = `${wordList}
+    你是一位专业的托业（TOEIC）英语教师。以上是一组职场英语词汇：
 请完成以下任务：
 1、从中精选10–15个语义相关、能自然融入同一职场场景的单词；
 2、围绕这些词写一篇250–300字的英文短文，内容需符合真实职场语境（如招聘通知、内部公告、人力资源邮件等），语言正式、语法正确、逻辑通顺，适合托业阅读练习；
@@ -318,7 +323,6 @@ ${wordList}
 4、为文章添加一个明确的标题；
 5、在英文文章后，提供对应的中文翻译，翻译中对应的关键词也需加粗。
 注意：避免生硬堆砌词汇，确保语言自然流畅，体现真实商务英语用法。`;
-
     // 调用 OpenAI API 生成文章（流式）
     const stream = await openai.chat.completions.create({
       model: config.openai.model,
@@ -365,7 +369,7 @@ app.listen(PORT, () => {
     console.log('=================================');
     console.log(`📡 API 地址: http://localhost:${PORT}/api`);
     console.log('=================================');
-    console.log('💡 前端开发服务器运行在 http://localhost:3000');
+    console.log(`💡 前端开发服务器运行在 http://localhost:${PORT}`);
   } else {
     console.log('🚀 背单词应用服务器已启动！');
     console.log('=================================');
