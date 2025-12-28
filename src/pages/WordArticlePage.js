@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import { getCategories, generateArticle, getWordByWord, saveArticle } from '../utils/api';
 import WordDetailModal from '../components/WordDetailModal';
+import Popup from '../components/Popup';
 import { formatArticle, extractTitle, cleanWordText } from '../utils/text';
 import { useDisableScroll } from '../utils/hooks';
 import '../index.css';
@@ -178,12 +179,45 @@ function WordArticlePage() {
       const categoryArray = Array.from(selectedCategories);
       
       await saveArticle(title, article, categoryArray);
-      alert('文章保存成功！');
+      Popup.show('文章保存成功！');
     } catch (err) {
       console.error('保存文章失败:', err);
       setError('保存文章失败: ' + err.message);
     } finally {
       setIsSaving(false);
+    }
+  };
+
+  // 复制文章到剪贴板
+  const handleCopyArticle = async () => {
+    if (!article || article.trim() === '') {
+      setError('文章内容为空，无法复制');
+      return;
+    }
+
+    try {
+      // 移除markdown加粗标记，保留纯文本
+      const cleanArticle = article.replace(/\*\*/g, '');
+      
+      // 使用现代 Clipboard API
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(cleanArticle);
+        Popup.show('文章已复制到剪贴板！');
+      } else {
+        // 降级方案：使用传统方法
+        const textArea = document.createElement('textarea');
+        textArea.value = cleanArticle;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999999px';
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        Popup.show('文章已复制到剪贴板！');
+      }
+    } catch (err) {
+      console.error('复制文章失败:', err);
+      setError('复制文章失败: ' + err.message);
     }
   };
 
@@ -266,14 +300,23 @@ function WordArticlePage() {
           <div className="article-display">
             <div className="word-article-title-section">
               <h3 className="section-title">生成的文章</h3>
-              <button
-                type="button"
-                className="btn btn-primary word-article-save-btn"
-                onClick={handleSaveArticle}
-                disabled={isSaving}
-              >
-                {isSaving ? '保存中...' : '保存文章'}
-              </button>
+              <div className="word-article-action-buttons">
+                <button
+                  type="button"
+                  className="btn btn-secondary word-article-copy-btn"
+                  onClick={handleCopyArticle}
+                >
+                  复制文章
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-primary word-article-save-btn"
+                  onClick={handleSaveArticle}
+                  disabled={isSaving}
+                >
+                  {isSaving ? '保存中...' : '保存文章'}
+                </button>
+              </div>
             </div>
             <div
               ref={articleRef}
@@ -302,6 +345,7 @@ function WordArticlePage() {
         {isLoading && (
           <div className="loading-message">正在生成文章，请稍候...</div>
         )}
+
       </main>
     </div>
   );

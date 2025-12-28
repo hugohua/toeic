@@ -4,7 +4,11 @@ import { useSpeechConfig } from '../utils/hooks';
 import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import { getCategoryName, getFirstSlashContent } from '../utils/app';
-import * as storage from '../utils/storage';
+import {
+  getWordList,
+  toggleWordInList,
+  WORD_LIST_TYPES,
+} from '../utils/storage';
 import '../index.css';
 import './WordListPage.css';
 
@@ -93,7 +97,7 @@ function WordListPage() {
 
   // 初始化收藏状态
   useEffect(() => {
-    const list = storage.getFavoriteWords();
+    const list = getWordList(WORD_LIST_TYPES.FAVORITE);
     const set = new Set();
     list.forEach((item) => {
       if (item && item.word && item.category) {
@@ -212,7 +216,7 @@ function WordListPage() {
   // 切换单词收藏状态
   const handleToggleFavorite = (e, word) => {
     e.stopPropagation(); // 阻止触发行点击
-    storage.toggleFavoriteWord(word, category);
+    toggleWordInList(WORD_LIST_TYPES.FAVORITE, word, category);
 
     // 更新本地状态以实时反映UI变化
     const key = `${category}-${word}`;

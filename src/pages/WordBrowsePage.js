@@ -8,7 +8,11 @@ import ExampleSentence from '../components/ExampleSentence';
 import ConfusingWordCell from '../components/ConfusingWordCell';
 import { getCategoryName } from '../utils/app';
 import { formatKeyCollocations } from '../utils/text';
-import * as storage from '../utils/storage';
+import {
+  isWordInList,
+  toggleWordInList,
+  WORD_LIST_TYPES,
+} from '../utils/storage';
 import '../index.css';
 import './WordBrowsePage.css';
 
@@ -69,7 +73,7 @@ function WordBrowsePage() {
   // 根据当前单词更新收藏状态
   useEffect(() => {
     if (currentWord && category) {
-      const favorite = storage.isFavoriteWord(currentWord.word, category);
+      const favorite = isWordInList(WORD_LIST_TYPES.FAVORITE, currentWord.word, category);
       setIsFavorite(favorite);
     } else {
       setIsFavorite(false);
@@ -137,7 +141,7 @@ function WordBrowsePage() {
 
   const handleToggleFavorite = () => {
     if (!currentWord || !category) return;
-    const favorite = storage.toggleFavoriteWord(currentWord.word, category);
+    const favorite = toggleWordInList(WORD_LIST_TYPES.FAVORITE, currentWord.word, category);
     setIsFavorite(favorite);
   };
 

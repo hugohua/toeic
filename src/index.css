@@ -1081,6 +1081,19 @@ body {
   margin-bottom: 20px;
 }
 
+.profile-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.profile-admin-actions {
+  margin-top: 30px;
+}
+
 .action-buttons-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1122,24 +1135,14 @@ body {
   line-height: 1.2;
 }
 
-/* 不同按钮的颜色 */
-.profile-action-btn.btn-favorite {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-}
-
-.profile-action-btn.btn-import {
-  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-  color: white;
-}
-
-.profile-action-btn.btn-category {
-  background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
-  color: white;
-}
-
+/* 统一按钮颜色 */
+.profile-action-btn.btn-favorite,
+.profile-action-btn.btn-unknown,
+.profile-action-btn.btn-fuzzy,
+.profile-action-btn.btn-import,
+.profile-action-btn.btn-category,
 .profile-action-btn.btn-article {
-  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
 }
 

@@ -5,7 +5,11 @@ import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
 import { getCategoryName } from '../utils/app';
-import { startStudy, saveWordStatus } from '../utils/storage';
+import {
+  saveWordStatus,
+  addWordToList,
+  WORD_LIST_TYPES,
+} from '../utils/storage';
 import { scheduleReview } from '../utils/ebbinghaus';
 import '../index.css';
 import './WordStudyPage.css';
@@ -84,10 +88,6 @@ function WordStudyPage() {
     };
   }, [category, searchParams]);
 
-  useEffect(() => {
-    startStudy();
-  }, []);
-
   // 保存当前进度
   const saveProgress = (index) => {
     localStorage.setItem(`studyIndex_${category}`, index.toString());
@@ -157,6 +157,30 @@ function WordStudyPage() {
     };
   }, [words, currentWord, category, navigate, currentIndex]);
 
+  /**
+   * 学习状态到单词列表类型的映射配置
+   * 新增状态时，只需在此配置中添加映射即可
+   */
+  const STATUS_TO_LIST_TYPE = {
+    unknown: WORD_LIST_TYPES.UNKNOWN,
+    fuzzy: WORD_LIST_TYPES.FUZZY,
+    // known 不需要加入任何列表，可以不配置或设为 null
+  };
+
+  /**
+   * 处理学习状态，自动保存到对应的单词列表
+   * @param {string} status - 学习状态 ('known' | 'unknown' | 'fuzzy')
+   */
+  const handleStudyStatus = (status) => {
+    if (!currentWord) return;
+
+    // 如果该状态需要保存到单词列表，则自动保存
+    const listType = STATUS_TO_LIST_TYPE[status];
+    if (listType) {
+      addWordToList(listType, currentWord.word, category);
+    }
+  };
+
   const showWordDetail = (status) => {
     if (!currentWord) return;
 
@@ -166,6 +190,9 @@ function WordStudyPage() {
     // 保存学习记录
     saveWordStatus(wordKey, status, now);
     scheduleReview(wordKey, status, now);
+
+    // 根据状态自动保存到对应的单词列表
+    handleStudyStatus(status);
 
     // 跳转到单词详情页，添加from=study参数标识从学习页面跳转
     navigate(`/detail/${category}/${currentIndex}?from=study`);

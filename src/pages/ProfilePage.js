@@ -1,59 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import {
-  getTotalStats,
-  getTodayData,
-  getRecentDaysData,
-  clearTodayData,
-  clearAllData,
-} from '../utils/storage';
 import { getCategories, getWordsByCategory } from '../utils/api';
 import { getWordReviewStats } from '../utils/ebbinghaus';
 
 function ProfilePage() {
   const navigate = useNavigate();
-  const [todayStats, setTodayStats] = useState({ wordCount: 0, studyTime: 0 });
-  const [totalStats, setTotalStats] = useState({
-    totalDays: 0,
-    totalWords: 0,
-    totalTime: 0,
-    totalStudySessions: 0,
-  });
-  const [recentDays, setRecentDays] = useState([]);
   const [wordList, setWordList] = useState([]);
 
   useEffect(() => {
-    loadStats();
-  }, []);
-
-  const loadStats = () => {
-    const today = getTodayData();
-    setTodayStats({
-      wordCount: today.wordCount || 0,
-      studyTime: Math.floor((today.studyTime || 0) / 60), // 转换为分钟
-    });
-
-    const totals = getTotalStats();
-    setTotalStats({
-      totalDays: totals.totalDays || 0,
-      totalWords: totals.totalWords || 0,
-      totalTime: Math.floor((totals.totalTime || 0) / 60),
-      totalStudySessions: totals.totalStudySessions || 0,
-    });
-
-    const recent = getRecentDaysData(7);
-    setRecentDays(
-      recent.map((day) => ({
-        date: day.date,
-        wordCount: day.wordCount || 0,
-        studyTime: Math.floor((day.studyTime || 0) / 60),
-      }))
-    );
-
-    // 加载单词列表
     loadWordList();
-  };
+  }, []);
 
   const loadWordList = async () => {
     try {
@@ -89,38 +46,50 @@ function ProfilePage() {
     }
   };
 
-  const handleClearToday = () => {
-    if (window.confirm('确定要清除今天的学习数据吗？')) {
-      clearTodayData();
-      loadStats();
-    }
-  };
-
-  const handleClearAll = () => {
-    if (window.confirm('确定要清除所有学习数据吗？此操作不可恢复！')) {
-      clearAllData();
-      loadStats();
-    }
-  };
-
-  const goHome = () => {
-    navigate('/');
-  };
 
   return (
     <div className="container">
       <Header title="个人中心" showBack />
       <main className="profile-content">
-        {/* 操作按钮区域 - 放在顶部 */}
+        {/* 学习功能区域 */}
         <div className="profile-actions">
+          <h3 className="profile-section-title">学习功能</h3>
           <div className="action-buttons-grid">
             <button
               className="profile-action-btn btn-favorite"
-              onClick={() => navigate('/favorites')}
+              onClick={() => navigate('/special/favorite')}
               title="查看收藏单词"
             >
               <span className="action-btn-text">收藏单词</span>
             </button>
+            <button
+              className="profile-action-btn btn-unknown"
+              onClick={() => navigate('/special/unknown')}
+              title="查看不认识的单词"
+            >
+              <span className="action-btn-text">不认识单词</span>
+            </button>
+            <button
+              className="profile-action-btn btn-fuzzy"
+              onClick={() => navigate('/special/fuzzy')}
+              title="查看模糊单词"
+            >
+              <span className="action-btn-text">模糊单词</span>
+            </button>
+            <button
+              className="profile-action-btn btn-article"
+              onClick={() => navigate('/article')}
+              title="单词文章背诵"
+            >
+              <span className="action-btn-text">文章背诵</span>
+            </button>
+          </div>
+        </div>
+
+        {/* 后台管理功能区域 */}
+        <div className="profile-actions profile-admin-actions">
+          <h3 className="profile-section-title">后台管理</h3>
+          <div className="action-buttons-grid">
             <button
               className="profile-action-btn btn-import"
               onClick={() => navigate('/import')}
@@ -135,49 +104,6 @@ function ProfilePage() {
             >
               <span className="action-btn-text">新增分类</span>
             </button>
-            <button
-              className="profile-action-btn btn-article"
-              onClick={() => navigate('/article')}
-              title="单词文章背诵"
-            >
-              <span className="action-btn-text">文章背诵</span>
-            </button>
-          </div>
-        </div>
-
-        <div className="stats-card today-stats">
-          <h2 className="stats-title">📊 今日学习</h2>
-          <div className="stats-grid">
-            <div className="stat-item">
-              <div className="stat-value">{todayStats.wordCount}</div>
-              <div className="stat-label">学习单词</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-value">{todayStats.studyTime}</div>
-              <div className="stat-label">学习时长（分钟）</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="stats-card total-stats">
-          <h2 className="stats-title">🎯 累计统计</h2>
-          <div className="stats-grid">
-            <div className="stat-item">
-              <div className="stat-value">{totalStats.totalDays}</div>
-              <div className="stat-label">学习天数</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-value">{totalStats.totalWords}</div>
-              <div className="stat-label">累计单词</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-value">{totalStats.totalTime}</div>
-              <div className="stat-label">总时长（分钟）</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-value">{totalStats.totalStudySessions}</div>
-              <div className="stat-label">学习次数</div>
-            </div>
           </div>
         </div>
 
@@ -207,32 +133,6 @@ function ProfilePage() {
             </div>
           </div>
         )}
-
-        {recentDays.length > 0 && (
-          <div className="recent-days-card">
-            <h2 className="stats-title">📅 最近7天</h2>
-            <div className="recent-days-list">
-              {recentDays.map((day, index) => (
-                <div key={index} className="day-item">
-                  <div className="day-date">{day.date}</div>
-                  <div className="day-stats">
-                    <div className="day-stat">{day.wordCount} 个单词</div>
-                    <div className="day-stat">{day.studyTime} 分钟</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        <div className="action-buttons">
-          <button className="btn-secondary" onClick={handleClearToday}>
-            清除今天数据
-          </button>
-          <button className="btn-danger" onClick={handleClearAll}>
-            清除所有数据
-          </button>
-        </div>
       </main>
     </div>
   );

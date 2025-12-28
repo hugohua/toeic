@@ -7,13 +7,14 @@ import WordBrowsePage from './pages/WordBrowsePage';
 import WordListPage from './pages/WordListPage';
 import ProfilePage from './pages/ProfilePage';
 import TestSpeechPage from './pages/TestSpeechPage';
-import FavoriteWordListPage from './pages/FavoriteWordListPage';
+import SpecialWordListPage from './pages/SpecialWordListPage';
 import WordImportPage from './pages/WordImportPage';
 import CategoryAddPage from './pages/CategoryAddPage';
 import WordArticlePage from './pages/WordArticlePage';
 import ArticleListPage from './pages/ArticleListPage';
 import ArticleDetailPage from './pages/ArticleDetailPage';
 import { initCategoryCache } from './utils/app';
+import { PopupContainer } from './components/Popup';
 
 function App() {
   // 初始化分类缓存
@@ -24,7 +25,9 @@ function App() {
   }, []);
 
   return (
-    <Routes>
+    <>
+      <PopupContainer />
+      <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/study/:category" element={<WordStudyPage />} />
       <Route path="/detail/:category/:index" element={<WordDetailPage />} />
@@ -32,13 +35,14 @@ function App() {
       <Route path="/list/:category" element={<WordListPage />} />
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="/test-speech" element={<TestSpeechPage />} />
-      <Route path="/favorites" element={<FavoriteWordListPage />} />
+      <Route path="/special/:listType" element={<SpecialWordListPage />} />
       <Route path="/import" element={<WordImportPage />} />
       <Route path="/category/add" element={<CategoryAddPage />} />
       <Route path="/article" element={<WordArticlePage />} />
       <Route path="/articles" element={<ArticleListPage />} />
       <Route path="/article/:id" element={<ArticleDetailPage />} />
-    </Routes>
+      </Routes>
+    </>
   );
 }
 

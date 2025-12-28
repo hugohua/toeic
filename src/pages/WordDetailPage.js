@@ -13,7 +13,11 @@ import ExampleSentence from '../components/ExampleSentence';
 import ConfusingWordCell from '../components/ConfusingWordCell';
 import { getCategoryName } from '../utils/app';
 import { formatKeyCollocations } from '../utils/text';
-import * as storage from '../utils/storage';
+import {
+  isWordInList,
+  toggleWordInList,
+  WORD_LIST_TYPES,
+} from '../utils/storage';
 import '../index.css';
 import './WordDetailPage.css';
 
@@ -34,6 +38,44 @@ function WordDetailPage() {
     Array.isArray(favoritesState.favoriteList);
   const favoriteList = isFromFavorites ? favoritesState.favoriteList : [];
   const favoriteIndex = isFromFavorites ? favoritesState.favoriteIndex || 0 : 0;
+
+  const unknownState = location.state || {};
+  const isFromUnknown =
+    unknownState.from === 'unknown' &&
+    Array.isArray(unknownState.unknownList);
+  const unknownList = isFromUnknown ? unknownState.unknownList : [];
+  const unknownIndex = isFromUnknown ? unknownState.unknownIndex || 0 : 0;
+
+  const fuzzyState = location.state || {};
+  const isFromFuzzy =
+    fuzzyState.from === 'fuzzy' &&
+    Array.isArray(fuzzyState.fuzzyList);
+  const fuzzyList = isFromFuzzy ? fuzzyState.fuzzyList : [];
+  const fuzzyIndex = isFromFuzzy ? fuzzyState.fuzzyIndex || 0 : 0;
+
+  // 确定当前页面上下文（来自哪个列表或普通模式）
+  const listContext = isFromFavorites
+    ? {
+        type: 'favorites',
+        list: favoriteList,
+        index: favoriteIndex,
+        listName: '收藏单词',
+      }
+    : isFromUnknown
+    ? {
+        type: 'unknown',
+        list: unknownList,
+        index: unknownIndex,
+        listName: '不认识单词',
+      }
+    : isFromFuzzy
+    ? {
+        type: 'fuzzy',
+        list: fuzzyList,
+        index: fuzzyIndex,
+        listName: '模糊单词',
+      }
+    : null;
 
   // 使用 useSpeech，传入当前单词作为 text
   const { start } = useSpeechConfig(word?.word || '');
@@ -72,7 +114,7 @@ function WordDetailPage() {
   // 根据当前单词更新收藏状态
   useEffect(() => {
     if (word && category) {
-      const favorite = storage.isFavoriteWord(word.word, category);
+      const favorite = isWordInList(WORD_LIST_TYPES.FAVORITE, word.word, category);
       setIsFavorite(favorite);
     } else {
       setIsFavorite(false);
@@ -81,29 +123,40 @@ function WordDetailPage() {
 
   const handleToggleFavorite = () => {
     if (!word || !category) return;
-    const favorite = storage.toggleFavoriteWord(word.word, category);
+    const favorite = toggleWordInList(WORD_LIST_TYPES.FAVORITE, word.word, category);
     setIsFavorite(favorite);
   };
 
   const goToNextWord = () => {
-    // 收藏列表模式下，在收藏列表中前进
-    if (isFromFavorites && favoriteList.length > 0) {
-      const nextFavoriteIndex = favoriteIndex + 1;
-      if (nextFavoriteIndex < favoriteList.length) {
-        const nextItem = favoriteList[nextFavoriteIndex];
+    // 如果是从列表模式进入的，在列表中导航
+    if (listContext && listContext.list.length > 0) {
+      const nextIndex = listContext.index + 1;
+      if (nextIndex < listContext.list.length) {
+        const nextItem = listContext.list[nextIndex];
+        
+        // 根据列表类型构建导航状态
+        const navigateState = { from: listContext.type };
+        if (listContext.type === 'favorites') {
+          navigateState.favoriteList = listContext.list;
+          navigateState.favoriteIndex = nextIndex;
+        } else if (listContext.type === 'unknown') {
+          navigateState.unknownList = listContext.list;
+          navigateState.unknownIndex = nextIndex;
+        } else if (listContext.type === 'fuzzy') {
+          navigateState.fuzzyList = listContext.list;
+          navigateState.fuzzyIndex = nextIndex;
+        }
+        
         navigate(`/detail/${nextItem.category}/${nextItem.index}`, {
-          state: {
-            from: 'favorites',
-            favoriteList,
-            favoriteIndex: nextFavoriteIndex,
-          },
+          state: navigateState,
         });
       } else {
-        window.alert('已经是最后一个收藏单词了');
+        window.alert(`已经是最后一个${listContext.listName}了`);
       }
       return;
     }
 
+    // 普通模式：在分类单词列表中导航
     const nextIndex = currentIndex + 1;
     if (fromStudy) {
       // 如果是从学习页面跳转来的，返回到学习页面
@@ -122,23 +175,35 @@ function WordDetailPage() {
   };
 
   const goToPrevWord = () => {
-    // 收藏列表模式下，在收藏列表中后退
-    if (isFromFavorites && favoriteList.length > 0) {
-      const prevFavoriteIndex = favoriteIndex - 1;
-      if (prevFavoriteIndex >= 0) {
-        const prevItem = favoriteList[prevFavoriteIndex];
+    // 如果是从列表模式进入的，在列表中导航
+    if (listContext && listContext.list.length > 0) {
+      const prevIndex = listContext.index - 1;
+      if (prevIndex >= 0) {
+        const prevItem = listContext.list[prevIndex];
+        
+        // 根据列表类型构建导航状态
+        const navigateState = { from: listContext.type };
+        if (listContext.type === 'favorites') {
+          navigateState.favoriteList = listContext.list;
+          navigateState.favoriteIndex = prevIndex;
+        } else if (listContext.type === 'unknown') {
+          navigateState.unknownList = listContext.list;
+          navigateState.unknownIndex = prevIndex;
+        } else if (listContext.type === 'fuzzy') {
+          navigateState.fuzzyList = listContext.list;
+          navigateState.fuzzyIndex = prevIndex;
+        }
+        
         navigate(`/detail/${prevItem.category}/${prevItem.index}`, {
-          state: {
-            from: 'favorites',
-            favoriteList,
-            favoriteIndex: prevFavoriteIndex,
-          },
+          state: navigateState,
         });
       } else {
-        window.alert('已经是第一个收藏单词了');
+        window.alert(`已经是第一个${listContext.listName}了`);
       }
       return;
     }
+
+    // 普通模式：在分类单词列表中导航
     const prevIndex = currentIndex - 1;
     if (fromStudy) {
       // 如果是从学习页面跳转来的，返回到学习页面
@@ -165,12 +230,13 @@ function WordDetailPage() {
     word.coreMeaning ||
     (word.partOfSpeech ? `${word.partOfSpeech} ${word.coreMeaning}` : '暂无');
   const toeicSceneFocus = word.toeicSceneFocus || word.sceneFocus || '暂无';
-  const progressCurrent = isFromFavorites
-    ? favoriteIndex + 1
-    : currentIndex + 1;
-  const progressTotal = isFromFavorites ? favoriteList.length : words.length;
 
-  console.log(word.keyCollocations,'keyCollocations',word);
+  // 计算进度信息（当前索引和总数）
+  const progressCurrent = listContext
+    ? listContext.index + 1
+    : currentIndex + 1;
+  const progressTotal = listContext ? listContext.list.length : words.length;
+
   const keyCollocationsHtml = formatKeyCollocations(word.keyCollocations || word.usageCollocation);
 
   // 渲染TOEIC例句组件
@@ -239,8 +305,8 @@ function WordDetailPage() {
         title={fromStudy ? getCategoryName(category) : '单词详情'}
         showBack
         showProgress={fromStudy}
-        currentIndex={currentIndex + 1}
-        totalWords={words.length}
+        currentIndex={progressCurrent}
+        totalWords={progressTotal}
       />
       <main className="detail-content">
         <div className="detail-card">
@@ -331,7 +397,11 @@ function WordDetailPage() {
         <button
           className="btn btn-secondary"
           onClick={goToPrevWord}
-          disabled={isFromFavorites ? favoriteIndex === 0 : currentIndex === 0}
+          disabled={
+            listContext
+              ? listContext.index === 0
+              : currentIndex === 0
+          }
         >
           上一个
         </button>
@@ -339,8 +409,8 @@ function WordDetailPage() {
           className="btn btn-primary"
           onClick={goToNextWord}
           disabled={
-            isFromFavorites
-              ? favoriteIndex === favoriteList.length - 1
+            listContext
+              ? listContext.index === listContext.list.length - 1
               : currentIndex === words.length - 1
           }
         >

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useSpeechConfig } from '../utils/hooks';
 import Header from '../components/Header';
-import { getFavoriteWords } from '../utils/storage';
+import { getWordList, WORD_LIST_TYPES } from '../utils/storage';
 import { getWordsByCategory } from '../utils/api';
-import { getCategoryName, getFirstSlashContent } from '../utils/app';
+import { getFirstSlashContent } from '../utils/app';
 import '../index.css';
 import './WordListPage.css';
 
-// 收藏单词行组件，包含发音、释义显示功能
-function FavoriteWordRow({
+// 单词行组件，包含发音、释义显示功能
+function WordRow({
   item,
   index,
   isMeaningVisible,
@@ -58,11 +58,57 @@ function FavoriteWordRow({
   );
 }
 
-function FavoriteWordListPage() {
+// 列表类型配置
+const LIST_TYPE_CONFIG = {
+  [WORD_LIST_TYPES.FAVORITE]: {
+    title: '收藏单词',
+    emptyMessage: '还没有收藏任何单词哦～',
+    countText: '个收藏单词',
+    storagePrefix: 'favoritesPage',
+    stateKey: 'favoriteList',
+    stateIndexKey: 'favoriteIndex',
+    fromValue: 'favorites', // WordDetailPage 期望的值
+  },
+  [WORD_LIST_TYPES.UNKNOWN]: {
+    title: '不认识的单词',
+    emptyMessage: '还没有标记不认识的单词哦～',
+    countText: '个不认识的单词',
+    storagePrefix: 'unknownWordsPage',
+    stateKey: 'unknownList',
+    stateIndexKey: 'unknownIndex',
+    fromValue: 'unknown',
+  },
+  [WORD_LIST_TYPES.FUZZY]: {
+    title: '模糊单词',
+    emptyMessage: '还没有标记模糊的单词哦～',
+    countText: '个模糊单词',
+    storagePrefix: 'fuzzyWordsPage',
+    stateKey: 'fuzzyList',
+    stateIndexKey: 'fuzzyIndex',
+    fromValue: 'fuzzy',
+  },
+};
+
+function SpecialWordListPage() {
+  const { listType } = useParams();
   const navigate = useNavigate();
 
+  // 验证列表类型
+  const config = LIST_TYPE_CONFIG[listType];
+  if (!config) {
+    return (
+      <div className="container">
+        <Header title="错误" showBack />
+        <main className="word-list-content">
+          <div className="empty-message">无效的列表类型</div>
+        </main>
+      </div>
+    );
+  }
+
   // 从 sessionStorage 恢复状态
-  const getStorageKey = (key) => `favoritesPage_${key}`;
+  const storagePrefix = config.storagePrefix;
+  const getStorageKey = (key) => `${storagePrefix}_${key}`;
 
   const [showAllMeanings, setShowAllMeanings] = useState(() => {
     const saved = sessionStorage.getItem(getStorageKey('showAllMeanings'));
@@ -74,16 +120,16 @@ function FavoriteWordListPage() {
     return saved ? JSON.parse(saved) : {};
   });
 
-  const [favoriteWords, setFavoriteWords] = useState([]);
+  const [words, setWords] = useState([]);
 
-  // 加载收藏单词列表
+  // 加载单词列表
   useEffect(() => {
     let isMounted = true;
 
-    async function loadFavoriteWords() {
-      const list = getFavoriteWords();
+    async function loadWords() {
+      const list = getWordList(listType);
       if (list.length === 0) {
-        setFavoriteWords([]);
+        setWords([]);
         return;
       }
 
@@ -121,22 +167,22 @@ function FavoriteWordListPage() {
         }
 
         if (isMounted) {
-          setFavoriteWords(results);
+          setWords(results);
         }
       } catch (error) {
-        console.error('加载收藏单词失败:', error);
+        console.error(`加载${config.title}失败:`, error);
         if (isMounted) {
-          setFavoriteWords([]);
+          setWords([]);
         }
       }
     }
 
-    loadFavoriteWords();
+    loadWords();
 
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [listType, config.title]);
 
   // 保存释义显示状态到 sessionStorage
   useEffect(() => {
@@ -144,14 +190,14 @@ function FavoriteWordListPage() {
       getStorageKey('showAllMeanings'),
       JSON.stringify(showAllMeanings)
     );
-  }, [showAllMeanings]);
+  }, [showAllMeanings, storagePrefix]);
 
   useEffect(() => {
     sessionStorage.setItem(
       getStorageKey('meaningVisibility'),
       JSON.stringify(meaningVisibility)
     );
-  }, [meaningVisibility]);
+  }, [meaningVisibility, storagePrefix]);
 
   // 恢复滚动位置
   useEffect(() => {
@@ -162,7 +208,7 @@ function FavoriteWordListPage() {
         window.scrollTo(0, parseInt(savedScrollPos));
       }, 0);
     }
-  }, []);
+  }, [storagePrefix]);
 
   // 保存滚动位置
   useEffect(() => {
@@ -175,10 +221,10 @@ function FavoriteWordListPage() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [storagePrefix]);
 
   const handleRowClick = (clickedIndex) => {
-    if (!favoriteWords || favoriteWords.length === 0) return;
+    if (!words || words.length === 0) return;
 
     // 跳转前保存当前滚动位置
     sessionStorage.setItem(
@@ -186,18 +232,18 @@ function FavoriteWordListPage() {
       window.scrollY.toString()
     );
 
-    const favoriteListState = favoriteWords.map((item) => ({
+    const listState = words.map((item) => ({
       word: item.word,
       category: item.category,
       index: item.index,
     }));
 
-    const item = favoriteWords[clickedIndex];
+    const item = words[clickedIndex];
     navigate(`/detail/${item.category}/${item.index}`, {
       state: {
-        from: 'favorites',
-        favoriteList: favoriteListState,
-        favoriteIndex: clickedIndex,
+        from: config.fromValue,
+        [config.stateKey]: listState,
+        [config.stateIndexKey]: clickedIndex,
       },
     });
   };
@@ -232,12 +278,12 @@ function FavoriteWordListPage() {
     return meaning.trim() || '-';
   };
 
-  if (favoriteWords.length === 0) {
+  if (words.length === 0) {
     return (
       <div className="container">
-        <Header title="收藏单词" showBack />
+        <Header title={config.title} showBack />
         <main className="word-list-content">
-          <div className="empty-message">还没有收藏任何单词哦～</div>
+          <div className="empty-message">{config.emptyMessage}</div>
         </main>
       </div>
     );
@@ -245,7 +291,7 @@ function FavoriteWordListPage() {
 
   return (
     <div className="container">
-      <Header title="收藏单词" showBack />
+      <Header title={config.title} showBack />
       <main className="word-list-content">
         <div className="word-list-table-container">
           <table className="word-list-table">
@@ -274,8 +320,8 @@ function FavoriteWordListPage() {
               </tr>
             </thead>
             <tbody>
-              {favoriteWords.map((item, index) => (
-                <FavoriteWordRow
+              {words.map((item, index) => (
+                <WordRow
                   key={`${item.category}-${item.word}-${index}`}
                   item={item}
                   index={index}
@@ -289,11 +335,12 @@ function FavoriteWordListPage() {
           </table>
         </div>
         <div className="word-list-footer">
-          <div className="word-count">共 {favoriteWords.length} 个收藏单词</div>
+          <div className="word-count">共 {words.length} {config.countText}</div>
         </div>
       </main>
     </div>
   );
 }
 
-export default FavoriteWordListPage;
+export default SpecialWordListPage;
+
