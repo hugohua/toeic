@@ -8,6 +8,46 @@
 
 set -e  # 遇到错误时退出
 
+# 代理配置
+PROXY_HOST="http://127.0.0.1:1087"
+NO_PROXY_VALUE="localhost,127.0.0.1,*.internal,192.168.0.0/16,10.*.*.*"
+
+# 保存当前代理设置
+OLD_HTTP_PROXY="${http_proxy:-}"
+OLD_HTTPS_PROXY="${https_proxy:-}"
+OLD_NO_PROXY="${no_proxy:-}"
+
+# 恢复代理设置的函数
+restore_proxy() {
+    if [ -n "$OLD_HTTP_PROXY" ]; then
+        export http_proxy="$OLD_HTTP_PROXY"
+    else
+        unset http_proxy
+    fi
+    
+    if [ -n "$OLD_HTTPS_PROXY" ]; then
+        export https_proxy="$OLD_HTTPS_PROXY"
+    else
+        unset https_proxy
+    fi
+    
+    if [ -n "$OLD_NO_PROXY" ]; then
+        export no_proxy="$OLD_NO_PROXY"
+    else
+        unset no_proxy
+    fi
+}
+
+# 设置代理
+setup_proxy() {
+    export http_proxy="$PROXY_HOST"
+    export https_proxy="$PROXY_HOST"
+    export no_proxy="$NO_PROXY_VALUE"
+}
+
+# 使用 trap 确保脚本退出时恢复代理（无论成功还是失败）
+trap restore_proxy EXIT
+
 # 获取版本号参数
 VERSION="${1:-latest}"
 
@@ -56,6 +96,10 @@ print_info "镜像名称: ${IMAGE_NAME}"
 print_info "输出文件: ${OUTPUT_FILE}"
 echo ""
 
+# 设置代理
+print_info "设置代理: ${PROXY_HOST}"
+setup_proxy
+
 # 确保输出目录存在
 if [ ! -d "$OUTPUT_DIR" ]; then
     print_info "创建输出目录: $OUTPUT_DIR"
@@ -85,4 +129,5 @@ else
 fi
 
 print_info "所有操作完成！"
+# 注意：代理设置已通过 trap EXIT 自动恢复
 
