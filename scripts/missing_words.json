@@ -1,0 +1,4372 @@
+[
+  {
+    "word": "abroad",
+    "phrase": "I occasionally travel abroad.",
+    "level": 3
+  },
+  {
+    "word": "abundant",
+    "phrase": "abundant opportunities for career advancement",
+    "level": 5
+  },
+  {
+    "word": "accelerate",
+    "phrase": "accelerate growth",
+    "level": 8
+  },
+  {
+    "word": "accept",
+    "phrase": "accept an offer",
+    "level": 3
+  },
+  {
+    "word": "accomplished",
+    "phrase": "an accomplished designer",
+    "level": 5
+  },
+  {
+    "word": "accordance",
+    "phrase": "in accordance with",
+    "level": 6
+  },
+  {
+    "word": "accounting",
+    "phrase": "accounting department",
+    "level": 6
+  },
+  {
+    "word": "activate",
+    "phrase": "activate a credit card",
+    "level": 9
+  },
+  {
+    "word": "adapt",
+    "phrase": "adapt to a new work environment",
+    "level": 4
+  },
+  {
+    "word": "addition",
+    "phrase": "a valuable addition to the team",
+    "level": 3
+  },
+  {
+    "word": "additional",
+    "phrase": "request additional staff",
+    "level": 3
+  },
+  {
+    "word": "adequate",
+    "phrase": "an adequate explanation",
+    "level": 6
+  },
+  {
+    "word": "adhere",
+    "phrase": "adhere to a procedure",
+    "level": 8
+  },
+  {
+    "word": "adoption",
+    "phrase": "adoption of a new method",
+    "level": 7
+  },
+  {
+    "word": "advantage",
+    "phrase": "take advantage of",
+    "level": 3
+  },
+  {
+    "word": "adverse",
+    "phrase": "adverse health effects",
+    "level": 9
+  },
+  {
+    "word": "advocate",
+    "phrase": "an advocate for energy efficiency",
+    "level": 8
+  },
+  {
+    "word": "affordable",
+    "phrase": "provide quality service at affordable prices",
+    "level": 6
+  },
+  {
+    "word": "agent",
+    "phrase": "travel agent",
+    "level": 3
+  },
+  {
+    "word": "agreeable",
+    "phrase": "The weather in Auckland is quite agreeable.",
+    "level": 5
+  },
+  {
+    "word": "ahead",
+    "phrase": "ahead of schedule",
+    "level": 3
+  },
+  {
+    "word": "air",
+    "phrase": "air conditioner",
+    "level": 1
+  },
+  {
+    "word": "aisle",
+    "phrase": "I prefer an aisle seat.",
+    "level": 5
+  },
+  {
+    "word": "Alaska",
+    "phrase": "Tex was transferred to Alaska.",
+    "level": 6
+  },
+  {
+    "word": "album",
+    "phrase": "release a new album",
+    "level": 1
+  },
+  {
+    "word": "alleviate",
+    "phrase": "alleviate traffic congestion",
+    "level": 11
+  },
+  {
+    "word": "allocate",
+    "phrase": "allocate sufficient funds for a project",
+    "level": 8
+  },
+  {
+    "word": "allow",
+    "phrase": "allow customers to pay online",
+    "level": 3
+  },
+  {
+    "word": "amazing",
+    "phrase": "an amazing success",
+    "level": 5
+  },
+  {
+    "word": "ample",
+    "phrase": "The hotel has ample parking.",
+    "level": 6
+  },
+  {
+    "word": "ancient",
+    "phrase": "ancient Egyptian artifacts",
+    "level": 4
+  },
+  {
+    "word": "anniversary",
+    "phrase": "celebrate the twentieth anniversary",
+    "level": 4
+  },
+  {
+    "word": "anonymous",
+    "phrase": "an anonymous donor",
+    "level": 7
+  },
+  {
+    "word": "answer",
+    "phrase": "patiently answer questions",
+    "level": 2
+  },
+  {
+    "word": "apartment",
+    "phrase": "a vacant unit in an apartment building",
+    "level": 2
+  },
+  {
+    "word": "applicable",
+    "phrase": "The rule is applicable to all employees.",
+    "level": 7
+  },
+  {
+    "word": "appointment",
+    "phrase": "reschedule an appointment",
+    "level": 3
+  },
+  {
+    "word": "appreciation",
+    "phrase": "as a token of our appreciation for",
+    "level": 5
+  },
+  {
+    "word": "April",
+    "phrase": "My driver's license expires in April.",
+    "level": 1
+  },
+  {
+    "word": "apron",
+    "phrase": "A woman is fastening an apron.",
+    "level": 2
+  },
+  {
+    "word": "arrive",
+    "phrase": "Mr. Kato is expected to arrive tomorrow.",
+    "level": 1
+  },
+  {
+    "word": "article",
+    "phrase": "Where would the article most likely appear?",
+    "level": 4
+  },
+  {
+    "word": "ask",
+    "phrase": "ask for a prescription",
+    "level": 1
+  },
+  {
+    "word": "assorted",
+    "phrase": "assorted fruits and vegetables",
+    "level": 9
+  },
+  {
+    "word": "assume",
+    "phrase": "assume responsibilities",
+    "level": 4
+  },
+  {
+    "word": "attendance",
+    "phrase": "Attendance is voluntary.",
+    "level": 6
+  },
+  {
+    "word": "attendant",
+    "phrase": "flight attendant",
+    "level": 5
+  },
+  {
+    "word": "attention",
+    "phrase": "it has come to our attention that",
+    "level": 3
+  },
+  {
+    "word": "Auckland",
+    "phrase": "The weather in Auckland is quite agreeable.",
+    "level": 3
+  },
+  {
+    "word": "authority",
+    "phrase": "the person in authority",
+    "level": 3
+  },
+  {
+    "word": "available",
+    "phrase": "Tickets are available online.",
+    "level": 3
+  },
+  {
+    "word": "avid",
+    "phrase": "an avid reader",
+    "level": 11
+  },
+  {
+    "word": "avoid",
+    "phrase": "avoid wasting time",
+    "level": 3
+  },
+  {
+    "word": "aware",
+    "phrase": "I was aware of the problem.",
+    "level": 2
+  },
+  {
+    "word": "away",
+    "phrase": "right away",
+    "level": 1
+  },
+  {
+    "word": "awning",
+    "phrase": "Some people are standing under an awning.",
+    "level": 6
+  },
+  {
+    "word": "background",
+    "phrase": "an impressive educational background",
+    "level": 3
+  },
+  {
+    "word": "bag",
+    "phrase": "She's reaching into her bag.",
+    "level": 1
+  },
+  {
+    "word": "band",
+    "phrase": "A band is performing for the audience.",
+    "level": 2
+  },
+  {
+    "word": "bank",
+    "phrase": "a bank transaction",
+    "level": 1
+  },
+  {
+    "word": "basic",
+    "phrase": "basic functions",
+    "level": 2
+  },
+  {
+    "word": "battery",
+    "phrase": "rechargeable battery",
+    "level": 3
+  },
+  {
+    "word": "bearer",
+    "phrase": "the bearer of this coupon",
+    "level": 7
+  },
+  {
+    "word": "beautiful",
+    "phrase": "a hotel in a beautiful setting",
+    "level": 2
+  },
+  {
+    "word": "begin",
+    "phrase": "The meeting will begin shortly.",
+    "level": 1
+  },
+  {
+    "word": "behalf",
+    "phrase": "on behalf of",
+    "level": 5
+  },
+  {
+    "word": "behave",
+    "phrase": "behave discreetly",
+    "level": 3
+  },
+  {
+    "word": "beneficial",
+    "phrase": "a mutually beneficial relationship",
+    "level": 6
+  },
+  {
+    "word": "birthday",
+    "phrase": "The event coincides with my birthday.",
+    "level": 1
+  },
+  {
+    "word": "board",
+    "phrase": "board of directors",
+    "level": 3
+  },
+  {
+    "word": "boarding",
+    "phrase": "proceed to the boarding gate",
+    "level": 9
+  },
+  {
+    "word": "bolster",
+    "phrase": "bolster sales",
+    "level": 10
+  },
+  {
+    "word": "boost",
+    "phrase": "boost the company's profit",
+    "level": 6
+  },
+  {
+    "word": "Boston",
+    "phrase": "move the headquarters to Boston",
+    "level": 3
+  },
+  {
+    "word": "botanical",
+    "phrase": "botanical gardens",
+    "level": 7
+  },
+  {
+    "word": "box",
+    "phrase": "cardboard box",
+    "level": 1
+  },
+  {
+    "word": "breakfast",
+    "phrase": "a complimentary breakfast",
+    "level": 1
+  },
+  {
+    "word": "breathtaking",
+    "phrase": "The room offers a breathtaking view.",
+    "level": 10
+  },
+  {
+    "word": "broad",
+    "phrase": "from a broad perspective",
+    "level": 2
+  },
+  {
+    "word": "broadcast",
+    "phrase": "The program is usually broadcast on Saturdays.",
+    "level": 3
+  },
+  {
+    "word": "bulb",
+    "phrase": "( light) bulb",
+    "level": 5
+  },
+  {
+    "word": "bulk",
+    "phrase": "bulk order",
+    "level": 5
+  },
+  {
+    "word": "business",
+    "phrase": "a highly successful business",
+    "level": 1
+  },
+  {
+    "word": "camera",
+    "phrase": "a highly sensitive camera",
+    "level": 1
+  },
+  {
+    "word": "canopy",
+    "phrase": "A canopy is shading some merchandise.",
+    "level": 12
+  },
+  {
+    "word": "capable",
+    "phrase": "I am capable of doing the job.",
+    "level": 4
+  },
+  {
+    "word": "capture",
+    "phrase": "Photographs capture memorable moments in life.",
+    "level": 4
+  },
+  {
+    "word": "car",
+    "phrase": "a car manufacturer",
+    "level": 1
+  },
+  {
+    "word": "card",
+    "phrase": "activate a credit card",
+    "level": 1
+  },
+  {
+    "word": "cardboard",
+    "phrase": "cardboard box",
+    "level": 7
+  },
+  {
+    "word": "carefully",
+    "phrase": "check extremely carefully",
+    "level": 2
+  },
+  {
+    "word": "carpool",
+    "phrase": "encourage employees to carpool",
+    "level": 5
+  },
+  {
+    "word": "carry",
+    "phrase": "We do not carry that item.",
+    "level": 2
+  },
+  {
+    "word": "cart",
+    "phrase": "She's wheeling a cart.",
+    "level": 3
+  },
+  {
+    "word": "cashier",
+    "phrase": "A woman is paying a cashier.",
+    "level": 6
+  },
+  {
+    "word": "cause",
+    "phrase": "the cause of the problem",
+    "level": 3
+  },
+  {
+    "word": "caution",
+    "phrase": "use caution",
+    "level": 4
+  },
+  {
+    "word": "celebrate",
+    "phrase": "celebrate the twentieth anniversary",
+    "level": 3
+  },
+  {
+    "word": "celebration",
+    "phrase": "the grand opening celebration",
+    "level": 3
+  },
+  {
+    "word": "cell",
+    "phrase": "cell phone",
+    "level": 3
+  },
+  {
+    "word": "ceremony",
+    "phrase": "awards ceremony",
+    "level": 3
+  },
+  {
+    "word": "certain",
+    "phrase": "by a certain time",
+    "level": 2
+  },
+  {
+    "word": "chairperson",
+    "phrase": "I was appointed chairperson of the committee.",
+    "level": 6
+  },
+  {
+    "word": "challenging",
+    "phrase": "a challenging task",
+    "level": 5
+  },
+  {
+    "word": "change",
+    "phrase": "change a delivery date",
+    "level": 1
+  },
+  {
+    "word": "charity",
+    "phrase": "raise money for charity",
+    "level": 4
+  },
+  {
+    "word": "check",
+    "phrase": "check extremely carefully",
+    "level": 3
+  },
+  {
+    "word": "childcare",
+    "phrase": "The company has an on-site childcare center.",
+    "level": 8
+  },
+  {
+    "word": "china",
+    "phrase": "imports from China",
+    "level": 3
+  },
+  {
+    "word": "choose",
+    "phrase": "Why did you choose this profession?",
+    "level": 2
+  },
+  {
+    "word": "circulation",
+    "phrase": "a daily circulation of 30,000",
+    "level": 6
+  },
+  {
+    "word": "civil",
+    "phrase": "civil engineer",
+    "level": 4
+  },
+  {
+    "word": "cleaner",
+    "phrase": "vacuum cleaner",
+    "level": 3
+  },
+  {
+    "word": "clear",
+    "phrase": "The report was clear and concise.",
+    "level": 2
+  },
+  {
+    "word": "clearly",
+    "phrase": "the regulations clearly specify that",
+    "level": 2
+  },
+  {
+    "word": "client",
+    "phrase": "visit a client",
+    "level": 3
+  },
+  {
+    "word": "closely",
+    "phrase": "work closely with local businesses",
+    "level": 4
+  },
+  {
+    "word": "clothes",
+    "phrase": "appropriate clothes for a job interview",
+    "level": 2
+  },
+  {
+    "word": "cold",
+    "phrase": "The weather is cold, so dress accordingly.",
+    "level": 1
+  },
+  {
+    "word": "colleague",
+    "phrase": "talk with a colleague",
+    "level": 5
+  },
+  {
+    "word": "come",
+    "phrase": "come up with",
+    "level": 1
+  },
+  {
+    "word": "comfortable",
+    "phrase": "comfortable rooms and friendly staff",
+    "level": 3
+  },
+  {
+    "word": "commemorate",
+    "phrase": "commemorate an anniversary",
+    "level": 9
+  },
+  {
+    "word": "commemorative",
+    "phrase": "a commemorative plaque",
+    "level": 6
+  },
+  {
+    "word": "commence",
+    "phrase": "Construction will commence in September.",
+    "level": 6
+  },
+  {
+    "word": "commend",
+    "phrase": "a letter to commend an employee",
+    "level": 7
+  },
+  {
+    "word": "commensurate",
+    "phrase": "Salary will be commensurate with experience.",
+    "level": 8
+  },
+  {
+    "word": "comment",
+    "phrase": "issue a comment",
+    "level": 3
+  },
+  {
+    "word": "commonly",
+    "phrase": "the most commonly used methods",
+    "level": 5
+  },
+  {
+    "word": "commuter",
+    "phrase": "a commuter train",
+    "level": 7
+  },
+  {
+    "word": "company",
+    "phrase": "a Seattle- based company",
+    "level": 2
+  },
+  {
+    "word": "comparable",
+    "phrase": "more expensive than comparable products",
+    "level": 6
+  },
+  {
+    "word": "compartment",
+    "phrase": "in the overhead compartment",
+    "level": 7
+  },
+  {
+    "word": "compile",
+    "phrase": "compile a list of participants",
+    "level": 8
+  },
+  {
+    "word": "complicated",
+    "phrase": "The system is very complicated.",
+    "level": 4
+  },
+  {
+    "word": "complimentary",
+    "phrase": "a complimentary breakfast",
+    "level": 10
+  },
+  {
+    "word": "compromise",
+    "phrase": "reach a compromise",
+    "level": 5
+  },
+  {
+    "word": "concentrated",
+    "phrase": "a concentrated effort",
+    "level": 6
+  },
+  {
+    "word": "concern",
+    "phrase": "express concern",
+    "level": 4
+  },
+  {
+    "word": "concise",
+    "phrase": "The report was clear and concise.",
+    "level": 7
+  },
+  {
+    "word": "conclude",
+    "phrase": "The event will conclude with a concert.",
+    "level": 5
+  },
+  {
+    "word": "conditioner",
+    "phrase": "air conditioner",
+    "level": 7
+  },
+  {
+    "word": "conditioning",
+    "phrase": "make upgrades to the air conditioning system",
+    "level": 8
+  },
+  {
+    "word": "confidential",
+    "phrase": "confidential documents",
+    "level": 7
+  },
+  {
+    "word": "conform",
+    "phrase": "conform to international standards",
+    "level": 7
+  },
+  {
+    "word": "congested",
+    "phrase": "The parking lot was too congested.",
+    "level": 6
+  },
+  {
+    "word": "congestion",
+    "phrase": "alleviate traffic congestion",
+    "level": 9
+  },
+  {
+    "word": "consecutive",
+    "phrase": "for the third consecutive year",
+    "level": 10
+  },
+  {
+    "word": "conservation",
+    "phrase": "energy conservation",
+    "level": 5
+  },
+  {
+    "word": "considerably",
+    "phrase": "considerably lower prices",
+    "level": 6
+  },
+  {
+    "word": "consistently",
+    "phrase": "consistently rank among the top 10 universities",
+    "level": 6
+  },
+  {
+    "word": "consolidate",
+    "phrase": "consolidate two divisions into one",
+    "level": 8
+  },
+  {
+    "word": "continuous",
+    "phrase": "continuous improvement of quality",
+    "level": 5
+  },
+  {
+    "word": "contractor",
+    "phrase": "a construction contractor",
+    "level": 7
+  },
+  {
+    "word": "contrary",
+    "phrase": "contrary to expectations",
+    "level": 4
+  },
+  {
+    "word": "contrast",
+    "phrase": "in contrast to last year",
+    "level": 4
+  },
+  {
+    "word": "controversial",
+    "phrase": "a controversial issue",
+    "level": 7
+  },
+  {
+    "word": "convenience",
+    "phrase": "at your earliest convenience",
+    "level": 4
+  },
+  {
+    "word": "convenient",
+    "phrase": "Situated downtown, the hotel is convenient.",
+    "level": 3
+  },
+  {
+    "word": "conveniently",
+    "phrase": "conveniently located near a subway station",
+    "level": 5
+  },
+  {
+    "word": "convert",
+    "phrase": "convert a warehouse into an office",
+    "level": 5
+  },
+  {
+    "word": "cookware",
+    "phrase": "Some cookware is arranged on the counter.",
+    "level": 5
+  },
+  {
+    "word": "cordially",
+    "phrase": "cordially invite",
+    "level": 9
+  },
+  {
+    "word": "corporation",
+    "phrase": "The report was commissioned by Tex Corporation.",
+    "level": 4
+  },
+  {
+    "word": "correct",
+    "phrase": "the correct address",
+    "level": 3
+  },
+  {
+    "word": "cotton",
+    "phrase": "The garment is made of cotton.",
+    "level": 3
+  },
+  {
+    "word": "counter",
+    "phrase": "Some cookware is arranged on the counter.",
+    "level": 4
+  },
+  {
+    "word": "countless",
+    "phrase": "countless times",
+    "level": 6
+  },
+  {
+    "word": "coupon",
+    "phrase": "the bearer of this coupon",
+    "level": 5
+  },
+  {
+    "word": "courteous",
+    "phrase": "The staff was courteous.",
+    "level": 7
+  },
+  {
+    "word": "courtyard",
+    "phrase": "A woman is standing in a courtyard.",
+    "level": 8
+  },
+  {
+    "word": "coverage",
+    "phrase": "media coverage",
+    "level": 6
+  },
+  {
+    "word": "craftspeople",
+    "phrase": "artists and craftspeople",
+    "level": 5
+  },
+  {
+    "word": "create",
+    "phrase": "create a new logo",
+    "level": 3
+  },
+  {
+    "word": "critical",
+    "phrase": "Most employees were critical of the plan.",
+    "level": 5
+  },
+  {
+    "word": "critically",
+    "phrase": "a critically acclaimed movie",
+    "level": 4
+  },
+  {
+    "word": "crosswalk",
+    "phrase": "They're walking on a crosswalk.",
+    "level": 5
+  },
+  {
+    "word": "crucial",
+    "phrase": "Innovation is crucial for business success.",
+    "level": 6
+  },
+  {
+    "word": "culinary",
+    "phrase": "culinary institute",
+    "level": 11
+  },
+  {
+    "word": "currently",
+    "phrase": "The item is currently out of stock.",
+    "level": 5
+  },
+  {
+    "word": "custodian",
+    "phrase": "a custodian at a resort",
+    "level": 10
+  },
+  {
+    "word": "cut",
+    "phrase": "aim to cut energy use",
+    "level": 1
+  },
+  {
+    "word": "damage",
+    "phrase": "damage occurred during shipment",
+    "level": 3
+  },
+  {
+    "word": "dealer",
+    "phrase": "an authorized dealer",
+    "level": 4
+  },
+  {
+    "word": "decision",
+    "phrase": "influence a decision",
+    "level": 2
+  },
+  {
+    "word": "decline",
+    "phrase": "decline to respond",
+    "level": 4
+  },
+  {
+    "word": "deduct",
+    "phrase": "deduct tax from payments",
+    "level": 9
+  },
+  {
+    "word": "definitely",
+    "phrase": "I definitely need the item.",
+    "level": 5
+  },
+  {
+    "word": "definition",
+    "phrase": "a dictionary definition",
+    "level": 4
+  },
+  {
+    "word": "definitive",
+    "phrase": "a definitive TOEIC vocabulary book",
+    "level": 10
+  },
+  {
+    "word": "delegation",
+    "phrase": "a delegation of engineers from Japan",
+    "level": 7
+  },
+  {
+    "word": "delete",
+    "phrase": "delete unnecessary files",
+    "level": 8
+  },
+  {
+    "word": "deliberation",
+    "phrase": "after long deliberation",
+    "level": 8
+  },
+  {
+    "word": "delighted",
+    "phrase": "We are delighted to see you.",
+    "level": 4
+  },
+  {
+    "word": "deliver",
+    "phrase": "deliver a product",
+    "level": 2
+  },
+  {
+    "word": "demonstrate",
+    "phrase": "demonstrate how to use the system",
+    "level": 4
+  },
+  {
+    "word": "Denver",
+    "phrase": "fly to Seattle via Denver",
+    "level": 5
+  },
+  {
+    "word": "depend",
+    "phrase": "depend on",
+    "level": 2
+  },
+  {
+    "word": "deplete",
+    "phrase": "deplete the budget",
+    "level": 11
+  },
+  {
+    "word": "description",
+    "phrase": "a job description",
+    "level": 5
+  },
+  {
+    "word": "deserve",
+    "phrase": "deserve a promotion",
+    "level": 3
+  },
+  {
+    "word": "designer",
+    "phrase": "an accomplished designer",
+    "level": 2
+  },
+  {
+    "word": "desirable",
+    "phrase": "Teaching experience is desirable.",
+    "level": 5
+  },
+  {
+    "word": "dessert",
+    "phrase": "The dessert complements the main dish.",
+    "level": 4
+  },
+  {
+    "word": "detect",
+    "phrase": "detect an error",
+    "level": 5
+  },
+  {
+    "word": "detergent",
+    "phrase": "( laundry) detergent",
+    "level": 7
+  },
+  {
+    "word": "deteriorate",
+    "phrase": "Road conditions will deteriorate.",
+    "level": 9
+  },
+  {
+    "word": "deviate",
+    "phrase": "deviate from the original plan",
+    "level": 11
+  },
+  {
+    "word": "devise",
+    "phrase": "devise a method",
+    "level": 6
+  },
+  {
+    "word": "dictionary",
+    "phrase": "a dictionary definition",
+    "level": 1
+  },
+  {
+    "word": "dietary",
+    "phrase": "dietary restrictions",
+    "level": 10
+  },
+  {
+    "word": "difficult",
+    "phrase": "prove to be difficult",
+    "level": 1
+  },
+  {
+    "word": "dilute",
+    "phrase": "dilute paint with water",
+    "level": 9
+  },
+  {
+    "word": "dinner",
+    "phrase": "Following the speech, we had dinner.",
+    "level": 1
+  },
+  {
+    "word": "direct",
+    "phrase": "Please direct any questions to me.",
+    "level": 3
+  },
+  {
+    "word": "directly",
+    "phrase": "purchase directly from a Web site",
+    "level": 2
+  },
+  {
+    "word": "disappointing",
+    "phrase": "disappointing sales",
+    "level": 6
+  },
+  {
+    "word": "discard",
+    "phrase": "discard old papers",
+    "level": 7
+  },
+  {
+    "word": "dish",
+    "phrase": "The dessert complements the main dish.",
+    "level": 1
+  },
+  {
+    "word": "display",
+    "phrase": "products on display",
+    "level": 3
+  },
+  {
+    "word": "dispose",
+    "phrase": "dispose of garbage",
+    "level": 5
+  },
+  {
+    "word": "disruption",
+    "phrase": "cause disruption to traffic",
+    "level": 9
+  },
+  {
+    "word": "distance",
+    "phrase": "in the distance",
+    "level": 3
+  },
+  {
+    "word": "distinguished",
+    "phrase": "a distinguished career as a journalist",
+    "level": 5
+  },
+  {
+    "word": "district",
+    "phrase": "a commercial district",
+    "level": 2
+  },
+  {
+    "word": "disturb",
+    "phrase": "I'm sorry to disturb you.",
+    "level": 5
+  },
+  {
+    "word": "diverse",
+    "phrase": "a diverse group of experts",
+    "level": 6
+  },
+  {
+    "word": "domestic",
+    "phrase": "the domestic market",
+    "level": 4
+  },
+  {
+    "word": "dominant",
+    "phrase": "a dominant position in the market",
+    "level": 5
+  },
+  {
+    "word": "donor",
+    "phrase": "an anonymous donor",
+    "level": 8
+  },
+  {
+    "word": "doorway",
+    "phrase": "They're talking near a doorway.",
+    "level": 4
+  },
+  {
+    "word": "downtown",
+    "phrase": "downtown restaurants",
+    "level": 2
+  },
+  {
+    "word": "drawer",
+    "phrase": "She's opening a drawer.",
+    "level": 3
+  },
+  {
+    "word": "dress",
+    "phrase": "The weather is cold, so dress accordingly.",
+    "level": 2
+  },
+  {
+    "word": "driver",
+    "phrase": "My driver's license expires in April.",
+    "level": 1
+  },
+  {
+    "word": "driveway",
+    "phrase": "repave a driveway",
+    "level": 6
+  },
+  {
+    "word": "drop",
+    "phrase": "drop off",
+    "level": 2
+  },
+  {
+    "word": "earliest",
+    "phrase": "at your earliest convenience",
+    "level": 7
+  },
+  {
+    "word": "earn",
+    "phrase": "earn the respect of people",
+    "level": 3
+  },
+  {
+    "word": "ease",
+    "phrase": "ease of use",
+    "level": 4
+  },
+  {
+    "word": "easily",
+    "phrase": "easily accessible by train",
+    "level": 3
+  },
+  {
+    "word": "economic",
+    "phrase": "economic growth",
+    "level": 3
+  },
+  {
+    "word": "ed",
+    "phrase": "All flights have been delay ed.",
+    "level": 3
+  },
+  {
+    "word": "edge",
+    "phrase": "the edge of the water",
+    "level": 2
+  },
+  {
+    "word": "edit",
+    "phrase": "edit a manuscript",
+    "level": 5
+  },
+  {
+    "word": "educational",
+    "phrase": "an impressive educational background",
+    "level": 3
+  },
+  {
+    "word": "effect",
+    "phrase": "take effect",
+    "level": 3
+  },
+  {
+    "word": "efficiency",
+    "phrase": "an advocate for energy efficiency",
+    "level": 4
+  },
+  {
+    "word": "electricity",
+    "phrase": "a stable supply of electricity",
+    "level": 3
+  },
+  {
+    "word": "eliminate",
+    "phrase": "eliminate a risk",
+    "level": 6
+  },
+  {
+    "word": "embrace",
+    "phrase": "embrace an idea",
+    "level": 7
+  },
+  {
+    "word": "employee",
+    "phrase": "an employee of a hotel",
+    "level": 3
+  },
+  {
+    "word": "enable",
+    "phrase": "enable staff to work from home",
+    "level": 4
+  },
+  {
+    "word": "encounter",
+    "phrase": "encounter a serious problem",
+    "level": 4
+  },
+  {
+    "word": "encourage",
+    "phrase": "encourage employees to carpool",
+    "level": 4
+  },
+  {
+    "word": "end",
+    "phrase": "valid until the end of May",
+    "level": 1
+  },
+  {
+    "word": "energy",
+    "phrase": "efficient use of energy",
+    "level": 3
+  },
+  {
+    "word": "engagement",
+    "phrase": "a previous engagement",
+    "level": 4
+  },
+  {
+    "word": "English",
+    "phrase": "translate English into Japanese",
+    "level": 2
+  },
+  {
+    "word": "enjoyable",
+    "phrase": "an enjoyable stay at a hotel",
+    "level": 4
+  },
+  {
+    "word": "ensure",
+    "phrase": "ensure that the products are safe",
+    "level": 5
+  },
+  {
+    "word": "enthusiastic",
+    "phrase": "I am enthusiastic about the project.",
+    "level": 4
+  },
+  {
+    "word": "entrepreneur",
+    "phrase": "a young entrepreneur",
+    "level": 8
+  },
+  {
+    "word": "entry",
+    "phrase": "the winning entry",
+    "level": 4
+  },
+  {
+    "word": "error",
+    "phrase": "detect an error",
+    "level": 2
+  },
+  {
+    "word": "essential",
+    "phrase": "Customer satisfaction is essential to us.",
+    "level": 3
+  },
+  {
+    "word": "estate",
+    "phrase": "real estate investment",
+    "level": 4
+  },
+  {
+    "word": "ethic",
+    "phrase": "work ethic",
+    "level": 9
+  },
+  {
+    "word": "event",
+    "phrase": "The event was successful.",
+    "level": 3
+  },
+  {
+    "word": "eventually",
+    "phrase": "Mr. Kato was eventually promoted to CEO.",
+    "level": 4
+  },
+  {
+    "word": "everyday",
+    "phrase": "incorporate exercise into everyday life",
+    "level": 2
+  },
+  {
+    "word": "evidence",
+    "phrase": "evidence of payment",
+    "level": 4
+  },
+  {
+    "word": "exact",
+    "phrase": "I can't remember the exact date.",
+    "level": 3
+  },
+  {
+    "word": "exam",
+    "phrase": "Surprisingly, Tex passed the exam.",
+    "level": 3
+  },
+  {
+    "word": "example",
+    "phrase": "a specific example",
+    "level": 2
+  },
+  {
+    "word": "excellent",
+    "phrase": "excellent service",
+    "level": 3
+  },
+  {
+    "word": "exception",
+    "phrase": "with the exception of",
+    "level": 5
+  },
+  {
+    "word": "exceptional",
+    "phrase": "exceptional customer service",
+    "level": 6
+  },
+  {
+    "word": "excerpt",
+    "phrase": "an excerpt from a meeting",
+    "level": 9
+  },
+  {
+    "word": "exclusively",
+    "phrase": "available exclusively to our members",
+    "level": 6
+  },
+  {
+    "word": "exemplary",
+    "phrase": "an exemplary employee",
+    "level": 11
+  },
+  {
+    "word": "exempt",
+    "phrase": "Members are exempt from the fee.",
+    "level": 9
+  },
+  {
+    "word": "exhausted",
+    "phrase": "I was exhausted.",
+    "level": 5
+  },
+  {
+    "word": "expedite",
+    "phrase": "expedite a process",
+    "level": 12
+  },
+  {
+    "word": "expensive",
+    "phrase": "more expensive than comparable products",
+    "level": 3
+  },
+  {
+    "word": "experience",
+    "phrase": "have no previous experience",
+    "level": 2
+  },
+  {
+    "word": "experienced",
+    "phrase": "an experienced engineer",
+    "level": 5
+  },
+  {
+    "word": "expert",
+    "phrase": "an expert in the field",
+    "level": 3
+  },
+  {
+    "word": "explanation",
+    "phrase": "an adequate explanation",
+    "level": 3
+  },
+  {
+    "word": "explicit",
+    "phrase": "without explicit permission",
+    "level": 8
+  },
+  {
+    "word": "extended",
+    "phrase": "an extended warranty",
+    "level": 10
+  },
+  {
+    "word": "extremely",
+    "phrase": "check extremely carefully",
+    "level": 4
+  },
+  {
+    "word": "fabric",
+    "phrase": "check fabric samples",
+    "level": 8
+  },
+  {
+    "word": "facilitate",
+    "phrase": "facilitate a discussion",
+    "level": 8
+  },
+  {
+    "word": "fair",
+    "phrase": "job fair",
+    "level": 3
+  },
+  {
+    "word": "fame",
+    "phrase": "achieve international fame",
+    "level": 4
+  },
+  {
+    "word": "familiar",
+    "phrase": "I am familiar with the area.",
+    "level": 2
+  },
+  {
+    "word": "family",
+    "phrase": "family outings",
+    "level": 1
+  },
+  {
+    "word": "famous",
+    "phrase": "a famous architect",
+    "level": 2
+  },
+  {
+    "word": "fare",
+    "phrase": "bus fare",
+    "level": 3
+  },
+  {
+    "word": "faucet",
+    "phrase": "install a new faucet",
+    "level": 5
+  },
+  {
+    "word": "feasible",
+    "phrase": "a feasible plan",
+    "level": 10
+  },
+  {
+    "word": "fertilizer",
+    "phrase": "recycle food waste to make fertilizer",
+    "level": 8
+  },
+  {
+    "word": "fierce",
+    "phrase": "fierce competition",
+    "level": 5
+  },
+  {
+    "word": "fill",
+    "phrase": "fill out an application",
+    "level": 2
+  },
+  {
+    "word": "film",
+    "phrase": "The film received generally positive reviews.",
+    "level": 2
+  },
+  {
+    "word": "final",
+    "phrase": "We are pleased with the final result.",
+    "level": 3
+  },
+  {
+    "word": "finalize",
+    "phrase": "finalize a contract",
+    "level": 6
+  },
+  {
+    "word": "financially",
+    "phrase": "a financially viable option",
+    "level": 6
+  },
+  {
+    "word": "find",
+    "phrase": "I hope you find this information helpful.",
+    "level": 1
+  },
+  {
+    "word": "fine",
+    "phrase": "fine arts",
+    "level": 1
+  },
+  {
+    "word": "fit",
+    "phrase": "The room can fit 50 people.",
+    "level": 3
+  },
+  {
+    "word": "fixture",
+    "phrase": "light fixture",
+    "level": 9
+  },
+  {
+    "word": "floor",
+    "phrase": "A man is sweeping the floor.",
+    "level": 1
+  },
+  {
+    "word": "fluent",
+    "phrase": "Applicants must be fluent in Mandarin.",
+    "level": 5
+  },
+  {
+    "word": "fly",
+    "phrase": "fly to Seattle via Denver",
+    "level": 2
+  },
+  {
+    "word": "focus",
+    "phrase": "focus on one point",
+    "level": 4
+  },
+  {
+    "word": "follow",
+    "phrase": "follow industry guidelines",
+    "level": 2
+  },
+  {
+    "word": "foremost",
+    "phrase": "one of the foremost law firms",
+    "level": 10
+  },
+  {
+    "word": "forfeit",
+    "phrase": "forfeit the deposit",
+    "level": 12
+  },
+  {
+    "word": "forge",
+    "phrase": "forge a relationship",
+    "level": 10
+  },
+  {
+    "word": "formal",
+    "phrase": "Formal attire is required in the office.",
+    "level": 3
+  },
+  {
+    "word": "forward",
+    "phrase": "I am looking forward to the banquet.",
+    "level": 4
+  },
+  {
+    "word": "fountain",
+    "phrase": "A fountain is spraying water.",
+    "level": 3
+  },
+  {
+    "word": "fragile",
+    "phrase": "fragile items",
+    "level": 8
+  },
+  {
+    "word": "fraud",
+    "phrase": "report potential fraud",
+    "level": 7
+  },
+  {
+    "word": "free",
+    "phrase": "Admission is free for all members.",
+    "level": 2
+  },
+  {
+    "word": "freight",
+    "phrase": "freight elevator",
+    "level": 7
+  },
+  {
+    "word": "frequent",
+    "phrase": "frequent use of the Internet",
+    "level": 4
+  },
+  {
+    "word": "fresh",
+    "phrase": "use fresh ingredients",
+    "level": 2
+  },
+  {
+    "word": "friendly",
+    "phrase": "comfortable rooms and friendly staff",
+    "level": 2
+  },
+  {
+    "word": "fuel",
+    "phrase": "fuel costs",
+    "level": 3
+  },
+  {
+    "word": "fully",
+    "phrase": "I am fully satisfied with the service.",
+    "level": 3
+  },
+  {
+    "word": "functional",
+    "phrase": "The machine is still functional.",
+    "level": 7
+  },
+  {
+    "word": "gala",
+    "phrase": "a gala dinner",
+    "level": 11
+  },
+  {
+    "word": "garbage",
+    "phrase": "garbage can",
+    "level": 5
+  },
+  {
+    "word": "garment",
+    "phrase": "The garment is made of cotton.",
+    "level": 6
+  },
+  {
+    "word": "generally",
+    "phrase": "The film received generally positive reviews.",
+    "level": 4
+  },
+  {
+    "word": "generate",
+    "phrase": "generate profits",
+    "level": 6
+  },
+  {
+    "word": "generous",
+    "phrase": "a generous donation to a charity",
+    "level": 5
+  },
+  {
+    "word": "give",
+    "phrase": "give a superb presentation",
+    "level": 1
+  },
+  {
+    "word": "good",
+    "phrase": "Good luck in your future endeavor s.",
+    "level": 1
+  },
+  {
+    "word": "grand",
+    "phrase": "the grand opening celebration",
+    "level": 2
+  },
+  {
+    "word": "guard",
+    "phrase": "security guard",
+    "level": 2
+  },
+  {
+    "word": "guide",
+    "phrase": "tour guide",
+    "level": 2
+  },
+  {
+    "word": "handbag",
+    "phrase": "She's removing a book from her handbag.",
+    "level": 3
+  },
+  {
+    "word": "happy",
+    "phrase": "We are happy to inform you that",
+    "level": 1
+  },
+  {
+    "word": "hard",
+    "phrase": "reward employees for their hard work",
+    "level": 1
+  },
+  {
+    "word": "headquarters",
+    "phrase": "move the headquarters to Boston",
+    "level": 5
+  },
+  {
+    "word": "heavily",
+    "phrase": "a heavily used bus route",
+    "level": 4
+  },
+  {
+    "word": "helpful",
+    "phrase": "I hope you find this information helpful.",
+    "level": 3
+  },
+  {
+    "word": "hesitate",
+    "phrase": "Please do not hesitate to contact us.",
+    "level": 4
+  },
+  {
+    "word": "highlight",
+    "phrase": "highlight differences",
+    "level": 5
+  },
+  {
+    "word": "highly",
+    "phrase": "a highly successful business",
+    "level": 2
+  },
+  {
+    "word": "historical",
+    "phrase": "historical figures",
+    "level": 4
+  },
+  {
+    "word": "history",
+    "phrase": "particularly interested in history",
+    "level": 2
+  },
+  {
+    "word": "hold",
+    "phrase": "hold a luncheon",
+    "level": 1
+  },
+  {
+    "word": "home",
+    "phrase": "enable staff to work from home",
+    "level": 1
+  },
+  {
+    "word": "host",
+    "phrase": "the host of a television show",
+    "level": 3
+  },
+  {
+    "word": "house",
+    "phrase": "The roof of the house is slanted.",
+    "level": 2
+  },
+  {
+    "word": "household",
+    "phrase": "household products",
+    "level": 5
+  },
+  {
+    "word": "housing",
+    "phrase": "a housing allowance",
+    "level": 4
+  },
+  {
+    "word": "human",
+    "phrase": "human resources department",
+    "level": 2
+  },
+  {
+    "word": "hypothesis",
+    "phrase": "prove a hypothesis",
+    "level": 7
+  },
+  {
+    "word": "idea",
+    "phrase": "embrace an idea",
+    "level": 2
+  },
+  {
+    "word": "ideal",
+    "phrase": "an ideal location",
+    "level": 4
+  },
+  {
+    "word": "identify",
+    "phrase": "identify problems",
+    "level": 4
+  },
+  {
+    "word": "illustrate",
+    "phrase": "illustrate a point",
+    "level": 5
+  },
+  {
+    "word": "immediately",
+    "phrase": "The tickets sold out immediately.",
+    "level": 3
+  },
+  {
+    "word": "impending",
+    "phrase": "the impending change in leadership",
+    "level": 10
+  },
+  {
+    "word": "imperative",
+    "phrase": "It is imperative that we act now.",
+    "level": 10
+  },
+  {
+    "word": "importance",
+    "phrase": "stress the importance of reading",
+    "level": 3
+  },
+  {
+    "word": "important",
+    "phrase": "an important document",
+    "level": 1
+  },
+  {
+    "word": "impose",
+    "phrase": "impose a fee on customers",
+    "level": 5
+  },
+  {
+    "word": "impossible",
+    "phrase": "an otherwise impossible task",
+    "level": 3
+  },
+  {
+    "word": "impressive",
+    "phrase": "an impressive educational background",
+    "level": 4
+  },
+  {
+    "word": "inaugural",
+    "phrase": "the inaugural issue of a magazine",
+    "level": 10
+  },
+  {
+    "word": "inclement",
+    "phrase": "inclement weather",
+    "level": 8
+  },
+  {
+    "word": "include",
+    "phrase": "Please include your portfolio.",
+    "level": 3
+  },
+  {
+    "word": "inconvenience",
+    "phrase": "We apologize for the inconvenience.",
+    "level": 7
+  },
+  {
+    "word": "increase",
+    "phrase": "an increase in sales",
+    "level": 3
+  },
+  {
+    "word": "incur",
+    "phrase": "incur a fine",
+    "level": 9
+  },
+  {
+    "word": "independently",
+    "phrase": "work independently and as a team member",
+    "level": 5
+  },
+  {
+    "word": "industry",
+    "phrase": "the fashion industry",
+    "level": 3
+  },
+  {
+    "word": "influence",
+    "phrase": "influence a decision",
+    "level": 3
+  },
+  {
+    "word": "informative",
+    "phrase": "an informative seminar",
+    "level": 8
+  },
+  {
+    "word": "initiate",
+    "phrase": "initiate a negotiation",
+    "level": 6
+  },
+  {
+    "word": "input",
+    "phrase": "the input data",
+    "level": 5
+  },
+  {
+    "word": "inside",
+    "phrase": "Diners are seated inside.",
+    "level": 2
+  },
+  {
+    "word": "insofar",
+    "phrase": "insofar as",
+    "level": 4
+  },
+  {
+    "word": "inspector",
+    "phrase": "a certified building inspector",
+    "level": 5
+  },
+  {
+    "word": "inspiring",
+    "phrase": "an inspiring speech",
+    "level": 7
+  },
+  {
+    "word": "instance",
+    "phrase": "for instance",
+    "level": 4
+  },
+  {
+    "word": "instead",
+    "phrase": "instead of",
+    "level": 3
+  },
+  {
+    "word": "instrumental",
+    "phrase": "Tex was instrumental in the project.",
+    "level": 6
+  },
+  {
+    "word": "insulation",
+    "phrase": "sound insulation between rooms",
+    "level": 11
+  },
+  {
+    "word": "intact",
+    "phrase": "Everything arrived intact.",
+    "level": 7
+  },
+  {
+    "word": "integral",
+    "phrase": "The Internet is integral to our lives.",
+    "level": 8
+  },
+  {
+    "word": "intensive",
+    "phrase": "a three-day intensive training seminar",
+    "level": 8
+  },
+  {
+    "word": "intentionally",
+    "phrase": "intentionally delay payments",
+    "level": 7
+  },
+  {
+    "word": "interact",
+    "phrase": "interact with colleagues",
+    "level": 8
+  },
+  {
+    "word": "interested",
+    "phrase": "particularly interested in history",
+    "level": 1
+  },
+  {
+    "word": "international",
+    "phrase": "achieve international fame",
+    "level": 3
+  },
+  {
+    "word": "interoffice",
+    "phrase": "interoffice mail",
+    "level": 6
+  },
+  {
+    "word": "intersection",
+    "phrase": "Some people are waiting at the intersection.",
+    "level": 7
+  },
+  {
+    "word": "introduce",
+    "phrase": "introduce a new line of products",
+    "level": 2
+  },
+  {
+    "word": "introductory",
+    "phrase": "an introductory course",
+    "level": 8
+  },
+  {
+    "word": "invitation",
+    "phrase": "receive an invitation",
+    "level": 3
+  },
+  {
+    "word": "invite",
+    "phrase": "cordially invite",
+    "level": 2
+  },
+  {
+    "word": "issue",
+    "phrase": "a controversial issue",
+    "level": 4
+  },
+  {
+    "word": "itemize",
+    "phrase": "itemize travel expenses",
+    "level": 7
+  },
+  {
+    "word": "japan",
+    "phrase": "consider working in Japan",
+    "level": 2
+  },
+  {
+    "word": "Japanese",
+    "phrase": "translate English into Japanese",
+    "level": 2
+  },
+  {
+    "word": "jeopardy",
+    "phrase": "The company is in jeopardy.",
+    "level": 11
+  },
+  {
+    "word": "join",
+    "phrase": "join a committee",
+    "level": 2
+  },
+  {
+    "word": "journalism",
+    "phrase": "a degree in journalism",
+    "level": 4
+  },
+  {
+    "word": "journalist",
+    "phrase": "a distinguished career as a journalist",
+    "level": 4
+  },
+  {
+    "word": "juice",
+    "phrase": "A woman is pouring some juice.",
+    "level": 1
+  },
+  {
+    "word": "keenly",
+    "phrase": "keenly aware of the risks",
+    "level": 8
+  },
+  {
+    "word": "keep",
+    "phrase": "keep in mind that",
+    "level": 2
+  },
+  {
+    "word": "key",
+    "phrase": "a duplicate key",
+    "level": 1
+  },
+  {
+    "word": "keynote",
+    "phrase": "keynote address",
+    "level": 12
+  },
+  {
+    "word": "lack",
+    "phrase": "a lack of information",
+    "level": 3
+  },
+  {
+    "word": "ladder",
+    "phrase": "A man is standing on a ladder.",
+    "level": 3
+  },
+  {
+    "word": "landmark",
+    "phrase": "The tower is the town's landmark.",
+    "level": 8
+  },
+  {
+    "word": "landscaping",
+    "phrase": "a landscaping company",
+    "level": 5
+  },
+  {
+    "word": "lapse",
+    "phrase": "Don't let your membership lapse.",
+    "level": 7
+  },
+  {
+    "word": "large",
+    "phrase": "a large conference room",
+    "level": 1
+  },
+  {
+    "word": "lately",
+    "phrase": "I haven't seen Tex lately.",
+    "level": 3
+  },
+  {
+    "word": "later",
+    "phrase": "no later than",
+    "level": 2
+  },
+  {
+    "word": "latest",
+    "phrase": "Haruki Murakami's latest novel",
+    "level": 4
+  },
+  {
+    "word": "laundry",
+    "phrase": "( laundry) detergent",
+    "level": 4
+  },
+  {
+    "word": "lay",
+    "phrase": "lay out",
+    "level": 3
+  },
+  {
+    "word": "lead",
+    "phrase": "lead an organization",
+    "level": 2
+  },
+  {
+    "word": "leak",
+    "phrase": "The pipe under the sink is leak ing.",
+    "level": 6
+  },
+  {
+    "word": "leave",
+    "phrase": "paid leave",
+    "level": 2
+  },
+  {
+    "word": "lengthy",
+    "phrase": "a lengthy process",
+    "level": 9
+  },
+  {
+    "word": "let",
+    "phrase": "Let's try anyway.",
+    "level": 2
+  },
+  {
+    "word": "library",
+    "phrase": "a newly renovated library",
+    "level": 1
+  },
+  {
+    "word": "lid",
+    "phrase": "A man is holding a lid open.",
+    "level": 3
+  },
+  {
+    "word": "life",
+    "phrase": "Photographs capture memorable moments in life.",
+    "level": 1
+  },
+  {
+    "word": "light",
+    "phrase": "( light) bulb",
+    "level": 2
+  },
+  {
+    "word": "lighthouse",
+    "phrase": "Some people are gathered near a lighthouse.",
+    "level": 7
+  },
+  {
+    "word": "likely",
+    "phrase": "Who most likely is the woman?",
+    "level": 2
+  },
+  {
+    "word": "limit",
+    "phrase": "legislation to limit the use of drones",
+    "level": 2
+  },
+  {
+    "word": "limited",
+    "phrase": "for a limited time",
+    "level": 4
+  },
+  {
+    "word": "liquid",
+    "phrase": "liquid detergent",
+    "level": 4
+  },
+  {
+    "word": "list",
+    "phrase": "a regularly updated list",
+    "level": 1
+  },
+  {
+    "word": "live",
+    "phrase": "live in urban areas",
+    "level": 1
+  },
+  {
+    "word": "lives",
+    "phrase": "The Internet is integral to our lives.",
+    "level": 3
+  },
+  {
+    "word": "local",
+    "phrase": "local businesses",
+    "level": 3
+  },
+  {
+    "word": "locally",
+    "phrase": "locally grown crops",
+    "level": 8
+  },
+  {
+    "word": "locate",
+    "phrase": "I was unable to locate the book.",
+    "level": 4
+  },
+  {
+    "word": "logical",
+    "phrase": "a logical choice",
+    "level": 4
+  },
+  {
+    "word": "long",
+    "phrase": "as long as",
+    "level": 2
+  },
+  {
+    "word": "look",
+    "phrase": "Look at the picture marked number 1.",
+    "level": 1
+  },
+  {
+    "word": "lot",
+    "phrase": "work a lot of overtime",
+    "level": 2
+  },
+  {
+    "word": "luck",
+    "phrase": "Mr. Kato attributes his success to luck.",
+    "level": 3
+  },
+  {
+    "word": "luggage",
+    "phrase": "shop for luggage",
+    "level": 3
+  },
+  {
+    "word": "lunch",
+    "phrase": "meet in the cafeteria for lunch",
+    "level": 1
+  },
+  {
+    "word": "luncheon",
+    "phrase": "hold a luncheon",
+    "level": 7
+  },
+  {
+    "word": "luxury",
+    "phrase": "a luxury sedan",
+    "level": 4
+  },
+  {
+    "word": "machine",
+    "phrase": "operate a machine safely",
+    "level": 1
+  },
+  {
+    "word": "magazine",
+    "phrase": "publish a magazine",
+    "level": 1
+  },
+  {
+    "word": "main",
+    "phrase": "main duties of a teacher",
+    "level": 2
+  },
+  {
+    "word": "mainly",
+    "phrase": "work mainly in the steel industry",
+    "level": 4
+  },
+  {
+    "word": "major",
+    "phrase": "undergo major renovations",
+    "level": 3
+  },
+  {
+    "word": "malfunction",
+    "phrase": "a machine malfunction",
+    "level": 6
+  },
+  {
+    "word": "man",
+    "phrase": "What does the man offer to do?",
+    "level": 1
+  },
+  {
+    "word": "manager",
+    "phrase": "a property manager",
+    "level": 2
+  },
+  {
+    "word": "mandarin",
+    "phrase": "Applicants must be fluent in Mandarin.",
+    "level": 5
+  },
+  {
+    "word": "mandatory",
+    "phrase": "attend a mandatory meeting",
+    "level": 10
+  },
+  {
+    "word": "manner",
+    "phrase": "in a timely manner",
+    "level": 3
+  },
+  {
+    "word": "map",
+    "phrase": "Please refer to the map.",
+    "level": 1
+  },
+  {
+    "word": "margin",
+    "phrase": "by a wide margin",
+    "level": 5
+  },
+  {
+    "word": "match",
+    "phrase": "Few companies can match our quality service.",
+    "level": 3
+  },
+  {
+    "word": "maximize",
+    "phrase": "minimize costs and maximize profits",
+    "level": 9
+  },
+  {
+    "word": "meal",
+    "phrase": "seat and meal preferences",
+    "level": 2
+  },
+  {
+    "word": "meantime",
+    "phrase": "in the meantime",
+    "level": 4
+  },
+  {
+    "word": "media",
+    "phrase": "media coverage",
+    "level": 3
+  },
+  {
+    "word": "meet",
+    "phrase": "meet in the cafeteria for lunch",
+    "level": 2
+  },
+  {
+    "word": "member",
+    "phrase": "a faculty member at Tex College",
+    "level": 1
+  },
+  {
+    "word": "memorabilia",
+    "phrase": "sports memorabilia such as balls and photos",
+    "level": 6
+  },
+  {
+    "word": "memorable",
+    "phrase": "Photographs capture memorable moments in life.",
+    "level": 8
+  },
+  {
+    "word": "mention",
+    "phrase": "What problem does the man mention?",
+    "level": 3
+  },
+  {
+    "word": "microscope",
+    "phrase": "The man is using a microscope.",
+    "level": 6
+  },
+  {
+    "word": "microwave",
+    "phrase": "microwave oven",
+    "level": 5
+  },
+  {
+    "word": "mind",
+    "phrase": "urge Tex to change his mind",
+    "level": 2
+  },
+  {
+    "word": "minimize",
+    "phrase": "minimize costs and maximize profits",
+    "level": 8
+  },
+  {
+    "word": "moderate",
+    "phrase": "moderate exercise",
+    "level": 5
+  },
+  {
+    "word": "modest",
+    "phrase": "a modest increase in price",
+    "level": 4
+  },
+  {
+    "word": "modify",
+    "phrase": "modify a contract",
+    "level": 5
+  },
+  {
+    "word": "money",
+    "phrase": "raise money for charity",
+    "level": 1
+  },
+  {
+    "word": "morning",
+    "phrase": "Telephone service was restored this morning.",
+    "level": 1
+  },
+  {
+    "word": "move",
+    "phrase": "move the headquarters to Boston",
+    "level": 2
+  },
+  {
+    "word": "movie",
+    "phrase": "a critically acclaimed movie",
+    "level": 1
+  },
+  {
+    "word": "municipal",
+    "phrase": "the municipal government",
+    "level": 7
+  },
+  {
+    "word": "narrow",
+    "phrase": "narrow down",
+    "level": 1
+  },
+  {
+    "word": "nationwide",
+    "phrase": "nationwide delivery",
+    "level": 8
+  },
+  {
+    "word": "native",
+    "phrase": "a singer native to the town",
+    "level": 2
+  },
+  {
+    "word": "nearly",
+    "phrase": "nearly two years",
+    "level": 2
+  },
+  {
+    "word": "necessary",
+    "phrase": "necessary forms",
+    "level": 1
+  },
+  {
+    "word": "need",
+    "phrase": "I definitely need the item.",
+    "level": 2
+  },
+  {
+    "word": "negative",
+    "phrase": "have a negative impact on the environment",
+    "level": 3
+  },
+  {
+    "word": "new",
+    "phrase": "new office equipment",
+    "level": 1
+  },
+  {
+    "word": "newly",
+    "phrase": "a newly renovated library",
+    "level": 4
+  },
+  {
+    "word": "newspaper",
+    "phrase": "a newspaper editor",
+    "level": 2
+  },
+  {
+    "word": "noise",
+    "phrase": "complaints about the noise",
+    "level": 2
+  },
+  {
+    "word": "nominal",
+    "phrase": "for a nominal fee",
+    "level": 10
+  },
+  {
+    "word": "nominate",
+    "phrase": "nominate a colleague for an award",
+    "level": 8
+  },
+  {
+    "word": "notable",
+    "phrase": "a notable feature",
+    "level": 7
+  },
+  {
+    "word": "note",
+    "phrase": "Please note that prices may change.",
+    "level": 2
+  },
+  {
+    "word": "notify",
+    "phrase": "notify employees of the change",
+    "level": 8
+  },
+  {
+    "word": "nutritious",
+    "phrase": "affordable and nutritious dishes",
+    "level": 9
+  },
+  {
+    "word": "object",
+    "phrase": "object to a plan",
+    "level": 3
+  },
+  {
+    "word": "objectionable",
+    "phrase": "The guest found the noise objectionable.",
+    "level": 10
+  },
+  {
+    "word": "observe",
+    "phrase": "observe a trend",
+    "level": 3
+  },
+  {
+    "word": "obstruct",
+    "phrase": "obstruct the view",
+    "level": 9
+  },
+  {
+    "word": "occupancy",
+    "phrase": "the occupancy rate of hotels",
+    "level": 7
+  },
+  {
+    "word": "old",
+    "phrase": "substitute new for old",
+    "level": 1
+  },
+  {
+    "word": "ongoing",
+    "phrase": "an ongoing project",
+    "level": 8
+  },
+  {
+    "word": "open",
+    "phrase": "open a new branch",
+    "level": 1
+  },
+  {
+    "word": "opening",
+    "phrase": "a job opening",
+    "level": 4
+  },
+  {
+    "word": "operate",
+    "phrase": "operate a machine safely",
+    "level": 3
+  },
+  {
+    "word": "opposite",
+    "phrase": "sit opposite",
+    "level": 2
+  },
+  {
+    "word": "out",
+    "phrase": "The item is currently out of stock.",
+    "level": 1
+  },
+  {
+    "word": "outage",
+    "phrase": "a power outage",
+    "level": 8
+  },
+  {
+    "word": "outdoor",
+    "phrase": "suitable for outdoor use",
+    "level": 3
+  },
+  {
+    "word": "outgoing",
+    "phrase": "an outgoing person",
+    "level": 7
+  },
+  {
+    "word": "outlet",
+    "phrase": "open an outlet in Japan",
+    "level": 5
+  },
+  {
+    "word": "outline",
+    "phrase": "outline a policy",
+    "level": 4
+  },
+  {
+    "word": "output",
+    "phrase": "the daily output of a factory",
+    "level": 4
+  },
+  {
+    "word": "outreach",
+    "phrase": "a community outreach program",
+    "level": 7
+  },
+  {
+    "word": "outstanding",
+    "phrase": "outstanding service",
+    "level": 4
+  },
+  {
+    "word": "oven",
+    "phrase": "microwave oven",
+    "level": 3
+  },
+  {
+    "word": "overhead",
+    "phrase": "in the overhead compartment",
+    "level": 5
+  },
+  {
+    "word": "overlook",
+    "phrase": "High-rise buildings overlook the water.",
+    "level": 4
+  },
+  {
+    "word": "overnight",
+    "phrase": "free overnight delivery",
+    "level": 3
+  },
+  {
+    "word": "overseas",
+    "phrase": "overseas markets",
+    "level": 4
+  },
+  {
+    "word": "overwhelmingly",
+    "phrase": "an overwhelmingly positive response",
+    "level": 5
+  },
+  {
+    "word": "ownership",
+    "phrase": "The company has recently changed ownership.",
+    "level": 6
+  },
+  {
+    "word": "packet",
+    "phrase": "a packet of materials",
+    "level": 4
+  },
+  {
+    "word": "page",
+    "phrase": "page through",
+    "level": 1
+  },
+  {
+    "word": "paint",
+    "phrase": "dilute paint with water",
+    "level": 2
+  },
+  {
+    "word": "panel",
+    "phrase": "a panel of experts",
+    "level": 4
+  },
+  {
+    "word": "paperwork",
+    "phrase": "All the paperwork is ready.",
+    "level": 6
+  },
+  {
+    "word": "parking",
+    "phrase": "Street parking is prohibited in this area.",
+    "level": 3
+  },
+  {
+    "word": "participate",
+    "phrase": "participate in the workshop",
+    "level": 5
+  },
+  {
+    "word": "party",
+    "phrase": "book a table for a party of five",
+    "level": 1
+  },
+  {
+    "word": "pass",
+    "phrase": "pass up the opportunity",
+    "level": 2
+  },
+  {
+    "word": "past",
+    "phrase": "over the past two decades",
+    "level": 2
+  },
+  {
+    "word": "patiently",
+    "phrase": "patiently answer questions",
+    "level": 6
+  },
+  {
+    "word": "patio",
+    "phrase": "A patio overlooks a river.",
+    "level": 6
+  },
+  {
+    "word": "pay",
+    "phrase": "pay a late fee",
+    "level": 2
+  },
+  {
+    "word": "paycheck",
+    "phrase": "receive a paycheck",
+    "level": 6
+  },
+  {
+    "word": "people",
+    "phrase": "The room can fit 50 people.",
+    "level": 1
+  },
+  {
+    "word": "periodical",
+    "phrase": "publish a periodical",
+    "level": 8
+  },
+  {
+    "word": "perishable",
+    "phrase": "perishable food items",
+    "level": 6
+  },
+  {
+    "word": "permission",
+    "phrase": "permission from a supervisor",
+    "level": 4
+  },
+  {
+    "word": "person",
+    "phrase": "the person in authority",
+    "level": 1
+  },
+  {
+    "word": "personal",
+    "phrase": "personal electronic devices",
+    "level": 3
+  },
+  {
+    "word": "persuasive",
+    "phrase": "give a persuasive speech",
+    "level": 7
+  },
+  {
+    "word": "photographer",
+    "phrase": "a wildlife photographer",
+    "level": 3
+  },
+  {
+    "word": "picture",
+    "phrase": "Look at the picture marked number 1.",
+    "level": 1
+  },
+  {
+    "word": "picturesque",
+    "phrase": "a picturesque village",
+    "level": 7
+  },
+  {
+    "word": "pipe",
+    "phrase": "The pipe under the sink is leak ing.",
+    "level": 1
+  },
+  {
+    "word": "place",
+    "phrase": "The reception will take place next week.",
+    "level": 2
+  },
+  {
+    "word": "plane",
+    "phrase": "Some people are heading toward a plane.",
+    "level": 1
+  },
+  {
+    "word": "plaque",
+    "phrase": "a commemorative plaque",
+    "level": 9
+  },
+  {
+    "word": "plastic",
+    "phrase": "plastic bag",
+    "level": 3
+  },
+  {
+    "word": "plaza",
+    "phrase": "Some people are walking through a plaza.",
+    "level": 11
+  },
+  {
+    "word": "please",
+    "phrase": "Please refer to the map.",
+    "level": 1
+  },
+  {
+    "word": "plenty",
+    "phrase": "plenty of",
+    "level": 2
+  },
+  {
+    "word": "point",
+    "phrase": "focus on one point",
+    "level": 1
+  },
+  {
+    "word": "poor",
+    "phrase": "poor ventilation",
+    "level": 1
+  },
+  {
+    "word": "popular",
+    "phrase": "the author of a popular book",
+    "level": 1
+  },
+  {
+    "word": "popularity",
+    "phrase": "a rise in popularity",
+    "level": 4
+  },
+  {
+    "word": "positive",
+    "phrase": "positive reviews from critics",
+    "level": 3
+  },
+  {
+    "word": "possess",
+    "phrase": "possess knowledge",
+    "level": 4
+  },
+  {
+    "word": "postage",
+    "phrase": "Postage is calculated by weight.",
+    "level": 6
+  },
+  {
+    "word": "potted",
+    "phrase": "Potted plants have been arranged in rows.",
+    "level": 11
+  },
+  {
+    "word": "pottery",
+    "phrase": "Some pottery is being displayed.",
+    "level": 7
+  },
+  {
+    "word": "power",
+    "phrase": "a power outage",
+    "level": 1
+  },
+  {
+    "word": "precisely",
+    "phrase": "rapidly and precisely",
+    "level": 5
+  },
+  {
+    "word": "predict",
+    "phrase": "some experts predict that",
+    "level": 6
+  },
+  {
+    "word": "prefer",
+    "phrase": "I prefer to work part-time.",
+    "level": 2
+  },
+  {
+    "word": "preliminary",
+    "phrase": "preliminary results from a survey",
+    "level": 6
+  },
+  {
+    "word": "premier",
+    "phrase": "one of Tokyo's premier restaurants",
+    "level": 8
+  },
+  {
+    "word": "preparation",
+    "phrase": "in preparation for an event",
+    "level": 4
+  },
+  {
+    "word": "prepare",
+    "phrase": "prepare for an upcoming event",
+    "level": 3
+  },
+  {
+    "word": "prescription",
+    "phrase": "ask for a prescription",
+    "level": 5
+  },
+  {
+    "word": "presence",
+    "phrase": "a strong presence in the area",
+    "level": 4
+  },
+  {
+    "word": "present",
+    "phrase": "present an award",
+    "level": 1
+  },
+  {
+    "word": "presenter",
+    "phrase": "Some people are applauding the presenter.",
+    "level": 8
+  },
+  {
+    "word": "preserve",
+    "phrase": "preserve the environment",
+    "level": 4
+  },
+  {
+    "word": "press",
+    "phrase": "press conference",
+    "level": 3
+  },
+  {
+    "word": "prestigious",
+    "phrase": "a prestigious award",
+    "level": 9
+  },
+  {
+    "word": "previous",
+    "phrase": "have no previous experience",
+    "level": 3
+  },
+  {
+    "word": "primary",
+    "phrase": "primary duties",
+    "level": 4
+  },
+  {
+    "word": "print",
+    "phrase": "out of print",
+    "level": 2
+  },
+  {
+    "word": "priority",
+    "phrase": "a high priority",
+    "level": 4
+  },
+  {
+    "word": "privileged",
+    "phrase": "We are privileged to work with you.",
+    "level": 9
+  },
+  {
+    "word": "prize",
+    "phrase": "recipients of the prize",
+    "level": 3
+  },
+  {
+    "word": "problem",
+    "phrase": "What problem does the man mention?",
+    "level": 2
+  },
+  {
+    "word": "produce",
+    "phrase": "produce dependable cars and trucks",
+    "level": 3
+  },
+  {
+    "word": "professional",
+    "phrase": "professional advice",
+    "level": 3
+  },
+  {
+    "word": "prominently",
+    "phrase": "prominently displayed in a magazine",
+    "level": 5
+  },
+  {
+    "word": "promising",
+    "phrase": "the most promising applicant",
+    "level": 3
+  },
+  {
+    "word": "proof",
+    "phrase": "proof of purchase",
+    "level": 3
+  },
+  {
+    "word": "proprietor",
+    "phrase": "the proprietor of a clothing shop",
+    "level": 11
+  },
+  {
+    "word": "prosperous",
+    "phrase": "a prosperous town",
+    "level": 5
+  },
+  {
+    "word": "proudly",
+    "phrase": "proudly announce",
+    "level": 4
+  },
+  {
+    "word": "prove",
+    "phrase": "prove to be difficult",
+    "level": 3
+  },
+  {
+    "word": "provide",
+    "phrase": "Please provide me with your e-mail address.",
+    "level": 3
+  },
+  {
+    "word": "publicize",
+    "phrase": "publicize a book",
+    "level": 9
+  },
+  {
+    "word": "publish",
+    "phrase": "publish a magazine",
+    "level": 3
+  },
+  {
+    "word": "purveyor",
+    "phrase": "a purveyor of groceries",
+    "level": 6
+  },
+  {
+    "word": "quarterly",
+    "phrase": "a quarterly magazine",
+    "level": 8
+  },
+  {
+    "word": "questionnaire",
+    "phrase": "fill out a questionnaire",
+    "level": 8
+  },
+  {
+    "word": "raffle",
+    "phrase": "sell raffle tickets",
+    "level": 6
+  },
+  {
+    "word": "rapidly",
+    "phrase": "a rapidly growing company",
+    "level": 3
+  },
+  {
+    "word": "rarely",
+    "phrase": "The CEO rarely appears in public.",
+    "level": 3
+  },
+  {
+    "word": "reach",
+    "phrase": "reach a compromise",
+    "level": 2
+  },
+  {
+    "word": "read",
+    "phrase": "Please read all the instruction s.",
+    "level": 2
+  },
+  {
+    "word": "reader",
+    "phrase": "an avid reader",
+    "level": 2
+  },
+  {
+    "word": "ready",
+    "phrase": "We are ready to ship your order.",
+    "level": 1
+  },
+  {
+    "word": "reasonable",
+    "phrase": "a reasonable price",
+    "level": 2
+  },
+  {
+    "word": "receive",
+    "phrase": "receive a bill",
+    "level": 1
+  },
+  {
+    "word": "recent",
+    "phrase": "relatively recent trend",
+    "level": 3
+  },
+  {
+    "word": "recently",
+    "phrase": "I recently bought a printer.",
+    "level": 3
+  },
+  {
+    "word": "recycle",
+    "phrase": "recycle food waste to make fertilizer",
+    "level": 5
+  },
+  {
+    "word": "redeemable",
+    "phrase": "Gift cards are redeemable for merchandise only.",
+    "level": 6
+  },
+  {
+    "word": "reduce",
+    "phrase": "reduce prices",
+    "level": 4
+  },
+  {
+    "word": "refer",
+    "phrase": "Please refer to the map.",
+    "level": 3
+  },
+  {
+    "word": "refrain",
+    "phrase": "Please refrain from using mobile phones.",
+    "level": 7
+  },
+  {
+    "word": "regardless",
+    "phrase": "regardless of",
+    "level": 5
+  },
+  {
+    "word": "region",
+    "phrase": "companies in the region",
+    "level": 5
+  },
+  {
+    "word": "regularly",
+    "phrase": "a regularly updated list",
+    "level": 4
+  },
+  {
+    "word": "reimburse",
+    "phrase": "reimburse travel expenses",
+    "level": 12
+  },
+  {
+    "word": "reject",
+    "phrase": "reject a proposal",
+    "level": 3
+  },
+  {
+    "word": "relatively",
+    "phrase": "relatively recent trend",
+    "level": 4
+  },
+  {
+    "word": "reluctant",
+    "phrase": "What is the man reluctant to do?",
+    "level": 5
+  },
+  {
+    "word": "remarkable",
+    "phrase": "make remarkable progress",
+    "level": 4
+  },
+  {
+    "word": "remember",
+    "phrase": "I can't remember the exact date.",
+    "level": 2
+  },
+  {
+    "word": "remind",
+    "phrase": "remind employees about the policy",
+    "level": 3
+  },
+  {
+    "word": "remote",
+    "phrase": "a remote mountain village",
+    "level": 4
+  },
+  {
+    "word": "renew",
+    "phrase": "renew a contract",
+    "level": 5
+  },
+  {
+    "word": "renowned",
+    "phrase": "a renowned scientist",
+    "level": 9
+  },
+  {
+    "word": "rental",
+    "phrase": "a rental agreement",
+    "level": 5
+  },
+  {
+    "word": "replace",
+    "phrase": "replace the batteries",
+    "level": 4
+  },
+  {
+    "word": "represent",
+    "phrase": "represent a company",
+    "level": 4
+  },
+  {
+    "word": "request",
+    "phrase": "request additional staff",
+    "level": 2
+  },
+  {
+    "word": "research",
+    "phrase": "market research",
+    "level": 3
+  },
+  {
+    "word": "resistant",
+    "phrase": "heat- resistant glass",
+    "level": 7
+  },
+  {
+    "word": "resolve",
+    "phrase": "The problem was resolve d.",
+    "level": 5
+  },
+  {
+    "word": "respect",
+    "phrase": "earn the respect of people",
+    "level": 3
+  },
+  {
+    "word": "response",
+    "phrase": "I'm writing in response to your letter.",
+    "level": 3
+  },
+  {
+    "word": "restore",
+    "phrase": "restore a mural",
+    "level": 4
+  },
+  {
+    "word": "restrict",
+    "phrase": "restrict employees from accessing the Internet",
+    "level": 6
+  },
+  {
+    "word": "retain",
+    "phrase": "retain a receipt",
+    "level": 5
+  },
+  {
+    "word": "retreat",
+    "phrase": "plan a company retreat",
+    "level": 5
+  },
+  {
+    "word": "retrieve",
+    "phrase": "retrieve the data",
+    "level": 9
+  },
+  {
+    "word": "reunion",
+    "phrase": "attend a class reunion",
+    "level": 9
+  },
+  {
+    "word": "reveal",
+    "phrase": "reveal the cause of the problem",
+    "level": 4
+  },
+  {
+    "word": "revise",
+    "phrase": "revise a plan",
+    "level": 6
+  },
+  {
+    "word": "revitalize",
+    "phrase": "revitalize a community",
+    "level": 11
+  },
+  {
+    "word": "revolving",
+    "phrase": "revolving door",
+    "level": 8
+  },
+  {
+    "word": "reward",
+    "phrase": "reward employees for their hard work",
+    "level": 3
+  },
+  {
+    "word": "rigorous",
+    "phrase": "a rigorous testing process",
+    "level": 9
+  },
+  {
+    "word": "risk",
+    "phrase": "eliminate a risk",
+    "level": 3
+  },
+  {
+    "word": "roof",
+    "phrase": "The roof of the house is slanted.",
+    "level": 1
+  },
+  {
+    "word": "route",
+    "phrase": "a heavily used bus route",
+    "level": 3
+  },
+  {
+    "word": "routine",
+    "phrase": "routine maintenance work",
+    "level": 5
+  },
+  {
+    "word": "row",
+    "phrase": "Cars are parked in a row.",
+    "level": 3
+  },
+  {
+    "word": "run",
+    "phrase": "run a company",
+    "level": 2
+  },
+  {
+    "word": "rush",
+    "phrase": "in a rush",
+    "level": 2
+  },
+  {
+    "word": "safely",
+    "phrase": "operate a machine safely",
+    "level": 3
+  },
+  {
+    "word": "sample",
+    "phrase": "sample local food",
+    "level": 3
+  },
+  {
+    "word": "satisfaction",
+    "phrase": "Customer satisfaction is essential to us.",
+    "level": 5
+  },
+  {
+    "word": "satisfied",
+    "phrase": "I am fully satisfied with the service.",
+    "level": 4
+  },
+  {
+    "word": "scenic",
+    "phrase": "take the scenic route",
+    "level": 8
+  },
+  {
+    "word": "scientist",
+    "phrase": "a renowned scientist",
+    "level": 3
+  },
+  {
+    "word": "scope",
+    "phrase": "the scope of the study",
+    "level": 6
+  },
+  {
+    "word": "screen",
+    "phrase": "A man is pointing at a screen.",
+    "level": 3
+  },
+  {
+    "word": "screening",
+    "phrase": "a screening of a film",
+    "level": 8
+  },
+  {
+    "word": "search",
+    "phrase": "the search for the next president",
+    "level": 4
+  },
+  {
+    "word": "seaside",
+    "phrase": "a seaside inn",
+    "level": 3
+  },
+  {
+    "word": "seat",
+    "phrase": "seat and meal preferences",
+    "level": 1
+  },
+  {
+    "word": "Seattle",
+    "phrase": "a Seattle- based company",
+    "level": 4
+  },
+  {
+    "word": "secretary",
+    "phrase": "a reliable secretary",
+    "level": 2
+  },
+  {
+    "word": "securely",
+    "phrase": "The door is securely locked.",
+    "level": 6
+  },
+  {
+    "word": "sedan",
+    "phrase": "a luxury sedan",
+    "level": 10
+  },
+  {
+    "word": "see",
+    "phrase": "We are delighted to see you.",
+    "level": 2
+  },
+  {
+    "word": "sell",
+    "phrase": "determine how to sell the product",
+    "level": 1
+  },
+  {
+    "word": "send",
+    "phrase": "send a résumé",
+    "level": 1
+  },
+  {
+    "word": "sense",
+    "phrase": "make sense",
+    "level": 3
+  },
+  {
+    "word": "sensitive",
+    "phrase": "a highly sensitive camera",
+    "level": 4
+  },
+  {
+    "word": "separate",
+    "phrase": "My order arrived in two separate shipments.",
+    "level": 3
+  },
+  {
+    "word": "September",
+    "phrase": "Construction will commence in September.",
+    "level": 2
+  },
+  {
+    "word": "serve",
+    "phrase": "serve food and beverages to guests",
+    "level": 3
+  },
+  {
+    "word": "service",
+    "phrase": "We charge $ 50 for the service.",
+    "level": 3
+  },
+  {
+    "word": "set",
+    "phrase": "set an ambitious goal",
+    "level": 2
+  },
+  {
+    "word": "setting",
+    "phrase": "a hotel in a beautiful setting",
+    "level": 3
+  },
+  {
+    "word": "shadow",
+    "phrase": "cast a shadow",
+    "level": 3
+  },
+  {
+    "word": "shape",
+    "phrase": "out of shape",
+    "level": 2
+  },
+  {
+    "word": "sharply",
+    "phrase": "Sales rose sharply.",
+    "level": 4
+  },
+  {
+    "word": "shelves",
+    "phrase": "The shelves are full of books.",
+    "level": 4
+  },
+  {
+    "word": "shopping",
+    "phrase": "a shopping excursion",
+    "level": 1
+  },
+  {
+    "word": "short",
+    "phrase": "in short",
+    "level": 1
+  },
+  {
+    "word": "shortly",
+    "phrase": "The meeting will begin shortly.",
+    "level": 4
+  },
+  {
+    "word": "showcase",
+    "phrase": "showcase new products",
+    "level": 10
+  },
+  {
+    "word": "shut",
+    "phrase": "The machine will automatically shut down.",
+    "level": 1
+  },
+  {
+    "word": "shuttle",
+    "phrase": "free shuttle service",
+    "level": 10
+  },
+  {
+    "word": "sign",
+    "phrase": "sign up for membership",
+    "level": 2
+  },
+  {
+    "word": "signature",
+    "phrase": "I need your signature on this form.",
+    "level": 3
+  },
+  {
+    "word": "simplify",
+    "phrase": "simplify a system",
+    "level": 7
+  },
+  {
+    "word": "simply",
+    "phrase": "Simply fill out the form below.",
+    "level": 3
+  },
+  {
+    "word": "singer",
+    "phrase": "a singer native to the town",
+    "level": 1
+  },
+  {
+    "word": "sink",
+    "phrase": "The pipe under the sink is leak ing.",
+    "level": 3
+  },
+  {
+    "word": "sit",
+    "phrase": "sit opposite",
+    "level": 1
+  },
+  {
+    "word": "site",
+    "phrase": "purchase directly from a Web site",
+    "level": 4
+  },
+  {
+    "word": "situated",
+    "phrase": "Situated downtown, the hotel is convenient.",
+    "level": 6
+  },
+  {
+    "word": "slightly",
+    "phrase": "slightly increased from 24 to 27 percent",
+    "level": 4
+  },
+  {
+    "word": "slope",
+    "phrase": "a steep slope",
+    "level": 3
+  },
+  {
+    "word": "solely",
+    "phrase": "be solely responsible for the decision",
+    "level": 5
+  },
+  {
+    "word": "solicit",
+    "phrase": "solicit donations",
+    "level": 9
+  },
+  {
+    "word": "solid",
+    "phrase": "a solid reputation",
+    "level": 2
+  },
+  {
+    "word": "solution",
+    "phrase": "find a solution",
+    "level": 4
+  },
+  {
+    "word": "solve",
+    "phrase": "solve a problem",
+    "level": 3
+  },
+  {
+    "word": "soon",
+    "phrase": "as soon as",
+    "level": 2
+  },
+  {
+    "word": "sorry",
+    "phrase": "I'm sorry to disturb you.",
+    "level": 1
+  },
+  {
+    "word": "sound",
+    "phrase": "sound insulation between rooms",
+    "level": 2
+  },
+  {
+    "word": "souvenir",
+    "phrase": "a souvenir shop",
+    "level": 7
+  },
+  {
+    "word": "spacious",
+    "phrase": "a spacious room",
+    "level": 8
+  },
+  {
+    "word": "spare",
+    "phrase": "spare no expense",
+    "level": 3
+  },
+  {
+    "word": "speak",
+    "phrase": "ability to speak three languages",
+    "level": 1
+  },
+  {
+    "word": "spectacular",
+    "phrase": "a spectacular sunset",
+    "level": 6
+  },
+  {
+    "word": "speculation",
+    "phrase": "speculation from industry experts",
+    "level": 7
+  },
+  {
+    "word": "spite",
+    "phrase": "in spite of",
+    "level": 4
+  },
+  {
+    "word": "stable",
+    "phrase": "a stable supply of electricity",
+    "level": 5
+  },
+  {
+    "word": "stadium",
+    "phrase": "There are spectators in the stadium.",
+    "level": 3
+  },
+  {
+    "word": "staff",
+    "phrase": "request additional staff",
+    "level": 3
+  },
+  {
+    "word": "stagnant",
+    "phrase": "a stagnant market",
+    "level": 11
+  },
+  {
+    "word": "stay",
+    "phrase": "an enjoyable stay at a hotel",
+    "level": 2
+  },
+  {
+    "word": "steadily",
+    "phrase": "Sales have been increasing steadily.",
+    "level": 5
+  },
+  {
+    "word": "steep",
+    "phrase": "a steep slope",
+    "level": 4
+  },
+  {
+    "word": "Steve",
+    "phrase": "Steve's last public appearance",
+    "level": 1
+  },
+  {
+    "word": "strength",
+    "phrase": "the strength of materials",
+    "level": 3
+  },
+  {
+    "word": "stress",
+    "phrase": "stress the importance of reading",
+    "level": 3
+  },
+  {
+    "word": "stringent",
+    "phrase": "stringent quality standards",
+    "level": 11
+  },
+  {
+    "word": "strive",
+    "phrase": "strive to cut costs",
+    "level": 5
+  },
+  {
+    "word": "strong",
+    "phrase": "a strong presence in the area",
+    "level": 1
+  },
+  {
+    "word": "sturdy",
+    "phrase": "The table looks sturdy.",
+    "level": 9
+  },
+  {
+    "word": "subject",
+    "phrase": "Prices are subject to change.",
+    "level": 3
+  },
+  {
+    "word": "subsidiary",
+    "phrase": "a subsidiary of a Japanese company",
+    "level": 7
+  },
+  {
+    "word": "substitute",
+    "phrase": "substitute new for old",
+    "level": 5
+  },
+  {
+    "word": "subway",
+    "phrase": "conveniently located near a subway station",
+    "level": 2
+  },
+  {
+    "word": "success",
+    "phrase": "The campaign resulted in success.",
+    "level": 3
+  },
+  {
+    "word": "sufficient",
+    "phrase": "sufficient time",
+    "level": 3
+  },
+  {
+    "word": "suggest",
+    "phrase": "suggest a change",
+    "level": 3
+  },
+  {
+    "word": "summary",
+    "phrase": "a brief summary",
+    "level": 6
+  },
+  {
+    "word": "summer",
+    "phrase": "seek interns for the summer",
+    "level": 1
+  },
+  {
+    "word": "sun",
+    "phrase": "be directly exposed to the sun",
+    "level": 1
+  },
+  {
+    "word": "sunset",
+    "phrase": "a spectacular sunset",
+    "level": 2
+  },
+  {
+    "word": "superb",
+    "phrase": "give a superb presentation",
+    "level": 7
+  },
+  {
+    "word": "supervisor",
+    "phrase": "permission from a supervisor",
+    "level": 8
+  },
+  {
+    "word": "supplement",
+    "phrase": "supplement income by writing books",
+    "level": 6
+  },
+  {
+    "word": "sure",
+    "phrase": "Make sure you have all your belongings.",
+    "level": 1
+  },
+  {
+    "word": "surpass",
+    "phrase": "surpass last year's sales",
+    "level": 7
+  },
+  {
+    "word": "surprisingly",
+    "phrase": "Surprisingly, Tex passed the exam.",
+    "level": 5
+  },
+  {
+    "word": "survey",
+    "phrase": "a customer survey",
+    "level": 5
+  },
+  {
+    "word": "survive",
+    "phrase": "The company is struggling to survive.",
+    "level": 3
+  },
+  {
+    "word": "suspend",
+    "phrase": "suspend production",
+    "level": 5
+  },
+  {
+    "word": "sustainable",
+    "phrase": "sustainable energy",
+    "level": 9
+  },
+  {
+    "word": "swimming",
+    "phrase": "amenities such as gyms and swimming pools",
+    "level": 3
+  },
+  {
+    "word": "synthetic",
+    "phrase": "synthetic materials",
+    "level": 9
+  },
+  {
+    "word": "tailor",
+    "phrase": "tailor services to clients ' needs",
+    "level": 3
+  },
+  {
+    "word": "teaching",
+    "phrase": "Teaching experience is desirable.",
+    "level": 4
+  },
+  {
+    "word": "team",
+    "phrase": "The team was praised by the CEO.",
+    "level": 1
+  },
+  {
+    "word": "tear",
+    "phrase": "wear and tear",
+    "level": 2
+  },
+  {
+    "word": "television",
+    "phrase": "the host of a television show",
+    "level": 2
+  },
+  {
+    "word": "temperature",
+    "phrase": "temperature fluctuations",
+    "level": 3
+  },
+  {
+    "word": "tentative",
+    "phrase": "a tentative schedule",
+    "level": 9
+  },
+  {
+    "word": "terminate",
+    "phrase": "terminate a contract",
+    "level": 9
+  },
+  {
+    "word": "testing",
+    "phrase": "a rigorous testing process",
+    "level": 5
+  },
+  {
+    "word": "thank",
+    "phrase": "Thank you for your assistance.",
+    "level": 1
+  },
+  {
+    "word": "thoughtfully",
+    "phrase": "a thoughtfully written article",
+    "level": 6
+  },
+  {
+    "word": "thrilled",
+    "phrase": "I'm thrilled to see you.",
+    "level": 7
+  },
+  {
+    "word": "ticket",
+    "phrase": "the bottom portion of the ticket",
+    "level": 1
+  },
+  {
+    "word": "token",
+    "phrase": "as a token of our appreciation for",
+    "level": 4
+  },
+  {
+    "word": "Tokyo",
+    "phrase": "one of Tokyo's premier restaurants",
+    "level": 6
+  },
+  {
+    "word": "touch",
+    "phrase": "get in touch with",
+    "level": 1
+  },
+  {
+    "word": "tourism",
+    "phrase": "tourism industry",
+    "level": 6
+  },
+  {
+    "word": "tower",
+    "phrase": "The tower is the town's landmark.",
+    "level": 1
+  },
+  {
+    "word": "track",
+    "phrase": "track an order",
+    "level": 2
+  },
+  {
+    "word": "trade",
+    "phrase": "trade fair",
+    "level": 3
+  },
+  {
+    "word": "traditional",
+    "phrase": "traditional Italian dishes",
+    "level": 4
+  },
+  {
+    "word": "traffic",
+    "phrase": "traffic updates",
+    "level": 3
+  },
+  {
+    "word": "trainer",
+    "phrase": "a corporate trainer",
+    "level": 4
+  },
+  {
+    "word": "transform",
+    "phrase": "transform a train station into a museum",
+    "level": 5
+  },
+  {
+    "word": "transit",
+    "phrase": "damage in transit",
+    "level": 9
+  },
+  {
+    "word": "transition",
+    "phrase": "the transition from school to work",
+    "level": 5
+  },
+  {
+    "word": "translate",
+    "phrase": "translate English into Japanese",
+    "level": 3
+  },
+  {
+    "word": "transparent",
+    "phrase": "transparent glass",
+    "level": 6
+  },
+  {
+    "word": "treat",
+    "phrase": "in for a treat",
+    "level": 3
+  },
+  {
+    "word": "trend",
+    "phrase": "relatively recent trend",
+    "level": 3
+  },
+  {
+    "word": "trouble",
+    "phrase": "due to mechanical trouble",
+    "level": 1
+  },
+  {
+    "word": "truck",
+    "phrase": "They're loading some boxes onto the truck.",
+    "level": 2
+  },
+  {
+    "word": "tuition",
+    "phrase": "pay tuition fees",
+    "level": 9
+  },
+  {
+    "word": "turnout",
+    "phrase": "the turnout for the concert",
+    "level": 10
+  },
+  {
+    "word": "turnover",
+    "phrase": "staff turnover",
+    "level": 7
+  },
+  {
+    "word": "tutorial",
+    "phrase": "an online tutorial",
+    "level": 9
+  },
+  {
+    "word": "twentieth",
+    "phrase": "celebrate the twentieth anniversary",
+    "level": 2
+  },
+  {
+    "word": "typically",
+    "phrase": "Our tours typically take an hour.",
+    "level": 5
+  },
+  {
+    "word": "unable",
+    "phrase": "What is the man unable to do?",
+    "level": 2
+  },
+  {
+    "word": "unanimous",
+    "phrase": "unanimous approval",
+    "level": 7
+  },
+  {
+    "word": "unattended",
+    "phrase": "The reception desk is unattended.",
+    "level": 5
+  },
+  {
+    "word": "undergo",
+    "phrase": "undergo major renovations",
+    "level": 5
+  },
+  {
+    "word": "understaffed",
+    "phrase": "We are really understaffed.",
+    "level": 6
+  },
+  {
+    "word": "unfortunately",
+    "phrase": "Unfortunately, there are some problems.",
+    "level": 4
+  },
+  {
+    "word": "unit",
+    "phrase": "a vacant unit in an apartment building",
+    "level": 3
+  },
+  {
+    "word": "unnecessary",
+    "phrase": "delete unnecessary files",
+    "level": 6
+  },
+  {
+    "word": "unoccupied",
+    "phrase": "The chairs are unoccupied.",
+    "level": 7
+  },
+  {
+    "word": "unprecedented",
+    "phrase": "rising for an unprecedented eight months",
+    "level": 10
+  },
+  {
+    "word": "unveil",
+    "phrase": "unveil a new product",
+    "level": 9
+  },
+  {
+    "word": "unwavering",
+    "phrase": "through your unwavering efforts",
+    "level": 7
+  },
+  {
+    "word": "urban",
+    "phrase": "live in urban areas",
+    "level": 5
+  },
+  {
+    "word": "urge",
+    "phrase": "urge Tex to change his mind",
+    "level": 5
+  },
+  {
+    "word": "urgent",
+    "phrase": "an urgent request",
+    "level": 4
+  },
+  {
+    "word": "use",
+    "phrase": "use public transportation",
+    "level": 1
+  },
+  {
+    "word": "useful",
+    "phrase": "The book contains useful information.",
+    "level": 1
+  },
+  {
+    "word": "usually",
+    "phrase": "The program is usually broadcast on Saturdays.",
+    "level": 1
+  },
+  {
+    "word": "vacant",
+    "phrase": "a vacant unit in an apartment building",
+    "level": 6
+  },
+  {
+    "word": "vacuum",
+    "phrase": "vacuum cleaner",
+    "level": 5
+  },
+  {
+    "word": "valuable",
+    "phrase": "a valuable addition to the team",
+    "level": 3
+  },
+  {
+    "word": "value",
+    "phrase": "the assessment of the value",
+    "level": 3
+  },
+  {
+    "word": "vase",
+    "phrase": "The vase is filled with flowers.",
+    "level": 3
+  },
+  {
+    "word": "ventilation",
+    "phrase": "poor ventilation",
+    "level": 12
+  },
+  {
+    "word": "venue",
+    "phrase": "a convention venue",
+    "level": 10
+  },
+  {
+    "word": "verify",
+    "phrase": "verify an account",
+    "level": 9
+  },
+  {
+    "word": "version",
+    "phrase": "an abridged version",
+    "level": 4
+  },
+  {
+    "word": "viable",
+    "phrase": "a financially viable option",
+    "level": 10
+  },
+  {
+    "word": "vicinity",
+    "phrase": "in the vicinity of the station",
+    "level": 12
+  },
+  {
+    "word": "vigorous",
+    "phrase": "a vigorous campaign",
+    "level": 6
+  },
+  {
+    "word": "visit",
+    "phrase": "visit a client",
+    "level": 1
+  },
+  {
+    "word": "vital",
+    "phrase": "Good communication is vital in the workplace.",
+    "level": 5
+  },
+  {
+    "word": "vocabulary",
+    "phrase": "a definitive TOEIC vocabulary book",
+    "level": 2
+  },
+  {
+    "word": "voluntary",
+    "phrase": "Attendance is voluntary.",
+    "level": 6
+  },
+  {
+    "word": "voucher",
+    "phrase": "a travel voucher",
+    "level": 8
+  },
+  {
+    "word": "waive",
+    "phrase": "We will waive the shipping charge.",
+    "level": 11
+  },
+  {
+    "word": "walkway",
+    "phrase": "A man is standing on a walkway.",
+    "level": 6
+  },
+  {
+    "word": "wall",
+    "phrase": "He's working beside a brick wall.",
+    "level": 1
+  },
+  {
+    "word": "warm",
+    "phrase": "a warm atmosphere",
+    "level": 1
+  },
+  {
+    "word": "washing",
+    "phrase": "washing machine",
+    "level": 4
+  },
+  {
+    "word": "waste",
+    "phrase": "recycle food waste to make fertilizer",
+    "level": 3
+  },
+  {
+    "word": "water",
+    "phrase": "Water is an important natural resource.",
+    "level": 1
+  },
+  {
+    "word": "wealth",
+    "phrase": "a wealth of",
+    "level": 2
+  },
+  {
+    "word": "wear",
+    "phrase": "Workers are required to wear uniforms.",
+    "level": 2
+  },
+  {
+    "word": "weather",
+    "phrase": "The weather is cold, so dress accordingly.",
+    "level": 2
+  },
+  {
+    "word": "web",
+    "phrase": "purchase directly from a Web site",
+    "level": 4
+  },
+  {
+    "word": "weight",
+    "phrase": "Postage is calculated by weight.",
+    "level": 3
+  },
+  {
+    "word": "wheelbarrow",
+    "phrase": "A man is pushing a wheelbarrow.",
+    "level": 6
+  },
+  {
+    "word": "wide",
+    "phrase": "a wide range of services",
+    "level": 1
+  },
+  {
+    "word": "widely",
+    "phrase": "be widely regarded as",
+    "level": 4
+  },
+  {
+    "word": "willing",
+    "phrase": "I am willing to work overseas.",
+    "level": 3
+  },
+  {
+    "word": "withdraw",
+    "phrase": "withdraw a product from the market",
+    "level": 5
+  },
+  {
+    "word": "withstand",
+    "phrase": "withstand high temperatures",
+    "level": 7
+  },
+  {
+    "word": "woman",
+    "phrase": "Who most likely is the woman?",
+    "level": 1
+  },
+  {
+    "word": "worker",
+    "phrase": "Mr. Kato is a diligent worker.",
+    "level": 2
+  },
+  {
+    "word": "workload",
+    "phrase": "reduce the workload",
+    "level": 6
+  },
+  {
+    "word": "worth",
+    "phrase": "The book is worth reading.",
+    "level": 3
+  },
+  {
+    "word": "write",
+    "phrase": "write a memo",
+    "level": 1
+  },
+  {
+    "word": "yesterday",
+    "phrase": "The board of directors met yesterday.",
+    "level": 1
+  },
+  {
+    "word": "young",
+    "phrase": "a young entrepreneur",
+    "level": 1
+  }
+]

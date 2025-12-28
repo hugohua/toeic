@@ -241,6 +241,48 @@ export async function deleteArticle(articleId) {
 }
 
 /**
+ * 保存笔记
+ * @param {string} title - 笔记标题（唯一，不重复）
+ * @param {string} content - 笔记内容
+ * @param {string} type - 笔记类型：'单词' 或 '短语'
+ */
+export async function saveNote(title, content, type) {
+  return apiRequest('/notes', {
+    method: 'POST',
+    body: JSON.stringify({
+      title,
+      content,
+      type,
+    }),
+  });
+}
+
+/**
+ * 获取所有笔记列表
+ */
+export async function getAllNotes() {
+  return apiRequest('/notes');
+}
+
+/**
+ * 根据ID获取笔记详情
+ * @param {number} noteId - 笔记ID
+ */
+export async function getNoteById(noteId) {
+  return apiRequest(`/notes/${noteId}`);
+}
+
+/**
+ * 删除笔记
+ * @param {number} noteId - 笔记ID
+ */
+export async function deleteNote(noteId) {
+  return apiRequest(`/notes/${noteId}`, {
+    method: 'DELETE',
+  });
+}
+
+/**
  * 通用的流式请求处理函数（处理 OpenAI SSE 格式响应）
  * @param {string} endpoint - API endpoint（例如 '/generate-article'）
  * @param {object} requestBody - 请求体数据

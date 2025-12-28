@@ -13,6 +13,8 @@ import CategoryAddPage from './pages/CategoryAddPage';
 import WordArticlePage from './pages/WordArticlePage';
 import ArticleListPage from './pages/ArticleListPage';
 import ArticleDetailPage from './pages/ArticleDetailPage';
+import NoteListPage from './pages/NoteListPage';
+import NoteDetailPage from './pages/NoteDetailPage';
 import { initCategoryCache } from './utils/app';
 import { PopupContainer } from './components/Popup';
 
@@ -41,6 +43,8 @@ function App() {
       <Route path="/article" element={<WordArticlePage />} />
       <Route path="/articles" element={<ArticleListPage />} />
       <Route path="/article/:id" element={<ArticleDetailPage />} />
+      <Route path="/notes" element={<NoteListPage />} />
+      <Route path="/note/:id" element={<NoteDetailPage />} />
       </Routes>
     </>
   );

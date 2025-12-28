@@ -17,6 +17,10 @@ const {
   getAllArticles,
   getArticleById,
   deleteArticle,
+  saveNote,
+  getAllNotes,
+  getNoteById,
+  deleteNote,
 } = require('./src/db/database');
 
 // 加载配置：优先使用 config.js，如果不存在则从环境变量读取
@@ -338,6 +342,104 @@ app.delete('/api/articles/:id', (req, res) => {
     res.json({ success: true, message: '文章已删除' });
   } catch (error) {
     console.error('删除文章错误:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// 保存笔记
+app.post('/api/notes', (req, res) => {
+  try {
+    const { title, content, type } = req.body;
+
+    if (!title || typeof title !== 'string' || title.trim() === '') {
+      return res.status(400).json({
+        success: false,
+        error: '笔记标题是必需的',
+      });
+    }
+
+    if (!content || typeof content !== 'string' || content.trim() === '') {
+      return res.status(400).json({
+        success: false,
+        error: '笔记内容是必需的',
+      });
+    }
+
+    if (!type) {
+      return res.status(400).json({
+        success: false,
+        error: '笔记类型是必须的',
+      });
+    }
+
+    const note = saveNote(title.trim(), content.trim(), type);
+    res.json({ success: true, data: note });
+  } catch (error) {
+    console.error('保存笔记错误:', error);
+    const statusCode = error.message.includes('已存在') ? 409 : 500;
+    res.status(statusCode).json({ success: false, error: error.message });
+  }
+});
+
+// 获取所有笔记列表
+app.get('/api/notes', (req, res) => {
+  try {
+    const notes = getAllNotes();
+    res.json({ success: true, data: notes });
+  } catch (error) {
+    console.error('获取笔记列表错误:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// 根据ID获取笔记详情
+app.get('/api/notes/:id', (req, res) => {
+  try {
+    const noteId = parseInt(req.params.id);
+    if (isNaN(noteId)) {
+      return res.status(400).json({
+        success: false,
+        error: '无效的笔记ID',
+      });
+    }
+
+    const note = getNoteById(noteId);
+    if (!note) {
+      return res.status(404).json({
+        success: false,
+        error: '笔记不存在',
+      });
+    }
+
+    res.json({ success: true, data: note });
+  } catch (error) {
+    console.error('获取笔记详情错误:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// 删除笔记
+app.delete('/api/notes/:id', (req, res) => {
+  try {
+    const noteId = parseInt(req.params.id);
+    if (isNaN(noteId)) {
+      return res.status(400).json({
+        success: false,
+        error: '无效的笔记ID',
+      });
+    }
+
+    const deleted = deleteNote(noteId);
+    if (!deleted) {
+      return res.status(404).json({
+        success: false,
+        error: '笔记不存在',
+      });
+    }
+
+    res.json({ success: true, data: { id: noteId } });
+  } catch (error) {
+    console.error('删除笔记错误:', error);
     res.status(500).json({ success: false, error: error.message });
   }
 });

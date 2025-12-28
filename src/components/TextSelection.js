@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import BottomSheet from './BottomSheet';
-import { translate, grammarAnalyze } from '../utils/api';
+import { translate, grammarAnalyze, saveNote } from '../utils/api';
 import './TextSelection.css';
 
 /**
@@ -18,8 +18,10 @@ function TextSelection({ targetRef }) {
   const [bottomSheetContent, setBottomSheetContent] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [actionType, setActionType] = useState(''); // 'translate' 或 'grammar'
+  const [isSaving, setIsSaving] = useState(false);
   const buttonGroupRef = useRef(null);
   const abortControllerRef = useRef(null);
+  const markdownContentRef = useRef(null);
 
   // 获取选中文本
   const getSelectedText = () => {
@@ -259,6 +261,25 @@ function TextSelection({ targetRef }) {
     );
   };
 
+  // 保存笔记
+  const handleSaveNote = async () => {
+    if (!selectedText || !bottomSheetContent || !actionType) {
+      return;
+    }
+
+    setIsSaving(true);
+    try {
+      await saveNote(selectedText, bottomSheetContent, actionType);
+      // 可以显示成功提示，这里先简单处理
+      alert('保存成功');
+    } catch (error) {
+      console.error('保存笔记失败:', error);
+      alert('保存失败: ' + error.message);
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
   // 关闭 BottomSheet
   const handleCloseBottomSheet = () => {
     // 中止正在进行的请求
@@ -309,7 +330,19 @@ function TextSelection({ targetRef }) {
               <h3 className="text-selection-title">
                 {actionType === 'translate' ? '翻译' : actionType === 'grammar' ? '语法解析' : ''}
               </h3>
-              <button className="text-selection-close" onClick={handleCloseBottomSheet}>×</button>
+              <div className="text-selection-header-actions">
+                {bottomSheetContent && actionType && (
+                  <button
+                    className="text-selection-save"
+                    onClick={handleSaveNote}
+                    disabled={isSaving}
+                    title="保存笔记"
+                  >
+                    {isSaving ? '保存中...' : '保存'}
+                  </button>
+                )}
+                <button className="text-selection-close" onClick={handleCloseBottomSheet}>×</button>
+              </div>
             </div>
             <div className="text-selection-content">
               {bottomSheetContent ? (
@@ -376,7 +409,19 @@ function TextSelection({ targetRef }) {
             <h3 className="text-selection-title">
               {actionType === 'translate' ? '翻译' : actionType === 'grammar' ? '语法解析' : ''}
             </h3>
-            <button className="text-selection-close" onClick={handleCloseBottomSheet}>×</button>
+            <div className="text-selection-header-actions">
+              {bottomSheetContent && actionType && (
+                <button
+                  className="text-selection-save"
+                  onClick={handleSaveNote}
+                  disabled={isSaving}
+                  title="保存笔记"
+                >
+                  {isSaving ? '保存中...' : '保存'}
+                </button>
+              )}
+              <button className="text-selection-close" onClick={handleCloseBottomSheet}>×</button>
+            </div>
           </div>
           <div className="text-selection-content">
             {bottomSheetContent ? (

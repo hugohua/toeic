@@ -126,6 +126,17 @@ function initDatabase() {
     );
   `);
 
+  // 创建笔记表
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS notes (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      title TEXT UNIQUE NOT NULL,
+      content TEXT NOT NULL,
+      type TEXT NOT NULL,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+  `);
+
   // 创建索引
   db.exec(`
     CREATE INDEX IF NOT EXISTS idx_words_category ON words(category_id);
@@ -134,6 +145,9 @@ function initDatabase() {
     CREATE INDEX IF NOT EXISTS idx_sentences_word ON example_sentences(word_id);
     CREATE INDEX IF NOT EXISTS idx_confusing_word ON confusing_words(word_id);
     CREATE INDEX IF NOT EXISTS idx_articles_created_at ON articles(created_at);
+    CREATE INDEX IF NOT EXISTS idx_notes_title ON notes(title);
+    CREATE INDEX IF NOT EXISTS idx_notes_type ON notes(type);
+    CREATE INDEX IF NOT EXISTS idx_notes_created_at ON notes(created_at);
   `);
 }
 
@@ -743,6 +757,85 @@ function deleteArticle(articleId) {
   return result.changes > 0;
 }
 
+/**
+ * 保存笔记
+ * @param {string} title - 笔记标题（唯一，不重复）
+ * @param {string} content - 笔记内容
+ * @param {string} type - 笔记类型：'单词' 或 '短语'
+ */
+function saveNote(title, content, type) {
+  if (!title || typeof title !== 'string' || title.trim() === '') {
+    throw new Error('笔记标题是必需的');
+  }
+  if (!content || typeof content !== 'string' || content.trim() === '') {
+    throw new Error('笔记内容是必需的');
+  }
+  if (!type) {
+    throw new Error('笔记类型必须是"单词"或"短语"');
+  }
+
+  // 检查标题是否已存在
+  const existing = db
+    .prepare('SELECT id FROM notes WHERE title = ?')
+    .get(title.trim());
+
+  if (existing) {
+    throw new Error('笔记标题已存在');
+  }
+
+  const insert = db.prepare(
+    'INSERT INTO notes (title, content, type) VALUES (?, ?, ?)'
+  );
+  const result = insert.run(title.trim(), content.trim(), type);
+  
+  return {
+    id: result.lastInsertRowid,
+    title: title.trim(),
+    content: content.trim(),
+    type,
+    created_at: new Date().toISOString(),
+  };
+}
+
+/**
+ * 获取所有笔记列表
+ */
+function getAllNotes() {
+  const notes = db
+    .prepare('SELECT id, title, type, created_at FROM notes ORDER BY created_at DESC')
+    .all();
+  
+  return notes;
+}
+
+/**
+ * 根据ID获取笔记详情
+ * @param {number} noteId - 笔记ID
+ */
+function getNoteById(noteId) {
+  const note = db
+    .prepare('SELECT * FROM notes WHERE id = ?')
+    .get(noteId);
+  
+  if (!note) {
+    return null;
+  }
+  
+  return note;
+}
+
+/**
+ * 删除笔记
+ * @param {number} noteId - 笔记ID
+ */
+function deleteNote(noteId) {
+  const result = db
+    .prepare('DELETE FROM notes WHERE id = ?')
+    .run(noteId);
+  
+  return result.changes > 0;
+}
+
 // 初始化数据库
 initDatabase();
 
@@ -769,4 +862,8 @@ module.exports = {
   getAllArticles,
   getArticleById,
   deleteArticle,
+  saveNote,
+  getAllNotes,
+  getNoteById,
+  deleteNote,
 };

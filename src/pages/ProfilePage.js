@@ -83,6 +83,13 @@ function ProfilePage() {
             >
               <span className="action-btn-text">文章背诵</span>
             </button>
+            <button
+              className="profile-action-btn btn-note"
+              onClick={() => navigate('/notes')}
+              title="查看笔记"
+            >
+              <span className="action-btn-text">笔记</span>
+            </button>
           </div>
         </div>
 

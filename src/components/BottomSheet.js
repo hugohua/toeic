@@ -115,7 +115,6 @@ function BottomSheet({
   };
 
   if (!isOpen) return null;
-
   return (
     <div className="bottom-sheet-overlay" onClick={handleOverlayClick}>
       <div 
