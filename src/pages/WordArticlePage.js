@@ -1,11 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import { getCategories, generateArticle, getWordByWord, saveArticle } from '../utils/api';
-import WordDetailModal from '../components/WordDetailModal';
+import { getCategories, generateArticle, saveArticle } from '../utils/api';
 import BottomSheet from '../components/BottomSheet';
+import TextSelection from '../components/TextSelection';
+import WordDetailBottomSheet from '../components/WordDetailBottomSheet';
+import { useWordDetail } from '../utils/hooks';
 import Popup from '../components/Popup';
-import { formatArticle, extractTitle, cleanWordText } from '../utils/text';
+import { formatArticle, extractTitle } from '../utils/text';
 import '../index.css';
 import './WordArticlePage.css';
 
@@ -17,11 +19,18 @@ function WordArticlePage() {
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingCategories, setIsLoadingCategories] = useState(true);
   const [error, setError] = useState('');
-  const [selectedWord, setSelectedWord] = useState(null);
-  const [wordDetail, setWordDetail] = useState(null);
-  const [isLoadingWordDetail, setIsLoadingWordDetail] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
-  const articleRef = useRef(null);
+
+  // 使用单词详情 Hook
+  const {
+    wordDetail,
+    isLoadingWordDetail,
+    grammarContent,
+    isLoadingGrammar,
+    articleRef,
+    isModalOpen,
+    handleCloseModal,
+  } = useWordDetail({ enableWordClick: !!article });
 
   // 加载分类列表
   useEffect(() => {
@@ -99,68 +108,6 @@ function WordArticlePage() {
     }
   };
 
-  // 处理单词点击事件
-  const handleWordClick = async (wordText) => {
-    if (!wordText) return;
-    
-    // 清理单词文本（移除可能的标点符号）
-    const cleanWord = cleanWordText(wordText);
-    if (!cleanWord) return;
-
-    setSelectedWord(cleanWord);
-    setIsLoadingWordDetail(true);
-    setWordDetail(null);
-    setError('');
-
-    try {
-      // 直接根据单词获取详情，不依赖分类
-      const detail = await getWordByWord(cleanWord);
-      if (detail) {
-        setWordDetail(detail);
-      } else {
-        setError(`未找到单词 "${wordText}" 的详情`);
-      }
-    } catch (err) {
-      console.error('获取单词详情失败:', err);
-      setError('查找单词详情失败: ' + err.message);
-    } finally {
-      setIsLoadingWordDetail(false);
-    }
-  };
-
-
-  // 添加点击事件监听
-  useEffect(() => {
-    if (!article || !articleRef.current) return;
-
-    const handleClick = (e) => {
-      const wordElement = e.target.closest('.word-highlight');
-      if (wordElement) {
-        const wordText = wordElement.getAttribute('data-word');
-        if (wordText) {
-          handleWordClick(wordText);
-        }
-      }
-    };
-
-    const articleElement = articleRef.current;
-    articleElement.addEventListener('click', handleClick);
-
-    return () => {
-      articleElement.removeEventListener('click', handleClick);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [article]);
-
-  // 关闭弹窗
-  const handleCloseModal = () => {
-    setSelectedWord(null);
-    setWordDetail(null);
-    setError('');
-  };
-
-  // 判断弹窗是否打开
-  const isModalOpen = selectedWord || wordDetail;
 
 
   // 保存文章
@@ -325,15 +272,18 @@ function WordArticlePage() {
           </div>
         )}
 
+        {/* 文本选中操作组件 */}
+        {article && <TextSelection targetRef={articleRef} />}
+
         {/* 单词详情弹窗 - BottomSheet样式 */}
         <BottomSheet isOpen={isModalOpen} onClose={handleCloseModal}>
-          {isLoadingWordDetail ? (
-            <div className="word-detail-loading">加载中...</div>
-          ) : wordDetail ? (
-            <WordDetailModal wordDetail={wordDetail} onClose={handleCloseModal} />
-          ) : (
-            <div className="word-detail-loading">未找到单词详情</div>
-          )}
+          <WordDetailBottomSheet
+            isLoadingWordDetail={isLoadingWordDetail}
+            wordDetail={wordDetail}
+            isLoadingGrammar={isLoadingGrammar}
+            grammarContent={grammarContent}
+            onClose={handleCloseModal}
+          />
         </BottomSheet>
 
         {/* 加载提示 */}

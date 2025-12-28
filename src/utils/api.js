@@ -241,14 +241,27 @@ export async function deleteArticle(articleId) {
 }
 
 /**
- * 生成文章（流式输出）
- * @param {Array<string>} categories - 分类数组
+ * 通用的流式请求处理函数（处理 OpenAI SSE 格式响应）
+ * @param {string} endpoint - API endpoint（例如 '/generate-article'）
+ * @param {object} requestBody - 请求体数据
  * @param {Function} onChunk - 接收每个内容块的回调函数 (chunk: string) => void
  * @param {Function} onError - 错误回调函数 (error: Error) => void
  * @param {Function} onComplete - 完成回调函数 () => void
+ * @param {AbortSignal} signal - 可选的 AbortSignal，用于中止请求
+ * @param {string} defaultErrorMessage - 默认错误消息
+ * @param {string} operationName - 操作名称（用于日志）
  */
-export async function generateArticle(categories, onChunk, onError, onComplete) {
-  const url = `${API_BASE_URL}/generate-article`;
+async function streamRequest(
+  endpoint,
+  requestBody,
+  onChunk,
+  onError,
+  onComplete,
+  signal = null,
+  defaultErrorMessage = '请求失败',
+  operationName = '操作'
+) {
+  const url = `${API_BASE_URL}${endpoint}`;
 
   try {
     const response = await fetch(url, {
@@ -256,9 +269,8 @@ export async function generateArticle(categories, onChunk, onError, onComplete) 
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        categories,
-      }),
+      body: JSON.stringify(requestBody),
+      signal,
     });
 
     if (!response.ok) {
@@ -273,10 +285,22 @@ export async function generateArticle(categories, onChunk, onError, onComplete) 
     let buffer = '';
 
     while (true) {
+      // 检查是否已中止
+      if (signal && signal.aborted) {
+        reader.cancel();
+        break;
+      }
+
       const { done, value } = await reader.read();
       
       if (done) {
-        if (onComplete) onComplete();
+        if (onComplete && !signal?.aborted) onComplete();
+        break;
+      }
+
+      // 检查是否已中止
+      if (signal && signal.aborted) {
+        reader.cancel();
         break;
       }
 
@@ -288,34 +312,105 @@ export async function generateArticle(categories, onChunk, onError, onComplete) 
       buffer = lines.pop() || ''; // 保留最后一个不完整的消息
 
       for (const line of lines) {
+        if (signal && signal.aborted) break;
+        
         if (line.startsWith('data: ')) {
           try {
             const data = JSON.parse(line.slice(6));
             
             if (data.type === 'content' && data.data) {
-              if (onChunk) onChunk(data.data);
+              if (onChunk && !signal?.aborted) onChunk(data.data);
             } else if (data.type === 'error') {
-              const error = new Error(data.error || '生成文章失败');
-              if (onError) {
+              const error = new Error(data.error || defaultErrorMessage);
+              if (onError && !signal?.aborted) {
                 onError(error);
-              } else {
+              } else if (!signal?.aborted) {
                 throw error;
               }
             } else if (data.type === 'done') {
-              if (onComplete) onComplete();
+              if (onComplete && !signal?.aborted) onComplete();
             }
           } catch (parseError) {
-            console.error('解析 SSE 数据错误:', parseError);
+            if (!signal?.aborted) {
+              console.error('解析 SSE 数据错误:', parseError);
+            }
           }
         }
       }
     }
   } catch (error) {
-    console.error('生成文章错误:', error);
+    // 如果是中止错误，不处理
+    if (error.name === 'AbortError' || (signal && signal.aborted)) {
+      return;
+    }
+    console.error(`${operationName}错误:`, error);
     if (onError) {
       onError(error);
     } else {
       throw error;
     }
   }
+}
+
+/**
+ * 生成文章（流式输出）
+ * @param {Array<string>} categories - 分类数组
+ * @param {Function} onChunk - 接收每个内容块的回调函数 (chunk: string) => void
+ * @param {Function} onError - 错误回调函数 (error: Error) => void
+ * @param {Function} onComplete - 完成回调函数 () => void
+ * @param {AbortSignal} signal - 可选的 AbortSignal，用于中止请求
+ */
+export async function generateArticle(categories, onChunk, onError, onComplete, signal = null) {
+  return streamRequest(
+    '/generate-article',
+    { categories },
+    onChunk,
+    onError,
+    onComplete,
+    signal,
+    '生成文章失败',
+    '生成文章'
+  );
+}
+
+/**
+ * 翻译（流式输出）
+ * @param {string} wordlist - 待翻译的单词或句子
+ * @param {Function} onChunk - 接收每个内容块的回调函数 (chunk: string) => void
+ * @param {Function} onError - 错误回调函数 (error: Error) => void
+ * @param {Function} onComplete - 完成回调函数 () => void
+ * @param {AbortSignal} signal - 可选的 AbortSignal，用于中止请求
+ */
+export async function translate(wordlist, onChunk, onError, onComplete, signal = null) {
+  return streamRequest(
+    '/translate',
+    { wordlist },
+    onChunk,
+    onError,
+    onComplete,
+    signal,
+    '翻译失败',
+    '翻译'
+  );
+}
+
+/**
+ * 语法解析（流式输出）
+ * @param {string} selection - 待解析的内容
+ * @param {Function} onChunk - 接收每个内容块的回调函数 (chunk: string) => void
+ * @param {Function} onError - 错误回调函数 (error: Error) => void
+ * @param {Function} onComplete - 完成回调函数 () => void
+ * @param {AbortSignal} signal - 可选的 AbortSignal，用于中止请求
+ */
+export async function grammarAnalyze(selection, onChunk, onError, onComplete, signal = null) {
+  return streamRequest(
+    '/grammar-analyze',
+    { selection },
+    onChunk,
+    onError,
+    onComplete,
+    signal,
+    '语法解析失败',
+    '语法解析'
+  );
 }

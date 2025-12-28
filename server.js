@@ -79,7 +79,8 @@ function sendSSEError(res, errorMessage) {
  * @param {string} options.defaultErrorMessage - 默认错误消息
  */
 async function handleOpenAIStream(res, prompt, options = {}) {
-  const { errorContext = 'OpenAI API', defaultErrorMessage = '处理失败' } = options;
+  const { errorContext = 'OpenAI API', defaultErrorMessage = '处理失败', model } = options;
+  const modelToUse = model || config.openai.model;
 
   // 设置 SSE 响应头
   setSSEHeaders(res);
@@ -87,7 +88,7 @@ async function handleOpenAIStream(res, prompt, options = {}) {
   try {
     // 调用 OpenAI API（流式）
     const stream = await openai.chat.completions.create({
-      model: config.openai.model,
+      model: modelToUse,
       messages: [{ role: 'user', content: prompt }],
       stream: true,
     });
@@ -351,8 +352,7 @@ app.post('/api/translate', async (req, res) => {
   }
 
   // 构建 prompt
-  const prompt = `你是一位专业的托业（TOEIC）英语教师，先给出一个单词或一个句子，请将单词或句子翻译成英文。 单词/句子是：${wordlist.trim()}`;
-
+  const prompt = `请将句子或单词进行翻译，若给出英文则翻译成中文，若给出中文则翻译成英文。单词/句子是：${wordlist.trim()}`;
   // 使用公共函数处理流式输出
   await handleOpenAIStream(res, prompt, {
     errorContext: '翻译',
@@ -370,12 +370,13 @@ app.post('/api/grammar-analyze', async (req, res) => {
   }
 
   // 构建 prompt
-  const prompt = `你是一位专业的托业（TOEIC）英语教师，基于托业英语相关考点解释： ${selection.trim()}。`;
+  const prompt = `请分析该句子/短语/单词的语法结构：${selection.trim()}`;
 
   // 使用公共函数处理流式输出
   await handleOpenAIStream(res, prompt, {
     errorContext: '语法解析',
     defaultErrorMessage: '语法解析失败',
+    model: 'qwen-plus',
   });
 });
 
@@ -421,6 +422,7 @@ app.post('/api/generate-article', async (req, res) => {
   await handleOpenAIStream(res, prompt, {
     errorContext: '生成文章',
     defaultErrorMessage: '生成文章失败',
+    model: 'qwen-plus',
   });
 });
 

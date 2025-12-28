@@ -1,10 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
-import { getArticleById, getWordByWordAndCategory, searchWords } from '../utils/api';
-import WordDetailModal from '../components/WordDetailModal';
+import { getArticleById } from '../utils/api';
 import BottomSheet from '../components/BottomSheet';
-import { formatArticle, cleanWordText } from '../utils/text';
+import TextSelection from '../components/TextSelection';
+import WordDetailBottomSheet from '../components/WordDetailBottomSheet';
+import { useWordDetail } from '../utils/hooks';
+import { formatArticle } from '../utils/text';
 import '../index.css';
 import './WordArticlePage.css';
 
@@ -13,10 +15,17 @@ function ArticleDetailPage() {
   const [article, setArticle] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
-  const [selectedWord, setSelectedWord] = useState(null);
-  const [wordDetail, setWordDetail] = useState(null);
-  const [isLoadingWordDetail, setIsLoadingWordDetail] = useState(false);
-  const articleRef = useRef(null);
+
+  // 使用单词详情 Hook
+  const {
+    wordDetail,
+    isLoadingWordDetail,
+    grammarContent,
+    isLoadingGrammar,
+    articleRef,
+    isModalOpen,
+    handleCloseModal,
+  } = useWordDetail({ article, enableWordClick: !!article });
 
   // 加载文章详情
   useEffect(() => {
@@ -43,107 +52,6 @@ function ArticleDetailPage() {
     }
   };
 
-  // 处理单词点击事件
-  const handleWordClick = async (wordText) => {
-    if (!wordText || !article) return;
-    
-    // 清理单词文本（移除可能的标点符号）
-    const cleanWord = cleanWordText(wordText);
-    if (!cleanWord) return;
-
-    setSelectedWord(cleanWord);
-    setIsLoadingWordDetail(true);
-    setWordDetail(null);
-
-    try {
-      // 从文章的分类中查找
-      let found = false;
-      const categories = article.categories || [];
-      
-      for (const category of categories) {
-        try {
-          const detail = await getWordByWordAndCategory(cleanWord, category);
-          if (detail) {
-            setWordDetail(detail);
-            found = true;
-            break;
-          }
-        } catch (err) {
-          // 继续尝试下一个分类
-          continue;
-        }
-      }
-
-      // 如果没找到，尝试搜索所有单词
-      if (!found) {
-        const searchResults = await searchWords(cleanWord, 10);
-        const exactMatch = searchResults.find(w => w.word.toLowerCase() === cleanWord);
-        if (exactMatch) {
-          // 如果找到精确匹配，获取详情
-          try {
-            const detail = await getWordByWordAndCategory(cleanWord, exactMatch.category_name);
-            if (detail) {
-              setWordDetail(detail);
-              found = true;
-            }
-          } catch (err) {
-            console.error('获取单词详情失败:', err);
-          }
-        }
-      }
-
-      if (!found) {
-        setError(`未找到单词 "${wordText}" 的详情`);
-      }
-    } catch (err) {
-      console.error('查找单词失败:', err);
-      setError('查找单词详情失败: ' + err.message);
-    } finally {
-      setIsLoadingWordDetail(false);
-    }
-  };
-
-
-  // 添加点击事件监听
-  useEffect(() => {
-    if (!article || !articleRef.current) return;
-
-    const handleClick = (e) => {
-      const wordElement = e.target.closest('.word-highlight');
-      if (wordElement) {
-        const wordText = wordElement.getAttribute('data-word');
-        if (wordText) {
-          handleWordClick(wordText);
-        }
-      }
-    };
-
-    const articleElement = articleRef.current;
-    articleElement.addEventListener('click', handleClick);
-
-    return () => {
-      articleElement.removeEventListener('click', handleClick);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [article]);
-
-  // 关闭弹窗
-  const handleCloseModal = () => {
-    setSelectedWord(null);
-    setWordDetail(null);
-    setError('');
-  };
-
-  // 判断弹窗是否打开
-  const isModalOpen = selectedWord || wordDetail;
-
-  const handleTranslate = (selectedText) => {
-    // if (!selectedText || selectedText.trim() === '') {
-    //   return;
-    // }
-    // 暂时只显示提示，翻译功能待实现
-    Popup.show(`翻译功能开发中，选中文本: "${selectedText}"`);
-  };
 
 
   if (isLoading) {
@@ -193,15 +101,18 @@ function ArticleDetailPage() {
           />
         </div>
 
+        {/* 文本选中操作组件 */}
+        <TextSelection targetRef={articleRef} />
+
         {/* 单词详情弹窗 - BottomSheet样式 */}
         <BottomSheet isOpen={isModalOpen} onClose={handleCloseModal}>
-          {isLoadingWordDetail ? (
-            <div className="word-detail-loading">加载中...</div>
-          ) : wordDetail ? (
-            <WordDetailModal wordDetail={wordDetail} onClose={handleCloseModal} />
-          ) : (
-            <div className="word-detail-loading">未找到单词详情</div>
-          )}
+          <WordDetailBottomSheet
+            isLoadingWordDetail={isLoadingWordDetail}
+            wordDetail={wordDetail}
+            isLoadingGrammar={isLoadingGrammar}
+            grammarContent={grammarContent}
+            onClose={handleCloseModal}
+          />
         </BottomSheet>
 
         {/* 错误提示 */}
