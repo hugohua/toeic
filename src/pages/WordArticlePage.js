@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import { getCategories, generateArticle, getWordByWord, saveArticle } from '../utils/api';
 import WordDetailModal from '../components/WordDetailModal';
 import Popup from '../components/Popup';
+import SelectionPopup from '../components/SelectionPopup';
 import { formatArticle, extractTitle, cleanWordText } from '../utils/text';
 import { useDisableScroll } from '../utils/hooks';
 import '../index.css';
@@ -221,6 +222,15 @@ function WordArticlePage() {
     }
   };
 
+  // 处理划词翻译（暂时只显示提示）
+  const handleTranslate = (selectedText) => {
+    if (!selectedText || selectedText.trim() === '') {
+      return;
+    }
+    // 暂时只显示提示，翻译功能待实现
+    Popup.show(`翻译功能开发中，选中文本: "${selectedText}"`);
+  };
+
 
   if (isLoadingCategories) {
     return (
@@ -345,6 +355,14 @@ function WordArticlePage() {
         {isLoading && (
           <div className="loading-message">正在生成文章，请稍候...</div>
         )}
+
+        {/* 划词翻译浮层 
+        {article && articleRef.current && (
+          <SelectionPopup
+            targetElement={articleRef.current}
+            onTranslate={handleTranslate}
+          />
+        )}*/}
 
       </main>
     </div>
