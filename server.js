@@ -49,6 +49,69 @@ const PORT = isDev ? (process.env.PORT || 3001) : (process.env.PORT || 3000);
 // 解析 JSON 请求体
 app.use(express.json());
 
+/**
+ * 设置 SSE 响应头
+ * @param {Object} res - Express响应对象
+ */
+function setSSEHeaders(res) {
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Connection', 'keep-alive');
+}
+
+/**
+ * 发送 SSE 错误响应
+ * @param {Object} res - Express响应对象
+ * @param {string} errorMessage - 错误消息
+ */
+function sendSSEError(res, errorMessage) {
+  setSSEHeaders(res);
+  res.write(`data: ${JSON.stringify({ type: 'error', error: errorMessage })}\n\n`);
+  res.end();
+}
+
+/**
+ * OpenAI 流式输出处理函数
+ * @param {Object} res - Express响应对象
+ * @param {string} prompt - 发送给OpenAI的提示词
+ * @param {Object} options - 可选配置
+ * @param {string} options.errorContext - 错误上下文（用于日志记录）
+ * @param {string} options.defaultErrorMessage - 默认错误消息
+ */
+async function handleOpenAIStream(res, prompt, options = {}) {
+  const { errorContext = 'OpenAI API', defaultErrorMessage = '处理失败' } = options;
+
+  // 设置 SSE 响应头
+  setSSEHeaders(res);
+
+  try {
+    // 调用 OpenAI API（流式）
+    const stream = await openai.chat.completions.create({
+      model: config.openai.model,
+      messages: [{ role: 'user', content: prompt }],
+      stream: true,
+    });
+
+    // 处理流式响应
+    for await (const chunk of stream) {
+      const content = chunk.choices[0]?.delta?.content || '';
+      if (content) {
+        // 发送 SSE 格式的数据
+        res.write(`data: ${JSON.stringify({ type: 'content', data: content })}\n\n`);
+      }
+    }
+
+    // 发送完成信号
+    res.write(`data: ${JSON.stringify({ type: 'done' })}\n\n`);
+    res.end();
+  } catch (error) {
+    console.error(`${errorContext}错误:`, error);
+    // 发送错误信息
+    res.write(`data: ${JSON.stringify({ type: 'error', error: error.message || defaultErrorMessage })}\n\n`);
+    res.end();
+  }
+}
+
 // API 路由
 // 获取所有分类
 app.get('/api/categories', (req, res) => {
@@ -278,43 +341,73 @@ app.delete('/api/articles/:id', (req, res) => {
   }
 });
 
+// 翻译API - 流式输出
+app.post('/api/translate', async (req, res) => {
+  const { wordlist } = req.body;
+
+  if (!wordlist || typeof wordlist !== 'string' || wordlist.trim() === '') {
+    sendSSEError(res, '单词/句子是必需的');
+    return;
+  }
+
+  // 构建 prompt
+  const prompt = `你是一位专业的托业（TOEIC）英语教师，先给出一个单词或一个句子，请将单词或句子翻译成英文。 单词/句子是：${wordlist.trim()}`;
+
+  // 使用公共函数处理流式输出
+  await handleOpenAIStream(res, prompt, {
+    errorContext: '翻译',
+    defaultErrorMessage: '翻译失败',
+  });
+});
+
+// 语法解析API - 流式输出
+app.post('/api/grammar-analyze', async (req, res) => {
+  const { selection } = req.body;
+
+  if (!selection || typeof selection !== 'string' || selection.trim() === '') {
+    sendSSEError(res, '待解析内容（selection）是必需的');
+    return;
+  }
+
+  // 构建 prompt
+  const prompt = `你是一位专业的托业（TOEIC）英语教师，基于托业英语相关考点解释： ${selection.trim()}。`;
+
+  // 使用公共函数处理流式输出
+  await handleOpenAIStream(res, prompt, {
+    errorContext: '语法解析',
+    defaultErrorMessage: '语法解析失败',
+  });
+});
+
 // 生成文章（根据分类数组）- 流式输出
 app.post('/api/generate-article', async (req, res) => {
-  // 设置 SSE 响应头
-  res.setHeader('Content-Type', 'text/event-stream');
-  res.setHeader('Cache-Control', 'no-cache');
-  res.setHeader('Connection', 'keep-alive');
+  const { categories } = req.body;
 
-  try {
-    const { categories } = req.body;
+  if (!Array.isArray(categories) || categories.length === 0) {
+    sendSSEError(res, '分类数组是必需的且不能为空');
+    return;
+  }
 
-    if (!Array.isArray(categories) || categories.length === 0) {
-      res.write(`data: ${JSON.stringify({ type: 'error', error: '分类数组是必需的且不能为空' })}\n\n`);
-      res.end();
-      return;
-    }
+  // 获取所选分类下的所有单词
+  const words = getWordsByCategories(categories);
+  
+  if (words.length === 0) {
+    sendSSEError(res, '所选分类下没有单词');
+    return;
+  }
 
-    // 获取所选分类下的所有单词
-    const words = getWordsByCategories(categories);
-    
-    if (words.length === 0) {
-      res.write(`data: ${JSON.stringify({ type: 'error', error: '所选分类下没有单词' })}\n\n`);
-      res.end();
-      return;
-    }
+  // 打乱单词列表以避免缓存（Fisher-Yates洗牌算法）
+  const shuffledWords = [...words];
+  for (let i = shuffledWords.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledWords[i], shuffledWords[j]] = [shuffledWords[j], shuffledWords[i]];
+  }
 
-    // 打乱单词列表以避免缓存（Fisher-Yates洗牌算法）
-    const shuffledWords = [...words];
-    for (let i = shuffledWords.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledWords[i], shuffledWords[j]] = [shuffledWords[j], shuffledWords[i]];
-    }
+  // 构建单词列表字符串
+  const wordList = shuffledWords.map((w) => w.word).join(', ');
 
-    // 构建单词列表字符串
-    const wordList = shuffledWords.map((w) => w.word).join(', ');
-
-    // 构建 prompt
-    const prompt = `${wordList}
+  // 构建 prompt
+  const prompt = `${wordList}
     你是一位专业的托业（TOEIC）英语教师。以上是一组职场英语词汇：
 请完成以下任务：
 1、从中精选10–15个语义相关、能自然融入同一职场场景的单词；
@@ -323,31 +416,12 @@ app.post('/api/generate-article', async (req, res) => {
 4、为文章添加一个明确的标题；
 5、在英文文章后，提供对应的中文翻译，翻译中对应的关键词也需加粗。
 注意：避免生硬堆砌词汇，确保语言自然流畅，体现真实商务英语用法。`;
-    // 调用 OpenAI API 生成文章（流式）
-    const stream = await openai.chat.completions.create({
-      model: config.openai.model,
-      messages: [{ role: 'user', content: prompt }],
-      stream: true,
-    });
 
-    // 处理流式响应
-    for await (const chunk of stream) {
-      const content = chunk.choices[0]?.delta?.content || '';
-      if (content) {
-        // 发送 SSE 格式的数据
-        res.write(`data: ${JSON.stringify({ type: 'content', data: content })}\n\n`);
-      }
-    }
-
-    // 发送完成信号
-    res.write(`data: ${JSON.stringify({ type: 'done' })}\n\n`);
-    res.end();
-  } catch (error) {
-    console.error('生成文章错误:', error);
-    // 发送错误信息
-    res.write(`data: ${JSON.stringify({ type: 'error', error: error.message || '生成文章失败' })}\n\n`);
-    res.end();
-  }
+  // 使用公共函数处理流式输出
+  await handleOpenAIStream(res, prompt, {
+    errorContext: '生成文章',
+    defaultErrorMessage: '生成文章失败',
+  });
 });
 
 // 开发模式下不提供静态文件（由 webpack-dev-server 提供）

@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import { getArticleById, getWordByWordAndCategory, searchWords } from '../utils/api';
 import WordDetailModal from '../components/WordDetailModal';
+import BottomSheet from '../components/BottomSheet';
 import { formatArticle, cleanWordText } from '../utils/text';
-import { useDisableScroll } from '../utils/hooks';
 import '../index.css';
 import './WordArticlePage.css';
 
@@ -134,9 +134,16 @@ function ArticleDetailPage() {
     setError('');
   };
 
-  // 当浮层打开/关闭时，禁用/启用原页面滚动
+  // 判断弹窗是否打开
   const isModalOpen = selectedWord || wordDetail;
-  useDisableScroll(isModalOpen);
+
+  const handleTranslate = (selectedText) => {
+    // if (!selectedText || selectedText.trim() === '') {
+    //   return;
+    // }
+    // 暂时只显示提示，翻译功能待实现
+    Popup.show(`翻译功能开发中，选中文本: "${selectedText}"`);
+  };
 
 
   if (isLoading) {
@@ -186,25 +193,22 @@ function ArticleDetailPage() {
           />
         </div>
 
-        {/* 单词详情弹窗 */}
-        {(selectedWord || wordDetail) && (
-          <div className="word-detail-modal-overlay" onClick={handleCloseModal}>
-            <div className="word-detail-modal" onClick={(e) => e.stopPropagation()}>
-              {isLoadingWordDetail ? (
-                <div className="word-detail-loading">加载中...</div>
-              ) : wordDetail ? (
-                <WordDetailModal wordDetail={wordDetail} onClose={handleCloseModal} />
-              ) : (
-                <div className="word-detail-loading">未找到单词详情</div>
-              )}
-            </div>
-          </div>
-        )}
+        {/* 单词详情弹窗 - BottomSheet样式 */}
+        <BottomSheet isOpen={isModalOpen} onClose={handleCloseModal}>
+          {isLoadingWordDetail ? (
+            <div className="word-detail-loading">加载中...</div>
+          ) : wordDetail ? (
+            <WordDetailModal wordDetail={wordDetail} onClose={handleCloseModal} />
+          ) : (
+            <div className="word-detail-loading">未找到单词详情</div>
+          )}
+        </BottomSheet>
 
         {/* 错误提示 */}
         {error && (
           <div className="error-message">{error}</div>
         )}
+
       </main>
     </div>
   );

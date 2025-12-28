@@ -147,22 +147,9 @@
   transform: translateY(-1px);
 }
 
-/* 单词详情弹窗 */
-.word-detail-modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  padding: 20px;
-  overflow: hidden;
-}
+/* 单词详情弹窗样式已迁移到 BottomSheet 组件 */
 
+/* 保留原有的word-detail-modal样式用于兼容 */
 .word-detail-modal {
   background: white;
   border-radius: 16px;
@@ -405,6 +392,7 @@
   color: #999;
 }
 
+
 /* 响应式设计 */
 @media (max-width: 480px) {
   .word-detail-modal {
@@ -412,6 +400,7 @@
     max-height: 100vh;
     border-radius: 0;
   }
+
 
   .word-detail-title {
     font-size: 28px;
