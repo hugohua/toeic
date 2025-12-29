@@ -43,7 +43,8 @@ function TextSelection({ targetRef }) {
     
     // 使用 fixed 定位，相对于视口
     const centerX = rect.left + rect.width / 2;
-    const topY = rect.bottom + 10;
+    // 按钮显示在选中文本上方，估算按钮高度约50px（包括padding和间距）
+    const topY = rect.top - 50;
     
     return {
       top: topY,
