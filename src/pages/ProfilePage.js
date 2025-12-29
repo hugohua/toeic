@@ -56,35 +56,35 @@ function ProfilePage() {
           <h3 className="profile-section-title">学习功能</h3>
           <div className="action-buttons-grid">
             <button
-              className="profile-action-btn btn-favorite"
+              className="profile-action-btn"
               onClick={() => navigate('/special/favorite')}
               title="查看收藏单词"
             >
               <span className="action-btn-text">收藏单词</span>
             </button>
             <button
-              className="profile-action-btn btn-unknown"
+              className="profile-action-btn"
               onClick={() => navigate('/special/unknown')}
               title="查看不认识的单词"
             >
               <span className="action-btn-text">不认识单词</span>
             </button>
             <button
-              className="profile-action-btn btn-fuzzy"
+              className="profile-action-btn"
               onClick={() => navigate('/special/fuzzy')}
               title="查看模糊单词"
             >
               <span className="action-btn-text">模糊单词</span>
             </button>
             <button
-              className="profile-action-btn btn-article"
+              className="profile-action-btn"
               onClick={() => navigate('/article')}
               title="单词文章背诵"
             >
               <span className="action-btn-text">文章背诵</span>
             </button>
             <button
-              className="profile-action-btn btn-note"
+              className="profile-action-btn"
               onClick={() => navigate('/notes')}
               title="查看笔记"
             >
@@ -98,14 +98,14 @@ function ProfilePage() {
           <h3 className="profile-section-title">后台管理</h3>
           <div className="action-buttons-grid">
             <button
-              className="profile-action-btn btn-import"
+              className="profile-action-btn"
               onClick={() => navigate('/import')}
               title="批量导入单词"
             >
               <span className="action-btn-text">导入单词</span>
             </button>
             <button
-              className="profile-action-btn btn-category"
+              className="profile-action-btn"
               onClick={() => navigate('/category/add')}
               title="新增分类"
             >
