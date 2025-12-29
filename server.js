@@ -53,6 +53,18 @@ const PORT = isDev ? (process.env.PORT || 3001) : (process.env.PORT || 3000);
 // 解析 JSON 请求体
 app.use(express.json());
 
+// 可用的模型列表
+const AVAILABLE_MODELS = ['qwen-plus', 'qwen-flash', 'deepseek-v3.2'];
+
+/**
+ * 从模型列表中随机选择一个模型
+ * @returns {string} 随机选择的模型名称
+ */
+function getRandomModel() {
+  const randomIndex = Math.floor(Math.random() * AVAILABLE_MODELS.length);
+  return AVAILABLE_MODELS[randomIndex];
+}
+
 /**
  * 设置 SSE 响应头
  * @param {Object} res - Express响应对象
@@ -455,10 +467,11 @@ app.post('/api/translate', async (req, res) => {
 
   // 构建 prompt
   const prompt = `请将句子或单词进行翻译，若给出英文则翻译成中文，若给出中文则翻译成英文。单词/句子是：${wordlist.trim()}`;
-  // 使用公共函数处理流式输出
+  // 使用公共函数处理流式输出，随机选择模型
   await handleOpenAIStream(res, prompt, {
     errorContext: '翻译',
     defaultErrorMessage: '翻译失败',
+    model: getRandomModel(),
   });
 });
 
@@ -474,11 +487,11 @@ app.post('/api/grammar-analyze', async (req, res) => {
   // 构建 prompt
   const prompt = `请分析该句子/短语/单词的语法结构：${selection.trim()}`;
 
-  // 使用公共函数处理流式输出
+  // 使用公共函数处理流式输出，随机选择模型
   await handleOpenAIStream(res, prompt, {
     errorContext: '语法解析',
     defaultErrorMessage: '语法解析失败',
-    model: 'qwen-plus',
+    model: getRandomModel(),
   });
 });
 
