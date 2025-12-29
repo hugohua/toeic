@@ -339,7 +339,7 @@ function TextSelection({ targetRef }) {
                     disabled={isSaving}
                     title="保存笔记"
                   >
-                    {isSaving ? '保存中...' : '保存'}
+                    {isSaving ? '保存中...' : '保存笔记'}
                   </button>
                 )}
                 <button className="text-selection-close" onClick={handleCloseBottomSheet}>×</button>

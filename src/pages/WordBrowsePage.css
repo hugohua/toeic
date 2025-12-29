@@ -3,6 +3,10 @@
   cursor: pointer;
 }
 
+.word-browse-title-clickable {
+  cursor: pointer;
+}
+
 /* 例句样式 */
 .word-browse-example-sentence {
   cursor: pointer;

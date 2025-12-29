@@ -1,13 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useSpeechConfig } from '../utils/hooks';
 import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
-import PhraseCell from '../components/PhraseCell';
-import ExampleSentence from '../components/ExampleSentence';
-import ConfusingWordCell from '../components/ConfusingWordCell';
+import WordDetailContent from '../components/WordDetailContent';
+import Loading from '../components/Loading';
 import { getCategoryName } from '../utils/app';
-import { formatKeyCollocations } from '../utils/text';
 import {
   isWordInList,
   toggleWordInList,
@@ -176,9 +174,7 @@ function WordBrowsePage() {
     return (
       <div className="container">
         <Header title={`${getCategoryName(category)} - 快速浏览`} showBack />
-        <main className="detail-content">
-          <div className="word-browse-status">加载中...</div>
-        </main>
+        <Loading text="加载中..." />
       </div>
     );
   }
@@ -194,78 +190,6 @@ function WordBrowsePage() {
     );
   }
 
-  const coreMeaning =
-    currentWord.coreMeaning ||
-    (currentWord.partOfSpeech
-      ? `${currentWord.partOfSpeech} ${currentWord.coreMeaning}`
-      : '暂无');
-  const toeicSceneFocus =
-    currentWord.toeicSceneFocus || currentWord.sceneFocus || '暂无';
-
-  const keyCollocationsHtml = formatKeyCollocations(
-    currentWord.keyCollocations || currentWord.usageCollocation
-  );
-
-  // 渲染TOEIC例句组件
-  const renderExampleSentences = () => {
-    if (
-      currentWord.toeicExampleSentences &&
-      Array.isArray(currentWord.toeicExampleSentences) &&
-      currentWord.toeicExampleSentences.length > 0
-    ) {
-      return (
-        <ol>
-          {currentWord.toeicExampleSentences.map((sent, index) => (
-            <li key={index}>
-              <ExampleSentence sentence={sent} className="word-browse-example-sentence" />
-            </li>
-          ))}
-        </ol>
-      );
-    } else {
-      return <p className="word-browse-empty-text">暂无例句</p>;
-    }
-  };
-
-  // 渲染易混淆词区分组件
-  const renderConfusingWords = () => {
-    if (
-      currentWord.confusingWordsComparison &&
-      Array.isArray(currentWord.confusingWordsComparison) &&
-      currentWord.confusingWordsComparison.length > 0
-    ) {
-      return (
-        <table className="confusing-words-table">
-          <thead>
-            <tr>
-              <th>单词</th>
-              <th>核心区别</th>
-              <th>TOEIC场景重点</th>
-            </tr>
-          </thead>
-          <tbody>
-            {currentWord.confusingWordsComparison.map((item, index) => (
-              <tr key={index}>
-                <td>
-                  <ConfusingWordCell wordText={item.word} className="word-browse-clickable" />
-                </td>
-                <td>{item.coreDifference}</td>
-                <td>{item.toeicSceneFocus}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      );
-    } else if (currentWord.confusionDistinction) {
-      // 如果存在 confusionDistinction 字符串，使用 dangerouslySetInnerHTML 作为后备
-      return (
-        <div dangerouslySetInnerHTML={{ __html: currentWord.confusionDistinction }} />
-      );
-    } else {
-      return <div>暂无</div>;
-    }
-  };
-
   return (
     <div className="container">
       <Header
@@ -275,89 +199,16 @@ function WordBrowsePage() {
         currentIndex={currentIndex + 1}
         totalWords={words.length}
       />
-      <main className="detail-content" ref={browseContentRef}>
-        <div className="detail-card">
-          <div className="detail-header">
-            <div className="detail-header-main">
-              <div
-                className="word-title word-browse-clickable"
-                onClick={() => {
-                  start();
-                }}
-                title="点击播放发音"
-              >
-                {currentWord.word}
-              </div>
-              <button
-                type="button"
-                className={`favorite-btn ${
-                  isFavorite ? 'favorite-btn-active' : ''
-                }`}
-                onClick={handleToggleFavorite}
-                title={isFavorite ? '取消收藏该单词' : '收藏该单词'}
-              >
-                <span className="favorite-icon">{isFavorite ? '★' : '☆'}</span>
-              </button>
-            </div>
-            <div className="phonetic">{currentWord.phonetic || '/ˈwɜːrd/'}</div>
-          </div>
-
-          <div className="detail-section">
-            <h3 className="section-title">核心释义</h3>
-            <div
-              className="section-content"
-              dangerouslySetInnerHTML={{ __html: coreMeaning }}
-            />
-          </div>
-
-          <div className="detail-section">
-            <h3 className="section-title">短语短句</h3>
-            <div className="section-content">
-              {currentWord.phrase ? (
-                <PhraseCell phraseText={currentWord.phrase} />
-              ) : (
-                <p className="word-browse-empty-text">暂无</p>
-              )}
-            </div>
-          </div>
-
-          <div className="detail-section">
-            <h3 className="section-title">TOEIC场景重点</h3>
-            <div
-              className="section-content"
-              dangerouslySetInnerHTML={{ __html: toeicSceneFocus }}
-            />
-          </div>
-
-          <div className="detail-section">
-            <h3 className="section-title">关键搭配</h3>
-            <div
-              className="section-content"
-              dangerouslySetInnerHTML={{ __html: keyCollocationsHtml }}
-            />
-          </div>
-
-          <div className="detail-section">
-            <h3 className="section-title">TOEIC例句</h3>
-            <div className="section-content">{renderExampleSentences()}</div>
-          </div>
-
-          <div className="detail-section">
-            <h3 className="section-title">场景联想</h3>
-            <div
-              className="section-content"
-              dangerouslySetInnerHTML={{
-                __html: currentWord.sceneAssociation || '暂无',
-              }}
-            />
-          </div>
-
-          <div className="detail-section">
-            <h3 className="section-title">易混淆词区分</h3>
-            <div className="section-content">{renderConfusingWords()}</div>
-          </div>
-        </div>
-      </main>
+      <WordDetailContent
+        word={currentWord}
+        cssPrefix="word-browse"
+        onPlaySound={start}
+        isFavorite={isFavorite}
+        onToggleFavorite={handleToggleFavorite}
+        progressCurrent={currentIndex + 1}
+        progressTotal={words.length}
+        contentRef={browseContentRef}
+      />
 
       <footer className="browse-footer">
         <button className="btn btn-secondary" onClick={prevWord}>

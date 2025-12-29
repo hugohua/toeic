@@ -518,7 +518,7 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
-
+/* 
 .btn-unknown {
   background: #ff6b6b;
   color: white;
@@ -562,7 +562,7 @@ body {
 
 .btn-known:active {
   transform: translateY(0);
-}
+} */
 
 .btn-primary {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
