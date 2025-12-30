@@ -1,275 +1,86 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useRef, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useSpeechConfig } from '../utils/hooks';
-import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
-import { getCategoryName, getFirstSlashContent } from '../utils/app';
+import WordRow from '../components/WordRow';
+import { getCategoryName } from '../utils/app';
 import {
-  getWordList,
-  toggleWordInList,
-  WORD_LIST_TYPES,
-} from '../utils/storage';
+  useWordListPagination,
+  useWordListSettings,
+  useFavoriteWords
+} from '../hooks/useWordList';
 import '../index.css';
 import './WordListPage.css';
-
-// 单词行组件，包含发音、释义和收藏功能
-function WordRow({
-  word,
-  index,
-  category,
-  isFavorite,
-  isMeaningVisible,
-  onRowClick,
-  onMeaningToggle,
-  onToggleFavorite,
-  getShortMeaning,
-}) {
-  const { start } = useSpeechConfig(word.word || '');
-
-  const handleWordClick = (e) => {
-    e.stopPropagation();
-    start();
-  };
-
-  const handleMeaningCellClick = (e) => {
-    e.stopPropagation();
-    // 点击释义时播放单词声音
-    start();
-    // 切换释义显示状态
-    onMeaningToggle(index);
-  };
-
-  return (
-    <tr className="word-list-row" onClick={() => onRowClick(index)}>
-      <td className="col-word">
-        <span
-          className={`word-list-text ${isFavorite ? 'word-favorite' : ''} word-list-clickable`}
-          onClick={handleWordClick}
-          title="点击播放发音"
-        >
-          {word.word}
-          <span className="word-phonetic">
-            {getFirstSlashContent(word.phonetic)}
-          </span>
-        </span>
-      </td>
-      <td
-        className="col-meaning word-list-meaning-clickable"
-        onClick={handleMeaningCellClick}
-      >
-        <span className="meaning-text">
-          {isMeaningVisible ? getShortMeaning(word) : '点击显示释义'}
-        </span>
-      </td>
-      <td className="col-favorite">
-        <button
-          type="button"
-          className={`list-favorite-btn ${isFavorite ? 'favorited' : ''}`}
-          onClick={(e) => onToggleFavorite(e, word.word)}
-          title={isFavorite ? '取消收藏' : '收藏单词'}
-        >
-          <span className="favorite-icon">{isFavorite ? '★' : '☆'}</span>
-        </button>
-      </td>
-    </tr>
-  );
-}
 
 function WordListPage() {
   const { category } = useParams();
   const navigate = useNavigate();
-  const [words, setWords] = useState([]);
 
-  // 从 sessionStorage 恢复状态
-  const getStorageKey = (key) => `wordList_${category}_${key}`;
+  // Custom Hooks
+  const {
+    words,
+    loading,
+    hasMore,
+    loadMore,
+    saveScrollPosition
+  } = useWordListPagination(category);
 
-  const [showAllMeanings, setShowAllMeanings] = useState(() => {
-    const saved = sessionStorage.getItem(getStorageKey('showAllMeanings'));
-    return saved ? JSON.parse(saved) : false;
-  });
+  const {
+    showAllMeanings,
+    toggleAllMeanings,
+    toggleMeaning,
+    isMeaningVisible
+  } = useWordListSettings(category);
 
-  const [meaningVisibility, setMeaningVisibility] = useState(() => {
-    const saved = sessionStorage.getItem(getStorageKey('meaningVisibility'));
-    return saved ? JSON.parse(saved) : {};
-  });
+  const {
+    isFavorited,
+    toggleFavorite
+  } = useFavoriteWords(category);
 
-  const [favoriteWords, setFavoriteWords] = useState(new Set());
+  // Intersection Observer implementation for infinite scroll
+  const sentinelRef = useRef(null);
 
-  // 初始化收藏状态
   useEffect(() => {
-    const list = getWordList(WORD_LIST_TYPES.FAVORITE);
-    const set = new Set();
-    list.forEach((item) => {
-      if (item && item.word && item.category) {
-        set.add(`${item.category}-${item.word}`);
-      }
-    });
-    setFavoriteWords(set);
-  }, []);
-
-  const favoriteKeySet = useMemo(() => {
-    return favoriteWords;
-  }, [favoriteWords]);
-
-  // 加载单词列表
-  useEffect(() => {
-    let isMounted = true;
-
-    async function loadWords() {
-      try {
-        const categoryWords = await getWordsByCategory(category);
-        if (isMounted) {
-          setWords(categoryWords);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && hasMore && !loading) {
+          loadMore();
         }
-      } catch (error) {
-        console.error('加载单词列表失败:', error);
-        if (isMounted) {
-          setWords([]);
-        }
-      }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sentinelRef.current) {
+      observer.observe(sentinelRef.current);
     }
-
-    loadWords();
 
     return () => {
-      isMounted = false;
-    };
-  }, [category]);
-
-  // 保存释义显示状态到 sessionStorage
-  useEffect(() => {
-    sessionStorage.setItem(
-      getStorageKey('showAllMeanings'),
-      JSON.stringify(showAllMeanings)
-    );
-  }, [showAllMeanings, category]);
-
-  useEffect(() => {
-    sessionStorage.setItem(
-      getStorageKey('meaningVisibility'),
-      JSON.stringify(meaningVisibility)
-    );
-  }, [meaningVisibility, category]);
-
-  // 恢复滚动位置
-  useEffect(() => {
-    const savedScrollPos = sessionStorage.getItem(getStorageKey('scrollPos'));
-    if (savedScrollPos) {
-      // 使用 setTimeout 确保 DOM 已渲染
-      setTimeout(() => {
-        window.scrollTo(0, parseInt(savedScrollPos));
-      }, 0);
-    }
-  }, [category]);
-
-  // 保存滚动位置
-  useEffect(() => {
-    const handleScroll = () => {
-      sessionStorage.setItem(
-        getStorageKey('scrollPos'),
-        window.scrollY.toString()
-      );
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [category]);
-
-  const handleRowClick = (index) => {
-    // 跳转前保存当前滚动位置
-    sessionStorage.setItem(
-      getStorageKey('scrollPos'),
-      window.scrollY.toString()
-    );
-    navigate(`/detail/${category}/${index}`);
-  };
-
-  const handleStartStudy = () => {
-    navigate(`/study/${category}`);
-  };
-
-  // 判断某一行释义是否可见（支持全局开关 + 单行手动开关）
-  const isMeaningVisible = (index) => {
-    if (Object.prototype.hasOwnProperty.call(meaningVisibility, index)) {
-      return meaningVisibility[index];
-    }
-    return showAllMeanings;
-  };
-
-  // 列头「眼睛」图标：切换全部释义显示/隐藏
-  const handleToggleAllMeanings = (e) => {
-    e.stopPropagation();
-    setShowAllMeanings((prev) => !prev);
-    // 重置单行手动开关，让全局开关统一生效
-    setMeaningVisibility({});
-  };
-
-  // 单词释义单元格点击：只切换当前行
-  const handleMeaningToggle = (index) => {
-    const current = isMeaningVisible(index);
-    setMeaningVisibility((prev) => ({
-      ...prev,
-      [index]: !current,
-    }));
-  };
-
-  // 切换单词收藏状态
-  const handleToggleFavorite = (e, word) => {
-    e.stopPropagation(); // 阻止触发行点击
-    toggleWordInList(WORD_LIST_TYPES.FAVORITE, word, category);
-
-    // 更新本地状态以实时反映UI变化
-    const key = `${category}-${word}`;
-    setFavoriteWords((prev) => {
-      const newSet = new Set(prev);
-      if (newSet.has(key)) {
-        newSet.delete(key);
-      } else {
-        newSet.add(key);
+      if (sentinelRef.current) {
+        observer.unobserve(sentinelRef.current);
       }
-      return newSet;
-    });
-  };
+    };
+  }, [loadMore, hasMore, loading]);
 
-  const getPartOfSpeech = (word) => {
-    if (word.partOfSpeech) {
-      // 提取简短的词性，如 "n. 名词" -> "n."
-      const match = word.partOfSpeech.match(/^([nvadjadv]\.?)/i);
-      return match ? match[1] : word.partOfSpeech.split(' ')[0];
-    }
-    // 如果没有partOfSpeech，尝试从coreMeaning中提取
-    const meaning = word.coreMeaning || '';
-    const match = meaning.match(/^([nvadjadv]\.?\s*[^；，。]+)/);
-    return match ? match[1].trim() : '-';
-  };
+  // Handlers
+  const handleRowClick = useCallback((index) => {
+    saveScrollPosition();
+    navigate(`/detail/${category}/${index}`);
+  }, [category, navigate, saveScrollPosition]);
 
-  const getShortMeaning = (word) => {
+  const handleStartStudy = useCallback(() => {
+    navigate(`/study/${category}`);
+  }, [category, navigate]);
+
+  const handleToggleFavorite = useCallback((e, word) => {
+    e.stopPropagation();
+    toggleFavorite(word);
+  }, [toggleFavorite]);
+
+  const getShortMeaning = useCallback((word) => {
     let meaning = word.coreMeaning || '';
-
-    // 如果有partOfSpeech，从coreMeaning中移除词性部分
-    // if (word.partOfSpeech) {
-    //   // 移除词性前缀（如 "n. 名词" 或类似格式）
-    //   meaning = meaning.replace(/^[nvadjadv]\.?\s*[^；，。]+[；，。]?\s*/, '');
-    // }
-
-    // // 如果还有分号或逗号，取第一部分
-    // if (meaning.includes('；') || meaning.includes('，')) {
-    //   meaning = meaning.split(/[；，]/)[0];
-    // }
-
-    // // 移除括号中的详细说明（保留核心意思）
-    // meaning = meaning.replace(/（[^）]*）/g, '');
-    // meaning = meaning.replace(/\([^)]*\)/g, '');
-
-    // // 限制长度
-    // if (meaning.length > 60) {
-    //   meaning = meaning.substring(0, 60) + '...';
-    // }
-
     return meaning.trim() || '-';
-  };
+  }, []);
 
-  if (words.length === 0) {
+  if (words.length === 0 && !loading) {
     return (
       <div className="container">
         <Header title={`${getCategoryName(category)} - 单词列表`} showBack />
@@ -294,15 +105,9 @@ function WordListPage() {
                     <span>解释</span>
                     <button
                       type="button"
-                      className={`meaning-toggle-btn ${
-                        showAllMeanings ? 'active' : ''
-                      }`}
-                      onClick={handleToggleAllMeanings}
-                      title={
-                        showAllMeanings
-                          ? '隐藏所有单词解释'
-                          : '显示所有单词解释'
-                      }
+                      className={`meaning-toggle-btn ${showAllMeanings ? 'active' : ''}`}
+                      onClick={toggleAllMeanings}
+                      title={showAllMeanings ? '隐藏所有单词解释' : '显示所有单词解释'}
                     >
                       👁
                     </button>
@@ -312,30 +117,45 @@ function WordListPage() {
               </tr>
             </thead>
             <tbody>
-              {words.map((word, index) => {
-                const isFavorited = favoriteKeySet.has(
-                  `${category}-${word.word}`
-                );
-                return (
-                  <WordRow
-                    key={`${word.word}-${index}`}
-                    word={word}
-                    index={index}
-                    category={category}
-                    isFavorite={isFavorited}
-                    isMeaningVisible={isMeaningVisible(index)}
-                    onRowClick={handleRowClick}
-                    onMeaningToggle={handleMeaningToggle}
-                    onToggleFavorite={handleToggleFavorite}
-                    getShortMeaning={getShortMeaning}
-                  />
-                );
-              })}
+              {words.map((word, index) => (
+                <WordRow
+                  key={`${word.word}-${index}`}
+                  word={word}
+                  index={index}
+                  category={category}
+                  isFavorite={isFavorited(word.word)}
+                  isMeaningVisible={isMeaningVisible(index)}
+                  onRowClick={handleRowClick}
+                  onMeaningToggle={toggleMeaning}
+                  onToggleFavorite={handleToggleFavorite}
+                  getShortMeaning={getShortMeaning}
+                />
+              ))}
             </tbody>
           </table>
         </div>
+
+        {/* Loading Sentinel */}
+        <div
+          className="loading-sentinel"
+          ref={sentinelRef}
+          style={{
+            height: '40px',
+            textAlign: 'center',
+            padding: '10px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+        >
+          {loading && <span>加载中...</span>}
+          {!hasMore && words.length > 0 && (
+            <span style={{ color: '#999', fontSize: '12px' }}>—— 到底了 ——</span>
+          )}
+        </div>
+
         <div className="word-list-footer">
-          <div className="word-count">共 {words.length} 个单词</div>
+          <div className="word-count">已加载 {words.length} 个单词</div>
           <button
             className="btn btn-primary word-list-footer-btn"
             onClick={handleStartStudy}

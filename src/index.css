@@ -126,6 +126,7 @@ body {
     width: 36px;
     opacity: 0;
   }
+
   to {
     width: 200px;
     opacity: 1;
@@ -426,7 +427,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px 120px 20px; /* 底部增加padding，避免被固定footer遮挡 */
+  padding: 40px 20px 120px 20px;
+  /* 底部增加padding，避免被固定footer遮挡 */
 }
 
 .word-display {
@@ -587,7 +589,7 @@ body {
 .btn:disabled:hover {
   transform: none !important;
   box-shadow: none !important;
-  background: inherit !important;
+  /* background: inherit !important; */
 }
 
 /* Detail Page */
@@ -595,7 +597,8 @@ body {
   flex: 1;
   padding: 20px;
   overflow-y: auto;
-  padding-bottom: 20px; /* 移除底部padding，因为使用浮标按钮 */
+  padding-bottom: 20px;
+  /* 移除底部padding，因为使用浮标按钮 */
 }
 
 .detail-card {
@@ -818,7 +821,8 @@ body {
 }
 
 .detail-content {
-  padding-bottom: 100px; /* 为底部按钮留出空间 */
+  padding-bottom: 100px;
+  /* 为底部按钮留出空间 */
   position: relative;
 }
 

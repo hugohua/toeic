@@ -4,6 +4,7 @@ import { useSpeechConfig } from '../utils/hooks';
 import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
+import Loading from '../components/Loading';
 import { getCategoryName } from '../utils/app';
 import {
   saveWordStatus,
@@ -194,6 +195,12 @@ function WordStudyPage() {
     // 根据状态自动保存到对应的单词列表
     handleStudyStatus(status);
 
+    // 提前保存进度到下一个单词，确保返回时直接显示下一个而非旧单词
+    // 这样可以避免返回后的页面闪烁问题
+    if (currentIndex + 1 < words.length) {
+      saveProgress(currentIndex + 1);
+    }
+
     // 跳转到单词详情页，添加from=study参数标识从学习页面跳转
     navigate(`/detail/${category}/${currentIndex}?from=study`);
   };
@@ -260,7 +267,7 @@ function WordStudyPage() {
   };
 
   if (isLoading) {
-    return <div>加载中...</div>;
+    return <Loading fullScreen />;
   }
 
   if (!currentWord || words.length === 0) {
