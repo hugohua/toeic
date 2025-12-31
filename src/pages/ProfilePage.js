@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import { getCategories, getWordsByCategory } from '../utils/api';
-import { getWordReviewStats } from '../utils/ebbinghaus';
+import { getAllWordMemories } from '../utils/ebbinghaus';
 
 function ProfilePage() {
   const navigate = useNavigate();
@@ -14,32 +13,23 @@ function ProfilePage() {
 
   const loadWordList = async () => {
     try {
-      const categories = await getCategories();
-      const allWords = [];
-
-      // 遍历所有分类，获取单词列表
-      for (const category of categories) {
-        try {
-          const words = await getWordsByCategory(category.name);
-          words.forEach((word) => {
-            const stats = getWordReviewStats(word.word, category.name);
-            if (stats.reviewCount > 0) {
-              allWords.push({
-                word: word.word,
-                category: category.name,
-                ...stats,
-              });
-            }
-          });
-        } catch (error) {
-          console.error(`加载分类 ${category.name} 失败:`, error);
-        }
+      // 直接从localStorage获取所有复习记录
+      const allMemories = getAllWordMemories();
+      
+      if (allMemories.length === 0) {
+        setWordList([]);
+        return;
       }
 
-      allWords.sort(
-        (a, b) => new Date(b.lastReviewDate) - new Date(a.lastReviewDate)
-      );
-      setWordList(allWords.slice(0, 50)); // 只显示最近50个
+      // 按lastReviewDate排序，取前50个
+      const sortedMemories = allMemories
+        .filter((memory) => memory.lastReviewDate) // 确保有lastReviewDate
+        .sort(
+          (a, b) => new Date(b.lastReviewDate) - new Date(a.lastReviewDate)
+        )
+        .slice(0, 50);
+
+      setWordList(sortedMemories);
     } catch (error) {
       console.error('加载单词列表失败:', error);
       setWordList([]);

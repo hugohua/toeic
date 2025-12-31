@@ -199,6 +199,55 @@ export function getWordReviewStats(word, category) {
   };
 }
 
+// 获取所有单词的记忆记录
+// 遍历localStorage中所有memory_*键，返回所有有复习记录的单词信息
+export function getAllWordMemories() {
+  const memories = [];
+  
+  try {
+    // 遍历localStorage中所有键
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      
+      // 只处理以memory_开头的键
+      if (key && key.startsWith('memory_')) {
+        try {
+          const memoryStr = localStorage.getItem(key);
+          if (memoryStr) {
+            const memory = JSON.parse(memoryStr);
+            
+            // 只返回有复习记录的单词（reviewCount > 0）
+            if (memory && memory.reviewCount > 0) {
+              const stateNames = {
+                [MEMORY_STATE.KNOWN]: '已掌握',
+                [MEMORY_STATE.FUZZY]: '模糊',
+                [MEMORY_STATE.UNKNOWN]: '不熟悉',
+              };
+              
+              memories.push({
+                word: memory.word,
+                category: memory.category,
+                reviewCount: memory.reviewCount || 0,
+                state: stateNames[memory.state] || '未知',
+                lastReviewDate: memory.lastReviewDate,
+                nextReviewDate: memory.nextReviewDate,
+                firstStudyDate: memory.firstStudyDate,
+              });
+            }
+          }
+        } catch (parseError) {
+          // 忽略解析错误的键，继续处理下一个
+          console.warn(`解析记忆记录失败 (${key}):`, parseError);
+        }
+      }
+    }
+  } catch (error) {
+    console.error('获取所有记忆记录失败:', error);
+  }
+  
+  return memories;
+}
+
 // 安排复习
 export function scheduleReview(wordKey, status, timestamp) {
   recordMemoryState(wordKey.split('-')[1], wordKey.split('-')[0], status);

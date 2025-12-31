@@ -8,6 +8,9 @@ const API_BASE_URL =
   (typeof process !== 'undefined' && process.env && process.env.REACT_APP_API_URL) ||
   '/api';
 
+// 单词列表缓存：{ [category]: { words: Array, timestamp: number } }
+const wordListCache = {};
+
 /**
  * 通用 API 请求函数
  */
@@ -56,6 +59,15 @@ export async function getCategories() {
  * @param {number} offset - 偏移量（可选）
  */
 export async function getWordsByCategory(category, limit = null, offset = 0) {
+  // 仅缓存全量加载场景（limit=null, offset=0）
+  const isFullLoad = limit === null && offset === 0;
+
+  // 检查缓存（仅全量加载时）
+  if (isFullLoad && wordListCache[category]) {
+    // 返回深拷贝，避免组件间数据污染
+    return wordListCache[category].words.map((word) => ({ ...word }));
+  }
+
   let endpoint = `/words/${category}`;
   const params = new URLSearchParams();
 
@@ -73,13 +85,23 @@ export async function getWordsByCategory(category, limit = null, offset = 0) {
   const result = await apiRequest(endpoint);
 
   // 转换数据格式以匹配前端期望的格式
-  return result.map((word) => ({
+  const formattedResult = result.map((word) => ({
     ...word,
     partOfSpeech: word.part_of_speech,
     coreMeaning: word.core_meaning,
     toeicSceneFocus: word.toeic_scene_focus,
     sceneAssociation: word.scene_association,
   }));
+
+  // 更新缓存（仅全量加载时）
+  if (isFullLoad) {
+    wordListCache[category] = {
+      words: formattedResult.map((word) => ({ ...word })), // 深拷贝存储
+      timestamp: Date.now(),
+    };
+  }
+
+  return formattedResult;
 }
 
 /**
