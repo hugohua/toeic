@@ -145,27 +145,6 @@ export async function getWordByWord(word) {
 }
 
 /**
- * 根据单词和分类获取单词详情
- * @param {string} word - 单词文本
- * @param {string} category - 分类名称
- */
-export async function getWordByWordAndCategory(word, category) {
-  const wordData = await apiRequest(`/word/${category}/${word}`);
-
-  // 转换数据格式
-  return {
-    ...wordData,
-    partOfSpeech: wordData.part_of_speech,
-    coreMeaning: wordData.core_meaning,
-    toeicSceneFocus: wordData.toeic_scene_focus,
-    sceneAssociation: wordData.scene_association,
-    keyCollocations: wordData.keyCollocations || [],
-    toeicExampleSentences: wordData.toeicExampleSentences || [],
-    confusingWordsComparison: wordData.confusingWordsComparison || [],
-  };
-}
-
-/**
  * 搜索单词
  * @param {string} query - 搜索关键词
  * @param {number} limit - 返回结果的最大数量，默认 50
@@ -264,14 +243,16 @@ export async function deleteArticle(articleId) {
 
 /**
  * 保存笔记
- * @param {string} title - 笔记标题（唯一，不重复）
+ * @param {number} articleId - 文章ID
+ * @param {string} title - 笔记标题（在同一文章内唯一，不重复）
  * @param {string} content - 笔记内容
  * @param {string} type - 笔记类型：'单词' 或 '短语'
  */
-export async function saveNote(title, content, type) {
+export async function saveNote(articleId, title, content, type) {
   return apiRequest('/notes', {
     method: 'POST',
     body: JSON.stringify({
+      article_id: articleId,
       title,
       content,
       type,
@@ -284,6 +265,14 @@ export async function saveNote(title, content, type) {
  */
 export async function getAllNotes() {
   return apiRequest('/notes');
+}
+
+/**
+ * 根据文章ID获取笔记列表
+ * @param {number} articleId - 文章ID
+ */
+export async function getNotesByArticleId(articleId) {
+  return apiRequest(`/articles/${articleId}/notes`);
 }
 
 /**

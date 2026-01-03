@@ -147,6 +147,64 @@
   transform: translateY(-1px);
 }
 
+/* 笔记高亮样式 */
+.article-text .note-highlight {
+  position: relative;
+  display: inline;
+  /* 使用 inline 而不是 inline-block，避免换行问题 */
+  background: rgba(255, 193, 7, 0.25);
+  /* 黄色半透明背景，区别于单词的蓝色 */
+  padding: 2px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #856404;
+  font-weight: 500;
+  /* 关键：允许事件穿透到子元素 */
+  pointer-events: auto;
+}
+
+/* 恢复内部所有元素的点击事件，特别是 word-highlight */
+.article-text .note-highlight * {
+  pointer-events: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* word-highlight 在 note-highlight 内部时，确保可点击且样式正常 */
+.article-text .note-highlight .word-highlight {
+  pointer-events: auto;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.article-text .note-highlight:hover {
+  background: rgba(255, 193, 7, 0.4);
+  box-shadow: 0 2px 4px rgba(255, 193, 7, 0.3);
+}
+
+/* 笔记数量浮标 */
+.article-text .note-highlight .note-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff9800;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 5px;
+  border-radius: 10px;
+  min-width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  pointer-events: auto;
+}
+
 /* 单词详情弹窗样式已迁移到 BottomSheet 组件 */
 
 /* 保留原有的word-detail-modal样式用于兼容 */
@@ -426,5 +484,97 @@
     flex: 1;
     min-width: 100px;
   }
+
+  .article-text .note-highlight .note-badge {
+    font-size: 9px;
+    padding: 1px 4px;
+    min-width: 14px;
+    height: 14px;
+  }
+}
+
+/* 笔记详情样式 */
+.note-detail {
+  padding: 20px;
+}
+
+.note-detail-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.note-detail-type {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.note-detail-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.note-list {
+  padding: 20px;
+}
+
+.note-item {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.note-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.note-item-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.note-item-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #667eea;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.note-item-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+}
+
+.note-item-type {
+  font-size: 12px;
+  color: #666;
+  background: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.note-item-content {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-left: 36px;
 }
 

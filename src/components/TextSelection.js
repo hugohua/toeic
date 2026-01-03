@@ -9,8 +9,9 @@ import './TextSelection.css';
  * TextSelection 组件 - 文本选中操作组件
  * @param {object} props
  * @param {React.RefObject} props.targetRef - 目标元素的 ref，用于监听选中事件
+ * @param {number} props.articleId - 文章ID，用于保存笔记时关联文章
  */
-function TextSelection({ targetRef }) {
+function TextSelection({ targetRef, articleId }) {
   const [selectedText, setSelectedText] = useState('');
   const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
   const [showButtons, setShowButtons] = useState(false);
@@ -268,9 +269,14 @@ function TextSelection({ targetRef }) {
       return;
     }
 
+    if (!articleId) {
+      alert('无法保存笔记：缺少文章ID');
+      return;
+    }
+
     setIsSaving(true);
     try {
-      await saveNote(selectedText, bottomSheetContent, actionType);
+      await saveNote(articleId, selectedText, bottomSheetContent, actionType);
       // 可以显示成功提示，这里先简单处理
       alert('保存成功');
     } catch (error) {

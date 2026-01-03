@@ -38,6 +38,46 @@ function migrateDatabase() {
       db.exec('ALTER TABLE categories ADD COLUMN desc TEXT');
       console.log('数据库迁移完成：desc 字段已添加');
     }
+
+    // 迁移 notes 表：添加 article_id 字段
+    try {
+      const notesTableInfo = db.pragma('table_info(notes)');
+      const notesColumnNames = notesTableInfo.map((col) => col.name);
+
+      if (!notesColumnNames.includes('article_id')) {
+        console.log('正在迁移数据库：修改 notes 表结构...');
+        
+        // 由于旧笔记无法确定关联的文章，删除所有旧笔记数据（根据需求无需兼容）
+        db.exec('DELETE FROM notes');
+        console.log('已清理旧的笔记数据（无法确定关联文章）');
+        
+        // 删除旧表并重新创建（SQLite 不支持直接修改 UNIQUE 约束）
+        db.exec('DROP TABLE IF EXISTS notes');
+        
+        // 重新创建 notes 表（使用新的结构）
+        db.exec(`
+          CREATE TABLE notes (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            article_id INTEGER NOT NULL,
+            title TEXT NOT NULL,
+            content TEXT NOT NULL,
+            type TEXT NOT NULL,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE,
+            UNIQUE(article_id, title)
+          );
+        `);
+        
+        // 重新创建索引
+        db.exec('CREATE INDEX IF NOT EXISTS idx_notes_article_id ON notes(article_id)');
+        db.exec('CREATE INDEX IF NOT EXISTS idx_notes_type ON notes(type)');
+        db.exec('CREATE INDEX IF NOT EXISTS idx_notes_created_at ON notes(created_at)');
+        
+        console.log('数据库迁移完成：notes 表结构已更新');
+      }
+    } catch (error) {
+      console.error('notes 表迁移失败:', error);
+    }
   } catch (error) {
     console.error('数据库迁移失败:', error);
   }
@@ -130,10 +170,13 @@ function initDatabase() {
   db.exec(`
     CREATE TABLE IF NOT EXISTS notes (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      title TEXT UNIQUE NOT NULL,
+      article_id INTEGER NOT NULL,
+      title TEXT NOT NULL,
       content TEXT NOT NULL,
       type TEXT NOT NULL,
-      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE,
+      UNIQUE(article_id, title)
     );
   `);
 
@@ -145,7 +188,7 @@ function initDatabase() {
     CREATE INDEX IF NOT EXISTS idx_sentences_word ON example_sentences(word_id);
     CREATE INDEX IF NOT EXISTS idx_confusing_word ON confusing_words(word_id);
     CREATE INDEX IF NOT EXISTS idx_articles_created_at ON articles(created_at);
-    CREATE INDEX IF NOT EXISTS idx_notes_title ON notes(title);
+    CREATE INDEX IF NOT EXISTS idx_notes_article_id ON notes(article_id);
     CREATE INDEX IF NOT EXISTS idx_notes_type ON notes(type);
     CREATE INDEX IF NOT EXISTS idx_notes_created_at ON notes(created_at);
   `);
@@ -507,28 +550,6 @@ function getWordDetail(wordId) {
 }
 
 /**
- * 根据单词和分类获取单词详情
- */
-function getWordByWordAndCategory(wordText, categoryName) {
-  const word = db
-    .prepare(
-      `
-    SELECT w.*
-    FROM words w
-    JOIN categories c ON w.category_id = c.id
-    WHERE w.word = ? AND c.name = ?
-  `
-    )
-    .get(wordText, categoryName);
-
-  if (!word) {
-    return null;
-  }
-
-  return getWordDetail(word.id);
-}
-
-/**
  * 根据单词文本获取单词详情（不依赖分类）
  * 如果存在多个相同单词，返回第一个匹配的
  */
@@ -759,11 +780,15 @@ function deleteArticle(articleId) {
 
 /**
  * 保存笔记
- * @param {string} title - 笔记标题（唯一，不重复）
+ * @param {number} articleId - 文章ID
+ * @param {string} title - 笔记标题（在同一文章内唯一，不重复）
  * @param {string} content - 笔记内容
  * @param {string} type - 笔记类型：'单词' 或 '短语'
  */
-function saveNote(title, content, type) {
+function saveNote(articleId, title, content, type) {
+  if (!articleId || typeof articleId !== 'number' || articleId <= 0) {
+    throw new Error('文章ID是必需的且必须是正整数');
+  }
   if (!title || typeof title !== 'string' || title.trim() === '') {
     throw new Error('笔记标题是必需的');
   }
@@ -774,22 +799,29 @@ function saveNote(title, content, type) {
     throw new Error('笔记类型必须是"单词"或"短语"');
   }
 
-  // 检查标题是否已存在
+  // 验证文章是否存在
+  const article = db.prepare('SELECT id FROM articles WHERE id = ?').get(articleId);
+  if (!article) {
+    throw new Error('指定的文章不存在');
+  }
+
+  // 检查在该文章下标题是否已存在
   const existing = db
-    .prepare('SELECT id FROM notes WHERE title = ?')
-    .get(title.trim());
+    .prepare('SELECT id FROM notes WHERE article_id = ? AND title = ?')
+    .get(articleId, title.trim());
 
   if (existing) {
-    throw new Error('笔记标题已存在');
+    throw new Error('该文章下已存在相同标题的笔记');
   }
 
   const insert = db.prepare(
-    'INSERT INTO notes (title, content, type) VALUES (?, ?, ?)'
+    'INSERT INTO notes (article_id, title, content, type) VALUES (?, ?, ?, ?)'
   );
-  const result = insert.run(title.trim(), content.trim(), type);
+  const result = insert.run(articleId, title.trim(), content.trim(), type);
   
   return {
     id: result.lastInsertRowid,
+    article_id: articleId,
     title: title.trim(),
     content: content.trim(),
     type,
@@ -804,6 +836,22 @@ function getAllNotes() {
   const notes = db
     .prepare('SELECT id, title, type, created_at FROM notes ORDER BY created_at DESC')
     .all();
+  
+  return notes;
+}
+
+/**
+ * 根据文章ID获取笔记列表
+ * @param {number} articleId - 文章ID
+ */
+function getNotesByArticleId(articleId) {
+  if (!articleId || typeof articleId !== 'number' || articleId <= 0) {
+    throw new Error('文章ID是必需的且必须是正整数');
+  }
+
+  const notes = db
+    .prepare('SELECT id, article_id, title, content, type, created_at FROM notes WHERE article_id = ? ORDER BY created_at DESC')
+    .all(articleId);
   
   return notes;
 }
@@ -854,7 +902,6 @@ module.exports = {
   getWordsByCategories,
   getWordCountByCategory,
   getWordDetail,
-  getWordByWordAndCategory,
   getWordByWord,
   searchWords,
   batchImportWords,
@@ -864,6 +911,7 @@ module.exports = {
   deleteArticle,
   saveNote,
   getAllNotes,
+  getNotesByArticleId,
   getNoteById,
   deleteNote,
 };

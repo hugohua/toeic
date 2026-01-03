@@ -4,7 +4,7 @@
 import { useSpeech } from 'react-text-to-speech';
 import { useState, useEffect, useRef } from 'react';
 import { disableBodyScroll, enableBodyScroll } from './scroll';
-import { getWordByWord, getWordByWordAndCategory, searchWords, grammarAnalyze } from './api';
+import { getWordByWord, searchWords, grammarAnalyze } from './api';
 import { cleanWordText } from './text';
 
 /**
@@ -101,7 +101,7 @@ export function useWordDetail({ article = null, enableWordClick = true } = {}) {
     );
   };
 
-  // 处理单词点击事件（ArticleDetailPage 版本：从分类中查找）
+  // 处理单词点击事件（ArticleDetailPage 版本：直接查找）
   const handleWordClickWithCategories = async (wordText) => {
     if (!wordText || !article) return;
     
@@ -115,70 +115,20 @@ export function useWordDetail({ article = null, enableWordClick = true } = {}) {
     setError('');
 
     try {
-      // 从文章的分类中查找
-      let found = false;
-      const categories = article.categories || [];
-      
-      for (const category of categories) {
-        try {
-          const detail = await getWordByWordAndCategory(cleanWord, category);
-          if (detail) {
-            setWordDetail(detail);
-            setIsLoadingWordDetail(false);
-            found = true;
-            break;
-          }
-        } catch (err) {
-          // 检查是否是404错误，如果是则立即调用语法解析
-          if (err.message && err.message.includes('404')) {
-            callGrammarAnalyze(cleanWord);
-            return;
-          }
-          // 其他错误继续尝试下一个分类
-          continue;
-        }
-      }
-
-      // 如果没找到，尝试搜索所有单词
-      if (!found) {
-        try {
-          const searchResults = await searchWords(cleanWord, 10);
-          const exactMatch = searchResults.find(w => w.word.toLowerCase() === cleanWord);
-          if (exactMatch) {
-            // 如果找到精确匹配，获取详情
-            try {
-              const detail = await getWordByWordAndCategory(cleanWord, exactMatch.category_name);
-              if (detail) {
-                setWordDetail(detail);
-                setIsLoadingWordDetail(false);
-                found = true;
-              }
-            } catch (err) {
-              // 检查是否是404错误
-              if (err.message && err.message.includes('404')) {
-                callGrammarAnalyze(cleanWord);
-                return;
-              }
-              console.error('获取单词详情失败:', err);
-            }
-          }
-        } catch (err) {
-          // 搜索失败，检查是否是404
-          if (err.message && err.message.includes('404')) {
-            callGrammarAnalyze(cleanWord);
-            return;
-          }
-        }
-      }
-
-      // 如果所有尝试都失败，调用语法解析
-      if (!found) {
+      // 直接根据单词获取详情，不依赖分类
+      const detail = await getWordByWord(cleanWord);
+      if (detail) {
+        setWordDetail(detail);
+        setIsLoadingWordDetail(false);
+      } else {
+        // 如果没找到单词详情，调用语法解析
         callGrammarAnalyze(cleanWord);
       }
     } catch (err) {
-      console.error('查找单词失败:', err);
+      console.error('获取单词详情失败:', err);
       // 检查是否是404错误
       if (err.message && err.message.includes('404')) {
+        // 404错误时调用语法解析
         callGrammarAnalyze(cleanWord);
       } else {
         setError('查找单词详情失败: ' + err.message);

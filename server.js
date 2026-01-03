@@ -8,7 +8,6 @@ const {
   getWordsByCategories,
   getWordCountByCategory,
   getWordDetail,
-  getWordByWordAndCategory,
   getWordByWord,
   searchWords,
   batchImportWords,
@@ -19,6 +18,7 @@ const {
   deleteArticle,
   saveNote,
   getAllNotes,
+  getNotesByArticleId,
   getNoteById,
   deleteNote,
 } = require('./src/db/database');
@@ -217,23 +217,6 @@ app.get('/api/word/:id', (req, res) => {
   }
 });
 
-// 根据单词和分类获取单词详情（保留向后兼容）
-app.get('/api/word/:category/:word', (req, res) => {
-  try {
-    const { category, word } = req.params;
-    const wordData = getWordByWordAndCategory(word, category);
-
-    if (!wordData) {
-      return res.status(404).json({ success: false, error: '单词不存在' });
-    }
-
-    res.json({ success: true, data: wordData });
-  } catch (error) {
-    console.error('获取单词详情错误:', error);
-    res.status(500).json({ success: false, error: error.message });
-  }
-});
-
 // 搜索单词
 app.get('/api/search', (req, res) => {
   try {
@@ -358,10 +341,36 @@ app.delete('/api/articles/:id', (req, res) => {
   }
 });
 
+// 获取文章下的所有笔记
+app.get('/api/articles/:id/notes', (req, res) => {
+  try {
+    const articleId = parseInt(req.params.id);
+    if (isNaN(articleId)) {
+      return res.status(400).json({
+        success: false,
+        error: '无效的文章ID',
+      });
+    }
+
+    const notes = getNotesByArticleId(articleId);
+    res.json({ success: true, data: notes });
+  } catch (error) {
+    console.error('获取文章笔记错误:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
 // 保存笔记
 app.post('/api/notes', (req, res) => {
   try {
-    const { title, content, type } = req.body;
+    const { article_id, title, content, type } = req.body;
+
+    if (!article_id || typeof article_id !== 'number') {
+      return res.status(400).json({
+        success: false,
+        error: '文章ID是必需的',
+      });
+    }
 
     if (!title || typeof title !== 'string' || title.trim() === '') {
       return res.status(400).json({
@@ -384,11 +393,11 @@ app.post('/api/notes', (req, res) => {
       });
     }
 
-    const note = saveNote(title.trim(), content.trim(), type);
+    const note = saveNote(article_id, title.trim(), content.trim(), type);
     res.json({ success: true, data: note });
   } catch (error) {
     console.error('保存笔记错误:', error);
-    const statusCode = error.message.includes('已存在') ? 409 : 500;
+    const statusCode = error.message.includes('已存在') || error.message.includes('不存在') ? 409 : 500;
     res.status(statusCode).json({ success: false, error: error.message });
   }
 });

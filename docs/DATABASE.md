@@ -80,7 +80,7 @@ npm run import-data
 - `getWordsByCategory(categoryName, limit, offset)` - 根据分类获取单词列表
 - `getWordCountByCategory(categoryName)` - 获取分类下的单词数量
 - `getWordDetail(wordId)` - 获取单词详情（包含所有关联数据）
-- `getWordByWordAndCategory(wordText, categoryName)` - 根据单词和分类获取详情
+- `getWordByWord(wordText)` - 根据单词文本获取详情（不依赖分类）
 - `searchWords(query, limit)` - 搜索单词
 
 ## API 接口
@@ -89,8 +89,7 @@ npm run import-data
 
 - `GET /api/categories` - 获取所有分类
 - `GET /api/words/:category` - 获取分类下的单词列表
-- `GET /api/word/:id` - 根据ID获取单词详情
-- `GET /api/word/:category/:word` - 根据单词和分类获取详情
+- `GET /api/word/:id` - 根据ID或单词文本获取单词详情
 - `GET /api/search?q=关键词` - 搜索单词
 
 ## 启动服务器
