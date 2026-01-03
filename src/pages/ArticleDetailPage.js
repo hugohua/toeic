@@ -164,7 +164,11 @@ function ArticleDetailPage() {
         </div>
 
         {/* 文本选中操作组件 */}
-        <TextSelection targetRef={articleRef} articleId={articleId} />
+        <TextSelection
+          targetRef={articleRef}
+          articleId={articleId}
+          onNoteSaved={loadNotes}
+        />
 
         {/* 单词详情弹窗 - BottomSheet样式 */}
         <BottomSheet isOpen={isModalOpen} onClose={handleCloseModal}>
@@ -191,7 +195,7 @@ function ArticleDetailPage() {
                 <div className="note-detail">
                   <div className="note-detail-title">{selectedNotes[0].title}</div>
                   <div className="note-detail-type">类型：{selectedNotes[0].type}</div>
-                  <div className="note-detail-content">
+                  <div className="note-detail-content markdown-body">
                     <ReactMarkdown remarkPlugins={[remarkGfm]}>{selectedNotes[0].content}</ReactMarkdown>
                   </div>
                 </div>
@@ -204,7 +208,7 @@ function ArticleDetailPage() {
                         <span className="note-item-title">{note.title}</span>
                         <span className="note-item-type">{note.type}</span>
                       </div>
-                      <div className="note-item-content">
+                      <div className="note-item-content markdown-body">
                         <ReactMarkdown remarkPlugins={[remarkGfm]}>{note.content}</ReactMarkdown>
                       </div>
                     </div>

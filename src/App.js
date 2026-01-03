@@ -30,21 +30,21 @@ function App() {
     <>
       <PopupContainer />
       <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/study/:category" element={<WordStudyPage />} />
-      <Route path="/detail/:category/:index" element={<WordDetailPage />} />
-      <Route path="/browse/:category" element={<WordBrowsePage />} />
-      <Route path="/list/:category" element={<WordListPage />} />
-      <Route path="/profile" element={<ProfilePage />} />
-      <Route path="/test-speech" element={<TestSpeechPage />} />
-      <Route path="/special/:listType" element={<SpecialWordListPage />} />
-      <Route path="/import" element={<WordImportPage />} />
-      <Route path="/category/add" element={<CategoryAddPage />} />
-      <Route path="/article" element={<WordArticlePage />} />
-      <Route path="/articles" element={<ArticleListPage />} />
-      <Route path="/article/:id" element={<ArticleDetailPage />} />
-      <Route path="/notes" element={<NoteListPage />} />
-      <Route path="/note/:id" element={<NoteDetailPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/study/:category" element={<WordStudyPage />} />
+        <Route path="/detail/:category/:index" element={<WordDetailPage />} />
+        <Route path="/browse/:category" element={<WordBrowsePage />} />
+        <Route path="/list/:category" element={<WordListPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/test-speech" element={<TestSpeechPage />} />
+        <Route path="/special/:listType" element={<SpecialWordListPage />} />
+        <Route path="/import" element={<WordImportPage />} />
+        <Route path="/category/add" element={<CategoryAddPage />} />
+        <Route path="/article" element={<WordArticlePage />} />
+        <Route path="/articles" element={<ArticleListPage />} />
+        <Route path="/article/:id" element={<ArticleDetailPage />} />
+        <Route path="/notes" element={<NoteListPage />} />
+        <Route path="/note/:id" element={<NoteDetailPage />} />
       </Routes>
     </>
   );

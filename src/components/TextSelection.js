@@ -3,15 +3,17 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import BottomSheet from './BottomSheet';
 import { translate, grammarAnalyze, saveNote } from '../utils/api';
+import Popup from './Popup';
 import './TextSelection.css';
+import '../styles/Markdown.css';
 
 /**
  * TextSelection 组件 - 文本选中操作组件
  * @param {object} props
- * @param {React.RefObject} props.targetRef - 目标元素的 ref，用于监听选中事件
- * @param {number} props.articleId - 文章ID，用于保存笔记时关联文章
- */
-function TextSelection({ targetRef, articleId }) {
+  * @param {React.RefObject} props.targetRef - 目标元素的 ref，用于监听选中事件
+  * @param {number} props.articleId - 文章ID，用于保存笔记时关联文章
+  */
+function TextSelection({ targetRef, articleId, onNoteSaved }) {
   const [selectedText, setSelectedText] = useState('');
   const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
   const [showButtons, setShowButtons] = useState(false);
@@ -20,6 +22,7 @@ function TextSelection({ targetRef, articleId }) {
   const [isLoading, setIsLoading] = useState(false);
   const [actionType, setActionType] = useState(''); // 'translate' 或 'grammar'
   const [isSaving, setIsSaving] = useState(false);
+  const [isSaved, setIsSaved] = useState(false);
   const buttonGroupRef = useRef(null);
   const abortControllerRef = useRef(null);
   const markdownContentRef = useRef(null);
@@ -41,12 +44,12 @@ function TextSelection({ targetRef, articleId }) {
 
     const range = selection.getRangeAt(0);
     const rect = range.getBoundingClientRect();
-    
+
     // 使用 fixed 定位，相对于视口
     const centerX = rect.left + rect.width / 2;
     // 按钮显示在选中文本上方，估算按钮高度约50px（包括padding和间距）
     const topY = rect.top - 50;
-    
+
     return {
       top: topY,
       left: centerX,
@@ -56,7 +59,7 @@ function TextSelection({ targetRef, articleId }) {
   // 处理文本选中
   const handleSelection = () => {
     const text = getSelectedText();
-    
+
     if (text && text.length > 0) {
       const position = getSelectionPosition();
       if (position) {
@@ -174,21 +177,22 @@ function TextSelection({ targetRef, articleId }) {
   // 翻译
   const handleTranslate = () => {
     if (!selectedText) return;
-    
+
     // 如果已有正在进行的请求，先中止
     if (abortControllerRef.current) {
       abortControllerRef.current.abort();
     }
-    
+
     // 创建新的 AbortController
     const abortController = new AbortController();
     abortControllerRef.current = abortController;
-    
+
     setShowButtons(false);
     setIsBottomSheetOpen(true);
     setBottomSheetContent('');
     setIsLoading(true);
     setActionType('translate');
+    setIsSaved(false);
 
     translate(
       selectedText,
@@ -220,21 +224,22 @@ function TextSelection({ targetRef, articleId }) {
   // 语法解析
   const handleGrammarAnalyze = () => {
     if (!selectedText) return;
-    
+
     // 如果已有正在进行的请求，先中止
     if (abortControllerRef.current) {
       abortControllerRef.current.abort();
     }
-    
+
     // 创建新的 AbortController
     const abortController = new AbortController();
     abortControllerRef.current = abortController;
-    
+
     setShowButtons(false);
     setIsBottomSheetOpen(true);
     setBottomSheetContent('');
     setIsLoading(true);
     setActionType('grammar');
+    setIsSaved(false);
 
     grammarAnalyze(
       selectedText,
@@ -277,11 +282,14 @@ function TextSelection({ targetRef, articleId }) {
     setIsSaving(true);
     try {
       await saveNote(articleId, selectedText, bottomSheetContent, actionType);
-      // 可以显示成功提示，这里先简单处理
-      alert('保存成功');
+      Popup.show('保存成功');
+      setIsSaved(true);
+      if (onNoteSaved) {
+        onNoteSaved();
+      }
     } catch (error) {
       console.error('保存笔记失败:', error);
-      alert('保存失败: ' + error.message);
+      Popup.show('保存失败: ' + error.message, 2000);
     } finally {
       setIsSaving(false);
     }
@@ -294,11 +302,14 @@ function TextSelection({ targetRef, articleId }) {
       abortControllerRef.current.abort();
       abortControllerRef.current = null;
     }
-    
+
     setIsBottomSheetOpen(false);
     setBottomSheetContent('');
     setIsLoading(false);
+    setBottomSheetContent('');
+    setIsLoading(false);
     setActionType('');
+    setIsSaved(false);
     // 清除选中
     window.getSelection().removeAllRanges();
   };
@@ -310,7 +321,7 @@ function TextSelection({ targetRef, articleId }) {
       const rect = buttonGroup.getBoundingClientRect();
       const width = rect.width;
       const windowWidth = window.innerWidth;
-      
+
       // 检查是否超出右边界
       if (buttonPosition.left + width / 2 > windowWidth) {
         setButtonPosition(prev => ({
@@ -338,7 +349,7 @@ function TextSelection({ targetRef, articleId }) {
                 {actionType === 'translate' ? '翻译' : actionType === 'grammar' ? '语法解析' : ''}
               </h3>
               <div className="text-selection-header-actions">
-                {bottomSheetContent && actionType && (
+                {bottomSheetContent && actionType && !isSaved && (
                   <button
                     className="text-selection-save"
                     onClick={handleSaveNote}
@@ -353,7 +364,7 @@ function TextSelection({ targetRef, articleId }) {
             </div>
             <div className="text-selection-content">
               {bottomSheetContent ? (
-                <div className="text-selection-content-text">
+                <div className="text-selection-content-text markdown-body">
                   <ReactMarkdown remarkPlugins={[remarkGfm]}>{bottomSheetContent}</ReactMarkdown>
                 </div>
               ) : (
@@ -417,7 +428,7 @@ function TextSelection({ targetRef, articleId }) {
               {actionType === 'translate' ? '翻译' : actionType === 'grammar' ? '语法解析' : ''}
             </h3>
             <div className="text-selection-header-actions">
-              {bottomSheetContent && actionType && (
+              {bottomSheetContent && actionType && !isSaved && (
                 <button
                   className="text-selection-save"
                   onClick={handleSaveNote}
@@ -432,7 +443,7 @@ function TextSelection({ targetRef, articleId }) {
           </div>
           <div className="text-selection-content">
             {bottomSheetContent ? (
-              <div className="text-selection-content-text">
+              <div className="text-selection-content-text markdown-body">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{bottomSheetContent}</ReactMarkdown>
               </div>
             ) : (

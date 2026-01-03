@@ -12,9 +12,9 @@ import './BottomSheet.css';
  * @param {number} props.minHeight - 最小高度（像素）
  * @param {number} props.maxHeight - 最大高度（像素）
  */
-function BottomSheet({ 
-  isOpen, 
-  onClose, 
+function BottomSheet({
+  isOpen,
+  onClose,
   children,
   defaultHeight = 0.6,
   minHeight = 200,
@@ -60,7 +60,11 @@ function BottomSheet({
     const { startY, startHeight } = dragStateRef.current;
     const deltaY = startY - clientY; // 向上拖动为正值
     const maxHeightPx = maxHeight || window.innerHeight - 100;
-    const newHeight = Math.max(minHeight, Math.min(maxHeightPx, startHeight + deltaY));
+
+    // 允许拖动小于 minHeight，以此给用户"即将关闭"的反馈
+    // 这里的 50 是绝对最小高度，防止拖得太小看不见
+    const newHeight = Math.max(50, Math.min(maxHeightPx, startHeight + deltaY));
+
     setSheetHeight(newHeight);
     if (bottomSheetRef.current) {
       bottomSheetRef.current.style.height = `${newHeight}px`;
@@ -72,13 +76,20 @@ function BottomSheet({
       setIsDragging(false);
       return;
     }
-    
-    // 如果向下拖动超过100px，关闭BottomSheet
-    const { startHeight } = dragStateRef.current;
+
     const currentHeight = bottomSheetRef.current.offsetHeight;
-    if (currentHeight < startHeight - 100) {
+    const closeThreshold = 150; // 低于这个高度则关闭
+
+    if (currentHeight < closeThreshold) {
+      // 高度太小，认为是关闭操作
       onClose();
+    } else if (currentHeight < minHeight) {
+      // 高度在 minHeight 和 closeThreshold 之间，回弹到 minHeight
+      setSheetHeight(minHeight);
+      bottomSheetRef.current.style.height = `${minHeight}px`;
+      setIsDragging(false);
     } else {
+      // 高度正常，保持当前高度
       setIsDragging(false);
     }
   };
@@ -117,20 +128,20 @@ function BottomSheet({
   if (!isOpen) return null;
   return (
     <div className="bottom-sheet-overlay" onClick={handleOverlayClick}>
-      <div 
+      <div
         ref={bottomSheetRef}
         className={`bottom-sheet ${isDragging ? 'dragging' : ''}`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* 拖动手柄 */}
-        <div 
+        <div
           className="bottom-sheet-handle"
           onMouseDown={handleDragStart}
           onTouchStart={handleDragStart}
         >
           <div className="bottom-sheet-handle-bar"></div>
         </div>
-        
+
         {/* 内容区域 */}
         <div className="bottom-sheet-content">
           {children}

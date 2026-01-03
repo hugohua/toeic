@@ -37,7 +37,7 @@ function WordDetailBottomSheet({
         </div>
         <div className="text-selection-content">
           {grammarContent ? (
-            <div className="text-selection-content-text">
+            <div className="text-selection-content-text markdown-body">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{grammarContent}</ReactMarkdown>
             </div>
           ) : (

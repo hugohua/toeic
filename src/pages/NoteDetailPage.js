@@ -6,8 +6,17 @@ import Header from '../components/Header';
 import { getNoteById } from '../utils/api';
 import '../index.css';
 import './NoteDetailPage.css';
+import '../styles/Markdown.css'; // Import unified markdown styles
 
 function NoteDetailPage() {
+  // ...
+  {/* 笔记内容 - 使用 markdown 渲染 */ }
+  <div className="note-detail-body markdown-body">
+    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+      {note.content}
+    </ReactMarkdown>
+  </div>
+  // ...
   const { id } = useParams();
   const [note, setNote] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -98,7 +107,7 @@ function NoteDetailPage() {
           </div>
 
           {/* 笔记内容 - 使用 markdown 渲染 */}
-          <div className="note-detail-body">
+          <div className="note-detail-body markdown-body">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
               {note.content}
             </ReactMarkdown>
