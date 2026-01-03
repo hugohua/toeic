@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { useSpeechConfig } from '../utils/hooks';
+import { useSpeechConfig } from '../hooks/useSpeechConfig';
 import Header from '../components/Header';
 import { getWordList, WORD_LIST_TYPES } from '../utils/storage';
 import { getWordsByCategory } from '../utils/api';

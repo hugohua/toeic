@@ -5,7 +5,7 @@ import {
   useSearchParams,
   useLocation,
 } from 'react-router-dom';
-import { useSpeechConfig } from '../utils/hooks';
+import { useSpeechConfig } from '../hooks/useSpeechConfig';
 import { getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import WordDetailContent from '../components/WordDetailContent';

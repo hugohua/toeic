@@ -2,7 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import WordDetailContent from './WordDetailContent';
-import { useSpeechConfig } from '../utils/hooks';
+import { useSpeechConfig } from '../hooks/useSpeechConfig';
 import '../components/TextSelection.css';
 
 /**

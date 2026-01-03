@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSpeechConfig } from '../utils/hooks';
+import { useSpeechConfig } from '../hooks/useSpeechConfig';
 import { extractEnglishText } from '../utils/text';
 import './ExampleSentence.css';
 

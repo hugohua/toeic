@@ -7,7 +7,7 @@ import { getArticleById, getNotesByArticleId } from '../utils/api';
 import BottomSheet from '../components/BottomSheet';
 import TextSelection from '../components/TextSelection';
 import WordDetailBottomSheet from '../components/WordDetailBottomSheet';
-import { useWordDetail } from '../utils/hooks';
+import { useWordDetail } from '../hooks/useWordDetail';
 import { formatArticle } from '../utils/text';
 import '../index.css';
 import './WordArticlePage.css';

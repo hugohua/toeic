@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { useSpeechConfig } from '../utils/hooks';
+import { useSpeechConfig } from '../hooks/useSpeechConfig';
 import { getFirstSlashContent } from '../utils/app';
 
 // 单词行组件，包含发音、释义和收藏功能

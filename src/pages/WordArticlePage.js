@@ -5,7 +5,7 @@ import { getCategories, generateArticle, saveArticle } from '../utils/api';
 import BottomSheet from '../components/BottomSheet';
 import TextSelection from '../components/TextSelection';
 import WordDetailBottomSheet from '../components/WordDetailBottomSheet';
-import { useWordDetail } from '../utils/hooks';
+import { useWordDetail } from '../hooks/useWordDetail';
 import Popup from '../components/Popup';
 import { formatArticle, extractTitle } from '../utils/text';
 import '../index.css';
@@ -82,7 +82,7 @@ function WordArticlePage() {
 
     try {
       const categoryArray = Array.from(selectedCategories);
-      
+
       // 使用流式 API
       await generateArticle(
         categoryArray,
@@ -123,7 +123,7 @@ function WordArticlePage() {
     try {
       const title = extractTitle(article);
       const categoryArray = Array.from(selectedCategories);
-      
+
       await saveArticle(title, article, categoryArray);
       Popup.show('文章保存成功！');
     } catch (err) {
@@ -144,7 +144,7 @@ function WordArticlePage() {
     try {
       // 移除markdown加粗标记，保留纯文本
       const cleanArticle = article.replace(/\*\*/g, '');
-      
+
       // 使用现代 Clipboard API
       if (navigator.clipboard && navigator.clipboard.writeText) {
         await navigator.clipboard.writeText(cleanArticle);

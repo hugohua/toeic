@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSpeechConfig } from '../utils/hooks';
+import { useSpeechConfig } from '../hooks/useSpeechConfig';
 import './WordTitle.css';
 
 /**

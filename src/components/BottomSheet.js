@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useDisableScroll } from '../utils/hooks';
+import { useDisableScroll } from '../hooks/useDisableScroll';
 import './BottomSheet.css';
 
 /**
