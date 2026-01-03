@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import BottomSheet from './BottomSheet';
-import { translate, grammarAnalyze, saveNote } from '../utils/api';
+import { grammarAnalyze, saveNote } from '../utils/api';
 import Popup from './Popup';
+import EtymologyBottomSheet from './EtymologyBottomSheet';
 import './TextSelection.css';
 import '../styles/Markdown.css';
 
@@ -20,9 +21,10 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
   const [isBottomSheetOpen, setIsBottomSheetOpen] = useState(false);
   const [bottomSheetContent, setBottomSheetContent] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [actionType, setActionType] = useState(''); // 'translate' 或 'grammar'
+  const [actionType, setActionType] = useState(''); // 'etymology' 或 'grammar'
   const [isSaving, setIsSaving] = useState(false);
   const [isSaved, setIsSaved] = useState(false);
+  const [showEtymology, setShowEtymology] = useState(false); // 控制构词法 BottomSheet
   const buttonGroupRef = useRef(null);
   const abortControllerRef = useRef(null);
   const markdownContentRef = useRef(null);
@@ -174,51 +176,11 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
     }
   };
 
-  // 翻译
-  const handleTranslate = () => {
+  // 构词法
+  const handleEtymology = () => {
     if (!selectedText) return;
-
-    // 如果已有正在进行的请求，先中止
-    if (abortControllerRef.current) {
-      abortControllerRef.current.abort();
-    }
-
-    // 创建新的 AbortController
-    const abortController = new AbortController();
-    abortControllerRef.current = abortController;
-
     setShowButtons(false);
-    setIsBottomSheetOpen(true);
-    setBottomSheetContent('');
-    setIsLoading(true);
-    setActionType('translate');
-    setIsSaved(false);
-
-    translate(
-      selectedText,
-      // onChunk: 接收每个内容块，使用函数式更新确保流式输出
-      (chunk) => {
-        if (!abortController.signal.aborted) {
-          setBottomSheetContent((prev) => prev + chunk);
-        }
-      },
-      // onError: 错误处理
-      (error) => {
-        if (!abortController.signal.aborted) {
-          console.error('翻译错误:', error);
-          setBottomSheetContent(`翻译失败: ${error.message}`);
-          setIsLoading(false);
-        }
-      },
-      // onComplete: 完成回调
-      () => {
-        if (!abortController.signal.aborted) {
-          setIsLoading(false);
-        }
-        abortControllerRef.current = null;
-      },
-      abortController.signal
-    );
+    setShowEtymology(true);
   };
 
   // 语法解析
@@ -306,11 +268,14 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
     setIsBottomSheetOpen(false);
     setBottomSheetContent('');
     setIsLoading(false);
-    setBottomSheetContent('');
-    setIsLoading(false);
-    setActionType('');
     setIsSaved(false);
     // 清除选中
+    window.getSelection().removeAllRanges();
+  };
+
+  // 关闭构词法 BottomSheet
+  const handleCloseEtymology = () => {
+    setShowEtymology(false);
     window.getSelection().removeAllRanges();
   };
 
@@ -346,7 +311,7 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
           <div className="text-selection-sheet">
             <div className="text-selection-header">
               <h3 className="text-selection-title">
-                {actionType === 'translate' ? '翻译' : actionType === 'grammar' ? '语法解析' : ''}
+                {actionType === 'grammar' ? '语法解析' : ''}
               </h3>
               <div className="text-selection-header-actions">
                 {bottomSheetContent && actionType && !isSaved && (
@@ -373,6 +338,12 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
             </div>
           </div>
         </BottomSheet>
+
+        <EtymologyBottomSheet
+          isOpen={showEtymology}
+          onClose={handleCloseEtymology}
+          word={selectedText}
+        />
       </>
     );
   }
@@ -393,11 +364,11 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
           className="text-selection-button"
           onClick={(e) => {
             e.stopPropagation();
-            handleTranslate();
+            handleEtymology();
           }}
-          title="翻译"
+          title="构词法"
         >
-          翻译
+          构词法
         </button>
         <button
           className="text-selection-button"
@@ -425,7 +396,7 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
         <div className="text-selection-sheet">
           <div className="text-selection-header">
             <h3 className="text-selection-title">
-              {actionType === 'translate' ? '翻译' : actionType === 'grammar' ? '语法解析' : ''}
+              {actionType === 'grammar' ? '语法解析' : ''}
             </h3>
             <div className="text-selection-header-actions">
               {bottomSheetContent && actionType && !isSaved && (
@@ -435,7 +406,7 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
                   disabled={isSaving}
                   title="保存笔记"
                 >
-                  {isSaving ? '保存中...' : '保存'}
+                  {isSaving ? '保存中...' : '保存笔记'}
                 </button>
               )}
               <button className="text-selection-close" onClick={handleCloseBottomSheet}>×</button>
@@ -457,4 +428,3 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
 }
 
 export default TextSelection;
-

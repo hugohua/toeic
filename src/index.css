@@ -609,6 +609,7 @@ body {
 }
 
 .detail-header {
+  position: relative;
   text-align: center;
   padding-bottom: 25px;
   border-bottom: 2px solid #f0f0f0;
@@ -662,6 +663,35 @@ body {
 
 .favorite-btn.favorite-btn-active .favorite-icon {
   color: #ffb400;
+}
+
+.etymology-header-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  right: calc(9% + 42px);
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.etymology-header-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+.etymology-header-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 .memory-info {

@@ -4,7 +4,7 @@
 import { useSpeech } from 'react-text-to-speech';
 import { useState, useEffect, useRef } from 'react';
 import { disableBodyScroll, enableBodyScroll } from './scroll';
-import { getWordByWord, searchWords, grammarAnalyze } from './api';
+import { getWordByWord, searchWords, translate } from './api';
 import { cleanWordText } from './text';
 
 /**
@@ -42,7 +42,7 @@ export function useDisableScroll(shouldDisable) {
 }
 
 /**
- * 单词详情和语法解析的 Hook
+ * 单词详情和翻译的 Hook
  * @param {object} options - 配置选项
  * @param {object} options.article - 文章对象（可选，用于 ArticleDetailPage）
  * @param {boolean} options.enableWordClick - 是否启用单词点击监听（默认 true）
@@ -52,48 +52,48 @@ export function useWordDetail({ article = null, enableWordClick = true } = {}) {
   const [selectedWord, setSelectedWord] = useState(null);
   const [wordDetail, setWordDetail] = useState(null);
   const [isLoadingWordDetail, setIsLoadingWordDetail] = useState(false);
-  const [grammarContent, setGrammarContent] = useState('');
-  const [isLoadingGrammar, setIsLoadingGrammar] = useState(false);
+  const [translationContent, setTranslationContent] = useState('');
+  const [isLoadingTranslation, setIsLoadingTranslation] = useState(false);
   const [error, setError] = useState('');
   const articleRef = useRef(null);
   const abortControllerRef = useRef(null);
 
-  // 调用语法解析的辅助函数
-  const callGrammarAnalyze = (cleanWord) => {
+  // 调用翻译的辅助函数
+  const callTranslate = (cleanWord) => {
     // 如果已有正在进行的请求，先中止
     if (abortControllerRef.current) {
       abortControllerRef.current.abort();
     }
-    
+
     // 创建新的 AbortController
     const abortController = new AbortController();
     abortControllerRef.current = abortController;
-    
+
     setIsLoadingWordDetail(false);
-    setIsLoadingGrammar(true);
-    setGrammarContent('');
+    setIsLoadingTranslation(true);
+    setTranslationContent('');
     setError('');
 
-    grammarAnalyze(
+    translate(
       cleanWord,
       // onChunk: 接收每个内容块，使用函数式更新确保流式输出
       (chunk) => {
         if (!abortController.signal.aborted) {
-          setGrammarContent((prev) => prev + chunk);
+          setTranslationContent((prev) => prev + chunk);
         }
       },
       // onError: 错误处理
       (error) => {
         if (!abortController.signal.aborted) {
-          console.error('语法解析错误:', error);
-          setGrammarContent(`语法解析失败: ${error.message}`);
-          setIsLoadingGrammar(false);
+          console.error('翻译错误:', error);
+          setTranslationContent(`翻译失败: ${error.message}`);
+          setIsLoadingTranslation(false);
         }
       },
       // onComplete: 完成回调
       () => {
         if (!abortController.signal.aborted) {
-          setIsLoadingGrammar(false);
+          setIsLoadingTranslation(false);
         }
         abortControllerRef.current = null;
       },
@@ -104,14 +104,14 @@ export function useWordDetail({ article = null, enableWordClick = true } = {}) {
   // 处理单词点击事件（ArticleDetailPage 版本：直接查找）
   const handleWordClickWithCategories = async (wordText) => {
     if (!wordText || !article) return;
-    
+
     const cleanWord = cleanWordText(wordText);
     if (!cleanWord) return;
 
     setSelectedWord(cleanWord);
     setIsLoadingWordDetail(true);
     setWordDetail(null);
-    setGrammarContent('');
+    setTranslationContent('');
     setError('');
 
     try {
@@ -121,15 +121,15 @@ export function useWordDetail({ article = null, enableWordClick = true } = {}) {
         setWordDetail(detail);
         setIsLoadingWordDetail(false);
       } else {
-        // 如果没找到单词详情，调用语法解析
-        callGrammarAnalyze(cleanWord);
+        // 如果没找到单词详情，调用翻译
+        callTranslate(cleanWord);
       }
     } catch (err) {
       console.error('获取单词详情失败:', err);
       // 检查是否是404错误
       if (err.message && err.message.includes('404')) {
-        // 404错误时调用语法解析
-        callGrammarAnalyze(cleanWord);
+        // 404错误时调用翻译
+        callTranslate(cleanWord);
       } else {
         setError('查找单词详情失败: ' + err.message);
         setIsLoadingWordDetail(false);
@@ -140,14 +140,14 @@ export function useWordDetail({ article = null, enableWordClick = true } = {}) {
   // 处理单词点击事件（WordArticlePage 版本：直接查找）
   const handleWordClickSimple = async (wordText) => {
     if (!wordText) return;
-    
+
     const cleanWord = cleanWordText(wordText);
     if (!cleanWord) return;
 
     setSelectedWord(cleanWord);
     setIsLoadingWordDetail(true);
     setWordDetail(null);
-    setGrammarContent('');
+    setTranslationContent('');
     setError('');
 
     try {
@@ -157,15 +157,15 @@ export function useWordDetail({ article = null, enableWordClick = true } = {}) {
         setWordDetail(detail);
         setIsLoadingWordDetail(false);
       } else {
-        // 如果没找到单词详情，调用语法解析
-        callGrammarAnalyze(cleanWord);
+        // 如果没找到单词详情，调用翻译
+        callTranslate(cleanWord);
       }
     } catch (err) {
       console.error('获取单词详情失败:', err);
       // 检查是否是404错误
       if (err.message && err.message.includes('404')) {
-        // 404错误时调用语法解析
-        callGrammarAnalyze(cleanWord);
+        // 404错误时调用翻译
+        callTranslate(cleanWord);
       } else {
         setError('查找单词详情失败: ' + err.message);
         setIsLoadingWordDetail(false);
@@ -225,24 +225,24 @@ export function useWordDetail({ article = null, enableWordClick = true } = {}) {
       abortControllerRef.current.abort();
       abortControllerRef.current = null;
     }
-    
+
     setSelectedWord(null);
     setWordDetail(null);
-    setGrammarContent('');
+    setTranslationContent('');
     setError('');
-    setIsLoadingGrammar(false);
+    setIsLoadingTranslation(false);
   };
 
   // 判断弹窗是否打开
-  const isModalOpen = selectedWord || wordDetail || grammarContent || isLoadingGrammar;
+  const isModalOpen = selectedWord || wordDetail || translationContent || isLoadingTranslation;
 
   return {
     // 状态
     selectedWord,
     wordDetail,
     isLoadingWordDetail,
-    grammarContent,
-    isLoadingGrammar,
+    translationContent,
+    isLoadingTranslation,
     error,
     articleRef,
     isModalOpen,

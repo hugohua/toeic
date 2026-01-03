@@ -316,15 +316,25 @@ async function streamRequest(
 ) {
   const url = `${API_BASE_URL}${endpoint}`;
 
+  // 确定请求方法和 body
+  // 如果 requestBody 是 null，或者 endpoint 包含查询参数，则使用 GET
+  // 如果 requestBody 存在，使用 POST
+  // 注意：GET 请求不能有 body
+  const method = requestBody ? 'POST' : 'GET';
+  const fetchOptions = {
+    method,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    signal,
+  };
+
+  if (method === 'POST') {
+    fetchOptions.body = JSON.stringify(requestBody);
+  }
+
   try {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(requestBody),
-      signal,
-    });
+    const response = await fetch(url, fetchOptions);
 
     if (!response.ok) {
       throw new Error(
@@ -332,10 +342,31 @@ async function streamRequest(
       );
     }
 
-    // 读取流式响应
+    const contentType = response.headers.get('content-type');
+
+    // 处理 JSON 响应（例如缓存命中）
+    if (contentType && contentType.includes('application/json')) {
+      const data = await response.json();
+      if (data.success) {
+        if (onChunk && !signal?.aborted) {
+          // 如果是对象且有 content 字段，返回 content，否则返回整个 data
+          const content = data.data && data.data.content ? data.data.content : JSON.stringify(data.data);
+          onChunk(content);
+        }
+        if (onComplete && !signal?.aborted) onComplete({ isStream: false });
+      } else {
+        throw new Error(data.error || defaultErrorMessage);
+      }
+      return;
+    }
+
+    // 读取流式响应 (SSE)
     const reader = response.body.getReader();
     const decoder = new TextDecoder();
     let buffer = '';
+
+    // 如果是 SSE 流，说明是新生成的
+    const isStream = true;
 
     while (true) {
       // 检查是否已中止
@@ -345,9 +376,10 @@ async function streamRequest(
       }
 
       const { done, value } = await reader.read();
-      
+
       if (done) {
-        if (onComplete && !signal?.aborted) onComplete();
+        // 调用 onComplete，传入 { isStream: true } 表示是新生成的流
+        if (onComplete && !signal?.aborted) onComplete({ isStream: true });
         break;
       }
 
@@ -359,18 +391,18 @@ async function streamRequest(
 
       // 解码数据
       buffer += decoder.decode(value, { stream: true });
-      
+
       // 处理完整的 SSE 消息
       const lines = buffer.split('\n\n');
       buffer = lines.pop() || ''; // 保留最后一个不完整的消息
 
       for (const line of lines) {
         if (signal && signal.aborted) break;
-        
+
         if (line.startsWith('data: ')) {
           try {
             const data = JSON.parse(line.slice(6));
-            
+
             if (data.type === 'content' && data.data) {
               if (onChunk && !signal?.aborted) onChunk(data.data);
             } else if (data.type === 'error') {
@@ -381,7 +413,8 @@ async function streamRequest(
                 throw error;
               }
             } else if (data.type === 'done') {
-              if (onComplete && !signal?.aborted) onComplete();
+              // 调用 onComplete，传入 { isStream: true } 表示是新生成的流
+              if (onComplete && !signal?.aborted) onComplete({ isStream: true });
             }
           } catch (parseError) {
             if (!signal?.aborted) {
@@ -463,7 +496,28 @@ export async function grammarAnalyze(selection, onChunk, onError, onComplete, si
     onError,
     onComplete,
     signal,
-    '语法解析失败',
     '语法解析'
+  );
+}
+
+/**
+ * 获取构词法解析（流式输出）
+ * @param {string} word - 待解析的单词
+ * @param {Function} onChunk - 接收每个内容块的回调函数 (chunk: string) => void
+ * @param {Function} onError - 错误回调函数 (error: Error) => void
+ * @param {Function} onComplete - 完成回调函数 (meta: { isStream: boolean }) => void
+ * @param {AbortSignal} signal - 可选的 AbortSignal，用于中止请求
+ */
+export async function getEtymology(word, onChunk, onError, onComplete, signal = null) {
+  // 注意：这是一个 GET 请求，所以第二个参数传 null
+  return streamRequest(
+    `/etymology/${encodeURIComponent(word)}`,
+    null,
+    onChunk,
+    onError,
+    onComplete,
+    signal,
+    '获取构词法失败',
+    '获取构词法'
   );
 }

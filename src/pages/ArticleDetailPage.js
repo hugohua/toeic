@@ -26,8 +26,8 @@ function ArticleDetailPage() {
   const {
     wordDetail,
     isLoadingWordDetail,
-    grammarContent,
-    isLoadingGrammar,
+    translationContent,
+    isLoadingTranslation,
     articleRef,
     isModalOpen,
     handleCloseModal,
@@ -175,8 +175,8 @@ function ArticleDetailPage() {
           <WordDetailBottomSheet
             isLoadingWordDetail={isLoadingWordDetail}
             wordDetail={wordDetail}
-            isLoadingGrammar={isLoadingGrammar}
-            grammarContent={grammarContent}
+            isLoadingTranslation={isLoadingTranslation}
+            translationContent={translationContent}
             onClose={handleCloseModal}
           />
         </BottomSheet>

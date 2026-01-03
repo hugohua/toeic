@@ -19,8 +19,10 @@ const {
   saveNote,
   getAllNotes,
   getNotesByArticleId,
-  getNoteById,
   deleteNote,
+  getNoteById,
+  getEtymology,
+  saveEtymology,
 } = require('./src/db/database');
 
 // 加载配置：优先使用 config.js，如果不存在则从环境变量读取
@@ -93,13 +95,17 @@ function sendSSEError(res, errorMessage) {
  * @param {Object} options - 可选配置
  * @param {string} options.errorContext - 错误上下文（用于日志记录）
  * @param {string} options.defaultErrorMessage - 默认错误消息
+ * @param {Function} options.onContent - 内容接收回调 (content) => void
+ * @param {Function} options.onComplete - 完成回调 (fullContent) => void
  */
 async function handleOpenAIStream(res, prompt, options = {}) {
-  const { errorContext = 'OpenAI API', defaultErrorMessage = '处理失败', model } = options;
+  const { errorContext = 'OpenAI API', defaultErrorMessage = '处理失败', model, onContent, onComplete } = options;
   const modelToUse = model || config.openai.model;
 
   // 设置 SSE 响应头
   setSSEHeaders(res);
+
+  let fullContent = '';
 
   try {
     // 调用 OpenAI API（流式）
@@ -113,14 +119,27 @@ async function handleOpenAIStream(res, prompt, options = {}) {
     for await (const chunk of stream) {
       const content = chunk.choices[0]?.delta?.content || '';
       if (content) {
+        // 累积完整内容
+        fullContent += content;
+
         // 发送 SSE 格式的数据
         res.write(`data: ${JSON.stringify({ type: 'content', data: content })}\n\n`);
+
+        // 调用内容回调
+        if (onContent) {
+          onContent(content);
+        }
       }
     }
 
     // 发送完成信号
     res.write(`data: ${JSON.stringify({ type: 'done' })}\n\n`);
     res.end();
+
+    // 调用完成回调
+    if (onComplete) {
+      onComplete(fullContent);
+    }
   } catch (error) {
     console.error(`${errorContext}错误:`, error);
     // 发送错误信息
@@ -504,6 +523,52 @@ app.post('/api/grammar-analyze', async (req, res) => {
   });
 });
 
+// 获取构词法API - 优先查库，不存在则调用OpenAI
+app.get('/api/etymology/:word', async (req, res) => {
+  try {
+    const { word } = req.params;
+    if (!word || typeof word !== 'string') {
+      return res.status(400).json({ success: false, error: '单词参数无效' });
+    }
+
+    // 1. 先查询数据库
+    const existing = getEtymology(word);
+    if (existing) {
+      return res.json({ success: true, data: existing });
+    }
+
+    // 2. 数据库不存在，调用 OpenAI 生成（流式）
+    // 注意：客户端需要处理两种响应格式：
+    // - JSON (Content-Type: application/json): 命中缓存，直接返回
+    // - SSE (Content-Type: text/event-stream): 未命中，流式返回
+
+    const prompt = `请用构词法解释并给出含义理解，帮助理解和记忆单词:${word}`;
+
+    await handleOpenAIStream(res, prompt, {
+      errorContext: '构词法解析',
+      defaultErrorMessage: '获取构词法失败',
+      model: 'deepseek-v3.2', // 指定使用 deepseek-v3.2
+      onComplete: (fullContent) => {
+        // 生成完成后保存到数据库
+        if (fullContent && fullContent.trim()) {
+          try {
+            saveEtymology(word, fullContent);
+            console.log(`构词法已保存: ${word}`);
+          } catch (e) {
+            console.error(`保存构词法失败: ${e.message}`);
+          }
+        }
+      }
+    });
+
+  } catch (error) {
+    console.error('获取构词法错误:', error);
+    if (!res.headersSent) {
+      res.status(500).json({ success: false, error: error.message });
+    }
+  }
+});
+
 // 生成文章（根据分类数组）- 流式输出
 app.post('/api/generate-article', async (req, res) => {
   const { categories } = req.body;
@@ -515,7 +580,7 @@ app.post('/api/generate-article', async (req, res) => {
 
   // 获取所选分类下的所有单词
   const words = getWordsByCategories(categories);
-  
+
   if (words.length === 0) {
     sendSSEError(res, '所选分类下没有单词');
     return;

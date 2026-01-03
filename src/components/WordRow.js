@@ -12,6 +12,7 @@ const WordRow = memo(function WordRow({
     onMeaningToggle,
     onToggleFavorite,
     getShortMeaning,
+    onEtymologyClick,
 }) {
     const { start } = useSpeechConfig(word.word || '');
 
@@ -51,14 +52,27 @@ const WordRow = memo(function WordRow({
                 </span>
             </td>
             <td className="col-favorite">
-                <button
-                    type="button"
-                    className={`list-favorite-btn ${isFavorite ? 'favorited' : ''}`}
-                    onClick={(e) => onToggleFavorite(e, word.word)}
-                    title={isFavorite ? '取消收藏' : '收藏单词'}
-                >
-                    <span className="favorite-icon">{isFavorite ? '★' : '☆'}</span>
-                </button>
+                <div className="action-buttons">
+                    <button
+                        type="button"
+                        className="action-btn etymology-btn"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            onEtymologyClick(word.word);
+                        }}
+                        title="查看构词法"
+                    >
+                        📖
+                    </button>
+                    <button
+                        type="button"
+                        className={`action-btn list-favorite-btn ${isFavorite ? 'favorited' : ''}`}
+                        onClick={(e) => onToggleFavorite(e, word.word)}
+                        title={isFavorite ? '取消收藏' : '收藏单词'}
+                    >
+                        <span className="favorite-icon">{isFavorite ? '★' : '☆'}</span>
+                    </button>
+                </div>
             </td>
         </tr>
     );

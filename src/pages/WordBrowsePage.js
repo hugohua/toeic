@@ -201,6 +201,7 @@ function WordBrowsePage() {
       />
       <WordDetailContent
         word={currentWord}
+        mode="page"
         cssPrefix="word-browse"
         onPlaySound={start}
         isFavorite={isFavorite}

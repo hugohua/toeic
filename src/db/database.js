@@ -46,14 +46,14 @@ function migrateDatabase() {
 
       if (!notesColumnNames.includes('article_id')) {
         console.log('正在迁移数据库：修改 notes 表结构...');
-        
+
         // 由于旧笔记无法确定关联的文章，删除所有旧笔记数据（根据需求无需兼容）
         db.exec('DELETE FROM notes');
         console.log('已清理旧的笔记数据（无法确定关联文章）');
-        
+
         // 删除旧表并重新创建（SQLite 不支持直接修改 UNIQUE 约束）
         db.exec('DROP TABLE IF EXISTS notes');
-        
+
         // 重新创建 notes 表（使用新的结构）
         db.exec(`
           CREATE TABLE notes (
@@ -67,12 +67,12 @@ function migrateDatabase() {
             UNIQUE(article_id, title)
           );
         `);
-        
+
         // 重新创建索引
         db.exec('CREATE INDEX IF NOT EXISTS idx_notes_article_id ON notes(article_id)');
         db.exec('CREATE INDEX IF NOT EXISTS idx_notes_type ON notes(type)');
         db.exec('CREATE INDEX IF NOT EXISTS idx_notes_created_at ON notes(created_at)');
-        
+
         console.log('数据库迁移完成：notes 表结构已更新');
       }
     } catch (error) {
@@ -192,6 +192,15 @@ function initDatabase() {
     CREATE INDEX IF NOT EXISTS idx_notes_type ON notes(type);
     CREATE INDEX IF NOT EXISTS idx_notes_created_at ON notes(created_at);
   `);
+
+  // 创建构词法表
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS etymologies (
+      word TEXT PRIMARY KEY,
+      content TEXT NOT NULL,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+  `);
 }
 
 /**
@@ -234,7 +243,7 @@ function createCategory(categoryName, displayName, icon = null, desc = null) {
     'INSERT INTO categories (name, display_name, icon, desc) VALUES (?, ?, ?, ?)'
   );
   const result = insert.run(categoryName.trim(), displayName || null, icon || null, desc || null);
-  
+
   return {
     id: result.lastInsertRowid,
     name: categoryName.trim(),
@@ -723,7 +732,7 @@ function saveArticle(title, content, categories) {
     'INSERT INTO articles (title, content, categories) VALUES (?, ?, ?)'
   );
   const result = insert.run(title.trim(), content.trim(), JSON.stringify(categories));
-  
+
   return {
     id: result.lastInsertRowid,
     title: title.trim(),
@@ -740,7 +749,7 @@ function getAllArticles() {
   const articles = db
     .prepare('SELECT id, title, categories, created_at FROM articles ORDER BY created_at DESC')
     .all();
-  
+
   return articles.map(article => ({
     ...article,
     categories: JSON.parse(article.categories),
@@ -755,7 +764,7 @@ function getArticleById(articleId) {
   const article = db
     .prepare('SELECT * FROM articles WHERE id = ?')
     .get(articleId);
-  
+
   if (!article) {
     return null;
   }
@@ -774,7 +783,7 @@ function deleteArticle(articleId) {
   const result = db
     .prepare('DELETE FROM articles WHERE id = ?')
     .run(articleId);
-  
+
   return result.changes > 0;
 }
 
@@ -805,27 +814,37 @@ function saveNote(articleId, title, content, type) {
     throw new Error('指定的文章不存在');
   }
 
-  // 检查在该文章下标题是否已存在
+  // 检查是否已存在
   const existing = db
     .prepare('SELECT id FROM notes WHERE article_id = ? AND title = ?')
     .get(articleId, title.trim());
 
   if (existing) {
-    throw new Error('该文章下已存在相同标题的笔记');
+    // 如果存在，更新内容
+    const update = db.prepare(
+      'UPDATE notes SET content = ?, type = ?, created_at = CURRENT_TIMESTAMP WHERE id = ?'
+    );
+    update.run(content.trim(), type, existing.id);
+    return {
+      id: existing.id,
+      article_id: articleId,
+      title: title.trim(),
+      content: content.trim(),
+      type,
+    };
   }
 
   const insert = db.prepare(
     'INSERT INTO notes (article_id, title, content, type) VALUES (?, ?, ?, ?)'
   );
   const result = insert.run(articleId, title.trim(), content.trim(), type);
-  
+
   return {
     id: result.lastInsertRowid,
     article_id: articleId,
     title: title.trim(),
     content: content.trim(),
     type,
-    created_at: new Date().toISOString(),
   };
 }
 
@@ -833,11 +852,14 @@ function saveNote(articleId, title, content, type) {
  * 获取所有笔记列表
  */
 function getAllNotes() {
-  const notes = db
-    .prepare('SELECT id, title, type, created_at FROM notes ORDER BY created_at DESC')
+  return db
+    .prepare(`
+      SELECT n.*, a.title as article_title 
+      FROM notes n
+      JOIN articles a ON n.article_id = a.id
+      ORDER BY n.created_at DESC
+    `)
     .all();
-  
-  return notes;
 }
 
 /**
@@ -852,7 +874,7 @@ function getNotesByArticleId(articleId) {
   const notes = db
     .prepare('SELECT id, article_id, title, content, type, created_at FROM notes WHERE article_id = ? ORDER BY created_at DESC')
     .all(articleId);
-  
+
   return notes;
 }
 
@@ -864,11 +886,11 @@ function getNoteById(noteId) {
   const note = db
     .prepare('SELECT * FROM notes WHERE id = ?')
     .get(noteId);
-  
+
   if (!note) {
     return null;
   }
-  
+
   return note;
 }
 
@@ -880,8 +902,41 @@ function deleteNote(noteId) {
   const result = db
     .prepare('DELETE FROM notes WHERE id = ?')
     .run(noteId);
-  
+
   return result.changes > 0;
+}
+
+/**
+ * 获取构词法内容
+ * @param {string} word - 单词
+ */
+function getEtymology(word) {
+  if (!word || typeof word !== 'string') return null;
+
+  return db
+    .prepare('SELECT * FROM etymologies WHERE lower(word) = lower(?)')
+    .get(word.trim());
+}
+
+/**
+ * 保存构词法内容
+ * @param {string} word - 单词
+ * @param {string} content - 内容
+ */
+function saveEtymology(word, content) {
+  if (!word || typeof word !== 'string' || !content) return null;
+
+  const insert = db.prepare(`
+    INSERT OR REPLACE INTO etymologies (word, content, created_at)
+    VALUES (?, ?, CURRENT_TIMESTAMP)
+  `);
+
+  insert.run(word.trim(), content);
+
+  return {
+    word: word.trim(),
+    content,
+  };
 }
 
 // 初始化数据库
@@ -891,27 +946,30 @@ module.exports = {
   db,
   initDatabase,
   migrateDatabase,
+  // 分类相关
+  getAllCategories,
   getOrCreateCategory,
   createCategory,
-  insertWord,
-  insertCollocations,
-  insertExampleSentences,
-  insertConfusingWords,
-  getAllCategories,
+  // 单词相关
   getWordsByCategory,
-  getWordsByCategories,
   getWordCountByCategory,
   getWordDetail,
   getWordByWord,
   searchWords,
   batchImportWords,
+  getWordsByCategories,
+  // 文章相关
   saveArticle,
   getAllArticles,
   getArticleById,
   deleteArticle,
+  // 笔记相关
   saveNote,
   getAllNotes,
   getNotesByArticleId,
   getNoteById,
   deleteNote,
+  // 构词法相关
+  getEtymology,
+  saveEtymology,
 };

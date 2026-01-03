@@ -10,6 +10,7 @@ import {
 } from '../hooks/useWordList';
 import '../index.css';
 import './WordListPage.css';
+import EtymologyBottomSheet from '../components/EtymologyBottomSheet';
 
 function WordListPage() {
   const { category } = useParams();
@@ -35,6 +36,11 @@ function WordListPage() {
     isFavorited,
     toggleFavorite
   } = useFavoriteWords(category);
+
+  const [etymologyConfig, setEtymologyConfig] = React.useState({
+    isOpen: false,
+    word: ''
+  });
 
   // Intersection Observer implementation for infinite scroll
   const sentinelRef = useRef(null);
@@ -80,6 +86,17 @@ function WordListPage() {
     return meaning.trim() || '-';
   }, []);
 
+  const handleEtymologyClick = useCallback((wordStr) => {
+    setEtymologyConfig({
+      isOpen: true,
+      word: wordStr
+    });
+  }, []);
+
+  const handleCloseEtymology = useCallback(() => {
+    setEtymologyConfig(prev => ({ ...prev, isOpen: false }));
+  }, []);
+
   if (words.length === 0 && !loading) {
     return (
       <div className="container">
@@ -113,7 +130,7 @@ function WordListPage() {
                     </button>
                   </span>
                 </th>
-                <th className="col-favorite">收藏</th>
+                <th className="col-favorite">操作</th>
               </tr>
             </thead>
             <tbody>
@@ -129,6 +146,7 @@ function WordListPage() {
                   onMeaningToggle={toggleMeaning}
                   onToggleFavorite={handleToggleFavorite}
                   getShortMeaning={getShortMeaning}
+                  onEtymologyClick={handleEtymologyClick}
                 />
               ))}
             </tbody>
@@ -164,6 +182,12 @@ function WordListPage() {
           </button>
         </div>
       </main>
+
+      <EtymologyBottomSheet
+        isOpen={etymologyConfig.isOpen}
+        onClose={handleCloseEtymology}
+        word={etymologyConfig.word}
+      />
     </div>
   );
 }

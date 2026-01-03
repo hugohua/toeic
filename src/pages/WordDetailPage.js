@@ -273,6 +273,7 @@ function WordDetailPage() {
       />
       <WordDetailContent
         word={word}
+        mode="page"
         cssPrefix="word-detail"
         onPlaySound={start}
         isFavorite={isFavorite}

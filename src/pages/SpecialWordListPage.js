@@ -5,58 +5,13 @@ import Header from '../components/Header';
 import { getWordList, WORD_LIST_TYPES } from '../utils/storage';
 import { getWordsByCategory } from '../utils/api';
 import { getFirstSlashContent } from '../utils/app';
+import EtymologyBottomSheet from '../components/EtymologyBottomSheet';
+import WordRow from '../components/WordRow';
+import { toggleWordInList, WORD_LIST_TYPES as STORAGE_WORD_LIST_TYPES } from '../utils/storage';
+import Popup from '../components/Popup';
 import '../index.css';
 import './WordListPage.css';
 
-// 单词行组件，包含发音、释义显示功能
-function WordRow({
-  item,
-  index,
-  isMeaningVisible,
-  onRowClick,
-  onMeaningToggle,
-  getShortMeaning,
-}) {
-  const { start } = useSpeechConfig(item.word || '');
-
-  const handleWordClick = (e) => {
-    e.stopPropagation();
-    start();
-  };
-
-  const handleMeaningCellClick = (e) => {
-    e.stopPropagation();
-    // 点击释义时播放单词声音
-    start();
-    // 切换释义显示状态
-    onMeaningToggle(index);
-  };
-
-  return (
-    <tr className="word-list-row" onClick={() => onRowClick(index)}>
-      <td className="col-word">
-        <span
-          className="word-list-text word-favorite word-list-clickable"
-          onClick={handleWordClick}
-          title="点击播放发音"
-        >
-          {item.word}
-          <span className="word-phonetic">
-            {getFirstSlashContent(item.phonetic)}
-          </span>
-        </span>
-      </td>
-      <td
-        className="col-meaning word-list-meaning-clickable"
-        onClick={handleMeaningCellClick}
-      >
-        <span className="meaning-text">
-          {isMeaningVisible ? getShortMeaning(item.data || {}) : '点击显示释义'}
-        </span>
-      </td>
-    </tr>
-  );
-}
 
 // 列表类型配置
 const LIST_TYPE_CONFIG = {
@@ -121,6 +76,10 @@ function SpecialWordListPage() {
   });
 
   const [words, setWords] = useState([]);
+  const [etymologyState, setEtymologyState] = useState({
+    isOpen: false,
+    word: '',
+  });
 
   // 加载单词列表
   useEffect(() => {
@@ -278,6 +237,29 @@ function SpecialWordListPage() {
     return meaning.trim() || '-';
   };
 
+  const handleEtymologyClick = (word) => {
+    setEtymologyState({ isOpen: true, word });
+  };
+
+  const handleToggleFavorite = (e, wordText) => {
+    e.stopPropagation();
+
+    // 找到对应的单词项以获取 category
+    const wordItem = words.find(w => w.word === wordText);
+    if (!wordItem) return;
+
+    const category = wordItem.category;
+    const isFavorite = toggleWordInList(STORAGE_WORD_LIST_TYPES.FAVORITE, wordText, category);
+
+    // 显示提示
+    Popup.show(isFavorite ? '已收藏' : '已取消收藏');
+
+    // 如果是在收藏列表，且取消收藏，需要实时更新列表
+    if (listType === WORD_LIST_TYPES.FAVORITE && !isFavorite) {
+      setWords((prev) => prev.filter((w) => w.word !== wordText));
+    }
+  };
+
   if (words.length === 0) {
     return (
       <div className="container">
@@ -303,9 +285,8 @@ function SpecialWordListPage() {
                     <span>解释</span>
                     <button
                       type="button"
-                      className={`meaning-toggle-btn ${
-                        showAllMeanings ? 'active' : ''
-                      }`}
+                      className={`meaning-toggle-btn ${showAllMeanings ? 'active' : ''
+                        }`}
                       onClick={handleToggleAllMeanings}
                       title={
                         showAllMeanings
@@ -317,26 +298,50 @@ function SpecialWordListPage() {
                     </button>
                   </span>
                 </th>
+                <th className="col-favorite">操作</th>
               </tr>
             </thead>
             <tbody>
-              {words.map((item, index) => (
-                <WordRow
-                  key={`${item.category}-${item.word}-${index}`}
-                  item={item}
-                  index={index}
-                  isMeaningVisible={isMeaningVisible(index)}
-                  onRowClick={handleRowClick}
-                  onMeaningToggle={handleMeaningToggle}
-                  getShortMeaning={getShortMeaning}
-                />
-              ))}
+              {words.map((item, index) => {
+                // 构造 WordRow 需要的 word 对象
+                // item 是 SpecialList 中的项，item.data 是完整的单词数据
+                // 需要确保传给 WordRow 的对象有 word, phonetic, coreMeaning 等字段
+                const wordData = item.data || item;
+
+                // 确定 isFavorite
+                // 如果是收藏列表，默认为 true (除非组件内状态被更新了)
+                // 其他列表则需要检查 storage。
+                // 但为了简化，我们在 initial load 时或者 toggle 时应该已经更新了 item 的属性。
+                // 这里我们做一个动态检查：
+                const isFav = getWordList(WORD_LIST_TYPES.FAVORITE).some(f => f.word === item.word);
+
+                return (
+                  <WordRow
+                    key={`${item.category}-${item.word}-${index}`}
+                    word={wordData}
+                    index={index}
+                    isFavorite={isFav}
+                    isMeaningVisible={isMeaningVisible(index)}
+                    onRowClick={handleRowClick}
+                    onMeaningToggle={handleMeaningToggle}
+                    onToggleFavorite={handleToggleFavorite}
+                    getShortMeaning={getShortMeaning}
+                    onEtymologyClick={handleEtymologyClick}
+                  />
+                )
+              })}
             </tbody>
           </table>
         </div>
         <div className="word-list-footer">
           <div className="word-count">共 {words.length} {config.countText}</div>
         </div>
+
+        <EtymologyBottomSheet
+          isOpen={etymologyState.isOpen}
+          onClose={() => setEtymologyState({ ...etymologyState, isOpen: false })}
+          word={etymologyState.word}
+        />
       </main>
     </div>
   );

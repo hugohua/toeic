@@ -2,6 +2,7 @@ import React from 'react';
 import PhraseCell from './PhraseCell';
 import ExampleSentence from './ExampleSentence';
 import ConfusingWordCell from './ConfusingWordCell';
+import EtymologyBottomSheet from './EtymologyBottomSheet';
 import { formatKeyCollocations } from '../utils/text';
 
 /**
@@ -15,6 +16,11 @@ import { formatKeyCollocations } from '../utils/text';
  * @param {number} props.progressCurrent - 当前进度（当前索引+1）
  * @param {number} props.progressTotal - 总进度（总数）
  * @param {React.RefObject} props.contentRef - 内容区域的 ref（用于 TextSelection 等）
+ * @param {string} props.mode - 展示模式：'page' 页面模式（默认）或 'modal' 弹窗模式
+ * @param {function} props.onClose - 关闭回调（仅 modal 模式使用）
+ * @param {boolean} props.showEtymologyButton - 是否显示构词法按钮（默认 true）
+ * @param {boolean} props.showFavoriteButton - 是否显示收藏按钮（默认 true）
+ * @param {boolean} props.showProgress - 是否显示进度信息（默认 true）
  */
 function WordDetailContent({
   word,
@@ -25,7 +31,14 @@ function WordDetailContent({
   progressCurrent,
   progressTotal,
   contentRef,
+  mode = 'page',
+  onClose,
+  showEtymologyButton = true,
+  showFavoriteButton = true,
+  showProgress = true,
 }) {
+  const [showEtymology, setShowEtymology] = React.useState(false);
+
   if (!word) {
     return null;
   }
@@ -106,17 +119,37 @@ function WordDetailContent({
 
   return (
     <main className="detail-content" ref={contentRef}>
-      <div className="detail-card">
+      <div className={`detail-card ${mode === 'modal' ? 'detail-card-modal' : ''}`}>
         <div className="detail-header">
+          {mode === 'modal' && onClose && (
+            <button
+              type="button"
+              className="word-detail-close"
+              onClick={onClose}
+              title="关闭"
+            >
+              ×
+            </button>
+          )}
           <div className="detail-header-main">
             <div
-              className={`word-title ${cssPrefix}-title-clickable`}
+              className={`word-title ${onPlaySound ? cssPrefix + '-title-clickable' : ''}`}
               onClick={onPlaySound}
-              title="点击播放发音"
+              title={onPlaySound ? "点击播放发音" : undefined}
             >
               {word.word}
             </div>
-            {onToggleFavorite && (
+            {showEtymologyButton && (
+              <button
+                type="button"
+                className="etymology-header-btn"
+                onClick={() => setShowEtymology(true)}
+                title="查看构词法"
+              >
+                📖
+              </button>
+            )}
+            {showFavoriteButton && onToggleFavorite && (
               <button
                 type="button"
                 className={`favorite-btn ${isFavorite ? 'favorite-btn-active' : ''}`}
@@ -128,7 +161,7 @@ function WordDetailContent({
             )}
           </div>
           <div className="phonetic">{word.phonetic || '/ˈwɜːrd/'}</div>
-          {progressCurrent !== undefined && progressTotal !== undefined && (
+          {showProgress && progressCurrent !== undefined && progressTotal !== undefined && (
             <div className="word-progress">
               {progressCurrent} / {progressTotal}
             </div>
@@ -143,16 +176,18 @@ function WordDetailContent({
           />
         </div>
 
-        <div className="detail-section">
-          <h3 className="section-title">短语短句</h3>
-          <div className="section-content">
-            {word.phrase ? (
-              <PhraseCell phraseText={word.phrase} />
-            ) : (
-              <p className={`${cssPrefix}-empty-text`}>暂无</p>
-            )}
+        {(word.phrase || mode === 'page') && (
+          <div className="detail-section">
+            <h3 className="section-title">短语短句</h3>
+            <div className="section-content">
+              {word.phrase ? (
+                <PhraseCell phraseText={word.phrase} />
+              ) : (
+                <p className={`${cssPrefix}-empty-text`}>暂无</p>
+              )}
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="detail-section">
           <h3 className="section-title">TOEIC场景重点</h3>
@@ -175,21 +210,31 @@ function WordDetailContent({
           <div className="section-content">{renderExampleSentences()}</div>
         </div>
 
-        <div className="detail-section">
-          <h3 className="section-title">场景联想</h3>
-          <div
-            className="section-content"
-            dangerouslySetInnerHTML={{
-              __html: word.sceneAssociation || '暂无',
-            }}
-          />
-        </div>
+        {(word.sceneAssociation || mode === 'page') && (
+          <div className="detail-section">
+            <h3 className="section-title">场景联想</h3>
+            <div
+              className="section-content"
+              dangerouslySetInnerHTML={{
+                __html: word.sceneAssociation || '暂无',
+              }}
+            />
+          </div>
+        )}
 
         <div className="detail-section">
           <h3 className="section-title">易混淆词区分</h3>
           <div className="section-content">{renderConfusingWords()}</div>
         </div>
       </div>
+
+      {showEtymologyButton && (
+        <EtymologyBottomSheet
+          isOpen={showEtymology}
+          onClose={() => setShowEtymology(false)}
+          word={word.word}
+        />
+      )}
     </main>
   );
 }
