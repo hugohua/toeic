@@ -201,6 +201,25 @@ function initDatabase() {
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     );
   `);
+
+  // 创建单词列表表（收藏、不认识、模糊）
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS word_lists (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      word TEXT NOT NULL,
+      category TEXT NOT NULL,
+      type TEXT NOT NULL,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(word, category, type)
+    );
+  `);
+
+  // 创建单词列表索引
+  db.exec(`
+    CREATE INDEX IF NOT EXISTS idx_word_lists_type ON word_lists(type);
+    CREATE INDEX IF NOT EXISTS idx_word_lists_category ON word_lists(category);
+    CREATE INDEX IF NOT EXISTS idx_word_lists_created_at ON word_lists(created_at);
+  `);
 }
 
 /**
@@ -1021,6 +1040,126 @@ function getWordByIndex(categoryName, index) {
   };
 }
 
+/**
+ * 获取单词列表
+ * @param {string} type - 列表类型 ('favorite' | 'unknown' | 'fuzzy')
+ * @param {string} category - 可选，筛选特定分类
+ * @returns {Array} 单词列表
+ */
+function getWordList(type, category = null) {
+  if (!type) {
+    throw new Error('列表类型是必需的');
+  }
+
+  let query = 'SELECT * FROM word_lists WHERE type = ?';
+  const params = [type];
+
+  if (category) {
+    query += ' AND category = ?';
+    params.push(category);
+  }
+
+  query += ' ORDER BY created_at DESC';
+
+  return db.prepare(query).all(...params);
+}
+
+/**
+ * 添加单词到列表
+ * @param {string} word - 单词
+ * @param {string} category - 分类
+ * @param {string} type - 列表类型
+ * @returns {Object} 添加的记录
+ */
+function addWordToList(word, category, type) {
+  if (!word || !category || !type) {
+    throw new Error('单词、分类和类型都是必需的');
+  }
+
+  try {
+    const insert = db.prepare(
+      'INSERT INTO word_lists (word, category, type) VALUES (?, ?, ?)'
+    );
+    const result = insert.run(word.trim(), category.trim(), type);
+
+    return {
+      id: result.lastInsertRowid,
+      word: word.trim(),
+      category: category.trim(),
+      type,
+      created_at: new Date().toISOString(),
+    };
+  } catch (error) {
+    // 如果是唯一约束错误（已存在），静默处理
+    if (error.message.includes('UNIQUE constraint failed')) {
+      return null;
+    }
+    throw error;
+  }
+}
+
+/**
+ * 从列表移除单词
+ * @param {string} word - 单词
+ * @param {string} category - 分类
+ * @param {string} type - 列表类型
+ * @returns {boolean} 是否成功移除
+ */
+function removeWordFromList(word, category, type) {
+  if (!word || !category || !type) {
+    throw new Error('单词、分类和类型都是必需的');
+  }
+
+  const result = db
+    .prepare('DELETE FROM word_lists WHERE word = ? AND category = ? AND type = ?')
+    .run(word.trim(), category.trim(), type);
+
+  return result.changes > 0;
+}
+
+/**
+ * 检查单词是否在列表中
+ * @param {string} word - 单词
+ * @param {string} category - 分类
+ * @param {string} type - 列表类型
+ * @returns {boolean} 是否在列表中
+ */
+function isWordInList(word, category, type) {
+  if (!word || !category || !type) {
+    return false;
+  }
+
+  const result = db
+    .prepare('SELECT id FROM word_lists WHERE word = ? AND category = ? AND type = ?')
+    .get(word.trim(), category.trim(), type);
+
+  return !!result;
+}
+
+/**
+ * 切换单词在列表中的状态
+ * @param {string} word - 单词
+ * @param {string} category - 分类
+ * @param {string} type - 列表类型
+ * @returns {boolean} 操作后是否在列表中
+ */
+function toggleWordInList(word, category, type) {
+  if (!word || !category || !type) {
+    throw new Error('单词、分类和类型都是必需的');
+  }
+
+  const exists = isWordInList(word, category, type);
+
+  if (exists) {
+    removeWordFromList(word, category, type);
+    return false;
+  } else {
+    addWordToList(word, category, type);
+    return true;
+  }
+}
+
+
 
 // 初始化数据库
 initDatabase();
@@ -1058,4 +1197,10 @@ module.exports = {
   // 性能优化相关
   getWordIndexInCategory,
   getWordByIndex,
+  // 单词列表相关
+  getWordList,
+  addWordToList,
+  removeWordFromList,
+  isWordInList,
+  toggleWordInList,
 };

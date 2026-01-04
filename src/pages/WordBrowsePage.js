@@ -7,7 +7,7 @@ import WordDetailContent from '../components/WordDetailContent';
 import Loading from '../components/Loading';
 import { getCategoryName } from '../utils/app';
 import {
-  isWordInList,
+  getWordList,
   toggleWordInList,
   WORD_LIST_TYPES,
 } from '../utils/storage';
@@ -20,10 +20,34 @@ function WordBrowsePage() {
   const [words, setWords] = useState([]);
   const [currentWord, setCurrentWord] = useState(null);
   const [isFavorite, setIsFavorite] = useState(false);
+  const [favoriteWords, setFavoriteWords] = useState(new Set()); // 缓存收藏列表
   const browseContentRef = useRef(null);
 
   // 使用 useSpeech，传入当前单词作为 text
   const { start } = useSpeechConfig(currentWord?.word || '');
+
+  // 加载收藏列表缓存
+  useEffect(() => {
+    let isMounted = true;
+
+    async function loadFavorites() {
+      try {
+        const list = await getWordList(WORD_LIST_TYPES.FAVORITE, category);
+        if (isMounted) {
+          const wordSet = new Set(list.map(item => item.word));
+          setFavoriteWords(wordSet);
+        }
+      } catch (error) {
+        console.error('加载收藏列表失败:', error);
+      }
+    }
+
+    loadFavorites();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [category]);
 
   useEffect(() => {
     let isMounted = true;
@@ -68,15 +92,14 @@ function WordBrowsePage() {
     }
   }, [currentIndex, words, category]);
 
-  // 根据当前单词更新收藏状态
+  // 根据当前单词更新收藏状态（本地检查）
   useEffect(() => {
-    if (currentWord && category) {
-      const favorite = isWordInList(WORD_LIST_TYPES.FAVORITE, currentWord.word, category);
-      setIsFavorite(favorite);
+    if (currentWord) {
+      setIsFavorite(favoriteWords.has(currentWord.word));
     } else {
       setIsFavorite(false);
     }
-  }, [currentWord, category]);
+  }, [currentWord, favoriteWords]);
 
   // 键盘事件处理
   useEffect(() => {
@@ -137,9 +160,21 @@ function WordBrowsePage() {
     };
   }, [currentIndex, words, currentWord, start]);
 
-  const handleToggleFavorite = () => {
+  const handleToggleFavorite = async () => {
     if (!currentWord || !category) return;
-    const favorite = toggleWordInList(WORD_LIST_TYPES.FAVORITE, currentWord.word, category);
+    const favorite = await toggleWordInList(WORD_LIST_TYPES.FAVORITE, currentWord.word, category);
+
+    // 同步更新本地缓存
+    setFavoriteWords(prev => {
+      const newSet = new Set(prev);
+      if (favorite) {
+        newSet.add(currentWord.word);
+      } else {
+        newSet.delete(currentWord.word);
+      }
+      return newSet;
+    });
+
     setIsFavorite(favorite);
   };
 

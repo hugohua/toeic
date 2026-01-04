@@ -25,6 +25,11 @@ const {
   saveEtymology,
   getWordIndexInCategory,
   getWordByIndex,
+  getWordList,
+  addWordToList,
+  removeWordFromList,
+  isWordInList,
+  toggleWordInList,
 } = require('./src/db/database');
 
 // 加载配置：优先使用 config.js，如果不存在则从环境变量读取
@@ -539,6 +544,112 @@ app.delete('/api/notes/:id', (req, res) => {
     }
 
     res.json({ success: true, data: { id: noteId } });
+
+    // ==================== 单词列表 API ====================
+
+    // 获取指定类型的单词列表
+    app.get('/api/word-list/:type', (req, res) => {
+      try {
+        const { type } = req.params;
+        const { category } = req.query;
+
+        // 验证 type 参数
+        const validTypes = ['favorite', 'unknown', 'fuzzy'];
+        if (!validTypes.includes(type)) {
+          return res.status(400).json({
+            success: false,
+            error: '无效的列表类型，必须是 favorite, unknown 或 fuzzy',
+          });
+        }
+
+        const list = getWordList(type, category || null);
+        res.json({ success: true, data: list });
+      } catch (error) {
+        console.error('获取单词列表错误:', error);
+        res.status(500).json({ success: false, error: error.message });
+      }
+    });
+
+    // 添加单词到列表
+    app.post('/api/word-list', (req, res) => {
+      try {
+        const { word, category, type } = req.body;
+
+        if (!word || !category || !type) {
+          return res.status(400).json({
+            success: false,
+            error: '单词、分类和类型都是必需的',
+          });
+        }
+
+        // 验证 type 参数
+        const validTypes = ['favorite', 'unknown', 'fuzzy'];
+        if (!validTypes.includes(type)) {
+          return res.status(400).json({
+            success: false,
+            error: '无效的列表类型，必须是 favorite, unknown 或 fuzzy',
+          });
+        }
+
+        const result = addWordToList(word, category, type);
+        res.json({ success: true, data: result });
+      } catch (error) {
+        console.error('添加单词到列表错误:', error);
+        res.status(500).json({ success: false, error: error.message });
+      }
+    });
+
+    // 从列表移除单词
+    app.delete('/api/word-list', (req, res) => {
+      try {
+        const { word, category, type } = req.body;
+
+        if (!word || !category || !type) {
+          return res.status(400).json({
+            success: false,
+            error: '单词、分类和类型都是必需的',
+          });
+        }
+
+        const removed = removeWordFromList(word, category, type);
+        res.json({ success: true, data: { removed } });
+      } catch (error) {
+        console.error('从列表移除单词错误:', error);
+        res.status(500).json({ success: false, error: error.message });
+      }
+    });
+
+    // 切换单词在列表中的状态
+    app.post('/api/word-list/toggle', (req, res) => {
+      try {
+        const { word, category, type } = req.body;
+
+        if (!word || !category || !type) {
+          return res.status(400).json({
+            success: false,
+            error: '单词、分类和类型都是必需的',
+          });
+        }
+
+        // 验证 type 参数
+        const validTypes = ['favorite', 'unknown', 'fuzzy'];
+        if (!validTypes.includes(type)) {
+          return res.status(400).json({
+            success: false,
+            error: '无效的列表类型，必须是 favorite, unknown 或 fuzzy',
+          });
+        }
+
+        const inList = toggleWordInList(word, category, type);
+        res.json({ success: true, data: { inList } });
+      } catch (error) {
+        console.error('切换单词列表状态错误:', error);
+        res.status(500).json({ success: false, error: error.message });
+      }
+    });
+
+    // ==================== END 单词列表 API ====================
+
   } catch (error) {
     console.error('删除笔记错误:', error);
     res.status(500).json({ success: false, error: error.message });

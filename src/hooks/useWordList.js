@@ -191,20 +191,24 @@ export function useFavoriteWords(category) {
     const [favoriteWords, setFavoriteWords] = useState(new Set());
 
     useEffect(() => {
-        const list = getWordList(WORD_LIST_TYPES.FAVORITE);
-        const set = new Set();
-        list.forEach((item) => {
-            if (item && item.word && item.category) {
-                set.add(`${item.category}-${item.word}`);
-            }
-        });
-        setFavoriteWords(set);
+        async function loadFavorites() {
+            const list = await getWordList(WORD_LIST_TYPES.FAVORITE);
+            const set = new Set();
+            list.forEach((item) => {
+                if (item && item.word && item.category) {
+                    set.add(`${item.category}-${item.word}`);
+                }
+            });
+            setFavoriteWords(set);
+        }
+
+        loadFavorites();
     }, []);
 
     const favoriteKeySet = useMemo(() => favoriteWords, [favoriteWords]);
 
-    const toggleFavorite = useCallback((word) => {
-        toggleWordInList(WORD_LIST_TYPES.FAVORITE, word, category);
+    const toggleFavorite = useCallback(async (word) => {
+        await toggleWordInList(WORD_LIST_TYPES.FAVORITE, word, category);
 
         const key = `${category}-${word}`;
         setFavoriteWords((prev) => {

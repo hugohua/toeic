@@ -172,17 +172,17 @@ function WordStudyPage() {
    * 处理学习状态，自动保存到对应的单词列表
    * @param {string} status - 学习状态 ('known' | 'unknown' | 'fuzzy')
    */
-  const handleStudyStatus = (status) => {
+  const handleStudyStatus = async (status) => {
     if (!currentWord) return;
 
     // 如果该状态需要保存到单词列表，则自动保存
     const listType = STATUS_TO_LIST_TYPE[status];
     if (listType) {
-      addWordToList(listType, currentWord.word, category);
+      await addWordToList(listType, currentWord.word, category);
     }
   };
 
-  const showWordDetail = (status) => {
+  const showWordDetail = async (status) => {
     if (!currentWord) return;
 
     const wordKey = `${category}-${currentWord.word}`;
@@ -193,7 +193,7 @@ function WordStudyPage() {
     scheduleReview(wordKey, status, now);
 
     // 根据状态自动保存到对应的单词列表
-    handleStudyStatus(status);
+    await handleStudyStatus(status);
 
     // 提前保存进度到下一个单词，确保返回时直接显示下一个而非旧单词
     // 这样可以避免返回后的页面闪烁问题

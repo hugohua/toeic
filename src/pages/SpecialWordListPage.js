@@ -86,7 +86,7 @@ function SpecialWordListPage() {
     let isMounted = true;
 
     async function loadWords() {
-      const list = getWordList(listType);
+      const list = await getWordList(listType);
       if (list.length === 0) {
         setWords([]);
         return;
@@ -241,7 +241,7 @@ function SpecialWordListPage() {
     setEtymologyState({ isOpen: true, word });
   };
 
-  const handleToggleFavorite = (e, wordText) => {
+  const handleToggleFavorite = async (e, wordText) => {
     e.stopPropagation();
 
     // 找到对应的单词项以获取 category
@@ -249,7 +249,7 @@ function SpecialWordListPage() {
     if (!wordItem) return;
 
     const category = wordItem.category;
-    const isFavorite = toggleWordInList(STORAGE_WORD_LIST_TYPES.FAVORITE, wordText, category);
+    const isFavorite = await toggleWordInList(STORAGE_WORD_LIST_TYPES.FAVORITE, wordText, category);
 
     // 显示提示
     Popup.show(isFavorite ? '已收藏' : '已取消收藏');
@@ -313,7 +313,9 @@ function SpecialWordListPage() {
                 // 其他列表则需要检查 storage。
                 // 但为了简化，我们在 initial load 时或者 toggle 时应该已经更新了 item 的属性。
                 // 这里我们做一个动态检查：
-                const isFav = getWordList(WORD_LIST_TYPES.FAVORITE).some(f => f.word === item.word);
+                // 注意：这里不能用 async/await，因为在 render 中。改为从当前 words 列表检查
+                const isFav = listType === WORD_LIST_TYPES.FAVORITE ||
+                  (item.data && item.data.isFavorite);
 
                 return (
                   <WordRow

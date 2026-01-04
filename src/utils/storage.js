@@ -45,9 +45,10 @@ const WORD_LIST_CONFIG = {
 /**
  * 获取指定类型的单词列表
  * @param {string} listType - 列表类型 (WORD_LIST_TYPES.*)
- * @returns {Array<{word: string, category: string, createdAt?: string}>}
+ * @param {string} category - 可选，筛选特定分类
+ * @returns {Promise<Array<{word: string, category: string, type: string, createdAt: string}>>}
  */
-export function getWordList(listType) {
+export async function getWordList(listType, category = null) {
   const config = WORD_LIST_CONFIG[listType];
   if (!config) {
     console.error(`未知的单词列表类型: ${listType}`);
@@ -55,13 +56,23 @@ export function getWordList(listType) {
   }
 
   try {
-    const dataStr = localStorage.getItem(config.storageKey);
-    if (!dataStr) return [];
-    const list = JSON.parse(dataStr);
-    if (!Array.isArray(list)) return [];
-    return list.filter(
-      (item) => item && typeof item.word === 'string' && item.category
-    );
+    const { apiRequest } = await import('./api');
+    let endpoint = `/word-list/${listType}`;
+    if (category) {
+      endpoint += `?category=${encodeURIComponent(category)}`;
+    }
+
+    const response = await fetch(`/api${endpoint}`);
+    const data = await response.json();
+
+    if (data.success) {
+      return data.data.map(item => ({
+        word: item.word,
+        category: item.category,
+        createdAt: item.created_at,
+      }));
+    }
+    return [];
   } catch (e) {
     console.error(`读取${config.errorName}失败`, e);
     return [];
@@ -73,10 +84,10 @@ export function getWordList(listType) {
  * @param {string} listType - 列表类型
  * @param {string} word - 单词
  * @param {string} category - 分类
- * @returns {boolean}
+ * @returns {Promise<boolean>}
  */
-export function isWordInList(listType, word, category) {
-  const list = getWordList(listType);
+export async function isWordInList(listType, word, category) {
+  const list = await getWordList(listType, category);
   return list.some((item) => item.word === word && item.category === category);
 }
 
@@ -85,9 +96,9 @@ export function isWordInList(listType, word, category) {
  * @param {string} listType - 列表类型
  * @param {string} word - 单词
  * @param {string} category - 分类
- * @returns {boolean} 是否成功添加
+ * @returns {Promise<boolean>} 是否成功添加
  */
-export function addWordToList(listType, word, category) {
+export async function addWordToList(listType, word, category) {
   const config = WORD_LIST_CONFIG[listType];
   if (!config) {
     console.error(`未知的单词列表类型: ${listType}`);
@@ -95,29 +106,26 @@ export function addWordToList(listType, word, category) {
   }
 
   if (!word || !category) return false;
-  const list = getWordList(listType);
-  const index = list.findIndex(
-    (item) => item.word === word && item.category === category
-  );
 
-  if (index === -1) {
-    // 新增单词，放到最前面
-    list.unshift({
-      word,
-      category,
-      createdAt: new Date().toISOString(),
+  try {
+    const response = await fetch('/api/word-list', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        word,
+        category,
+        type: listType,
+      }),
     });
 
-    try {
-      localStorage.setItem(config.storageKey, JSON.stringify(list));
-      return true;
-    } catch (e) {
-      console.error(`保存${config.errorName}失败`, e);
-      return false;
-    }
+    const data = await response.json();
+    return data.success;
+  } catch (e) {
+    console.error(`保存${config.errorName}失败`, e);
+    return false;
   }
-
-  return false; // 已经存在
 }
 
 /**
@@ -125,9 +133,9 @@ export function addWordToList(listType, word, category) {
  * @param {string} listType - 列表类型
  * @param {string} word - 单词
  * @param {string} category - 分类
- * @returns {boolean} 是否成功移除
+ * @returns {Promise<boolean>} 是否成功移除
  */
-export function removeWordFromList(listType, word, category) {
+export async function removeWordFromList(listType, word, category) {
   const config = WORD_LIST_CONFIG[listType];
   if (!config) {
     console.error(`未知的单词列表类型: ${listType}`);
@@ -135,23 +143,26 @@ export function removeWordFromList(listType, word, category) {
   }
 
   if (!word || !category) return false;
-  const list = getWordList(listType);
-  const index = list.findIndex(
-    (item) => item.word === word && item.category === category
-  );
 
-  if (index !== -1) {
-    list.splice(index, 1);
-    try {
-      localStorage.setItem(config.storageKey, JSON.stringify(list));
-      return true;
-    } catch (e) {
-      console.error(`移除${config.errorName}失败`, e);
-      return false;
-    }
+  try {
+    const response = await fetch('/api/word-list', {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        word,
+        category,
+        type: listType,
+      }),
+    });
+
+    const data = await response.json();
+    return data.success && data.data.removed;
+  } catch (e) {
+    console.error(`移除${config.errorName}失败`, e);
+    return false;
   }
-
-  return false;
 }
 
 /**
@@ -159,9 +170,9 @@ export function removeWordFromList(listType, word, category) {
  * @param {string} listType - 列表类型
  * @param {string} word - 单词
  * @param {string} category - 分类
- * @returns {boolean} 操作后是否在列表中
+ * @returns {Promise<boolean>} 操作后是否在列表中
  */
-export function toggleWordInList(listType, word, category) {
+export async function toggleWordInList(listType, word, category) {
   const config = WORD_LIST_CONFIG[listType];
   if (!config) {
     console.error(`未知的单词列表类型: ${listType}`);
@@ -169,26 +180,22 @@ export function toggleWordInList(listType, word, category) {
   }
 
   if (!word || !category) return false;
-  const list = getWordList(listType);
-  const index = list.findIndex(
-    (item) => item.word === word && item.category === category
-  );
-
-  if (index !== -1) {
-    // 移除
-    list.splice(index, 1);
-  } else {
-    // 添加
-    list.unshift({
-      word,
-      category,
-      createdAt: new Date().toISOString(),
-    });
-  }
 
   try {
-    localStorage.setItem(config.storageKey, JSON.stringify(list));
-    return index === -1; // 返回操作后是否在列表中
+    const response = await fetch('/api/word-list/toggle', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        word,
+        category,
+        type: listType,
+      }),
+    });
+
+    const data = await response.json();
+    return data.success ? data.data.inList : false;
   } catch (e) {
     console.error(`保存${config.errorName}失败`, e);
     return false;
