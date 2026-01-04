@@ -903,7 +903,12 @@ function getNotesByArticleId(articleId) {
  */
 function getNoteById(noteId) {
   const note = db
-    .prepare('SELECT * FROM notes WHERE id = ?')
+    .prepare(`
+      SELECT n.*, a.title as article_title 
+      FROM notes n
+      JOIN articles a ON n.article_id = a.id
+      WHERE n.id = ?
+    `)
     .get(noteId);
 
   if (!note) {

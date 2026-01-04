@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Header from '../components/Header';
@@ -9,15 +9,9 @@ import './NoteDetailPage.css';
 import '../styles/Markdown.css'; // Import unified markdown styles
 
 function NoteDetailPage() {
-  // ...
-  {/* 笔记内容 - 使用 markdown 渲染 */ }
-  <div className="note-detail-body markdown-body">
-    <ReactMarkdown remarkPlugins={[remarkGfm]}>
-      {note.content}
-    </ReactMarkdown>
-  </div>
-  // ...
+
   const { id } = useParams();
+  const navigate = useNavigate();
   const [note, setNote] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
@@ -57,6 +51,13 @@ function NoteDetailPage() {
       hour: '2-digit',
       minute: '2-digit',
     });
+  };
+
+  // 跳转到关联的文章
+  const handleArticleClick = () => {
+    if (note?.article_id) {
+      navigate(`/article/${note.article_id}`);
+    }
   };
 
   if (isLoading) {
@@ -112,6 +113,25 @@ function NoteDetailPage() {
               {note.content}
             </ReactMarkdown>
           </div>
+
+          {/* 关联文章模块 */}
+          {note.article_id && note.article_title && (
+            <div className="note-related-article">
+              <div className="related-article-header">关联文章</div>
+              <div
+                className="related-article-title"
+                onClick={handleArticleClick}
+                role="button"
+                tabIndex={0}
+                onKeyPress={(e) => e.key === 'Enter' && handleArticleClick()}
+              >
+                {note.article_title}
+              </div>
+              <div className="related-article-hint">
+                点击查看完整文章内容
+              </div>
+            </div>
+          )}
         </div>
 
         {/* 错误提示 */}

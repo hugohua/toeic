@@ -50,6 +50,42 @@
   color: #333;
 }
 
+/* 关联文章模块 */
+.note-related-article {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.related-article-header {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.related-article-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1976d2;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.related-article-title:hover {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+.related-article-hint {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.25rem;
+}
+
 /* Markdown 样式已移至 src/styles/Markdown.css */
 
 .loading-message,
