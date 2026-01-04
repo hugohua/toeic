@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import {
   searchWords as searchWordsAPI,
   getWordsByCategory,
+  getWordIndexInCategory,
 } from '../utils/api';
 import './Header.css';
 
@@ -85,19 +86,18 @@ function Header({
     const category = word.category_name || word.category;
 
     try {
-      // 通过 API 获取分类下的单词列表来找到索引
-      const categoryWords = await getWordsByCategory(category);
-      const wordIndex = categoryWords.findIndex(
-        (w) => w && w.word === word.word
-      );
-      if (wordIndex !== -1) {
+      // 使用轻量级API只获取索引,而不是完整列表
+      const wordIndex = await getWordIndexInCategory(word.word, category);
+      if (wordIndex !== null) {
         navigate(`/detail/${category}/${wordIndex}`);
         setIsSearchExpanded(false);
         setSearchQuery('');
         setShowDropdown(false);
+      } else {
+        console.error('未找到单词索引');
       }
     } catch (error) {
-      console.error('获取单词列表失败:', error);
+      console.error('获取单词索引失败:', error);
     }
   };
 

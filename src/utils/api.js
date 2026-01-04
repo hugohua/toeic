@@ -521,3 +521,37 @@ export async function getEtymology(word, onChunk, onError, onComplete, signal = 
     '获取构词法'
   );
 }
+
+/**
+ * 获取单词在分类中的索引
+ * @param {string} word - 单词文本
+ * @param {string} category - 分类名称
+ * @returns {Promise<number|null>} 索引(从0开始)或null
+ */
+export async function getWordIndexInCategory(word, category) {
+  try {
+    const data = await apiRequest(
+      `/word-index/${category}/${encodeURIComponent(word)}`
+    );
+    return data.index;
+  } catch (error) {
+    console.error('获取单词索引失败:', error);
+    return null;
+  }
+}
+
+/**
+ * 通过索引获取单词详情
+ * @param {string} category - 分类名称
+ * @param {number} index - 单词索引(从0开始)
+ * @returns {Promise<object>} 单词详情对象(包含totalCount)
+ */
+export async function getWordByIndex(category, index) {
+  try {
+    const data = await apiRequest(`/word-detail/${category}/${index}`);
+    return data;
+  } catch (error) {
+    console.error('获取单词详情失败:', error);
+    throw error;
+  }
+}

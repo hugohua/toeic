@@ -23,6 +23,8 @@ const {
   getNoteById,
   getEtymology,
   saveEtymology,
+  getWordIndexInCategory,
+  getWordByIndex,
 } = require('./src/db/database');
 
 // 加载配置：优先使用 config.js，如果不存在则从环境变量读取
@@ -253,6 +255,65 @@ app.get('/api/search', (req, res) => {
     res.status(500).json({ success: false, error: error.message });
   }
 });
+
+// 获取单词在分类中的索引
+app.get('/api/word-index/:category/:word', (req, res) => {
+  try {
+    const { category, word } = req.params;
+
+    if (!category || !word) {
+      return res.status(400).json({
+        success: false,
+        error: '分类和单词参数是必需的',
+      });
+    }
+
+    const index = getWordIndexInCategory(word, category);
+
+    if (index === null) {
+      return res.status(404).json({
+        success: false,
+        error: '未找到该单词',
+      });
+    }
+
+    res.json({ success: true, data: { index } });
+  } catch (error) {
+    console.error('获取单词索引错误:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// 通过索引获取单词详情
+app.get('/api/word-detail/:category/:index', (req, res) => {
+  try {
+    const { category, index } = req.params;
+    const wordIndex = parseInt(index);
+
+    if (isNaN(wordIndex) || wordIndex < 0) {
+      return res.status(400).json({
+        success: false,
+        error: '无效的索引',
+      });
+    }
+
+    const wordDetail = getWordByIndex(category, wordIndex);
+
+    if (!wordDetail) {
+      return res.status(404).json({
+        success: false,
+        error: '未找到该单词',
+      });
+    }
+
+    res.json({ success: true, data: wordDetail });
+  } catch (error) {
+    console.error('获取单词详情错误:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+
 
 // 批量导入单词
 app.post('/api/import', (req, res) => {

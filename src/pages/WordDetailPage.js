@@ -6,7 +6,7 @@ import {
   useLocation,
 } from 'react-router-dom';
 import { useSpeechConfig } from '../hooks/useSpeechConfig';
-import { getWordsByCategory } from '../utils/api';
+import { getWordByIndex, getWordsByCategory } from '../utils/api';
 import Header from '../components/Header';
 import WordDetailContent from '../components/WordDetailContent';
 import Loading from '../components/Loading';
@@ -95,10 +95,11 @@ function WordDetailPage() {
   const [searchParams] = useSearchParams();
   const location = useLocation();
   const [word, setWord] = useState(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [words, setWords] = useState([]);
+  const [totalCount, setTotalCount] = useState(0);
+  const [wordsCache, setWordsCache] = useState({}); // 窗口缓存: {index: wordData}
   const [isFavorite, setIsFavorite] = useState(false);
   const fromStudy = searchParams.get('from') === 'study'; // 检测是否从学习页面跳转
+  const currentIndex = parseInt(index);
 
   // 使用 useMemo 优化列表上下文的计算
   const listContext = useMemo(() => {
@@ -111,33 +112,66 @@ function WordDetailPage() {
   useEffect(() => {
     let isMounted = true;
 
-    async function loadWords() {
+    async function loadWord() {
       try {
-        const categoryWords = await getWordsByCategory(category);
-        if (isMounted) {
-          setWords(categoryWords);
-          const wordIndex = parseInt(index);
-          setCurrentIndex(wordIndex);
-          if (categoryWords[wordIndex]) {
-            setWord(categoryWords[wordIndex]);
-            // 滚动到顶部
-            window.scrollTo(0, 0);
-          }
+        // 先检查缓存
+        if (wordsCache[currentIndex]) {
+          setWord(wordsCache[currentIndex]);
+          setTotalCount(wordsCache[currentIndex].totalCount);
+          window.scrollTo(0, 0);
+          return;
+        }
+
+        // 加载当前单词以获取总数
+        const wordData = await getWordByIndex(category, currentIndex);
+        if (!isMounted) return;
+
+        if (wordData) {
+          setWord(wordData);
+          setTotalCount(wordData.totalCount);
+          window.scrollTo(0, 0);
+
+          // 计算窗口范围:当前索引前后各10个单词(共约20个)
+          const WINDOW_SIZE = 10;
+          const startIndex = Math.max(0, currentIndex - WINDOW_SIZE);
+          const limit = Math.min(WINDOW_SIZE * 2 + 1, wordData.totalCount - startIndex);
+
+          // 使用现有API加载窗口内的单词
+          getWordsByCategory(category, limit, startIndex).then(words => {
+            if (!isMounted) return;
+
+            // 构建缓存对象
+            const newCache = {};
+            words.forEach((w, idx) => {
+              const wordIndex = startIndex + idx;
+              newCache[wordIndex] = {
+                ...w,
+                totalCount: wordData.totalCount,
+              };
+            });
+
+            setWordsCache(prev => ({
+              ...prev,
+              ...newCache,
+            }));
+          }).catch(error => {
+            console.error('加载窗口单词失败:', error);
+          });
         }
       } catch (error) {
-        console.error('加载单词列表失败:', error);
+        console.error('加载单词失败:', error);
         if (isMounted) {
-          setWords([]);
+          setWord(null);
         }
       }
     }
 
-    loadWords();
+    loadWord();
 
     return () => {
       isMounted = false;
     };
-  }, [category, index]);
+  }, [category, currentIndex]);
 
   // 根据当前单词更新收藏状态
   useEffect(() => {
@@ -196,7 +230,7 @@ function WordDetailPage() {
       return;
     }
 
-    if (targetIndex >= 0 && targetIndex < words.length) {
+    if (targetIndex >= 0 && targetIndex < totalCount) {
       navigate(`/detail/${category}/${targetIndex}`);
     } else if (wrapAroundMessage && window.confirm(wrapAroundMessage)) {
       navigate(`/detail/${category}/${wrapAroundIndex}`);
@@ -236,7 +270,7 @@ function WordDetailPage() {
 
     // 普通模式：在分类单词列表中导航
     const prevIndex = currentIndex - 1;
-    const lastIndex = words.length - 1;
+    const lastIndex = totalCount - 1;
     navigateInCategory(
       prevIndex,
       '已经是第一个单词了，是否跳转到最后一个？',
@@ -260,7 +294,7 @@ function WordDetailPage() {
   const progressCurrent = listContext
     ? listContext.index + 1
     : currentIndex + 1;
-  const progressTotal = listContext ? listContext.list.length : words.length;
+  const progressTotal = listContext ? listContext.list.length : totalCount;
 
   return (
     <div className="container">
@@ -300,7 +334,7 @@ function WordDetailPage() {
           disabled={
             listContext
               ? listContext.index === listContext.list.length - 1
-              : currentIndex === words.length - 1
+              : currentIndex === totalCount - 1
           }
         >
           下一个

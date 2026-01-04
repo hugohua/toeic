@@ -939,6 +939,89 @@ function saveEtymology(word, content) {
   };
 }
 
+/**
+ * 获取单词在分类中的索引
+ * @param {string} word - 单词文本
+ * @param {string} categoryName - 分类名称
+ * @returns {number|null} 索引(从0开始),如果未找到返回null
+ */
+function getWordIndexInCategory(word, categoryName) {
+  if (!word || typeof word !== 'string' || !categoryName) {
+    return null;
+  }
+
+  const result = db.prepare(`
+    WITH ranked_words AS (
+      SELECT 
+        w.word,
+        ROW_NUMBER() OVER (ORDER BY w.id) - 1 as word_index
+      FROM words w
+      JOIN categories c ON w.category_id = c.id
+      WHERE c.name = ?
+    )
+    SELECT word_index
+    FROM ranked_words
+    WHERE LOWER(word) = LOWER(?)
+  `).get(categoryName, word.trim());
+
+  return result ? result.word_index : null;
+}
+
+/**
+ * 通过索引获取单词详情
+ * @param {string} categoryName - 分类名称
+ * @param {number} index - 单词索引(从0开始)
+ * @returns {object|null} 单词详情对象(包含totalCount),如果未找到返回null
+ */
+function getWordByIndex(categoryName, index) {
+  if (!categoryName || typeof index !== 'number' || index < 0) {
+    return null;
+  }
+
+  // 先获取总数
+  const countResult = db.prepare(`
+    SELECT COUNT(*) as total
+    FROM words w
+    JOIN categories c ON w.category_id = c.id
+    WHERE c.name = ?
+  `).get(categoryName);
+
+  const totalCount = countResult ? countResult.total : 0;
+
+  if (index >= totalCount) {
+    return null;
+  }
+
+  // 获取指定索引的单词
+  const word = db.prepare(`
+    WITH ranked_words AS (
+      SELECT 
+        w.*,
+        c.name as category_name,
+        ROW_NUMBER() OVER (ORDER BY w.id) - 1 as word_index
+      FROM words w
+      JOIN categories c ON w.category_id = c.id
+      WHERE c.name = ?
+    )
+    SELECT *
+    FROM ranked_words
+    WHERE word_index = ?
+  `).get(categoryName, index);
+
+  if (!word) {
+    return null;
+  }
+
+  // 获取完整的单词详情(包括搭配、例句等)
+  const wordDetail = getWordDetail(word.id);
+
+  return {
+    ...wordDetail,
+    totalCount,
+  };
+}
+
+
 // 初始化数据库
 initDatabase();
 
@@ -972,4 +1055,7 @@ module.exports = {
   // 构词法相关
   getEtymology,
   saveEtymology,
+  // 性能优化相关
+  getWordIndexInCategory,
+  getWordByIndex,
 };
