@@ -11,6 +11,7 @@ import { useWordDetail } from '../hooks/useWordDetail';
 import { formatArticle } from '../utils/text';
 import '../index.css';
 import './WordArticlePage.css';
+import AudioPlayer from '../components/AudioPlayer';
 
 function ArticleDetailPage() {
   const { id } = useParams();
@@ -155,7 +156,11 @@ function ArticleDetailPage() {
       <main className="article-content">
         {/* 文章标题 */}
         <div className="article-display">
-          {/*<h3 className="section-title">{article.title}</h3>*/}
+          <div className="article-header-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+            {/*<h3 className="section-title">{article.title}</h3>*/}
+            <div style={{ flex: 1 }}></div>
+            <AudioPlayer text={article.content} />
+          </div>
           <div
             ref={articleRef}
             className="article-text"

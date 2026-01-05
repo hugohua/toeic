@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const OpenAI = require('openai');
+const { createParser } = require('eventsource-parser'); // Import eventsource-parser
 const {
   getAllCategories,
   getWordsByCategory,
@@ -154,6 +155,157 @@ async function handleOpenAIStream(res, prompt, options = {}) {
     res.end();
   }
 }
+
+// ==================== TTS API (Real-time Streaming) ====================
+app.post('/api/tts', async (req, res) => {
+  const { text, voice } = req.body;
+
+  if (!text || typeof text !== 'string' || text.trim() === '') {
+    return res.status(400).send('Text is required');
+  }
+
+  const model = 'qwen3-tts-flash';
+  const selectedVoice = voice || 'Cherry';
+
+  console.log(`TTS: Starting streaming for text length ${text.length}`);
+
+  // 辅助函数：将文本分割为小块（< 500 字符以确保安全）
+  function splitText(longText, maxLength = 500) {
+    const chunks = [];
+    // 移除 markdown 符号
+    let cleaned = longText.replace(/[*#]/g, '');
+
+    // 按标点符号分割
+    const sentences = cleaned.match(/[^。！？.!?\n]+[。！？.!?\n]?/g) || [cleaned];
+
+    let currentChunk = '';
+
+    for (const sentence of sentences) {
+      if (currentChunk.length + sentence.length > maxLength) {
+        if (currentChunk) chunks.push(currentChunk.trim());
+        currentChunk = sentence;
+
+        // 如果单个句子本身就超长，强制切割
+        while (currentChunk.length > maxLength) {
+          chunks.push(currentChunk.slice(0, maxLength).trim());
+          currentChunk = currentChunk.slice(maxLength);
+        }
+      } else {
+        currentChunk += sentence;
+      }
+    }
+    if (currentChunk.trim()) chunks.push(currentChunk.trim());
+
+    return chunks;
+  }
+
+  try {
+    const fetch = (await import('node-fetch')).default;
+    const textChunks = splitText(text);
+    console.log(`TTS: Split text into ${textChunks.length} chunks`);
+
+    // 为了快速开始播放，只处理第一个文本块
+    const chunkText = textChunks[0];
+    console.log(`TTS: Processing first chunk only, length: ${chunkText.length}`);
+
+    const response = await fetch('https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${config.openai.apiKey}`,
+        'Content-Type': 'application/json',
+        'X-DashScope-SSE': 'enable'
+      },
+      body: JSON.stringify({
+        model: model,
+        input: {
+          text: chunkText,
+          voice: selectedVoice,
+          language_type: "Chinese"
+        }
+      })
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error('Aliyun TTS Error:', errorText);
+      return res.status(response.status).send(errorText);
+    }
+
+    // 只收集最后的完整音频 URL
+    let finalAudioUrl = null;
+
+    const parser = createParser({
+      onEvent: (event) => {
+        if (event.data) {
+          const dataStr = event.data;
+
+          if (dataStr === '[DONE]') {
+            return;
+          }
+
+          try {
+            const data = JSON.parse(dataStr);
+
+            if (data.output && data.output.audio) {
+              // 只保存最后的完整 URL
+              if (data.output.audio.url) {
+                finalAudioUrl = data.output.audio.url;
+                console.log(`TTS: Found complete audio URL`);
+              }
+            }
+
+            if (data.code && data.message) {
+              console.error('SSE Error:', data.message);
+            }
+
+          } catch (e) {
+            console.error('Error parsing SSE data:', e.message);
+          }
+        }
+      }
+    });
+
+    // 读取 SSE 流
+    for await (const chunk of response.body) {
+      parser.feed(chunk.toString());
+    }
+
+    if (!finalAudioUrl) {
+      console.error('No final audio URL received');
+      return res.status(500).send('No audio URL received');
+    }
+
+    console.log(`Downloading complete audio from URL`);
+    const audioResponse = await fetch(finalAudioUrl);
+
+    if (!audioResponse.ok) {
+      console.error(`Failed to download audio: ${audioResponse.status}`);
+      return res.status(500).send('Failed to download audio');
+    }
+
+    const arrayBuffer = await audioResponse.arrayBuffer();
+    const completeAudio = Buffer.from(arrayBuffer);
+    console.log(`TTS: Downloaded audio size: ${completeAudio.length} bytes`);
+
+    // 检测音频格式（通过文件头）
+    const contentType = audioResponse.headers.get('content-type') || 'audio/mpeg';
+
+    // 设置响应头
+    res.setHeader('Content-Type', contentType);
+    res.setHeader('Content-Length', completeAudio.length);
+    res.setHeader('Cache-Control', 'public, max-age=3600');
+
+    res.send(completeAudio);
+
+  } catch (error) {
+    console.error('TTS API Error:', error);
+    if (!res.headersSent) {
+      res.status(500).send(error.message);
+    } else {
+      res.end();
+    }
+  }
+});
 
 // API 路由
 // 获取所有分类
@@ -799,22 +951,6 @@ if (!isDev) {
 
 // 启动服务器
 app.listen(PORT, () => {
-  console.log('=================================');
-  if (isDev) {
-    console.log('🚀 API 服务器已启动（开发模式）');
-    console.log('=================================');
-    console.log(`📡 API 地址: http://localhost:${PORT}/api`);
-    console.log('=================================');
-    console.log(`💡 前端开发服务器运行在 http://localhost:${PORT}`);
-  } else {
-    console.log('🚀 背单词应用服务器已启动！');
-    console.log('=================================');
-    console.log(`📱 本地访问: http://localhost:${PORT}`);
-    console.log(`🌐 网络访问: http://0.0.0.0:${PORT}`);
-    console.log('=================================');
-    console.log('💡 提示: 请先运行 npm run build 构建项目');
-  }
-  console.log('按 Ctrl+C 停止服务器');
-  console.log('=================================');
+  console.log(`Server is running on port ${PORT}`);
+  console.log(`Environment: ${process.env.NODE_ENV || 'production'}`);
 });
-
