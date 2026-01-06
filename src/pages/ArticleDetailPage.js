@@ -7,6 +7,7 @@ import { getArticleById, getNotesByArticleId } from '../utils/api';
 import BottomSheet from '../components/BottomSheet';
 import TextSelection from '../components/TextSelection';
 import WordDetailBottomSheet from '../components/WordDetailBottomSheet';
+import AudioPlayer from '../components/AudioPlayer';
 import { useWordDetail } from '../hooks/useWordDetail';
 import { formatArticle } from '../utils/text';
 import '../index.css';
@@ -153,9 +154,17 @@ function ArticleDetailPage() {
     <div className="container">
       <Header title="文章详情" showBack />
       <main className="article-content">
-        {/* 文章标题 */}
+        {/* 文章标题和播放控制 */}
         <div className="article-display">
-          {/*<h3 className="section-title">{article.title}</h3>*/}
+          <div className="article-header">
+            {/*<h3 className="section-title">{article.title}</h3>*/}
+            <AudioPlayer
+              text={article.content}
+              voice="Cherry"
+              language="Chinese"
+              className="article-audio-player"
+            />
+          </div>
           <div
             ref={articleRef}
             className="article-text"

@@ -5,9 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\" \"npm run dev:tts\"",
     "dev:server": "cross-env NODE_ENV=development node server.js",
     "dev:client": "webpack serve --mode development --open",
+    "dev:tts": "cd python_tts_service && python main.py",
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "serve": "npm run build && npm start",

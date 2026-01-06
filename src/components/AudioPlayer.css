@@ -1,0 +1,92 @@
+/* AudioPlayer 组件样式 */
+
+.audio-player {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.audio-player-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.audio-player-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.audio-player-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.audio-player-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.audio-player-button.playing {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.audio-player-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.audio-player-text {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.audio-player-error {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: #fee;
+  color: #c33;
+  font-size: 12px;
+  border-radius: 4px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .audio-player-button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  .audio-player-icon {
+    font-size: 14px;
+  }
+  
+  .audio-player-text {
+    font-size: 13px;
+  }
+}

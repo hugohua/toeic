@@ -112,6 +112,21 @@
   border: 1px solid #e0e0e0;
 }
 
+/* 文章头部 - 包含标题和播放按钮 */
+.article-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.article-audio-player {
+  flex-shrink: 0;
+}
+
+
 .article-text {
   font-size: 16px;
   line-height: 1.8;
