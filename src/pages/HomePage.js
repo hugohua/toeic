@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import { getCategories } from '../utils/api';
+import { getCategories } from '../services/api';
 
 function HomePage() {
   const navigate = useNavigate();

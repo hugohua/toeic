@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import { createCategory } from '../utils/api';
+import { createCategory } from '../services/api';
 import '../index.css';
 import './CategoryAddPage.css';
 
@@ -44,7 +44,7 @@ function CategoryAddPage() {
 
     try {
       const result = await createCategory(categoryKey.trim(), displayName.trim());
-      
+
       setMessage({
         type: 'success',
         text: `分类 "${displayName}" 创建成功！`,
@@ -118,11 +118,10 @@ function CategoryAddPage() {
 
           {message.text && (
             <div
-              className={`category-add-message ${
-                message.type === 'success'
+              className={`category-add-message ${message.type === 'success'
                   ? 'category-add-message-success'
                   : 'category-add-message-error'
-              }`}
+                }`}
             >
               {message.text}
             </div>

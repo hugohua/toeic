@@ -4,7 +4,7 @@ import {
   searchWords as searchWordsAPI,
   getWordsByCategory,
   getWordIndexInCategory,
-} from '../utils/api';
+} from '../services/api';
 import './Header.css';
 
 function Header({

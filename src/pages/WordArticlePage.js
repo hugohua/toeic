@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import { getCategories, generateArticle, saveArticle } from '../utils/api';
+import { getCategories, generateArticle, saveArticle } from '../services/api';
 import BottomSheet from '../components/BottomSheet';
 import TextSelection from '../components/TextSelection';
 import WordDetailBottomSheet from '../components/WordDetailBottomSheet';

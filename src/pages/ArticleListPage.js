@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import { getAllArticles, deleteArticle } from '../utils/api';
+import { getAllArticles, deleteArticle } from '../services/api';
 import '../index.css';
 import './ArticleListPage.css';
 
@@ -35,7 +35,7 @@ function ArticleListPage() {
   // 删除文章
   const handleDelete = async (articleId, e) => {
     e.stopPropagation();
-    
+
     if (!window.confirm('确定要删除这篇文章吗？')) {
       return;
     }

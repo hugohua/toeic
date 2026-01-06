@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Header from '../components/Header';
-import { getArticleById, getNotesByArticleId } from '../utils/api';
+import { getArticleById, getNotesByArticleId } from '../services/api';
 import BottomSheet from '../components/BottomSheet';
 import TextSelection from '../components/TextSelection';
 import WordDetailBottomSheet from '../components/WordDetailBottomSheet';

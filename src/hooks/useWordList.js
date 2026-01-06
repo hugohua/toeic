@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
-import { getWordsByCategory } from '../utils/api';
-import { getWordList, toggleWordInList, WORD_LIST_TYPES } from '../utils/storage';
+import { getWordsByCategory } from '../services/api';
+import { getWordList, toggleWordInList, WORD_LIST_TYPES, SessionStorage, SESSION_KEYS } from '../services/storage';
 
 /**
  * Hook for managing word list data and pagination
@@ -12,8 +12,6 @@ export function useWordListPagination(category) {
     const wordsRef = useRef([]); // To access latest words in closures
     const PAGE_SIZE = 20;
 
-    const getStorageKey = (key) => `wordList_${category}_${key}`;
-
     // Sync ref
     useEffect(() => {
         wordsRef.current = words;
@@ -23,7 +21,7 @@ export function useWordListPagination(category) {
     useEffect(() => {
         let isMounted = true;
         const savedCount = parseInt(
-            sessionStorage.getItem(getStorageKey('loadedCount')) || '0',
+            SessionStorage.get(SESSION_KEYS.WORD_LIST_LOADED_COUNT(category), '0'),
             10
         );
         // Recover state logic: load at least what was loaded before, or one page
@@ -40,10 +38,10 @@ export function useWordListPagination(category) {
                     }
 
                     // Restore scroll position
-                    const savedScrollPos = sessionStorage.getItem(getStorageKey('scrollPos'));
+                    const savedScrollPos = SessionStorage.get(SESSION_KEYS.WORD_LIST_SCROLL_POS(category));
                     if (savedScrollPos) {
                         setTimeout(() => {
-                            window.scrollTo(0, parseInt(savedScrollPos));
+                            window.scrollTo(0, parseInt(savedScrollPos, 10));
                         }, 100);
                     }
                 }
@@ -91,8 +89,8 @@ export function useWordListPagination(category) {
     // Persist loaded count
     useEffect(() => {
         if (words.length > 0) {
-            sessionStorage.setItem(
-                getStorageKey('loadedCount'),
+            SessionStorage.set(
+                SESSION_KEYS.WORD_LIST_LOADED_COUNT(category),
                 words.length.toString()
             );
         }
@@ -101,8 +99,8 @@ export function useWordListPagination(category) {
     // Save scroll position setup
     useEffect(() => {
         const handleScroll = () => {
-            sessionStorage.setItem(
-                getStorageKey('scrollPos'),
+            SessionStorage.set(
+                SESSION_KEYS.WORD_LIST_SCROLL_POS(category),
                 window.scrollY.toString()
             );
         };
@@ -112,8 +110,8 @@ export function useWordListPagination(category) {
     }, [category]);
 
     const saveScrollPosition = useCallback(() => {
-        sessionStorage.setItem(
-            getStorageKey('scrollPos'),
+        SessionStorage.set(
+            SESSION_KEYS.WORD_LIST_SCROLL_POS(category),
             window.scrollY.toString()
         );
     }, [category]);
@@ -125,29 +123,25 @@ export function useWordListPagination(category) {
  * Hook for managing view settings (meaning visibility)
  */
 export function useWordListSettings(category) {
-    const getStorageKey = (key) => `wordList_${category}_${key}`;
-
     const [showAllMeanings, setShowAllMeanings] = useState(() => {
-        const saved = sessionStorage.getItem(getStorageKey('showAllMeanings'));
-        return saved ? JSON.parse(saved) : false;
+        return SessionStorage.get(SESSION_KEYS.WORD_LIST_SHOW_ALL_MEANINGS(category), false);
     });
 
     const [meaningVisibility, setMeaningVisibility] = useState(() => {
-        const saved = sessionStorage.getItem(getStorageKey('meaningVisibility'));
-        return saved ? JSON.parse(saved) : {};
+        return SessionStorage.get(SESSION_KEYS.WORD_LIST_MEANING_VISIBILITY(category), {});
     });
 
     useEffect(() => {
-        sessionStorage.setItem(
-            getStorageKey('showAllMeanings'),
-            JSON.stringify(showAllMeanings)
+        SessionStorage.set(
+            SESSION_KEYS.WORD_LIST_SHOW_ALL_MEANINGS(category),
+            showAllMeanings
         );
     }, [showAllMeanings, category]);
 
     useEffect(() => {
-        sessionStorage.setItem(
-            getStorageKey('meaningVisibility'),
-            JSON.stringify(meaningVisibility)
+        SessionStorage.set(
+            SESSION_KEYS.WORD_LIST_MEANING_VISIBILITY(category),
+            meaningVisibility
         );
     }, [meaningVisibility, category]);
 

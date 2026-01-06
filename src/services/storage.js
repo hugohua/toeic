@@ -250,3 +250,43 @@ export function getNextStudyGroup(
 
   return groupWords;
 }
+
+// ================= 会话存储管理 (SessionStorage) =================
+
+export const SESSION_KEYS = {
+  WORD_LIST_LOADED_COUNT: (category) => `wordList_${category}_loadedCount`,
+  WORD_LIST_SCROLL_POS: (category) => `wordList_${category}_scrollPos`,
+  WORD_LIST_SHOW_ALL_MEANINGS: (category) => `wordList_${category}_showAllMeanings`,
+  WORD_LIST_MEANING_VISIBILITY: (category) => `wordList_${category}_meaningVisibility`,
+};
+
+export const SessionStorage = {
+  get: (key, defaultValue = null) => {
+    try {
+      if (typeof window === 'undefined') return defaultValue;
+      const value = sessionStorage.getItem(key);
+      if (value === null) return defaultValue;
+      // 尝试解析 JSON，如果失败则返回原字符串（兼容旧数据）
+      try {
+        return JSON.parse(value);
+      } catch (e) {
+        return value;
+      }
+    } catch (e) {
+      console.warn('SessionStorage read error', e);
+      return defaultValue;
+    }
+  },
+  set: (key, value) => {
+    try {
+      if (typeof window === 'undefined') return;
+      sessionStorage.setItem(key, JSON.stringify(value));
+    } catch (e) {
+      console.warn('SessionStorage write error', e);
+    }
+  },
+  remove: (key) => {
+    if (typeof window === 'undefined') return;
+    sessionStorage.removeItem(key);
+  }
+};

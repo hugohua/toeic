@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import BottomSheet from './BottomSheet';
 import '../styles/Markdown.css';
-import { getEtymology } from '../utils/api';
+import { getEtymology } from '../services/api';
 import Popup from './Popup';
 
 /**

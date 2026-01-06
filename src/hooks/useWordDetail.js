@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { getWordByWord, translate } from '../utils/api';
+import { getWordByWord, translate } from '../services/api';
 import { cleanWordText } from '../utils/text';
 
 /**

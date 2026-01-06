@@ -7,14 +7,14 @@ async function loadCategoryCache() {
   if (categoryCache) {
     return categoryCache;
   }
-  
+
   if (categoryCachePromise) {
     return categoryCachePromise;
   }
 
   categoryCachePromise = (async () => {
     try {
-      const { getCategories } = await import('./api');
+      const { getCategories } = await import('../services/api');
       const cats = await getCategories();
       categoryCache = {};
       cats.forEach((cat) => {
@@ -44,19 +44,19 @@ export function getCategoryName(category) {
   if (!category) {
     return '背单词';
   }
-  
+
   // 如果缓存已加载，直接使用
   if (categoryCache && categoryCache[category]) {
     return categoryCache[category].name;
   }
-  
+
   // 如果缓存未加载，触发异步加载（但不阻塞）
   if (!categoryCachePromise) {
     loadCategoryCache().catch(() => {
       // 静默处理错误，已在 loadCategoryCache 中记录
     });
   }
-  
+
   // 返回默认值（通常是 category key 本身）
   return category || '背单词';
 }

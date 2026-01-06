@@ -6,7 +6,7 @@ import {
   useLocation,
 } from 'react-router-dom';
 import { useSpeechConfig } from '../hooks/useSpeechConfig';
-import { getWordByIndex, getWordsByCategory } from '../utils/api';
+import { getWordByIndex, getWordsByCategory } from '../services/api';
 import Header from '../components/Header';
 import WordDetailContent from '../components/WordDetailContent';
 import Loading from '../components/Loading';
@@ -15,7 +15,7 @@ import {
   getWordList,
   toggleWordInList,
   WORD_LIST_TYPES,
-} from '../utils/storage';
+} from '../services/storage';
 import '../index.css';
 import './WordDetailPage.css';
 

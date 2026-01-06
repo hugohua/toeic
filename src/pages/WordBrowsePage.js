@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSpeechConfig } from '../hooks/useSpeechConfig';
-import { getWordsByCategory } from '../utils/api';
+import { getWordsByCategory } from '../services/api';
 import Header from '../components/Header';
 import WordDetailContent from '../components/WordDetailContent';
 import Loading from '../components/Loading';
@@ -10,7 +10,7 @@ import {
   getWordList,
   toggleWordInList,
   WORD_LIST_TYPES,
-} from '../utils/storage';
+} from '../services/storage';
 import '../index.css';
 import './WordBrowsePage.css';
 

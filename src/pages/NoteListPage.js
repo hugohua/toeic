@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import { getAllNotes, deleteNote } from '../utils/api';
+import { getAllNotes, deleteNote } from '../services/api';
 import '../index.css';
 import './NoteListPage.css';
 
@@ -35,7 +35,7 @@ function NoteListPage() {
   // 删除笔记
   const handleDelete = async (noteId, e) => {
     e.stopPropagation();
-    
+
     if (!window.confirm('确定要删除这条笔记吗？')) {
       return;
     }

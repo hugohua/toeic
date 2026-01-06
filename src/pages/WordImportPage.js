@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import { getCategories, importWords } from '../utils/api';
+import { getCategories, importWords } from '../services/api';
 import { getCategoryName } from '../utils/app';
 import '../index.css';
 import './WordImportPage.css';
@@ -44,7 +44,7 @@ function WordImportPage() {
   // 验证 JSON 数据格式
   const validateWordData = (data) => {
     const errors = [];
-    
+
     if (!data.word || typeof data.word !== 'string' || data.word.trim() === '') {
       errors.push('单词 (word) 字段是必需的且必须是非空字符串');
     }
@@ -184,7 +184,7 @@ function WordImportPage() {
 
       // 调用 API 导入
       const result = await importWords(selectedCategory, wordsData);
-      
+
       setMessage({
         type: 'success',
         text: `成功导入 ${result.successCount} 个单词${result.failedCount > 0 ? `，失败 ${result.failedCount} 个` : ''}`,
@@ -192,7 +192,7 @@ function WordImportPage() {
 
       // 清空输入
       setJsonInput('');
-      
+
       // 如果有失败的项目，显示详细信息
       if (result.failedWords && result.failedWords.length > 0) {
         setValidationErrors(
@@ -276,11 +276,10 @@ function WordImportPage() {
 
         {message.text && (
           <div
-            className={`word-import-message ${
-              message.type === 'success'
+            className={`word-import-message ${message.type === 'success'
                 ? 'word-import-message-success'
                 : 'word-import-message-error'
-            }`}
+              }`}
           >
             {message.text}
           </div>
@@ -326,7 +325,7 @@ function WordImportPage() {
             JSON 数据格式说明：
           </div>
           <pre className="word-import-info-pre">
-{`[
+            {`[
   {
     word: 'feature',                    // 必需：单词
     phonetic: '/ˈfiːtʃə(r)/',            // 可选：音标

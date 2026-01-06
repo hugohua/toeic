@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import BottomSheet from './BottomSheet';
-import { grammarAnalyze, saveNote } from '../utils/api';
+import { grammarAnalyze, saveNote } from '../services/api';
 import Popup from './Popup';
 import EtymologyBottomSheet from './EtymologyBottomSheet';
 import './TextSelection.css';

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useSpeechConfig } from '../hooks/useSpeechConfig';
-import { getWordsByCategory } from '../utils/api';
+import { getWordsByCategory } from '../services/api';
 import Header from '../components/Header';
 import PhraseCell from '../components/PhraseCell';
 import Loading from '../components/Loading';
@@ -10,7 +10,7 @@ import {
   saveWordStatus,
   addWordToList,
   WORD_LIST_TYPES,
-} from '../utils/storage';
+} from '../services/storage';
 import { scheduleReview } from '../utils/ebbinghaus';
 import '../index.css';
 import './WordStudyPage.css';

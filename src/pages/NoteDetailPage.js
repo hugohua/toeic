@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Header from '../components/Header';
-import { getNoteById } from '../utils/api';
+import { getNoteById } from '../services/api';
 import '../index.css';
 import './NoteDetailPage.css';
 import '../styles/Markdown.css'; // Import unified markdown styles
