@@ -1,4 +1,6 @@
 const express = require('express');
+const http = require('http');
+const WebSocket = require('ws');
 const path = require('path');
 const fs = require('fs');
 const OpenAI = require('openai');
@@ -29,6 +31,10 @@ const {
   addWordToList,
   removeWordFromList,
   toggleWordInList,
+  checkAudioCache,
+  saveAudioCache,
+  getAudioCacheStats,
+  cleanupAudioCache,
 } = require('./src/db/database');
 
 // 加载配置：优先使用 config.js，如果不存在则从环境变量读取
@@ -55,8 +61,14 @@ const openai = new OpenAI({
 });
 
 const app = express();
+const server = http.createServer(app);
 const isDev = process.env.NODE_ENV === 'development';
 const PORT = isDev ? (process.env.PORT || 3001) : (process.env.PORT || 3000);
+
+// Python TTS 服务配置
+const PYTHON_TTS_HOST = process.env.PYTHON_TTS_HOST || 'localhost';
+const PYTHON_TTS_PORT = process.env.PYTHON_TTS_PORT || 8000;
+const PYTHON_TTS_URL = `ws://${PYTHON_TTS_HOST}:${PYTHON_TTS_PORT}/ws/tts`;
 
 // 解析 JSON 请求体
 app.use(express.json());
@@ -785,6 +797,144 @@ app.post('/api/generate-article', async (req, res) => {
   });
 });
 
+// ==================== WebSocket 代理（TTS 服务） ====================
+
+// WebSocket 服务器
+const wss = new WebSocket.Server({ noServer: true });
+
+// WebSocket 升级处理
+server.on('upgrade', (request, socket, head) => {
+  const pathname = new URL(request.url, 'http://localhost').pathname;
+
+  if (pathname === '/ws/tts') {
+    wss.handleUpgrade(request, socket, head, (ws) => {
+      wss.emit('connection', ws, request);
+    });
+  } else {
+    socket.destroy();
+  }
+});
+
+// WebSocket 连接处理（代理到 Python 服务）
+wss.on('connection', (clientWs) => {
+  console.log('客户端 WebSocket 连接建立');
+
+  // 连接到 Python TTS 服务
+  const pythonWs = new WebSocket(PYTHON_TTS_URL);
+
+  // 消息缓冲区（用于在 Python 连接建立前缓存消息）
+  const messageBuffer = [];
+  let pythonConnected = false;
+
+  // Python 连接建立
+  pythonWs.on('open', () => {
+    console.log('Python TTS 服务连接已建立');
+    pythonConnected = true;
+
+    // 发送缓冲的消息
+    while (messageBuffer.length > 0) {
+      const msg = messageBuffer.shift();
+      console.log('发送缓冲消息到 Python:', msg.toString().substring(0, 100));
+      pythonWs.send(msg);
+    }
+  });
+
+  // Python → 客户端
+  pythonWs.on('message', (data) => {
+    if (clientWs.readyState === WebSocket.OPEN) {
+      clientWs.send(data);
+    }
+  });
+
+  // 客户端 → Python
+  clientWs.on('message', (data) => {
+    // 确保数据是字符串格式
+    const message = data.toString();
+    console.log('收到客户端消息:', message.substring(0, 100));
+
+    if (pythonConnected && pythonWs.readyState === WebSocket.OPEN) {
+      console.log('转发消息到 Python');
+      pythonWs.send(message);  // 发送字符串而不是 Buffer
+    } else {
+      console.log('Python 未连接，缓存消息');
+      messageBuffer.push(message);  // 缓存字符串
+    }
+  });
+
+  // 错误处理
+  pythonWs.on('error', (error) => {
+    console.error('Python TTS 服务连接错误:', error);
+    clientWs.send(JSON.stringify({
+      type: 'error',
+      message: 'TTS 服务暂时不可用，请稍后重试'
+    }));
+    clientWs.close();
+  });
+
+  // 连接关闭
+  pythonWs.on('close', () => {
+    console.log('Python TTS 服务连接关闭');
+    clientWs.close();
+  });
+
+  clientWs.on('close', () => {
+    console.log('客户端 WebSocket 连接关闭');
+    pythonWs.close();
+  });
+});
+
+// ==================== 音频缓存 API ====================
+
+// 检查音频缓存
+app.get('/api/audio/check/:hash', (req, res) => {
+  try {
+    const { hash } = req.params;
+    const result = checkAudioCache(hash);
+    res.json(result);
+  } catch (error) {
+    console.error('检查音频缓存失败:', error);
+    res.status(500).json({ error: '检查缓存失败' });
+  }
+});
+
+// 保存音频缓存（由 Python 服务调用）
+app.post('/api/audio/save', (req, res) => {
+  try {
+    const { hash, text, voice, language, fileName, filePath, fileSize, duration } = req.body;
+    const result = saveAudioCache(hash, text, voice, language, fileName, filePath, fileSize, duration);
+    res.json(result);
+  } catch (error) {
+    console.error('保存音频缓存失败:', error);
+    res.status(500).json({ error: '保存缓存失败' });
+  }
+});
+
+// 获取缓存统计
+app.get('/api/audio/stats', (req, res) => {
+  try {
+    const stats = getAudioCacheStats();
+    res.json(stats);
+  } catch (error) {
+    console.error('获取缓存统计失败:', error);
+    res.status(500).json({ error: '获取统计失败' });
+  }
+});
+
+// 清理缓存
+app.post('/api/audio/cleanup', (req, res) => {
+  try {
+    const { maxFiles = 500, maxSizeMB = 100, maxAgeDays = 30 } = req.body;
+    const result = cleanupAudioCache(maxFiles, maxSizeMB, maxAgeDays);
+    res.json(result);
+  } catch (error) {
+    console.error('清理缓存失败:', error);
+    res.status(500).json({ error: '清理缓存失败' });
+  }
+});
+
+// 提供音频文件静态访问
+app.use('/audio', express.static(path.join(__dirname, 'public', 'audio')));
+
 // 开发模式下不提供静态文件（由 webpack-dev-server 提供）
 if (!isDev) {
   // 设置静态文件目录（指向构建后的dist目录）
@@ -797,14 +947,16 @@ if (!isDev) {
 }
 
 // 启动服务器
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log('=================================');
   if (isDev) {
     console.log('🚀 API 服务器已启动（开发模式）');
     console.log('=================================');
     console.log(`📡 API 地址: http://localhost:${PORT}/api`);
+    console.log(`🎙️  TTS WebSocket: ws://localhost:${PORT}/ws/tts`);
+    console.log(`🔗 Python TTS: ${PYTHON_TTS_URL}`);
     console.log('=================================');
-    console.log(`💡 前端开发服务器运行在 http://localhost:${PORT}`);
+    console.log(`💡 前端开发服务器运行在 http://localhost:3000`);
   } else {
     console.log('🚀 背单词应用服务器已启动！');
     console.log('=================================');

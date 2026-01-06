@@ -7,15 +7,19 @@ services:
     environment:
       - NODE_ENV=production
       - PORT=3000
+      - PYTHON_TTS_HOST=localhost
+      - PYTHON_TTS_PORT=8000
       - OPENAI_API_KEY=${OPENAI_API_KEY:-your_api_key_here}
+      - DASHSCOPE_API_KEY=${DASHSCOPE_API_KEY:-your_dashscope_key_here}
     volumes:
       # 挂载数据库目录，确保数据持久化
       - ./data:/app/data
+      # 挂载音频缓存目录
+      - ./public/audio:/app/public/audio
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000/api/categories', (r) => { process.exit(r.statusCode === 200 ? 0 : 1) })"]
+      test: [ "CMD", "node", "-e", "require('http').get('http://localhost:3000/api/categories', (r) => { process.exit(r.statusCode === 200 ? 0 : 1) })" ]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 40s
-

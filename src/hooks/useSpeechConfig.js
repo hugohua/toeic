@@ -1,15 +1,24 @@
-import { useSpeech } from 'react-text-to-speech';
+import { useAliyunAudio } from './useAliyunAudio';
 
 /**
- * 使用默认配置的语音合成 hook
+ * 语音合成 Hook (兼容层)
+ * 将原来使用 react-text-to-speech 的调用转发到新的阿里云 TTS Hook
+ * 
  * @param {string} text - 要朗读的文本
- * @returns {object} useSpeech 的返回值
+ * @returns {object} { start, stop, speechStatus }
  */
 export function useSpeechConfig(text) {
-    return useSpeech({
-        text: text || '',
-        pitch: 1,
-        rate: 1,
-        volume: 1,
-    });
+    const { play, stop, playing } = useAliyunAudio();
+
+    const start = () => {
+        // 使用默认音色 Cherry，自动检测语言，正常语速
+        play(text, 'Cherry', undefined, 1.0);
+    };
+
+    return {
+        start,
+        stop,
+        speechStatus: playing ? 'started' : 'stopped',
+        isInSpeech: playing, // 部分组件可能使用这个字段
+    };
 }

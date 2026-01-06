@@ -220,6 +220,30 @@ function initDatabase() {
     CREATE INDEX IF NOT EXISTS idx_word_lists_category ON word_lists(category);
     CREATE INDEX IF NOT EXISTS idx_word_lists_created_at ON word_lists(created_at);
   `);
+
+  // 创建音频缓存表
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS audio_cache (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      hash TEXT UNIQUE NOT NULL,
+      text TEXT NOT NULL,
+      voice TEXT NOT NULL,
+      language TEXT NOT NULL,
+      file_name TEXT NOT NULL,
+      file_path TEXT NOT NULL,
+      file_size INTEGER NOT NULL,
+      duration REAL,
+      created_at INTEGER NOT NULL,
+      last_access_at INTEGER NOT NULL,
+      access_count INTEGER DEFAULT 0
+    );
+  `);
+
+  // 创建音频缓存索引
+  db.exec(`
+    CREATE INDEX IF NOT EXISTS idx_audio_cache_hash ON audio_cache(hash);
+    CREATE INDEX IF NOT EXISTS idx_audio_cache_last_access ON audio_cache(last_access_at);
+  `);
 }
 
 /**
@@ -1165,6 +1189,181 @@ function toggleWordInList(word, category, type) {
 }
 
 
+// ==================== 音频缓存相关 ====================
+
+/**
+ * 检查音频缓存是否存在
+ */
+function checkAudioCache(hash) {
+  const result = db.prepare(`
+    SELECT file_path, file_name, id
+    FROM audio_cache
+    WHERE hash = ?
+  `).get(hash);
+
+  if (result) {
+    const fs = require('fs');
+    // 构建绝对路径 (数据库存的是 URL 路径，不能直接用于文件检查)
+    // database.js 在 src/db 目录 -> ../../public/audio
+    const absolutePath = path.join(__dirname, '../../public/audio', result.file_name);
+
+    if (fs.existsSync(absolutePath)) {
+      // 更新访问记录
+      db.prepare(`
+        UPDATE audio_cache 
+        SET last_access_at = ?, access_count = access_count + 1 
+        WHERE id = ?
+      `).run(Date.now(), result.id);
+
+      return {
+        exists: true,
+        url: `/audio/${result.file_name}`,
+        file_path: result.file_path,
+        duration: result.duration
+      };
+    } else {
+      // 文件不存在，删除数据库记录
+      console.warn(`[缓存丢失] 文件未找到: ${absolutePath}`);
+      db.prepare('DELETE FROM audio_cache WHERE id = ?').run(result.id);
+    }
+  }
+
+  return { exists: false };
+}
+
+/**
+ * 保存音频缓存记录
+ */
+function saveAudioCache(hash, text, voice, language, fileName, filePath, fileSize, duration) {
+  const now = Date.now();
+
+  db.prepare(`
+    INSERT OR REPLACE INTO audio_cache 
+    (hash, text, voice, language, file_name, file_path, file_size, duration, created_at, last_access_at, access_count)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 1)
+  `).run(hash, text, voice, language, fileName, filePath, fileSize, duration, now, now);
+
+  return {
+    success: true,
+    url: `/audio/${fileName}`
+  };
+}
+
+/**
+ * 获取音频缓存统计
+ */
+function getAudioCacheStats() {
+  const stats = db.prepare(`
+    SELECT 
+      COUNT(*) as total_count,
+      SUM(file_size) as total_size,
+      SUM(duration) as total_duration,
+      MIN(created_at) as oldest_file,
+      MAX(created_at) as newest_file
+    FROM audio_cache
+  `).get();
+
+  return {
+    total_count: stats.total_count || 0,
+    total_size: stats.total_size || 0,
+    total_duration: stats.total_duration || 0,
+    oldest_file: stats.oldest_file,
+    newest_file: stats.newest_file
+  };
+}
+
+/**
+ * 清理音频缓存
+ */
+function cleanupAudioCache(maxFiles = 500, maxSizeMB = 100, maxAgeDays = 30) {
+  const fs = require('fs');
+  let deletedCount = 0;
+  let freedSpace = 0;
+
+  // 1. 删除过期文件
+  const maxAgeMs = maxAgeDays * 24 * 60 * 60 * 1000;
+  const cutoffTime = Date.now() - maxAgeMs;
+
+  const oldFiles = db.prepare(`
+    SELECT id, file_path, file_size 
+    FROM audio_cache 
+    WHERE last_access_at < ?
+  `).all(cutoffTime);
+
+  for (const file of oldFiles) {
+    try {
+      if (fs.existsSync(file.file_path)) {
+        fs.unlinkSync(file.file_path);
+        freedSpace += file.file_size;
+        deletedCount++;
+      }
+      db.prepare('DELETE FROM audio_cache WHERE id = ?').run(file.id);
+    } catch (err) {
+      console.error(`删除文件失败: ${file.file_path}`, err);
+    }
+  }
+
+  // 2. 如果超过文件数量限制，删除最少使用的
+  const totalCount = db.prepare('SELECT COUNT(*) as count FROM audio_cache').get().count;
+
+  if (totalCount > maxFiles) {
+    const excess = totalCount - maxFiles;
+    const lruFiles = db.prepare(`
+      SELECT id, file_path, file_size 
+      FROM audio_cache 
+      ORDER BY last_access_at ASC 
+      LIMIT ?
+    `).all(excess);
+
+    for (const file of lruFiles) {
+      try {
+        if (fs.existsSync(file.file_path)) {
+          fs.unlinkSync(file.file_path);
+          freedSpace += file.file_size;
+          deletedCount++;
+        }
+        db.prepare('DELETE FROM audio_cache WHERE id = ?').run(file.id);
+      } catch (err) {
+        console.error(`删除文件失败: ${file.file_path}`, err);
+      }
+    }
+  }
+
+  // 3. 如果超过大小限制，删除最少使用的
+  const totalSize = db.prepare('SELECT SUM(file_size) as size FROM audio_cache').get().size || 0;
+  const maxSizeBytes = maxSizeMB * 1024 * 1024;
+
+  if (totalSize > maxSizeBytes) {
+    const allFiles = db.prepare(`
+      SELECT id, file_path, file_size 
+      FROM audio_cache 
+      ORDER BY last_access_at ASC
+    `).all();
+
+    let currentSize = totalSize;
+    for (const file of allFiles) {
+      if (currentSize <= maxSizeBytes) break;
+
+      try {
+        if (fs.existsSync(file.file_path)) {
+          fs.unlinkSync(file.file_path);
+          freedSpace += file.file_size;
+          deletedCount++;
+          currentSize -= file.file_size;
+        }
+        db.prepare('DELETE FROM audio_cache WHERE id = ?').run(file.id);
+      } catch (err) {
+        console.error(`删除文件失败: ${file.file_path}`, err);
+      }
+    }
+  }
+
+  return {
+    deleted_count: deletedCount,
+    freed_space: freedSpace
+  };
+}
+
 
 // 初始化数据库
 initDatabase();
@@ -1208,4 +1407,9 @@ module.exports = {
   removeWordFromList,
   isWordInList,
   toggleWordInList,
+  // 音频缓存相关
+  checkAudioCache,
+  saveAudioCache,
+  getAudioCacheStats,
+  cleanupAudioCache,
 };

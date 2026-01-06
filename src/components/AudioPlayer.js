@@ -1,209 +1,156 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './AudioPlayer.css';
+import { useAliyunAudio } from '../hooks/useAliyunAudio';
 
 /**
- * 实时语音播放组件
- * 基于 WebSocket + Web Audio API 实现流式 TTS 播放
- * 
- * @param {Object} props
- * @param {string} props.text - 要播放的文本内容
- * @param {string} props.voice - 音色，默认 Cherry
- * @param {string} props.language - 语言，默认 Chinese
- * @param {string} props.className - 自定义样式类名
+ * 实时语音播放组件（增强版）
+ * 逻辑已迁移至 useAliyunAudio Hook
  */
-function AudioPlayer({ text, voice = 'Cherry', language = 'Chinese', className = '' }) {
-    const [playing, setPlaying] = useState(false);
-    const [error, setError] = useState('');
+function AudioPlayer({
+    text,
+    voice = 'Cherry',
+    language = 'Chinese',
+    className = '',
+    showAdvanced = true
+}) {
+    // UI 状态
+    const [selectedVoice, setSelectedVoice] = useState(voice);
+    const [playbackRate, setPlaybackRate] = useState(1.0);
 
-    const audioContextRef = useRef(null);
-    const wsRef = useRef(null);
-    const nextStartTimeRef = useRef(0);
+    // 引入自定义 Hook
+    const {
+        play,
+        stop,
+        playing,
+        error,
+        progress,
+        duration,
+        currentTime
+    } = useAliyunAudio();
 
-    /**
-     * Base64 转 ArrayBuffer
-     */
-    const base64ToArrayBuffer = (base64) => {
-        const binaryString = window.atob(base64);
-        const bytes = new Uint8Array(binaryString.length);
-        for (let i = 0; i < binaryString.length; i++) {
-            bytes[i] = binaryString.charCodeAt(i);
-        }
-        return bytes.buffer;
-    };
+    // 可用的音色列表
+    const voices = [
+        { value: 'Cherry', label: 'Cherry (女声)', gender: '女' },
+        { value: 'Ryan', label: 'Ryan (男声)', gender: '男' },
+        { value: 'Stella', label: 'Stella (女声)', gender: '女' },
+        { value: 'Emily', label: 'Emily (女声)', gender: '女' },
+        { value: 'Luna', label: 'Luna (女声)', gender: '女' },
+    ];
 
-    /**
-     * 播放音频帧
-     * 将 PCM 数据转换为 AudioBuffer 并播放
-     */
-    const playAudioFrame = async (pcmData, sampleRate) => {
-        try {
-            // 初始化 AudioContext
-            if (!audioContextRef.current) {
-                audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
-            }
-
-            const audioContext = audioContextRef.current;
-
-            // PCM Int16 → Float32 转换
-            const int16Array = new Int16Array(pcmData);
-            const float32Array = new Float32Array(int16Array.length);
-
-            for (let i = 0; i < int16Array.length; i++) {
-                // 归一化到 -1.0 ~ 1.0
-                float32Array[i] = int16Array[i] / 32768.0;
-            }
-
-            // 创建 AudioBuffer
-            const audioBuffer = audioContext.createBuffer(
-                1,  // 单声道
-                float32Array.length,
-                sampleRate
-            );
-            audioBuffer.getChannelData(0).set(float32Array);
-
-            // 创建音频源
-            const source = audioContext.createBufferSource();
-            source.buffer = audioBuffer;
-            source.connect(audioContext.destination);
-
-            // 计算播放时间，实现无缝衔接
-            const startTime = Math.max(
-                nextStartTimeRef.current,
-                audioContext.currentTime
-            );
-            source.start(startTime);
-
-            // 更新下一个块的开始时间
-            nextStartTimeRef.current = startTime + audioBuffer.duration;
-
-        } catch (err) {
-            console.error('播放音频帧失败:', err);
-            setError('音频播放失败');
-        }
-    };
+    // 播放速度选项
+    const playbackRates = [
+        { value: 0.5, label: '0.5x' },
+        { value: 0.75, label: '0.75x' },
+        { value: 1.0, label: '1.0x' },
+        { value: 1.25, label: '1.25x' },
+        { value: 1.5, label: '1.5x' },
+        { value: 2.0, label: '2.0x' },
+    ];
 
     /**
      * 处理播放/停止
      */
-    const handleTogglePlay = async () => {
+    const handleTogglePlay = (e) => {
+        if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
         if (playing) {
-            // 停止播放
-            if (wsRef.current) {
-                wsRef.current.close();
-                wsRef.current = null;
-            }
-            setPlaying(false);
-            setError('');
-            return;
-        }
-
-        if (!text || !text.trim()) {
-            setError('没有可播放的内容');
-            return;
-        }
-
-        setPlaying(true);
-        setError('');
-        nextStartTimeRef.current = 0;
-
-        try {
-            // 连接 WebSocket
-            const ws = new WebSocket('ws://localhost:8000/ws/tts');
-            wsRef.current = ws;
-
-            ws.onopen = () => {
-                console.log('WebSocket 连接成功');
-                // 发送 TTS 请求
-                ws.send(JSON.stringify({
-                    text: text.replace(/[*#]/g, ''),  // 清理 Markdown 标记
-                    voice: voice,
-                    language: language
-                }));
-            };
-
-            ws.onmessage = async (event) => {
-                try {
-                    const msg = JSON.parse(event.data);
-
-                    if (msg.type === 'audio') {
-                        // 接收到音频数据
-                        const pcmData = base64ToArrayBuffer(msg.data);
-                        await playAudioFrame(pcmData, msg.sample_rate);
-
-                    } else if (msg.type === 'done') {
-                        // 播放完成
-                        console.log('TTS 播放完成');
-                        setTimeout(() => {
-                            setPlaying(false);
-                            ws.close();
-                        }, 1000);
-
-                    } else if (msg.type === 'error') {
-                        // 服务端错误
-                        console.error('TTS 服务错误:', msg.message);
-                        setError(msg.message || 'TTS 服务错误');
-                        setPlaying(false);
-                        ws.close();
-                    }
-                } catch (err) {
-                    console.error('处理消息失败:', err);
-                    setError('处理音频数据失败');
-                    setPlaying(false);
-                    ws.close();
-                }
-            };
-
-            ws.onerror = (error) => {
-                console.error('WebSocket 错误:', error);
-                setError('连接失败，请确保 Python TTS 服务正在运行');
-                setPlaying(false);
-            };
-
-            ws.onclose = (event) => {
-                console.log('WebSocket 连接关闭');
-                if (!event.wasClean) {
-                    console.error('连接异常关闭');
-                }
-                setPlaying(false);
-            };
-
-        } catch (err) {
-            console.error('启动播放失败:', err);
-            setError('启动播放失败');
-            setPlaying(false);
+            stop();
+        } else {
+            play(text, selectedVoice, language, playbackRate);
         }
     };
 
-    // 组件卸载时清理资源
+    /**
+     * 格式化时间显示
+     */
+    const formatTime = (seconds) => {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+    };
+
+    // 当外部 props 改变时更新内部音色状态
     useEffect(() => {
-        return () => {
-            if (wsRef.current) {
-                wsRef.current.close();
-            }
-            if (audioContextRef.current) {
-                audioContextRef.current.close();
-            }
-        };
-    }, []);
+        setSelectedVoice(voice);
+    }, [voice]);
 
     return (
-        <div className={`audio-player ${className}`}>
-            <button
-                className={`audio-player-button ${playing ? 'playing' : ''}`}
-                onClick={handleTogglePlay}
-                title={playing ? '停止播放' : '播放语音'}
-                disabled={!text || !text.trim()}
-            >
-                {playing ? (
-                    <span className="audio-player-icon">⏹</span>
-                ) : (
-                    <span className="audio-player-icon">🔊</span>
-                )}
-                <span className="audio-player-text">
-                    {playing ? '停止' : '播放'}
-                </span>
-            </button>
+        <div className={`audio-player ${showAdvanced ? 'audio-player-advanced' : ''} ${className}`}>
+            <div className="audio-player-controls">
+                {/* 播放/停止按钮 */}
+                <button
+                    type="button"
+                    className={`audio-player-button ${playing ? 'playing' : ''}`}
+                    onClick={handleTogglePlay}
+                    title={playing ? '停止播放' : '播放语音'}
+                    disabled={!text || !text.trim()}
+                >
+                    {playing ? (
+                        <span className="audio-player-icon">⏹</span>
+                    ) : (
+                        <span className="audio-player-icon">🔊</span>
+                    )}
+                    <span className="audio-player-text">
+                        {playing ? '停止' : '播放'}
+                    </span>
+                </button>
 
+                {/* 高级控制 */}
+                {showAdvanced && (
+                    <>
+                        {/* 音色选择 */}
+                        <select
+                            className="audio-player-select"
+                            value={selectedVoice}
+                            onChange={(e) => setSelectedVoice(e.target.value)}
+                            disabled={playing}
+                            title="选择音色"
+                        >
+                            {voices.map(v => (
+                                <option key={v.value} value={v.value}>
+                                    {v.label}
+                                </option>
+                            ))}
+                        </select>
+
+                        {/* 播放速度 */}
+                        <select
+                            className="audio-player-select audio-player-rate"
+                            value={playbackRate}
+                            onChange={(e) => setPlaybackRate(parseFloat(e.target.value))}
+                            disabled={playing}
+                            title="播放速度"
+                        >
+                            {playbackRates.map(r => (
+                                <option key={r.value} value={r.value}>
+                                    {r.label}
+                                </option>
+                            ))}
+                        </select>
+                    </>
+                )}
+            </div>
+
+            {/* 进度条 */}
+            {showAdvanced && playing && (
+                <div className="audio-player-progress-container">
+                    <div className="audio-player-progress-bar">
+                        <div
+                            className="audio-player-progress-fill"
+                            style={{ width: `${progress}%` }}
+                        />
+                    </div>
+                    <div className="audio-player-time">
+                        <span>{formatTime(currentTime)}</span>
+                        {duration > 0 && <span> / {formatTime(duration)}</span>}
+                    </div>
+                </div>
+            )}
+
+            {/* 错误提示 */}
             {error && (
                 <div className="audio-player-error" title={error}>
                     ⚠️ {error}
