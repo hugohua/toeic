@@ -840,9 +840,9 @@ wss.on('connection', (clientWs) => {
   });
 
   // Python → 客户端
-  pythonWs.on('message', (data) => {
+  pythonWs.on('message', (data, isBinary) => {
     if (clientWs.readyState === WebSocket.OPEN) {
-      clientWs.send(data);
+      clientWs.send(data, { binary: isBinary });
     }
   });
 

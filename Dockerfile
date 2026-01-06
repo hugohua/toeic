@@ -4,8 +4,11 @@ FROM --platform=linux/amd64 node:20-alpine
 # 设置工作目录
 WORKDIR /app
 
-# 安装必要的构建工具和 Python
-RUN apk add --no-cache --virtual .build-deps python3 py3-pip make g++
+# 安装 Python (保留在生产环境)
+RUN apk add --no-cache python3 py3-pip
+
+# 安装构建依赖 (构建后清理)
+RUN apk add --no-cache --virtual .build-deps make g++
 
 # 复制 package.json 和 package-lock.json
 COPY package*.json ./
@@ -29,7 +32,7 @@ RUN npm prune --production && \
 
 # 安装 Python 依赖
 RUN cd python_tts_service && \
-    pip3 install --no-cache-dir -r requirements.txt
+    pip3 install --no-cache-dir --break-system-packages -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 
 # 清理构建工具（保留 Python）
 RUN apk del .build-deps

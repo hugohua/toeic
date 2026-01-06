@@ -152,7 +152,10 @@ export const useAliyunAudio = () => {
             // 确保之前的连接已关闭
             if (wsRef.current) wsRef.current.close();
 
-            const ws = new WebSocket('ws://localhost:8000/ws/tts');
+            // 使用相对路径，让反向代理处理连接
+            const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsUrl = `${protocol}//${window.location.host}/ws/tts`;
+            const ws = new WebSocket(wsUrl);
             wsRef.current = ws;
 
             ws.onopen = () => {

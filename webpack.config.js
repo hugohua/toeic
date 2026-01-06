@@ -50,6 +50,10 @@ module.exports = (env, argv) => {
             from: 'public/favicon.svg',
             to: 'favicon.svg',
           },
+          {
+            from: 'public/iconfont',
+            to: 'iconfont',
+          },
         ],
       }),
       new webpack.DefinePlugin({
@@ -73,6 +77,12 @@ module.exports = (env, argv) => {
       proxy: {
         '/api': {
           target: 'http://localhost:3001',
+          changeOrigin: true,
+          secure: false,
+        },
+        '/ws/tts': {
+          target: 'http://localhost:3001',
+          ws: true,
           changeOrigin: true,
           secure: false,
         },
