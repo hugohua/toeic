@@ -28,7 +28,6 @@ const {
   getWordList,
   addWordToList,
   removeWordFromList,
-  isWordInList,
   toggleWordInList,
 } = require('./src/db/database');
 
