@@ -12,6 +12,7 @@ import { useWordDetail } from '../hooks/useWordDetail';
 import { formatArticle } from '../utils/text';
 import '../index.css';
 import './WordArticlePage.css';
+import Loading from '../components/Loading';
 
 function ArticleDetailPage() {
   const { id } = useParams();
@@ -122,7 +123,7 @@ function ArticleDetailPage() {
       <div className="container">
         <Header title="文章详情" showBack />
         <main className="article-content">
-          <div className="loading-message">加载中...</div>
+          <Loading />
         </main>
       </div>
     );

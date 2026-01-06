@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import { getAllNotes, deleteNote } from '../services/api';
 import '../index.css';
 import './NoteListPage.css';
+import Loading from '../components/Loading';
 
 function NoteListPage() {
   const navigate = useNavigate();
@@ -75,7 +76,7 @@ function NoteListPage() {
       <div className="container">
         <Header title="笔记列表" showBack />
         <main className="note-list-content">
-          <div className="loading-message">加载中...</div>
+          <Loading />
         </main>
       </div>
     );

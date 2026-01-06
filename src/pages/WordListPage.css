@@ -278,3 +278,23 @@
 .word-list-footer-btn {
   margin-top: 10px;
 }
+
+/* Custom style for use with Loading component in infinite scroll */
+.word-list-loading {
+  min-height: auto !important;
+  padding: 0 !important;
+}
+
+.word-list-loading .loading-content {
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.word-list-loading .loading-spinner {
+  width: 20px;
+  height: 20px;
+}
+
+.word-list-loading .spinner-circle {
+  border-width: 2px;
+}

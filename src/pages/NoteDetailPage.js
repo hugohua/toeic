@@ -7,6 +7,7 @@ import { getNoteById } from '../services/api';
 import '../index.css';
 import './NoteDetailPage.css';
 import '../styles/Markdown.css'; // Import unified markdown styles
+import Loading from '../components/Loading';
 
 function NoteDetailPage() {
 
@@ -65,7 +66,7 @@ function NoteDetailPage() {
       <div className="container">
         <Header title="笔记详情" showBack />
         <main className="note-detail-content">
-          <div className="loading-message">加载中...</div>
+          <Loading />
         </main>
       </div>
     );

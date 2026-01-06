@@ -26,16 +26,22 @@
 
 /* 操作按钮 */
 .text-selection-button {
-  padding: 8px 16px;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 6px;
   background: #007AFF;
   color: white;
-  font-size: 14px;
-  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
-  white-space: nowrap;
+}
+
+.text-selection-button .iconfont {
+  font-size: 20px;
 }
 
 .text-selection-button:hover {
@@ -166,8 +172,12 @@
   }
 
   .text-selection-button {
-    padding: 6px 12px;
-    font-size: 13px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .text-selection-button .iconfont {
+    font-size: 18px;
   }
 
   .text-selection-header {

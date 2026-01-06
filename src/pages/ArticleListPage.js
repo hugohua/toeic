@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import { getAllArticles, deleteArticle } from '../services/api';
 import '../index.css';
 import './ArticleListPage.css';
+import Loading from '../components/Loading';
 
 function ArticleListPage() {
   const navigate = useNavigate();
@@ -75,7 +76,7 @@ function ArticleListPage() {
       <div className="container">
         <Header title="文章列表" showBack />
         <main className="article-list-content">
-          <div className="loading-message">加载中...</div>
+          <Loading />
         </main>
       </div>
     );

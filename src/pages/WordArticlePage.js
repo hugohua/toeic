@@ -10,6 +10,7 @@ import Popup from '../components/Popup';
 import { formatArticle, extractTitle } from '../utils/text';
 import '../index.css';
 import './WordArticlePage.css';
+import Loading from '../components/Loading';
 
 function WordArticlePage() {
   const navigate = useNavigate();
@@ -173,7 +174,7 @@ function WordArticlePage() {
       <div className="container">
         <Header title="单词文章背诵" showBack />
         <main className="article-content">
-          <div className="loading-message">加载分类列表中...</div>
+          <Loading text="加载分类列表中..." />
         </main>
       </div>
     );
@@ -288,7 +289,7 @@ function WordArticlePage() {
 
         {/* 加载提示 */}
         {isLoading && (
-          <div className="loading-message">正在生成文章，请稍候...</div>
+          <Loading text="正在生成文章，请稍候..." />
         )}
 
       </main>

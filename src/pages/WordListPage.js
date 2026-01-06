@@ -11,6 +11,7 @@ import {
 import '../index.css';
 import './WordListPage.css';
 import EtymologyBottomSheet from '../components/EtymologyBottomSheet';
+import Loading from '../components/Loading';
 
 function WordListPage() {
   const { category } = useParams();
@@ -166,7 +167,7 @@ function WordListPage() {
             justifyContent: 'center'
           }}
         >
-          {loading && <span>加载中...</span>}
+          {loading && <Loading text="加载中..." className="word-list-loading" />}
           {!hasMore && words.length > 0 && (
             <span style={{ color: '#999', fontSize: '12px' }}>—— 到底了 ——</span>
           )}

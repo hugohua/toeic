@@ -5,6 +5,7 @@ import BottomSheet from './BottomSheet';
 import { grammarAnalyze, saveNote } from '../services/api';
 import Popup from './Popup';
 import EtymologyBottomSheet from './EtymologyBottomSheet';
+import { useAliyunAudio } from '../hooks/useAliyunAudio';
 import './TextSelection.css';
 import '../styles/Markdown.css';
 
@@ -28,6 +29,8 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
   const buttonGroupRef = useRef(null);
   const abortControllerRef = useRef(null);
   const markdownContentRef = useRef(null);
+
+  const { play, stop, playing } = useAliyunAudio();
 
   // 获取选中文本
   const getSelectedText = () => {
@@ -151,28 +154,17 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
 
   // 复制到剪贴板
   const handleCopy = async () => {
+    if (!selectedText) return;
+
     try {
       await navigator.clipboard.writeText(selectedText);
-      setShowButtons(false);
-      // 可以显示一个提示，但这里先简单处理
-      window.getSelection().removeAllRanges();
+      Popup.show('已复制');
     } catch (err) {
       console.error('复制失败:', err);
-      // 降级方案：使用传统方法
-      const textArea = document.createElement('textarea');
-      textArea.value = selectedText;
-      textArea.style.position = 'fixed';
-      textArea.style.opacity = '0';
-      document.body.appendChild(textArea);
-      textArea.select();
-      try {
-        document.execCommand('copy');
-        setShowButtons(false);
-        window.getSelection().removeAllRanges();
-      } catch (e) {
-        console.error('复制失败:', e);
-      }
-      document.body.removeChild(textArea);
+      Popup.show('复制失败');
+    } finally {
+      setShowButtons(false);
+      window.getSelection().removeAllRanges();
     }
   };
 
@@ -228,6 +220,21 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
       },
       abortController.signal
     );
+  };
+
+  // 综合解释
+  const handleExplain = () => {
+    if (!selectedText) return;
+
+    // 简单判断：如果包含空格，视为短语或句子，调用语法解析
+    // 否则视为单词，调用构词法
+    const isPhraseOrSentence = selectedText.trim().includes(' ');
+
+    if (isPhraseOrSentence) {
+      handleGrammarAnalyze();
+    } else {
+      handleEtymology();
+    }
   };
 
   // 保存笔记
@@ -364,21 +371,25 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
           className="text-selection-button"
           onClick={(e) => {
             e.stopPropagation();
-            handleEtymology();
+            handleExplain();
           }}
-          title="构词法"
+          title="解释"
         >
-          构词法
+          <span className="iconfont icon-read"></span>
         </button>
         <button
           className="text-selection-button"
           onClick={(e) => {
             e.stopPropagation();
-            handleGrammarAnalyze();
+            if (playing) {
+              stop();
+            } else {
+              play(selectedText);
+            }
           }}
-          title="语法解析"
+          title={playing ? "停止" : "朗读"}
         >
-          语法解析
+          <span className={`iconfont ${playing ? 'icon-stop' : 'icon-sound'}`}></span>
         </button>
         <button
           className="text-selection-button"
@@ -388,7 +399,7 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
           }}
           title="复制"
         >
-          复制
+          <span className="iconfont icon-file-copy"></span>
         </button>
       </div>
 
