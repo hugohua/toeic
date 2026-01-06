@@ -93,7 +93,9 @@ function EtymologyBottomSheet({ isOpen, onClose, word }) {
                         构词法: {word}
                     </h3>
                     <div className="text-selection-header-actions">
-                        <button className="text-selection-close" onClick={onClose}>×</button>
+                        <button className="text-selection-close" onClick={onClose}>
+                            <span className="iconfont icon-close"></span>
+                        </button>
                     </div>
                 </div>
                 <div className="text-selection-content">

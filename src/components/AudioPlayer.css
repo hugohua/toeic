@@ -47,7 +47,7 @@
   animation: pulse 2s ease-in-out infinite;
 }
 
-.audio-player-icon {
+.audio-player .iconfont {
   font-size: 16px;
   line-height: 1;
 }

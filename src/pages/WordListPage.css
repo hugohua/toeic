@@ -115,6 +115,10 @@
   background: rgba(255, 255, 255, 0.35);
 }
 
+.meaning-toggle-btn .iconfont {
+  font-size: 14px;
+}
+
 .pos-text {
   font-size: 13px;
   color: #667eea;
@@ -181,8 +185,9 @@
   color: #ffb400;
 }
 
-.list-favorite-btn .favorite-icon {
+.list-favorite-btn .iconfont {
   line-height: 1;
+  font-size: 20px;
 }
 
 .meaning-text {

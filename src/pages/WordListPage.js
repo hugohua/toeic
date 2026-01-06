@@ -126,7 +126,7 @@ function WordListPage() {
                       onClick={toggleAllMeanings}
                       title={showAllMeanings ? '隐藏所有单词解释' : '显示所有单词解释'}
                     >
-                      👁
+                      <span className="iconfont icon-eye"></span>
                     </button>
                   </span>
                 </th>

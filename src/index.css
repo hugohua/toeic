@@ -656,12 +656,22 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
-.favorite-btn .favorite-icon {
-  font-size: 18px;
-  color: #d0d0d0;
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
 }
 
-.favorite-btn.favorite-btn-active .favorite-icon {
+.favorite-btn .iconfont {
+  font-size: 18px;
+  color: #d0d0d0;
+  transition: color 0.3s;
+}
+
+.favorite-btn.favorite-btn-active .iconfont {
   color: #ffb400;
 }
 

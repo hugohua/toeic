@@ -89,9 +89,9 @@ function AudioPlayer({
                     disabled={!text || !text.trim()}
                 >
                     {playing ? (
-                        <span className="audio-player-icon">⏹</span>
+                        <span className="iconfont icon-stop"></span>
                     ) : (
-                        <span className="audio-player-icon">🔊</span>
+                        <span className="iconfont icon-sound"></span>
                     )}
                     <span className="audio-player-text">
                         {playing ? '停止' : '播放'}

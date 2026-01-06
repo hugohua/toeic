@@ -49,7 +49,7 @@ function WordDetailContent({
               onClick={onClose}
               title="关闭"
             >
-              ×
+              <span className="iconfont icon-close"></span>
             </button>
           )}
           <div className="detail-header-main">
@@ -67,7 +67,7 @@ function WordDetailContent({
                 onClick={() => setShowEtymology(true)}
                 title="查看构词法"
               >
-                📖
+                <span className="iconfont icon-read"></span>
               </button>
             )}
             {showFavoriteButton && onToggleFavorite && (
@@ -77,7 +77,7 @@ function WordDetailContent({
                 onClick={onToggleFavorite}
                 title={isFavorite ? '取消收藏该单词' : '收藏该单词'}
               >
-                <span className="favorite-icon">{isFavorite ? '★' : '☆'}</span>
+                <span className="iconfont icon-star"></span>
               </button>
             )}
           </div>

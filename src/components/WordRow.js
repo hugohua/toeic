@@ -62,7 +62,7 @@ const WordRow = memo(function WordRow({
                         }}
                         title="查看构词法"
                     >
-                        📖
+                        <span className="iconfont icon-read"></span>
                     </button>
                     <button
                         type="button"
@@ -70,7 +70,7 @@ const WordRow = memo(function WordRow({
                         onClick={(e) => onToggleFavorite(e, word.word)}
                         title={isFavorite ? '取消收藏' : '收藏单词'}
                     >
-                        <span className="favorite-icon">{isFavorite ? '★' : '☆'}</span>
+                        <span className="iconfont icon-star"></span>
                     </button>
                 </div>
             </td>
