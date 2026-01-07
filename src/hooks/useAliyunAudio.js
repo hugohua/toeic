@@ -6,6 +6,10 @@ import { generateAudioHash } from '../utils/audioHasher';
 // 实现互斥播放：当新音频开始时，自动停止旧音频
 let stopCurrentAudio = null;
 
+// 内存缓存：记录已确认存在的音频Hash，避免重复请求后端检查接口
+// Key: audioHash, Value: { url, duration }
+const audioAvailabilityCache = new Map();
+
 export const useAliyunAudio = () => {
     const [playing, setPlaying] = useState(false);
     const [error, setError] = useState('');
@@ -272,6 +276,16 @@ export const useAliyunAudio = () => {
         if (text.length <= 500) {
             try {
                 const hash = generateAudioHash(text.replace(/[*#]/g, '').trim(), voice, detectedLanguage);
+
+                // 1.1 先查内存缓存
+                if (audioAvailabilityCache.has(hash)) {
+                    const cachedData = audioAvailabilityCache.get(hash);
+                    // console.log(`[内存命中] 播放本地文件: ${cachedData.url}`);
+                    playLocalAudio(cachedData.url, cachedData.duration, playbackRate, text, voice, detectedLanguage);
+                    return;
+                }
+
+                // 1.2 查后端接口
                 const response = await fetch(`/api/audio/check/${hash}`);
 
                 if (response.ok) {
@@ -279,32 +293,13 @@ export const useAliyunAudio = () => {
                     if (data.exists && data.url) {
                         // console.log(`[缓存命中] 播放本地文件: ${data.url}`);
 
-                        const audio = new Audio(data.url);
-                        audioRef.current = audio;
-                        audio.playbackRate = playbackRate;
+                        // 写入内存缓存
+                        audioAvailabilityCache.set(hash, {
+                            url: data.url,
+                            duration: data.duration
+                        });
 
-                        audio.oncanplaythrough = () => {
-                            if (!Number.isNaN(audio.duration)) {
-                                setDuration(audio.duration);
-                                totalDurationRef.current = audio.duration;
-                            }
-                            audio.play().catch(e => {
-                                console.error('本地播放失败:', e);
-                                startStreaming(text, voice, detectedLanguage);
-                            });
-                        };
-
-                        audio.ontimeupdate = () => {
-                            setCurrentTime(audio.currentTime);
-                            if (audio.duration > 0) {
-                                setProgress((audio.currentTime / audio.duration) * 100);
-                            }
-                        };
-
-                        audio.onended = () => {
-                            stop();
-                        };
-
+                        playLocalAudio(data.url, data.duration, playbackRate, text, voice, detectedLanguage);
                         return; // 命中缓存，结束
                     }
                 }
@@ -343,6 +338,56 @@ export const useAliyunAudio = () => {
             stop();
         };
     }, [stop]);
+
+    /**
+     * 播放本地音频文件
+     */
+    const playLocalAudio = (url, cachedDuration, playbackRate, text, voice, detectedLanguage) => {
+        const audio = new Audio(url);
+        audioRef.current = audio;
+        audio.playbackRate = playbackRate;
+
+        audio.oncanplaythrough = () => {
+            if (!Number.isNaN(audio.duration)) {
+                setDuration(audio.duration);
+                totalDurationRef.current = audio.duration;
+                // 更新缓存中的时长信息（如果之前没有）
+                if (!cachedDuration || cachedDuration === 0) {
+                    const hash = generateAudioHash(text.replace(/[*#]/g, '').trim(), voice, detectedLanguage);
+                    if (audioAvailabilityCache.has(hash)) {
+                        const data = audioAvailabilityCache.get(hash);
+                        data.duration = audio.duration;
+                        audioAvailabilityCache.set(hash, data);
+                    }
+                }
+            } else if (cachedDuration > 0) {
+                setDuration(cachedDuration);
+                totalDurationRef.current = cachedDuration;
+            }
+
+            audio.play().catch(e => {
+                console.error('本地播放失败:', e);
+                // 播放失败可能是文件损坏，重新走流式作为兜底
+                startStreaming(text, voice, detectedLanguage);
+            });
+        };
+
+        audio.ontimeupdate = () => {
+            setCurrentTime(audio.currentTime);
+            if (audio.duration > 0) {
+                setProgress((audio.currentTime / audio.duration) * 100);
+            }
+        };
+
+        audio.onended = () => {
+            stop();
+        };
+
+        audio.onerror = () => {
+            console.error('本地音频加载错误');
+            startStreaming(text, voice, detectedLanguage);
+        };
+    };
 
     return {
         play,

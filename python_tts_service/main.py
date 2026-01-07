@@ -14,6 +14,11 @@ from fastapi.middleware.cors import CORSMiddleware
 import dashscope
 from dotenv import load_dotenv
 
+# 解决 Windows 控制台中文乱码问题
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+
+
 # 加载环境变量
 env_path = Path(__file__).parent.parent / '.env'
 load_dotenv(dotenv_path=env_path)
@@ -256,16 +261,15 @@ async def cache_audio_in_background(text: str, voice: str, language: str, chunks
             hash_input = f"{hash_text_input}_{voice}_{language}_1.0"
             audio_hash = hashlib.md5(hash_input.encode()).hexdigest()
             
-            # 检查缓存是否已存在
-            port = os.getenv('PORT', '3001')
-            check_url = f"http://localhost:{port}/api/audio/check/{audio_hash}"
-            try:
-                check_response = requests.get(check_url, timeout=5)
-                if check_response.status_code == 200 and check_response.json().get('exists'):
-                    print(f"[后台缓存] 分块 {idx + 1} 已存在，跳过")
-                    continue
-            except Exception as e:
-                print(f"[后台缓存] 检查缓存失败: {e}")
+            # 检查文件是否已存在 (直接检查文件系统，避免 HTTP 调用)
+            base_dir = Path(__file__).parent.parent
+            audio_dir = base_dir / 'public' / 'audio'
+            file_name = f"{audio_hash}.wav"
+            file_path = audio_dir / file_name
+
+            if file_path.exists():
+                print(f"[后台缓存] 文件已存在 (本地检查): {file_name}")
+                continue
             
             # 调用非流式 API 获取 URL
             print(f"[后台缓存] 调用非流式 API 获取音频 URL...")
@@ -291,14 +295,13 @@ async def cache_audio_in_background(text: str, voice: str, language: str, chunks
                             print(f"[后台缓存] 下载成功，大小: {len(audio_data)} 字节")
                             
                             # 保存到文件 (使用统一的 public/audio 目录)
-                            # 假设运行在根目录或 python_tts_service 目录
-                            # 向上查找 public 目录
-                            base_dir = Path(__file__).parent.parent
-                            audio_dir = base_dir / 'public' / 'audio'
+                            # 已在上方定义 audio_dir
                             audio_dir.mkdir(parents=True, exist_ok=True)
                             
-                            file_name = f"{audio_hash}.wav"
-                            file_path = audio_dir / file_name
+                            # file_path 也在上方定义了
+
+                            
+
                             
                             with open(file_path, 'wb') as f:
                                 f.write(audio_data)
@@ -306,6 +309,7 @@ async def cache_audio_in_background(text: str, voice: str, language: str, chunks
                             print(f"[后台缓存] 保存到: {file_path}")
                             
                             # 保存元数据到数据库
+                            port = os.getenv('PORT', '3001')
                             save_url = f"http://localhost:{port}/api/audio/save"
                             metadata = {
                                 "hash": audio_hash,

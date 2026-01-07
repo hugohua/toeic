@@ -933,7 +933,10 @@ app.post('/api/audio/cleanup', (req, res) => {
 });
 
 // 提供音频文件静态访问
-app.use('/audio', express.static(path.join(__dirname, 'public', 'audio')));
+app.use('/audio', express.static(path.join(__dirname, 'public', 'audio'), {
+  maxAge: '1y',
+  immutable: true
+}));
 
 // 开发模式下不提供静态文件（由 webpack-dev-server 提供）
 if (!isDev) {
