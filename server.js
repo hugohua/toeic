@@ -802,6 +802,99 @@ app.post('/api/generate-article', async (req, res) => {
 // WebSocket 服务器
 const wss = new WebSocket.Server({ noServer: true });
 
+// ========== Node.js 层连接池管理 ==========
+let globalPythonWs = null;
+let pythonWsConnecting = false;
+let pythonWsReconnectTimeout = null;
+const clientConnections = new Map(); // 存储客户端连接 (key: clientId, value: clientWs)
+const messageRouters = new Map(); // 存储消息路由器 (key: requestId, value: clientId)
+
+// 生成客户端 ID
+const generateClientId = () => `client_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+
+// 获取或创建到 Python 的连接
+const getOrCreatePythonConnection = () => {
+  return new Promise((resolve, reject) => {
+    // 如果连接已存在且可用
+    if (globalPythonWs && globalPythonWs.readyState === WebSocket.OPEN) {
+      resolve(globalPythonWs);
+      return;
+    }
+
+    // 如果正在连接中,等待连接完成
+    if (pythonWsConnecting) {
+      const checkInterval = setInterval(() => {
+        if (globalPythonWs && globalPythonWs.readyState === WebSocket.OPEN) {
+          clearInterval(checkInterval);
+          resolve(globalPythonWs);
+        }
+      }, 100);
+      return;
+    }
+
+    // 创建新连接
+    pythonWsConnecting = true;
+    console.log('[Node.js 连接池] 正在建立到 Python 的连接...');
+
+    const pythonWs = new WebSocket(PYTHON_TTS_URL);
+
+    pythonWs.on('open', () => {
+      console.log('[Node.js 连接池] Python 连接已建立');
+      globalPythonWs = pythonWs;
+      pythonWsConnecting = false;
+      resolve(pythonWs);
+    });
+
+    pythonWs.on('error', (error) => {
+      console.error('[Node.js 连接池] Python 连接错误:', error);
+      pythonWsConnecting = false;
+      globalPythonWs = null;
+      reject(error);
+    });
+
+    pythonWs.on('close', () => {
+      console.log('[Node.js 连接池] Python 连接已关闭');
+      globalPythonWs = null;
+      pythonWsConnecting = false;
+
+      // 自动重连 (5秒后)
+      if (!pythonWsReconnectTimeout) {
+        pythonWsReconnectTimeout = setTimeout(() => {
+          console.log('[Node.js 连接池] 尝试自动重连 Python...');
+          pythonWsReconnectTimeout = null;
+          getOrCreatePythonConnection().catch(e => {
+            console.error('[Node.js 连接池] 自动重连失败:', e);
+          });
+        }, 5000);
+      }
+    });
+
+    // Python → 客户端消息分发
+    pythonWs.on('message', (data, isBinary) => {
+      try {
+        const msg = JSON.parse(data.toString());
+        const requestId = msg.requestId;
+
+        if (requestId && messageRouters.has(requestId)) {
+          const clientId = messageRouters.get(requestId);
+          const clientWs = clientConnections.get(clientId);
+
+          if (clientWs && clientWs.readyState === WebSocket.OPEN) {
+            clientWs.send(data, { binary: isBinary });
+          }
+
+          // 如果是完成或错误消息,清理路由
+          if (msg.type === 'done' || msg.type === 'error') {
+            messageRouters.delete(requestId);
+          }
+        }
+      } catch (e) {
+        console.error('[Node.js 连接池] 消息分发失败:', e);
+      }
+    });
+  });
+};
+
 // WebSocket 升级处理
 server.on('upgrade', (request, socket, head) => {
   const pathname = new URL(request.url, 'http://localhost').pathname;
@@ -815,71 +908,60 @@ server.on('upgrade', (request, socket, head) => {
   }
 });
 
-// WebSocket 连接处理（代理到 Python 服务）
-wss.on('connection', (clientWs) => {
-  console.log('客户端 WebSocket 连接建立');
-
-  // 连接到 Python TTS 服务
-  const pythonWs = new WebSocket(PYTHON_TTS_URL);
-
-  // 消息缓冲区（用于在 Python 连接建立前缓存消息）
-  const messageBuffer = [];
-  let pythonConnected = false;
-
-  // Python 连接建立
-  pythonWs.on('open', () => {
-    console.log('Python TTS 服务连接已建立');
-    pythonConnected = true;
-
-    // 发送缓冲的消息
-    while (messageBuffer.length > 0) {
-      const msg = messageBuffer.shift();
-      console.log('发送缓冲消息到 Python:', msg.toString().substring(0, 100));
-      pythonWs.send(msg);
-    }
-  });
-
-  // Python → 客户端
-  pythonWs.on('message', (data, isBinary) => {
-    if (clientWs.readyState === WebSocket.OPEN) {
-      clientWs.send(data, { binary: isBinary });
-    }
-  });
+// WebSocket 连接处理（使用连接池）
+wss.on('connection', async (clientWs) => {
+  const clientId = generateClientId();
+  clientConnections.set(clientId, clientWs);
+  console.log(`[Node.js 连接池] 客户端连接建立 (${clientId})`);
 
   // 客户端 → Python
-  clientWs.on('message', (data) => {
-    // 确保数据是字符串格式
-    const message = data.toString();
-    console.log('收到客户端消息:', message.substring(0, 100));
+  clientWs.on('message', async (data) => {
+    try {
+      const message = data.toString();
+      const msg = JSON.parse(message);
+      const requestId = msg.requestId;
 
-    if (pythonConnected && pythonWs.readyState === WebSocket.OPEN) {
-      console.log('转发消息到 Python');
-      pythonWs.send(message);  // 发送字符串而不是 Buffer
-    } else {
-      console.log('Python 未连接，缓存消息');
-      messageBuffer.push(message);  // 缓存字符串
+      if (requestId) {
+        // 注册消息路由
+        messageRouters.set(requestId, clientId);
+      }
+
+      // 获取或创建 Python 连接
+      try {
+        const pythonWs = await getOrCreatePythonConnection();
+        if (pythonWs && pythonWs.readyState === WebSocket.OPEN) {
+          pythonWs.send(message);
+        } else {
+          throw new Error('Python 连接不可用');
+        }
+      } catch (error) {
+        console.error('[Node.js 连接池] 转发消息失败:', error);
+        clientWs.send(JSON.stringify({
+          type: 'error',
+          message: 'TTS 服务暂时不可用',
+          requestId: requestId
+        }));
+      }
+    } catch (e) {
+      console.error('[Node.js 连接池] 处理客户端消息失败:', e);
     }
   });
 
-  // 错误处理
-  pythonWs.on('error', (error) => {
-    console.error('Python TTS 服务连接错误:', error);
-    clientWs.send(JSON.stringify({
-      type: 'error',
-      message: 'TTS 服务暂时不可用，请稍后重试'
-    }));
-    clientWs.close();
-  });
-
-  // 连接关闭
-  pythonWs.on('close', () => {
-    console.log('Python TTS 服务连接关闭');
-    clientWs.close();
-  });
-
+  // 客户端断开连接
   clientWs.on('close', () => {
-    console.log('客户端 WebSocket 连接关闭');
-    pythonWs.close();
+    console.log(`[Node.js 连接池] 客户端断开连接 (${clientId})`);
+    clientConnections.delete(clientId);
+
+    // 清理该客户端的所有路由
+    for (const [requestId, cid] of messageRouters.entries()) {
+      if (cid === clientId) {
+        messageRouters.delete(requestId);
+      }
+    }
+  });
+
+  clientWs.on('error', (error) => {
+    console.error(`[Node.js 连接池] 客户端错误 (${clientId}):`, error);
   });
 });
 

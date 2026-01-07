@@ -10,6 +10,147 @@ let stopCurrentAudio = null;
 // Key: audioHash, Value: { url, duration }
 const audioAvailabilityCache = new Map();
 
+// ========== WebSocket 连接池管理 ==========
+// 全局 WebSocket 连接，复用以减少连接开销
+let globalWsConnection = null;
+let wsConnectionPromise = null;
+let heartbeatInterval = null;
+let reconnectTimeout = null;
+let wsMessageHandlers = new Map(); // 存储每个请求的消息处理器 (key: requestId)
+
+// 生成唯一请求 ID
+const generateRequestId = () => `req_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+
+// 心跳机制：每 30 秒发送一次 ping
+const startHeartbeat = (ws) => {
+    if (heartbeatInterval) {
+        clearInterval(heartbeatInterval);
+    }
+
+    heartbeatInterval = setInterval(() => {
+        if (ws && ws.readyState === WebSocket.OPEN) {
+            try {
+                ws.send(JSON.stringify({ type: 'ping' }));
+            } catch (e) {
+                console.warn('[WebSocket] 心跳发送失败:', e);
+            }
+        }
+    }, 30000);
+};
+
+// 停止心跳
+const stopHeartbeat = () => {
+    if (heartbeatInterval) {
+        clearInterval(heartbeatInterval);
+        heartbeatInterval = null;
+    }
+};
+
+// 清理 WebSocket 连接
+const cleanupWebSocket = () => {
+    stopHeartbeat();
+
+    if (reconnectTimeout) {
+        clearTimeout(reconnectTimeout);
+        reconnectTimeout = null;
+    }
+
+    if (globalWsConnection) {
+        try {
+            globalWsConnection.close();
+        } catch (e) {
+            // 忽略关闭错误
+        }
+        globalWsConnection = null;
+    }
+
+    wsConnectionPromise = null;
+    wsMessageHandlers.clear();
+};
+
+// 获取或创建 WebSocket 连接（连接池核心）
+const getOrCreateWebSocket = async () => {
+    // 如果连接已存在且可用，直接返回
+    if (globalWsConnection && globalWsConnection.readyState === WebSocket.OPEN) {
+        return globalWsConnection;
+    }
+
+    // 如果正在连接中，等待连接完成
+    if (wsConnectionPromise) {
+        return wsConnectionPromise;
+    }
+
+    // 创建新连接
+    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const wsUrl = `${protocol}//${window.location.host}/ws/tts`;
+
+    wsConnectionPromise = new Promise((resolve, reject) => {
+        const ws = new WebSocket(wsUrl);
+
+        const connectTimeout = setTimeout(() => {
+            reject(new Error('WebSocket 连接超时'));
+            ws.close();
+        }, 5000);
+
+        ws.onopen = () => {
+            clearTimeout(connectTimeout);
+            console.log('[WebSocket] 连接池连接已建立');
+            globalWsConnection = ws;
+            wsConnectionPromise = null;
+
+            // 启动心跳
+            startHeartbeat(ws);
+
+            resolve(ws);
+        };
+
+        ws.onerror = (error) => {
+            clearTimeout(connectTimeout);
+            console.error('[WebSocket] 连接错误:', error);
+            cleanupWebSocket();
+            reject(error);
+        };
+
+        ws.onclose = () => {
+            console.log('[WebSocket] 连接已关闭');
+            cleanupWebSocket();
+
+            // 自动重连（5秒后）
+            if (!reconnectTimeout) {
+                reconnectTimeout = setTimeout(() => {
+                    console.log('[WebSocket] 尝试自动重连...');
+                    reconnectTimeout = null;
+                    getOrCreateWebSocket().catch(e => {
+                        console.error('[WebSocket] 自动重连失败:', e);
+                    });
+                }, 5000);
+            }
+        };
+
+        ws.onmessage = (event) => {
+            try {
+                const msg = JSON.parse(event.data);
+
+                // 处理心跳响应
+                if (msg.type === 'pong') {
+                    return;
+                }
+
+                // 分发消息到对应的处理器
+                const requestId = msg.requestId;
+                if (requestId && wsMessageHandlers.has(requestId)) {
+                    const handler = wsMessageHandlers.get(requestId);
+                    handler(msg);
+                }
+            } catch (e) {
+                console.error('[WebSocket] 消息处理失败:', e);
+            }
+        };
+    });
+
+    return wsConnectionPromise;
+};
+
 export const useAliyunAudio = () => {
     const [playing, setPlaying] = useState(false);
     const [error, setError] = useState('');
@@ -18,7 +159,6 @@ export const useAliyunAudio = () => {
     const [currentTime, setCurrentTime] = useState(0);
 
     const audioContextRef = useRef(null);
-    const wsRef = useRef(null);
     const audioRef = useRef(null); // 处理本地音频播放
     const nextStartTimeRef = useRef(0);
     const startTimeRef = useRef(0);
@@ -31,24 +171,26 @@ export const useAliyunAudio = () => {
 
     /**
      * 停止播放（清理资源）
+     * 注意: 不关闭 WebSocket 连接,保持连接池活跃
      */
     const stop = useCallback(() => {
-        // 如果我是当前正在播放的音频，清除全局引用
+        // 如果我是当前正在播放的音频,清除全局引用
         if (stopCurrentAudio === stop) {
             stopCurrentAudio = null;
         }
 
-        if (wsRef.current) {
-            wsRef.current.close();
-            wsRef.current = null;
-        }
+        // 不再关闭 WebSocket 连接,使用连接池复用
+        // WebSocket 连接由全局连接池管理
+
         if (audioRef.current) {
             audioRef.current.pause();
             audioRef.current = null;
         }
         if (audioContextRef.current) {
             try {
-                audioContextRef.current.close();
+                if (audioContextRef.current.state !== 'closed') {
+                    audioContextRef.current.close();
+                }
             } catch (e) { }
             audioContextRef.current = null;
         }
@@ -145,39 +287,29 @@ export const useAliyunAudio = () => {
     };
 
     /**
-     * 开始流式播放
+     * 开始流式播放（使用连接池）
      */
     const startStreaming = async (text, voice, language) => {
+        const requestId = generateRequestId();
+        let isRequestActive = true;
+
         try {
             // 重置缓冲
             pcmBufferRef.current = [];
             bufferLengthRef.current = 0;
 
-            // 确保之前的连接已关闭
-            if (wsRef.current) wsRef.current.close();
+            // 获取或创建 WebSocket 连接（连接池核心）
+            const ws = await getOrCreateWebSocket();
 
-            // 使用相对路径，让反向代理处理连接
-            const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsUrl = `${protocol}//${window.location.host}/ws/tts`;
-            const ws = new WebSocket(wsUrl);
-            wsRef.current = ws;
+            if (!ws || ws.readyState !== WebSocket.OPEN) {
+                throw new Error('WebSocket 连接不可用');
+            }
 
-            ws.onopen = () => {
-                // console.log('WebSocket 连接成功');
-                if (audioContextRef.current) {
-                    startTimeRef.current = audioContextRef.current.currentTime;
-                }
+            // 注册消息处理器
+            wsMessageHandlers.set(requestId, async (msg) => {
+                if (!isRequestActive) return;
 
-                ws.send(JSON.stringify({
-                    text: text.replace(/[*#]/g, ''),
-                    voice: voice,
-                    language: language
-                }));
-            };
-
-            ws.onmessage = async (event) => {
                 try {
-                    const msg = JSON.parse(event.data);
                     if (msg.type === 'audio') {
                         if (msg.data && msg.data.length > 0) {
                             const pcmData = base64ToArrayBuffer(msg.data);
@@ -194,16 +326,17 @@ export const useAliyunAudio = () => {
                             }
                         }
                     } else if (msg.type === 'done') {
-                        // console.log('TTS 数据传输完成');
-
                         // 播放剩余的缓冲数据
                         await flushAudioBuffer();
+
+                        // 清理消息处理器
+                        wsMessageHandlers.delete(requestId);
+                        isRequestActive = false;
 
                         // 计算剩余播放时间，延迟停止
                         if (audioContextRef.current) {
                             const now = audioContextRef.current.currentTime;
                             const remaining = Math.max(0, nextStartTimeRef.current - now);
-                            // console.log(`[TTS] 等待播放结束，剩余: ${remaining.toFixed(2)}s`);
 
                             setTimeout(() => {
                                 stop();
@@ -214,27 +347,36 @@ export const useAliyunAudio = () => {
                     } else if (msg.type === 'error') {
                         console.error('TTS 服务错误:', msg.message);
                         setError(msg.message);
+                        wsMessageHandlers.delete(requestId);
+                        isRequestActive = false;
                         stop();
                     }
                 } catch (err) {
                     console.error('处理消息失败:', err);
+                    wsMessageHandlers.delete(requestId);
+                    isRequestActive = false;
                     stop();
                 }
-            };
+            });
 
-            ws.onerror = (error) => {
-                console.error('WebSocket 错误:', error);
-                setError('连接失败');
-                stop();
-            };
+            // 记录开始时间
+            if (audioContextRef.current) {
+                startTimeRef.current = audioContextRef.current.currentTime;
+            }
 
-            ws.onclose = () => {
-                // 如果是主动关闭(playing=false)，不需要做太多事情
-            };
+            // 发送 TTS 请求（带上 requestId）
+            ws.send(JSON.stringify({
+                requestId: requestId,
+                text: text.replace(/[*#]/g, ''),
+                voice: voice,
+                language: language
+            }));
 
         } catch (err) {
             console.error('启动播放失败:', err);
             setError('启动播放失败');
+            wsMessageHandlers.delete(requestId);
+            isRequestActive = false;
             stop();
         }
     };
@@ -252,10 +394,16 @@ export const useAliyunAudio = () => {
         // 注册当前停止函数为全局停止函数
         stopCurrentAudio = stop;
 
-        // 重置状态
-        if (wsRef.current) wsRef.current.close();
+        // 重置状态 (不关闭 WebSocket 连接)
         if (audioRef.current) audioRef.current.pause();
-        if (audioContextRef.current) audioContextRef.current.close();
+        if (audioContextRef.current) {
+            try {
+                if (audioContextRef.current.state !== 'closed') {
+                    audioContextRef.current.close();
+                }
+            } catch (e) { }
+            audioContextRef.current = null;
+        }
 
         pcmBufferRef.current = [];
         bufferLengthRef.current = 0;
