@@ -161,8 +161,6 @@ function ArticleDetailPage() {
             {/*<h3 className="section-title">{article.title}</h3>*/}
             <AudioPlayer
               text={article.content}
-              voice="Cherry"
-              language="Chinese"
               className="article-audio-player"
             />
           </div>

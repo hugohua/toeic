@@ -13,6 +13,7 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 import dashscope
 from dotenv import load_dotenv
+import re
 
 # 解决 Windows 控制台中文乱码问题
 sys.stdout.reconfigure(encoding='utf-8')
@@ -139,6 +140,14 @@ async def websocket_tts(websocket: WebSocket):
         
         # 清理文本（移除 Markdown 标记等）
         text = text.replace('*', '').replace('#', '').strip()
+        
+        # 移除 Title: 或 标题： 前缀（支持多行模式）
+        text = re.sub(r'(?m)^\s*(?:Title|标题)[:：]\s*', '', text)
+        
+        # 移除分隔线
+        text = re.sub(r'(?m)^\s*[-]{3,}\s*$', '', text)
+        
+        text = text.strip()
         
         # 文本分块（最大 500 字符，避免超过 API 限制）
         chunks = split_text(text, max_length=500)

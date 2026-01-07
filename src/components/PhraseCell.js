@@ -8,9 +8,9 @@ import './PhraseCell.css';
  * 
  * @param {Object} props
  * @param {string} props.phraseText - 短语文本
- * @param {string} props.voice - 音色，默认 Cherry
+ * @param {string} props.voice - 音色，默认 Elias
  */
-function PhraseCell({ phraseText, voice = 'Cherry' }) {
+function PhraseCell({ phraseText, voice = 'Elias' }) {
   return (
     <span className="phrase-cell-inline">
       <span className="phrase-text">{phraseText}</span>

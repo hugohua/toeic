@@ -604,8 +604,8 @@ body {
 .detail-card {
   background: white;
   border-radius: 16px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
 }
 
 .detail-header {
@@ -693,6 +693,7 @@ body {
   font-size: 16px;
   z-index: 10;
 }
+
 
 .etymology-header-btn:hover {
   transform: translateY(-1px);

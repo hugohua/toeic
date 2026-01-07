@@ -22,7 +22,7 @@ function WordDetailContent({
   onClose,
   showEtymologyButton = true,
   showFavoriteButton = true,
-  showProgress = true,
+  showProgress = false,
 }) {
   const [showEtymology, setShowEtymology] = React.useState(false);
 

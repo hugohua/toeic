@@ -11,8 +11,8 @@ export function useSpeechConfig(text) {
     const { play, stop, playing } = useAliyunAudio();
 
     const start = () => {
-        // 使用默认音色 Cherry，自动检测语言，正常语速
-        play(text, 'Cherry', undefined, 1.0);
+        // 使用默认音色 Elias，自动检测语言，正常语速
+        play(text, 'Elias', undefined, 1.0);
     };
 
     return {

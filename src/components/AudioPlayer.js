@@ -8,8 +8,8 @@ import { useAliyunAudio } from '../hooks/useAliyunAudio';
  */
 function AudioPlayer({
     text,
-    voice = 'Cherry',
-    language = 'Chinese',
+    voice = 'Elias',
+    language = 'English',
     className = '',
     showAdvanced = true
 }) {
@@ -31,6 +31,7 @@ function AudioPlayer({
     // 可用的音色列表
     const voices = [
         { value: 'Cherry', label: 'Cherry (女声)', gender: '女' },
+        { value: 'Elias', label: 'Elias (女声)', gender: '女' },
         { value: 'Ryan', label: 'Ryan (男声)', gender: '男' },
         { value: 'Stella', label: 'Stella (女声)', gender: '女' },
         { value: 'Emily', label: 'Emily (女声)', gender: '女' },

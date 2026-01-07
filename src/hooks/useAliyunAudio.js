@@ -242,7 +242,7 @@ export const useAliyunAudio = () => {
     /**
      * 播放入口函数
      */
-    const play = async (text, voice = 'Cherry', language = 'Chinese', playbackRate = 1.0) => {
+    const play = async (text, voice = 'Elias', language = 'English', playbackRate = 1.0) => {
         if (!text) return;
 
         // 全局互斥：停止当前正在播放的其他音频
