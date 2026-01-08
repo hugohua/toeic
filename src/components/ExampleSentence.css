@@ -1,4 +1,51 @@
-.example-sentence-clickable {
-  cursor: pointer;
+/* 例句容器 */
+.example-sentence-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
+/* 例句内容(英文+中文) */
+.example-sentence-content {
+  display: inline;
+}
+
+/* 例句文本 */
+.example-sentence-text {
+  display: inline;
+}
+
+/* 例句剩余部分 */
+.example-sentence-remaining {
+  display: inline;
+}
+
+/* 例句播放器 - 超小图标模式 */
+.example-sentence-player {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.example-sentence-player .audio-player-button {
+  padding: 3px 6px;
+  font-size: 11px;
+  border-radius: 10px;
+  min-height: 24px;
+  box-shadow: 0 1px 4px rgba(102, 126, 234, 0.2);
+}
+
+.example-sentence-player .iconfont {
+  font-size: 12px;
+}
+
+.example-sentence-player .audio-player-spinner {
+  width: 10px;
+  height: 10px;
+  border-width: 1.5px;
+}
+
+/* 隐藏例句播放器的文本,只显示图标 */
+.example-sentence-player .audio-player-text {
+  display: none;
+}

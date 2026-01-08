@@ -22,6 +22,7 @@ function AudioPlayer({
         play,
         stop,
         playing,
+        loading,  // 添加 loading 状态
         error,
         progress,
         duration,
@@ -84,18 +85,20 @@ function AudioPlayer({
                 {/* 播放/停止按钮 */}
                 <button
                     type="button"
-                    className={`audio-player-button ${playing ? 'playing' : ''}`}
+                    className={`audio-player-button ${playing ? 'playing' : ''} ${loading ? 'loading' : ''}`}
                     onClick={handleTogglePlay}
-                    title={playing ? '停止播放' : '播放语音'}
-                    disabled={!text || !text.trim()}
+                    title={loading ? '加载中...' : (playing ? '停止播放' : '播放语音')}
+                    disabled={!text || !text.trim() || loading}
                 >
-                    {playing ? (
+                    {loading ? (
+                        <span className="audio-player-spinner"></span>
+                    ) : playing ? (
                         <span className="iconfont icon-stop"></span>
                     ) : (
                         <span className="iconfont icon-sound"></span>
                     )}
                     <span className="audio-player-text">
-                        {playing ? '停止' : '播放'}
+                        {loading ? '加载中' : (playing ? '停止' : '播放')}
                     </span>
                 </button>
 

@@ -11,12 +11,13 @@ let stopCurrentAudio = null;
 const audioAvailabilityCache = new Map();
 
 // ========== WebSocket 连接池管理 ==========
-// 全局 WebSocket 连接，复用以减少连接开销
+// 全局 WebSocket 连接,复用以减少连接开销
 let globalWsConnection = null;
 let wsConnectionPromise = null;
 let heartbeatInterval = null;
 let reconnectTimeout = null;
 let wsMessageHandlers = new Map(); // 存储每个请求的消息处理器 (key: requestId)
+let currentActiveRequestId = null; // 当前活跃的请求 ID,用于播放互斥
 
 // 生成唯一请求 ID
 const generateRequestId = () => `req_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
@@ -153,6 +154,7 @@ const getOrCreateWebSocket = async () => {
 
 export const useAliyunAudio = () => {
     const [playing, setPlaying] = useState(false);
+    const [loading, setLoading] = useState(false);  // 加载状态
     const [error, setError] = useState('');
     const [progress, setProgress] = useState(0);
     const [duration, setDuration] = useState(0);
@@ -174,6 +176,13 @@ export const useAliyunAudio = () => {
      * 注意: 不关闭 WebSocket 连接,保持连接池活跃
      */
     const stop = useCallback(() => {
+        // 清理当前活跃请求
+        if (currentActiveRequestId) {
+            wsMessageHandlers.delete(currentActiveRequestId);
+            console.log(`[播放互斥] 清理活跃请求: ${currentActiveRequestId}`);
+            currentActiveRequestId = null;
+        }
+
         // 如果我是当前正在播放的音频,清除全局引用
         if (stopCurrentAudio === stop) {
             stopCurrentAudio = null;
@@ -200,6 +209,7 @@ export const useAliyunAudio = () => {
         bufferLengthRef.current = 0;
 
         setPlaying(false);
+        setLoading(false);  // 清除加载状态
         setError('');
         setProgress(0);
         setCurrentTime(0);
@@ -291,9 +301,18 @@ export const useAliyunAudio = () => {
      */
     const startStreaming = async (text, voice, language) => {
         const requestId = generateRequestId();
-        let isRequestActive = true;
 
         try {
+            // 清理旧的活跃请求 (方案 A)
+            if (currentActiveRequestId && currentActiveRequestId !== requestId) {
+                wsMessageHandlers.delete(currentActiveRequestId);
+                console.log(`[播放互斥] startStreaming 清理旧请求: ${currentActiveRequestId}`);
+            }
+
+            // 设置为当前活跃请求
+            currentActiveRequestId = requestId;
+            console.log(`[播放互斥] 新请求开始: ${requestId}`);
+
             // 重置缓冲
             pcmBufferRef.current = [];
             bufferLengthRef.current = 0;
@@ -307,7 +326,11 @@ export const useAliyunAudio = () => {
 
             // 注册消息处理器
             wsMessageHandlers.set(requestId, async (msg) => {
-                if (!isRequestActive) return;
+                // 检查是否仍是活跃请求 (方案 A)
+                if (currentActiveRequestId !== requestId) {
+                    console.log(`[播放互斥] 忽略旧请求消息: ${requestId}`);
+                    return;
+                }
 
                 try {
                     if (msg.type === 'audio') {
@@ -315,12 +338,15 @@ export const useAliyunAudio = () => {
                             const pcmData = base64ToArrayBuffer(msg.data);
                             sampleRateRef.current = msg.sample_rate;
 
+                            // 首个音频块到达,清除加载状态
+                            setLoading(false);
+
                             // 添加到缓冲区
                             pcmBufferRef.current.push(pcmData);
                             bufferLengthRef.current += pcmData.byteLength;
 
-                            // 缓冲区超过阈值（约0.5秒音频，24000Hz * 2bytes * 0.5 = 24000 bytes）
-                            // 积攒到一定量再播放，减少 AudioNode 创建数量
+                            // 缓冲区超过阈值（约0.5秒音频,24000Hz * 2bytes * 0.5 = 24000 bytes）
+                            // 积攒到一定量再播放,减少 AudioNode 创建数量
                             if (bufferLengthRef.current >= 24000) {
                                 await flushAudioBuffer();
                             }
@@ -331,7 +357,9 @@ export const useAliyunAudio = () => {
 
                         // 清理消息处理器
                         wsMessageHandlers.delete(requestId);
-                        isRequestActive = false;
+                        if (currentActiveRequestId === requestId) {
+                            currentActiveRequestId = null;
+                        }
 
                         // 计算剩余播放时间，延迟停止
                         if (audioContextRef.current) {
@@ -348,13 +376,17 @@ export const useAliyunAudio = () => {
                         console.error('TTS 服务错误:', msg.message);
                         setError(msg.message);
                         wsMessageHandlers.delete(requestId);
-                        isRequestActive = false;
+                        if (currentActiveRequestId === requestId) {
+                            currentActiveRequestId = null;
+                        }
                         stop();
                     }
                 } catch (err) {
                     console.error('处理消息失败:', err);
                     wsMessageHandlers.delete(requestId);
-                    isRequestActive = false;
+                    if (currentActiveRequestId === requestId) {
+                        currentActiveRequestId = null;
+                    }
                     stop();
                 }
             });
@@ -387,15 +419,23 @@ export const useAliyunAudio = () => {
     const play = async (text, voice = 'Elias', language = 'English', playbackRate = 1.0) => {
         if (!text) return;
 
-        // 全局互斥：停止当前正在播放的其他音频
+        // 1. 清理所有旧的消息处理器 (方案 A)
+        if (currentActiveRequestId) {
+            wsMessageHandlers.delete(currentActiveRequestId);
+            console.log(`[播放互斥] 清理旧请求: ${currentActiveRequestId}`);
+            currentActiveRequestId = null;
+        }
+
+        // 2. 停止当前正在播放的其他音频 (方案 C)
         if (stopCurrentAudio && stopCurrentAudio !== stop) {
             stopCurrentAudio();
         }
-        // 注册当前停止函数为全局停止函数
-        stopCurrentAudio = stop;
 
-        // 重置状态 (不关闭 WebSocket 连接)
-        if (audioRef.current) audioRef.current.pause();
+        // 3. 强制清理本地播放资源 (方案 C)
+        if (audioRef.current) {
+            audioRef.current.pause();
+            audioRef.current = null;
+        }
         if (audioContextRef.current) {
             try {
                 if (audioContextRef.current.state !== 'closed') {
@@ -405,10 +445,16 @@ export const useAliyunAudio = () => {
             audioContextRef.current = null;
         }
 
+        // 4. 清理缓冲 (方案 C)
         pcmBufferRef.current = [];
         bufferLengthRef.current = 0;
 
+        // 5. 注册当前停止函数为全局停止函数
+        stopCurrentAudio = stop;
+
+        // 6. 重置状态
         setPlaying(true);
+        setLoading(true);  // 开始加载
         setError('');
         setProgress(0);
         setCurrentTime(0);
@@ -460,23 +506,33 @@ export const useAliyunAudio = () => {
         startStreaming(text, voice, detectedLanguage);
     };
 
-    // 进度更新 (针对流式播放的 WebAudio)
+    // 进度更新 (针对流式播放的 WebAudio) - 使用 requestAnimationFrame 优化性能
     useEffect(() => {
-        let intervalId;
-        if (playing && audioContextRef.current) {
-            intervalId = setInterval(() => {
-                const ctx = audioContextRef.current;
-                if (ctx && startTimeRef.current > 0) {
-                    const elapsed = ctx.currentTime - startTimeRef.current;
-                    setCurrentTime(elapsed);
-                    if (totalDurationRef.current > 0) {
-                        setProgress((elapsed / totalDurationRef.current) * 100);
-                    }
+        let animationFrameId;
+
+        const updateProgress = () => {
+            const ctx = audioContextRef.current;
+            if (ctx && startTimeRef.current > 0) {
+                const elapsed = ctx.currentTime - startTimeRef.current;
+                setCurrentTime(elapsed);
+                if (totalDurationRef.current > 0) {
+                    setProgress((elapsed / totalDurationRef.current) * 100);
                 }
-            }, 100);
+            }
+
+            if (playing && audioContextRef.current) {
+                animationFrameId = requestAnimationFrame(updateProgress);
+            }
+        };
+
+        if (playing && audioContextRef.current) {
+            animationFrameId = requestAnimationFrame(updateProgress);
         }
+
         return () => {
-            if (intervalId) clearInterval(intervalId);
+            if (animationFrameId) {
+                cancelAnimationFrame(animationFrameId);
+            }
         };
     }, [playing]);
 
@@ -496,6 +552,9 @@ export const useAliyunAudio = () => {
         audio.playbackRate = playbackRate;
 
         audio.oncanplaythrough = () => {
+            // 本地音频准备好,清除加载状态
+            setLoading(false);
+
             if (!Number.isNaN(audio.duration)) {
                 setDuration(audio.duration);
                 totalDurationRef.current = audio.duration;
@@ -515,7 +574,7 @@ export const useAliyunAudio = () => {
 
             audio.play().catch(e => {
                 console.error('本地播放失败:', e);
-                // 播放失败可能是文件损坏，重新走流式作为兜底
+                // 播放失败可能是文件损坏,重新走流式作为兜底
                 startStreaming(text, voice, detectedLanguage);
             });
         };
@@ -541,6 +600,7 @@ export const useAliyunAudio = () => {
         play,
         stop,
         playing,
+        loading,  // 添加 loading 状态
         error,
         progress,
         duration,

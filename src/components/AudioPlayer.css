@@ -47,6 +47,16 @@
   animation: pulse 2s ease-in-out infinite;
 }
 
+/* Loading 状态样式 */
+.audio-player-button.loading {
+  background: linear-gradient(135deg, #ffa726 0%, #fb8c00 100%);
+  cursor: wait;
+}
+
+.audio-player-button.loading:hover {
+  transform: none;
+}
+
 .audio-player .iconfont {
   font-size: 16px;
   line-height: 1;
@@ -154,6 +164,33 @@
   50% {
     opacity: 0.8;
   }
+}
+
+/* 旋转动画 (用于 loading 图标) */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+/* 自定义 Spinner 加载动画 */
+.audio-player-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
 }
 
 /* 响应式设计 */

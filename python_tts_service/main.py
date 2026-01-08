@@ -8,6 +8,8 @@ import queue
 import asyncio
 import hashlib
 import requests
+import wave
+import base64
 from pathlib import Path
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
@@ -91,6 +93,70 @@ async def root():
         "service": "TTS Streaming Service",
         "api_configured": bool(OPENAI_API_KEY)
     }
+
+
+async def save_audio_file(pcm_data: bytearray, text: str, voice: str, language: str):
+    """
+    将 PCM 数据保存为 WAV 文件 (Stream-and-Save 策略)
+    
+    参数:
+        pcm_data: 原始 PCM 音频数据
+        text: 原始文本
+        voice: 音色
+        language: 语言
+    """
+    try:
+        # 生成哈希 (与前端保持一致)
+        hash_input = f"{text}_{voice}_{language}_1.0"
+        audio_hash = hashlib.md5(hash_input.encode()).hexdigest()
+        
+        # 文件路径
+        base_dir = Path(__file__).parent.parent
+        audio_dir = base_dir / 'public' / 'audio'
+        audio_dir.mkdir(parents=True, exist_ok=True)
+        
+        file_name = f"{audio_hash}.wav"
+        file_path = audio_dir / file_name
+        
+        # 检查文件是否已存在
+        if file_path.exists():
+            print(f"[Stream-Save] 文件已存在,跳过: {file_name}")
+            return
+        
+        # 写入 WAV 文件
+        with wave.open(str(file_path), 'wb') as wav_file:
+            wav_file.setnchannels(1)  # 单声道
+            wav_file.setsampwidth(2)  # 16-bit
+            wav_file.setframerate(24000)  # 阿里云 TTS 采样率
+            wav_file.writeframes(bytes(pcm_data))
+        
+        print(f"[Stream-Save] 保存成功: {file_path}, 大小: {len(pcm_data)} 字节")
+        
+        # 保存元数据到数据库
+        port = os.getenv('PORT', '3001')
+        save_url = f"http://localhost:{port}/api/audio/save"
+        metadata = {
+            "hash": audio_hash,
+            "text": text,
+            "voice": voice,
+            "language": language,
+            "fileName": file_name,
+            "filePath": f"/audio/{file_name}",
+            "fileSize": len(pcm_data),
+            "duration": len(pcm_data) / (24000 * 2)  # 计算时长 (秒)
+        }
+        
+        try:
+            save_response = requests.post(save_url, json=metadata, timeout=5)
+            if save_response.status_code == 200:
+                print(f"[Stream-Save] 元数据已保存")
+            else:
+                print(f"[Stream-Save] 保存元数据失败: {save_response.status_code}")
+        except Exception as e:
+            print(f"[Stream-Save] 保存元数据异常: {e}")
+            
+    except Exception as e:
+        print(f"[Stream-Save] 保存文件失败: {e}")
 
 
 @app.websocket("/ws/tts")
@@ -188,14 +254,15 @@ async def websocket_tts(websocket: WebSocket):
                 # 获取事件循环（后续多处需要使用）
                 loop = asyncio.get_event_loop()
                 
-                # 仅对短文本（不需要分块）进行后台缓存
-                # 避免长文章占用过多空间且缓存命中率低
-                if len(chunks) == 1:
-                    print("[缓存策略] 短文本 (<=500字符),触发后台缓存任务")
-                    # 关键修复：使用线程池执行缓存任务,避免同步API调用阻塞事件循环
-                    loop.run_in_executor(None, lambda: cache_audio_sync(text, voice, language, chunks))
+                # Stream-and-Save 策略: 判断是否需要缓存
+                # 仅对短文本（不需要分块）进行缓存
+                should_cache = len(chunks) == 1
+                pcm_buffer = bytearray() if should_cache else None
+                
+                if should_cache:
+                    print("[Stream-Save] 缓存策略: 启用 (短文本)")
                 else:
-                    print(f"[缓存策略] 长文本 ({len(chunks)}块),仅流式播放,不缓存")
+                    print(f"[Stream-Save] 缓存策略: 禁用 (长文本 {len(chunks)}块)")
                 
                 # 使用队列在线程间传递数据
                 audio_queue = queue.Queue()
@@ -276,6 +343,15 @@ async def websocket_tts(websocket: WebSocket):
                             t_first_send = time.time()
                         
                         send_count += 1
+                        
+                        # Stream-and-Save: 积累 PCM 数据用于保存
+                        if should_cache and msg.get('type') == 'audio' and 'data' in msg:
+                            try:
+                                pcm_bytes = base64.b64decode(msg['data'])
+                                pcm_buffer.extend(pcm_bytes)
+                            except Exception as e:
+                                print(f"[Stream-Save] 解码 PCM 数据失败: {e}")
+                        
                         # 在消息中添加 requestId
                         if isinstance(msg, dict) and request_id:
                             msg['requestId'] = request_id
@@ -292,6 +368,13 @@ async def websocket_tts(websocket: WebSocket):
                     "type": "done",
                     "requestId": request_id  # 添加 requestId
                 })
+                
+                # Stream-and-Save: 触发后台保存任务
+                if should_cache and pcm_buffer and len(pcm_buffer) > 0:
+                    print(f"[Stream-Save] 触发后台保存,数据大小: {len(pcm_buffer)} 字节")
+                    asyncio.create_task(save_audio_file(pcm_buffer, text, voice, language))
+                elif should_cache:
+                    print(f"[Stream-Save] PCM 缓冲区为空,跳过保存")
                 
                 # 打印性能统计
                 print(f"[性能打点] === 耗时统计 ===")
@@ -329,108 +412,6 @@ async def websocket_tts(websocket: WebSocket):
     finally:
         print("[连接池] 清理连接资源")
 
-
-def cache_audio_sync(text: str, voice: str, language: str, chunks: list):
-    """
-    后台任务：获取完整音频 URL 并缓存（同步版本，在线程池中执行）
-    """
-    try:
-        print(f"[后台缓存] 开始缓存任务")
-        
-        # 为每个文本块获取 URL 并缓存
-        for idx, chunk_text in enumerate(chunks):
-            print(f"[后台缓存] 处理分块 {idx + 1}/{len(chunks)}")
-            
-            # 生成哈希：确保与前端生成规则一致
-            # 规则：text + voice + language + playbackRate(默认1.0)
-            # 关键修复：如果只有一块，使用原始 cleaning text 生成哈希，以匹配前端逻辑
-            # 前端并没有 split_text 逻辑，而是直接对 cleaned text 进行哈希
-            if len(chunks) == 1:
-                hash_text_input = text
-            else:
-                hash_text_input = chunk_text
-                
-            hash_input = f"{hash_text_input}_{voice}_{language}_1.0"
-            audio_hash = hashlib.md5(hash_input.encode()).hexdigest()
-            
-            # 检查文件是否已存在 (直接检查文件系统，避免 HTTP 调用)
-            base_dir = Path(__file__).parent.parent
-            audio_dir = base_dir / 'public' / 'audio'
-            file_name = f"{audio_hash}.wav"
-            file_path = audio_dir / file_name
-
-            if file_path.exists():
-                print(f"[后台缓存] 文件已存在 (本地检查): {file_name}")
-                continue
-            
-            # 调用非流式 API 获取 URL
-            print(f"[后台缓存] 调用非流式 API 获取音频 URL...")
-            try:
-                response = dashscope.MultiModalConversation.call(
-                    model='qwen3-tts-flash',
-                    text=chunk_text,
-                    voice=voice,
-                    language_type=language,
-                    stream=False  # 非流式，获取完整 URL
-                )
-                
-                if response.status_code == 200 and response.output:
-                    audio_info = response.output.get('audio')
-                    if audio_info and audio_info.get('url'):
-                        audio_url = audio_info['url']
-                        print(f"[后台缓存] 获取到 URL: {audio_url[:50]}...")
-                        
-                        # 下载音频
-                        audio_response = requests.get(audio_url, timeout=30)
-                        if audio_response.status_code == 200:
-                            audio_data = audio_response.content
-                            print(f"[后台缓存] 下载成功，大小: {len(audio_data)} 字节")
-                            
-                            # 保存到文件 (使用统一的 public/audio 目录)
-                            audio_dir.mkdir(parents=True, exist_ok=True)
-                            
-                            with open(file_path, 'wb') as f:
-                                f.write(audio_data)
-                            
-                            print(f"[后台缓存] 保存到: {file_path}")
-                            
-                            # 保存元数据到数据库
-                            port = os.getenv('PORT', '3001')
-                            save_url = f"http://localhost:{port}/api/audio/save"
-                            metadata = {
-                                "hash": audio_hash,
-                                "text": chunk_text,
-                                "voice": voice,
-                                "language": language,
-                                "fileName": file_name,
-                                "filePath": f"/audio/{file_name}",
-                                "fileSize": len(audio_data),
-                                "duration": 0
-                            }
-                            
-                            try:
-                                save_response = requests.post(save_url, json=metadata, timeout=5)
-                                if save_response.status_code == 200:
-                                    print(f"[后台缓存] 元数据已保存")
-                                else:
-                                    print(f"[后台缓存] 保存元数据失败: {save_response.status_code}")
-                            except Exception as e:
-                                print(f"[后台缓存] 保存元数据异常: {e}")
-                        else:
-                            print(f"[后台缓存] 下载失败: {audio_response.status_code}")
-                    else:
-                        print(f"[后台缓存] 响应中没有 URL")
-                else:
-                    print(f"[后台缓存] API 调用失败: {response.status_code}")
-            except Exception as e:
-                print(f"[后台缓存] API 调用异常: {e}")
-
-        print(f"[后台缓存] 任务完成")
-        
-    except Exception as e:
-        print(f"[后台缓存] 全局异常: {e}")
-        import traceback
-        traceback.print_exc()
 
 
 if __name__ == "__main__":

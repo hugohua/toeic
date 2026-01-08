@@ -23,4 +23,4 @@ scripts
 !package.json
 !package-lock.json
 dockers
-
+public/audio
