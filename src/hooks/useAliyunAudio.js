@@ -19,6 +19,53 @@ let reconnectTimeout = null;
 let wsMessageHandlers = new Map(); // 存储每个请求的消息处理器 (key: requestId)
 let currentActiveRequestId = null; // 当前活跃的请求 ID,用于播放互斥
 
+// ========== 缓存状态持久化 ==========
+const CACHE_STATUS_KEY = 'audio_cache_status';
+const CACHE_STATUS_VERSION = 'v1';
+
+// 读取持久化的缓存状态
+const loadCacheStatus = () => {
+    try {
+        const stored = localStorage.getItem(CACHE_STATUS_KEY);
+        if (stored) {
+            const data = JSON.parse(stored);
+            if (data.version === CACHE_STATUS_VERSION) {
+                console.log(`[持久化缓存] 加载成功,共 ${Object.keys(data.cache).length} 条记录`);
+                return new Map(Object.entries(data.cache));
+            }
+        }
+    } catch (e) {
+        console.warn('[持久化缓存] 读取失败:', e);
+    }
+    return new Map();
+};
+
+// 保存缓存状态
+const saveCacheStatus = (cacheMap) => {
+    try {
+        const data = {
+            version: CACHE_STATUS_VERSION,
+            cache: Object.fromEntries(cacheMap),
+            timestamp: Date.now()
+        };
+        localStorage.setItem(CACHE_STATUS_KEY, JSON.stringify(data));
+    } catch (e) {
+        console.warn('[持久化缓存] 保存失败:', e);
+        // 如果 localStorage 满了,清理后重试
+        if (e.name === 'QuotaExceededError') {
+            try {
+                localStorage.removeItem(CACHE_STATUS_KEY);
+                localStorage.setItem(CACHE_STATUS_KEY, JSON.stringify(data));
+            } catch (retryError) {
+                console.error('[持久化缓存] 重试保存失败:', retryError);
+            }
+        }
+    }
+};
+
+// 初始化持久化缓存
+let persistentCacheStatus = loadCacheStatus();
+
 // 生成唯一请求 ID
 const generateRequestId = () => `req_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
 
@@ -361,7 +408,21 @@ export const useAliyunAudio = () => {
                             currentActiveRequestId = null;
                         }
 
-                        // 计算剩余播放时间，延迟停止
+                        // 更新持久化缓存状态 (Stream-and-Save 完成后) ⭐
+                        try {
+                            const hash = generateAudioHash(text.replace(/[*#]/g, '').trim(), voice, language);
+                            const audioUrl = `/audio/${hash}.wav`;
+                            persistentCacheStatus.set(hash, {
+                                url: audioUrl,
+                                duration: totalDurationRef.current
+                            });
+                            saveCacheStatus(persistentCacheStatus);
+                            console.log(`[持久化缓存] Stream-and-Save 完成,已更新: ${hash.substring(0, 8)}...`);
+                        } catch (e) {
+                            console.warn('[持久化缓存] 更新失败:', e);
+                        }
+
+                        // 计算剩余播放时间,延迟停止
                         if (audioContextRef.current) {
                             const now = audioContextRef.current.currentTime;
                             const remaining = Math.max(0, nextStartTimeRef.current - now);
@@ -474,18 +535,32 @@ export const useAliyunAudio = () => {
                 // 1.1 先查内存缓存
                 if (audioAvailabilityCache.has(hash)) {
                     const cachedData = audioAvailabilityCache.get(hash);
-                    // console.log(`[内存命中] 播放本地文件: ${cachedData.url}`);
                     playLocalAudio(cachedData.url, cachedData.duration, playbackRate, text, voice, detectedLanguage);
                     return;
                 }
 
-                // 1.2 查后端接口
+                // 1.2 查持久化缓存状态 (新增) ⭐
+                if (persistentCacheStatus.has(hash)) {
+                    const cachedInfo = persistentCacheStatus.get(hash);
+                    console.log(`[持久化缓存命中] 跳过 HTTP 检查,直接播放: ${hash.substring(0, 8)}...`);
+
+                    // 写入内存缓存
+                    audioAvailabilityCache.set(hash, {
+                        url: cachedInfo.url,
+                        duration: cachedInfo.duration
+                    });
+
+                    playLocalAudio(cachedInfo.url, cachedInfo.duration, playbackRate, text, voice, detectedLanguage);
+                    return;
+                }
+
+                // 1.3 查后端接口 (仅在持久化缓存也未命中时)
                 const response = await fetch(`/api/audio/check/${hash}`);
 
                 if (response.ok) {
                     const data = await response.json();
                     if (data.exists && data.url) {
-                        // console.log(`[缓存命中] 播放本地文件: ${data.url}`);
+                        console.log(`[HTTP 缓存命中] 播放本地文件: ${data.url}`);
 
                         // 写入内存缓存
                         audioAvailabilityCache.set(hash, {
@@ -493,12 +568,19 @@ export const useAliyunAudio = () => {
                             duration: data.duration
                         });
 
+                        // 写入持久化缓存 (新增) ⭐
+                        persistentCacheStatus.set(hash, {
+                            url: data.url,
+                            duration: data.duration
+                        });
+                        saveCacheStatus(persistentCacheStatus);
+
                         playLocalAudio(data.url, data.duration, playbackRate, text, voice, detectedLanguage);
-                        return; // 命中缓存，结束
+                        return;
                     }
                 }
             } catch (err) {
-                console.warn('[缓存检查] 失败，降级流式:', err);
+                console.warn('[缓存检查] 失败,降级流式:', err);
             }
         }
 
