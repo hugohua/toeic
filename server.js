@@ -37,22 +37,14 @@ const {
   cleanupAudioCache,
 } = require('./src/db/database');
 
-// 加载配置：优先使用 config.js，如果不存在则从环境变量读取
-let config;
-const configPath = path.join(__dirname, 'config.js');
-if (fs.existsSync(configPath)) {
-  // 本地开发：使用 config.js
-  config = require('./config');
-} else {
-  // Docker/生产环境：从环境变量读取
-  config = {
-    openai: {
-      apiKey: process.env.OPENAI_API_KEY || '',
-      baseURL: process.env.OPENAI_BASE_URL || 'https://dashscope.aliyuncs.com/compatible-mode/v1',
-      model: process.env.OPENAI_MODEL || 'qwen3-max',
-    },
-  };
-}
+// 从环境变量读取配置
+const config = {
+  openai: {
+    apiKey: process.env.OPENAI_API_KEY || '',
+    baseURL: process.env.OPENAI_BASE_URL || 'https://dashscope.aliyuncs.com/compatible-mode/v1',
+    model: process.env.OPENAI_MODEL || 'qwen3-max',
+  },
+};
 
 // 初始化 OpenAI 客户端
 const openai = new OpenAI({
@@ -775,8 +767,11 @@ app.post('/api/generate-article', async (req, res) => {
     [shuffledWords[i], shuffledWords[j]] = [shuffledWords[j], shuffledWords[i]];
   }
 
+  // 只保留前25个单词（AI会从中精选10-15个）
+  const selectedWords = shuffledWords.slice(0, 25);
+
   // 构建单词列表字符串
-  const wordList = shuffledWords.map((w) => w.word).join(', ');
+  const wordList = selectedWords.map((w) => w.word).join(', ');
 
   // 构建 prompt
   const prompt = `${wordList}
@@ -1035,13 +1030,14 @@ if (!isDev) {
 server.listen(PORT, () => {
   console.log('=================================');
   if (isDev) {
-    console.log('🚀 API 服务器已启动（开发模式）');
+    console.log('🚀 后端 API 服务器已启动（开发模式）');
     console.log('=================================');
-    console.log(`📡 API 地址: http://localhost:${PORT}/api`);
+    console.log(`📡 后端服务: http://localhost:${PORT}`);
     console.log(`🎙️  TTS WebSocket: ws://localhost:${PORT}/ws/tts`);
     console.log(`🔗 Python TTS: ${PYTHON_TTS_URL}`);
     console.log('=================================');
-    console.log(`💡 前端开发服务器运行在 http://localhost:3000`);
+    console.log(`💡 访问应用请使用: http://localhost:3000`);
+    console.log(`   （前端开发服务器会自动代理 API 请求）`);
   } else {
     console.log('🚀 背单词应用服务器已启动！');
     console.log('=================================');
