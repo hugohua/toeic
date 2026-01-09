@@ -15,6 +15,7 @@ import ArticleListPage from './pages/ArticleListPage';
 import ArticleDetailPage from './pages/ArticleDetailPage';
 import NoteListPage from './pages/NoteListPage';
 import NoteDetailPage from './pages/NoteDetailPage';
+import PlaylistPage from './pages/PlaylistPage'; // Add import
 import { initCategoryCache } from './utils/app';
 import { PopupContainer } from './components/Popup';
 
@@ -45,6 +46,7 @@ function App() {
         <Route path="/article/:id" element={<ArticleDetailPage />} />
         <Route path="/notes" element={<NoteListPage />} />
         <Route path="/note/:id" element={<NoteDetailPage />} />
+        <Route path="/playlist" element={<PlaylistPage />} />
       </Routes>
     </>
   );

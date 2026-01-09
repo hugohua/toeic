@@ -12,7 +12,7 @@ export function useSpeechConfig(text) {
 
     const start = () => {
         // 使用默认音色 Elias，自动检测语言，正常语速
-        play(text, 'Elias', undefined, 1.0);
+        play(text);
     };
 
     return {

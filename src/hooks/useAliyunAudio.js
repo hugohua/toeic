@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { getRecommendedLanguage } from '../utils/languageDetector';
 import { generateAudioHash } from '../utils/audioHasher';
+import { AUDIO_CONFIG } from '../utils/audioConfig';
 
 // 全局变量：用于存储当前正在播放的音频停止函数
 // 实现互斥播放：当新音频开始时，自动停止旧音频
@@ -477,7 +478,7 @@ export const useAliyunAudio = () => {
     /**
      * 播放入口函数
      */
-    const play = async (text, voice = 'Elias', language = 'English', playbackRate = 1.0) => {
+    const play = useCallback(async (text, voice = AUDIO_CONFIG.DEFAULT_VOICE, language = AUDIO_CONFIG.DEFAULT_LANGUAGE, playbackRate = 1.0) => {
         if (!text) return;
 
         // 1. 清理所有旧的消息处理器 (方案 A)
@@ -586,7 +587,7 @@ export const useAliyunAudio = () => {
 
         // 2. 降级为流式播放
         startStreaming(text, voice, detectedLanguage);
-    };
+    }, [stop]);
 
     // 进度更新 (针对流式播放的 WebAudio) - 使用 requestAnimationFrame 优化性能
     useEffect(() => {

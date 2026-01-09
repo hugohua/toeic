@@ -120,7 +120,7 @@ async def save_audio_file(pcm_data: bytearray, text: str, voice: str, language: 
         
         # 检查文件是否已存在
         if file_path.exists():
-            print(f"[Stream-Save] 文件已存在,跳过: {file_name}")
+            # print(f"[Stream-Save] 文件已存在,跳过: {file_name}")
             return
         
         # 写入 WAV 文件
@@ -130,7 +130,7 @@ async def save_audio_file(pcm_data: bytearray, text: str, voice: str, language: 
             wav_file.setframerate(24000)  # 阿里云 TTS 采样率
             wav_file.writeframes(bytes(pcm_data))
         
-        print(f"[Stream-Save] 保存成功: {file_path}, 大小: {len(pcm_data)} 字节")
+        # print(f"[Stream-Save] 保存成功: {file_path}, 大小: {len(pcm_data)} 字节")
         
         # 保存元数据到数据库
         port = os.getenv('PORT', '3001')
@@ -149,7 +149,8 @@ async def save_audio_file(pcm_data: bytearray, text: str, voice: str, language: 
         try:
             save_response = requests.post(save_url, json=metadata, timeout=5)
             if save_response.status_code == 200:
-                print(f"[Stream-Save] 元数据已保存")
+                # print(f"[Stream-Save] 元数据已保存")
+                pass
             else:
                 print(f"[Stream-Save] 保存元数据失败: {save_response.status_code}")
         except Exception as e:
@@ -204,7 +205,7 @@ async def websocket_tts(websocket: WebSocket):
     
     t_ws_accept = time.time()
     await websocket.accept()
-    print(f"[连接池] WebSocket 连接已建立,等待请求...")
+    # print(f"[连接池] WebSocket 连接已建立,等待请求...")
     
     try:
         # 循环处理多个请求,保持连接活跃
@@ -247,9 +248,9 @@ async def websocket_tts(websocket: WebSocket):
                 chunks = split_text(text, max_length=500)
                 text_to_process = chunks[0]  # 只处理第一块,快速开始播放
                 
-                print(f"\n{'='*60}")
-                print(f"[性能打点] 收到 TTS 请求: 文本=\"{text_to_process[:30]}...\" 长度={len(text_to_process)}, 音色={voice}")
-                print(f"[性能打点] WebSocket 接受耗时: {(t_request_received - t_ws_accept)*1000:.1f}ms")
+                # print(f"\n{'='*60}")
+                # print(f"[性能打点] 收到 TTS 请求: 文本=\"{text_to_process[:30]}...\" 长度={len(text_to_process)}, 音色={voice}")
+                # print(f"[性能打点] WebSocket 接受耗时: {(t_request_received - t_ws_accept)*1000:.1f}ms")
                 
                 # 获取事件循环（后续多处需要使用）
                 loop = asyncio.get_event_loop()
@@ -260,9 +261,11 @@ async def websocket_tts(websocket: WebSocket):
                 pcm_buffer = bytearray() if should_cache else None
                 
                 if should_cache:
-                    print("[Stream-Save] 缓存策略: 启用 (短文本)")
+                    # print("[Stream-Save] 缓存策略: 启用 (短文本)")
+                    pass
                 else:
-                    print(f"[Stream-Save] 缓存策略: 禁用 (长文本 {len(chunks)}块)")
+                    # print(f"[Stream-Save] 缓存策略: 禁用 (长文本 {len(chunks)}块)")
+                    pass
                 
                 # 使用队列在线程间传递数据
                 audio_queue = queue.Queue()
@@ -371,26 +374,27 @@ async def websocket_tts(websocket: WebSocket):
                 
                 # Stream-and-Save: 触发后台保存任务
                 if should_cache and pcm_buffer and len(pcm_buffer) > 0:
-                    print(f"[Stream-Save] 触发后台保存,数据大小: {len(pcm_buffer)} 字节")
+                    # print(f"[Stream-Save] 触发后台保存,数据大小: {len(pcm_buffer)} 字节")
                     asyncio.create_task(save_audio_file(pcm_buffer, text, voice, language))
                 elif should_cache:
-                    print(f"[Stream-Save] PCM 缓冲区为空,跳过保存")
+                    # print(f"[Stream-Save] PCM 缓冲区为空,跳过保存")
+                    pass
                 
                 # 打印性能统计
-                print(f"[性能打点] === 耗时统计 ===")
-                print(f"[性能打点] 1. 请求预处理: {(t_before_executor - t_request_received)*1000:.1f}ms")
-                if perf_data["t_first_chunk"] > 0:
-                    print(f"[性能打点] 2. API首包延迟: {(perf_data['t_first_chunk'] - perf_data['t_api_start'])*1000:.1f}ms ⭐")
-                    print(f"[性能打点] 3. API传输耗时: {(perf_data['t_api_done'] - perf_data['t_first_chunk'])*1000:.1f}ms ({perf_data['chunk_count']}个包)")
-                if t_first_send > 0:
-                    print(f"[性能打点] 4. 首次发送耗时: {(t_first_send - t_request_received)*1000:.1f}ms (用户感知延迟)")
-                print(f"[性能打点] 5. 总耗时: {(t_done - t_request_received)*1000:.1f}ms")
-                print(f"{'='*60}")
+                # print(f"[性能打点] === 耗时统计 ===")
+                # print(f"[性能打点] 1. 请求预处理: {(t_before_executor - t_request_received)*1000:.1f}ms")
+                # if perf_data["t_first_chunk"] > 0:
+                #    print(f"[性能打点] 2. API首包延迟: {(perf_data['t_first_chunk'] - perf_data['t_api_start'])*1000:.1f}ms ⭐")
+                #    print(f"[性能打点] 3. API传输耗时: {(perf_data['t_api_done'] - perf_data['t_first_chunk'])*1000:.1f}ms ({perf_data['chunk_count']}个包)")
+                # if t_first_send > 0:
+                #    print(f"[性能打点] 4. 首次发送耗时: {(t_first_send - t_request_received)*1000:.1f}ms (用户感知延迟)")
+                # print(f"[性能打点] 5. 总耗时: {(t_done - t_request_received)*1000:.1f}ms")
+                # print(f"{'='*60}")
                 
                 # 继续循环,处理下一个请求
                 
             except WebSocketDisconnect:
-                print("[连接池] 客户端主动断开连接")
+                # print("[连接池] 客户端主动断开连接")
                 break
             except Exception as e:
                 print(f"[连接池] 处理请求时出错: {e}")
@@ -406,11 +410,13 @@ async def websocket_tts(websocket: WebSocket):
                 # 继续处理下一个请求
                 
     except WebSocketDisconnect:
-        print("[连接池] WebSocket 连接断开")
+        # print("[连接池] WebSocket 连接断开")
+        pass
     except Exception as e:
         print(f"[连接池] WebSocket 错误: {e}")
     finally:
-        print("[连接池] 清理连接资源")
+        # print("[连接池] 清理连接资源")
+        pass
 
 
 

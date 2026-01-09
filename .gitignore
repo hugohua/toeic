@@ -6,3 +6,4 @@ dist/
 srcipts/
 config.js
 dockers/*
+.ai_memory/

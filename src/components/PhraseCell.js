@@ -1,5 +1,6 @@
 import React from 'react';
 import AudioPlayer from './AudioPlayer';
+import { AUDIO_CONFIG } from '../utils/audioConfig';
 import './PhraseCell.css';
 
 /**
@@ -10,7 +11,7 @@ import './PhraseCell.css';
  * @param {string} props.phraseText - 短语文本
  * @param {string} props.voice - 音色，默认 Elias
  */
-function PhraseCell({ phraseText, voice = 'Elias' }) {
+function PhraseCell({ phraseText, voice = AUDIO_CONFIG.DEFAULT_VOICE }) {
   return (
     <span className="phrase-cell-inline">
       <span className="phrase-text">{phraseText}</span>

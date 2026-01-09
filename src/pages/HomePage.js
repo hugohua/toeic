@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import { getCategories } from '../services/api';
+import { getAllCategories } from '../utils/app';
 
 function HomePage() {
   const navigate = useNavigate();
@@ -11,15 +11,8 @@ function HomePage() {
   useEffect(() => {
     async function loadCategories() {
       try {
-        const cats = await getCategories();
-        // 转换为前端需要的格式
-        const formattedCategories = cats.map((cat) => ({
-          key: cat.name,
-          icon: cat.icon || '📚',
-          name: cat.display_name || cat.name,
-          desc: cat.desc || '',
-        }));
-        setCategories(formattedCategories);
+        const cats = await getAllCategories();
+        setCategories(cats);
       } catch (error) {
         console.error('加载分类列表失败:', error);
         setCategories([]);
@@ -40,6 +33,10 @@ function HomePage() {
 
   const viewWordList = (category) => {
     navigate(`/list/${category}`);
+  };
+
+  const startPlaylist = (category) => {
+    navigate('/playlist', { state: { category } });
   };
 
   if (isLoading) {
@@ -83,20 +80,30 @@ function HomePage() {
                 <button
                   className="btn-action btn-study"
                   onClick={() => startStudy(category.key)}
+                  title="开始学习"
                 >
-                  开始学习
+                  <span className="iconfont icon-play-circle"></span>
+                </button>
+                <button
+                  className="btn-action btn-study"
+                  onClick={() => startPlaylist(category.key)}
+                  title="随身听"
+                >
+                  <span className="iconfont icon-audio"></span>
                 </button>
                 <button
                   className="btn-action btn-browse"
                   onClick={() => startBrowse(category.key)}
+                  title="快速浏览"
                 >
-                  快速浏览
+                  <span className="iconfont icon-eye"></span>
                 </button>
                 <button
                   className="btn-action btn-list"
                   onClick={() => viewWordList(category.key)}
+                  title="单词列表"
                 >
-                  单词列表
+                  <span className="iconfont icon-unorderedlist"></span>
                 </button>
               </div>
             </div>

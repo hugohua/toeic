@@ -64,7 +64,7 @@ export function detectLanguage(text) {
     if (maxRatio === japaneseRatio) return 'Japanese';
     if (maxRatio === koreanRatio) return 'Korean';
 
-    return 'Chinese'; // 默认中文
+    return 'English'; // 默认中文
 }
 
 /**

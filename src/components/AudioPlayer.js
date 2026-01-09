@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './AudioPlayer.css';
 import { useAliyunAudio } from '../hooks/useAliyunAudio';
+import { AUDIO_CONFIG } from '../utils/audioConfig';
 
 /**
  * 实时语音播放组件（增强版）
@@ -8,8 +9,8 @@ import { useAliyunAudio } from '../hooks/useAliyunAudio';
  */
 function AudioPlayer({
     text,
-    voice = 'Elias',
-    language = 'English',
+    voice = AUDIO_CONFIG.DEFAULT_VOICE,
+    language = AUDIO_CONFIG.DEFAULT_LANGUAGE,
     className = '',
     showAdvanced = true
 }) {

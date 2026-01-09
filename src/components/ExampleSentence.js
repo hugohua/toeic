@@ -21,8 +21,6 @@ function ExampleSentence({ sentence, className = '' }) {
       {englishText && (
         <AudioPlayer
           text={englishText}
-          voice="Elias"
-          language="English"
           showAdvanced={false}
           className="example-sentence-player"
         />

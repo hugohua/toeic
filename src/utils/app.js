@@ -66,6 +66,12 @@ export async function initCategoryCache() {
   await loadCategoryCache();
 }
 
+// 获取所有分类列表（使用缓存）
+export async function getAllCategories() {
+  const cache = await loadCategoryCache();
+  return Object.values(cache);
+}
+
 export function getFirstSlashContent(str) {
   if (!str) return '';
   // 使用正则表达式匹配第一个完整的 /.../ 结构

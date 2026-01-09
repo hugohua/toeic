@@ -77,6 +77,10 @@ function WordListPage() {
     navigate(`/study/${category}`);
   }, [category, navigate]);
 
+  const handleStartPlaylist = useCallback(() => {
+    navigate('/playlist', { state: { list: words } });
+  }, [navigate, words]);
+
   const handleToggleFavorite = useCallback((e, word) => {
     e.stopPropagation();
     toggleFavorite(word);
@@ -175,12 +179,22 @@ function WordListPage() {
 
         <div className="word-list-footer">
           <div className="word-count">已加载 {words.length} 个单词</div>
-          <button
-            className="btn btn-primary word-list-footer-btn"
-            onClick={handleStartStudy}
-          >
-            开始背单词
-          </button>
+          <div style={{ display: 'flex', gap: '10px' }}>
+            <button
+              className="btn btn-secondary word-list-footer-btn"
+              onClick={handleStartPlaylist}
+              style={{ flex: 1 }}
+            >
+              随身听
+            </button>
+            <button
+              className="btn btn-primary word-list-footer-btn"
+              onClick={handleStartStudy}
+              style={{ flex: 1 }}
+            >
+              开始背单词
+            </button>
+          </div>
         </div>
       </main>
 

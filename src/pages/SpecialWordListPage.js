@@ -260,6 +260,12 @@ function SpecialWordListPage() {
     }
   };
 
+  const handleStartPlaylist = () => {
+    // Extract actual word data
+    const playlist = words.map(item => item.data || item);
+    navigate('/playlist', { state: { list: playlist } });
+  };
+
   if (words.length === 0) {
     return (
       <div className="container">
@@ -337,6 +343,13 @@ function SpecialWordListPage() {
         </div>
         <div className="word-list-footer">
           <div className="word-count">共 {words.length} {config.countText}</div>
+          <button
+            className="btn btn-primary word-list-footer-btn"
+            onClick={handleStartPlaylist}
+            style={{ marginTop: '10px', width: '100%' }}
+          >
+            随身听
+          </button>
         </div>
 
         <EtymologyBottomSheet
