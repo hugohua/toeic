@@ -290,3 +290,55 @@ export const SessionStorage = {
     sessionStorage.removeItem(key);
   }
 };
+
+// ================= 音频缓存状态管理 =================
+const AUDIO_CACHE_STATUS_KEY = 'audio_cache_status';
+const AUDIO_CACHE_STATUS_VERSION = 'v1';
+
+export const AudioCacheStorage = {
+  load: () => {
+    try {
+      if (typeof window === 'undefined') return new Map();
+      const stored = localStorage.getItem(AUDIO_CACHE_STATUS_KEY);
+      if (stored) {
+        const data = JSON.parse(stored);
+        if (data.version === AUDIO_CACHE_STATUS_VERSION) {
+          console.log(`[持久化缓存] 加载成功,共 ${Object.keys(data.cache).length} 条记录`);
+          return new Map(Object.entries(data.cache));
+        }
+      }
+    } catch (e) {
+      console.warn('[持久化缓存] 读取失败:', e);
+    }
+    return new Map();
+  },
+
+  save: (cacheMap) => {
+    try {
+      if (typeof window === 'undefined') return;
+      const data = {
+        version: AUDIO_CACHE_STATUS_VERSION,
+        cache: Object.fromEntries(cacheMap),
+        timestamp: Date.now()
+      };
+      localStorage.setItem(AUDIO_CACHE_STATUS_KEY, JSON.stringify(data));
+    } catch (e) {
+      console.warn('[持久化缓存] 保存失败:', e);
+      // 如果 localStorage 满了,清理后重试
+      if (e.name === 'QuotaExceededError') {
+        try {
+          localStorage.removeItem(AUDIO_CACHE_STATUS_KEY);
+          const data = {
+            version: AUDIO_CACHE_STATUS_VERSION,
+            cache: Object.fromEntries(cacheMap),
+            timestamp: Date.now()
+          };
+          localStorage.setItem(AUDIO_CACHE_STATUS_KEY, JSON.stringify(data));
+        } catch (retryError) {
+          console.error('[持久化缓存] 重试保存失败:', retryError);
+        }
+      }
+    }
+  }
+};
+

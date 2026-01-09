@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { getRecommendedLanguage } from '../utils/languageDetector';
+import { AudioCacheStorage } from '../services/storage';
 import { generateAudioHash } from '../utils/audioHasher';
 import { AUDIO_CONFIG } from '../utils/audioConfig';
 
@@ -20,52 +21,8 @@ let reconnectTimeout = null;
 let wsMessageHandlers = new Map(); // 存储每个请求的消息处理器 (key: requestId)
 let currentActiveRequestId = null; // 当前活跃的请求 ID,用于播放互斥
 
-// ========== 缓存状态持久化 ==========
-const CACHE_STATUS_KEY = 'audio_cache_status';
-const CACHE_STATUS_VERSION = 'v1';
-
-// 读取持久化的缓存状态
-const loadCacheStatus = () => {
-    try {
-        const stored = localStorage.getItem(CACHE_STATUS_KEY);
-        if (stored) {
-            const data = JSON.parse(stored);
-            if (data.version === CACHE_STATUS_VERSION) {
-                console.log(`[持久化缓存] 加载成功,共 ${Object.keys(data.cache).length} 条记录`);
-                return new Map(Object.entries(data.cache));
-            }
-        }
-    } catch (e) {
-        console.warn('[持久化缓存] 读取失败:', e);
-    }
-    return new Map();
-};
-
-// 保存缓存状态
-const saveCacheStatus = (cacheMap) => {
-    try {
-        const data = {
-            version: CACHE_STATUS_VERSION,
-            cache: Object.fromEntries(cacheMap),
-            timestamp: Date.now()
-        };
-        localStorage.setItem(CACHE_STATUS_KEY, JSON.stringify(data));
-    } catch (e) {
-        console.warn('[持久化缓存] 保存失败:', e);
-        // 如果 localStorage 满了,清理后重试
-        if (e.name === 'QuotaExceededError') {
-            try {
-                localStorage.removeItem(CACHE_STATUS_KEY);
-                localStorage.setItem(CACHE_STATUS_KEY, JSON.stringify(data));
-            } catch (retryError) {
-                console.error('[持久化缓存] 重试保存失败:', retryError);
-            }
-        }
-    }
-};
-
 // 初始化持久化缓存
-let persistentCacheStatus = loadCacheStatus();
+let persistentCacheStatus = AudioCacheStorage.load();
 
 // 生成唯一请求 ID
 const generateRequestId = () => `req_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
@@ -417,7 +374,7 @@ export const useAliyunAudio = () => {
                                 url: audioUrl,
                                 duration: totalDurationRef.current
                             });
-                            saveCacheStatus(persistentCacheStatus);
+                            AudioCacheStorage.save(persistentCacheStatus);
                             console.log(`[持久化缓存] Stream-and-Save 完成,已更新: ${hash.substring(0, 8)}...`);
                         } catch (e) {
                             console.warn('[持久化缓存] 更新失败:', e);
@@ -574,7 +531,7 @@ export const useAliyunAudio = () => {
                             url: data.url,
                             duration: data.duration
                         });
-                        saveCacheStatus(persistentCacheStatus);
+                        AudioCacheStorage.save(persistentCacheStatus);
 
                         playLocalAudio(data.url, data.duration, playbackRate, text, voice, detectedLanguage);
                         return;
