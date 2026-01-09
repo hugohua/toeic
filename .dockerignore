@@ -1,6 +1,7 @@
 node_modules
 npm-debug.log
 dist
+build
 .git
 .gitignore
 .DS_Store
@@ -16,6 +17,7 @@ dist
 coverage
 .nyc_output
 .cache
+.ai_memory
 README.md
 docs
 scripts
@@ -24,3 +26,4 @@ scripts
 !package-lock.json
 dockers
 public/audio
+.gemini

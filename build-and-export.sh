@@ -106,9 +106,14 @@ if [ ! -d "$OUTPUT_DIR" ]; then
     mkdir -p "$OUTPUT_DIR"
 fi
 
-# 步骤1: 构建 Docker 镜像
+# 步骤1: 构建 Docker 镜像 (使用优化版 Dockerfile,支持多阶段构建和 BuildKit 缓存)
 print_info "开始构建 Docker 镜像: $IMAGE_NAME"
-if docker build -t "$IMAGE_NAME" .; then
+print_info "启用 BuildKit 以支持缓存挂载..."
+
+# 启用 BuildKit 并显示详细构建日志
+if DOCKER_BUILDKIT=1 docker build \
+    --progress=plain \
+    -t "$IMAGE_NAME" .; then
     print_info "Docker 镜像构建成功！"
 else
     print_error "Docker 镜像构建失败！"
