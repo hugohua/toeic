@@ -54,12 +54,13 @@ COPY --from=dependencies /app/node_modules ./node_modules
 COPY --from=dependencies /usr/lib/python3.12/site-packages /usr/lib/python3.12/site-packages
 
 # 从 builder 阶段复制构建产物
-COPY --from=builder /app/build ./build
+COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/public ./public
 
 # 复制运行时必需文件
 COPY package*.json ./
 COPY server.js ./
+COPY src/db ./src/db
 COPY python_tts_service ./python_tts_service
 COPY data ./data
 
