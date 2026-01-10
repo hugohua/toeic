@@ -66,7 +66,7 @@ const PYTHON_TTS_URL = `ws://${PYTHON_TTS_HOST}:${PYTHON_TTS_PORT}/ws/tts`;
 app.use(express.json());
 
 // 可用的模型列表
-const AVAILABLE_MODELS = ['qwen-plus', 'qwen-flash', 'deepseek-v3.2'];
+const AVAILABLE_MODELS = ['qwen-plus', 'qwen-max', 'qwen-flash', 'deepseek-v3.2'];
 
 /**
  * 从模型列表中随机选择一个模型
@@ -774,21 +774,26 @@ app.post('/api/generate-article', async (req, res) => {
   const wordList = selectedWords.map((w) => w.word).join(', ');
 
   // 构建 prompt
-  const prompt = `${wordList}
-    你是一位专业的托业（TOEIC）英语教师。以上是一组职场英语词汇：
-请完成以下任务：
+  const prompt = `
+词汇列表：${wordList}
+你是一位专业的托业（TOEIC）英语教师。请根据以上给定的职场英语词汇列表完成任务：
 1、从中精选10–15个语义相关、能自然融入同一职场场景的单词；
 2、围绕这些词写一篇250–300字的英文短文，内容需符合真实职场语境（如招聘通知、内部公告、人力资源邮件等），语言正式、语法正确、逻辑通顺，适合托业阅读练习；
 3、文中所选单词必须加粗标出；
 4、为文章添加一个明确的标题；
 5、在英文文章后，提供对应的中文翻译，翻译中对应的关键词也需加粗。
-注意：避免生硬堆砌词汇，确保语言自然流畅，体现真实商务英语用法。`;
+注意：避免生硬堆砌词汇，确保语言自然流畅，体现真实商务英语用法。
+输出参考格式：
+[标题]
+[英文短文，其中精选词汇已加粗]
+[中文翻译，其中对应关键词已加粗]
+`;
 
   // 使用公共函数处理流式输出
   await handleOpenAIStream(res, prompt, {
     errorContext: '生成文章',
     defaultErrorMessage: '生成文章失败',
-    model: 'qwen-plus',
+    model: 'qwen-max',
   });
 });
 
