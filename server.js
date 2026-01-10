@@ -202,8 +202,6 @@ app.post('/api/generate-article', async (req, res) => {
   // 构建单词列表字符串
   const wordList = selectedWords.map((w) => w.word).join(', ');
 
-  console.log('prompt wordList=》', wordList);
-
   const SYSTEM_PROMPT = `
 # Role
 You are an ETS-certified TOEIC Content Specialist. Your goal is to create high-quality reading materials that strictly adhere to official TOEIC contexts.
