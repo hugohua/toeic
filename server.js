@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
@@ -108,8 +109,10 @@ function sendSSEError(res, errorMessage) {
  * @param {Function} options.onContent - 内容接收回调 (content) => void
  * @param {Function} options.onComplete - 完成回调 (fullContent) => void
  */
-async function handleOpenAIStream(res, prompt, options = {}) {
-  const { errorContext = 'OpenAI API', defaultErrorMessage = '处理失败', model, onContent, onComplete } = options;
+
+
+async function handleOpenAIStream(res, promptOrMessages, options = {}) {
+  const { errorContext = 'OpenAI API', defaultErrorMessage = '处理失败', model, onContent, onComplete, temperature } = options;
   const modelToUse = model || config.openai.model;
 
   // 设置 SSE 响应头
@@ -118,11 +121,20 @@ async function handleOpenAIStream(res, prompt, options = {}) {
   let fullContent = '';
 
   try {
+    // 构造 messages 数组
+    let messages = [];
+    if (Array.isArray(promptOrMessages)) {
+      messages = promptOrMessages;
+    } else {
+      messages = [{ role: 'user', content: promptOrMessages }];
+    }
+
     // 调用 OpenAI API（流式）
     const stream = await openai.chat.completions.create({
       model: modelToUse,
-      messages: [{ role: 'user', content: prompt }],
+      messages: messages,
       stream: true,
+      temperature: temperature, // 支持传入 temperature
     });
 
     // 处理流式响应
@@ -157,6 +169,119 @@ async function handleOpenAIStream(res, prompt, options = {}) {
     res.end();
   }
 }
+
+// ... existing code ...
+
+// 生成文章（根据分类数组）- 流式输出
+app.post('/api/generate-article', async (req, res) => {
+  const { categories } = req.body;
+
+  if (!Array.isArray(categories) || categories.length === 0) {
+    sendSSEError(res, '分类数组是必需的且不能为空');
+    return;
+  }
+
+  // 获取所选分类下的所有单词
+  const words = getWordsByCategories(categories);
+
+  if (words.length === 0) {
+    sendSSEError(res, '所选分类下没有单词');
+    return;
+  }
+
+  // 打乱单词列表以避免缓存（Fisher-Yates洗牌算法）
+  const shuffledWords = [...words];
+  for (let i = shuffledWords.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledWords[i], shuffledWords[j]] = [shuffledWords[j], shuffledWords[i]];
+  }
+
+  // 只保留前25个单词（AI会从中精选10-15个）
+  const selectedWords = shuffledWords.slice(0, 25);
+
+  // 构建单词列表字符串
+  const wordList = selectedWords.map((w) => w.word).join(', ');
+
+  console.log('prompt wordList=》', wordList);
+
+  const SYSTEM_PROMPT = `
+# Role
+You are an ETS-certified TOEIC Content Specialist. Your goal is to create high-quality reading materials that strictly adhere to official TOEIC contexts.
+
+# Input Data
+User will provide a list of vocabulary words.
+
+# Constraints & Workflow
+
+## 1. Scenario Selection (Mandatory)
+You must select the **single most appropriate scenario** from the following official TOEIC list to integrate the vocabulary. 
+*If the words are highly disconnected, use "General Business Administration" or "Office Communication" to bridge them.*
+
+**OFFICIAL TOEIC SCENARIOS:**
+- **Corporate Development**: Recruitment, Hiring, Interviewing, Training, Promotion.
+- **Communications**: Meetings, Conferences, Presentations, Inter-departmental memos.
+- **Finance & Budgeting**: Investments, Taxes, Accounting, Billing, Invoices.
+- **General Business**: Contracts, Negotiations, Warranties, Marketing, Sales, Customer Service.
+- **Office**: Administration, Procedures, Office Supplies, Technology/Equipment maintenance.
+- **Personnel**: Salaries, Benefits, Pensions, Awards, Policies.
+- **Travel**: Business Travel, Airlines, Trains, Hotels, Car Rentals, Itineraries.
+- **Dining**: Business Lunches, Banquets, Receptions, Reservations (Strictly Business context).
+- **Entertainment**: Cinema, Theater, Music, Art, Media (Strictly Cultural/Leisure context).
+- **Health**: Medical Insurance, Doctor Appointments, Corporate Wellness (Strictly Employee Benefits context).
+- **Technical**: Electronics, Technology, Computers, Digital Tools (Strictly Workplace application).
+- **Logistics**: Shipping, Invoices, Inventory, Distribution.
+- **Housing/Corporate Property**: Construction, Specifications, Buying/Renting, Utilities.
+
+## 2. Format Selection (Mandatory)
+Choose the most logical text type based on the selected scenario and vocabulary:
+- **Prose**: Email, Letter, Memo, Article, Report, Advertisement, Announcement, Notice.
+- **Forms/Data**: Invoice, Receipt, Schedule, Itinerary, Survey, Graph/Chart Description.
+
+## 3. Drafting Rules
+- **Length**: 200-300 words.
+- **Tone**: Formal & Professional (TOEIC Part 7 Standard).
+- **Vocab Requirement**: 
+   - Use **ALL** input words. 
+   - Morphology changes are allowed (e.g., *go* -> *went*).
+   - **Bold** the target words in the text (e.g., **word**).
+
+## 4. Translation
+- Provide a natural Chinese translation.
+- **Strictly bold** the Chinese phrases that correspond to the bolded English words.
+
+# Output Format
+**Scenario**: [Selected Scenario from list]
+**Format**: [Selected Format from list]
+
+**[English Title]**
+[Text content with **bold** words]
+
+---
+
+**[Chinese Translation]**
+[Translation with **bold** words]
+`;
+
+  const messages = [
+    {
+      role: "system",
+      content: SYSTEM_PROMPT
+    },
+    {
+      role: "user",
+      content: `# Input Words:\n${wordList}`
+    }
+  ];
+
+  // 使用公共函数处理流式输出
+  await handleOpenAIStream(res, messages, {
+    errorContext: '生成文章',
+    defaultErrorMessage: '生成文章失败',
+    model: getRandomModel(),
+    temperature: 0.7
+  });
+});
+
 
 // API 路由
 // 获取所有分类
@@ -744,58 +869,6 @@ app.get('/api/etymology/:word', async (req, res) => {
 });
 
 // 生成文章（根据分类数组）- 流式输出
-app.post('/api/generate-article', async (req, res) => {
-  const { categories } = req.body;
-
-  if (!Array.isArray(categories) || categories.length === 0) {
-    sendSSEError(res, '分类数组是必需的且不能为空');
-    return;
-  }
-
-  // 获取所选分类下的所有单词
-  const words = getWordsByCategories(categories);
-
-  if (words.length === 0) {
-    sendSSEError(res, '所选分类下没有单词');
-    return;
-  }
-
-  // 打乱单词列表以避免缓存（Fisher-Yates洗牌算法）
-  const shuffledWords = [...words];
-  for (let i = shuffledWords.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledWords[i], shuffledWords[j]] = [shuffledWords[j], shuffledWords[i]];
-  }
-
-  // 只保留前25个单词（AI会从中精选10-15个）
-  const selectedWords = shuffledWords.slice(0, 25);
-
-  // 构建单词列表字符串
-  const wordList = selectedWords.map((w) => w.word).join(', ');
-
-  // 构建 prompt
-  const prompt = `
-词汇列表：${wordList}
-你是一位专业的托业（TOEIC）英语教师。请根据以上给定的职场英语词汇列表完成任务：
-1、从中精选10–15个语义相关、能自然融入同一职场场景的单词；
-2、围绕这些词写一篇250–300字的英文短文，内容需符合真实职场语境（如招聘通知、内部公告、人力资源邮件等），语言正式、语法正确、逻辑通顺，适合托业阅读练习；
-3、文中所选单词必须加粗标出；
-4、为文章添加一个明确的标题；
-5、在英文文章后，提供对应的中文翻译，翻译中对应的关键词也需加粗。
-注意：避免生硬堆砌词汇，确保语言自然流畅，体现真实商务英语用法。
-输出参考格式：
-[标题]
-[英文短文，其中精选词汇已加粗]
-[中文翻译，其中对应关键词已加粗]
-`;
-
-  // 使用公共函数处理流式输出
-  await handleOpenAIStream(res, prompt, {
-    errorContext: '生成文章',
-    defaultErrorMessage: '生成文章失败',
-    model: 'qwen-max',
-  });
-});
 
 // ==================== WebSocket 代理（TTS 服务） ====================
 
