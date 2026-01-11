@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import { getAllWordMemories } from '../utils/ebbinghaus';
+import { getWordIndexInCategory } from '../services/api';
 import './ProfilePage.css';
 
 function ProfilePage() {
@@ -37,6 +38,19 @@ function ProfilePage() {
     }
   };
 
+  // 点击单词跳转到详情页
+  const handleWordClick = async (word, category) => {
+    try {
+      const index = await getWordIndexInCategory(word, category);
+      if (index !== -1) {
+        navigate(`/detail/${encodeURIComponent(category)}/${index}`);
+      } else {
+        console.warn('未找到单词索引:', word, category);
+      }
+    } catch (error) {
+      console.error('获取单词索引失败:', error);
+    }
+  };
 
   return (
     <div className="container">
@@ -112,7 +126,15 @@ function ProfilePage() {
               {wordList.map((item, index) => (
                 <div
                   key={`${item.category}-${item.word}-${index}`}
-                  className="word-item"
+                  className="word-item word-item-clickable"
+                  onClick={() => handleWordClick(item.word, item.category)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      handleWordClick(item.word, item.category);
+                    }
+                  }}
                 >
                   <div className="word-info">
                     <span className="user-word-text">{item.word}</span>

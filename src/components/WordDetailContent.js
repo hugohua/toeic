@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, BookOpen, Heart, Volume2 } from 'lucide-react';
+import { X, BookOpen, Heart, Volume2, Square, Loader2 } from 'lucide-react';
 import PhraseCell from './PhraseCell';
 import EtymologyBottomSheet from './EtymologyBottomSheet';
 import DetailSection from './DetailSection'; // We can likely simplify this or inline it now
@@ -25,6 +25,8 @@ function WordDetailContent({
   word,
   cssPrefix = 'word-detail',
   onPlaySound,
+  isPlayingSound = false,
+  isLoadingSound = false,
   isFavorite = false,
   onToggleFavorite,
   progressCurrent,
@@ -63,25 +65,18 @@ function WordDetailContent({
 
         {/* Header */}
         <div className="detail-header">
-          {mode === 'modal' && onClose && (
-            <button
-              type="button"
-              className="word-detail-close"
-              onClick={onClose}
-              title="关闭"
-            >
-              <X size={24} />
-            </button>
-          )}
-
           <div className="detail-header-main">
             <div
-              className={`word-title ${onPlaySound ? 'word-detail-title-clickable' : ''}`}
+              className={`word-title ${onPlaySound ? 'word-detail-title-clickable' : ''} ${isLoadingSound ? 'loading' : ''} ${isPlayingSound ? 'playing' : ''}`}
               onClick={onPlaySound}
-              title={onPlaySound ? "点击播放发音" : undefined}
+              title={onPlaySound ? (isPlayingSound ? "点击停止" : "点击播放发音") : undefined}
             >
               {word.word}
-              {onPlaySound && <Volume2 size={24} color="var(--primary)" />}
+              {onPlaySound && (
+                isLoadingSound ? <Loader2 size={24} color="var(--primary)" className="icon-spin" /> :
+                  isPlayingSound ? <Square size={20} color="var(--primary)" /> :
+                    <Volume2 size={24} color="var(--primary)" />
+              )}
             </div>
 
             <div className="header-actions">
@@ -103,6 +98,16 @@ function WordDetailContent({
                   title={isFavorite ? '取消收藏该单词' : '收藏该单词'}
                 >
                   <Heart size={20} fill={isFavorite ? '#ef4444' : 'none'} color={isFavorite ? '#ef4444' : 'var(--text-secondary)'} />
+                </button>
+              )}
+              {mode === 'modal' && onClose && (
+                <button
+                  type="button"
+                  className="word-detail-close"
+                  onClick={onClose}
+                  title="关闭"
+                >
+                  <X size={20} />
                 </button>
               )}
             </div>

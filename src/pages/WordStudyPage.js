@@ -239,7 +239,9 @@ function WordStudyPage() {
           word={currentWord}
           mode="modal"
           onClose={() => setShowDetail(false)}
-          onPlaySound={playAudio}
+          onPlaySound={handleAudioClick}
+          isPlayingSound={isPlaying}
+          isLoadingSound={isLoading}
         />
       </BottomSheet>
     </div>

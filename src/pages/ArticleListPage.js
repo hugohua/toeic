@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Trash2, Loader2 } from 'lucide-react';
 import Header from '../components/Header';
 import { getAllArticles, deleteArticle } from '../services/api';
 import '../index.css';
@@ -123,7 +124,11 @@ function ArticleListPage() {
                         disabled={deletingId === article.id}
                         title="删除文章"
                       >
-                        {deletingId === article.id ? '删除中...' : '删除'}
+                        {deletingId === article.id ? (
+                          <Loader2 size={16} className="spin" />
+                        ) : (
+                          <Trash2 size={16} />
+                        )}
                       </button>
                     </td>
                   </tr>

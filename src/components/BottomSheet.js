@@ -23,10 +23,29 @@ function BottomSheet({
   const bottomSheetRef = useRef(null);
   const [sheetHeight, setSheetHeight] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
+  const [shouldRender, setShouldRender] = useState(false);
   const dragStateRef = useRef({ startY: 0, startHeight: 0 });
 
   // 当浮层打开/关闭时，禁用/启用原页面滚动
-  useDisableScroll(isOpen);
+  useDisableScroll(shouldRender);
+
+  // Handle open/close state changes with animation
+  useEffect(() => {
+    if (isOpen) {
+      setShouldRender(true);
+      setIsClosing(false);
+    } else if (shouldRender) {
+      // Start closing animation
+      setIsClosing(true);
+      // Wait for animation to complete before unmounting
+      const timer = setTimeout(() => {
+        setShouldRender(false);
+        setIsClosing(false);
+      }, 280);
+      return () => clearTimeout(timer);
+    }
+  }, [isOpen]); // Only depend on isOpen
 
   // 初始化底部抽屉高度
   useEffect(() => {
@@ -82,6 +101,7 @@ function BottomSheet({
 
     if (currentHeight < closeThreshold) {
       // 高度太小，认为是关闭操作
+      setIsDragging(false);
       onClose();
     } else if (currentHeight < minHeight) {
       // 高度在 minHeight 和 closeThreshold 之间，回弹到 minHeight
@@ -125,12 +145,16 @@ function BottomSheet({
     }
   };
 
-  if (!isOpen) return null;
+  if (!shouldRender) return null;
+
   return (
-    <div className="bottom-sheet-overlay" onClick={handleOverlayClick}>
+    <div
+      className={`bottom-sheet-overlay ${isClosing ? 'closing' : ''}`}
+      onClick={handleOverlayClick}
+    >
       <div
         ref={bottomSheetRef}
-        className={`bottom-sheet ${isDragging ? 'dragging' : ''}`}
+        className={`bottom-sheet ${isDragging ? 'dragging' : ''} ${isClosing ? 'closing' : ''}`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* 拖动手柄 */}
@@ -152,4 +176,3 @@ function BottomSheet({
 }
 
 export default BottomSheet;
-

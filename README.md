@@ -1,4 +1,4 @@
-# 拓业背单词 (Tuoye Word Learning)
+# TOEIC 托业背单词 (TOEIC Learning)
 
 一个基于 React 的全功能背单词 H5 应用，专为英语学习者设计。支持多场景词库、艾宾浩斯智能复习、AI 语音随身听以及文章阅读学习功能。
 

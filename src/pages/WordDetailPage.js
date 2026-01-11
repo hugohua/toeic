@@ -108,7 +108,15 @@ function WordDetailPage() {
   }, [location.state]);
 
   // 使用 useSpeech，传入当前单词作为 text
-  const { start } = useSpeechConfig(word?.word || '');
+  const { start, stop, isPlaying, isLoading } = useSpeechConfig(word?.word || '');
+
+  const handlePlaySound = () => {
+    if (isPlaying) {
+      stop();
+    } else {
+      start();
+    }
+  };
 
   // 加载收藏列表缓存
   useEffect(() => {
@@ -344,7 +352,9 @@ function WordDetailPage() {
         word={word}
         mode="page"
         cssPrefix="word-detail"
-        onPlaySound={start}
+        onPlaySound={handlePlaySound}
+        isPlayingSound={isPlaying}
+        isLoadingSound={isLoading}
         isFavorite={isFavorite}
         onToggleFavorite={handleToggleFavorite}
         progressCurrent={progressCurrent}

@@ -110,22 +110,24 @@
 }
 
 /* BottomSheet关闭动画 */
-.bottom-sheet-overlay.closing .bottom-sheet {
-  animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.bottom-sheet.closing {
+  animation: slideDown 0.28s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes slideDown {
   from {
     transform: translateY(0);
+    opacity: 1;
   }
 
   to {
     transform: translateY(100%);
+    opacity: 0.8;
   }
 }
 
 .bottom-sheet-overlay.closing {
-  animation: fadeOut 0.3s ease-out;
+  animation: fadeOut 0.28s ease-out forwards;
 }
 
 @keyframes fadeOut {

@@ -186,19 +186,23 @@
 
 /* Footer Actions */
 .study-footer {
-  padding: 24px 20px 48px;
-  /* Extra bottom padding for safety */
+  padding: 20px 16px;
+  padding-bottom: calc(24px + env(safe-area-inset-bottom, 0));
+  background: var(--surface-translucent);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-top: 0.5px solid rgba(0, 0, 0, 0.08);
   display: flex;
-  gap: 16px;
+  gap: 12px;
   justify-content: space-between;
 }
 
 .btn-action {
   flex: 1;
-  height: 56px;
+  height: 52px;
   border: none;
-  border-radius: 16px;
-  font-size: 16px;
+  border-radius: 14px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
@@ -206,30 +210,46 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  line-height: 1;
+  line-height: 1.2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .btn-unknown {
-  background: var(--background);
-  color: var(--danger);
-  border: 1px solid rgba(239, 68, 68, 0.2);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0.05) 100%);
+  color: #dc2626;
+  border: 1.5px solid rgba(239, 68, 68, 0.25);
+}
+
+.btn-unknown:hover {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(239, 68, 68, 0.08) 100%);
+  border-color: rgba(239, 68, 68, 0.35);
 }
 
 .btn-fuzzy {
-  background: var(--background);
-  color: var(--warning);
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(245, 158, 11, 0.06) 100%);
+  color: #d97706;
+  border: 1.5px solid rgba(245, 158, 11, 0.25);
+}
+
+.btn-fuzzy:hover {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.18) 0%, rgba(245, 158, 11, 0.1) 100%);
+  border-color: rgba(245, 158, 11, 0.35);
 }
 
 .btn-known {
-  background: var(--background);
-  color: var(--success);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(16, 185, 129, 0.06) 100%);
+  color: #059669;
+  border: 1.5px solid rgba(16, 185, 129, 0.25);
+}
+
+.btn-known:hover {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.18) 0%, rgba(16, 185, 129, 0.1) 100%);
+  border-color: rgba(16, 185, 129, 0.35);
 }
 
 .btn-action:active {
-  transform: scale(0.96);
-  filter: brightness(0.95);
+  transform: scale(0.95);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 /* Swipe hints */

@@ -102,6 +102,19 @@
     border-bottom: none;
 }
 
+.word-item-clickable {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.word-item-clickable:hover {
+    background: rgba(102, 126, 234, 0.05);
+}
+
+.word-item-clickable:active {
+    background: rgba(102, 126, 234, 0.1);
+}
+
 .word-info {
     display: flex;
     flex-direction: column;

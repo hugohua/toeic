@@ -24,7 +24,15 @@ function WordBrowsePage() {
   const browseContentRef = useRef(null);
 
   // 使用 useSpeech，传入当前单词作为 text
-  const { start } = useSpeechConfig(currentWord?.word || '');
+  const { start, stop, isPlaying, isLoading } = useSpeechConfig(currentWord?.word || '');
+
+  const handlePlaySound = () => {
+    if (isPlaying) {
+      stop();
+    } else {
+      start();
+    }
+  };
 
   // 加载收藏列表缓存
   useEffect(() => {
@@ -238,7 +246,9 @@ function WordBrowsePage() {
         word={currentWord}
         mode="page"
         cssPrefix="word-browse"
-        onPlaySound={start}
+        onPlaySound={handlePlaySound}
+        isPlayingSound={isPlaying}
+        isLoadingSound={isLoading}
         isFavorite={isFavorite}
         onToggleFavorite={handleToggleFavorite}
         progressCurrent={currentIndex + 1}
