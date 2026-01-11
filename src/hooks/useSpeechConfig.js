@@ -5,10 +5,10 @@ import { useAliyunAudio } from './useAliyunAudio';
  * 将原来使用 react-text-to-speech 的调用转发到新的阿里云 TTS Hook
  * 
  * @param {string} text - 要朗读的文本
- * @returns {object} { start, stop, speechStatus }
+ * @returns {object} { start, stop, isPlaying, isLoading, speechStatus }
  */
 export function useSpeechConfig(text) {
-    const { play, stop, playing } = useAliyunAudio();
+    const { play, stop, playing, loading } = useAliyunAudio();
 
     const start = () => {
         // 使用默认音色 Elias，自动检测语言，正常语速
@@ -18,7 +18,10 @@ export function useSpeechConfig(text) {
     return {
         start,
         stop,
+        isPlaying: playing,      // For InlinePlayButton
+        isLoading: loading,      // For InlinePlayButton
         speechStatus: playing ? 'started' : 'stopped',
         isInSpeech: playing, // 部分组件可能使用这个字段
     };
 }
+

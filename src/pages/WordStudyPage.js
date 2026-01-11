@@ -1,343 +1,247 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
-import { useSpeechConfig } from '../hooks/useSpeechConfig';
-import { getWordsByCategory } from '../services/api';
+import { useParams, useNavigate } from 'react-router-dom';
+import { motion, useAnimation, useMotionValue, useTransform } from 'framer-motion';
+import { Volume2, Square, Loader2 } from 'lucide-react';
 import Header from '../components/Header';
-import PhraseCell from '../components/PhraseCell';
-import Loading from '../components/Loading';
-import { getCategoryName } from '../utils/app';
-import {
-  saveWordStatus,
-  addWordToList,
-  WORD_LIST_TYPES,
-} from '../services/storage';
-import { scheduleReview } from '../utils/ebbinghaus';
-import '../index.css';
+import { getWordsByCategory, saveLearningProgress, getLearningProgress } from '../utils/app';
+import { useSpeechConfig } from '../hooks/useSpeechConfig';
+import WordDetailContent from '../components/WordDetailContent';
+import BottomSheet from '../components/BottomSheet';
 import './WordStudyPage.css';
 
 function WordStudyPage() {
   const { category } = useParams();
   const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [words, setWords] = useState([]);
-  const [currentWord, setCurrentWord] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [showDetail, setShowDetail] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  // 使用 useSpeech，传入当前单词作为 text
-  const { start } = useSpeechConfig(currentWord?.word || '');
+  // Animation controls
+  const controls = useAnimation();
+  const x = useMotionValue(0);
+  const rotate = useTransform(x, [-200, 200], [-30, 30]);
+  const opacityKnown = useTransform(x, [50, 150], [0, 1]);
+  const opacityUnknown = useTransform(x, [-50, -150], [0, 1]);
 
-  // 初始化学习
+  // Audio
+  const currentWord = words[currentIndex];
+  const { start: playAudio, stop: stopAudio, isPlaying, isLoading } = useSpeechConfig(currentWord?.word || '');
+
+  const handleAudioClick = (e) => {
+    e.stopPropagation();
+    if (isPlaying) {
+      stopAudio();
+    } else {
+      playAudio();
+    }
+  };
+
+  // Determine which icon to show
+  let AudioIcon = Volume2;
+  if (isLoading) AudioIcon = Loader2;
+  if (isPlaying) AudioIcon = Square;
+
   useEffect(() => {
-    let isMounted = true;
-
-    async function loadWords() {
+    async function loadData() {
       try {
-        const categoryWords = await getWordsByCategory(category);
+        const allWords = await getWordsByCategory(category);
+        const progress = await getLearningProgress(category);
 
-        if (!isMounted) return;
-
-        if (categoryWords.length === 0) {
-          setIsLoading(false);
-          return;
+        // Find first unlearned word or start from 0
+        let startIndex = 0;
+        if (progress && progress.lastIndex) {
+          // Validate index is within bounds
+          startIndex = Math.min(progress.lastIndex, allWords.length - 1);
         }
 
-        setWords(categoryWords);
-
-        // 恢复保存的进度
-        const savedIndex = localStorage.getItem(`studyIndex_${category}`);
-        const indexParam = searchParams.get('index');
-
-        let initialIndex = 0;
-        if (indexParam !== null) {
-          initialIndex = parseInt(indexParam);
-          if (initialIndex >= 0 && initialIndex < categoryWords.length) {
-            setCurrentIndex(initialIndex);
-            setCurrentWord(categoryWords[initialIndex]);
-          } else {
-            setCurrentIndex(0);
-            setCurrentWord(categoryWords[0]);
-          }
-        } else if (savedIndex !== null) {
-          initialIndex = parseInt(savedIndex);
-          if (initialIndex >= 0 && initialIndex < categoryWords.length) {
-            setCurrentIndex(initialIndex);
-            setCurrentWord(categoryWords[initialIndex]);
-          } else {
-            setCurrentIndex(0);
-            setCurrentWord(categoryWords[0]);
-          }
-        } else {
-          setCurrentIndex(0);
-          setCurrentWord(categoryWords[0]);
-        }
-
-        setIsLoading(false);
+        setWords(allWords);
+        setCurrentIndex(startIndex);
       } catch (error) {
-        console.error('加载单词列表失败:', error);
-        if (isMounted) {
-          setIsLoading(false);
-          setWords([]);
-        }
+        console.error('加载学习数据失败:', error);
+      } finally {
+        setLoading(false);
       }
     }
+    loadData();
+  }, [category]);
 
-    loadWords();
+  const handleDragEnd = async (event, info) => {
+    const offset = info.offset.x;
+    const velocity = info.velocity.x;
 
-    return () => {
-      isMounted = false;
-    };
-  }, [category, searchParams]);
-
-  // 保存当前进度
-  const saveProgress = (index) => {
-    localStorage.setItem(`studyIndex_${category}`, index.toString());
+    if (offset > 100 || velocity > 500) {
+      await controls.start({ x: 500, opacity: 0 }); // Swipe Right (Known)
+      handleStudyStatus('known');
+    } else if (offset < -100 || velocity < -500) {
+      await controls.start({ x: -500, opacity: 0 }); // Swipe Left (Unknown)
+      handleStudyStatus('unknown');
+    } else {
+      controls.start({ x: 0, opacity: 1 }); // Reset
+    }
   };
 
-  // 监听页面可见性变化，当从详情页返回时自动继续下一个单词
-  useEffect(() => {
-    if (words.length === 0 || !currentWord) return;
-
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        // 页面重新可见时，延迟一下再检查，确保localStorage已更新
-        setTimeout(() => {
-          const wordKey = `${category}-${currentWord.word}`;
-          const statusData = localStorage.getItem(`word_${wordKey}`);
-
-          if (statusData) {
-            // 当前单词已学习，继续下一个
-            const nextIndex = currentIndex + 1;
-
-            if (nextIndex < words.length) {
-              // 还有下一个单词
-              setCurrentIndex(nextIndex);
-              setCurrentWord(words[nextIndex]);
-              saveProgress(nextIndex);
-            } else {
-              // 已经是最后一个单词
-              alert('恭喜！该分类的所有单词都已学习完成！');
-              navigate(`/list/${category}`);
-            }
-          }
-        }, 300);
-      }
-    };
-
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-
-    // 也监听focus事件作为备用
-    const handleFocus = () => {
-      setTimeout(() => {
-        const wordKey = `${category}-${currentWord.word}`;
-        const statusData = localStorage.getItem(`word_${wordKey}`);
-
-        if (statusData) {
-          // 当前单词已学习，继续下一个
-          const nextIndex = currentIndex + 1;
-
-          if (nextIndex < words.length) {
-            // 还有下一个单词
-            setCurrentIndex(nextIndex);
-            setCurrentWord(words[nextIndex]);
-            saveProgress(nextIndex);
-          } else {
-            // 已经是最后一个单词
-            alert('恭喜！该分类的所有单词都已学习完成！');
-            navigate(`/list/${category}`);
-          }
-        }
-      }, 300);
-    };
-
-    window.addEventListener('focus', handleFocus);
-
-    return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-      window.removeEventListener('focus', handleFocus);
-    };
-  }, [words, currentWord, category, navigate, currentIndex]);
-
-  /**
-   * 学习状态到单词列表类型的映射配置
-   * 新增状态时，只需在此配置中添加映射即可
-   */
-  const STATUS_TO_LIST_TYPE = {
-    unknown: WORD_LIST_TYPES.UNKNOWN,
-    fuzzy: WORD_LIST_TYPES.FUZZY,
-    // known 不需要加入任何列表，可以不配置或设为 null
-  };
-
-  /**
-   * 处理学习状态，自动保存到对应的单词列表
-   * @param {string} status - 学习状态 ('known' | 'unknown' | 'fuzzy')
-   */
   const handleStudyStatus = async (status) => {
-    if (!currentWord) return;
+    // 1. Play exit animation if triggered by button click (drag handles its own, so we need to check if we need to animate)
+    // simpler to just force animate if calling from buttons:
+    if (status === 'known' && x.get() === 0) {
+      await controls.start({ x: 500, opacity: 0 });
+    } else if (status === 'unknown' && x.get() === 0) {
+      await controls.start({ x: -500, opacity: 0 });
+    } else if (status === 'fuzzy' && x.get() === 0) {
+      // Fuzzy maybe swipes up or just fades? Let's just swipe right for now or fade
+      await controls.start({ opacity: 0, scale: 0.9 });
+    }
 
-    // 如果该状态需要保存到单词列表，则自动保存
-    const listType = STATUS_TO_LIST_TYPE[status];
-    if (listType) {
-      await addWordToList(listType, currentWord.word, category);
+    // 2. Save progress
+    const nextIndex = currentIndex + 1;
+    await saveLearningProgress(category, {
+      word: currentWord.word,
+      status: status,
+      timestamp: Date.now(),
+      index: nextIndex // Save the NEXT index so we resume correctly
+    });
+
+    // 3. Move to next word
+    if (currentIndex < words.length - 1) {
+      setCurrentIndex(nextIndex);
+      // Reset card position for new word
+      x.set(0);
+      controls.set({ x: 0, opacity: 1, scale: 1 });
+    } else {
+      alert('恭喜！本单元单词已学完');
+      navigate('/');
     }
   };
 
-  const showWordDetail = async (status) => {
-    if (!currentWord) return;
-
-    const wordKey = `${category}-${currentWord.word}`;
-    const now = Date.now();
-
-    // 保存学习记录
-    saveWordStatus(wordKey, status, now);
-    scheduleReview(wordKey, status, now);
-
-    // 根据状态自动保存到对应的单词列表
-    await handleStudyStatus(status);
-
-    // 提前保存进度到下一个单词，确保返回时直接显示下一个而非旧单词
-    // 这样可以避免返回后的页面闪烁问题
-    if (currentIndex + 1 < words.length) {
-      saveProgress(currentIndex + 1);
-    }
-
-    // 跳转到单词详情页，添加from=study参数标识从学习页面跳转
-    navigate(`/detail/${category}/${currentIndex}?from=study`);
-  };
-
-  // 从详情页返回后，继续下一个单词
+  // Auto play audio when word changes
   useEffect(() => {
-    if (words.length === 0 || !currentWord || isLoading) return;
-
-    const indexParam = searchParams.get('index');
-
-    // 如果有 index 参数，根据参数定位单词
-    if (indexParam !== null) {
-      const targetIndex = parseInt(indexParam);
-      if (targetIndex >= 0 && targetIndex < words.length) {
-        setCurrentIndex(targetIndex);
-        setCurrentWord(words[targetIndex]);
-        saveProgress(targetIndex);
-      }
+    if (currentWord) {
+      // Optional: playAudio(); 
+      // Many users prefer manual playback or only on first load.
+      // Uncomment if auto-play is desired.
     }
+  }, [currentWord]);
 
-    // 如果没有 index 参数，检查当前单词是否已学习，如果是则前进到下一个
-    const checkAndContinueTimer = setTimeout(() => {
-      if (indexParam === null) {
-        // 没有 index 参数，说明是从详情页直接返回的
-        const wordKey = `${category}-${currentWord.word}`;
-        const statusData = localStorage.getItem(`word_${wordKey}`);
+  if (loading) return (
+    <div className="study-container">
+      <Header title="学习中..." />
+      <div className="flex-center h-full">加载中...</div>
+    </div>
+  );
 
-        if (statusData) {
-          // 当前单词已学习，继续下一个
-          const nextIndex = currentIndex + 1;
-
-          if (nextIndex < words.length) {
-            // 还有下一个单词
-            setCurrentIndex(nextIndex);
-            setCurrentWord(words[nextIndex]);
-            saveProgress(nextIndex);
-          } else {
-            // 已经是最后一个单词
-            alert('恭喜！该分类的所有单词都已学习完成！');
-            navigate(`/list/${category}`);
-          }
-        }
-      }
-    }, 200); // 延迟200ms确保页面已完全加载
-
-    return () => {
-      clearTimeout(checkAndContinueTimer);
-    };
-  }, [
-    searchParams,
-    words,
-    category,
-    navigate,
-    isLoading,
-    currentWord,
-    currentIndex,
-  ]);
-
-  const viewWordDetail = () => {
-    if (!currentWord) return;
-
-    // 查看当前单词详情，添加from=study参数标识从学习页面跳转
-    navigate(`/detail/${category}/${currentIndex}?from=study`);
-  };
-
-  if (isLoading) {
-    return <Loading fullScreen />;
-  }
-
-  if (!currentWord || words.length === 0) {
-    return (
-      <div className="container">
-        <Header title={getCategoryName(category)} showBack />
-        <main className="study-content">
-          <div className="empty-message">暂无单词可学习</div>
-        </main>
-      </div>
-    );
-  }
+  if (!currentWord) return (
+    <div className="study-container">
+      <Header title="出错了" />
+      <div className="flex-center h-full">没有找到单词数据</div>
+    </div>
+  );
 
   return (
-    <div className="container">
-      <Header
-        title={getCategoryName(category)}
-        showBack
-        showProgress
-        currentIndex={currentIndex + 1}
-        totalWords={words.length}
-      />
-      <main className="study-content">
-        <div className="word-display">
-          <div className="word-card">
+    <div className="study-container">
+      {/* Header Area could be a proper Header component or custom */}
+      <Header title="单词学习" />
+
+      <div className="study-header-area">
+        <div className="study-progress-container">
+          <div className="study-progress-bg">
             <div
-              className="word-text word-study-clickable"
-              onClick={() => {
-                start();
-              }}
-              title="点击播放发音"
-            >
-              {currentWord.word}
-            </div>
-            <div className="phonetic">{currentWord.phonetic || '/ˈwɜːrd/'}</div>
-            {currentWord.phrase && (
-              <div className="word-phrase word-study-phrase">
-                <PhraseCell phraseText={currentWord.phrase} />
-              </div>
-            )}
+              className="study-progress-fill"
+              style={{ width: `${((currentIndex + 1) / words.length) * 100}%` }}
+            ></div>
+          </div>
+          <span className="study-progress-text">{currentIndex + 1} / {words.length}</span>
+        </div>
+      </div>
+
+      <div className="card-stack-container">
+        <motion.div
+          className="word-card"
+          key={currentWord.word} // Key change forces remount for new word
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={0.7}
+          style={{ x, rotate }}
+          animate={controls}
+          onDragEnd={handleDragEnd}
+          whileTap={{ scale: 1.02 }}
+        >
+          {/* Visual Hints */}
+          <motion.div style={{ opacity: opacityKnown }} className="swipe-hint hint-right">
+            认识
+          </motion.div>
+          <motion.div style={{ opacity: opacityUnknown }} className="swipe-hint hint-left">
+            不认识
+          </motion.div>
+
+          <div className="card-word-area">
+            <h2 className="card-word">{currentWord.word}</h2>
+            <div className="card-phonetic">{currentWord.phonetic}</div>
+
             <button
-              className="btn-view-detail"
-              onClick={viewWordDetail}
-              title="查看详情"
+              className={`card-audio-btn ${isLoading ? 'loading' : ''} ${isPlaying ? 'playing' : ''}`}
+              onClick={handleAudioClick}
             >
-              查看详情
+              <AudioIcon size={24} className={isLoading ? 'icon-spin' : ''} />
             </button>
           </div>
-        </div>
-      </main>
-      <footer className="study-footer">
+
+          <div className="card-example-area">
+            {currentWord.toeicExampleSentences?.[0] ? (
+              <>
+                <p className="card-example-en">{currentWord.toeicExampleSentences[0].en}</p>
+                <p className="card-example-cn">{currentWord.toeicExampleSentences[0].cn}</p>
+              </>
+            ) : (
+              <p className="card-example-cn" style={{ textAlign: 'center', color: '#ccc' }}>暂无例句</p>
+            )}
+          </div>
+
+          <button
+            className="view-detail-link"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowDetail(true);
+            }}
+          >
+            查看详情
+          </button>
+        </motion.div>
+      </div>
+
+      <div className="study-footer">
         <button
-          className="btn btn-known"
-          onClick={() => showWordDetail('known')}
-        >
-          认识
-        </button>
-        <button
-          className="btn btn-unknown"
-          onClick={() => showWordDetail('unknown')}
+          className="btn-action btn-unknown"
+          onClick={() => handleStudyStatus('unknown')}
         >
           不认识
         </button>
         <button
-          className="btn btn-fuzzy"
-          onClick={() => showWordDetail('fuzzy')}
+          className="btn-action btn-fuzzy"
+          onClick={() => handleStudyStatus('fuzzy')}
         >
           模糊
         </button>
-      </footer>
+        <button
+          className="btn-action btn-known"
+          onClick={() => handleStudyStatus('known')}
+        >
+          认识
+        </button>
+      </div>
+
+      <BottomSheet
+        isOpen={showDetail}
+        onClose={() => setShowDetail(false)}
+        height="85vh"
+      >
+        <WordDetailContent
+          word={currentWord}
+          mode="modal"
+          onClose={() => setShowDetail(false)}
+          onPlaySound={playAudio}
+        />
+      </BottomSheet>
     </div>
   );
 }

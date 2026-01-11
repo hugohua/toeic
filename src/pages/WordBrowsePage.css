@@ -1,48 +1,92 @@
-/* 可点击元素样式 */
-.word-browse-clickable {
+/* WordBrowsePage.css */
+
+/* Footer - iOS style action bar */
+.browse-footer {
+  padding: 16px 20px;
+  padding-bottom: calc(16px + env(safe-area-inset-bottom, 0));
+  background: var(--surface-translucent);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 12px;
+  position: sticky;
+  bottom: 0;
+  z-index: 50;
+}
+
+.browse-footer .btn {
+  flex: 1;
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
-.word-browse-title-clickable {
-  cursor: pointer;
+.browse-footer .btn-primary {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.35);
 }
 
-/* 例句样式 */
-.word-browse-example-sentence {
-  cursor: pointer;
+.browse-footer .btn-primary:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
 }
 
-/* 空状态文本 */
-.word-browse-empty-text {
-  color: #999;
+.browse-footer .btn-secondary {
+  background: var(--surface);
+  color: var(--text-primary);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* 加载和空状态容器 */
+.browse-footer .btn-secondary:hover {
+  background: var(--background);
+}
+
+/* Status */
 .word-browse-status {
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
+  color: var(--text-secondary);
+  font-size: 15px;
 }
 
-/* 易混淆词表格样式 */
+/* Confusing words table */
 .confusing-words-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  margin-top: 12px;
+  font-size: 14px;
 }
 
 .confusing-words-table th,
 .confusing-words-table td {
-  padding: 10px;
+  padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.06);
 }
 
 .confusing-words-table th {
-  background: #f8f9fa;
+  background: var(--background);
   font-weight: 600;
-  color: #333;
+  color: var(--text-secondary);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .confusing-words-table td {
-  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.confusing-words-table tbody tr:last-child td {
+  border-bottom: none;
 }

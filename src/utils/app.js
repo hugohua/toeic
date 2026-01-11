@@ -80,3 +80,54 @@ export function getFirstSlashContent(str) {
   // 如果匹配成功，返回整个匹配的字符串（包括两边的斜杠）
   return match ? match[0] : '';
 }
+
+// Re-export specific API functions for convenience
+export { getWordsByCategory } from '../services/api';
+
+// Learning Progress Helpers
+import { saveWordStatus, addWordToList, removeWordFromList, WORD_LIST_TYPES } from '../services/storage';
+
+export async function getLearningProgress(category) {
+  try {
+    const savedIndex = localStorage.getItem(`studyIndex_${category}`);
+    return {
+      lastIndex: savedIndex ? parseInt(savedIndex, 10) : 0
+    };
+  } catch (e) {
+    console.warn('获取学习进度失败:', e);
+    return { lastIndex: 0 };
+  }
+}
+
+export async function saveLearningProgress(category, { word, status, timestamp, index }) {
+  // 1. Save specific word status (persistent)
+  if (word && status) {
+    saveWordStatus(`${category}-${word}`, status, timestamp || Date.now());
+  }
+
+  // 2. Save current index (session/position)
+  if (typeof index === 'number') {
+    localStorage.setItem(`studyIndex_${category}`, index.toString());
+  }
+
+  // 3. Add to word lists based on status
+  if (word && category && status) {
+    // Map status to list type
+    const statusToListType = {
+      'unknown': WORD_LIST_TYPES.UNKNOWN,
+      'fuzzy': WORD_LIST_TYPES.FUZZY,
+    };
+
+    const listType = statusToListType[status];
+    if (listType) {
+      // Add to the appropriate list
+      await addWordToList(listType, word, category);
+    }
+
+    // If marked as 'known', remove from unknown and fuzzy lists
+    if (status === 'known') {
+      await removeWordFromList(WORD_LIST_TYPES.UNKNOWN, word, category);
+      await removeWordFromList(WORD_LIST_TYPES.FUZZY, word, category);
+    }
+  }
+}

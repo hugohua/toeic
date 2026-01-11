@@ -1,14 +1,17 @@
+/* WordListPage.css - iOS Style Table */
+
 .word-list-content {
   flex: 1;
-  padding: 20px;
+  padding: 16px;
   overflow-y: auto;
-  background: #f8f9fa;
+  -webkit-overflow-scrolling: touch;
+  background: var(--background);
 }
 
 .word-list-table-container {
-  background: white;
+  background: var(--surface);
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -20,31 +23,29 @@
 }
 
 .word-list-table thead {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--primary);
 }
 
 .word-list-table th {
-  padding: 15px 12px;
+  padding: 14px 12px;
   text-align: left;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
   color: white;
 }
 
 .word-list-table tbody tr {
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.06);
   cursor: pointer;
-  transition: all 0.2s;
-}
-
-.word-list-table tbody tr:nth-child(even) {
-  background: #f2f2f2;
+  transition: background 0.15s;
 }
 
 .word-list-table tbody tr:hover {
-  background: #f8f9fa;
-  transform: translateX(2px);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.word-list-table tbody tr:active {
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .word-list-table tbody tr:last-child {
@@ -52,90 +53,89 @@
 }
 
 .word-list-table td {
-  padding: 15px 12px;
+  padding: 14px 12px;
   vertical-align: middle;
 }
 
 .col-word {
-  width: 25%;
-  font-weight: 600;
-  color: #333;
+  width: 30%;
 }
 
 .word-list-text {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-  color: #333;
+  color: var(--text-primary);
+}
+
+.word-phonetic {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  display: block;
+  margin-top: 2px;
 }
 
 .word-favorite {
-  color: #667eea;
+  color: var(--primary);
 }
 
 .col-pos {
-  /* width: 20%; */
-  color: #667eea;
-  font-size: 13px;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .col-meaning {
-  width: 55%;
-  color: #666;
-  line-height: 1.6;
+  width: 50%;
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
+.meaning-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.pos-text {
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* Header controls */
 .meaning-header {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .meaning-toggle-btn {
   border: none;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.2);
   color: white;
-  width: 22px;
-  height: 22px;
-  border-radius: 999px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 13px;
   padding: 0;
-  transition: all 0.2s;
+  transition: all 0.15s;
 }
 
 .meaning-toggle-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.3);
 }
 
-.meaning-toggle-btn.active {
-  background: rgba(255, 255, 255, 0.35);
+.meaning-toggle-btn:active {
+  transform: scale(0.9);
 }
 
-.meaning-toggle-btn .iconfont {
-  font-size: 14px;
-}
-
-.pos-text {
-  font-size: 13px;
-  color: #667eea;
-  font-weight: 500;
-}
-
-.favorite-category-icon {
-  font-size: 18px;
-  line-height: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* 列表页收藏列样式 */
+/* Favorite column */
 .col-favorite {
-  width: 90px;
+  width: 80px;
   text-align: center;
 }
 
@@ -143,89 +143,139 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 8px;
 }
 
 .etymology-btn {
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 16px;
   padding: 6px;
   line-height: 1;
-  transition: all 0.2s;
-  filter: grayscale(100%);
-  opacity: 0.3;
+  transition: all 0.15s;
+  opacity: 0.4;
+  border-radius: 6px;
 }
 
 .etymology-btn:hover {
-  transform: scale(1.2);
-  filter: grayscale(0%);
   opacity: 1;
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .list-favorite-btn {
   background: transparent;
   border: none;
-  padding: 4px 6px;
+  padding: 6px;
   cursor: pointer;
-  font-size: 20px;
-  color: #ccc;
-  transition: all 0.2s;
+  font-size: 18px;
+  color: var(--text-tertiary);
+  transition: all 0.15s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 6px;
 }
 
 .list-favorite-btn:hover {
-  transform: scale(1.2);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.list-favorite-btn:active {
+  transform: scale(0.9);
 }
 
 .list-favorite-btn.favorited {
-  color: #ffb400;
+  color: #ef4444;
 }
 
-.list-favorite-btn .iconfont {
-  line-height: 1;
-  font-size: 20px;
-}
-
-.meaning-text {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
-}
-
+/* Footer */
 .word-list-footer {
   text-align: center;
-  padding: 15px;
-  color: #999;
-  font-size: 14px;
+  padding: 20px 16px;
+  padding-bottom: calc(20px + env(safe-area-inset-bottom, 0));
+  background: var(--surface-translucent);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-top: 0.5px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: sticky;
+  bottom: 0;
+}
+
+.word-list-footer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.word-list-footer .btn-primary {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.35);
+}
+
+.word-list-footer .btn-primary:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.word-list-footer .btn-secondary {
+  background: var(--surface);
+  color: var(--text-primary);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.word-list-footer .btn-secondary:hover {
+  background: var(--background);
 }
 
 .word-count {
-  background: white;
-  padding: 10px 20px;
+  background: var(--surface);
+  padding: 8px 16px;
   border-radius: 20px;
   display: inline-block;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 13px;
+  color: var(--text-secondary);
 }
 
 .empty-message {
   text-align: center;
-  color: #999;
+  color: var(--text-tertiary);
   padding: 60px 20px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
-/* 移动端响应式 */
+/* Loading states */
+.word-list-loading {
+  min-height: auto !important;
+  padding: 0 !important;
+}
+
+.word-list-loading .loading-content {
+  flex-direction: row;
+  gap: 8px;
+}
+
+.word-list-loading .loading-spinner {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive */
 @media (max-width: 480px) {
   .word-list-content {
-    padding: 15px;
-  }
-
-  .word-list-table {
-    font-size: 12px;
+    padding: 12px;
   }
 
   .word-list-table th,
@@ -234,67 +284,18 @@
   }
 
   .col-word {
-    width: 30%;
-  }
-
-  /* .word-list-text {
-    font-size: 14px;
-  } */
-
-  .col-pos {
-    /* width: 25%; */
-    font-size: 11px;
+    width: 35%;
   }
 
   .col-meaning {
     width: 45%;
-    font-size: 12px;
   }
 
-  .pos-text {
-    font-size: 11px;
+  .word-list-text {
+    font-size: 14px;
   }
 
   .meaning-text {
-    font-size: 12px;
+    font-size: 13px;
   }
-}
-
-.word-phonetic {
-  font-size: 12px;
-  font-weight: 400;
-  display: block;
-}
-
-/* 可点击元素样式 */
-.word-list-clickable {
-  cursor: pointer;
-}
-
-.word-list-meaning-clickable {
-  cursor: pointer;
-}
-
-.word-list-footer-btn {
-  margin-top: 10px;
-}
-
-/* Custom style for use with Loading component in infinite scroll */
-.word-list-loading {
-  min-height: auto !important;
-  padding: 0 !important;
-}
-
-.word-list-loading .loading-content {
-  flex-direction: row;
-  gap: 0.5rem;
-}
-
-.word-list-loading .loading-spinner {
-  width: 20px;
-  height: 20px;
-}
-
-.word-list-loading .spinner-circle {
-  border-width: 2px;
 }

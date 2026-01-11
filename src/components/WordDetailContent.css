@@ -1,0 +1,213 @@
+/* WordDetailContent.css */
+
+/* Main Container */
+.detail-content {
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+    color: var(--text-primary);
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Card Wrapper (for the white/surface look) */
+.detail-card {
+    padding: 2px 0 40px;
+    /* Bottom padding for scroll */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail-card-modal {
+    /* Specific tweaks when inside a modal/bottom-sheet */
+    padding-bottom: 80px;
+}
+
+/* Header Section */
+.detail-header {
+    padding: 20px 24px 16px;
+    background: var(--surface);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.detail-header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.word-detail-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    margin-left: -8px;
+    /* Optical alignment */
+    color: var(--text-secondary);
+}
+
+.word-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+.word-detail-title-clickable {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.word-detail-title-clickable:active {
+    opacity: 0.7;
+}
+
+.phonetic {
+    font-family: 'Menlo', monospace;
+    font-size: 15px;
+    color: var(--text-secondary);
+    background: var(--background);
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.header-actions {
+    display: flex;
+    gap: 12px;
+}
+
+/* Detail Sections */
+.detail-section {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.section-title::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 14px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.section-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+.section-content p {
+    margin: 0;
+}
+
+/* Specific Content Styles */
+
+/* Meaning List */
+.meaning-item {
+    margin-bottom: 6px;
+}
+
+.part-of-speech {
+    font-weight: 600;
+    color: var(--primary);
+    margin-right: 8px;
+    font-size: 14px;
+    background: rgba(102, 126, 234, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Examples */
+.example-item {
+    margin-bottom: 16px;
+    padding: 12px;
+    background: var(--surface);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.example-en {
+    font-weight: 500;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.example-cn {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Empty State */
+.word-detail-empty-text {
+    color: var(--text-tertiary);
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Action Buttons */
+.etymology-header-btn,
+.favorite-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.etymology-header-btn:active,
+.favorite-btn:active {
+    transform: scale(0.92);
+    background: var(--background);
+}
+
+.favorite-btn-active {
+    border-color: rgba(239, 68, 68, 0.3);
+    background: rgba(239, 68, 68, 0.05);
+}
+
+/* Audio Button Inline */
+.inline-audio-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    border: none;
+    margin-left: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+}

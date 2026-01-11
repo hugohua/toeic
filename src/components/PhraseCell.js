@@ -1,27 +1,22 @@
 import React from 'react';
-import AudioPlayer from './AudioPlayer';
-import { AUDIO_CONFIG } from '../utils/audioConfig';
+import InlinePlayButton from './InlinePlayButton';
 import './PhraseCell.css';
 
 /**
- * 短语播放组件
- * 使用简化版 AudioPlayer 实现
+ * 短语播放组件 - 简化版
+ * 一行文本 + 播放图标
  * 
  * @param {Object} props
  * @param {string} props.phraseText - 短语文本
- * @param {string} props.voice - 音色，默认 Elias
  */
-function PhraseCell({ phraseText, voice = AUDIO_CONFIG.DEFAULT_VOICE }) {
+function PhraseCell({ phraseText }) {
+  if (!phraseText) return null;
+
   return (
-    <span className="phrase-cell-inline">
+    <div className="phrase-cell">
       <span className="phrase-text">{phraseText}</span>
-      <AudioPlayer
-        text={phraseText}
-        voice={voice}
-        showAdvanced={false}
-        className="audio-player-simple"
-      />
-    </span>
+      <InlinePlayButton text={phraseText} size={14} />
+    </div>
   );
 }
 

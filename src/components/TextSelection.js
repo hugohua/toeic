@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { BookOpen, Volume2, VolumeX, Copy } from 'lucide-react';
 import BottomSheet from './BottomSheet';
 import { grammarAnalyze, saveNote } from '../services/api';
 import Popup from './Popup';
@@ -12,9 +13,9 @@ import '../styles/Markdown.css';
 /**
  * TextSelection 组件 - 文本选中操作组件
  * @param {object} props
-  * @param {React.RefObject} props.targetRef - 目标元素的 ref，用于监听选中事件
-  * @param {number} props.articleId - 文章ID，用于保存笔记时关联文章
-  */
+ * @param {React.RefObject} props.targetRef - 目标元素的 ref，用于监听选中事件
+ * @param {number} props.articleId - 文章ID，用于保存笔记时关联文章
+ */
 function TextSelection({ targetRef, articleId, onNoteSaved }) {
   const [selectedText, setSelectedText] = useState('');
   const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
@@ -375,7 +376,7 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
           }}
           title="解释"
         >
-          <span className="iconfont icon-read"></span>
+          <BookOpen size={16} color="white" />
         </button>
         <button
           className="text-selection-button"
@@ -389,7 +390,7 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
           }}
           title={playing ? "停止" : "朗读"}
         >
-          <span className={`iconfont ${playing ? 'icon-stop' : 'icon-sound'}`}></span>
+          {playing ? <VolumeX size={16} color="white" /> : <Volume2 size={16} color="white" />}
         </button>
         <button
           className="text-selection-button"
@@ -399,7 +400,7 @@ function TextSelection({ targetRef, articleId, onNoteSaved }) {
           }}
           title="复制"
         >
-          <span className="iconfont icon-file-copy"></span>
+          <Copy size={16} color="white" />
         </button>
       </div>
 

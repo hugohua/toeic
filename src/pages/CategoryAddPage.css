@@ -1,7 +1,11 @@
+/* CategoryAddPage.css - iOS Form Style */
+
 .category-add-content {
   padding: 20px;
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .category-add-form-group {
@@ -11,100 +15,121 @@
 .category-add-label {
   display: block;
   margin-bottom: 8px;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-primary);
 }
 
 .category-add-label-required {
-  color: red;
+  color: var(--danger);
 }
 
 .category-add-input {
   width: 100%;
-  padding: 10px;
+  padding: 14px 16px;
   font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text-primary);
+  transition: all 0.15s;
+}
+
+.category-add-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .category-add-hint {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #666;
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--text-tertiary);
 }
 
 .category-add-message {
-  padding: 12px;
+  padding: 14px 16px;
   margin-bottom: 20px;
-  border-radius: 4px;
+  border-radius: 12px;
+  font-size: 14px;
 }
 
 .category-add-message-success {
-  background-color: #d4edda;
-  color: #155724;
-  border: 1px solid #c3e6cb;
+  background: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+  border: 1px solid rgba(34, 197, 94, 0.2);
 }
 
 .category-add-message-error {
-  background-color: #f8d7da;
-  color: #721c24;
-  border: 1px solid #f5c6cb;
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+  border: 1px solid rgba(239, 68, 68, 0.2);
 }
 
 .category-add-actions {
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  margin-top: 24px;
 }
 
 .category-add-submit-btn {
-  padding: 12px 24px;
+  flex: 1;
+  padding: 14px 24px;
   font-size: 16px;
-  background-color: #007bff;
+  background: var(--primary);
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 12px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
+  transition: all 0.15s;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
 
 .category-add-submit-btn:hover:not(:disabled) {
-  background-color: #0056b3;
+  filter: brightness(1.05);
+  transform: translateY(-1px);
 }
 
 .category-add-submit-btn:disabled {
-  background-color: #ccc;
+  opacity: 0.5;
   cursor: not-allowed;
+  box-shadow: none;
 }
 
 .category-add-cancel-btn {
-  padding: 12px 24px;
+  padding: 14px 24px;
   font-size: 16px;
-  background-color: #6c757d;
-  color: white;
-  border: none;
-  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text-secondary);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
   cursor: pointer;
+  transition: all 0.15s;
 }
 
 .category-add-cancel-btn:hover {
-  background-color: #5a6268;
+  background: var(--background);
 }
 
 .category-add-info {
-  margin-top: 30px;
-  padding: 15px;
-  background-color: #f8f9fa;
-  border-radius: 4px;
-  font-size: 14px;
+  margin-top: 32px;
+  padding: 16px;
+  background: var(--surface);
+  border-radius: 12px;
+  font-size: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .category-add-info-title {
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .category-add-info-list {
   margin: 0;
   padding-left: 20px;
+  color: var(--text-secondary);
+  line-height: 1.6;
 }
-

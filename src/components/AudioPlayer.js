@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import * as Slider from '@radix-ui/react-slider';
+import { Play, Square, Loader2, AlertCircle } from 'lucide-react';
 import './AudioPlayer.css';
 import { useAliyunAudio } from '../hooks/useAliyunAudio';
 import { AUDIO_CONFIG } from '../utils/audioConfig';
 
 /**
- * 实时语音播放组件（增强版）
+ * 实时语音播放组件（增强版） - Refactored with Radix UI & Lucide
  * 逻辑已迁移至 useAliyunAudio Hook
  */
 function AudioPlayer({
@@ -86,20 +88,20 @@ function AudioPlayer({
                 {/* 播放/停止按钮 */}
                 <button
                     type="button"
-                    className={`audio-player-button ${playing ? 'playing' : ''} ${loading ? 'loading' : ''}`}
+                    className={`audio-player-button ${playing ? 'playing' : ''}`}
                     onClick={handleTogglePlay}
                     title={loading ? '加载中...' : (playing ? '停止播放' : '播放语音')}
                     disabled={!text || !text.trim() || loading}
                 >
                     {loading ? (
-                        <span className="audio-player-spinner"></span>
+                        <Loader2 size={16} className="icon-spin" />
                     ) : playing ? (
-                        <span className="iconfont icon-stop"></span>
+                        <Square size={16} fill="currentColor" />
                     ) : (
-                        <span className="iconfont icon-sound"></span>
+                        <Play size={16} fill="currentColor" />
                     )}
                     <span className="audio-player-text">
-                        {loading ? '加载中' : (playing ? '停止' : '播放')}
+                        {loading ? 'Wait' : (playing ? 'Stop' : 'Play')}
                     </span>
                 </button>
 
@@ -139,15 +141,23 @@ function AudioPlayer({
                 )}
             </div>
 
-            {/* 进度条 */}
-            {showAdvanced && playing && (
-                <div className="audio-player-progress-container">
-                    <div className="audio-player-progress-bar">
-                        <div
-                            className="audio-player-progress-fill"
-                            style={{ width: `${progress}%` }}
-                        />
-                    </div>
+            {/* 进度条 (Radix Slider) */}
+            {showAdvanced && (playing || progress > 0) && (
+                <div className="audio-player-progress-wrapper">
+                    <Slider.Root
+                        className="SliderRoot"
+                        value={[progress]}
+                        max={100}
+                        disabled={true} // Read-only for now as seek is not supported in hook
+                        aria-label="Volume"
+                    >
+                        <Slider.Track className="SliderTrack">
+                            <Slider.Range className="SliderRange" />
+                        </Slider.Track>
+                        {/* Hide thumb when read only if preferred, or keep it to show position clearly */}
+                        <Slider.Thumb className="SliderThumb" aria-label="Volume" />
+                    </Slider.Root>
+
                     <div className="audio-player-time">
                         <span>{formatTime(currentTime)}</span>
                         {duration > 0 && <span> / {formatTime(duration)}</span>}
@@ -158,7 +168,7 @@ function AudioPlayer({
             {/* 错误提示 */}
             {error && (
                 <div className="audio-player-error" title={error}>
-                    ⚠️ {error}
+                    <AlertCircle size={14} /> <span>{error}</span>
                 </div>
             )}
         </div>

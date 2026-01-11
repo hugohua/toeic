@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { BookOpen, Heart } from 'lucide-react';
 import { useSpeechConfig } from '../hooks/useSpeechConfig';
 import { getFirstSlashContent } from '../utils/app';
 
@@ -55,22 +56,22 @@ const WordRow = memo(function WordRow({
                 <div className="action-buttons">
                     <button
                         type="button"
-                        className="action-btn etymology-btn"
+                        className="action-btn etymology-btn icon-btn-small"
                         onClick={(e) => {
                             e.stopPropagation();
                             onEtymologyClick(word.word);
                         }}
                         title="查看构词法"
                     >
-                        <span className="iconfont icon-read"></span>
+                        <BookOpen size={16} />
                     </button>
                     <button
                         type="button"
-                        className={`action-btn list-favorite-btn ${isFavorite ? 'favorited' : ''}`}
+                        className={`action-btn list-favorite-btn icon-btn-small ${isFavorite ? 'favorited' : ''}`}
                         onClick={(e) => onToggleFavorite(e, word.word)}
                         title={isFavorite ? '取消收藏' : '收藏单词'}
                     >
-                        <span className="iconfont icon-star"></span>
+                        <Heart size={16} fill={isFavorite ? '#ef4444' : 'none'} color={isFavorite ? '#ef4444' : '#666'} />
                     </button>
                 </div>
             </td>

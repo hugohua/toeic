@@ -16,6 +16,7 @@ import ArticleDetailPage from './pages/ArticleDetailPage';
 import NoteListPage from './pages/NoteListPage';
 import NoteDetailPage from './pages/NoteDetailPage';
 import PlaylistPage from './pages/PlaylistPage'; // Add import
+import { AppShell } from './components/Layout/AppShell';
 import { initCategoryCache } from './utils/app';
 import { PopupContainer } from './components/Popup';
 
@@ -28,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <AppShell>
       <PopupContainer />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -48,7 +49,7 @@ function App() {
         <Route path="/note/:id" element={<NoteDetailPage />} />
         <Route path="/playlist" element={<PlaylistPage />} />
       </Routes>
-    </>
+    </AppShell>
   );
 }
 

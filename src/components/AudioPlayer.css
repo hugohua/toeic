@@ -1,36 +1,43 @@
-/* AudioPlayer 组件样式 */
+/* AudioPlayer Refactored Styles */
 
 .audio-player {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
+  width: 100%;
 }
 
 .audio-player-controls {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
+/* Play Button */
 .audio-player-button {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  gap: 8px;
   padding: 8px 16px;
   border: none;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  border-radius: 9999px;
+  /* Pill shape */
+  background: var(--primary);
+  color: var(--primary-foreground);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  transition: all 0.2s ease;
+  min-width: 90px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.25);
 }
 
 .audio-player-button:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.35);
 }
 
 .audio-player-button:active:not(:disabled) {
@@ -38,135 +45,22 @@
 }
 
 .audio-player-button:disabled {
-  opacity: 0.5;
+  opacity: 0.6;
   cursor: not-allowed;
-}
-
-.audio-player-button.playing {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  animation: pulse 2s ease-in-out infinite;
-}
-
-/* Loading 状态样式 */
-.audio-player-button.loading {
-  background: linear-gradient(135deg, #ffa726 0%, #fb8c00 100%);
-  cursor: wait;
-}
-
-.audio-player-button.loading:hover {
   transform: none;
 }
 
-.audio-player .iconfont {
-  font-size: 16px;
-  line-height: 1;
+.audio-player-button.playing {
+  background: var(--text-secondary);
+  /* Stop button usually neutral or accent */
+  color: white;
 }
 
-.audio-player-text {
-  font-size: 14px;
-  line-height: 1;
+/* Icon rotation for loading */
+.icon-spin {
+  animation: spin 1s linear infinite;
 }
 
-/* 音色和速度选择器 */
-.audio-player-select {
-  padding: 6px 12px;
-  border: 2px solid #e0e0e0;
-  border-radius: 12px;
-  background: white;
-  color: #333;
-  font-size: 13px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  outline: none;
-}
-
-.audio-player-select:hover:not(:disabled) {
-  border-color: #667eea;
-  background: #f5f7ff;
-}
-
-.audio-player-select:focus {
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-}
-
-.audio-player-select:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.audio-player-rate {
-  min-width: 70px;
-}
-
-/* 进度条容器 */
-.audio-player-progress-container {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  min-width: 200px;
-}
-
-.audio-player-progress-bar {
-  width: 100%;
-  height: 4px;
-  background: #e0e0e0;
-  border-radius: 2px;
-  overflow: hidden;
-  position: relative;
-}
-
-.audio-player-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-  border-radius: 2px;
-  transition: width 0.1s linear;
-}
-
-.audio-player-time {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11px;
-  color: #666;
-  font-weight: 500;
-}
-
-/* 错误提示 */
-.audio-player-error {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 4px 8px;
-  background: #fee;
-  color: #c33;
-  font-size: 12px;
-  border-radius: 4px;
-  max-width: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/* 高级模式样式 */
-.audio-player-advanced {
-  min-width: 300px;
-}
-
-/* 动画 */
-@keyframes pulse {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.8;
-  }
-}
-
-/* 旋转动画 (用于 loading 图标) */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -177,71 +71,101 @@
   }
 }
 
-.spin {
-  animation: spin 1s linear infinite;
-  display: inline-block;
+/* Select Inputs */
+.audio-player-select {
+  padding: 6px 12px;
+  border: 1px solid var(--text-tertiary);
+  /* Lighter border */
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  outline: none;
 }
 
-/* 自定义 Spinner 加载动画 */
-.audio-player-spinner {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-top-color: white;
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
+.audio-player-select:hover:not(:disabled) {
+  border-color: var(--primary);
+  background: rgba(102, 126, 234, 0.05);
 }
 
-/* 响应式设计 */
-@media (max-width: 768px) {
-  .audio-player-controls {
-    flex-wrap: wrap;
-  }
-
-  .audio-player-button {
-    padding: 6px 12px;
-    font-size: 13px;
-  }
-
-  .audio-player-icon {
-    font-size: 14px;
-  }
-
-  .audio-player-text {
-    font-size: 13px;
-  }
-
-  .audio-player-select {
-    font-size: 12px;
-    padding: 5px 10px;
-  }
-
-  .audio-player-progress-container {
-    min-width: 150px;
-  }
+.audio-player-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
 }
 
-/* 简化模式（用于短语播放） */
-.audio-player-simple {
-  display: inline-flex;
+/* Radix Slider Styles */
+.SliderRoot {
+  position: relative;
+  display: flex;
   align-items: center;
+  user-select: none;
+  touch-action: none;
+  width: 100%;
+  height: 20px;
 }
 
-.audio-player-simple .audio-player-controls {
-  gap: 4px;
+.SliderTrack {
+  background-color: var(--secondary);
+  position: relative;
+  flex-grow: 1;
+  border-radius: 9999px;
+  height: 4px;
 }
 
-.audio-player-simple .audio-player-button {
-  padding: 4px 10px;
+.SliderRange {
+  position: absolute;
+  background-color: var(--primary);
+  border-radius: 9999px;
+  height: 100%;
+}
+
+.SliderThumb {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  transition: transform 0.1s;
+}
+
+.SliderThumb:hover {
+  transform: scale(1.1);
+  cursor: grab;
+}
+
+.SliderThumb:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+/* Time display */
+.audio-player-time {
   font-size: 12px;
-  border-radius: 12px;
+  color: #888;
+  margin-left: auto;
+  /* Push to right if flex */
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+  margin-top: 4px;
 }
 
-.audio-player-simple .audio-player-icon {
-  font-size: 14px;
+.audio-player-progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 8px;
 }
 
-.audio-player-simple .audio-player-text {
-  display: none;
+.audio-player-error {
+  font-size: 12px;
+  color: var(--danger);
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }

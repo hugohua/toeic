@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import { getAllWordMemories } from '../utils/ebbinghaus';
+import './ProfilePage.css';
 
 function ProfilePage() {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ function ProfilePage() {
     try {
       // 直接从localStorage获取所有复习记录
       const allMemories = getAllWordMemories();
-      
+
       if (allMemories.length === 0) {
         setWordList([]);
         return;

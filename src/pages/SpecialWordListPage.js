@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { Eye } from 'lucide-react';
 import { useSpeechConfig } from '../hooks/useSpeechConfig';
 import Header from '../components/Header';
 import { getWordList, WORD_LIST_TYPES } from '../services/storage';
@@ -291,8 +292,7 @@ function SpecialWordListPage() {
                     <span>解释</span>
                     <button
                       type="button"
-                      className={`meaning-toggle-btn ${showAllMeanings ? 'active' : ''
-                        }`}
+                      className={`meaning-toggle-btn icon-btn-small ${showAllMeanings ? 'active' : ''}`}
                       onClick={handleToggleAllMeanings}
                       title={
                         showAllMeanings
@@ -300,7 +300,7 @@ function SpecialWordListPage() {
                           : '显示所有单词解释'
                       }
                     >
-                      👁
+                      <Eye size={16} />
                     </button>
                   </span>
                 </th>

@@ -1,6 +1,9 @@
 .article-content {
+  flex: 1;
   padding: 20px;
   max-width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* 分类选择区域 */

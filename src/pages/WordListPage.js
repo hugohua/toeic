@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { Eye } from 'lucide-react';
 import Header from '../components/Header';
 import WordRow from '../components/WordRow';
 import { getCategoryName } from '../utils/app';
@@ -127,11 +128,11 @@ function WordListPage() {
                     <span>解释</span>
                     <button
                       type="button"
-                      className={`meaning-toggle-btn ${showAllMeanings ? 'active' : ''}`}
+                      className={`meaning-toggle-btn icon-btn-small ${showAllMeanings ? 'active' : ''}`}
                       onClick={toggleAllMeanings}
                       title={showAllMeanings ? '隐藏所有单词解释' : '显示所有单词解释'}
                     >
-                      <span className="iconfont icon-eye"></span>
+                      <Eye size={16} />
                     </button>
                   </span>
                 </th>

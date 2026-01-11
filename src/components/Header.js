@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ArrowLeft, House, Search, User, X } from 'lucide-react';
 import {
   searchWords as searchWordsAPI,
   getWordsByCategory,
@@ -71,12 +72,9 @@ function Header({
   };
 
   const handleSearchBlur = () => {
-    setTimeout(() => {
-      if (searchQuery.trim() === '') {
-        setIsSearchExpanded(false);
-        setShowDropdown(false);
-      }
-    }, 200);
+    // Only close if clicking outside (handled by useEffect)
+    // Don't close on simple blur - user might be clicking a result
+    // The clickOutside handler will close it properly
   };
 
   const handleResultClick = async (word) => {
@@ -86,7 +84,6 @@ function Header({
     const category = word.category_name || word.category;
 
     try {
-      // 使用轻量级API只获取索引,而不是完整列表
       const wordIndex = await getWordIndexInCategory(word.word, category);
       if (wordIndex !== null) {
         navigate(`/detail/${category}/${wordIndex}`);
@@ -126,6 +123,7 @@ function Header({
         !searchContainerRef.current.contains(e.target)
       ) {
         setShowDropdown(false);
+        setIsSearchExpanded(false); // Also close search bar if clicking outside
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -138,17 +136,17 @@ function Header({
         {/* 左侧：返回按钮和首页按钮 */}
         <div className="header-left">
           {showBack && (
-            <button className="back-btn" onClick={() => navigate(-1)}>
-              <span className="iconfont icon-left"></span>
+            <button className="icon-btn" onClick={() => navigate(-1)} aria-label="返回">
+              <ArrowLeft size={20} />
             </button>
           )}
           <button
-            className="home-btn"
+            className="icon-btn"
             onClick={() => navigate('/')}
             title="返回首页"
             aria-label="返回首页"
           >
-            <span className="iconfont icon-appstore"></span>
+            <House size={20} />
           </button>
         </div>
 
@@ -168,12 +166,12 @@ function Header({
           <div className="search-container" ref={searchContainerRef}>
             {!isSearchExpanded && (
               <button
-                className="search-icon-btn"
+                className="icon-btn"
                 onClick={handleSearchIconClick}
                 type="button"
                 aria-label="搜索"
               >
-                <span className="iconfont icon-search"></span>
+                <Search size={20} />
               </button>
             )}
             {isSearchExpanded && (
@@ -182,7 +180,7 @@ function Header({
                   ref={searchInputRef}
                   type="text"
                   className="search-input"
-                  placeholder="搜索单词或词义..."
+                  placeholder="搜索..."
                   value={searchQuery}
                   onChange={handleSearchChange}
                   onBlur={handleSearchBlur}
@@ -194,10 +192,13 @@ function Header({
                     }
                   }}
                 />
+                {/* Close button inside input area? Or just use Escape/Click outside. */}
+                {/* For now let's rely on click outside */}
+
                 {showDropdown && searchResults.length > 0 && (
-                  <div className="search-dropdown" style={{ display: 'block' }}>
+                  <div className="search-dropdown">
                     {searchResults
-                      .filter((word) => word && word.word) // 过滤掉无效的单词对象
+                      .filter((word) => word && word.word)
                       .map((word, index) => {
                         const meaning = word.coreMeaning || '';
                         const meaningText =
@@ -237,12 +238,12 @@ function Header({
             )}
           </div>
           <button
-            className="profile-btn"
+            className="icon-btn"
             onClick={() => navigate('/profile')}
             type="button"
             aria-label="个人中心"
           >
-            <span className="iconfont icon-user"></span>
+            <User size={20} />
           </button>
         </div>
       </div>

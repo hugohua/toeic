@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { X } from 'lucide-react';
 import BottomSheet from './BottomSheet';
 import '../styles/Markdown.css';
 import { getEtymology } from '../services/api';
@@ -93,8 +94,8 @@ function EtymologyBottomSheet({ isOpen, onClose, word }) {
                         构词法: {word}
                     </h3>
                     <div className="text-selection-header-actions">
-                        <button className="text-selection-close" onClick={onClose}>
-                            <span className="iconfont icon-close"></span>
+                        <button className="text-selection-close icon-btn-small" onClick={onClose} aria-label="关闭">
+                            <X size={20} color="#333" />
                         </button>
                     </div>
                 </div>
